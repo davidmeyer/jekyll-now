@@ -37,7 +37,8 @@ permalink: /about/
 	Chief Technologist and Director of IP Technology
 	Development at Sprint. 
 
-	See http://www.1-4-5.net/~dmm/vita.html for more
+	See <a href="http://www.1-4-5.net/~dmm/vita.html">
+        http://www.1-4-5.net/~dmm/vita.html</a>  for more
 	information. 
 
 
