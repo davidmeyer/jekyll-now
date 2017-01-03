@@ -40,6 +40,6 @@ permalink: /about/
 
 
 ### Contact me
-[dmm@1-4-5.net](mailto:dmm@1-4-5.net) 
+[dmm@1-4-5.net](mailto:dmm@1-4-5.net)  \\
 <http://www.1-4-5.net/~dmm/vita.html> 
 
