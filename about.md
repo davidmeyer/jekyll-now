@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
 
 	David Meyer is currently Chief Scientist, VP and Fellow at
 	Brocade Communications, where he works on future
