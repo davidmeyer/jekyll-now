@@ -855,7 +855,7 @@ Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
 Update</a>. Winter ISMA 2001. Please see also <a
 href="http://www.caida.org/outreach/isma">
 http://www.caida.org/outreach/isma</a></li>. 
-<\ul>
+</ul>
 
 
 <h2>Recent Blogs and the like</h2>
