@@ -62,8 +62,8 @@ Fellow, 1986-1987.
 <li> Surfing 
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> 
 </ul> 
-
-<li><h2> EXPERIENCE </h2>
+<br>
+<li><h2>EXPERIENCE </h2>
 <ul>
 <li>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
