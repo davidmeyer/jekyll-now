@@ -287,13 +287,13 @@ machines and networks.
 <p>
 
 <h2>Recent Talks</h2>
-
-<a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.
+<ul>
+<li><a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
 <P>
 
-<a href="./ml">Random (and largely
+<li> <a href="./ml">Random (and largely
 incomplete) musings on various machine learning topics</a>, WIP.
-Last update: 25 May 2016. 
+Last update: 25 May 2016. </li>
 <P>
 
 <a
@@ -1231,7 +1231,7 @@ Failure Handling for AND-Parallel Logic Programs"</a></i>, David
 Meyer and John Conery, Proceedings of the Seventh International
 Conference on Logic Programming, Jerusalem, Israel, 1990.
 <p>
-
+</ul>
 
 <li><h2>ACTIVE GRANTS</h2></li>
 <p>
