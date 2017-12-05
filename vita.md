@@ -19,7 +19,6 @@ David Meyer
 </center> 
 </h1> 
 <br> 
-<br> 
  
 <ul> 
 <li> <h1> PERSONAL </h1> 
