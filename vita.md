@@ -10,9 +10,11 @@
 --> 
  
 <h1> 
+<center>
 Curriculum Vitae
   David Meyer 
-<br> 
+<\center> 
+	
  
 <ul> 
 <li> <h1> PERSONAL </h1> 
