@@ -353,7 +353,6 @@ href="https://www.youtube.com/watch?v=29rn6-3s4yE&index=3&list=PL8F5jrwEpGAiRCzJ
 intelligence in network reliability and optimization,
 <a href="http://zoc.t-systems.de/de/">T-Systems Zero Outage
 Conference</a>, 09 June 2016, Berlin, Germany.</li>
-
 <p>
 
 <li>
@@ -364,8 +363,8 @@ Networking (video)</a>,
 DevOps Networking Forum at Open Networking Summit
 </a>. See also <a
 href="https://www.linkedin.com/pulse/machine-learning-devops-networking-fred-millet?trk=hb_ntf_MEGAPHONE_ARTICLE_POST&trk=hp-feed-article-title-share">Fred Millet's comments</a>, 14 Mar 2016.</li>
-
 <p>
+	
 <li>
 <a href="./talks/2015/hoti.pptx">Keynote:
 Recent Advances in Machine Learning and Their Application to
@@ -395,23 +394,23 @@ here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair
 from Neela Jacques at the closing of the ODL summit</a>, <a
 href="http://events.linuxfoundation.org/events/opendaylight-summit">Open
 Daylight Summit</a>, July 27-31, 2015.</li>
+<p>
 
 <li><a
 href="./talks/2015/ieee_netsoft_keynote.pptx">
 Keynote: SDN, NFV and Cloud, and Network Automation: The Journey from CLI to
 Machine Intelligence</a>, 
 <a href="http://sites.ieee.org/netsoft/">
-1st IEEE Conference on Network Softwarization (Netsoft 2015)</a>,
- 13-17 Apr 2015, London, UK.</li>
+1st IEEE Conference on Network Softwarization (Netsoft 2015)</a>, 13-17 Apr 2015, London, UK.</li>
+<p>
 
 <li><a
 href="./talks/2015/openstack_austin.pdf">
 Introduction to OpenDaylight: Current Events and OpenStack
 Neutron Integration</a>, 
 <a href="http://www.meetup.com/OpenStack-Austin/events/218911185/">
-Openstack Meetup
-</a>, 18 Mar 2015, Austin, TX.</li>
-
+Openstack Meetup</a>, 18 Mar 2015, Austin, TX.</li>
+<p>
 
 <li><a
 href="./talks/2015/MWC/mwc2015.pptx">
@@ -419,6 +418,7 @@ A (Very) Brief Introduction to Machine Learning and its
 Application to Mobile Networks</a>,
 <a href="http://www.mobileworldcongress.com/">
 Mobile World Congress</a>, 02-05 Mar 2015, Barcelona, Spain.</li>
+<p>
 
 <li><a
 href="./talks/2015/pace_2015.pdf">
@@ -427,29 +427,34 @@ Application to PCE</a>,
 <a href="http://ict-one.eu/pace/public_wiki/mediawiki-1.19.7/index.php?title=Workshops">
 Next Steps for the Path Computation Element Workshop
 </a>, 17-18 Feb 2015, Madrid, Spain.</li>
+<p>
 
 <li><a
 href="./talks/2015/ons-accelerate.pdf">
 OpenDaylight, OpenSource, and Why OSS is Important</a>,
 <a href="http://www.opennetsummit.org/ons-accelerate-feb15.php">
 ONS Accelerate! Workshop</a>, 10 Feb 2015.</li>
+<p>
 
 <li><a
 href="./talks/20141027-meyer-hidden-nature-of-complex-systems.pdf">
 On the Hidden Nature of Complex Systems</a>, <a
 href="http://www.internet2.edu/news-events/events/technology-exchange/">Internet2
 Technology Exchange</a>, Oct 26-30, 2014.</li>
+<p>
 
 <li><a
 href="./talks/nfd8.pptx">
 Software Defined Intelligence (slides)</a>, <a
 href="http://techfieldday.com/appearance/brocade-presents-at-networking-field-day-8/">
 Networking Field Day 8 (video)</a>, 11 Sep 2014.</li>
+<p>
 
 <li><a
 href="./talks/introduction_to_machine_learning.pdf">
 Introduction to Machine Learning and its application to Data
 Centers</a> (Work in progress). </li>
+<p>
 
 <li><a
 href="./talks/open_network_world.pdf">
@@ -457,24 +462,27 @@ Keynote: Open Source, Open Daylight, and the ONF: How it all fits
 together</a>, <a href="http://onw.cnw.com.cn/">Open Networking
 World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
 (07.04.2014). </li>
+<p>
 
 <li><a
 href="./talks/interop_tokyo_062014.pdf">
 Keynote: OpenDaylight and the Past, Present and Future of Open
 Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>, 
 Tokyo, Japan. </li>
+<p>
 	
 <li><a
 href="./talks/opendaylight_futures.pdf">OpenDaylight
 Futures</a>, <a
 href="http://www.conference.cn/sdnt/2014/en/Conference.asp?ArticleID=520">Global
-SDN Technology Conference 2014</a>, 
-Beijing, China. </li>
+SDN Technology Conference 2014</a>, Beijing, China. </li>
+<p>
 
 <li><a
 href="./talks/bridges.pdf">Complexity, Tradeoffs,
 Architecture, and Building Bridges</a>, Huawei NFV Spring Forum
 2014, 19-20 May, 2014, Shanghai, China. </li>
+<p>
 
 <li><a 
 href="http://conferences.sigcomm.org/sigcomm/2014/tutorial-theory+eng.php">
@@ -482,14 +490,15 @@ Tutorial: Exploring the Intersection of Theory and Engineering:
 Universal Laws, Architecture, and SDN</a>
 <a href="http://conferences.sigcomm.org/sigcomm/2014/index.php">
 SIGCOMM 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/nanog61.pptx">
 Keynote: On the Hidden Nature of Complex Systems
 (Macro Trends, Architecture, Nets, Grids, Bugs, Brains, and the
-Meaning of Life)</a>, 
-<a href="https://www.nanog.org/meetings/nanog61/home">
+Meaning of Life)</a>,  <a href="https://www.nanog.org/meetings/nanog61/home">
 NANOG 61</a>, Bellveue, WA, June 2014.</li> 
+<p>
 
 <li><a 
 href="talks/openstack_atl_2014.pdf">
@@ -497,13 +506,14 @@ Introduction to OpenDaylight and Hydrogen, Learnings from the
 Year, and What's Next for OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
 OpenStack Summit Atlanta 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/openstack_and_odl_atlanta.pdf">
 Using OpenStack With OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
 OpenStack Summit Atlanta 2014</a>.</li>
-
+<p>
 
 <li><a 
 href="talks/great_wide_open.pdf">
@@ -511,6 +521,7 @@ Introduction to OpenDaylight and Hydrogen, Learnings from the
 Year, and What's Next for OpenDaylight</a>
 <a href="http://greatwideopen.org/">
 Great Wide Open 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/interop_lv_2014.pdf">
@@ -518,6 +529,7 @@ SDN and the Hidden Nature of Complexity: A Whirlwind Tour Through
 the Nature of Complex Networks</a>
 <a href="http://www.interop.com/lasvegas/">
 INTEROP Las Vegas 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/hidden_nature_of_complexity.pdf"> 
@@ -525,33 +537,39 @@ The Hidden Nature of Complexity and the Software Defined Network
 Operatorof the (very near) Future</a>
 <a href="http://www.uppersideconferences.com/sdnsummit2014/sdnsummit2014program_day_3.html">
 NFV/SDN Summit 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/dc_upperside_2014.pdf"> 
 Seeing the (Near) Future: Data Centers, Software, and SDN</a>, <a 
 href="http://www.uppersideconferences.com/sdnsummit2014/sdnsummit2014program_day_0_workshops.html">
 NFV/SDN Summit 2014</a>.</li>
+<p>
 
 <li><a 
 href="talks/sigcomm2014JDoyleMeyerTutorial.pdf"> 
 Exploring the Intersection of Theory and Engineering: Universal
 Laws, Architecture, and SDN. John Doyle and David Meyer</a>, <a 
 href="http://conferences.sigcomm.org/sigcomm/2014/cfw.php">SIGCOMM 2014</a>.</li>
+<p>
 
 <li> <a
 href="talks/NFD7.pdf">
 Learnings from Hydrogen and 
 What's Next for OpenDaylight</a>, <a href="http://techfieldday.com/event/nfd7/">Network Field Day 7</a>.</li>
+<p>
 
 <li> <a href="talks/macro_trends_complexity_and_sdn.pdf">
 Macro Trends, Architecture, and the Hidden Nature of Complexity
 (and what does this have to do with SDN?) </a>, Work in Progress.</li>
+<p>
 
 <li> <a
 href="talks/OpenDaylight_SDN_Workshop_AZ.pdf">
 The OpenDaylight Project: Introduction and Overview</a>, 
 <a href="http://sdn.arizona.edu/agenda"> University of Arizona
 SDN Workshop</a>, University of Arizona, Jan 06-07, 2014.</li>
+<p>
 
 <li> <a
 href="talks/nsf_sdn_program_review.pdf">Macro Trends, Complexity,
@@ -559,6 +577,7 @@ and the Current Status of Software Defined Networking</a>, <a
 href="https://www.orau.gov/sdnpr2013/default.htm">NSF Software
 Defined Networking (SDN) Program Review</a>, December 17 - 18,
 2013, Arlington, VA.</li>
+<p>
 
 <li> <a
 href="talks/itat2013.pdf">On the Complexity of Designed Systems
@@ -567,12 +586,14 @@ href="http://www.iab.org/activities/workshops/itat/">Internet
 Technology Adoption and Transition Workshop</a>, December 04 - 05, 
 2013, Cambridge, UK (<a href="papers/itat.pdf">companion position
 paper</a>). </li>
+<p>
 
 <li> <a
 href="talks/ncrg88.pdf">Bio/Techno Convergence and
 the Hidden Nature of Complexity</a>, <a
 href="http://www.ietf.org/meeting/88/index.html">Network
 Complexity Research Group, IETF 88, Vancouver, BC</a>.</li>
+<p>
 
 <li> <a
 href="talks/mpls_sdn_2013.pdf">SDN and
@@ -580,6 +601,7 @@ the Hidden Nature of Complexity</a>, <a
 href="http://www.isocore.com/mpls2013/">MPLS/SDN 2013
 INTERNATIONAL CONFERENCE</a>, 
 November 17 - 20, 2013, Washington, DC.</li>
+<p>
 
 <li> <a
 href="talks/sdn_world_congress_2013.pdf">Macro Trends, SDN, and
@@ -587,21 +609,25 @@ the Hidden Nature of Complexity</a>,
 <a href="http://www.layer123.com/sdn">SDN & OpenFlow World Congress</a>,
 15-18 October 2013, Bad Homburg, Germany (<a
 href="http://www.layer123.com/sdn-webcast/"/>video here</a>).</li>
+<p>
 
 <li> <a
 href="talks/interop_nyc_2013.pdf">OpenDaylight: Introduction and Overview</a>, 
 <a href="http://www.interop.com/newyork/">INTEROP</a>,
 Sep 30 - Oct 04 2013, New York, New York.</li>
+<p>
 
 <li> <a href="talks/onug_2013.pdf">OpenDaylight: Introduction and Overview</a>, 
 <a href="http://opennetworkingusergroup.com/">ONUG Summit</a>,
 Oct 10 2013, New York, New York.</li>
+<p>
 
 <li> <a
 href="talks/ausnog2013.pdf">Macro Trends, Complexity, and Software
 Defined Networking</a>, 
 <a href="http://www.ausnog.net/events/ausnog-2013">AusNOG 2013</a>,
-Sep 5-6, Sydney, Australia.</li>
+Sep 5-6 2013, Sydney, Australia.</li>
+<p>
 
 <li> <a
 href="talks/IETF/87/ncrg/ncrg_direction.pdf">On Understanding Network
@@ -609,6 +635,7 @@ Complexity (and the direction of the NCRG)</a>, <a href="http://irtf.org/ncrg">N
 Group</a>, <a
 href="http://www.ietf.org/meeting/87/index.html">IETF 87</a>,
 Berlin, Germany.</li>
+<p>
 
 <li> <a
 href="talks/interop_tokyo2013.pdf">Macro Trends, Complexity, and Software
@@ -616,22 +643,26 @@ Defined Networking (long version)</a>,
 <a href="http://www.interop.jp/2013/english/">INTEROP Tokyo Keynote</a>,
 June 2013, Tokyo, Japan (<a
 href="http://www.brocadejapan.com/sdn_lecture">Japanese page).</li>
+<p>
 
 <li> <a
 href="http://www.nanog.org/sites/default/files/tues.general.meyer_.macro_.3.pdf">Macro Trends, Complexity, and Software
 Defined Networking</a>, 
 <a href="/nanog.org/meetings/nanog58/home">NANOG 58</a>,
 New Orleans, Louisiana.</li>
+<p>
 
 <li> <a
 href="talks/ripe66.pdf">Architectural Musings on SDN</a>, 
 <a href="https://ripe66.ripe.net/">RIPE 66</a>, Dublin, Ireland.</li>
+<p>
 
 <li> <a
 href="talks/I2_member_meeting_2013.pdf">Architectural Musings on SDN</a>, 
 <a
 href="http://events.internet2.edu/2013/annual-meeting/">
 2013 Internet2 Annual Meeting</a>, Arlington, VA.</li>
+<p>
 
 <li> <a
 href="talks/ethernet_summit_2013.pdf">OpenFlow: Today's Reality, Tomorrow's
@@ -640,6 +671,7 @@ Promise. An Architectural Perspective</a>,
 href="http://www.ethernetsummit.com/">
 Ethernet Technology Summit 2013</a>, Santa Clara, CA.</li>
 <p>
+	
 <li> <a
 href="talks/upperside_sdn_summit_paris_2013.pdf">OpenFlow: Today's Reality, Tomorrow's
 Promise. An Architectural Perspective</a>, 
@@ -647,6 +679,7 @@ Promise. An Architectural Perspective</a>,
 href="http://www.uppersideconferences.com/sdnsummit2013/sdn2013intro.html">
 Upperside SDN Summit 2013</a>, Paris, France.</li>
 <p>
+	
 <li> <a
 href="talks/ncrg86.pdf">Macro Trends, Complexity, and Software
 Defined Networking: An Architetural Perspective</a>, 
@@ -654,147 +687,169 @@ Defined Networking: An Architetural Perspective</a>,
 href="https://datatracker.ietf.org/meeting/86/agenda/ncrg/">Network
 Complexity Research Group</a>, <a
 href="http://www.ietf.org/meeting/86/index.html">IETF 86</a>.</li>
-
+<p>
+	
 <li> <a
 href="talks/apricot2013.pdf">Seeing The Past, Present and Future:
 Macro Trends in Networking and the Role of Software Defined Networking</a>, 
 <a href="http://www.apricot2013.net/program/apops-plenary-1">APOPS
 Plenary, APRICOT 2013.</a></li> 
+<p>
 
 <li> <a
 href="talks/TIP2013/tip2013.pdf">Seeing The Past, Present and Future:
 Macro Trends in Networking and the Role of Software Defined Networking</a>, <a
 href="http://events.internet2.edu/2013/tip/index.cfm">
 TIP 2013.</li>
+<p>
 
 <li> <a href="talks/sdn-hard.pdf">What are the "sdn-hard"
 problems?</a>, <a
 href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=12363">Dagstuhl
 Seminars: Software Defined Networking</a>, Schloss Dagstuhl -
 Leibniz Center for Informatics, September, 2012.</li>
+<p>
 
 <li> <a href="talks/hoti_fad_or_phenom.pdf">SDN: Fad or
 Phenom?</a>, <a href="http://www.hoti.org">IEEE Hot
 Interconnects</a>, Santa Clara, CA, August 22-23, 2012.</li>
+<p>
 
 <li> <a href="talks/IETF83/ncrg_complexity_antifragility_and_integrated_thories.pdf">
 Complexity, Antifragility, and Integrated Theories</a>, IRTF
 Network Complexity Working Group, IETF 83, Paris, France, March, 2012.</li>
+<p>
 
 <li> <a href="talks/some_musings_on_of_and_sdn.pdf">
 Some Musings on OpenFlow and SDN for Enterprise Networks</a>,
 Open Networking Summit, October 17-19, 2011 (<a href="http://www.youtube.com/watch?v=PbFaokQIREw">video here</a>)</li> 
+<p>
 
 <li> <a href="talks/IETF76/lisp-ietf-arn-mn.final.pdf">LISP Mobile
 Node</a>, LISP Working Group, IETF 76, Hiroshima, Japan, November
 8-13, 2009. </li> 
+<p>
 
 <li> <a
 href="http://nanog.org/meetings/nanog45/presentations/Monday/Meyer_iteotwawki_N45.pdf">Its The End Of The World As We Know
 It (aka "The New Internet Architecture")</a>, 
 NANOG 45, January 25-28, 2009, Santo Domingo, Dominican
 Republic.</li> 
+<p>
 
 <li> <a
 href="lisp-ausnog02.pdf">LISP -- What is it, and how much is
 real?</a>, AusNOG 02 Keynote, August, 2008. </li>
+<p>
 
 <li> <a
 href="cdo-express-ip-econ.ps">Workshop on the Economics of IP
 Addresses</a>, Cisco Research Symposium, March, 2008. </li>
+<p>
 
 <li> <a
 href="http://events.internet2.edu/2008/jt-hawaii/sessionDetails.cfm?session=3612&event=278">LISP
 Overview</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008. </li>
+<p>
 
 <li> <a
 href="http://events.internet2.edu/2008/jt-hawaii/sessionDetails.cfm?session=3609&event=278">Routeviews
 Update</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008. </li>
+<p>
 
 <li> <a href="http://www.ripe.net/ripe/meetings/ripe-55/presentations/meyer-lisp.pdf">
-LISP: A Level of Indirection for Routing</a>,
-RIPE 55, October, 2007.</li> 
+LISP: A Level of Indirection for Routing</a>, RIPE 55, October, 2007.</li> 
+<p>
 
 <li> <a href="./talks/NANOG41/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
-NANOG 41, October, 2007.</li> 
-
-<li> <a href="http://www.internetevolution.com/author.asp?section_id=506&doc_id=137319">
+NANOG 41, October, 2007. <a href="http://www.internetevolution.com/author.asp?section_id=506&doc_id=137319">
 Bill St. Arnaud's commentary on my NANOG 41 Perfect Storm talk</a>.</li> 
+<p>
 
-<li> <a href="./talks/NANOG41/cons">
-LISP-CONS: A Mapping Database Service</a>,
-NANOG 41, October, 2007.</li> 
+<li> <a href="./talks/NANOG41/cons"> LISP-CONS: A Mapping Database Service</a>, NANOG 41, October, 2007.</li> 
+<p>
 
 <li> <a href="./talks/apricot2007/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
 Keynote Address, Apricot 2007, Bali, Indonesia. </li> 
+<p>
 
 <li> <a href="./talks/apricot2006/multihoming">
 APRICOT IAB IPv6 Multihoming BOF</a>,
 <a href="http://apricot2006.net">APRICOT 2006</a>,
 February 22 - March 03, 2006. Perth, Western Australia.</li> 
+<p>
 
 <li> <a href="./talks/NANOG35/multihoming">
 IAB IPv6 Multihoming BOF</a>,
 <a href="http://www.nanog.org/mtg-0510/iab.html">NANOG 35</a>,
 October 22-23, 2005. Los Angeles, CA.</li> 
+<p>
 
 <li> <a href="./talks/NANOG35/iab">
 What the heck is the IAB anyway?</a>,
 <a href="http://www.nanog.org/mtg-0510">NANOG 35</a>,
 October 22-23, 2005. Los Angeles, CA.</li> 
+<p>
 
 <li> <a href="./talks/NANOG34/oix">
 The Oregon Internet Exchange (OIX)</a>,
 <a href="http://www.nanog.org/">NANOG 34</a>, 15 May - 17 May,
 2005. Seattle, WA.</li> 
+<p>
 
 <li> <a href="./talks/SANOGV">
 Complexity and Service Provider Networks in the 21st Century</a>,
 <a href="http://www.sanog.org/sanog5/program.htm">SANOG V</a>, 06
 Feb - 13 Feb, 2005, Dhaka, Bangladesh.</li> 
+<p>
 
 <li> <a href="./talks/NANOG33/ims">
 The IP Multimedia Subsystem (and what it might mean to you) </a>,
 <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb
 2005. Las Vegas, NV.</li> 
+<p>
 
 <li> <a href="./talks/NANOG33/designing">
 Designing for Complexity: A Few New Concepts And Their Application To Your Networks
-</a>,
-<a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb
-2005. Las Vegas, NV.</li> 
+</a>, <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb 2005. Las Vegas, NV.</li> 
+<p>
 
 <li> <a href="./talks/routeviews/ISMA2004">
 Route-Views Update, ISMA Data Catalog Workshop</a>, 03 Jun, 2004.</li>
+<p>
 
 <li> <a href="./talks/NANOG28/s-o-bgp"> BGP
 Security, Availability, and Operator Needs </a>, <a
 href="http://www.nanog.org/mtg-0306/index.html">NANOG 28</a>,
 02 Jun 2003, Salt Lake City, Utah. </li>
+<p>
 
-<li> <a href="./talks/NANOG27/btsh">
-The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
-09 Feb - 11 Feb 2003, Phoenix, Arizona. <a
-href="http://www.nanog.org/mtg-0302/index.html">http://www.nanog.org/mtg-0302
-</a></li>.
+<li> <a href="./talks/NANOG27/btsh">The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
+09 Feb - 11 Feb 2003, Phoenix, Arizona. <a href="http://www.nanog.org/mtg-0302/index.html">
+http://www.nanog.org/mtg-0302.</a></li>
+<p>
 
-<li> <a href="./talks/IETF55/ieprep">
-Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
+<li> <a href="./talks/IETF55/ieprep"> Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
 Group, IETF 55, 18 Nov 2002</li>.
+<p>
 
 <li> <a href="./talks/NANOG26/complexity_panel">
 Services, Complexity, and the Internet: What Direction?</a> NANOG
-26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">http://www.nanog.org/mtg-0210/index.html</a></li>.
+26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">
+http://www.nanog.org/mtg-0210/index.html</a></li>.
+<p>
 
 <li> <a href="./talks/iepg_07142002">
 What Happened to the Dinosaurs? (One Person's View of the IP Carrier
 Space)</a>. IEPG, Jul 2002.  Please see <a href="http://www.potaroo.net/iepg/july2002/">http://www.potaroo.net/iepg/july2002</a></li>.
-
+<p>
+	
 <li><a href="./talks/NANOG23/bgp_track">BGP Trends and Dynamics
 Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
 <a href="http://www.nanog.org/mtg-0110/">http://www.nanog.org/mtg-0110</a></li>.
+<p>
 
 <li><a href="./talks/ISMA0112"> Route Views
 Update</a>. Winter ISMA 2001. Please see also <a
@@ -813,7 +868,6 @@ Applicability Of Machine Learning To Networking</a>,
 </li>
 <p>
 
-
 <a href="http://community.brocade.com/t5/CTO-Corner/Networking-Meets-Artificial-Intelligence-A-Glimpse-into-the-Very/ba-p/88196">
 Networking Meets Artificial Intelligence: A Glimpse into the
 (Very) Near Future</a>, 19 Aug 2016.
@@ -826,7 +880,6 @@ learning</a>, 09 Aug 2015.
 <a
 href="https://www.sdxcentral.com/articles/contributed/ai-sdn-dave-meyer-view-of-role-of-ai-in-networking-art-fewell/2015/02/">SkyNet
 = AI + SDN? Dave Meyer Shares His View of The Role of AI in Networking</a> 23 Feb 2015.
-
 <p>
 
 <a
@@ -856,13 +909,14 @@ I stood down as Chair of the OpenDaylight Technical Steering
 Committee</a>, 17 Oct 2014.
 <p>
 
-
 <a
 href="http://dmm613.wordpress.com/2014/10/15/intriguing-properties-of-neural-networks/">Intriguing properties of neural networks?</a>, 15 Oct 2014.
 <p>
+	
 <a
 href="http://dmm613.wordpress.com/2014/09/22/artificial-neural-networks-part-1/">Demystifying Artificial Neural Networks, Part 1</a>, 22 Sep 2014.
 <p>
+	
 <a
 href="http://dmm613.wordpress.com/2014/09/17/software-defined-intelligence/">Software
 Defined Intelligence</a>, 17 Sep 2014.
@@ -878,6 +932,7 @@ href="http://packetpushers.net/value-proposition-standards-age-open-source">What
 is the value proposition of Standards in the age of Open
 Source?</a> 17 Apr 2014.
 <p>
+	
 <a href="http://www.sdncentral.com/education/david-meyer-reflections-opendaylight-open-source-project-brocade/2014/03/">Reflections
 on a Year Inside the OpenDaylight Project</a>, <a
 href="talks/my_year_inside_odp.txt">raw text here</a>, 20 Mar 2014.
@@ -887,9 +942,11 @@ href="talks/my_year_inside_odp.txt">raw text here</a>, 20 Mar 2014.
 The First 60 Days</a>, <a
 href="http://www.opendaylight.org/">The OpenDaylight Project</a>.
 <p>
+	
 <a href="http://www.opendaylight.org/blogs/2013/06/rapid-innovation-open-source-sdn-opendaylight-hackfest">
 Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.
 </ul>
+
 <p>
 <h2>Recent Publications</h2>
 <p>
@@ -937,59 +994,65 @@ Meyer, David, <a href="papers/IC-17-06-Standards.pdf"><i>The Software Defined
 Networking Research Group</i></a><a href="http://www.computer.org/portal/web/computingnow/networking">, IEEE INTERNET COMPUTING.</a>
 <p>
 
-
-<p>
 Barkai, S.B., et. al., <i> LISP Based FlowMapping for Scaling NFV</i>,
 <a href="http://www.ietf.org/id/draft-barkai-lisp-nfv-09.txt">
 draft-barkai-lisp-nfv-04.txt.</a>
 <p>
 
-
-<p>
 Barkai, S., R. Katz, D. Farinacci, and D. Meyer, <i><a href="http://conferences.sigcomm.org/sigcomm/2013/papers/hotsdn/p149.pdf">Software
 Defined Flow-Mapping for Scaling Virtualized Network
 Functions</i>, <a
 href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">SIGCOMM
 HotSDN 2013</a>, Hong Kong, China.
 <p>
+	
 Kumaki, K., P. Mohapatra and D. Meyer, <i>A Virtualized Network
 Element Framework</i>, <a href="https://datatracker.ietf.org/doc/draft-kumaki-vnef/">draft-kumaki-vnef-02.txt</a>.
-
 <p>
+	
 Natal, A.R., et. al, <i>LISP-MN: Mobile Networking through
 LISP</i>, Proc. of Springer Wireless Personal Communications
 Journal, 2012.
 <p>
+	
 Meyer, David, <a
 href="http://www.cisco.com/web/about/ac123/ac147/archived_issues/ipj_11-1/ipj_11-1.pdf">
 <i>The LISP Protocol</i></a>, The Internet Protocol Journal, Volume 11,
 No. 1, March, 2008.
 <p>
+	
 Farinacci, D. et. al., <i>The Locator/ID Separation Protocol
 (LISP)</i>, <a href="http://datatracker.ietf.org/doc/rfc6830">RFC 6830.</a>
 <p>
+	
 Farinacci, D. et. al, <i>The Locator/ID Separation Protocol
 (LISP) for Multicast Environments</i>, <a href="http://datatracker.ietf.org/doc/rfc6831/"> RFC 6831.</a>
 <p>
+	
 Lewis, D. et. al., <i>Interworking between Locator/ID Separation Protocol (LISP) and Non-LISP Sites</i>,<a
 href="http://datatracker.ietf.org/doc/rfc6832"> RFC 6832</a>
 <p>
+	
 Farinacci, D. and D. Meyer, <i>The Locator/ID Separation Protocol
 Internet Groper (LIG)</i>, <a
 href="http://datatracker.ietf.org/doc/rfc6835">RFC 6835.</a> 
 <p>
+	
 Fuller, V. et. al., <i>The Locator/ID Separation Protocol
 Alternative Logical Topology (LISP+ALT)</i>, <a
 href="http://datatracker.ietf.org/doc/rfc6836"> RFC 6836.</a>
 <p>
+	
 Meyer, D. et. al, <i>LISP Mobile Node</i>, <a
 href="http://www.ietf.org/internet-drafts/draft-meyer-lisp-mn-08.txt">
 draft-meyer-lisp-mn-07.txt.</a> 
 <p>
+	
 Meyer, D. and D. Lewis, <i>Architectural Implications of Locator/ID Separation</i>,<a
 href="http://tools.ietf.org/html/draft-meyer-loc-id-implications-02.txt">
 draft-meyer-loc-id-implications-02.txt.</a>
 <p>
+	
 Baker, F. and D. Meyer,  <i>Internet Protocols for the Smart Grid</i>,<a
 href="http://www.rfc-editor.org/rfc/rfc6272.txt">
 RFC 6272.</a> 
