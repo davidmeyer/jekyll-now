@@ -15,8 +15,7 @@ Curriculum Vitae
 </h1>
 	
 
-<ul> 
-<li> <h2> PERSONAL </h2> 
+* <h2>PERSONAL</h2> 
 <pre> 
 Address:  1225 Kincaid St. 
           Eugene, OR 97403 
@@ -27,7 +26,8 @@ Email:    <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a>
 Email:    <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a> 
 Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
 </pre>
-	
+
+<uL>
 <p> 
 <li><h2> EDUCATION </h2> 
 <p> 
@@ -62,7 +62,7 @@ Fellow, 1986-1987.
 <li> Surfing 
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> 
 </ul> 
-<br>
+	
 <li><h2>EXPERIENCE </h2>
 <ul>
 <li>Chief Scientist,  <a
