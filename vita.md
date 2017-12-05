@@ -22,7 +22,7 @@ Curriculum Vitae
 <li>Office:  +1.541.346.1747</li>
 <li>Mobile:  +1.541.221.1843</li>
 <li>Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a></li>
-E<li>mail:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
+<li>Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
 <li>Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a></li>
 <li>Vita:    <a href="https://davidmeyer.github.io/vita">https://davidmeyer.github.io/vita</a></li>
 </ul>
