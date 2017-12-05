@@ -8,6 +8,17 @@
 # 
  
 --> 
+
+pre, xmp, plaintext, listing {
+    white-space: pre;
+}
+.markdown-body pre > code {
+    white-space: pre;
+}
+.markdown-body code {
+    white-space: nowrap;
+}
+
 <h1>
 <p align="left">
 Curriculum Vitae
@@ -15,7 +26,7 @@ Curriculum Vitae
 </h1>
 	
 <h2>PERSONAL</h2> 
-<pre-wrap> 
+<pre> 
 Address:  1225 Kincaid St. Eugene, OR 97403 
 Office:   +1.541.346.1747 
 Mobile:   +1.541.221.1843 
@@ -23,7 +34,7 @@ Email:    <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a>
 Email:    <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a> 
 Email:    <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a> 
 Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
-</pre-wrap>
+</pre>
 
 <h2>EDUCATION</h2>
 <ul>
