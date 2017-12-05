@@ -10,8 +10,7 @@
 --> 
 <h1>
 <p align="left">
-Curriculum Vitae <br>
-  David Meyer 
+Curriculum Vitae
 </p> 
 </h1>
 	
@@ -30,7 +29,7 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 </pre>
 	
 <p> 
-<li><h1> EDUCATION </h1> 
+<li><h2> EDUCATION </h2> 
 <p> 
 <ul> 
 <li> B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor 
@@ -63,7 +62,7 @@ Fellow, 1986-1987.
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> 
 </ul> 
 
-<li><h1> EXPERIENCE </h1>
+<li><h2> EXPERIENCE </h2>
 <ul>
 <li><b>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
@@ -295,7 +294,7 @@ machines and networks.
 </ul>
 <p>
 
-<li><h1>Recent Talks</h1>
+<li><h2>Recent Talks</h2>
 
 <i>
 <a href="./qc">Thoughts on Various Topics
@@ -1267,7 +1266,7 @@ Conference on Logic Programming, Jerusalem, Israel, 1990.
 <p>
 
 
-<li><h1>ACTIVE GRANTS</h1></li>
+<li><h2>ACTIVE GRANTS</h2></li>
 <p>
 <a href="http://www.routeviews.org">Collaborative Research:
 CI-ADDO-EN: Making Internet Routing Data Accessible To All</a>,
