@@ -859,364 +859,390 @@ href="http://www.caida.org/outreach/isma">http://www.caida.org/outreach/isma</a>
 
 <h2>Recent Blogs and the like</h2>
 <ul>
-<i>
-<a
-href="http://packetpushers.net/podcast/podcasts/pq-show-107-applicability-machine-learning-networking/">The
+<li>
+<a href="http://packetpushers.net/podcast/podcasts/pq-show-107-applicability-machine-learning-networking/">The
 Applicability Of Machine Learning To Networking</a>,
 <a href="http://packetpushers.net/">PacketPushers</a>, 09 Mar 2017.
 </li>
 <p>
 
-<a href="http://community.brocade.com/t5/CTO-Corner/Networking-Meets-Artificial-Intelligence-A-Glimpse-into-the-Very/ba-p/88196">
+<li> <a href="http://community.brocade.com/t5/CTO-Corner/Networking-Meets-Artificial-Intelligence-A-Glimpse-into-the-Very/ba-p/88196">
 Networking Meets Artificial Intelligence: A Glimpse into the
-(Very) Near Future</a>, 19 Aug 2016.
+(Very) Near Future</a>, 19 Aug 2016. </li>
 <p>
 
-<a href="./papers/mm.pdf">Some thoughts
+<li> <a href="./papers/mm.pdf">Some thoughts
 on what is minimized and what is maximized in machine
-learning</a>, 09 Aug 2015.
+learning</a>, 09 Aug 2015.</li>
 <p>
-<a
+	
+<li><a
 href="https://www.sdxcentral.com/articles/contributed/ai-sdn-dave-meyer-view-of-role-of-ai-in-networking-art-fewell/2015/02/">SkyNet
-= AI + SDN? Dave Meyer Shares His View of The Role of AI in Networking</a> 23 Feb 2015.
+= AI + SDN? Dave Meyer Shares His View of The Role of AI in Networking</a> 23 Feb 2015.</li>
 <p>
 
-<a
+<li> <a
 href="https://dmm613.wordpress.com/2014/12/29/dont-fear-the-ai/">Don't
-Fear The AI?</a>, 29 Dec 2014.
+Fear The AI?</a>, 29 Dec 2014.</li>
 <p>
 
-<a
+<li><a
 href="./papers/intro_to_autoencoders.pdf">Introduction
-to Autoencoders (Work in Progress)</a>, 18 Dec 2014.
+to Autoencoders (Work in Progress)</a>, 18 Dec 2014.</li>
 <p>
 
-<a
+<li><a
 href="https://dmm613.wordpress.com/2014/12/16/demystifying-artificial-neural-networks-part-2/">Demystifying
-Artifical Neural Networks, Part 2</a>, 16 Dec 2014.
+Artifical Neural Networks, Part 2</a>, 16 Dec 2014.</li>
 <p>
 
-<a
+<li><a
 href="http://dmm613.wordpress.com/2014/11/18/the-anthropic-problem-entropy-and-ai/">Keeping
-Your Options Open: The Anthropic Problem, Entropy, and AI</a>, 18
-Nov 2014.
+Your Options Open: The Anthropic Problem, Entropy, and AI</a>, 18 Nov 2014.</li>
 <p>
 
-<a
+<li><a
 href="http://dmm613.wordpress.com/2014/10/17/why-i-stood-down-as-chair-of-the-opendaylight-technical-steering-committee/">Why
-I stood down as Chair of the OpenDaylight Technical Steering
-Committee</a>, 17 Oct 2014.
+I stood down as Chair of the OpenDaylight Technical Steering Committee</a>, 17 Oct 2014.</li>
 <p>
 
-<a
-href="http://dmm613.wordpress.com/2014/10/15/intriguing-properties-of-neural-networks/">Intriguing properties of neural networks?</a>, 15 Oct 2014.
+<li><a
+href="http://dmm613.wordpress.com/2014/10/15/intriguing-properties-of-neural-networks/">Intriguing properties of neural networks?</a>, 15 Oct 2014.</li>
 <p>
 	
-<a
-href="http://dmm613.wordpress.com/2014/09/22/artificial-neural-networks-part-1/">Demystifying Artificial Neural Networks, Part 1</a>, 22 Sep 2014.
+<li><a
+href="http://dmm613.wordpress.com/2014/09/22/artificial-neural-networks-part-1/">Demystifying Artificial Neural Networks, Part 1</a>, 22 Sep 2014.</li>
 <p>
 	
-<a
+<li><a
 href="http://dmm613.wordpress.com/2014/09/17/software-defined-intelligence/">Software
-Defined Intelligence</a>, 17 Sep 2014.
+Defined Intelligence</a>, 17 Sep 2014.</li>
 <p>
 
-<a
+<li><a
 href="http://packetpushers.net/artificial-intelligence-brains-networks-bugs-complexity/">Artificial
-Intelligence, Brains, Networks, Bugs, and Complexity</a>, 06 May 2014.
+Intelligence, Brains, Networks, Bugs, and Complexity</a>, 06 May 2014.</li>
 <p>
 
-<a
+<li><a
 href="http://packetpushers.net/value-proposition-standards-age-open-source">What
 is the value proposition of Standards in the age of Open
-Source?</a> 17 Apr 2014.
+Source?</a> 17 Apr 2014.</li>
 <p>
 	
-<a href="http://www.sdncentral.com/education/david-meyer-reflections-opendaylight-open-source-project-brocade/2014/03/">Reflections
-on a Year Inside the OpenDaylight Project</a>, <a
-href="talks/my_year_inside_odp.txt">raw text here</a>, 20 Mar 2014.
+<li><a href="http://www.sdncentral.com/education/david-meyer-reflections-opendaylight-open-source-project-brocade/2014/03/">Reflections
+on a Year Inside the OpenDaylight Project</a>, <a href="talks/my_year_inside_odp.txt">raw text here</a>, 20 Mar 2014.</li>
 <p>
 
-<a href="http://www.opendaylight.org/blogs/2013/06/first-60-days">
+<li><a href="http://www.opendaylight.org/blogs/2013/06/first-60-days">
 The First 60 Days</a>, <a
-href="http://www.opendaylight.org/">The OpenDaylight Project</a>.
+href="http://www.opendaylight.org/">The OpenDaylight Project</a>.</li>
 <p>
 	
-<a href="http://www.opendaylight.org/blogs/2013/06/rapid-innovation-open-source-sdn-opendaylight-hackfest">
-Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.
+<li><a href="http://www.opendaylight.org/blogs/2013/06/rapid-innovation-open-source-sdn-opendaylight-hackfest">
+Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.</li>
 </ul>
 
 <p>
 <h2>Recent Publications</h2>
-<p>
+
+<ul>
 Meyer RFC Overview, <a
 href="http://www.arkko.com/tools/allstats/davidmeyer.html">http://www.arkko.com/tools/allstats/davidmeyer.html.</a>
 
 <p>
-Not recent but still something fun someone recently pointed out
-to me: <a href="http://www.me.umn.edu/~bob/FAQ/faq.solaris.porting">Solaris2/porting-FAQ</a>
-
+<li>Not recent but still something fun someone recently pointed out
+to me: <a href="http://www.me.umn.edu/~bob/FAQ/faq.solaris.porting">Solaris2/porting-FAQ.</a></li>
 <p>
-Mestres, Albert, et. al., 
+	
+<li>Mestres, Albert, et. al., 
 <a href="https://ccronline.sigcomm.org/wp-content/uploads/2017/08/sigcomm-ccr-final92-full-letter.pdf">
 <i>Knowledge-Defined Networking</i></a>, <a
 href="http://www.sigcomm.org/publications/computer-communication-review">ACM
-Computer Communication Review</a>, July, 2017 (<a href="http://arxiv.org/pdf/1606.06222.pdf">arxiv</a>).
-
+Computer Communication Review</a>, July, 2017 (<a href="http://arxiv.org/pdf/1606.06222.pdf">arxiv</a>).</li>
 <p>
-Farinacci, D. et. al., , <a
+	
+<li>Farinacci, D. et. al., , <a
 href="https://www.rfc-editor.org/authors/rfc8060.txt">LISP
-Canonical Address Format (LCAF)</a>, RFC 8080.
+Canonical Address Format (LCAF)</a>, RFC 8080.</li>
 <p>
 
-<p>
-Iannone, L., et. al., <a
+<li>Iannone, L., et. al., <a
 href="https://www.rfc-editor.org/authors/rfc7954.txt">
 Locator/ID Separation Protocol (LISP) Endpoint Identifier (EID)
-Block</a>, RFC 7954. 
-
+Block</a>, RFC 7954. </li>
 <p>
-Haleplidis, E., et. al., <a
+	
+<li>Haleplidis, E., et. al., <a
 href="https://tools.ietf.org/html/rfc7426">
-SDN Layers and Architecture Terminology</a>, RFC 7426.
-
+SDN Layers and Architecture Terminology</a>, RFC 7426.</li>
 <p>
-Meyer, David, <a href="papers/itat.pdf"> <i>On the Complexity of
+	
+<li>Meyer, David, <a href="papers/itat.pdf"> <i>On the Complexity of
 Designed Systems (and its effect on protocol deployment)</i>, 
 </a><a href="http://www.iab.org/activities/workshops/itat/"> IAB
 Workshop on Internet Technology Adoption and Transition (ITAT)</a>,
-Cambridge, UK, December 4-6, 2013. 
+Cambridge, UK, December 4-6, 2013. </li>
 <p>
 
 <p>
-Meyer, David, <a href="papers/IC-17-06-Standards.pdf"><i>The Software Defined
-Networking Research Group</i></a><a href="http://www.computer.org/portal/web/computingnow/networking">, IEEE INTERNET COMPUTING.</a>
+<li> Meyer, David, <a href="papers/IC-17-06-Standards.pdf"><i>The Software Defined
+Networking Research Group</i></a><a href="http://www.computer.org/portal/web/computingnow/networking">, 
+IEEE INTERNET COMPUTING.</a></li>
 <p>
 
-Barkai, S.B., et. al., <i> LISP Based FlowMapping for Scaling NFV</i>,
+<li>Barkai, S.B., et. al., <i> LISP Based FlowMapping for Scaling NFV</i>,
 <a href="http://www.ietf.org/id/draft-barkai-lisp-nfv-09.txt">
-draft-barkai-lisp-nfv-04.txt.</a>
+draft-barkai-lisp-nfv-04.txt.</a></li>
 <p>
 
-Barkai, S., R. Katz, D. Farinacci, and D. Meyer, <i><a href="http://conferences.sigcomm.org/sigcomm/2013/papers/hotsdn/p149.pdf">Software
-Defined Flow-Mapping for Scaling Virtualized Network
-Functions</i>, <a
+<li>Barkai, S., R. Katz, D. Farinacci, and D. Meyer, <i><a href="http://conferences.sigcomm.org/sigcomm/2013/papers/hotsdn/p149.pdf">Software
+Defined Flow-Mapping for Scaling Virtualized Network Functions</i>, <a
 href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">SIGCOMM
-HotSDN 2013</a>, Hong Kong, China.
+HotSDN 2013</a>, Hong Kong, China.</li>
 <p>
 	
-Kumaki, K., P. Mohapatra and D. Meyer, <i>A Virtualized Network
-Element Framework</i>, <a href="https://datatracker.ietf.org/doc/draft-kumaki-vnef/">draft-kumaki-vnef-02.txt</a>.
+<li>Kumaki, K., P. Mohapatra and D. Meyer, <i>A Virtualized Network
+Element Framework</i>, <a href="https://datatracker.ietf.org/doc/draft-kumaki-vnef/">draft-kumaki-vnef-02.txt</a>.</li>
 <p>
 	
-Natal, A.R., et. al, <i>LISP-MN: Mobile Networking through
+<li>Natal, A.R., et. al, <i>LISP-MN: Mobile Networking through
 LISP</i>, Proc. of Springer Wireless Personal Communications
-Journal, 2012.
+Journal, 2012.</li>
 <p>
 	
-Meyer, David, <a
+<li>Meyer, David, <a
 href="http://www.cisco.com/web/about/ac123/ac147/archived_issues/ipj_11-1/ipj_11-1.pdf">
 <i>The LISP Protocol</i></a>, The Internet Protocol Journal, Volume 11,
-No. 1, March, 2008.
+No. 1, March, 2008.</li>
 <p>
 	
-Farinacci, D. et. al., <i>The Locator/ID Separation Protocol
-(LISP)</i>, <a href="http://datatracker.ietf.org/doc/rfc6830">RFC 6830.</a>
+<li>Farinacci, D. et. al., <i>The Locator/ID Separation Protocol
+(LISP)</i>, <a href="http://datatracker.ietf.org/doc/rfc6830">RFC 6830.</a></li>
 <p>
 	
-Farinacci, D. et. al, <i>The Locator/ID Separation Protocol
-(LISP) for Multicast Environments</i>, <a href="http://datatracker.ietf.org/doc/rfc6831/"> RFC 6831.</a>
+<li>Farinacci, D. et. al, <i>The Locator/ID Separation Protocol
+(LISP) for Multicast Environments</i>, <a href="http://datatracker.ietf.org/doc/rfc6831/"> RFC 6831.</a></li>
 <p>
 	
-Lewis, D. et. al., <i>Interworking between Locator/ID Separation Protocol (LISP) and Non-LISP Sites</i>,<a
-href="http://datatracker.ietf.org/doc/rfc6832"> RFC 6832</a>
+<li>Lewis, D. et. al., <i>Interworking between Locator/ID Separation Protocol (LISP) and Non-LISP Sites</i>,<a
+href="http://datatracker.ietf.org/doc/rfc6832"> RFC 6832.</a></li>
 <p>
 	
-Farinacci, D. and D. Meyer, <i>The Locator/ID Separation Protocol
+<li>Farinacci, D. and D. Meyer, <i>The Locator/ID Separation Protocol
 Internet Groper (LIG)</i>, <a
-href="http://datatracker.ietf.org/doc/rfc6835">RFC 6835.</a> 
+href="http://datatracker.ietf.org/doc/rfc6835">RFC 6835.</a> </li>
 <p>
 	
-Fuller, V. et. al., <i>The Locator/ID Separation Protocol
+<li>Fuller, V. et. al., <i>The Locator/ID Separation Protocol
 Alternative Logical Topology (LISP+ALT)</i>, <a
-href="http://datatracker.ietf.org/doc/rfc6836"> RFC 6836.</a>
+href="http://datatracker.ietf.org/doc/rfc6836"> RFC 6836.</a></li>
 <p>
 	
-Meyer, D. et. al, <i>LISP Mobile Node</i>, <a
+<li>Meyer, D. et. al, <i>LISP Mobile Node</i>, <a
 href="http://www.ietf.org/internet-drafts/draft-meyer-lisp-mn-08.txt">
-draft-meyer-lisp-mn-07.txt.</a> 
+draft-meyer-lisp-mn-07.txt.</a> </li>
 <p>
 	
-Meyer, D. and D. Lewis, <i>Architectural Implications of Locator/ID Separation</i>,<a
+<li>Meyer, D. and D. Lewis, <i>Architectural Implications of Locator/ID Separation</i>,<a
 href="http://tools.ietf.org/html/draft-meyer-loc-id-implications-02.txt">
-draft-meyer-loc-id-implications-02.txt.</a>
+draft-meyer-loc-id-implications-02.txt.</a></li>
 <p>
 	
-Baker, F. and D. Meyer,  <i>Internet Protocols for the Smart Grid</i>,<a
+<li>Baker, F. and D. Meyer,  <i>Internet Protocols for the Smart Grid</i>,<a
 href="http://www.rfc-editor.org/rfc/rfc6272.txt">
-RFC 6272.</a> 
+RFC 6272.</a> </li>
 <p>
-Malas, D. and D. Meyer, <i>SPEERMINT Terminology</i>,<a
-href="http://www.rfc-editor.org/rfc/rfc5486.txt"> RFC 5486.</a>
+	
+<li>Malas, D. and D. Meyer, <i>SPEERMINT Terminology</i>,<a
+href="http://www.rfc-editor.org/rfc/rfc5486.txt"> RFC 5486.</a></li>
 <p>
-Meyer, David, <a
+	
+<li>Meyer, David, <a
 href="./n2-routing-and-addressing-research.pdf"><i>An
 Overview of Current IETF Activity on Routing and Addressing
 Models for the Internet</i></a>, Cisco IP NGN Thought Leadership
-Journal, Winter, 2008.
+Journal, Winter, 2008.</li>
 <p>
-Meyer, D., <i>Update on Routing and Addressing at IETF 69</i>,
+	
+<li>Meyer, D., <i>Update on Routing and Addressing at IETF 69</i>,
 <a href="http://www.isoc.org/tools/blogs/ietfjournal/?p=158#more-158">
-IETF Journal, Volume 3 Issue 2 (October 2007).</a>
+IETF Journal, Volume 3 Issue 2 (October 2007).</a></li>
 <p>
-Gill, V., et. al., <i>The Generalized TTL Security Mechanism (GTSM)</i>,<a
-href="http://www.rfc-editor.org/rfc/rfc5082.txt"> RFC 5082.</a>
+	
+<li>Gill, V., et. al., <i>The Generalized TTL Security Mechanism (GTSM)</i>,<a
+href="http://www.rfc-editor.org/rfc/rfc5082.txt"> RFC 5082.</a></li>
 <p>
-Levkowetz, H., et. al, <i>Document Shepherding from Working Group
+	
+<li>Levkowetz, H., et. al, <i>Document Shepherding from Working Group
 Last Call to Publication</i>,<a
 href="http://www.rfc-editor.org/rfc/rfc4858.txt"> RFC
-4858.</a>
+4858.</a></li>
 <p>
-Meyer, D. et. al., <i>Report from the IAB Workshop on Routing and
+	
+<li>Meyer, D. et. al., <i>Report from the IAB Workshop on Routing and
 Addressing</i>,<a
 href="http://www.rfc-editor.org/rfc/rfc4984.txt">
-RFC 4984.</a>
+RFC 4984.</a></li>
 <p>
-Meyer, D., and O. Kolkman, <i>On the Formatting and Content of IETF
+	
+<li>Meyer, D., and O. Kolkman, <i>On the Formatting and Content of IETF
 Working Group Agendas and Minutes</i>,<a
-href="http://www.ietf.org/IESG/content/ions/drafts/ion-agenda-and-minutes.html"> ion-agenda-and-minutes.html.</a>
+href="http://www.ietf.org/IESG/content/ions/drafts/ion-agenda-and-minutes.html"> ion-agenda-and-minutes.html.</a></li>
 <p>
-McBride, M., J. Meylor, and D. Meyer, <i>Multicast Source
+	
+<li>McBride, M., J. Meylor, and D. Meyer, <i>Multicast Source
 Discovery Protocol Deployment Scenarios</i>, <a
 href="ftp://ftp.rfc-editor.org/in-notes/rfc4611.txt">
-RFC 4611</a>.
+RFC 4611</a>.</li>
 <p>
-<p>
-Savola, P.,  R. Lehtonen and D. Meyer, 
+	
+<li>Savola, P.,  R. Lehtonen and D. Meyer, 
 <i>Protocol Independent Multicast - Sparse Mode (PIM-SM)
 Multicast Routing Security Issues and Enhancements</i>,
-<a
-href="http://www.ietf.org/rfc/rfc4609.txt">
-RFC 4609</a>.
+<a href="http://www.ietf.org/rfc/rfc4609.txt">RFC 4609</a>.</li>
 <p>
-Meyer, D., R. Rockell, and G. Shepherd, <i>Source-Specific
+	
+<li>Meyer, D., R. Rockell, and G. Shepherd, <i>Source-Specific
 Protocol Independent Multicast in 232/8</i>, 
- <a
- href="ftp://ftp.rfc-editor.org/in-notes/rfc4608.txt"> 
-RFC 4608</a>.
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc4608.txt">RFC 4608</a>.</li>
 <p>
-Meyer, D., <i>BGP Communities for Data Collection</i>, 
+	
+<li>Meyer, D., <i>BGP Communities for Data Collection</i>, 
 <a href="ftp://ftp.rfc-editor.org/in-notes/rfc4384.txt">
-RFC 4384</a>.
+RFC 4384</a>.</li>
 <p>
-Meyer, D. and K. Patel, <i>BGP-4 Protocol Analysis</i>, 
-<a
-href="ftp://ftp.rfc-editor.org/in-notes/rfc4274.txt">RFC 4274</a>.
+	
+<li>Meyer, D. and K. Patel, <i>BGP-4 Protocol Analysis</i>, 
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc4274.txt">RFC 4274</a>.</li>
 <p>
-Brungard, D. (editor), <i>Requirements for Generalized MPLS (GMPLS)
+	
+<li> Brungard, D. (editor), <i>Requirements for Generalized MPLS (GMPLS)
 Routing for Automatically Switched Optical Network (ASON)</i>, 
-<a href="ftp://ftp.rfc-editor.org/in-notes/rfc4258.txt">RFC 4258</a>.
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc4258.txt">RFC 4258</a>.</li>
 <p>
-Gill, V., J. Heasley and D. Meyer, <i>The Generalized TTL Security Mechanism (GTSM)</i>, <a href="ftp://ftp.rfc-editor.org/in-notes/rfc3682.txt"> 
-RFC 3682</a>.
+	
+<li>Gill, V., J. Heasley and D. Meyer, <i>The Generalized TTL Security Mechanism (GTSM)</i>, 
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc3682.txt"> RFC 3682.</a>
 <p>
-Meyer, D. and B. Fenner (Editors), <i>Multicast Source Discovery
+	
+<li>Meyer, D. and B. Fenner (Editors), <i>Multicast Source Discovery
 Protocol (MSDP) </i>, <a href="ftp://ftp.rfc-editor.org/in-notes/rfc3618.txt"> 
-RFC 3618</a>.
+RFC 3618</a>.</li>
 <p>
-Bonica, R., K. Kompella, and D. Meyer, <i>Tracing Requirements
+	
+<li>Bonica, R., K. Kompella, and D. Meyer, <i>Tracing Requirements
 for Generic Tunnels</i>, <a href="ftp://ftp.rfc-editor.org/in-notes/rfc3609.txt"> RFC
-3609</a>.
+3609</a>.</li>
 <p>
-Bhattacharyya, S., et. al, <i>An Overview of Source-Specific
+	
+<li>Bhattacharyya, S., et. al, <i>An Overview of Source-Specific
 Multicast (SSM)</i>, <a
 href="ftp://ftp.rfc-editor.org/in-notes/rfc3569.txt"> RFC 
-3569</a>.
+3569</a>.</li>
 <p>
-Kim, D., D. Meyer, H. Kilmer, and D. Farinacci, <i>Anycast
+	
+<li>Kim, D., D. Meyer, H. Kilmer, and D. Farinacci, <i>Anycast
 Rendezvous Point (RP) mechanism using Protocol Independent
 Multicast (PIM) and Multicast Source Discovery Protocol
 (MSDP)</i>, <a href="ftp://ftp.rfc-editor.org/in-notes/rfc3446.txt">
-RFC 3446</a>.
+RFC 3446</a>.</li>
 <p>
-Bush, R. and D. Meyer, <i>Some Internet Architectural Guidelines
-and Philosophy</i>, <a  href="http://ftp.rfc-editor.org/in-notes/rfc3439.txt"> RFC 3439</a>.
+	
+<li> Bush, R. and D. Meyer, <i>Some Internet Architectural Guidelines and Philosophy</i>, 
+<a  href="http://ftp.rfc-editor.org/in-notes/rfc3439.txt"> RFC 3439</a>.</li>
 <p>
-Farinacci, D., D. Meyer, and Y. Rekhter,<i> Intra-LIS IP
+	
+<li>Farinacci, D., D. Meyer, and Y. Rekhter,<i> Intra-LIS IP
 multicast among routers over ATM </i>,  <a
-href="http://www.ietf.org/rfc/rfc2337.txt"> RFC 2337</a>. 
+href="http://www.ietf.org/rfc/rfc2337.txt"> RFC 2337</a>. </li>
 <p>
-Meyer, D., <i> Administratively Scoped IP Multicast </i>, <a
-href="http://www.ietf.org/rfc/rfc2365.txt"> RFC 2365</a>. 
+	
+<li>Meyer, D., <i> Administratively Scoped IP Multicast </i>, <a
+href="http://www.ietf.org/rfc/rfc2365.txt"> RFC 2365</a>. </li>
 <p>
-Alaettinoglu,C., T. Bates, E. Gerich, D. Karrenberg, D. Meyer,
+	
+<li>Alaettinoglu,C., T. Bates, E. Gerich, D. Karrenberg, D. Meyer,
 M. Terpstra, and C. Villamizar, <i> Routing Policy Specification
-Language (RPSL) </i>, <a
-href="http://www.ietf.org/rfc/rfc2622.txt">RFC 2622</a>. 
+Language (RPSL) </i>, <a href="http://www.ietf.org/rfc/rfc2622.txt">RFC 2622</a>. </li>
 <p>
-Meyer, D., J. Schmitz, C. Orange, M. Prior, and
+	
+<li>Meyer, D., J. Schmitz, C. Orange, M. Prior, and
 C. Alaettinoglu,<i> Using RPSL in Practice</i>,  <a
-href="http://www.ietf.org/rfc/rfc2650.txt"> RFC 2650</a>. 
+href="http://www.ietf.org/rfc/rfc2650.txt"> RFC 2650</a>. </li>
 <p>
-Villamizar, C.,  C. Alaettinoglu, D. Meyer, and S. Murphy,
+	
+<li>Villamizar, C.,  C. Alaettinoglu, D. Meyer, and S. Murphy,
 <i> Routing Policy System Security </i>,<a
-href="http://www.ietf.org/rfc/rfc2725.txt">RFC 2725</a>. 
+href="http://www.ietf.org/rfc/rfc2725.txt">RFC 2725</a>. </li>
 <p>
-Villamizar, C., C. Alaettinoglu, R. Govindan, and D. Meyer, <i>
+	
+<li>Villamizar, C., C. Alaettinoglu, R. Govindan, and D. Meyer, <i>
 Routing Policy System Replication</i>, <a
-href="http://www.ietf.org/rfc/rfc2769.txt"> RFC 2769</a>.  
+href="http://www.ietf.org/rfc/rfc2769.txt"> RFC 2769</a>.</li>  
 <p>
-Meyer, D. and P. Lothberg, <i>GLOP Addressing in 233/8</i>,<a
-href="http://www.ietf.org/rfc/rfc2770.txt"> RFC 2770</a>. 
+	
+<li>Meyer, D. and P. Lothberg, <i>GLOP Addressing in 233/8</i>,<a
+href="http://www.ietf.org/rfc/rfc2770.txt"> RFC 2770</a>.</li>
 <p>
-Farinacci, D. T.Li, S. Hanks, D. Meyer, and P. Traina,<i> Generic
+	
+<li>Farinacci, D. T.Li, S. Hanks, D. Meyer, and P. Traina,<i> Generic
 Routing Encapsulation (GRE)</i>, <a
-href="http://www.ietf.org/rfc/rfc2784.txt"> RFC 2784</a>. 
+href="http://www.ietf.org/rfc/rfc2784.txt"> RFC 2784</a>. </li>
 <p>
-Meyer, D., <i> Extended Allocations in 233/8</i>, 
-<a href="http://www.ietf.org/rfc/rfc3138.txt"> RFC 3138</a>.
+	
+<li>Meyer, D., <i> Extended Allocations in 233/8</i>, 
+<a href="http://www.ietf.org/rfc/rfc3138.txt"> RFC 3138</a>.</li>
 <p>
-Meyer, D. and J. Scudder, <i> Request to Move RFC1745 to Historic Status</i>, 
-<a href="http://www.ietf.org/rfc/rfc3166.txt"> RFC 3166</a>.
+	
+<li>Meyer, D. and J. Scudder, <i> Request to Move RFC1745 to Historic Status</i>, 
+<a href="http://www.ietf.org/rfc/rfc3166.txt"> RFC 3166</a>.</li>
 <p>
-Meyer, D. and J. Scudder, <i> Request to Move RFC1403 to Historic
-Status</i>, <a href="http://www.ietf.org/rfc/rfc3167.txt"> RFC 3167</a>.
+	
+<li>Meyer, D. and J. Scudder, <i> Request to Move RFC1403 to Historic
+Status</i>, <a href="http://www.ietf.org/rfc/rfc3167.txt"> RFC 3167</a>.</li>
 <p>
-Albanna, Z., K. Almeroth, D. Meyer, and M. Schipper, <i> IANA
+	
+<li>Albanna, Z., K. Almeroth, D. Meyer, and M. Schipper, <i> IANA
 Guidelines for IPv4 Multicast Address Allocation </i>,  
 <a href="ftp://ftp.rfc-editor.org/in-notes/rfc3171.txt">
-BCP 51/RFC 3171</a>.
+BCP 51/RFC 3171</a>.</li>
 <p>
-Meyer, D. and P. Lothberg, <i> GLOP Addressing in 233/8</i>,
+	
+<li>Meyer, D. and P. Lothberg, <i> GLOP Addressing in 233/8</i>,
 <a href="ftp://ftp.isi.edu/in-notes/rfc3180.txt"> BCP
-53/RFC 3180 </a>.
+53/RFC 3180 </a>.</li>
 <p>
-Meyer, D. <i>The PROTO Adviser</i>,<a
+	
+<li>Meyer, D. <i>The PROTO Adviser</i>,<a
 href="http://tools.ietf.org/id/draft-ietf-proto-proto-adviser-00.txt">
-draft-ietf-proto-proto-adviser-00.txt.</a>
+draft-ietf-proto-proto-adviser-00.txt.</a></li>
 <p>
-Meyer, D. (Editor), <i> Operational Concerns and Considerations
+	
+<li>Meyer, D. (Editor), <i> Operational Concerns and Considerations
 for Routing Protocol Design -- Risk, Interference, and Fit (RIFT) </i>, 
 <a href="http://www.watersprings.org/pub/id/draft-ietf-grow-rift-01.txt">
-draft-ietf-grow-rift-01.txt</a> (expired).
+draft-ietf-grow-rift-01.txt</a> (expired).</li>
 <p>
-<i> <a href="./talks/LCN95.pdf">Moving
+	
+<li> <a href="./talks/LCN95.pdf">Moving
 Towards ATM: LAN/WAN Evolution and Experimentation at the
 University of Oregon </a></i>, Foldvik, Randolph, and David 
 Meyer, 20th Annual Conference on Local Computer Networks:,
-Minneapolis, Minnesota, Oct. 1995  
+Minneapolis, Minnesota, Oct. 1995.</li>  
 <p>
-<i> <a href="./talks/icc95.pdf"> 
+	
+<li> <a href="./talks/icc95.pdf"> 
 ATM Network Experimentation in the State of Oregon</a></i>,
 Foldvik, Randolph, Meyer, David, and Doug Taylor, IEEE
 International Conference on Communications, Seattle, WA. June
-1995.  
+1995.</li>
 <p>
-<i> <a href="http://dl.acm.org/citation.cfm?id=87991">Architected
+	
+<li> <a href="http://dl.acm.org/citation.cfm?id=87991">Architected
 Failure Handling for AND-Parallel Logic Programs"</a></i>, David
 Meyer and John Conery, Proceedings of the Seventh International
-Conference on Logic Programming, Jerusalem, Israel, 1990.
-<p>
+Conference on Logic Programming, Jerusalem, Israel, 1990.</li>
 </ul>
 
 <h2>ACTIVE GRANTS</h2>
