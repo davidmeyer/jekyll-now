@@ -27,6 +27,7 @@ Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a>
 Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a>
 Vita:    <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a>
 </pre>
+
 <p>
 	
 <h2>EDUCATION</h2>
