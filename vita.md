@@ -9,13 +9,12 @@
  
 --> 
  
-<h1> 
 <center>
-Curriculum Vitae
+Curriculum Vitae <\br>
   David Meyer 
 <\center> 
 	
- 
+
 <ul> 
 <li> <h1> PERSONAL </h1> 
 <pre> 
