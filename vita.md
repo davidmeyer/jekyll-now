@@ -37,25 +37,25 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 <h2>INTERESTS</h2> 
 <p> 
 <ul> 
-<li> Machine Learning  
-<li> Artificial General Intelligence (AGI) 
-<li> Quantum Computation 
-<li> Blockchain 
-<li> Nanotech 
-<li> Systems Biology 
-<li> Control and Complexity Theory 
-<li> Software Defined Networking 
-<li> Open Source Software Development and Business Models 
-<li> Programming Languages/Functional Reactive Programming/Domain Specific Programming Languages 
-<li> Inter-domain Routing 
-<li> High Performance Routing, Switching, and Optical Networking 
-<li> Routing Protocol Design and Development 
-<li> IP Business Models for Service Providers 
-<li> Instrumentation, Measurement, and Analysis of the Global Routing System 
-<li> Macro Economics 
-<li> Cosmology 
-<li> Surfing 
-<li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> 
+<li> Machine Learning </li> 
+<li> Artificial General Intelligence (AGI) </li> 
+<li> Quantum Computation </li> 
+<li> Blockchain </li> 
+<li> Nanotech </li> 
+<li> Systems Biology </li> 
+<li> Control and Complexity Theory </li> 
+<li> Software Defined Networking </li> 
+<li> Open Source Software Development and Business Models </li> 
+<li> Programming Languages/Functional Reactive Programming/Domain Specific Programming Languages </li> 
+<li> Inter-domain Routing </li> 
+<li> High Performance Routing, Switching, and Optical Networking </li> 
+<li> Routing Protocol Design and Development </li> 
+<li> IP Business Models for Service Providers </li> 
+<li> Instrumentation, Measurement, and Analysis of the Global Routing System </li> 
+<li> Macro Economics </li> 
+<li> Cosmology </li> 
+<li> Surfing </li> 
+<li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> </li>
 </ul> 
 	
 <h2>EXPERIENCE </h2>
