@@ -74,8 +74,8 @@ href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - June 2017)
 <li>CTO and Chief Scientist, <a
 href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - Nov 2015).
 <p>
-<li><b>Senior Research Scientist, <a
-href="http://cs.uoregon.edu">University of Oregon Department of Computer Science</a>, (Present).</b>
+<li>Senior Research Scientist, <a
+href="http://cs.uoregon.edu">University of Oregon Department of Computer Science</a>, (Present).
 <p>
 <li>Distinguished Engineer, <a
 href="http://www.cisco.com">Cisco Systems</a>, (2001-2012).
@@ -120,9 +120,7 @@ href="http://irtf.org/">(IRTF)</a>, (2014).
 href="http://lispmob.org/home">Open Source LISP Mobile Node
 Implementation (LISPMOB)</a>.
 <p>
-
-<p>
-<li><b>Member, <a
+<li>Member, <a
 href="https://www.opennetworking.org/wiki/display/AF/Architecture+Framework+Home">ONF
 Architecture and Framework Design Team</a>, 2011-2012.
 <p>
