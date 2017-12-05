@@ -12,14 +12,9 @@
 <HEAD> 
 <LINK REV=MADE HREF=mailto:dmm@1-4-5.net> 
  
- 
-<TITLE> Vita: David Meyer 
-</TITLE> 
-</HEAD> 
-<body bgcolor="#FFFFFF" text="#150357" link="#143D23" vlink="#143D23"><p> 
- 
+
 <center> <h1> 
-Curriculum Vitae<br><br> 
+Curriculum Vitae<br>
 David Meyer 
 </center> 
 </h1> 
