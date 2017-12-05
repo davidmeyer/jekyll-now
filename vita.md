@@ -914,8 +914,8 @@ Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.</li>
 <h2>Recent Publications</h2>
 
 <ul>
-Meyer RFC Overview, <a
-href="http://www.arkko.com/tools/allstats/davidmeyer.html">http://www.arkko.com/tools/allstats/davidmeyer.html.</a>
+<li> Meyer RFC Overview, <a
+href="http://www.arkko.com/tools/allstats/davidmeyer.html">http://www.arkko.com/tools/allstats/davidmeyer.html.</a></li>
 
 <p>
 <li>Not recent but still something fun someone recently pointed out
