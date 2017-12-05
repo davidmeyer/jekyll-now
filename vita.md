@@ -20,8 +20,8 @@ Curriculum Vitae
 
 <pre>
 Address: 1225 Kincaid St. Eugene, OR 97403
-Office:  1.541.346.1747
-Mobile:  1.541.221.1843
+Office:  +1.541.346.1747
+Mobile:  +1.541.221.1843
 Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a>
 Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a>
 Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a>
