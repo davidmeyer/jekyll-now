@@ -9,10 +9,10 @@
  
 --> 
  
-<center>
-Curriculum Vitae <\br>
+<p align="center">
+Curriculum Vitae
   David Meyer 
-<\center> 
+<\p> 
 	
 
 <ul> 
