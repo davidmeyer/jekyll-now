@@ -28,9 +28,9 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 </pre>
 
 <p> 
-* <h2>EDUCATION</h2>
-	* B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor  concentration in statistics), June, 1981.   
-	* M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research Fellow, 1986-1987.  
+-. <h2>EDUCATION</h2>
+	-. B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor  concentration in statistics), June, 1981.  
+	-.M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research Fellow, 1986-1987.  
 <p> 
 	
 <li><h2>INTERESTS</h2> 
