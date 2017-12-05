@@ -1,0 +1,114 @@
+
+Reflections on a year inside the OpenDaylight Project
+------------------------------------------------------
+David Meyer (dmm@1-4-5.net)
+03.20.2014
+
+Over the past year I have had the great honor of serving as the
+chair of the Technical Steering Committee (TSC) of the
+OpenDaylight Project (ODP). ODP an open source project which is
+comprised of a community of incredibly talented people who are
+singularity focused on building an industry standard open source
+infrastructure for Software Defined Networking (SDN). This 
+infrastructure is intended to enable an SDN application ecosystem
+that produces new and valuable applications for both service
+providers and users. As I look forward to all the things we need
+to tackle in a  second year of existence, this brief blog
+summarizes my key learnings from our first year.
+
+While there was a bit of a "trial by fire" flavor to my
+introduction to the OpenDaylight community, the heat was quickly
+replaced by light and three central ideas became clear to me.
+The first of these ideas is that community is a key, if not the
+most important, component of an open source project. More
+specifically, slapping an open source license on your code and
+putting it up on github (or whatever) is the most trivial part of
+open source. In particular, without vibrant and growing user
+and developer communities a project may nominally be open source
+(again, the code has an open source license and is up on a public
+repository somewhere) but in practice the real power of open
+source, namely innovation through collaboration, is lost. I'll
+just note here that this last point, innovation through
+collaboration, is an incredibly powerful and transformational
+property and is unique to the open source development methodology.
+
+The second key idea is that without code, you really have
+nothing. In particular, "code is the coin of the realm" for an open
+source project. We can talk about problems, solution designs, and
+the like forever but without code we really have nothing. Good code
+speaks more loudly than anything else in an open source project. 
+
+The last of the three ideas is that the tool chains (and more
+generally engineering systems, which include collaboration tools,
+etc) that we use are deeply integrated and part of our culture
+and community. They are key to our agility and productivity. In
+addition, development on the tool chains themselves (in parallel
+to development of a project's artifacts) itself generates an
+amazing acceleration of the development process as well as
+facilitating deep automation. A corollary here is that "we need
+more code that writes code"; more automation is more better.
+
+Now, if we step back and ask what is implied by these three
+observations, you begin to see an important and profound
+macro-trend [0]. The trend is this: Engineering artifacts
+themselves are no longer the source of sustainable advantage
+and/or innovation. Rather, sustainable advantage is achieved
+through engineering systems, organizational culture, and the
+people and process that comprise the community (and/or
+organization). Open source community, code, and associated
+engineering systems are coming together in a way that is
+fundamentally transforming network industry.
+
+But there is a deeper and still more profound consequence
+embodied in these observations, one that is in fact turns out to
+be a core consequence of the open source development methodology.
+In particular, these trends taken together lead one to the
+conclusion that "what you build isn't as important as how you
+build it".  And while of course engineers need to build quality
+artifacts that address real world problems, this conclusion
+diverges radically from traditional hardware and software
+development and business models. Suffice it to say that this idea
+is at best alien to most of our industry.
+
+Now, the first question one might ask is why should it be the
+case that development methodologies and associated engineering
+systems ("how you build something") are more important than the
+resultant artifacts? The answer is surprisingly simple.  It turns
+out that what we are seeking from modern software systems is a
+combination of functionality, scalability, and evolability (after
+all, these three properties are the main promises of SDN, NFV,
+and for that matter cloud).  And of course any artifact needs to
+provide relevant functionality and scalability to be useful. So the
+new requirement here is evolvablity. In any event the open source
+development methodology is ideally suited to provide these
+features while at the same time taking advantage of the network
+effect provided a successful project's user and developer
+communities. 
+
+Note that open source development also fully profits from the
+evolutionary dynamic of variation, recombination and selection (I
+like biological metaphors; see e.g., [1] for more on the
+relationship between biological and technological
+networking). Openness attracts a greater number and diversity of
+participants, increasing the likeliness of cross-fertilization of
+their ideas into new combinations. This strongly accelerates the
+variation that is necessary to produce evolutionary novelty (aka
+innovation). This large and diverse community moreover enhances
+selection, since the new ideas will be tested in many more
+different circumstances, thus systematically eliminating the
+errors and weaknesses that might not have shown in a more
+homogeneous environment. All of this leads to the greater
+flexibility, innovation, and reliability that embodies the
+promise of SDN, NFV, Cloud, and beyond.
+
+In conclusion, my time inside ODP has fundamentally transformed
+my views on how networks will be designed, built, deployed, and
+operated, as well as how they will evolve. I'm looking forward to 
+working with the other members of the TSC and the larger
+OpenDaylight community to drive the project into a new, even more
+exciting phase of its existence might be nice too. 
+
+In short, I can't wait to see what happens next.
+
+[0] http://www.1-4-5.net/~dmm/talks/hidden_nature_of_complexity.pdf
+[1] http://www.1-4-5.net/~dmm/talks/itat2013.pdf
