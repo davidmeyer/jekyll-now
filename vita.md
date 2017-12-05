@@ -27,16 +27,11 @@ Email:    <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a>
 Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
 </pre>
 
-<uL>
 <p> 
-<li><h2> EDUCATION </h2> 
+* <h2> EDUCATION </h2> 
 <p> 
-<ul>
-<li>B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor 
-concentration in statistics), June, 1981.   
-<li>M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research \
-Fellow, 1986-1987.  
-</ul>
+	* B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor  concentration in statistics), June, 1981.   
+	* M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research Fellow, 1986-1987.  
 <p> 
 	
 <li><h2>INTERESTS</h2> 
