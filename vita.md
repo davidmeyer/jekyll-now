@@ -9,15 +9,6 @@
  
 --> 
 
-pre, xmp, plaintext, listing {
-    white-space: pre;
-}
-.markdown-body pre > code {
-    white-space: pre;
-}
-.markdown-body code {
-    white-space: nowrap;
-}
 
 <h1>
 <p align="left">
