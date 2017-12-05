@@ -19,13 +19,13 @@ Curriculum Vitae
 <h2>PERSONAL</h2> 
 
 <pre> 
-Address:  1225 Kincaid St. Eugene, OR 97403 
-Office:   +1.541.346.1747 
-Mobile:   +1.541.221.1843 
-Email:    <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a> 
-Email:    <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a> 
-Email:    <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a> 
-Vita:      <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
+Address:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1225 Kincaid St. Eugene, OR 97403 
+Office:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +1.541.346.1747 
+Mobile:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +1.541.221.1843 
+Email:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a> 
+Email:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a> 
+Email:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a> 
+Vita:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
 </pre>
 
 <h2>EDUCATION</h2>
