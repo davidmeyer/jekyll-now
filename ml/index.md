@@ -22,9 +22,7 @@ Random (and largely incomplete) thoughts/snippets on various ML topics
 </center>
 -->
 
-<h2>Thoughts</h2>
 <ul>
-
 <li><a href="./trpo.pdf">Notes on Policy Gradients (Trust Region Policy Optimization, under construction)</li>
 <li><a href="./pg.pdf">Notes on Policy Gradients (under construction)</li>
 <li><a href="./nce.pdf">Notes on Noise Contrastive Estimation (NCE)</li>
