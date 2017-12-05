@@ -287,16 +287,15 @@ machines and networks.
 <p>
 
 <h2>Recent Talks</h2>
+
 <a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.
 <P>
 
 <a href="./ml">Random (and largely
 incomplete) musings on various machine learning topics</a>, WIP.
 Last update: 25 May 2016. 
-
 <P>
 
-<i>
 <a
 href="./ml/talks/2017/ancs2017.pptx">
 Recent Advances in Machine Learning and Their Application to Networking</a>,
@@ -306,10 +305,8 @@ ACM/IEEE Symposium on Architectures for Networking and
 Communications Systems</a>, 
 18-19 May  2017, 
 Beijing, China.
-</li>
 <p>
 
-<i>
 <a
 href="./ml/talks/2017/ons.pptx">
 Going Beyond Siri: Applying Machine Learning to Network
@@ -318,11 +315,8 @@ Automation</a>
 Open Networking Summit</a>, 
 03-05 Apr 2017, 
 Santa Clara, CA.
-</li>
 <p>
 
-
-<i>
 <a
 href="./ml/talks/2016/cor_ml4networking.pptx">
 Machine Intelligence and Networking: Challenges, Opportunities and Realities,
@@ -331,10 +325,8 @@ IETF 97 (nmlrg)</a>,
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
 href="./ml/talks/2016/cor_ml4networking.pdf">pdf</a>).
-</li>
 <p>
 
-<i>
 <a
 href="./ml/talks/2016/ideas.pptx">
 Anomaly Detection for the IDEAS Mapping System: A Machine
@@ -344,21 +336,15 @@ IETF 97 (IDEAS)</a>,
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
 href="./ml/talks/2016/ideas.pdf">pdf</a>).
-</li>
 <p>
 
-
-<i>
 <a
 href="./ml/talks/2016/ngp_forum.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
 <a href="http://www.layer123.com/sdn/">
 SDN World Congress/ETSI Next Generation Protocol Forum</a>, 
-10-14 Oct 2016, The Hague, Netherlands.
-</li>
 <p>
 
-<i>
 <a
 href="./ml/talks/2016/odl_summit_2016.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
@@ -367,17 +353,13 @@ OpenDaylight Summit</a>, 27 Sep 2016, Bellvue, WA (<a
 href="https://www.youtube.com/watch?v=29rn6-3s4yE&index=3&list=PL8F5jrwEpGAiRCzJIyboA8Di3_TAjTT-2">video</a>,
 <a href="./ml/talks/2016/odl_summit_2016.pdf">
 pdf</a>).
-</li>
 <p>
 
-
-
-<i>
 Recent advances in Machine Learning: Creating a new level of
 intelligence in network reliability and optimization,
 <a href="http://zoc.t-systems.de/de/">T-Systems Zero Outage
 Conference</a>, 09 June 2016, Berlin, Germany.
-</li>
+
 <p>
 
 <i>
