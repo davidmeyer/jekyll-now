@@ -14,8 +14,7 @@ Curriculum Vitae
 </p> 
 </h1>
 	
-
-* <h2>PERSONAL</h2> 
+<h2>PERSONAL</h2> 
 <pre> 
 Address:  1225 Kincaid St. 
           Eugene, OR 97403 
@@ -35,7 +34,7 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 </ul>
 <p> 
 	
-<li><h2>INTERESTS</h2> 
+<h2>INTERESTS</h2> 
 <p> 
 <ul> 
 <li> Machine Learning  
@@ -59,7 +58,7 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> 
 </ul> 
 	
-<li><h2>EXPERIENCE </h2>
+<h2>EXPERIENCE </h2>
 <ul>
 <li>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
@@ -287,13 +286,11 @@ machines and networks.
 </ul>
 <p>
 
-<li><h2>Recent Talks</h2>
-
-<i>
-<a href="./qc">Thoughts on Various Topics
+<h2>Recent Talks</h2>
+<i> <a href="./qc">Thoughts on Various Topics
 Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.
-</li>
 <P>
+	
 <i>
 
 
