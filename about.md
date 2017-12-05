@@ -4,9 +4,10 @@ title: About
 permalink: /about/
 ---
 
-	[01.03.2017]
+	[12.05.2017]
 
-	David Meyer is currently Chief Scientist, VP and Fellow at
+	David Meyer is currently Chief Scientist Huawei Future Network Theory Laboratory. 
+	Previously Mr. Meyer was Chief Scientist, VP and Fellow at
 	Brocade Communications, where he works on future
 	directions for Internet technologies. His current focus
 	is the use machine learning (and in particular deep
@@ -41,5 +42,5 @@ permalink: /about/
 
 ### Contact me
 Email: [dmm@1-4-5.net](mailto:dmm@1-4-5.net)  \\
-More Information: <http://www.1-4-5.net/~dmm/vita.html> 
+More Information: <https://davidmeyer.github.io/> 
 
