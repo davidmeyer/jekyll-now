@@ -296,7 +296,7 @@ incomplete) musings on various machine learning topics</a>, WIP.
 Last update: 25 May 2016. </li>
 <P>
 
-<a
+<li> <a
 href="./ml/talks/2017/ancs2017.pptx">
 Recent Advances in Machine Learning and Their Application to Networking</a>,
 </a>
@@ -304,30 +304,25 @@ Recent Advances in Machine Learning and Their Application to Networking</a>,
 ACM/IEEE Symposium on Architectures for Networking and
 Communications Systems</a>, 
 18-19 May  2017, 
-Beijing, China.
+Beijing, China.</li>
 <p>
 
-<a
-href="./ml/talks/2017/ons.pptx">
-Going Beyond Siri: Applying Machine Learning to Network
-Automation</a>
-<a href="http://events.linuxfoundation.org/events/open-networking-summit">
-Open Networking Summit</a>, 
-03-05 Apr 2017, 
-Santa Clara, CA.
+<li> <a href="./ml/talks/2017/ons.pptx"> Going Beyond Siri: Applying Machine Learning to Network
+Automation</a> <a href="http://events.linuxfoundation.org/events/open-networking-summit"> Open Networking Summit</a>,  
+03-05 Apr 2017, Santa Clara, CA. </li>
 <p>
 
-<a
+<li> <a
 href="./ml/talks/2016/cor_ml4networking.pptx">
 Machine Intelligence and Networking: Challenges, Opportunities and Realities,
 <a href="http://ietf.org/meeting/97/index.html">
 IETF 97 (nmlrg)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="./ml/talks/2016/cor_ml4networking.pdf">pdf</a>).
+href="./ml/talks/2016/cor_ml4networking.pdf">pdf</a>).</li>
 <p>
 
-<a
+<li> <a
 href="./ml/talks/2016/ideas.pptx">
 Anomaly Detection for the IDEAS Mapping System: A Machine
 Learning Approach,
@@ -335,375 +330,364 @@ Learning Approach,
 IETF 97 (IDEAS)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="./ml/talks/2016/ideas.pdf">pdf</a>).
+href="./ml/talks/2016/ideas.pdf">pdf</a>). </li>
 <p>
 
-<a
+<li> <a
 href="./ml/talks/2016/ngp_forum.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
 <a href="http://www.layer123.com/sdn/">
-SDN World Congress/ETSI Next Generation Protocol Forum</a>, 
+SDN World Congress/ETSI Next Generation Protocol Forum</a>.</li>
 <p>
 
-<a
+<li> <a
 href="./ml/talks/2016/odl_summit_2016.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
 <a href="http://events.linuxfoundation.org/events/opendaylight-summit/">
 OpenDaylight Summit</a>, 27 Sep 2016, Bellvue, WA (<a
 href="https://www.youtube.com/watch?v=29rn6-3s4yE&index=3&list=PL8F5jrwEpGAiRCzJIyboA8Di3_TAjTT-2">video</a>,
-<a href="./ml/talks/2016/odl_summit_2016.pdf">
-pdf</a>).
+<a href="./ml/talks/2016/odl_summit_2016.pdf">pdf</a>). </li>
 <p>
 
-Recent advances in Machine Learning: Creating a new level of
+<li>Recent advances in Machine Learning: Creating a new level of
 intelligence in network reliability and optimization,
 <a href="http://zoc.t-systems.de/de/">T-Systems Zero Outage
-Conference</a>, 09 June 2016, Berlin, Germany.
+Conference</a>, 09 June 2016, Berlin, Germany.</li>
 
 <p>
 
-<i>
+<li>
 <a href="https://www.youtube.com/watch?v=IUksoV7l8ww&feature=youtu.be">
 Recent Advances in Machine Learning and Their Application to
 Networking (video)</a>,
 <a href="http://events.linuxfoundation.org/events/devops-networking-forum/">
 DevOps Networking Forum at Open Networking Summit
 </a>. See also <a
-href="https://www.linkedin.com/pulse/machine-learning-devops-networking-fred-millet?trk=hb_ntf_MEGAPHONE_ARTICLE_POST&trk=hp-feed-article-title-share">Fred
-Millet's comments</a>, 14 Mar 2016.
+href="https://www.linkedin.com/pulse/machine-learning-devops-networking-fred-millet?trk=hb_ntf_MEGAPHONE_ARTICLE_POST&trk=hp-feed-article-title-share">Fred Millet's comments</a>, 14 Mar 2016.</li>
 
 <p>
-<i>
+<li>
 <a href="./talks/2015/hoti.pptx">Keynote:
 Recent Advances in Machine Learning and Their Application to
 Networking</a>,
 <a href="http://www.hoti.org">
 23rd Annual Symposium on High-Performance Interconnects</a>,
-27 Aug 2015.
+27 Aug 2015.</li>
 <p>
 
-<i>
+<li>
 <a href="./talks/2015/ad.pptx">
-Introduction to Anomaly Detection</a>, Brocade Tech Talk, 14 Aug 2015.
+Introduction to Anomaly Detection</a>, Brocade Tech Talk, 14 Aug 2015.</li>
 <p>
 
-<i>
+<li>
 <a href="./talks/2015/thursday_lunch_ietf93.pptx">
 Recent Advances in Machine Learning and Their Application to Networking</a>,
 <a href="http://www.ietf.org/meeting/93/speaker-series.html">
 IETF 93</a>, July 19-24, 2015. Prague. Czech Republic
 (<a
 href="https://www.youtube.com/watch?v=uodn7y6iCh4&feature=youtu.be">video
-here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here).
+here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here).</li>
 <p>
 
-<i>
+<li>
 <a href="https://www.youtube.com/watch?v=se-X3FStVHg">Kind words
 from Neela Jacques at the closing of the ODL summit</a>, <a
 href="http://events.linuxfoundation.org/events/opendaylight-summit">Open
-Daylight Summit</a>, July 27-31, 2015.
+Daylight Summit</a>, July 27-31, 2015.</li>
 <p>
 
 
 
-<i><a
+<li><a
 href="./talks/2015/ieee_netsoft_keynote.pptx">
 Keynote: SDN, NFV and Cloud, and Network Automation: The Journey from CLI to
 Machine Intelligence</a>, 
 <a href="http://sites.ieee.org/netsoft/">
 1st IEEE Conference on Network Softwarization (Netsoft 2015)</a>,
- 13-17 Apr 2015, London, UK.
+ 13-17 Apr 2015, London, UK.</li>
 <p>
 
 
-<i><a
+<li><a
 href="./talks/2015/openstack_austin.pdf">
 Introduction to OpenDaylight: Current Events and OpenStack
 Neutron Integration</a>, 
 <a href="http://www.meetup.com/OpenStack-Austin/events/218911185/">
 Openstack Meetup
-</a>, 18 Mar 2015, Austin, Tx.
+</a>, 18 Mar 2015, Austin, TX.</li>
 <p>
 
-<i><a
+<li><a
 href="./talks/2015/MWC/mwc2015.pptx">
 A (Very) Brief Introduction to Machine Learning and its
 Application to Mobile Networks</a>,
 <a href="http://www.mobileworldcongress.com/">
-Mobile World Congress
-</a>, 02-05 Mar 2015, Barcelona, Spain.
+Mobile World Congress</a>, 02-05 Mar 2015, Barcelona, Spain.</li>
 <p> 
 
 
-<i><a
+<li><a
 href="./talks/2015/pace_2015.pdf">
 A Very Brief Introduction to Machine Learning and its
 Application to PCE</a>,
 <a href="http://ict-one.eu/pace/public_wiki/mediawiki-1.19.7/index.php?title=Workshops">
 Next Steps for the Path Computation Element Workshop
-</a>, 17-18 Feb 2015, Madrid, Spain.
+</a>, 17-18 Feb 2015, Madrid, Spain.</li>
 <p> 
 
 
-<i><a
+<li><a
 href="./talks/2015/ons-accelerate.pdf">
 OpenDaylight, OpenSource, and Why OSS is Important</a>,
 <a href="http://www.opennetsummit.org/ons-accelerate-feb15.php">
-ONS Accelerate! Workshop</a>, 10 Feb 2015.
+ONS Accelerate! Workshop</a>, 10 Feb 2015.</li>
 <p> 
 
 
 
-<i><a
+<li><a
 href="./talks/20141027-meyer-hidden-nature-of-complex-systems.pdf">
 On the Hidden Nature of Complex Systems</a>, <a
 href="http://www.internet2.edu/news-events/events/technology-exchange/">Internet2
-Technology Exchange</a>, Oct 26-30, 2014.
+Technology Exchange</a>, Oct 26-30, 2014.</li>
 <p> 
 
 
-<i><a
+<li><a
 href="./talks/nfd8.pptx">
 Software Defined Intelligence (slides)</a>, <a
 href="http://techfieldday.com/appearance/brocade-presents-at-networking-field-day-8/">
-Networking Field Day 8 (video)</a>, 11 Sep 2014.
+Networking Field Day 8 (video)</a>, 11 Sep 2014.</li>
 <p> 
 
 
-<i><a
+<li><a
 href="./talks/introduction_to_machine_learning.pdf">
 Introduction to Machine Learning and its application to Data
-Centers</a> (Work in progress). 
+Centers</a> (Work in progress). </li>
 <p> 
 
-<i><a
+<li><a
 href="./talks/open_network_world.pdf">
 Keynote: Open Source, Open Daylight, and the ONF: How it all fits
 together</a>, <a href="http://onw.cnw.com.cn/">Open Networking
 World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
-(07.04.2014). 
+(07.04.2014). </li>
 <p> 
 
-
-
-
-
-<i><a
+<li><a
 href="./talks/interop_tokyo_062014.pdf">
 Keynote: OpenDaylight and the Past, Present and Future of Open
 Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>  
-Tokyo, Japan. 
+Tokyo, Japan. </li>
 <p> 
-
-
-
-<i><a
+	
+<li><a
 href="./talks/opendaylight_futures.pdf">OpenDaylight
 Futures</a>, <a
 href="http://www.conference.cn/sdnt/2014/en/Conference.asp?ArticleID=520">Global
 SDN Technology Conference 2014</a> 
-Beijing, China. 
+Beijing, China. </li>
 <p> 
 
 
-<i><a
+<li><a
 href="./talks/bridges.pdf">Complexity, Tradeoffs,
 Architecture, and Building Bridges</a>, Huawei NFV Spring Forum
-2014, 19-20 May, 2014, Shanghai, China. 
+2014, 19-20 May, 2014, Shanghai, China. </li>
 <p> 
 
-<i><a 
+<li><a 
 href="http://conferences.sigcomm.org/sigcomm/2014/tutorial-theory+eng.php">
 Tutorial: Exploring the Intersection of Theory and Engineering:
 Universal Laws, Architecture, and SDN</a>
 <a href="http://conferences.sigcomm.org/sigcomm/2014/index.php">
-SIGCOMM 2014</a>.
+SIGCOMM 2014</a>.</li>
 <p> 
 
-<i><a 
+<li><a 
 href="talks/nanog61.pptx">
 Keynote: On the Hidden Nature of Complex Systems
 (Macro Trends, Architecture, Nets, Grids, Bugs, Brains, and the
 Meaning of Life)</a>, 
 <a href="https://www.nanog.org/meetings/nanog61/home">
-NANOG 61</a>, Bellveue, WA, June 2014.
+NANOG 61</a>, Bellveue, WA, June 2014.</li>
 <p> 
 
-<i><a 
+<li><a 
 href="talks/openstack_atl_2014.pdf">
 Introduction to OpenDaylight and Hydrogen, Learnings from the
 Year, and What's Next for OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
-OpenStack Summit Atlanta 2014</a>.
+OpenStack Summit Atlanta 2014</a>.</li>
 <p> 
 
-<i><a 
+<li><a 
 href="talks/openstack_and_odl_atlanta.pdf">
 Using OpenStack With OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
-OpenStack Summit Atlanta 2014</a>.
+OpenStack Summit Atlanta 2014</a>.</li>
 <p> 
 
 
-<i><a 
+<li><a 
 href="talks/great_wide_open.pdf">
 Introduction to OpenDaylight and Hydrogen, Learnings from the
 Year, and What's Next for OpenDaylight</a>
 <a href="http://greatwideopen.org/">
-Great Wide Open 2014</a>.
+Great Wide Open 2014</a>.</li>
 <p> 
 
-<i><a 
+<li><a 
 href="talks/interop_lv_2014.pdf">
 SDN and the Hidden Nature of Complexity: A Whirlwind Tour Through
 the Nature of Complex Networks</a>
 <a href="http://www.interop.com/lasvegas/">
-INTEROP Las Vegas 2014</a>.
+INTEROP Las Vegas 2014</a>.</li>
 <p> 
 
 
-<i><a 
+<li><a 
 href="talks/hidden_nature_of_complexity.pdf"> 
 The Hidden Nature of Complexity and the Software Defined Network
 Operatorof the (very near) Future</a>
 <a href="http://www.uppersideconferences.com/sdnsummit2014/sdnsummit2014program_day_3.html">
-NFV/SDN Summit 2014</a>.
+NFV/SDN Summit 2014</a>.</li>
 <p> 
 
-<i><a 
+<li><a 
 href="talks/dc_upperside_2014.pdf"> 
 Seeing the (Near) Future: Data Centers, Software, and SDN</a>, <a 
 href="http://www.uppersideconferences.com/sdnsummit2014/sdnsummit2014program_day_0_workshops.html">
-NFV/SDN Summit 2014</a>.
+NFV/SDN Summit 2014</a>.</li>
 <p> 
 
 
-<i><a 
+<li><a 
 href="talks/sigcomm2014JDoyleMeyerTutorial.pdf"> 
 Exploring the Intersection of Theory and Engineering: Universal
 Laws, Architecture, and SDN. John Doyle and David Meyer</a>, <a 
-href="http://conferences.sigcomm.org/sigcomm/2014/cfw.php">SIGCOMM 2014</a>.
+href="http://conferences.sigcomm.org/sigcomm/2014/cfw.php">SIGCOMM 2014</a>.</li>
 <p> 
 
-<i> <a
+<li> <a
 href="talks/NFD7.pdf">
 Learnings from Hydrogen and 
-What's Next for OpenDaylight</a>, <a
-href="http://techfieldday.com/event/nfd7/">Network Field Day 7.  
+What's Next for OpenDaylight</a>, <a href="http://techfieldday.com/event/nfd7/">Network Field Day 7</a>.</li>
 <p>
 
-<i> <a
-href="talks/macro_trends_complexity_and_sdn.pdf">
+<li> <a href="talks/macro_trends_complexity_and_sdn.pdf">
 Macro Trends, Architecture, and the Hidden Nature of Complexity
-(and what does this have to do with SDN?) </a>, Work in Progress.
+(and what does this have to do with SDN?) </a>, Work in Progress.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/OpenDaylight_SDN_Workshop_AZ.pdf">
 The OpenDaylight Project: Introduction and Overview</a>, 
 <a href="http://sdn.arizona.edu/agenda"> University of Arizona
-SDN Workshop</a>, University of Arizona, Jan 06-07, 2014.
+SDN Workshop</a>, University of Arizona, Jan 06-07, 2014.</li>
 <p>
 
 
-<i> <a
+<li> <a
 href="talks/nsf_sdn_program_review.pdf">Macro Trends, Complexity,
 and the Current Status of Software Defined Networking</a>, <a
 href="https://www.orau.gov/sdnpr2013/default.htm">NSF Software
 Defined Networking (SDN) Program Review</a>, December 17 - 18,
-2013, Arlington, VA.
+2013, Arlington, VA.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/itat2013.pdf">On the Complexity of Designed Systems
 (and its effect on technology deployment)</a>, <a
 href="http://www.iab.org/activities/workshops/itat/">Internet
 Technology Adoption and Transition Workshop</a>, December 04 - 05, 
 2013, Cambridge, UK (<a href="papers/itat.pdf">companion position
-paper</a>). 
+paper</a>). </li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/ncrg88.pdf">Bio/Techno Convergence and
 the Hidden Nature of Complexity</a>, <a
 href="http://www.ietf.org/meeting/88/index.html">Network
-Complexity Research Group, IETF 88, Vancouver, BC</a>.
+Complexity Research Group, IETF 88, Vancouver, BC</a>.</li>
 <p>
 
 
-<i> <a
+<li> <a
 href="talks/mpls_sdn_2013.pdf">SDN and
 the Hidden Nature of Complexity</a>, <a
 href="http://www.isocore.com/mpls2013/">MPLS/SDN 2013
 INTERNATIONAL CONFERENCE</a>, 
-November 17 - 20, 2013, Washington, DC.
+November 17 - 20, 2013, Washington, DC.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/sdn_world_congress_2013.pdf">Macro Trends, SDN, and
 the Hidden Nature of Complexity</a>, 
 <a href="http://www.layer123.com/sdn">SDN & OpenFlow World Congress</a>,
 15-18 October 2013, Bad Homburg, Germany (<a
-href="http://www.layer123.com/sdn-webcast/"/>video here</a>).
+href="http://www.layer123.com/sdn-webcast/"/>video here</a>).</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/interop_nyc_2013.pdf">OpenDaylight: Introduction and Overview</a>, 
 <a href="http://www.interop.com/newyork/">INTEROP</a>,
-Sep 30 - Oct 04 2013, New York, New York.
+Sep 30 - Oct 04 2013, New York, New York.</li>
 <p>
 
-<i> <a href="talks/onug_2013.pdf">OpenDaylight: Introduction and Overview</a>, 
+<li> <a href="talks/onug_2013.pdf">OpenDaylight: Introduction and Overview</a>, 
 <a href="http://opennetworkingusergroup.com/">ONUG Summit</a>,
-Oct 10 2013, New York, New York.
+Oct 10 2013, New York, New York.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/ausnog2013.pdf">Macro Trends, Complexity, and Software
 Defined Networking</a>, 
 <a href="http://www.ausnog.net/events/ausnog-2013">AusNOG 2013</a>,
-Sep 5-6, Sydney, Australia.
+Sep 5-6, Sydney, Australia.</li>
 <p>
 
 
-<i> <a
+<li> <a
 href="talks/IETF/87/ncrg/ncrg_direction.pdf">On Understanding Network
 Complexity (and the direction of the NCRG)</a>, <a href="http://irtf.org/ncrg">Network Complexity Research
 Group</a>, <a
 href="http://www.ietf.org/meeting/87/index.html">IETF 87</a>,
-Berlin, Germany.</i> 
+Berlin, Germany.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/interop_tokyo2013.pdf">Macro Trends, Complexity, and Software
 Defined Networking (long version)</a>, 
 <a href="http://www.interop.jp/2013/english/">INTEROP Tokyo Keynote</a>,
 June 2013, Tokyo, Japan (<a
-href="http://www.brocadejapan.com/sdn_lecture">Japanese page).</i>
+href="http://www.brocadejapan.com/sdn_lecture">Japanese page).</li>
 <p>
 
-<i> <a
+<li> <a
 href="http://www.nanog.org/sites/default/files/tues.general.meyer_.macro_.3.pdf">Macro Trends, Complexity, and Software
 Defined Networking</a>, 
 <a href="/nanog.org/meetings/nanog58/home">NANOG 58</a>,
-New Orleans, Louisiana.</i>
+New Orleans, Louisiana.</li>
 <p>
 
 
-<i> <a
+<li> <a
 href="talks/ripe66.pdf">Architectural Musings on SDN</a>, 
-<a href="https://ripe66.ripe.net/">RIPE 66</a>, Dublin, Ireland.</i>
+<a href="https://ripe66.ripe.net/">RIPE 66</a>, Dublin, Ireland.</li>
 <p>
 
 
-<i> <a
+<li> <a
 href="talks/I2_member_meeting_2013.pdf">Architectural Musings on SDN</a>, 
 <a
 href="http://events.internet2.edu/2013/annual-meeting/">
-2013 Internet2 Annual Meeting</a>, Arlington, VA.</i>
+2013 Internet2 Annual Meeting</a>, Arlington, VA.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/ethernet_summit_2013.pdf">OpenFlow: Today's Reality, Tomorrow's
 Promise. An Architectural Perspective</a>, 
 <a
@@ -715,30 +699,30 @@ href="talks/upperside_sdn_summit_paris_2013.pdf">OpenFlow: Today's Reality, Tomo
 Promise. An Architectural Perspective</a>, 
 <a
 href="http://www.uppersideconferences.com/sdnsummit2013/sdn2013intro.html">
-Upperside SDN Summit 2013</a>, Paris, France.</i>
+Upperside SDN Summit 2013</a>, Paris, France.</li>
 <p>
-<i> <a
+<li> <a
 href="talks/ncrg86.pdf">Macro Trends, Complexity, and Software
 Defined Networking: An Architetural Perspective</a>, 
 <a
 href="https://datatracker.ietf.org/meeting/86/agenda/ncrg/">Network
 Complexity Research Group</a>, <a
-href="http://www.ietf.org/meeting/86/index.html">IETF 86</a>.</i>
+href="http://www.ietf.org/meeting/86/index.html">IETF 86</a>.</li>
 <p>
 
-<i> <a
+<li> <a
 href="talks/apricot2013.pdf">Seeing The Past, Present and Future:
 Macro Trends in Networking and the Role of Software Defined Networking</a>, 
 <a href="http://www.apricot2013.net/program/apops-plenary-1">APOPS
-Plenary, APRICOT 2013.</a></i> 
+Plenary, APRICOT 2013.</a></li> 
 
 <p>
 
-<i> <a
+<li> <a
 href="talks/TIP2013/tip2013.pdf">Seeing The Past, Present and Future:
 Macro Trends in Networking and the Role of Software Defined Networking</a>, <a
 href="http://events.internet2.edu/2013/tip/index.cfm">
-TIP 2013.</i>
+TIP 2013.</li>
 <p>
 
 <i> <a href="talks/sdn-hard.pdf">What are the "sdn-hard"
@@ -1233,28 +1217,28 @@ Conference on Logic Programming, Jerusalem, Israel, 1990.
 <p>
 </ul>
 
-<li><h2>ACTIVE GRANTS</h2></li>
+<h2>ACTIVE GRANTS</h2>
 <p>
-<a href="http://www.routeviews.org">Collaborative Research:
+<ul>
+<li> <a href="http://www.routeviews.org">Collaborative Research:
 CI-ADDO-EN: Making Internet Routing Data Accessible To All</a>,
-NSF 1305218, David Meyer, PI.
+NSF 1305218, David Meyer, PI. <\li>
 <p>
 
-<a href="http://www.routeviews.org">The Oregon RouteViews
-Project</a>, NSF 03213769, David Meyer, PI.
+<li><a href="http://www.routeviews.org">The Oregon RouteViews
+Project</a>, NSF 03213769, David Meyer, PI. </li>
 <p>
-<i>NetPath</i>, <a
+<li>NetPath</i>, <a
 href="http://www.darpa.mil/ato/solicit/ControlPlane">DARPA
 Control Plane Project</a>, UCLA, Colorado State University, and
 the University of Oregon. BAA04-09. See e.g. <a
-href="http://linkrank.cs.ucla.edu">http://linkrank.cs.ucla.edu</a>.
+href="http://linkrank.cs.ucla.edu">http://linkrank.cs.ucla.edu</a>.</li>
 <p>
-<a href="http://www.routeviews.org"> Internet Routing
+<li><a href="http://www.routeviews.org"> Internet Routing
 Forensics -- A Framework for Understanding, Monitoring and Detecting Abnormal BGP Events.
-</a>, NSF 0520326, David Meyer, Co-PI.
+</a>, NSF 0520326, David Meyer, Co-PI.</li>
 <p>
-<a href="http://www.routeviews.org">Building the Next-Generation Global Routing Monitoring System</a>, NSF CNS-0551661, UCLA, Colorado State University, and
-the University of Oregon. David Meyer, PI.
+<li><a href="http://www.routeviews.org">Building the Next-Generation Global Routing Monitoring System</a>, NSF CNS-0551661, UCLA, Colorado State University, and the University of Oregon. David Meyer, PI.</li>
 <p>
 <br>
 <hr>
