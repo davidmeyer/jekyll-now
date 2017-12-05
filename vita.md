@@ -17,16 +17,15 @@ Curriculum Vitae
 </h1>
 	
 <h2>PERSONAL</h2> 
-
-<pre>
-Address: 1225 Kincaid St. Eugene, OR 97403
-Office:  +1.541.346.1747
-Mobile:  +1.541.221.1843
-Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a>
-Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a>
-Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a>
-Vita:    <a href="https://davidmeyer.github.io/vita">https://davidmeyer.github.io/vita</a>
-</pre>
+<ul>
+<li>Address: 1225 Kincaid St. Eugene, OR 97403 </li>
+<li>Office:  +1.541.346.1747</li>
+<li>Mobile:  +1.541.221.1843</li>
+<li>Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a></li>
+E<li>mail:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
+<li>Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a></li>
+<li>Vita:    <a href="https://davidmeyer.github.io/vita">https://davidmeyer.github.io/vita</a></li>
+</ul>
 
 <p>
 	
@@ -127,6 +126,7 @@ Architecture and Framework Design Team</a>, 2011-2012.</li>
 href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">2013
 SIGCOMM HotSDN Program Committee</a>.</li>
 <p>
+	
 <li>Member, <a
 href="http://www.ethernetsummit.com/">Ethernet Technology Summit
 Program Committee</a>, (Present).</li>
@@ -251,7 +251,7 @@ Continuation Center, (January, 1991 - June, 1995).</li>
 <p>
 <li>Systems Programmer/Administrator, Department of
 Computer and Information Science, University of Oregon, Eugene
-(September, 1983 - August, 1984).</li>
+(September, 1983 - August, 1984). </li>
 </ul>
 
 <h2>Recent Talks</h2>
@@ -259,7 +259,7 @@ Computer and Information Science, University of Oregon, Eugene
 <li><a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
 <P>
 
-<li> <a href="./ml/index.html">Random (and largely
+<li> <a href="./ml/index.md">Random (and largely
 incomplete) musings on various machine learning topics</a>, WIP.
 Last update: 25 May 2016. </li>
 <P>
