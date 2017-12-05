@@ -56,7 +56,7 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 <li> Cosmology </li> 
 <li> Surfing </li> 
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> </li>
-</ul> 
+</ul>
 	
 <h2>EXPERIENCE </h2>
 <ul>
