@@ -9,8 +9,8 @@
  
 --> 
 <h1>
-<p align="center">
-Curriculum Vitae
+<p align="left">
+Curriculum Vitae \\
   David Meyer 
 </p> 
 </h1>
