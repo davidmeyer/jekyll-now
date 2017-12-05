@@ -1250,7 +1250,7 @@ Conference on Logic Programming, Jerusalem, Israel, 1990.</li>
 <ul>
 <li> <a href="http://www.routeviews.org">Collaborative Research:
 CI-ADDO-EN: Making Internet Routing Data Accessible To All</a>,
-NSF 1305218, David Meyer, PI. <\li>
+NSF 1305218, David Meyer, PI. </li>
 <p>
 
 <li><a href="http://www.routeviews.org">The Oregon RouteViews
