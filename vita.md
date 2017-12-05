@@ -9,12 +9,9 @@
  
 --> 
  
-<LINK REV=MADE HREF=mailto:dmm@1-4-5.net> 
- 
 <h1> 
-Curriculum Vitae<br>
-David Meyer 
-</h1> 
+Curriculum Vitae
+  David Meyer 
 <br> 
  
 <ul> 
