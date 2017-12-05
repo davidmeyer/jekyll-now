@@ -12,15 +12,9 @@
 <LINK REV=MADE HREF=mailto:dmm@1-4-5.net>
 
 
-<TITLE>	Random Musings on Machine Learning
-</TITLE>
-</HEAD>
-<body bgcolor="#FFFFFF" text="#150357" link="#143D23" vlink="#143D23"><p>
-<br>
-
-<h1>
+<h2>
 Random (and largely incomplete) thoughts/snippets on various ML topics
-</h1>
+</h2>
 
 <!-- 
 <center>
