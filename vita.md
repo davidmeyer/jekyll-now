@@ -825,32 +825,26 @@ Security, Availability, and Operator Needs </a>, <a
 href="http://www.nanog.org/mtg-0306/index.html">NANOG 28</a>,
 02 Jun 2003, Salt Lake City, Utah. </li>
 <p>
-
 <li> <a href="./talks/NANOG27/btsh">The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
 09 Feb - 11 Feb 2003, Phoenix, Arizona. <a href="http://www.nanog.org/mtg-0302/index.html">
 http://www.nanog.org/mtg-0302.</a></li>
 <p>
-
 <li> <a href="./talks/IETF55/ieprep"> Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
 Group, IETF 55, 18 Nov 2002</li>.
 <p>
-
 <li> <a href="./talks/NANOG26/complexity_panel">
 Services, Complexity, and the Internet: What Direction?</a> NANOG
 26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">
 http://www.nanog.org/mtg-0210/index.html</a></li>.
 <p>
-
 <li> <a href="./talks/iepg_07142002">
 What Happened to the Dinosaurs? (One Person's View of the IP Carrier
 Space)</a>. IEPG, Jul 2002.  Please see <a href="http://www.potaroo.net/iepg/july2002/">http://www.potaroo.net/iepg/july2002</a></li>.
-<p>
-	
+<p>	
 <li><a href="./talks/NANOG23/bgp_track">BGP Trends and Dynamics
 Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
 <a href="http://www.nanog.org/mtg-0110/">http://www.nanog.org/mtg-0110</a></li>.
 <p>
-
 <li><a href="./talks/ISMA0112"> Route Views
 Update</a>. Winter ISMA 2001. Please see also <a
 href="http://www.caida.org/outreach/isma">
