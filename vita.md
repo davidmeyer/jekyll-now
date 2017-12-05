@@ -287,18 +287,13 @@ machines and networks.
 <p>
 
 <h2>Recent Talks</h2>
-<i> <a href="./qc">Thoughts on Various Topics
-Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.
+<a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.
 <P>
-	
-<i>
 
-
-<i>
 <a href="./ml">Random (and largely
 incomplete) musings on various machine learning topics</a>, WIP.
 Last update: 25 May 2016. 
-</li>
+
 <P>
 
 <i>
