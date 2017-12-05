@@ -38,7 +38,7 @@ concentration in statistics), June, 1981.
 Fellow, 1986-1987.  
 </ul>   
 <p> 
-<li><h1>INTERESTS</h1> 
+<li><h2>INTERESTS</h2> 
 <p> 
 <ul> 
 <li> Machine Learning  
