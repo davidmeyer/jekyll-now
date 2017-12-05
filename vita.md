@@ -64,9 +64,9 @@ Fellow, 1986-1987.
 
 <li><h2> EXPERIENCE </h2>
 <ul>
-<li><b>Chief Scientist,  <a
+<li>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
-Laboratory</a>,  (Oct 2017 - present).</b>
+Laboratory</a>,  (Oct 2017 - present).
 <p>
 <li><b>Chief Scientist, Vice President and Brocade Fellow, <a
 href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - June 2017).</b>
