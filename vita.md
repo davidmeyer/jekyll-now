@@ -479,7 +479,7 @@ World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
 <li><a
 href="./talks/interop_tokyo_062014.pdf">
 Keynote: OpenDaylight and the Past, Present and Future of Open
-Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>  
+Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>, 
 Tokyo, Japan. </li>
 <p> 
 	
@@ -487,7 +487,7 @@ Tokyo, Japan. </li>
 href="./talks/opendaylight_futures.pdf">OpenDaylight
 Futures</a>, <a
 href="http://www.conference.cn/sdnt/2014/en/Conference.asp?ArticleID=520">Global
-SDN Technology Conference 2014</a> 
+SDN Technology Conference 2014</a>, 
 Beijing, China. </li>
 <p> 
 
@@ -692,9 +692,9 @@ href="talks/ethernet_summit_2013.pdf">OpenFlow: Today's Reality, Tomorrow's
 Promise. An Architectural Perspective</a>, 
 <a
 href="http://www.ethernetsummit.com/">
-Ethernet Technology Summit 2013</a>, Santa Clara, CA.</i>
+Ethernet Technology Summit 2013</a>, Santa Clara, CA.</li>
 <p>
-<i> <a
+<li> <a
 href="talks/upperside_sdn_summit_paris_2013.pdf">OpenFlow: Today's Reality, Tomorrow's
 Promise. An Architectural Perspective</a>, 
 <a
@@ -725,147 +725,149 @@ href="http://events.internet2.edu/2013/tip/index.cfm">
 TIP 2013.</li>
 <p>
 
-<i> <a href="talks/sdn-hard.pdf">What are the "sdn-hard"
+<li> <a href="talks/sdn-hard.pdf">What are the "sdn-hard"
 problems?</a>, <a
 href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=12363">Dagstuhl
 Seminars: Software Defined Networking</a>, Schloss Dagstuhl -
-Leibniz Center for Informatics, September, 2012.</i>
+Leibniz Center for Informatics, September, 2012.</li>
 <p>
 
-<i> <a href="talks/hoti_fad_or_phenom.pdf">SDN: Fad or
+<li> <a href="talks/hoti_fad_or_phenom.pdf">SDN: Fad or
 Phenom?</a>, <a href="http://www.hoti.org">IEEE Hot
-Interconnects</a>, Santa Clara, CA, August 22-23, 2012.</i>
+Interconnects</a>, Santa Clara, CA, August 22-23, 2012.</li>
 <p>
 
-<i> <a href="talks/IETF83/ncrg_complexity_antifragility_and_integrated_thories.pdf">
+<li> <a href="talks/IETF83/ncrg_complexity_antifragility_and_integrated_thories.pdf">
 Complexity, Antifragility, and Integrated Theories</a>, IRTF
-Network Complexity Working Group, IETF 83, Paris, France, March, 2012.</i>
+Network Complexity Working Group, IETF 83, Paris, France, March, 2012.</li>
 <P>
-<i> <a href="talks/some_musings_on_of_and_sdn.pdf">
+<li> <a href="talks/some_musings_on_of_and_sdn.pdf">
 Some Musings on OpenFlow and SDN for Enterprise Networks</a>,
-Open Networking Summit, October 17-19, 2011 (<a href="http://www.youtube.com/watch?v=PbFaokQIREw">video here</a>)</i> 
+Open Networking Summit, October 17-19, 2011 (<a href="http://www.youtube.com/watch?v=PbFaokQIREw">video here</a>)</li> 
 <p>
-<i> <a href="talks/IETF76/lisp-ietf-arn-mn.final.pdf">LISP Mobile
+<li> <a href="talks/IETF76/lisp-ietf-arn-mn.final.pdf">LISP Mobile
 Node</a>, LISP Working Group, IETF 76, Hiroshima, Japan, November
-8-13, 2009. </i> 
+8-13, 2009. </li> 
 <p>
-<i> <a
+<li> <a
 href="http://nanog.org/meetings/nanog45/presentations/Monday/Meyer_iteotwawki_N45.pdf">Its The End Of The World As We Know
 It (aka "The New Internet Architecture")</a>, 
 NANOG 45, January 25-28, 2009, Santo Domingo, Dominican
-Republic.</i> 
+Republic.</li> 
 <p>
-<i> <a
+<li> <a
 href="lisp-ausnog02.pdf">LISP -- What is it, and how much is
-real?</a>, AusNOG 02 Keynote, August, 2008 </i>
+real?</a>, AusNOG 02 Keynote, August, 2008. </li>
 <p>
 
-<i> <a
+<li> <a
 href="cdo-express-ip-econ.ps">Workshop on the Economics of IP
-Addresses</a>, Cisco Research Symposium, March, 2008 </i>
+Addresses</a>, Cisco Research Symposium, March, 2008. </li>
 <p>
-<i> <a
+<li> <a
 href="http://events.internet2.edu/2008/jt-hawaii/sessionDetails.cfm?session=3612&event=278">LISP
-Overview</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008 </i>
+Overview</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008. </li>
 <p>
-<i> <a
+<li> <a
 href="http://events.internet2.edu/2008/jt-hawaii/sessionDetails.cfm?session=3609&event=278">Routeviews
-Update</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008</i>
+Update</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008. </li>
 <p>
-<i> <a href="http://www.ripe.net/ripe/meetings/ripe-55/presentations/meyer-lisp.pdf">
+<li> <a href="http://www.ripe.net/ripe/meetings/ripe-55/presentations/meyer-lisp.pdf">
 LISP: A Level of Indirection for Routing</a>,
-RIPE 55, October, 2007</i> 
+RIPE 55, October, 2007.</li> 
 <p>
-<i> <a href="./talks/NANOG41/perfect_storm">
+<li> <a href="./talks/NANOG41/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
-NANOG 41, October, 2007</i> 
+NANOG 41, October, 2007.</li> 
 <p>
-<i> <a href="http://www.internetevolution.com/author.asp?section_id=506&doc_id=137319">
-Bill St. Arnaud's commentary on my NANOG 41 Perfect Storm talk</a></i> 
+<li> <a href="http://www.internetevolution.com/author.asp?section_id=506&doc_id=137319">
+Bill St. Arnaud's commentary on my NANOG 41 Perfect Storm talk</a>.</li> 
 <p>
-<i> <a href="./talks/NANOG41/cons">
+<li> <a href="./talks/NANOG41/cons">
 LISP-CONS: A Mapping Database Service</a>,
-NANOG 41, October, 2007</i> 
+NANOG 41, October, 2007.</li> 
 <p>
-<i> <a href="./talks/apricot2007/perfect_storm">
+<li> <a href="./talks/apricot2007/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
-Keynote Address, Apricot 2007, Bali, Indonesia</i> 
+Keynote Address, Apricot 2007, Bali, Indonesia. </li> 
 <p>
 
-<i> <a href="./talks/apricot2006/multihoming">
+<li> <a href="./talks/apricot2006/multihoming">
 APRICOT IAB IPv6 Multihoming BOF</a>,
 <a href="http://apricot2006.net">APRICOT 2006</a>,
-February 22 - March 03, 2006. Perth, Western Australia</i> 
+February 22 - March 03, 2006. Perth, Western Australia.</li> 
 <p>
-<i> <a href="./talks/NANOG35/multihoming">
+<li> <a href="./talks/NANOG35/multihoming">
 IAB IPv6 Multihoming BOF</a>,
 <a href="http://www.nanog.org/mtg-0510/iab.html">NANOG 35</a>,
-October 22-23, 2005. Los Angeles, CA</i> 
+October 22-23, 2005. Los Angeles, CA.</li> 
 <p>
-<i> <a href="./talks/NANOG35/iab">
+<li> <a href="./talks/NANOG35/iab">
 What the heck is the IAB anyway?</a>,
 <a href="http://www.nanog.org/mtg-0510">NANOG 35</a>,
-October 22-23, 2005. Los Angeles, CA</i> 
+October 22-23, 2005. Los Angeles, CA.</li> 
 <p>
-<i> <a href="./talks/NANOG34/oix">
+<li> <a href="./talks/NANOG34/oix">
 The Oregon Internet Exchange (OIX)</a>,
 <a href="http://www.nanog.org/">NANOG 34</a>, 15 May - 17 May,
-2005. Seattle, WA.</i> 
+2005. Seattle, WA.</li> 
 <p>
-<i> <a href="./talks/SANOGV">
+<li> <a href="./talks/SANOGV">
 Complexity and Service Provider Networks in the 21st Century</a>,
 <a href="http://www.sanog.org/sanog5/program.htm">SANOG V</a>, 06
-Feb - 13 Feb, 2005, Dhaka, Bangladesh.</i> 
+Feb - 13 Feb, 2005, Dhaka, Bangladesh.</li> 
 <p>
-<i> <a href="./talks/NANOG33/ims">
+<li> <a href="./talks/NANOG33/ims">
 The IP Multimedia Subsystem (and what it might mean to you) </a>,
 <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb
-2005. Las Vegas, NV.</i> 
+2005. Las Vegas, NV.</li> 
 <p>
-<i> <a href="./talks/NANOG33/designing">
+<li> <a href="./talks/NANOG33/designing">
 Designing for Complexity: A Few New Concepts And Their Application To Your Networks
 </a>,
 <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb
-2005. Las Vegas, NV.</i> 
+2005. Las Vegas, NV.</li> 
 <p>
-<i> <a href="./talks/routeviews/ISMA2004">
-Route-Views Update, ISMA Data Catalog Workshop</a>, 03 Jun, 2004</i>
+<li> <a href="./talks/routeviews/ISMA2004">
+Route-Views Update, ISMA Data Catalog Workshop</a>, 03 Jun, 2004.</li>
 <p>
-<i> <a href="./talks/NANOG28/s-o-bgp"> BGP
+<li> <a href="./talks/NANOG28/s-o-bgp"> BGP
 Security, Availability, and Operator Needs </a>, <a
 href="http://www.nanog.org/mtg-0306/index.html">NANOG 28</a>,
-02 Jun 2003, Salt Lake City, Utah. </i>
+02 Jun 2003, Salt Lake City, Utah. </li>
 <p>
-<i> <a href="./talks/NANOG27/btsh">
+<li> <a href="./talks/NANOG27/btsh">
 The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
 09 Feb - 11 Feb 2003, Phoenix, Arizona. <a
 href="http://www.nanog.org/mtg-0302/index.html">http://www.nanog.org/mtg-0302
-</a></i>.
+</a></li>.
 <p>
-<i> <a href="./talks/IETF55/ieprep">
+<li> <a href="./talks/IETF55/ieprep">
 Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
-Group, IETF 55, 18 Nov 2002</i>.
+Group, IETF 55, 18 Nov 2002</li>.
 <p>
-<i> <a href="./talks/NANOG26/complexity_panel">
+<li> <a href="./talks/NANOG26/complexity_panel">
 Services, Complexity, and the Internet: What Direction?</a> NANOG
-26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">http://www.nanog.org/mtg-0210/index.html</a></i>.
+26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">http://www.nanog.org/mtg-0210/index.html</a></li>.
 
 <p>
-<i> <a href="./talks/iepg_07142002">
+<li> <a href="./talks/iepg_07142002">
 What Happened to the Dinosaurs? (One Person's View of the IP Carrier
-Space)</a>. IEPG, Jul 2002.  Please see <a href="http://www.potaroo.net/iepg/july2002/">http://www.potaroo.net/iepg/july2002</a></i>.
+Space)</a>. IEPG, Jul 2002.  Please see <a href="http://www.potaroo.net/iepg/july2002/">http://www.potaroo.net/iepg/july2002</a></li>.
 <p>
-<i><a href="./talks/NANOG23/bgp_track">BGP Trends and Dynamics
+<li><a href="./talks/NANOG23/bgp_track">BGP Trends and Dynamics
 Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
-<a href="http://www.nanog.org/mtg-0110/">http://www.nanog.org/mtg-0110</a></i>.
+<a href="http://www.nanog.org/mtg-0110/">http://www.nanog.org/mtg-0110</a></li>.
 <p>
-<i><a href="./talks/ISMA0112"> Route Views
+<li><a href="./talks/ISMA0112"> Route Views
 Update</a>. Winter ISMA 2001. Please see also <a
 href="http://www.caida.org/outreach/isma">
-http://www.caida.org/outreach/isma</a></i>.   
+http://www.caida.org/outreach/isma</a></li>. 
+	
+<\ul>
 <p>
-<li><h1>Recent Blogs and the like</h1></li>
-
+<h2>Recent Blogs and the like</h2>
+<ul>
 <i>
 <a
 href="http://packetpushers.net/podcast/podcasts/pq-show-107-applicability-machine-learning-networking/">The
@@ -950,8 +952,9 @@ href="http://www.opendaylight.org/">The OpenDaylight Project</a>.
 <p>
 <a href="http://www.opendaylight.org/blogs/2013/06/rapid-innovation-open-source-sdn-opendaylight-hackfest">
 Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.
+</ul>
 <p>
-<li><h1>Recent Publications</h1>
+<h2>Recent Publications</h2>
 <p>
 Meyer RFC Overview, <a
 href="http://www.arkko.com/tools/allstats/davidmeyer.html">http://www.arkko.com/tools/allstats/davidmeyer.html.</a>
