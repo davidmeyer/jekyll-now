@@ -8,15 +8,16 @@
 # 
  
 --> 
- 
+<h1>
 <p align="center">
 Curriculum Vitae
   David Meyer 
-<\p> 
+</p> 
+</h1>
 	
 
 <ul> 
-<li> <h1> PERSONAL </h1> 
+<li> <h2> PERSONAL </h2> 
 <pre> 
 Address:  1225 Kincaid St. 
           Eugene, OR 97403 
