@@ -40,7 +40,7 @@ Vita:     <a href="http://www.1-4-5.net/~dmm/vita.html">http://www.1-4-5.net/~dm
 See also: <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</a> 
 </pre>
 	
-	<p> 
+<p> 
 <li><h1> EDUCATION </h1> 
 <p> 
 <ul> 
