@@ -36,7 +36,7 @@ Vita:     <a href="https://davidmeyer.github.io/">https://davidmeyer.github.io</
 concentration in statistics), June, 1981.   
 <li>M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research \
 Fellow, 1986-1987.  
-<\ul>
+</ul>
 <p> 
 	
 <li><h2>INTERESTS</h2> 
