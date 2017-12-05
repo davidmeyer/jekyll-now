@@ -214,77 +214,44 @@ href="http://www.ietf.org/html.charters/msdp-charter.html">MSDP Working Group (I
 <p>
 <li>Chair, Internet2 Multicast Working Group, (1998).</li>
 <p>
+	
 <li>Network Architect, State of Oregon, (1993 - 1998).</li>
 <p>
-Duties include design, engineering and operation of state-wide
-high speed ATM network. Projects include inter-domain routing,
-multicast routing, and class of service issues. Please see
-<a href="http://www.nero.net">http://www.nero.net</a> for
-additional detail.  
+
+<li>Architect, <a href="http://www.oregon-ix.net"> Oregon Exchange</a>, (1998).</li>  
 <p>
-<li>Architect, <a href="http://www.oregon-ix.net"> Oregon Exchange</a>, (1998).</li>
-<p>
-Designed, implemented and operation of regional Internet
-exchange. Please see <a
-href="http://www.oregon-ix.net">
-http://www.oregon-ix.net</a> for additional
-details.   
-<p>
+	
 <li>Network Architect, Lane Education Network (LEN).</li>
 <p>
-Duties include design, engineering and operation of regional IP
-network supporting the k-20 and business communities. Please see
-<a
-href="http://www.antc.uoregon.edu/LEN">http://www.antc.uoregon.edu/LEN 
-</a>for additional detail. </ul>
 
-<p>
 <li>Network Architect, Office of University Computing,
 University of Oregon, (September, 1989 - 1998).</li>
 <p>
-Duties include management and engineering of campus backbone
-network, and design, engineering and installation of campus wide
-area connectivity.  
-
-<p>
+	
 <li>Senior Network Engineer, Office of University
 Computing, University of Oregon, (September, 1989 - 1996).</li>
 <p>
-Duties include management and engineering of campus backbone
-network, engineering and installation on in-building networks,
-and Unix consulting.  
 
-<p>
 <li>Senior Software Engineer, Tektronix, Inc., Beaverton,
 Oregon (August, 1984 - September 1985).</li>
 <p>
-Designed and implemented various network layer software. Projects 
-included TCP/IP and ISO protocol implementations, various device
-drivers, and language processors.  
 
 <p>
 <li>Consultant, TGN Consulting, (January, 1991 - June, 1995).</li>
 <p>
-Unix network programming, local, campus, and wide area network
-consultant.  
 
 <p>
 <li>Instructor/Consultant, University of Oregon
 Continuation Center, (January, 1991 - June, 1995).</li>
-<p>
-Taught courses on Internetworking and UNIX network
-programming. Involved in on-site Unix and inter-networking
-consulting. 
+ 
 
 <p>
 <li>Systems Programmer/Administrator, Department of
 Computer and Information Science, University of Oregon, Eugene
 (September, 1983 - August, 1984).</li>
 <p>
-General systems programming and administration of departmental
-machines and networks. </li>
+
 </ul>
-<p>
 
 <h2>Recent Talks</h2>
 <ul>
