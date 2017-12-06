@@ -243,16 +243,13 @@ Oregon (August, 1984 - September 1985).</li>
 <li>Consultant, TGN Consulting, (January, 1991 - June, 1995).</li>
 <p>
 
-<p>
 <li>Instructor/Consultant, University of Oregon
 Continuation Center, (January, 1991 - June, 1995).</li>
- 
-
 <p>
+	
 <li>Systems Programmer/Administrator, Department of
 Computer and Information Science, University of Oregon, Eugene
 (September, 1983 - August, 1984). </li>
-	
 </ul>
 
 <h2>Recent Talks</h2>
