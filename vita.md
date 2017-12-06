@@ -37,7 +37,6 @@ Curriculum Vitae
 <p> 
 	
 <h2>INTERESTS</h2> 
-<p> 
 <ul> 
 <li> Machine Learning </li> 
 <li> Artificial General Intelligence (AGI) </li> 
@@ -113,7 +112,6 @@ href="http://irtf.org/ncrg">Network
 Complexity Research Group </a> </a> <a
 href="http://irtf.org/">(IRTF)</a>, (2014). </li>
 <p>
-	
 <li>Original co-Author, <a
 href="http://lispmob.org/home">Open Source LISP Mobile Node
 Implementation (LISPMOB)</a>.</li>
@@ -125,8 +123,7 @@ Architecture and Framework Design Team</a>, 2011-2012.</li>
 <li>Member, <a
 href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">2013
 SIGCOMM HotSDN Program Committee</a>.</li>
-<p>
-	
+<p>	
 <li>Member, <a
 href="http://www.ethernetsummit.com/">Ethernet Technology Summit
 Program Committee</a>, (Present).</li>
@@ -217,35 +214,26 @@ href="http://www.ietf.org/html.charters/msdp-charter.html">MSDP Working Group (I
 <p>
 <li>Chair, Internet2 Multicast Working Group, (1998).</li>
 <p>
-	
 <li>Network Architect, State of Oregon, (1993 - 1998).</li>
 <p>
-
 <li>Architect, <a href="http://www.oregon-ix.net"> Oregon Exchange</a>, (1998).</li>  
-<p>
-	
+<p>	
 <li>Network Architect, Lane Education Network (LEN).</li>
 <p>
-
 <li>Network Architect, Office of University Computing,
 University of Oregon, (September, 1989 - 1998).</li>
-<p>
-	
+<p>	
 <li>Senior Network Engineer, Office of University
 Computing, University of Oregon, (September, 1989 - 1996).</li>
 <p>
-
 <li>Senior Software Engineer, Tektronix, Inc., Beaverton,
 Oregon (August, 1984 - September 1985).</li>
 <p>
-
 <li>Consultant, TGN Consulting, (January, 1991 - June, 1995).</li>
 <p>
-
 <li>Instructor/Consultant, University of Oregon
 Continuation Center, (January, 1991 - June, 1995).</li>
-<p>
-	
+<p>	
 <li>Systems Programmer/Administrator, Department of
 Computer and Information Science, University of Oregon, Eugene
 (September, 1983 - August, 1984). </li>
