@@ -1198,7 +1198,7 @@ Meyer and John Conery, Proceedings of the Seventh International
 Conference on Logic Programming, Jerusalem, Israel, 1990.</li>
 </ul>
 
-<h2>ACTIVE GRANTS</h2>
+<h2>CURRENT AND PREVIOUS GRANTS</h2>
 <p>
 <ul>
 <li> <a href="http://www.routeviews.org">Collaborative Research:
