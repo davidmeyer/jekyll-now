@@ -1,0 +1,484 @@
+head	1.17;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.17
+date	2019.10.04.18.11.15;	author dmm;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2019.09.24.14.14.57;	author dmm;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2019.03.29.16.32.32;	author dmm;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2019.03.11.21.32.13;	author dmm;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2019.02.20.22.16.33;	author dmm;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2019.02.08.17.23.30;	author dmm;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2019.01.21.19.25.47;	author dmm;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2019.01.16.00.00.34;	author dmm;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2019.01.11.18.57.58;	author dmm;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2018.12.20.16.30.26;	author dmm;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2018.12.20.16.09.27;	author dmm;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2018.12.20.14.49.23;	author dmm;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2018.12.13.17.24.17;	author dmm;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2018.12.06.15.51.09;	author dmm;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.12.06.15.49.58;	author dmm;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.11.26.18.32.52;	author dmm;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.11.11.20.27.02;	author dmm;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@<!-- 
+
+#
+#	David Meyer
+#	dmm@@m1-4-5.net
+#	Sun Oct 30 13:33:40 2016
+#
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.16 2019/09/24 14:14:57 dmm Exp dmm $
+#
+-->
+
+<HEAD>
+<LINK REV=MADE HREF=mailto:dmm@@1-4-5.net>
+<TITLE>Thoughts on Quantum Computing
+</TITLE>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#150357" link="#143D23" vlink="#143D23"><p>
+<br>
+
+<center>
+<h2>
+Notes on Various Topics Related to Quantum Theory
+</h2>
+</center>
+<br>
+<br>
+
+
+
+
+
+<ul>
+  <li><a href="./projective_geometry.pdf">A Few Notes on the Projective Geometries (WIP) </a></li>
+</ul>
+<br>
+
+
+
+<ul>
+  <li><a href="./division.pdf">A Few Notes on the Division Algorithm (WIP) </a></li>
+</ul>
+<br>
+
+
+
+
+
+<ul>
+  <li><a href="./galois_theory.pdf">Notes on Groups, Rings, and Fields </a></li>
+</ul>
+<br>
+
+
+
+
+
+<ul>
+  <li><a href="./cayleys_theorem.pdf">A Few Notes on Cayley's Theorem</a></li>
+</ul>
+<br>
+
+
+
+<ul>
+  <li><a href="./groups.pdf">A Few Notes on Group, Ring and Field Theory (warning: WIP)</a></li>
+</ul>
+<br>
+
+
+
+<ul>
+  <li><a href="./change_of_basis.pdf">A Few Notes on Change of Basis</a></li>
+</ul>
+<br>
+
+
+<ul>
+  <li><a href="./algebraic_structures.pdf">A Few Notes on Algebriac Structures (WIP)</a></li>
+</ul>
+<br>
+
+<ul>
+  <li><a href="./density.pdf">Some notes on Density Operators, Expectation Values, and Matrix Shapes</li>
+  </a>
+</ul>
+<br>
+
+<ul>
+<li><a href="./bell.pdf">A Few Notes on Bell States, Superdense Coding, and
+Quantum Teleportation</li>
+<img src="./images/bell_state_cat.jpg" style="width:400px;height:100px;">
+</a>
+</ul>
+
+
+<br>
+<ul>
+<li><a href="./bloch_sphere.pdf">Notes on the Bloch Sphere</li>
+<img src="./images/bloch_sphere.png"" style="width:200px;height:200px;">
+</a>
+</ul>
+
+
+<br>
+<ul>
+<li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment</li>
+<img src="./images/measurement_with_two_beam_splitters.png" style="width:320px;height:200px;">"
+</a>
+</ul>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<i>Last Update: 10.04.2019 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+</i>
+<br>
+</BODY>
+</HTML>
+
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.15 2019/03/29 16:32:32 dmm Exp dmm $
+d31 8
+d119 1
+a119 1
+<i>Last Update: 09.24.2019 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.14 2019/03/11 21:32:13 dmm Exp dmm $
+d29 11
+d111 1
+a111 1
+<i>Last Update: 03.29.2019 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.13 2019/02/20 22:16:33 dmm Exp dmm $
+d30 9
+d100 1
+a100 1
+<i>Last Update: 2019.03.11 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.12 2019/02/08 17:23:30 dmm Exp dmm $
+d29 6
+d91 1
+a91 1
+<i>Last Update: 2019.02.20 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.11 2019/01/21 19:25:47 dmm Exp dmm $
+d31 1
+a31 1
+  <li><a href="./groups.pdf">A Few Notes on Group Theory</a></li>
+d85 1
+a85 1
+<i>Last Update: 2019.02.08 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.10 2019/01/16 00:00:34 dmm Exp dmm $
+d29 8
+d85 1
+a85 1
+<i>Last Update: 2019.01.21 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.9 2019/01/11 18:57:58 dmm Exp dmm $
+d28 7
+d77 1
+a77 1
+<i>Last Update: 2019.01.11 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.8 2018/12/20 16:30:26 dmm Exp dmm $
+a34 1
+  <img src="./images/density.png" style="width:400px;height:400px;">
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.7 2018/12/20 16:09:27 dmm Exp dmm $
+d29 5
+d71 1
+a71 1
+<i>Last Update: 2018.12.20 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.6 2018/12/20 14:49:23 dmm Exp dmm $
+d22 1
+a22 1
+Thoughts on Various Topics Related to Quantum Computing
+d29 3
+a31 1
+<li><a href="./density.pdf">Some notes on Density Operators, Expectation Values, and Matrix Shapes</li></a>
+d42 1
+d45 2
+a46 2
+<li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment</li>
+<img src="./images/measurement_with_two_beam_splitters.png" style="width:320px;height:200px;">"
+d50 1
+a51 2
+<br>
+
+d53 2
+a54 2
+<li><a href="./bloch_sphere.pdf">Notes on the Bloch Sphere</li>
+<img src="./images/bloch_sphere.png"" style="width:200px;height:200px;">
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.5 2018/12/13 17:24:17 dmm Exp dmm $
+d29 1
+a29 1
+<li><a href="./shapes.pdf">Some notes on Density Operators, Expectation Values, and Matrix Shapes</li></a>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.4 2018/12/06 15:51:09 dmm Exp dmm $
+d29 5
+a55 1
+<li><a href="./shapes.pdf">Some ideas about matrix shapes</li>
+d64 1
+a64 1
+<i>Last Update: 2018.12.13 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.3 2018/12/06 15:49:58 dmm Exp dmm $
+d51 1
+d60 1
+a60 1
+<i>Last Update: 2018.12.06 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.2 2018/11/26 18:32:52 dmm Exp dmm $
+d59 1
+a59 1
+<i>Last Update: 2018.11.26 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.1 2018/11/11 20:27:02 dmm Exp dmm $
+d29 2
+a30 1
+<li><a href="./bell.pdf">Notes on the Bell States</li>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d8 1
+a8 1
+#	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.2 2016/10/30 22:03:15 dmm Exp $
+d29 7
+d37 1
+a37 1
+<img src="./images/measurement_with_two_beam_splitters.png" style="width:320px;height:200px;">
+d58 1
+a58 1
+<i>Last Update: 2018.11.11 by <a href=mailto:dmm@@1-4-5.net>dmm@@1-4-5.net</a>
+@

@@ -1,0 +1,123 @@
+
+Comments on https://arxiv.org/abs/1802.0315
+Other comments: https://www.facebook.com/haddadi/posts/10101433199360820
+
+
+Page 1: 
+
+	This is also the case in many surveillance applications when a
+	central node requires to process user data that may be
+	sensitive in some aspects.  
+
+		s/requires/is required/
+
+	Our works relies on the assumption that the service provider
+	releases a publicly verifiable feature extractor module based
+	on an initial training set. 
+
+		how publicly varifiable?
+
+	The fundamental challenge in using this framework is the
+	design of the feature extractor module that removes sensitive
+	information properly and on the other hand does not violate
+	scalability by burdening heavy load on the user’s device.
+
+		maybe "does not impact scalability by imposing heavy
+		computational requirements on the user's device" (?)
+
+Section 2.3 Model’s Training-Data Privacy
+
+	The growing popularity of public learning models rises the
+	concern of privacy of the individuals involved in the training
+	dataset.   
+
+		s/rises/raises/
+
+
+	Answering to complex queries by combining simple queries is
+	the way various learning models, such as Principal Com- ponent
+	Analysis and k-means, can be made differentially private (see
+	the surveys by [26] and [27]). 
+
+		s/Answering to/Answering/
+
+Section 2.4 Model Privacy
+
+	It would seem that black-box attacks could weaken Model
+	Privacy, e.g., https://arxiv.org/abs/1602.02697
+
+
+3 PROBLEM FORMULATION
+
+	In this section, we are going to address the user data privacy
+	challenge, in a different manner from encryption-based
+	methods. 
+
+		s/are going to//
+		s/challenge,/challenge/
+
+	The key intuition is that in many applications, instead of
+	hiding all information which is the main idea behind the
+	encryption-based solutions, we can remove all user’s sensitive
+	information, while trying to maintain the primary information
+	inferable.
+
+		Maybe: The key intuition is that for many applications
+		we can remove all of the user's sensitive information
+		while retaining the ability to infer the primary
+		information. This is as opposed to encryption-based
+		solutions... 
+
+
+	Assuming the service provider knows the primary (e.g. facial
+	attribute) and sensitive (e.g. identity) random variables, we
+	abstract this concept as an optimization problem by utiliz-
+	ing mutual information (see Appendix A for information
+	theoretic preliminaries). 
+
+		"this concept" refers to what?
+
+
+	Taking x as the input, z as the primary and y as the sensitive
+	variables, we extract a feature f, from x, which is
+	informative about the primary variable and non-informative
+	about the sensitive variable. We call the extracted feature as
+	the private-feature. Specifically, the desired private-feature
+	is obtained through maximizing the mutual information between
+	feature and primary variable I(f;z), while minimizing mutual
+	information between feature and sensitive variable I(f; y) as
+	follows:  
+
+		max_{f} I(f;z) -\beta I(f;y)
+		s.t. f = g(x)
+
+	Comment here: "Specifically, the desired private-feature is
+	obtained through maximizing the mutual information between
+	feature and primary variable I(f;z), while minimizing mutual
+	information between feature and sensitive variable I (f; y) as
+	follows:" 
+
+		Here it seems that here the objective could be
+		construed as a two player minimax game, which is
+		exactly what infoGAN does. See Eqation (3) of
+		https://arxiv.org/pdf/1606.03657.pdf.  
+
+
+	"...where I(A;B) is the mutual information between two random
+	variables A and B."
+
+		I (or mutual information) isn't yet defined...
+
+	"... because: (a) the optimal model which perfectly predict z
+	can be too complicated. Therefore, using such a feature
+	extractor in client-side is impossible; "
+
+		Does it follow that because the optimal model can be
+		"too complicated" that "such a feature extractor in
+		the client-side is impossible"?
+
+
+
+		
+
+
