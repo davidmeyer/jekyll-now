@@ -18,8 +18,6 @@ Curriculum Vitae
 	
 <h2>PERSONAL</h2> 
 <ul>
-<li>Address: 1225 Kincaid St. Eugene, OR 97403 </li>
-<li>Office:  +1.541.346.1747</li>
 <li>Mobile:  +1.541.221.1843</li>
 <li>Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a></li>
 <li>Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
@@ -240,7 +238,7 @@ Computer and Information Science, University of Oregon, Eugene
 
 <h2>Recent Talks</h2>
 <ul>
-<li><a href="./qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
+<li><a href="../qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
 <P>
 
 <li> <a href="./ml/index.md">Random (and largely
