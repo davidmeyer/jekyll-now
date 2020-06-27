@@ -23,7 +23,6 @@ Curriculum Vitae
 <li>Mobile:  +1.541.221.1843</li>
 <li>Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a></li>
 <li>Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
-<li>Email:   <a href="mailto:dmm@cs.uoregon.edu">dmm@cs.uoregon.edu</a></li>
 <li>Vita:    <a href="https://davidmeyer.github.io/vita">https://davidmeyer.github.io/vita</a></li>
 </ul>
 
@@ -63,7 +62,7 @@ Curriculum Vitae
 <ul>
 <li>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
-Laboratory</a>,  (Oct 2017 - present).</li>
+Laboratory</a>,  (Oct 2017 - Oct 2018).</li>
 <p>
 <li>Chief Scientist, Vice President and Brocade Fellow, <a
 href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - Jul 2017).</li>
