@@ -280,23 +280,23 @@ Learning Approach,
 IETF 97 (IDEAS)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="./ml/talks/2016/ideas.pdf">pdf</a>). </li>
+href="../ml/talks/2016/ideas.pdf">pdf</a>). </li>
 <p>
 
 <li> <a
-href="./ml/talks/2016/ngp_forum.pptx">
+href="../ml/talks/2016/ngp_forum.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
 <a href="http://www.layer123.com/sdn/">
 SDN World Congress/ETSI Next Generation Protocol Forum</a>.</li>
 <p>
 
 <li> <a
-href="./ml/talks/2016/odl_summit_2016.pptx">
+href="../ml/talks/2016/odl_summit_2016.pptx">
 Applying recent advances in Machine Learning to Networking</a>,
 <a href="http://events.linuxfoundation.org/events/opendaylight-summit/">
 OpenDaylight Summit</a>, 27 Sep 2016, Bellvue, WA (<a
 href="https://www.youtube.com/watch?v=29rn6-3s4yE&index=3&list=PL8F5jrwEpGAiRCzJIyboA8Di3_TAjTT-2">video</a>,
-<a href="./ml/talks/2016/odl_summit_2016.pdf">pdf</a>). </li>
+<a href="../ml/talks/2016/odl_summit_2016.pdf">pdf</a>). </li>
 <p>
 
 <li>Recent advances in Machine Learning: Creating a new level of
@@ -316,7 +316,7 @@ href="https://www.linkedin.com/pulse/machine-learning-devops-networking-fred-mil
 <p>
 	
 <li>
-<a href="./talks/2015/hoti.pptx">Keynote:
+<a href="../talks/2015/hoti.pptx">Keynote:
 Recent Advances in Machine Learning and Their Application to
 Networking</a>,
 <a href="http://www.hoti.org">
@@ -325,12 +325,12 @@ Networking</a>,
 <p>
 
 <li>
-<a href="./talks/2015/ad.pptx">
+<a href="../talks/2015/ad.pptx">
 Introduction to Anomaly Detection</a>, Brocade Tech Talk, 14 Aug 2015.</li>
 <p>
 
 <li>
-<a href="./talks/2015/thursday_lunch_ietf93.pptx">
+<a href="../talks/2015/thursday_lunch_ietf93.pptx">
 Recent Advances in Machine Learning and Their Application to Networking</a>,
 <a href="http://www.ietf.org/meeting/93/speaker-series.html">
 IETF 93</a>, July 19-24, 2015. Prague. Czech Republic
@@ -347,7 +347,7 @@ Daylight Summit</a>, July 27-31, 2015.</li>
 <p>
 
 <li><a
-href="./talks/2015/ieee_netsoft_keynote.pptx">
+href="../talks/2015/ieee_netsoft_keynote.pptx">
 Keynote: SDN, NFV and Cloud, and Network Automation: The Journey from CLI to
 Machine Intelligence</a>, 
 <a href="http://sites.ieee.org/netsoft/">
@@ -355,7 +355,7 @@ Machine Intelligence</a>,
 <p>
 
 <li><a
-href="./talks/2015/openstack_austin.pdf">
+href="../talks/2015/openstack_austin.pdf">
 Introduction to OpenDaylight: Current Events and OpenStack
 Neutron Integration</a>, 
 <a href="http://www.meetup.com/OpenStack-Austin/events/218911185/">
@@ -363,7 +363,7 @@ Openstack Meetup</a>, 18 Mar 2015, Austin, TX.</li>
 <p>
 
 <li><a
-href="./talks/2015/MWC/mwc2015.pptx">
+href="../talks/2015/MWC/mwc2015.pptx">
 A (Very) Brief Introduction to Machine Learning and its
 Application to Mobile Networks</a>,
 <a href="http://www.mobileworldcongress.com/">
@@ -371,7 +371,7 @@ Mobile World Congress</a>, 02-05 Mar 2015, Barcelona, Spain.</li>
 <p>
 
 <li><a
-href="./talks/2015/pace_2015.pdf">
+href="../talks/2015/pace_2015.pdf">
 A Very Brief Introduction to Machine Learning and its
 Application to PCE</a>,
 <a href="http://ict-one.eu/pace/public_wiki/mediawiki-1.19.7/index.php?title=Workshops">
@@ -380,34 +380,34 @@ Next Steps for the Path Computation Element Workshop
 <p>
 
 <li><a
-href="./talks/2015/ons-accelerate.pdf">
+href="../talks/2015/ons-accelerate.pdf">
 OpenDaylight, OpenSource, and Why OSS is Important</a>,
 <a href="http://www.opennetsummit.org/ons-accelerate-feb15.php">
 ONS Accelerate! Workshop</a>, 10 Feb 2015.</li>
 <p>
 
 <li><a
-href="./talks/20141027-meyer-hidden-nature-of-complex-systems.pdf">
+href="../talks/20141027-meyer-hidden-nature-of-complex-systems.pdf">
 On the Hidden Nature of Complex Systems</a>, <a
 href="http://www.internet2.edu/news-events/events/technology-exchange/">Internet2
 Technology Exchange</a>, Oct 26-30, 2014.</li>
 <p>
 
 <li><a
-href="./talks/nfd8.pptx">
+href="../talks/nfd8.pptx">
 Software Defined Intelligence (slides)</a>, <a
 href="http://techfieldday.com/appearance/brocade-presents-at-networking-field-day-8/">
 Networking Field Day 8 (video)</a>, 11 Sep 2014.</li>
 <p>
 
 <li><a
-href="./talks/introduction_to_machine_learning.pdf">
+href="../talks/introduction_to_machine_learning.pdf">
 Introduction to Machine Learning and its application to Data
 Centers</a> (Work in progress). </li>
 <p>
 
 <li><a
-href="./talks/open_network_world.pdf">
+href="../talks/open_network_world.pdf">
 Keynote: Open Source, Open Daylight, and the ONF: How it all fits
 together</a>, <a href="http://onw.cnw.com.cn/">Open Networking
 World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
@@ -415,21 +415,21 @@ World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
 <p>
 
 <li><a
-href="./talks/interop_tokyo_062014.pdf">
+href="../talks/interop_tokyo_062014.pdf">
 Keynote: OpenDaylight and the Past, Present and Future of Open
 Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>, 
 Tokyo, Japan. </li>
 <p>
 	
 <li><a
-href="./talks/opendaylight_futures.pdf">OpenDaylight
+href="../talks/opendaylight_futures.pdf">OpenDaylight
 Futures</a>, <a
 href="http://www.conference.cn/sdnt/2014/en/Conference.asp?ArticleID=520">Global
 SDN Technology Conference 2014</a>, Beijing, China. </li>
 <p>
 
 <li><a
-href="./talks/bridges.pdf">Complexity, Tradeoffs,
+href="../talks/bridges.pdf">Complexity, Tradeoffs,
 Architecture, and Building Bridges</a>, Huawei NFV Spring Forum
 2014, 19-20 May, 2014, Shanghai, China. </li>
 <p>
@@ -711,98 +711,98 @@ Update</a>, Winter 2008 ESCC/Internet2 Joint Techs Workshop, January, 2008. </li
 LISP: A Level of Indirection for Routing</a>, RIPE 55, October, 2007.</li> 
 <p>
 
-<li> <a href="./talks/NANOG41/perfect_storm">
+<li> <a href="../talks/NANOG41/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
 NANOG 41, October, 2007. <a href="http://www.internetevolution.com/author.asp?section_id=506&doc_id=137319">
 Bill St. Arnaud's commentary on my NANOG 41 Perfect Storm talk</a>.</li> 
 <p>
 
-<li> <a href="./talks/NANOG41/cons"> LISP-CONS: A Mapping Database Service</a>, NANOG 41, October, 2007.</li> 
+<li> <a href="../talks/NANOG41/cons"> LISP-CONS: A Mapping Database Service</a>, NANOG 41, October, 2007.</li> 
 <p>
 
-<li> <a href="./talks/apricot2007/perfect_storm">
+<li> <a href="../talks/apricot2007/perfect_storm">
 Perfect Storms, Internet Economics, and the Future of the Internet</a>,
 Keynote Address, Apricot 2007, Bali, Indonesia. </li> 
 <p>
 
-<li> <a href="./talks/apricot2006/multihoming">
+<li> <a href="../talks/apricot2006/multihoming">
 APRICOT IAB IPv6 Multihoming BOF</a>,
 <a href="http://apricot2006.net">APRICOT 2006</a>,
 February 22 - March 03, 2006. Perth, Western Australia.</li> 
 <p>
 
-<li> <a href="./talks/NANOG35/multihoming">
+<li> <a href="../talks/NANOG35/multihoming">
 IAB IPv6 Multihoming BOF</a>,
 <a href="http://www.nanog.org/mtg-0510/iab.html">NANOG 35</a>,
 October 22-23, 2005. Los Angeles, CA.</li> 
 <p>
 
-<li> <a href="./talks/NANOG35/iab">
+<li> <a href="../talks/NANOG35/iab">
 What the heck is the IAB anyway?</a>,
 <a href="http://www.nanog.org/mtg-0510">NANOG 35</a>,
 October 22-23, 2005. Los Angeles, CA.</li> 
 <p>
 
-<li> <a href="./talks/NANOG34/oix">
+<li> <a href="../talks/NANOG34/oix">
 The Oregon Internet Exchange (OIX)</a>,
 <a href="http://www.nanog.org/">NANOG 34</a>, 15 May - 17 May,
 2005. Seattle, WA.</li> 
 <p>
 
-<li> <a href="./talks/SANOGV">
+<li> <a href="../talks/SANOGV">
 Complexity and Service Provider Networks in the 21st Century</a>,
 <a href="http://www.sanog.org/sanog5/program.htm">SANOG V</a>, 06
 Feb - 13 Feb, 2005, Dhaka, Bangladesh.</li> 
 <p>
 
-<li> <a href="./talks/NANOG33/ims">
+<li> <a href="../talks/NANOG33/ims">
 The IP Multimedia Subsystem (and what it might mean to you) </a>,
 <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb
 2005. Las Vegas, NV.</li> 
 <p>
 
-<li> <a href="./talks/NANOG33/designing">
+<li> <a href="../talks/NANOG33/designing">
 Designing for Complexity: A Few New Concepts And Their Application To Your Networks
 </a>, <a href="http://www.nanog.org/">NANOG 33</a>, 30 Jan - 01 Feb 2005. Las Vegas, NV.</li> 
 <p>
 
-<li> <a href="./talks/routeviews/ISMA2004">
+<li> <a href="../talks/routeviews/ISMA2004">
 Route-Views Update, ISMA Data Catalog Workshop</a>, 03 Jun, 2004.</li>
 <p>
 
-<li> <a href="./talks/NANOG28/s-o-bgp"> BGP
+<li> <a href="../talks/NANOG28/s-o-bgp"> BGP
 Security, Availability, and Operator Needs </a>, <a
 href="http://www.nanog.org/mtg-0306/index.html">NANOG 28</a>,
 02 Jun 2003, Salt Lake City, Utah.</li>
 <p>
 	
-<li> <a href="./talks/NANOG27/btsh">The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
+<li> <a href="../talks/NANOG27/btsh">The BGP TTL Security Hack (BTSH)</a>, NANOG 27,
 09 Feb - 11 Feb 2003, Phoenix, Arizona. <a href="http://www.nanog.org/mtg-0302/index.html">
 http://www.nanog.org/mtg-0302</a>.</li>
 <p>
 	
-<li> <a href="./talks/IETF55/ieprep"> Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
+<li> <a href="../talks/IETF55/ieprep"> Some thoughts on CoS and Backbone Networks</a>, IEPREP Working
 Group, IETF 55, 18 Nov 2002.</li>
 <p>
 	
-<li> <a href="./talks/NANOG26/complexity_panel">
+<li> <a href="../talks/NANOG26/complexity_panel">
 Services, Complexity, and the Internet: What Direction?</a> NANOG
 26, 27 Oct - 29 Oct 2002. Please see <a href="http://www.nanog.org/mtg-0210/index.html">
 http://www.nanog.org/mtg-0210/index.html</a>.</li>
 <p>
 	
-<li> <a href="./talks/iepg_07142002">
+<li> <a href="../talks/iepg_07142002">
 What Happened to the Dinosaurs? (One Person's View of the IP Carrier
 Space)</a>. IEPG, Jul 2002.  Please see <a href="http://www.potaroo.net/iepg/july2002/">
 http://www.potaroo.net/iepg/july2002</a>.</li>
 <p>	
 
-<li><a href="./talks/NANOG23/bgp_track">BGP Trends and Dynamics
+<li><a href="../talks/NANOG23/bgp_track">BGP Trends and Dynamics
 Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
 <a href="http://www.nanog.org/mtg-0110/">http://www.nanog.org/mtg-0110</a>.</li>
 <p>
 	
-<li><a href="./talks/ISMA0112"> Route Views Update</a>. Winter ISMA 2001. Please see also <a
+<li><a href="../talks/ISMA0112"> Route Views Update</a>. Winter ISMA 2001. Please see also <a
 href="http://www.caida.org/outreach/isma">http://www.caida.org/outreach/isma</a>.</li>
 </ul>
 
@@ -821,7 +821,7 @@ Networking Meets Artificial Intelligence: A Glimpse into the
 (Very) Near Future</a>, 19 Aug 2016. </li>
 <p>
 
-<li> <a href="./papers/mm.pdf">Some thoughts
+<li> <a href="../papers/mm.pdf">Some thoughts
 on what is minimized and what is maximized in machine
 learning</a>, 09 Aug 2015.</li>
 <p>
@@ -837,7 +837,7 @@ Fear The AI?</a>, 29 Dec 2014.</li>
 <p>
 
 <li><a
-href="./papers/intro_to_autoencoders.pdf">Introduction
+href="../papers/intro_to_autoencoders.pdf">Introduction
 to Autoencoders (Work in Progress)</a>, 18 Dec 2014.</li>
 <p>
 
@@ -1009,7 +1009,7 @@ href="http://www.rfc-editor.org/rfc/rfc5486.txt"> RFC 5486.</a></li>
 <p>
 	
 <li>Meyer, David, <a
-href="./n2-routing-and-addressing-research.pdf"><i>An
+href="../n2-routing-and-addressing-research.pdf"><i>An
 Overview of Current IETF Activity on Routing and Addressing
 Models for the Internet</i></a>, Cisco IP NGN Thought Leadership
 Journal, Winter, 2008.</li>
@@ -1175,14 +1175,14 @@ for Routing Protocol Design -- Risk, Interference, and Fit (RIFT) </i>,
 draft-ietf-grow-rift-01.txt</a> (expired).</li>
 <p>
 	
-<li> <a href="./talks/LCN95.pdf">Moving
+<li> <a href="../talks/LCN95.pdf">Moving
 Towards ATM: LAN/WAN Evolution and Experimentation at the
 University of Oregon </a></i>, Foldvik, Randolph, and David 
 Meyer, 20th Annual Conference on Local Computer Networks:,
 Minneapolis, Minnesota, Oct. 1995.</li>  
 <p>
 	
-<li> <a href="./talks/icc95.pdf"> 
+<li> <a href="../talks/icc95.pdf"> 
 ATM Network Experimentation in the State of Oregon</a></i>,
 Foldvik, Randolph, Meyer, David, and Doug Taylor, IEEE
 International Conference on Communications, Seattle, WA. June
