@@ -241,7 +241,7 @@ Computer and Information Science, University of Oregon, Eugene
 <li><a href="../qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
 <P>
 
-<li> <a href="./ml/index.md">Random (and largely
+<li> <a href="../ml/index.md">Random (and largely
 incomplete) musings on various machine learning topics</a>, WIP.
 Last update: 25 May 2016. </li>
 <P>
