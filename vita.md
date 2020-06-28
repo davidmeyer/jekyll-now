@@ -247,7 +247,7 @@ Last update: 25 May 2016. </li>
 <P>
 
 <li> <a
-href="./ml/talks/2017/ancs2017.pptx">
+href="../ml/talks/2017/ancs2017.pptx">
 Recent Advances in Machine Learning and Their Application to Networking</a>,
 </a>
 <a href="http://www.ancsconf.org/">
@@ -257,23 +257,23 @@ Communications Systems</a>,
 Beijing, China.</li>
 <p>
 
-<li> <a href="./ml/talks/2017/ons.pptx"> Going Beyond Siri: Applying Machine Learning to Network
+<li> <a href="../ml/talks/2017/ons.pptx"> Going Beyond Siri: Applying Machine Learning to Network
 Automation</a> <a href="http://events.linuxfoundation.org/events/open-networking-summit"> Open Networking Summit</a>,  
 03-05 Apr 2017, Santa Clara, CA. </li>
 <p>
 
 <li> <a
-href="./ml/talks/2016/cor_ml4networking.pptx">
+href="../ml/talks/2016/cor_ml4networking.pptx">
 Machine Intelligence and Networking: Challenges, Opportunities and Realities,
 <a href="http://ietf.org/meeting/97/index.html">
 IETF 97 (nmlrg)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="./ml/talks/2016/cor_ml4networking.pdf">pdf</a>).</li>
+href="../ml/talks/2016/cor_ml4networking.pdf">pdf</a>).</li>
 <p>
 
 <li> <a
-href="./ml/talks/2016/ideas.pptx">
+href="../ml/talks/2016/ideas.pptx">
 Anomaly Detection for the IDEAS Mapping System: A Machine
 Learning Approach,
 <a href="http://ietf.org/meeting/97/index.html">
