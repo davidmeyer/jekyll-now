@@ -1,0 +1,16 @@
+
+Agenda
+
+
+Issue 1: End-System Complexity
+All (10 minutes)
+
+Issue 2: DNS Latency
+All (10 minutes)
+
+Issue 3: Inbound Traffic Engineering
+All (10 minutes)
+
+Issue 4: IPv6 Routing and Addressing Architectures
+All (10 minutes)
+

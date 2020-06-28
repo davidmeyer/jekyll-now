@@ -1,0 +1,13 @@
+
+A few notes on IMS' per-session QoS
+
+
+First, note that IMS' two-sided QoS signaling model is a major source of complexity.
+
+Further complicating this picture are "services" (the whole point of IMS) such as toll-free sessions, reverse charging, and pre-paid services (etc). 
+
+Consider what your network would have to do to support this
+And how much per-flow state in the core is required?
+And what kind of peering relationships/settlements/SLAs would be required?
+
+

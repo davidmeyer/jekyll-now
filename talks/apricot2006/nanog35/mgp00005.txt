@@ -1,0 +1,13 @@
+
+Issue 3: Inbound Traffic Engineering
+
+
+First off,  in a shim6 context, inbound TE won't be solved by shim6 itself but by  an extra component that dynamically manages shim6's preferences. 
+
+And that component can use a site wide policy set by the site's operator. 
+
+Future work item for the shim6 WG
+
+
+That being said...
+

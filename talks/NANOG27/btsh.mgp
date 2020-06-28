@@ -1,0 +1,235 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+
+%center 
+
+%xfont "utopia-medium-r", size 7, fore "black"
+
+The BGP TTL Security Hack (BTSH)
+<draft-gill-btsh-01.txt>
+
+%size 4
+Vijay Gill, John Heasley, David Meyer
+
+NANOG 27
+Phoenix, Arizona
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+
+
+	Problem Statement
+
+	Can TTL be useful?
+
+	Mechanisms
+
+	A Few Usage Assumptions
+
+	Limitations
+
+	Questions/Comments
+
+	http://www.maoz.com/~dmm/NANOG27/btsh
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Problem Statement
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	We're seeing a large number of DoS attacks against port 179. Why/How?
+
+%pause
+	Well, the TCP 4 tuple is easy enough to discover
+
+%pause
+	And the attack doesn't require sequence number. Why?
+
+%pause
+		You don't care if the TCP segment valid. Just overload the RP.   So...
+
+%pause
+	Conclusion: You don't have to own the attacked router to disable BGP processing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+What can we (easily) do in the near term?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+
+
+%pause
+	i.e., is there anything (short of crypto techniques) we can use to mitigate these sorts of attacks?
+
+%pause
+	Well, TTL still (relatively) "hard" to spoof
+
+%pause
+	Can we somehow use that fact?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Is "TTL hard to spoof" useful?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	Well, since the vast majority of (eBGP) our peerings are between adjacent routers 
+
+%pause
+	So why not set the TTL on BGP packets to 255 and then reject any BGP packets that come from configured peers which do NOT have a TTL in the range 255-254?
+
+%pause
+	That is, the receive TTL is expected to be within a small range of 1 or 2 (254-255). The actual value depends upon the (router) architecture, but it is expected that the receiver will verify the range
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Is "TTL hard to spoof" useful?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+
+
+%pause
+	BTW, why not just set TTL=1 and let normal TTL=0 discard do its thing?
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+A Little More Mechanism
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Use a receive path ACL (e.g.) that only allows BGP packets to pass to the RP that have the correct <source,destination,TTL> tuple
+%pause
+		i.e., TTL in the range 255-254 for directly connected peers
+
+
+%pause
+	If the TTL is not in the range 255-254 
+%pause
+		Punt the packet into low priority queue, log, or silently discard
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+A Few Usage Assumptions 
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	The vast majority of eBGP peerings are between adjacent routers
+
+
+%pause
+	It is common practice (or should be) for many service providers to ingress filter (deny) packets that have the provider's loopback addresses as the source IP address 
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+A Few Usage Assumptions, cont.
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Use of BTSH is OPTIONAL, and can be configured on a per-peer/peer-group basis
+
+%pause
+	The router supports a method of classifying traffic destined for the route processor into interesting/control and not-control queues
+
+%pause
+	The peer routers both implement BTSH
+
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Limitations
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+
+BTSH is a simple procedure that protects single hop BGP sessions, except in those cases where the directly connected peer has been compromised. While the method is less effective for multi-hop BGP sessions, it still closes the window on several forms of attack
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+And...
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+
+Protection of the BGP infrastructure beyond this method will likely require cryptographic machinery such as is envisioned by S-BGP (and/or other extensions)
+
+
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Questions/Comments?
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+Thanks
+%pause
+
+
+
+Oh, and please attend the GROW BOF (Global Routing Operations Working Group) at the 56th IETF (Tuesday, March 18 at 1700-1800).
+
+
+
+
+
+
+
+
+

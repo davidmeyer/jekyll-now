@@ -1,0 +1,18 @@
+
+Issues from APRICOT 2006
+
+
+One important "Stat" about the APRICOT BOF
+Had relatively few participants from the region
+
+
+
+Session not very interactive
+As a result, not too much discussion of shim6
+
+
+Dissussion issues included
+RIRs and address allocation issues
+Future routing and addressing architectures 
+
+

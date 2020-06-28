@@ -1,0 +1,114 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+%bgrad
+%xfont "utopia-medium-r", size 8, fore "white"
+
+%center 
+Welcome to NANOG 26
+%xfont "utopia-medium-r", size 6, fore "white"
+
+%center 
+%image "tshirt_small.gif"
+
+
+%size 3
+http://www.maoz.com/~dmm/NANOG26/welcome
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Network Schematics
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+	Fancy pictures of the in-building network:
+		http://tesla.uoregon.edu/~llynch/NANOG26-Network.gif
+
+%pause
+	AP location map:
+		http://tesla.uoregon.edu/~llynch/nanog26-wireless.jpg
+
+%pause
+	Network Monitoring:
+		http://srv34.nanog26.merit.net
+
+%pause
+	All the network information:
+		http://darkwing.uoregon.edu/~llynch/nanog26
+
+%pause
+	However....
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+My Network Schematic
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+%center
+%image "network.png"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Thanks to a cast of 1000s
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	All the fine people at Sprint
+%pause	
+		Ted Seely, Michael Buttrey, and Jill Burke
+
+%pause
+	Joanne Hugi's UO Staff, including
+%pause
+		Dale Smith and the entire Network Services crew
+%pause
+		Joe St Sauver, for letting us use Lucy, Joel, and Hans
+%pause
+		Mary Bradley, for helping with all our computing needs
+%pause
+		David Crowe, for a bunch of router parts
+%pause
+		David Ragsdale, for the great t-shirt art
+
+%pause
+	John Meylor and Cisco, for a bunch of router parts
+
+%pause
+	Kent June and the folks at the City of Eugene, for helping out with metro fiber
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+And Finally...
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+
+
+%pause
+Thanks to Lucy for coordinating everything, and making sure we got everything together on time...
+
+%pause
+And thanks to Joel for doing almost everything else
+

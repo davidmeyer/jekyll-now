@@ -1,0 +1,7 @@
+
+Allocation Policies, cont.
+
+
+
+Assertion: IPv6 combined with the PA/CIDR approach exacerbates RIR issues.
+

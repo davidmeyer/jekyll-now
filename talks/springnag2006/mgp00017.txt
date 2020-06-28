@@ -1,0 +1,15 @@
+
+Coupling can increase a system's robustness
+
+
+Remember, complexity and robustness are related 
+Remember the heavy-tailed curve?
+So coupling (complexity) is *not inherently bad*
+Huh?
+
+
+Consider the use of link-layer (L2) indications by routing (L3)
+Couples L2 and L3
+But provides additional robustness to the (routing) protocol
+In theory...
+

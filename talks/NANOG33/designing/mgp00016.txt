@@ -1,0 +1,10 @@
+
+Coupling Principle
+
+
+The Coupling Principle states that as things get larger, they often exhibit increased interdependence between components
+
+COROLLARY: The more events that simultaneously occur, the larger the likelihood that two or more will interact. This phenomenon has also been termed "unforeseen feature interaction" [Doyle and Willinger]
+
+Coupling can be either horizontal (within a protocol layer) or vertical (between layers) 
+

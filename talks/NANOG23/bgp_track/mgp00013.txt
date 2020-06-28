@@ -1,0 +1,14 @@
+
+RIB/FIB Dynamic Properties
+
+
+Is the dynamic nature of the routing table growing?
+How much churn is there, and where does it come from
+
+We might expect increased churn if the fraction of longer prefixes is growing
+So do more specifics churn more?
+As the table grows, what happens to the rate of change in the RIB on a macroscopic (say hourly) level?
+
+Hint: It looks like the /24 prefixes have a rate of change which is some 20% higher than the overall total table change rate. There are too few /25 and higher to make any observations, but at sizes <  /24 the most stable prefix lengths are /16, /17, /18 and /21. 
+
+

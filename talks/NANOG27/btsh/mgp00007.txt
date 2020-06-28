@@ -1,0 +1,11 @@
+
+A Little More Mechanism
+
+
+Use a receive path ACL (e.g.) that only allows BGP packets to pass to the RP that have the correct <source,destination,TTL> tuple
+i.e., TTL in the range 255-254 for directly connected peers
+
+
+If the TTL is not in the range 255-254 
+Punt the packet into low priority queue, log, or silently discard
+

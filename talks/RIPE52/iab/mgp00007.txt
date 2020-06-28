@@ -1,0 +1,20 @@
+
+Levers the IAB can (actually) pull...
+
+The IAB provides input to the IESG regarding BOFs and possible (subsequent) WG formation
+Noting that the final decision on WG creation rests with the IESG
+
+The IAB sponsors/organizes the Internet Research Task Force
+as well as reviewing proposed IRTF groups
+
+The IAB can convene invitational workshops to perform in-depth reviews of particular architectural issues
+See, for example, ftp://ftp.rfc-editor.org/in-notes/rfc3535.txt
+
+The IAB can organize ad hoc bodies of independent experts to adjudicate technical disputes
+See http://www.iab.org/about/adhocs/index.html
+
+The IAB can also write informational documents
+See, for example ftp://ftp.rfc-editor.org/in-notes/rfc3724.txt
+Noting that Standards Track document approval rests with the IESG
+
+

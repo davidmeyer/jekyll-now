@@ -1,0 +1,12 @@
+
+So what would QoS mean anyway?
+
+
+Caveat: The following graphs are for a system having a Poisson arrival process and exponentially distributed packet sizes (so I could use gnuplot :-))
+And...While this isn't a perfect model of Internet traffic, it is a reasonable approximation and makes the associated math much easier
+
+So... they are meant to show the effect of increasing bandwidth on queuing delay
+And NOT to be a statement about actual queuing delay
+
+As such, the following graphs do a good job of showing the general behavior
+

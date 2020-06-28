@@ -1,0 +1,20 @@
+
+		The BGP TTL Security Hack (BTSH)
+		   <draft-gill-btsh-01.txt>
+
+        In recent weeks and months, we have been seeing a large
+	number of DoS attacks directed against port 179
+	(BGP). These attacks are enabled in part by the facts
+	that (i). the TCP 4 tuple is easy to discover, and
+	(ii). the attack doesn't require knowledge of the TCP
+	sequence number. As a result, you don't have to
+	directly compromise ("own") the attacked router to
+	disable BGP processing.   
+	
+	The BGP TTL Security Hack (BTSH) is designed to protect
+	the BGP [RFC1771] infrastructure from CPU-utilization
+	based attacks. While BTSH is most effective in protecting
+	directly connected BGP peers, it can also provide a lower
+	level of protection to multi-hop sessions.  
+
+

@@ -1,0 +1,11 @@
+
+So...Complexity Driver 1: Roaming
+
+
+So it is the subscriber binding to a "home" service provider, with provider-mediated roaming to the networks of other providers that is at the root of the complexity here
+
+Any such provider-controlled roaming scheme must accommodate SIX parties, with at least THREE accounting/billing relationships, all of which must be tracked in the control plane, the data plane, and management plane. 
+Which control, data, and management planes?
+
+What are the six parties and the accounting/billing (A/B) relationships?
+

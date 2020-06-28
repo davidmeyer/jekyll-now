@@ -1,0 +1,14 @@
+
+Tremors in the (MPLS) force #2 
+
+
+LSP Source Identifiers
+IETF: The source identifier of an LSP (which is essentially the LSP access-point address) to be a function of the signaling protocol that created it.  e.g., an LDP signaled LSP uses a different source identifier to an RSVP-TE signaled LSP, v.
+ITU: Y.1711 where the LSP source identifier is denoted by the 20 octet TTSI (Trail Termination Source Identifier) and this is specifically stated as decoupled from the control-plane [Y.1710] 
+
+Sequence Numbers (PWE3 control word)
+Argument here is that this is a hack as the co-ps mode should never misorder packets
+
+Y.1710/Y.1711 v. LSP-Ping
+
+

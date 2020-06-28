@@ -1,0 +1,17 @@
+
+My Perspective on our Current Trajectory
+
+
+We must to find ways to control complexity, RSN
+And BTW, it's all going the other way
+
+We could easily cross a complexity barrier that puts fundamental limits on our ability to efficiently scale
+Or causes the Internet to completely collapse
+Or prevents IP transport from becoming a profitable business 
+Or prevents us from reaching the performance levels we want
+Or ...
+
+BTW, possible complexity metric
+# of IDs summited in month prior to the IETF
+This time: > 800
+

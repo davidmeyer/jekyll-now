@@ -1,0 +1,19 @@
+
+Discussion Format and Panelists
+
+
+Format
+Introduction			05 minutes
+8+5 minutes/presenter		65 minutes
+Q&A				20 minutes
+
+David Meyer			(UO/Sprint)
+Introduction
+
+Tony Tauber			(Genuity)
+What is the role of measurement in capacity planning, SLA maintenance and verification?
+
+Christophe Diot		(Sprintlabs)
+What Kind of Monitoring is Needed to Support Network Operations?
+
+

@@ -1,0 +1,9 @@
+
+A Few Usage Assumptions 
+
+
+The vast majority of eBGP peerings are between adjacent routers
+
+
+It is common practice for many service providers to ingress filter (deny) packets that have the provider's loopback addresses as the source IP address 
+

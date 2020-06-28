@@ -1,0 +1,16 @@
+
+Introduction
+
+
+So what is this panel about?
+The growing complexity of Internet technology
+And its implications
+
+Goal: Socialize the understanding of complexity in the Internet Engineering Community
+Both in what we build, and what we write (e.g. IETF)
+
+So maybe this panel should be entitled: "Wake up and smell the complexity"
+
+draft-ymbk-arch-guidelines-05.txt
+
+Discussion Format

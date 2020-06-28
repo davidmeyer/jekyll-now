@@ -1,0 +1,8 @@
+
+And...
+
+
+
+Protection of the BGP infrastructure beyond this method will likely require cryptographic machinery such as is envisioned by S-BGP (and/or other extensions)
+
+

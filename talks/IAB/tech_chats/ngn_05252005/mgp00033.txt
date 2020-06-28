@@ -1,0 +1,16 @@
+
+What's Receiving Little/No Attention?
+
+L3 Routing and Addressing Architectures
+and what about shim6/hip/...		
+
+Routing protocol security
+Not withstanding X.805
+
+Incremental (or other) Deployability
+
+More generally, operational considerations
+Notwithstanding detailed discussions by various BT folks s/a Neil Harrison
+
+General complexity of solutions
+

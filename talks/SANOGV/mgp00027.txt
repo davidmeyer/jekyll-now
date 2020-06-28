@@ -1,0 +1,16 @@
+
+Summary
+
+First, keep things as simple as you can
+Remembering that complexity isn't inherently bad
+
+Clearly understand (and document) the potential for amplification to occur
+Look closely at aggregated and mesh structures in your network
+And remember that as things scale up, what was small can become very large
+
+Clearly understand (and document) the where coupling occurs in your design and implementation
+Localize the impact of any design or configuration change
+Can also occur in operational procedures
+Engineer for Human Entropy
+
+

@@ -1,0 +1,14 @@
+
+"Resolution"
+
+
+Replicated 23 large peers 
+   on cvs zebra bgpd box described above
+
+Run a vtyd on port 23 
+
+Looks about like route-views.oregon-ix.net CLI 
+
+Both CLI and MRT format data get a lot of use
+
+Issues to consider with route-views2...

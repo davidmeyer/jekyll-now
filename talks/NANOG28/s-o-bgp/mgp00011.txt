@@ -1,0 +1,13 @@
+
+How about administrative delay for soBGP?
+
+
+In soBGP, the signatures and cerificates have to be generated the same way as sBGP
+
+However, the propagation of this information is significantly different. 
+
+Instead of relying on out-of-band databases (and their syncronization), the certificates are advertised in a new Security Message.
+This means that once a new block is allocated (and the certificates created), the security information can be propagated to everyone in the system at about the same rate as UPDATE propagation.
+
+So in theory, soBGP won't add admistrative delay
+

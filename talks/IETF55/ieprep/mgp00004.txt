@@ -1,0 +1,7 @@
+
+What Sprint is Isn't Doing 
+
+
+
+Respecting any bits other than destination address in the core
+

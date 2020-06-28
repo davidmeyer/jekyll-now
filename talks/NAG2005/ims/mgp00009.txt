@@ -1,0 +1,20 @@
+
+More Alphabet Soup
+
+IMS - IP Multimedia Subsystem
+CSCF - Call Session Control Function
+Various types including S (serving), P (proxy), etc
+Think SIP Proxies
+P-CSCF is the first point of contact for a user in IMS
+HSS - Home Subscriber Server 
+
+GPRS - General Packet Radio Services (aka 2.5G)
+{Serving,Gateway} GPRS Signaling Node (SGSN/GGSN)
+In IMS, the P-CSCF is always in the same network as the GGSN (this will become important when thinking about roaming, trust me...:-)
+
+2G and 3G Radio
+GSM - Global System for Mobile Communications (2.XG)
+UMTS - Universal Mobile Telecommunications System (3G)
+UTRAN - UTMS Terrestrial Radio Access Network
+
+

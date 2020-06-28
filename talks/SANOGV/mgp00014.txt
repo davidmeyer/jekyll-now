@@ -1,0 +1,12 @@
+
+Amplification Examples
+
+Multiplication of BGP messages across the peering mesh of the Internet
+For example, Tim Griffin's work [GRIFFIN2002] showing that a small amount of inter-connectivity causes the output of a routing mesh to be significantly more complex than its input.
+
+Alarm multiplication on pseudo-wires 
+Consider what happens when an 0C192 (or so) full of PWs fails
+
+Takeaway: Look closely at aggregated and mesh structures in your networks (and organizations). They can be sources of unanticipated amplification.
+
+BTW, you see amplification in nature all the time 

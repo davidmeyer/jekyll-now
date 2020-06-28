@@ -1,0 +1,12 @@
+
+NGN Services Control Plane -- IMS
+
+
+The IP Multimedia Subsystem, or IMS, is being positioned by the 3rd Generation Partnership Project as THE architecture of choice to converge: 
+Wireless and Wireline networks
+Voice and Multimedia data
+
+
+Basically: IMS is an attempt to create a telephony standard infrastructure for IP services that will (in theory) evolve into a replacement for circuit switched voice. 
+IMS is also being proposed as the wireline services control plane. 
+

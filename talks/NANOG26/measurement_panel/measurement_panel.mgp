@@ -1,0 +1,135 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+%bgrad
+%xfont "utopia-medium-r", size 8, fore "white"
+
+%center 
+Trends in Measurement and Monitoring of Internet Backbones
+%xfont "utopia-medium-r", size 6, fore "white"
+
+%center
+%image "wos-small.jpg"
+
+%size 4
+http://www.maoz.com/~dmm/NANOG26/measurement_panel
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Outline
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+	Introduction
+
+	Panelist Presentations and Discussion
+
+	Question/Answer
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Introduction
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	In keeping with the spirit...here's an interesting monitoring problem (at scale)
+
+%pause
+%center
+%image "wosound-photo.jpg"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Back to our Domain...
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	The following are some of the things we	measurement/monitoring will help with...
+
+%pause
+	Traffic Engineering
+%pause
+	Performance and SLA Verification
+%pause
+	DOS Detection and Mitigation
+%pause
+	Forecasting and capacity planning
+%pause
+	Sampling vs. Accounting: Requirements and methods
+%pause
+	Convergence: IGP and EGP Routing Analysis
+%pause
+	Operator's Wish List: What is missing from routers?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Discussion Format and Panelists
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Format
+		Introduction			05 minutes
+		8+5 minutes/presenter		65 minutes
+		Q&A				20 minutes
+
+%pause
+	David Meyer			(UO/Sprint)
+		Introduction
+
+	Tony Tauber			(Genuity)
+		What is the role of measurement in capacity planning, SLA maintenance and verification?
+
+	Christophe Diot		(Sprintlabs)
+		What Kind of Monitoring is Needed to Support Network Operations?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Format and Panelists, Cont
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Mujahid Khan		(Sprint)
+		(D)DoS Issues and Mitagation
+
+	Jennifer Rexford		(ATT Research)
+		What is needed from Vendors?
+		PSAMP update
+
+	Chris Martin			(Verizon)
+		Coarse-Grained Traffic Analysis in IP Backbones: A Router-Based Approach
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+With that, let's get to the panelists
+%xfont "utopia-medium-r", fore "white", size 6
+

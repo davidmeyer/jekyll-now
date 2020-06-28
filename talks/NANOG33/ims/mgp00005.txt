@@ -1,0 +1,13 @@
+
+Put Another Way...
+
+"We just build the highway. We don't fix your car." 
+Randy Bush, INET '96 
+
+Well, IMS attempts to build parts of your car's engine, brakes, and navigational system(s) into the highway
+And has a billing model based on where you are going and who/what is in your car 
+Which BTW means that the system needs this information too
+
+In short: IMS has as a primary design goal to couple higher-layer services to packet transport 
+Note that coupling is one of the primary sources of complexity in dynamical systems (such as the Internet)
+See http://www.1-4-5.net/~dmm/talks/SANOGV for a little more on this topic

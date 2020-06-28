@@ -1,0 +1,19 @@
+
+So...what happens if we wind up with...
+
+
+A profitable/low margin packet carriage industry
+Hypothesis: e2e principle ==> IP packet carriage is a commodity business
+Profitable/low margin  ==> low complexity (Simplicity Principle)
+Economics (+ Science + Technology)
+
+No access monopolies
+via Competition and/or new technologies
+And policy-based network architectures fail to deliver the margins we hope for?
+Public Policy (+ Science + Technology)
+
+Large scale attacks against traditional access provider revenue streams
+In the "capture-the-revenue" sense (contrast DOS)
+BTW, recall the IXCs (products of the MFJ)?
+Economics + Public Policy (+ Science + Technology)
+

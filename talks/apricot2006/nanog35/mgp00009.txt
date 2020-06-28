@@ -1,0 +1,11 @@
+
+Issue 4: IPv6 Routing and Addressing Architectures
+
+
+shim6 was designed for the currently available routing and addressing architecture
+
+A scalable routing and addressing architecture for the Internet is still an open problem
+
+
+However...it will be several years (best case) before we could deploy any new technology in this space
+

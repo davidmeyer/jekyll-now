@@ -1,0 +1,16 @@
+
+BTW, why bother with shim6?
+
+Well, first note that IPv6 has increased the address capacity without increasing the capacity of the routing system
+...and current multi-homing approaches clearly stress the routing system
+
+Now, clearly addressing and routing are related
+Rekhter's Law: Topology can follow addressing or addressing can follow topology. Choose one.
+
+And finally....
+Is there an alternative approach to multi-homing that does not cause these pressures on the routing system?
+
+Now, on to Geoff to set the shim6 context...
+
+
+

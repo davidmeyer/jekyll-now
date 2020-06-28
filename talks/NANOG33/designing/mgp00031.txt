@@ -1,0 +1,9 @@
+
+References
+
+[Doyle and Willinger] "Robustness and the Internet: Theoretical Foundations", John C. Doyle, et al. Draft, March, 2002. 
+
+[Doyle and Willinger] "Robustness and the Internet: Design and evolution", Walter Willinger and John Doyle, 2002.
+
+[GRIFFIN2002] "What is the Sound of One Route Flapping", Timothy G. Griffin,  IPAM Workshop on Large-Scale Communication Networks: Topology, Routing, Traffic, and Control, March, 2002.
+

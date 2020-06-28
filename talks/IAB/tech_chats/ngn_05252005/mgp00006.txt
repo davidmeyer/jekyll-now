@@ -1,0 +1,17 @@
+
+So, what problem are we trying to solve here?
+
+Well, its the "SP Holy Grail"
+OPEX reduction
+Convergence onto a packet network
+BTW, what's the theory here?
+CAPEX efficiency
+Again, convergence onto a packet network
+New Top Line Revenue 
+aka "Services"
+
+BTW, what is our collective wisdom here?
+C 1: The Internet Architecture leads (almost by definition -- e2e principle) to commodity packet carriage, and since in "quasi-open market" economies, the price of a commodity tends towards the incremental cost of providing the commodity, we can conclude that the margins on packet carriage will be small [Clark2003]
+i.e., what is the incremental cost of forwarding a packet in the core of the network?
+A very different approach, then, might be to build technologies that enable low margin packet-carriage businesses to be profitable.
+And what about "routing $$" and the IETF mission?

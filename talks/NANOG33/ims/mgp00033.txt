@@ -1,0 +1,9 @@
+
+Well, the more things change...
+
+
+So all of this is not to say that we can't do better (we always can). However, it seems that the more things change, the more they stay the same:
+
+Paul Baran, in his classic 1977 paper, "SOME PERSPECTIVES ON NETWORKS--PAST, PRESENT AND FUTURE", stated that "The tradeoff curves between cost and system reliability suggest that the most reliable systems might be built of relatively unreliable and hence low cost elements, if it is system reliability at the lowest overall system cost that is at issue"
+
+

@@ -1,0 +1,18 @@
+
+Work in Progress...
+
+
+GPS clocking
+Looking at global sync'ed clocks
+Do folks feel this is necessary?			
+
+Long Term Archival Storage
+HPSS?
+http://www.sdsc.edu/hpss/hpss1.html
+Comments on this?
+
+Data Base Front End(s) (need input)
+What (other than flat files) would be useful in your research?
+
+What other types of data would be useful?
+

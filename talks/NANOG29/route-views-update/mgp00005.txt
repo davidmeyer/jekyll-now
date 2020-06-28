@@ -1,0 +1,21 @@
+
+Current Status
+
+
+Realtime (CLI) access
+Useful in diagnosing operational problems
+Takes O(5K) connections/day
+
+Data Collection
+Collect RIBs in 'show ip bgp' format
+Collect MRT format RIBs and updates
+Archival Internet Routing Data Repository
+Working on database front-end(s)
+
+BGP Beacon (192.135.183/24)
+
+Provide data to various research groups
+
+http://www.routeviews.org/papers
+
+

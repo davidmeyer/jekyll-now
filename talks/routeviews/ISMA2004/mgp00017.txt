@@ -1,0 +1,16 @@
+
+Work in Progress...
+
+
+Standalone BGP listener
+Consider Zebra/Quagga RIB dump thread problems
+Overhead of general purpose BGP implementation
+Hope to release an alpha within the next few months
+
+'sh ip bgp' to other format(s) converters
+
+MRT "v2"
+Better timer granularity
+Again, is 1 second granularity sufficient?
+Extensions for 4 byte ASes
+

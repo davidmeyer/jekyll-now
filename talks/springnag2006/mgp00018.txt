@@ -1,0 +1,16 @@
+
+So, what design principles do we have?
+
+
+Simplicity Principle: 
+Complexity is the primary mechanism which impedes efficient scaling, and as a result is the primary driver of increases in both capital expenditures (CAPEX) and operational expenditures (OPEX) -- Mike O'Dell (by all accounts)
+
+But watch out!
+Everything should be made as simple as possible, but not one bit simpler -- Albert Einstein
+
+STTA: How does the Simplicity Principle convolve with "policy-based" architecture approaches
+ and more generally, with the Internet Architecture
+What complexity/robustness tradeoffs are we making?
+
+
+

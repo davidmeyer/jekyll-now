@@ -1,0 +1,14 @@
+
+Focus of this talk 
+
+NGN Transport Network Requirements
+"MPLS"-based, converged packet network
+QoS-centric PSTN "Emulation/Replacement"
+MPLSv2?
+
+SIP-signaled Services Control Plane
+IMS or something like it
+For both wireless/wireline, plus
+Fixed-Mobile Convergence (FMC)
+
+So let's take a look at the NGN Transport Network Requirements

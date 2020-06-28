@@ -1,0 +1,14 @@
+
+So what is "Peering" anyway?
+
+
+SIP peering is defined to be a layer 5 peering between two administrative domains for purposes of routing real-time (or quasi-real time) session signaling between their respective customers.  
+Note that media streams associated with this signaling (if any) are not constrained to follow the same set of paths.
+
+BTW, what is "Layer 5"?
+and does it include "Layer 3"?
+
+draft-ietf-speermint-reqs-and-terminology-01.txt
+Soon to be draft-ietf-speermint-terminology-00.txt
+
+

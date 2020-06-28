@@ -1,0 +1,19 @@
+
+So what can or should we do?
+
+
+Finally, there is a non-trivial amount of infrastructure needed for all of this
+
+Databases and certificate authorities and all of the rest
+
+And what is the effect on BGP convergence properties?
+
+And who pays?
+
+CAPEX/OPEX is the frontier for the carriers these days
+
+And what about "free market" issues?
+What stops users from moving to lower-cost ISPs who do not implement this?
+New kind of "No-SLA" service?
+
+

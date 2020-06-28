@@ -1,0 +1,18 @@
+
+Agenda/Panelists
+
+
+Enterprise Perspectives (20 minutes)
+Craig Hugen (chuegen@cisco.com)
+
+Backbone Operator Perspectives (20 minutes)
+Vijay Gill (vijay@umbc.edu)
+
+Access Provider Perspectives (20 minutes)
+Sean Donelan (sean@donelan.com)
+
+DNS Operator Perspectives  (20 minutes)
+Rodney Joffe (rjoffe@centergate.com)
+
+MSO Perspectives (20 minutes)
+ Jason Gaedtke (jgaedtke@comcastnmd.com)

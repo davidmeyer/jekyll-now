@@ -1,0 +1,18 @@
+
+Discussion Format and Panelists
+
+
+Format
+Introduction		10 minutes
+7+5 minutes/presenter	60 minutes
+Q&A			20 minutes
+
+David Meyer		(UO/Sprint)
+Introduction/Moderator
+
+Randy Bush		(IIJ)
+What can we learn from the differences between Telco and ISP architectures?
+
+Vijay Gill		(AOL)
+Is Router High Availability necessary?
+

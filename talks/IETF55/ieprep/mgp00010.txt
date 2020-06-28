@@ -1,0 +1,17 @@
+
+E-model ratings/MOS Scores
+
+
+We studied the ITU-T E-model (G.107)
+
+PSTN:	100-70 
+Cellluar:	90-60
+
+Briefly, methodology:
+Calls are placed at random times (Poisson arrival process), and we emulate business call duration (~ 3.5 minutes)
+
+In the following graph...
+The blue line is the average call rating 
+1 call/minute for 24 hours
+The red line is the 99.9% confidence interval
+

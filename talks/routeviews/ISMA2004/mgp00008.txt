@@ -1,0 +1,15 @@
+
+Current Status -- Data Collection
+
+
+Collect RIBs in 'show ip bgp' format
+
+Collect MRT format RIBs and updates
+Repository is O(10 TB) and growing at 7%/month
+
+Archival Internet Routing Data Repository
+Archived data back to 1997
+
+Working on database front-end(s)
+Goal is to enable data mining/visualization
+

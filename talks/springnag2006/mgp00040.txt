@@ -1,0 +1,14 @@
+
+Aside: Walled Gardens - What's the problem?
+
+
+Why can't you find this stuff with a DPI engine?
+While you may be able to find the signature (e.g.) of encrypted voice (today), you basically have to block everything that you can't identify
+And the app developers are a step ahead...
+The implication is that most applications that are "over-the-top" have to be treated by default logic
+
+Conclusion: You can't effectively stop over-the-top services 
+if there is competition in the access
+
+This is a classic arms race
+

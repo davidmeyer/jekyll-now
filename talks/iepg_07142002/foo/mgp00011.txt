@@ -1,0 +1,13 @@
+
+Coupling Principle Examples
+
+
+Canonical examples include Van and Sally's work on the synchronization of various control loops, such as routing update synchronization and TCP Slow Start synchronization
+
+An important result of these observations is that coupling is closely related to synchronization. 
+
+Injecting randomness into these systems is one way to reduce coupling.
+
+Another important method for reducing a system's coupling is ensure that local changes have only local effect.
+
+

@@ -1,0 +1,18 @@
+
+Desired Outcomes
+
+
+Part of an ongoing dialog
+For the operator community
+Awareness about the shim6 effort
+And how you can get involved with efforts in the IETF
+For the IETF community
+Awareness about operator concerns
+
+
+In general, we are seeking input on possible operational issues with the emerging shim6 spec
+And realizing that...
+shim6 is not the complete answer
+nor is a "pure" PI or PA allocation policy
+And...some operational aspects of shim6 multi-homing are TDB
+e.g., traffic engineering

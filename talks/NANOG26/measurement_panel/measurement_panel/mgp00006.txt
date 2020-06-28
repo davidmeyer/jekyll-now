@@ -1,0 +1,15 @@
+
+Format and Panelists, Cont
+
+
+Mujahid Khan		(Sprint)
+(D)DoS Issues and Mitagation
+
+Jennifer Rexford		(ATT Research)
+What is needed from Vendors?
+PSAMP update
+
+Chris Martin			(Verizon)
+Coarse-Grained Traffic Analysis in IP Backbones: A Router-Based Approach
+
+

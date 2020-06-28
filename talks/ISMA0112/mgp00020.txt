@@ -1,0 +1,12 @@
+
+RIB/FIB Dynamic Properties
+
+
+Observable problems related to the BGP churn rate?
+e.g. not enough CPU?
+Protocol bandwidth utilization?
+
+If so, what tools are available
+
+If not, will it become an operational problem? 
+And when?

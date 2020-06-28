@@ -1,0 +1,20 @@
+
+What Sprint is Doing 
+
+
+Idea: "Edge QoS" (aka eQoS)
+
+Start with a congestion free core (no queues)
+
+Do queuing (customer configured) on the edge box
+Only on egress 
+Using ACLs to avoid ToS bits (except for IPSec VPN)
+IPSec VPN -- case TOS bits 
+If those bits encrypted --> per CoS tunnels 
+Need ToS bit export (to IPsec header) to use single tunnel
+
+Note "problems"
+Ingres v. egress
+ACL scaling 
+DoS
+

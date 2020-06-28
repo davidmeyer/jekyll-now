@@ -1,0 +1,18 @@
+
+A Few Examples From Everyday Life
+
+iBGP/BGP Topologies
+Amplification 
+Multiplication of messages through a mesh
+
+Link-state routing protocols 
+Amplification 
+Cascading failures in the face of congestion/hello timeouts
+Horizontal Coupling 
+Network congestion to routing stability
+
+Operations and Managment (OAM) Mapping
+Vertical Coupling
+
+Pseudo-wire Alarm Aggregation
+Amplification/Vertical Coupling 

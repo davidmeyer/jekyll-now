@@ -1,0 +1,17 @@
+
+Terminology/Concept Confusion
+
+
+Y.2011 has both transport and services "layers"
+BTW, what's a layer and what's a stratum?
+"The transport stratum is one or more contiguous layer networks"
+Does that help :-)
+In any event, note the confusion regarding telephone and video not being data services, where as WWW is a data service.
+
+Hey, what happened to convergence?
+
+Also "Application v. Service"?
+For example, we would consider VoIP to be an application, while Y.2011 considers it to be a service
+
+
+

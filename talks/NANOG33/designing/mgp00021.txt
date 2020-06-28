@@ -1,0 +1,11 @@
+
+Example: Achieving Five Nines
+
+OK, why is this so hard?
+
+First, note that 80% of unscheduled outages are caused by people or process errors [SCOTT, many others] --> There is only a 20% window in which to optimize component reliability.
+Why? Because in order to increase component reliability, we typically add complexity (remember the relationship between robustness and complexity). This effectively narrows the 20% window.
+
+Bottom line: Optimization frequently increases complexity, which increases the likelihood of people and process failures
+
+

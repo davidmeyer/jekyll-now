@@ -1,0 +1,15 @@
+
+IAB Roles: IAB Architectural Oversight
+
+
+Documented in section 2.2 of RFC 2850
+The IAB is chartered with providing oversight of the architecture for the protocols and procedures used by the Internet. 
+ftp://ftp.rfc-editor.org/in-notes/rfc2850.txt
+
+
+So, what "levers" can the IAB can pull?
+
+
+Let's take a look at what section 2.2 of RFC 2850 actually provides for...
+
+

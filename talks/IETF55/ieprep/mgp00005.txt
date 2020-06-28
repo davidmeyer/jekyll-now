@@ -1,0 +1,16 @@
+
+Why you don't need QoS is the core
+
+
+Start with the result that aggregated traffic in the core (>= OC48) is "uncorrelated"	
+"Impact of Aggregation on the Scaling of Internet Backbone Traffic", Zhi-Li Zhang, et. al, Sprint ATL Technical Report TR02-020157 (http://www.sprintlabs.com/ipgroup.htm).
+Many others...e.g., see Thomas Telekamp's talk(s) from the last NANOG (http://www.nanog.org/mtg-0210)
+
+
+So you can actually build (provision) a network to avoid queuing
+Oh, and BTW, if you do this, you get close-to-zero packet loss, close-to-speed-of-light delays, and small jitter
+With no additional mechanism!
+
+
+
+

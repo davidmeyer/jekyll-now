@@ -1,0 +1,17 @@
+
+Locator/Identifier Split
+
+Well, there's SHIM6 and HIP in the "works"
+
+However...
+Those techniques work equally well for IPv4 *or* IPv6
+Various difficulties as a technique for scaling the routing system 
+Complexity
+possibly irreducible?
+
+
+
+Assertion: IPv6 offers little or no advantage over IPv4 in achieving locator/identifier split.
+
+
+

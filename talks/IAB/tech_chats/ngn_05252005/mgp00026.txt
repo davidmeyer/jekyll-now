@@ -1,0 +1,10 @@
+
+A/B Relationships (1)
+
+
+(a) (the sender) with its home provider (inherent in any commercial system)
+
+(b) (the receiver) with its home provider (again, inherent in any commercial system)
+
+The home provider of (a) with home provider of (b) (needed if non-discretionary controls, like closed user groups, are to be allowed)
+

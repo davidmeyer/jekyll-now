@@ -1,0 +1,35 @@
+(10:10:01) kc: i think you are going to be better off if you
+minimize focus on the acryonyms (who's listening to feedback from
+whom) and stay obsessively focused on (1) technology evalution
+(2) deployment constraints (3) scalability/complexity evaluation.
+if i were advising you (oh look, i am), i would encourage you to
+ditch the IAB label completely (might be too late for this now)
+and go at it from the angle that you (dmm) are writing up a
+followon to your complexity RFC in light of recent factors (IMS,
+IPv6, DNSSEC, SBGP), and you need real operational feedback from
+providers on -- not necessarily what decisions they're going to
+make this decade, but -- *how* they're going to make decisions
+about deploying new technology.  you (dmm) know much of this from
+sprint days, but you're trying to write a neutral RFC that
+captures much of the industry's concerns and current m.o.   
+
+
+(10:25:28) kc: going to leave or will type more.  but (1) do not
+underestimate the value of dmm's name, it's got more credibility
+right now than iab's name but i've watched such things change
+fast.  protect your most valuable asset.  (2) focus on extracting
+knowledge from the politics, not the other way around.  the
+politics, at the moment, are much bigger than what you can move.
+the knowledge, otoh, desperately needs crisp articulation in ways
+that humans (like our parents and children) can understand. stay
+focused on (a) what we know (b) what we can know (if we put some
+effort into it)  (c) what we can't know, and how we can prepare
+for multiple scenarios in face of uncertainty, which always
+exists. 
+(10:26:12) kc: hug/bye 
+
+
+
+
+
+

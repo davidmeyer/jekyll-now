@@ -1,0 +1,14 @@
+
+So, complexity...
+
+
+First, realize that complexity of the sort were talking about here is just starting to be understood
+Hard to quantify
+We just don't have the tools (yet)
+
+Our focus here is on the non-linearity inherent in large systems such as the Internet
+These are the so-called HOT systems [Doyle and Willinger]
+
+Recent work in the dynamical and non-linear systems field suggests that a class of highly designed systems (such as the Internet) are "Robust yet Fragile" 
+Sounds like a contradiction of sorts, doesn't it?
+

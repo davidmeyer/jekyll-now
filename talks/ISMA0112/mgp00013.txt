@@ -1,0 +1,19 @@
+
+Issues with route-views2.oregon-ix.net
+
+
+Verification of RIBs and UPDATES
+Are the data correct (and can we verify somehow)?
+Does multi-hop eBGP effect timing for update data?
+
+Disk space (all numbers for 2001.11):
+
+UPDATES
+One month uncompressed MRT UPDATES:	4438212K
+One month gziped MRT UPDATES:		829568K
+
+RIBS
+One month uncompressed MRT RIBs:	46899996K
+One month gziped MRT RIBs:		6791700K
+One month gziped 'sh ip bgp' RIBs:		4598820K
+Note route-views has ~60 peers while route-views2 has 23

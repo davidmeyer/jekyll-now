@@ -1,0 +1,96 @@
+From asp@partan.com  Mon Jun  2 08:10:38 2003
+Return-Path: <asp@partan.com>
+Received: from elle.sprintlink.net (elle.sprintlink.net [199.0.234.34])
+	by sith.maoz.com (8.12.9/8.12.9) with ESMTP id h52FAbuA026809
+	for <dmm@maoz.com>; Mon, 2 Jun 2003 08:10:38 -0700
+Received: from kay.res.sprintlink.net (kay [199.0.234.43])
+	by elle.sprintlink.net (8.11.6+Sun/8.11.6) with ESMTP id h52F84b11564
+	for <dmm@sprint.net>; Mon, 2 Jun 2003 11:08:04 -0400 (EDT)
+Received: from tower.partan.com (tower.partan.com [198.6.255.248])
+	by kay.res.sprintlink.net (8.11.6+Sun/8.11.6) with ESMTP id h52F8po09904
+	for <dmm@sprint.net>; Mon, 2 Jun 2003 11:08:52 -0400 (EDT)
+Received: from tower.partan.com (localhost.partan.com [127.0.0.1])
+	by tower.partan.com (8.12.6p2/8.12.6) with ESMTP id h52FA932029632;
+	Mon, 2 Jun 2003 11:10:09 -0400 (EDT)
+	(envelope-from asp@tower.partan.com)
+Received: (from asp@localhost)
+	by tower.partan.com (8.12.6p2/8.12.6/Submit) id h52FA8Pp029629;
+	Mon, 2 Jun 2003 11:10:08 -0400 (EDT)
+	(envelope-from asp)
+Date: Mon, 2 Jun 2003 11:10:08 -0400
+From: Andrew Partan <asp@partan.com>
+To: dmm@sprint.net
+Subject: sbgp commentary
+Message-ID: <20030602151008.GA29510@partan.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4.1i
+X-Spam-Status: No, hits=-2.5 required=5.0
+	tests=USER_AGENT_MUTT
+	autolearn=ham version=2.55
+X-Spam-Level: 
+X-Spam-Checker-Version: SpamAssassin 2.55 (1.174.2.19-2003-05-19-exp)
+Status: RO
+X-Status: A
+Content-Length: 2645
+Lines: 57
+
+quickly writen the plane yesterday as i was running out of battery.
+not yet read again today.
+	--asp
+
+A commenary on SBGp
+
+SBGP tries to protect everything in the routing system via cryptographic
+means - this is everything from the allocation of IP addresses and
+AS numbers, to the granting of routing authority for a chunk of
+address space, to all of the BGP messages & peerings.
+
+You basicaslly want to authenticate every step of allocating an IP
+address from IANA to the Registries to an ISP to another ISP to a
+customer.  And do the same with AS number allocations.  And the
+same with the step of permitting ASs to originate routes to some
+address space.  And then same with all of the BGP traffic - AS paths
+and next hops and the like.
+
+The goal is that a router can get a route and be able to verify
+that the address space has been properly allocated and the origin
+AS is valid and the entire AS path is valid.  There are cryptographic
+signatures at every step that need to be checked & verified.
+
+On the whole, this is probably what you would like, but all of this
+comes at a price however - of added complexity & infrastructure.
+
+There are a certain number of tricks you can play - thing like
+basically precollecting all of the published information into one
+local database and running authorization checks there, and then
+only sending the router this 'precompiled' chunk of data instead
+of everything.  But the router still need additional processing and
+memory to be able to handle this.
+
+Its unclear how big this precompiled information will be or how
+much a router will need when it restarts - how much do you need to
+cache on the router itself?  You may no longer have a routing system
+that can come up by itself.
+
+There is a fair amount of infrastructure needed for all of this -
+databases and certificate authorities and the rest.
+
+There is a whole infrastructure of database servers needed to hold
+& publish this information.  And the exchanges between these servers
+probably also need to be authenticated & signed.
+
+It will likely take longer to get a new address block routed, or
+routed over a new path - as the various signatures involved will
+first have to be generated & signed & published to a local database,
+then pushed to some global database(s), and then copied to each
+ISP's own local databases, checked & recompiled, and propogated to
+each router.
+
+If you think about the additional processing & memory & storage
+needed on the router, there are a fair number of routers that are
+adequate for today's needs but will be out of their depth with the
+new requirements.  A lot of upgrades and replacements would be
+needed.
+

@@ -1,0 +1,15 @@
+
+Back to our Domain...
+
+
+The following are some of the things we	measurement/monitoring will help with...
+
+Traffic Engineering
+Performance and SLA Verification
+DOS Detection and Mitigation
+Forecasting and capacity planning
+Sampling vs. Accounting: Requirements and methods
+Convergence: IGP and EGP Routing Analysis
+Operator's Wish List: What is missing from routers?
+
+

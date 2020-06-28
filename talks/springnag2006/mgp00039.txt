@@ -1,0 +1,15 @@
+
+Aside: Walled Gardens - What's the problem?
+
+
+Innovation on the edges forces walled garden providers to let the new service through
+Their customers demand it
+Canonical example: ports 80/443
+This is part of the reason why the existence of competition in the access is a critical component of all of this
+
+But then everything can be tunneled over those (now open) ports
+e.g., skype
+plus encryption + anonimzation
+And BTW, you can't really find this stuff with, say, a DPI engine
+Why, you ask?
+

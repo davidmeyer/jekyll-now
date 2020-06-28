@@ -1,0 +1,15 @@
+
+On Commodity Businesses, cont
+
+
+So a classic commodity has the property that the incremental cost of providing the good or service approaches its marginal cost of production
+
+What is the marginal cost of forwarding an IP packet in the core of the Internet?
+Well, there are high fixed capital costs (routers, circuits, etc)
+and high OPEX
+and a very small marginal cost 
+i.e., the incremental cost of forwarding a packet
+
+More understanding of this topic for the IP backbone case is needed (obviously)
+
+

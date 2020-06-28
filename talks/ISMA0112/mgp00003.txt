@@ -1,0 +1,21 @@
+
+BGP Data Sources
+
+
+RIPE RIS (www.ripe.net/ris)
+zebra bgpd 
+www.zebra.org
+MRT format RIB and UPDATES
+www.merit.edu/mrt
+
+route-views.oregon-ix.net (archive.routeviews.org)
+'sh ip bgp' format at 2 hour intervals
+collection script from Sean McCreary
+hwb archive on moat.nlanr.net
+
+route-views2.oregon-ix.net (archive.routeviews.org)
+MTR RIB archiving (every 2 hours)
+MTR UPDATES archiving (every 15 minutes)
+
+PCH (www.pch.net)
+

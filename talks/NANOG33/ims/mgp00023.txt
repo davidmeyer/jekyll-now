@@ -1,0 +1,10 @@
+
+A/B Relationships (2)
+
+
+The home provider of (a) (the sender) with provider (a) is roamed on (i.e., a roaming agreement) 
+
+The home provider of (b) (the receiver) with provider (b) is roamed on (i.e., a roaming agreement)
+
+Key Takeaway: If you implement this sort of roaming model, you *will* incur this kind of complexity. There is no real way around it.
+

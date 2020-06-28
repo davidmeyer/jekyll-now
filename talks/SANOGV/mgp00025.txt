@@ -1,0 +1,20 @@
+
+A Few Everyday Examples, cont
+
+L1/L2 Message Mapping/Interworking
+Amplification/Coupling
+
+TDM over IP [TDMOIP]
+Vertical Coupling (Synchronization)
+
+IMS (3GPP IP Multimedia Subsystem)
+Vertical Coupling 
+Services to transport
+
+IP over ATM with P-NNI
+Control plane coupling
+
+Layering Considered Harmful
+What?
+
+

@@ -1,0 +1,13 @@
+
+What's new...cont
+
+
+Prefix to ASN and AS_PATH zones
+asn.routeviews.org and aspath.routeviews.org
+Folks using this along with Team Cymru data for botnet and spam relay tracking, for example
+
+Database front ends
+This is in primordial state (early exploration/design)
+Goal is to enable data mining/visualization
+Input on what would be useful would be greatly appreciated
+

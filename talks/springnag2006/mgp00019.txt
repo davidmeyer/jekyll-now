@@ -1,0 +1,16 @@
+
+Example: The Myth of Five Nines...
+
+
+NB: Arbitrary Optimization Considered Harmful 
+Why? 
+
+Because optimization introduces complexity and tighter coupling between components and layers
+But not always 
+"the best code is no code" [Randy]
+Virus evolution argument
+L2 link-indications example
+
+The implication here is that trying to squeeze out efficiency past some point only adds complexity, increases non-linearity, and hence leads to less reliable systems (Law of Diminishing Returns)
+But still, why (and remember the heavy tailed curve)?
+

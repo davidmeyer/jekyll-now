@@ -1,0 +1,17 @@
+
+Issues/Problems: The perennial issues
+
+Large scale archival data storage
+Including data models and access front ends
+Would other access methods like rsync 
+ or distribution on DVD be useful?
+
+Operations
+routeviews is like a service provider without a data plane
+all control plane (mod transit to get the data back)
+contrast with something like AMP (http://mna.nlnar.net)
+Like a SP w/o a control plane (all data plane)
+many "service provider like" problems 
+Needs NOC-like functionality
+Person-power issues
+

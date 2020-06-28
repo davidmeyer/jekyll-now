@@ -1,0 +1,20 @@
+
+Current Status
+
+Peers
+O(30) 
+Mostly regional participants
+Down turn had substantial impact
+
+Switching
+Dual HP 2800 (10/100/1000)
+mini GBIX -- LX and SX
+Common IPv4/IPv6/IPv{4,6} multicast fabric
+
+Fiber
+Several local, regional, and long haul providers
+
+Colo
+Telco-grade conditioned environment
+UO Switch Room
+ 

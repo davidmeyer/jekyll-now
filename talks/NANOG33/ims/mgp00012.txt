@@ -1,0 +1,16 @@
+
+A Few Salient IMS Features
+
+Major Features
+Runs over a Public Land Mobile Network (PLMN)
+The PLMN is logical divided into Core Network (CN) and Access Network (AN) infrastructures
+The AN is the radio area network stuff (BSS for GSM, RNS for UMTS)
+The CN has Circuit Switched (CS) and Packet Switched (PS) domains
+Note that "legacy" voice is circuit switched
+
+Basically, IMS comprises all of the CN elements needed to provision IP services over the PS domain -->
+Services Control Plane + Policy Engine + AAA
+SIP-based control plane/signaling
+Policy via COPS (SOAP/BEEP?)
+AAA via Radius (Diameter?)
+

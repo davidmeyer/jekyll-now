@@ -1,0 +1,8 @@
+
+Introduction
+
+
+In keeping with the spirit...here's an interesting monitoring problem (at scale)
+
+
+

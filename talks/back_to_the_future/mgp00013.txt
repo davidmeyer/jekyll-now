@@ -1,0 +1,13 @@
+
+Coupling Principle
+
+
+The Coupling Principle states that as systems get larger, they often exhibit increased interdependence between components
+
+
+Corollary: The more events that simultaneously occur, the larger the likelihood that two or more will interact 
+
+
+This phenomenon has also been termed "unforeseen feature interaction" [Doyle and Willinger]
+
+

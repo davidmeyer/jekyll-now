@@ -1,0 +1,12 @@
+
+Well watch out
+
+Everything should be made as simple as possible, but not simpler. 
+Albert Einstein
+
+As we shall see, there is a close relationship between complexity and robustness
+Complexity is an important source of robustness in your networks
+Example: Multihoming
+
+Takeaway: Complexity is not inherently "bad"
+

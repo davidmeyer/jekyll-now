@@ -1,0 +1,17 @@
+
+Central Tenet #1
+
+
+Someone learns how to run a low margin yet profitable packet carriage business 
+As implied by the e2e principle
+
+Remember that the hypothesis here is that packet carriage will always be a low margin business as a direct consequence of the e2e principle 
+Note that some providers are already building "simple" networks in an attempt to lower OPEX 
+Something you'll need if you want to get to a profitable low margin business
+
+And BTW, there is the question as to whether we're optimizing these networks for the "right" thing in the first place...
+80/20? (Or is it more like 95/5?)
+Consider "convergence" (in the holy grail sense)
+See e.g., http://www.potaroo.net/ispcol/2006-02/converged.html
+
+

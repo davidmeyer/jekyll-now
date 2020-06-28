@@ -1,0 +1,12 @@
+
+What can we (easily) do in the near term?
+
+
+
+
+i.e., is there anything (short of crypto techniques) we can use to mitigate these sorts of attacks?
+
+Well, TTL still (relatively) "hard" to spoof
+
+Can we somehow use that fact?
+

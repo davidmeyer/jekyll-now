@@ -1,0 +1,14 @@
+
+Problem Statement
+
+
+We're seeing a large number of DoS attacks against port 179. Why/How?
+
+Well, the TCP 4 tuple is easy enough to discover
+
+And the attack doesn't require sequence number. Why?
+
+You don't care if the TCP segment valid. Just overload the RP.   So...
+
+Conclusion: You don't have to own the attacked router to disable BGP processing
+

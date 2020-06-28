@@ -1,0 +1,21 @@
+
+What are the Issues [1]?
+
+
+Larger Address Space
+
+Stateless Autoconfiguration
+
+Unique Local Address
+
+Flow Label/QoS
+
+Security
+
+Mobility
+
+And a plethora of interworking technologies
+
+[1] Not intended to be a complete list nor a survey of the various requirements docs
+
+

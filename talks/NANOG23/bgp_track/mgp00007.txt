@@ -1,0 +1,21 @@
+
+route-views -- where from here?
+
+Well, as many of you know...
+
+I wanted to migrate to zebra bgpd for several reasons
+MRT format UPDATES and RIBs
+zebra bgpd has a Cisco-like CLI
+'|',ping/traceroute, and dampening stats (among others) are missing
+Less expensive hardware
+
+Joel built the following box for this:
+Supermicro P3DDE mainboard/2 x 1GHZ PIII
+1.5G (pc133 registered ECC DIMMs)
+40GB 7200rpm IDE disk
+3ware Escalade 6800 hardware RAID controller
+4 x 100GB maxtor 536dx 5400rpm IDE disks (raid 0+1)
+SMC epicII 10/100 PCI NIC
+Linux 2.4.10
+cvs zebra bgpd
+

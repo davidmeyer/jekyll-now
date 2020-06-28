@@ -1,0 +1,451 @@
+From clynn@bbn.com  Wed Aug 28 06:54:20 2002
+Return-Path: <clynn@bbn.com>
+Received: from elle.res.sprintlink.net (gate2.sprintlink.net [199.0.233.3])
+	by sith.maoz.com (8.12.2/8.12.2) with ESMTP id g7SDs32x022029
+	for <dmm@maoz.com>; Wed, 28 Aug 2002 06:54:19 -0700
+Received: from kay.res.sprintlink.net (kay [199.0.234.43])
+	by elle.res.sprintlink.net (8.8.8+Sun/8.8.5) with ESMTP id JAA12162
+	for <dmm@sprint.net>; Wed, 28 Aug 2002 09:51:46 -0400 (EDT)
+Received: from wolfe.bbn.com (wolfe.bbn.com [128.89.80.22])
+	by kay.res.sprintlink.net (8.8.8+Sun/0.0.0) with ESMTP id JAA24374
+	for <dmm@sprint.net>; Wed, 28 Aug 2002 09:54:23 -0400 (EDT)
+Received: by wolfe.bbn.com (Postfix, from userid 13538)
+	id BD5EC16484; Wed, 28 Aug 2002 09:53:28 -0400 (EDT)
+From: Charles Lynn <clynn@bbn.com>
+To: sbgp-ws@ops.ietf.org
+Cc: Andrew Partan <asp@partan.com>, Bruce Cole <bcole@juniper.net>,
+   Dave Meyer <dmm@sprint.net>, Ed Kern <ejk@tech.org>,
+   Geoff Huston <gih@telstra.net>, Jay Borkenhagen <jayb@att.com>,
+   John Heasley <heas@shrubbery.net>,
+   Jun-ichiro itojun Hagino <itojun@iijlab.net>,
+   Lucy Lynch <llynch@darkwing.uoregon.edu>, Randy Bush <randy@iij.com>,
+   Ruediger Volk <rv@nic.dtag.de>, Stephen Kent <kent@bbn.com>,
+   Stephen Stuart <stuart@tech.org>, Steve Bellovin <smb@research.att.com>,
+   Vijay Gill <vijay@umbc.edu>, Charles Lynn <clynn@bbn.com>
+Subject: Strawman Plan for invitational sbgp lab/workshop
+Message-Id: <20020828135328.BD5EC16484@wolfe.bbn.com>
+Date: Wed, 28 Aug 2002 09:53:28 -0400 (EDT)
+Status: RO
+Content-Length: 17227
+Lines: 419
+
+Folks,
+
+First, thank you for taking a look at the S-BGP technology.
+
+Here's a strawman plan for the workshop.  All feedback is welcome.
+
+There are a few Issues below about the plan itself, and a couple
+Questions about information folks will need to provide to obtain the
+S-BGP authorizations (certificate) that is required to get everything
+set up.
+
+Charlie
+------------------------------------------------------------------------
+
+		 Strawman Plan for the S-BGP Workshop
+
+Overview
+========
+
+As Randy suggested, we will make the software available a couple of
+weeks in advance of the workshop.  There will be S-BGP software for
+"routers", PKI tools, etc., along with the related configuration
+information and data needed to begin testing.  We ask that the
+participants install the software on their laptops beforehand.  Folks
+can also make preliminary tests and try peering with other (non-S-BGP)
+routers that you have at your site.
+
+The sections below cover:
+
+	Background Information
+
+	S-BGP Components
+		+ S-BGP router code
+		+ NOC tools
+		+ Certification Authority
+		+ S-BGP Repository
+
+	Example Topology
+
+	Red Team
+
+	Pre-workshop Activity
+		+ Software Installation
+		+ Obtaining IP addresses and AS number(s)
+		+ Setting Up the ISP's CA
+
+	Testing in the Local Environment
+
+	Feedback Request
+
+	Questions
+
+
+Background Information
+======================
+
+Background information on S-BGP is available at Randy's web site:
+
+  http://psg.com/~randy/sbgp
+	IETF44.pdf			March 99
+	NDSS00.pdf			February 00
+	Kent_CIP.pdf			June 00
+	S-BGP_Clarke_workshop.pdf	January 02
+
+and a draft of the S-BGP protocol specification is available at BBN's
+S-BGP web site:
+
+  http://www.ir.bbn.com/projects/s-bgp/draft-clynn-s-bgp-protocol-00a.txt
+					December 01
+
+Familiarity with the background information will be assumed.
+
+
+S-BGP Components
+================
+
+There are several software components that we will play with.
+
+1) The S-BGP router code was integrated into MRT version 2.2.2 Alpha
+   [05/03/00] on a FreeBSD platform, so most of the testing to date
+   has been done there.  It uses OpenSSL to provide software crypto.
+   S-BGP uses the native OS IPsec implementation of ESP in
+   authentication-only mode to protect the TCP peering sessions.
+   (We can omit using IPsec to make things easier for the red team :-)
+
+   The S-BGP code is known to compile on at least one version of
+   Linux, and MRT compiles on many platforms, so we do not expect
+   problems on different platforms that the participants might have.
+
+   We propose to use MRT's User Interactive Interface (UUI) to examine
+   the routing table to see what routes were or were not accepted, and
+   to use log files to illustrate what might be, e.g., reported to a
+   NOC.
+
+2) The NOC Tools are used by a NOC to manage the S-BGP infrastructure
+   (public key certificates, address attestations, policy, etc.)
+
+   The NOC Tools are written in Java (including jaas, jce, jsse, the
+   HTTP servlet, etc.) and uses the Getronics C++ Certificate
+   Management Library (CML) and a MySQL database. The software was
+   developed on Windows 2000; we expect to have it running on
+   Linux/Unix before the workshop.
+
+3) There is the free-ware Certification Authority software BBN
+   contributed under the DARPA CHATS program.  It was released for
+   RedHat SE Linux 7.2 (and is known to run on 7.3) with a CrpytoFlex
+   (RSA-only) hardware token (or a high-assurance BBN manufactured
+   hardware token).  It interfaces to a Postgres database (standard on
+   RedHat Linux).
+
+   We propose that the workshop operate the CA without SE protection,
+   using software crypto provided by OpenSSL.  (Does the red team want
+   to try attacks against the CA?)
+
+   Note that this piece will not be available on platforms other than
+   Linux; the OpenSSL CA functionality can be used as a replacement by
+   those that do not run Linux on their laptop.
+
+4) There is the S-BGP Repository, a distributed global database, that
+   holds the Certificates, CRLs, and address attestations (authorized
+   originating AS information) uploaded by each NOC.  Each Repository
+   instance synchronizes with the others so that a NOC only needs to
+   interact with a single instance.  It uses Apache/ModSSL/OpenSSL,
+   the CML, and a Postgres database.
+
+   It is not necessary for each participant to have their own copy of
+   the Repository.  BBN will have one available via the Internet for
+   use before the workshop.
+
+   Since the synchronization functionality has not been well tested,
+   so we will use a single instance at the workshop.
+
+
+Example Topology
+================
+
+I suspect, given that most laptops only have one network interface,
+that the physical topology will essentially be a hub into which
+everyone plugs their machine.  We can then, using multiple IP
+addresses per interface, if the OS supports it, overlay one or more
+logical topologies.  Here is a small candidate topology that can be
+used to illustrate several of S-BGP's capabilities, including
+incremental deployment.  It can be extended to include all the
+participants as needed.
+
+         +-+             +-+             +-+
+         |A|------1------|B|------2------|C|---------3-----+
+         +-+             +-+             +-+               |
+          |               |               | \ 4            |
+          |               |               |  \             |
+          |               |               |   +=+         +-+
+         10              11              12   :H:----9----|D|
+          |               |               |   +=+         +-+
+          |               |               |  /             |
+          |               |               | / 8            |
+         +=+             +-+             +-+               |
+         :G:-------5-----|F|------6------|E|---------7-----+
+         +=+             +-+             +-+
+
+                       Figure 1.  Example Topology
+
+Each box, A through H, represents an AS, and the lines 1 through 12,
+represent the interconnecting links.  ASes A through F are running
+S-BGP, while G and H are not running S-BGP.  An AS contains one or
+more routers.
+
+Functionality that the topology can be used to explore includes:
+
+    full use of S-BGP route and address attestations to select routes,
+	using ASes with multiple peer ASes and alternate paths between
+	the ASes;
+	
+    aggregation of the subnet allocated to D into C's less-specific
+	prefix;
+
+    aggregation of routes from two of B's peers and advertisement of
+	the aggregate to B's other peer;
+
+    interconnection of non-S-BGP capable ASes with S-BGP capable ASes,
+	and using S-BGP in a detect-and-report mode (e.g., before all
+	routers that make routing selections are S-BGP capable).
+
+	G represents an AS that has not yet enabled S-BGP based route
+	selection in all its BGP speakers, as would be the case during
+	incremental deployment of S-BGP functionality to an AS's
+	routers.  However, G can be checking purported originating
+	ASes in UPDATE messages against the authorized originating AS
+	information (from address attestations) provided by the NOC.
+	It can also be checking in-band path authorizations (route
+	attestations), if desired.  It can report anomalies to the NOC
+	for logging or for further investigation.  This "passive mode"
+	can be used to let the operations staff observe what S-BGP
+	would do, and become familiar with S-BGP and how it operates.
+
+	We learned that the capability of passing S-BGP route
+	attestations between non-contiguous S-BGP islands and trying
+	to specify policy to accommodate the gap resulted in a very
+	complicated policy, both to define and implement.  Consequently,
+	we no longer support that functionality.  We do not view this
+	as a problem as the major ISPs are well connected so an
+	expanding wave model of incremental deployment seems adequate;
+
+    demonstrating the ability of an S-BGP speaker in C, D, or E to not
+	send S-BGP route attestations to a router in H that does not
+	yet have sufficient memory to store them, as may be the case
+	for some BGP customers or peer ASes.
+
+    learning how S-BGP supports a multi-homed customer, D, that does
+	not provide transit service.
+
+	D's addresses may be obtained either:
+	  a) directly from an RIR, or
+	  b) from a "portable" sub-block of one of its providers,
+	     e.g., C.
+
+	D can be configured in three ways to explore multi-homing
+	issues (including the "prefix class" functionality provided to
+	control UPDATE expansion):
+	  A) it can be running S-BGP,
+	  B) it can be running BGP, or
+	  C) it is not running any inter-domain routing protocol.
+
+Suggestions for alternate topologies or other functionality you wish
+to see demonstrated are welcome.
+
+				   
+Red Team
+========
+
+S-BGP is designed to provide mechanisms that allow verification of the
+correct operation of BGP:
+
+  1) Each UPDATE received by a BGP speaker from a peer was sent by the
+     indicated peer, was not modified en-route from the peer, and
+     contains routing information no less recent than the routing
+     information previously received for the indicated prefixes from
+     that peer.
+
+  2) The UPDATE was intended for receipt by the peer that received it.
+
+  3) The peer that sent the UPDATE was authorized to act on behalf of
+     its AS to advertise the routing information contained within the
+     UPDATE to BGP peers in the recipient AS.
+
+  4) The entity with the right to use an address space corresponding to
+     a reachable prefix advertised in an UPDATE was given custodianship
+     of that address space by a higher-level/parent entity.
+
+  5) The originating AS was authorized, by the entity(s) with the right
+     to use address space corresponding to the set of reachable
+     prefixes, to advertise those prefixes.
+
+  6) If the UPDATE indicates a withdrawn route, then the peer
+     withdrawing the route was a legitimate advertiser for that route,
+     prior to its withdrawal.
+
+  7) The peer that sent the UPDATE correctly applied the BGP rules and
+     its AS's routing policies in modifying, storing, and distributing
+     the UPDATE, in selecting the route, and in deriving forwarding
+     information from it.
+
+  8) The BGP speaker that received the UPDATE correctly applied the BGP
+     rules and its AS's routing policies in determining whether to
+     accept the UPDATE.
+
+    The countermeasures developed for S-BGP meet the first six of these
+  criteria, even in the face of subversion of BGP speakers (Byzantine
+  failures).  However, because the local policy features of BGP allow a
+  speaker considerable latitude in determining how to process an
+  UPDATE, these countermeasures cannot meet the last two criteria,
+  i.e., such attacks could be attributed to local policies not visible
+  outside the AS.  To address such attacks within BGP, the semantics of
+  BGP itself would have to change.  Moreover, because UPDATEs do not
+  carry sequence numbers, a BGP speaker can generate an UPDATE based on
+  old information, e.g., withdrawing or reasserting a route based on
+  outdated information.  Thus the temporal accuracy of UPDATEs, in the
+  face of Byzantine failures, is enforced only very coarsely by these
+  countermeasures.
+
+I think that attacks directed at 1 through 6 are fair game, as would
+be active attacks against the UPDATE messages (that could be
+introduced by a compromised [S-]BGP speaker).
+
+In addition, S-BGP has introduced new components into the
+infrastructure, e.g., the NOC Tools, the CA, and the Repository.  I
+think that trying to get them to provide bad information that another
+ISP will accept is also fair game.
+
+I would rule out attacks against TCP that would be thwarted by IPsec,
+and (root) attacks that takeover the machines.  In the latter case, we
+have not expended resources to make the OSes secure, and I do not
+think that we would learn much about S-BGP from IPsec or root attacks.
+Do you think that is reasonable?
+
+
+Pre-Workshop Activity
+=====================
+
+Software Installation
+---------------------
+
+BBN will be providing software to be installed on the laptops.  We can
+provide a source distribution, or binary for the platforms to which we
+can get easy access.  First, lets find out what the wish list of OSes
+is.
+
+Issue 1: What OS/version do folks have on their laptops?  
+	 Are the laptops all i386 based?
+	 (We have not yet tried things on Mac OS X.)
+
+Several of the software components may already exist on folk's laptop,
+e.g., Postgres, OpenSSL, etc.  A conservative approach would be to
+install separate versions of the software (in non-standard locations)
+just for the workshop.  That would reduce the chance of breaking some
+other application on the platform, and keep all the S-BGP related code
+under, e.g., a single directory.
+
+Issue 2: What do folks think of this approach?
+	 Note that each participant can install things wherever
+	 s/he wants (except the NOC Tools location is present
+	 in several config files and thus would take a little
+	 more tailoring to locate elsewhere).
+
+Issue 3: Would putting everything under, e.g., /home/S-BGP be ok?
+	 Might having a /S-BGP soft link to somewhere else be better?
+
+Obtaining IP Addresses and AS Numbers
+-------------------------------------
+
+Folks will need to obtain IP address blocks and AS numbers for the
+networks in their AS(es).  The conservative thing to do is to use the
+private allocations: address blocks 10/8, 172.16/12, and 192.168/16
+and AS space 64512 - 65535.  However, doing so might make interaction
+with other systems that are normally configured to reject those blocks
+harder.
+
+Issue 4: Do folks think that playing in those blocks is sufficient,
+         or do folks think that using "real numbers" would be better?
+	 If other blocks should be used, what blocks do you suggest?
+
+Once we resolve Issue 4, we can proceed to make allocations of IP
+address blocks and AS numbers for the workshop, by having each
+participant answer Questions A and B.
+
+Question A: Please indicate what size address block you would like
+	    from one or more of the agreed upon blocks, and how many
+	    AS numbers you would like.
+
+Setting Up the ISP's CA
+-----------------------
+
+One needs to generate a public/private key pair for the CA, and to
+communicate the public part and proof of possession of the private
+part to the RIR that allocates the IP address and AS numbers.  The
+latter step is often done through generation of a self-signed
+certificate.
+
+We are still working with ARIN on the way that they would like to
+integrate this functionality into their work flow.  They have
+indicated that they would like to use an RIR unique identifier as part
+of the ISP's CA name.  (This provides some anonymity, some continuity
+(given the rate of organization name changes, if BBN is typical :-),
+and makes it clear that there is no significance to the Subject name
+in the certificates that they issue.  Most CAs assume some pre-defined
+level of liability about the binding between the Subject name and a
+physical entity, e.g., a person or system.  S-BGP does not, and the
+S-BGP Certification Practice Statement specifically says so.)  For
+the workshop, we will assign each participant's CA(s) a name.
+
+Question B: How many NOC CAs would you like?
+	    One is sufficient, since a single CA can serve multiple
+	    ASes.
+
+Once folks have been issued their CA certificate, they can install it
+and the other required superior certificates from the distributed
+software into the NOC tools and begin to issue certificates to NOC
+Admins, operators, ASes, Networks, and routers, and generate address
+attestations, etc. for upload to the Repository.  Instructions on
+performing these tasks will be forthcoming.
+
+
+Testing in the Local Environment
+================================
+
+Folks should feel free to play with the components before they arrive
+at the workshop, e.g., maybe connecting to non S-BGP routers in your
+test lab, etc.  BBN will set up a Repository that folks can upload to
+and download from before the workshop so that you can have access to
+other folks' entries.  BBN will also put some "broken" entries
+(expired or revoked certificates, incomplete certification paths,
+certificates or address attestations claiming unauthorized address
+blocks or AS numbers, etc.) into the Repository so that folks can see
+how the authorization verification part of the system implemented by
+the NOC Tools works.
+
+In theory, the NOC tools should not allow certificates, CRLs, or
+address attestations that do not satisfy a minimal set of criteria to
+be created, and the Repository should not accept them, so trying to
+get bad objects into the Repository via the normal path may be
+non-trivial for the red team.  However, even if they do get into the
+Repository, the NOC Tools should reject them and not let the bad
+information be transferred to the S-BGP speakers.  Something for the
+red team to test.
+
+
+Feedback Request
+================
+
+It would be helpful if folks could keep a list of, e.g., documentation
+that could be improved, additional information that would be helpful,
+improvements to the tools (either functional or user-friendliness),
+etc., so that we can make things easier for others.
+
+
+Questions
+=========
+
+Questions, comments, etc., should be sent to Randy's workshop email
+list, sbgp-ws@ops.ietf.org.
+

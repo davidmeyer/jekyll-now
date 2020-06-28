@@ -1,0 +1,16 @@
+
+A few final thoughts
+
+
+What are the cost/benefit tradeoffs are we looking at?
+
+And is there an incremental deployment approach?
+
+For example, can we start with signed-origin sBGP so the machinery is present for signed-AS_PATH in the future?
+
+Note that soBGP doesn't sign UPDATES
+Certificates are advertised in the new Security Message. 
+
+Oh yeah, and convolve all of this with IPv6....
+
+

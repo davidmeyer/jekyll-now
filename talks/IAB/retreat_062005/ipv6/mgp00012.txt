@@ -1,0 +1,20 @@
+
+Is there a related Kobe CBR?
+
+
+What exactly was the IAB "edict"?
+Noting effects of a severe Red Shift
+IPng == CLNS (+ TP4) 
+Or was it someting else
+And what happened to the IAB mission ("psyche")?
+More generally, is there an "IAB Culture"?
+stewardship of that culture (if it exists)?
+Effect of our proccess on this (NOMCOM)?
+
+In any event, there are bunch of different IPv6 issues
+Fixed length addresses
+(Lack of) Abstraction Boundaries
+/48 subnet
+64 bit host id
+...
+

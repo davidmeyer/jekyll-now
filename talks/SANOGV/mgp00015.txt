@@ -1,0 +1,9 @@
+
+Think O(n!) convergence time for BGP is bad?
+
+
+Well, it gets worse...
+
+
+
+Tacoma Narrows Bridge 

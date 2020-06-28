@@ -1,0 +1,15 @@
+
+So the Question Is
+
+What will my network have to do to support this (IMS) functionality?
+
+Some differences to consider include:
+Voice Architecture
+Packet Switched v. Circuit Switched architectures
+In-Band (IP) v. OOB (SS7) signaling
+QoS and Billing Architectures
+Provider mediated sessions (QoS, Policy) v. end-to-end principle
+We'll talk more about the implications of these in a minute
+Walled Garden v. "Internet"  business models
+...
+

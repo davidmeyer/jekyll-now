@@ -1,0 +1,16 @@
+
+Complexity Driver 3: Coupling
+
+
+Well, IMS adopts a vertically-integrated approach to services. The reasons basically boil down to three motivations: 
+
+Leveraging of assets, particularly the radio coverage, for maximum revenue per bit carried
+
+Cross subsidization to give pricing flexibility
+
+Confine users to "walled gardens" to damp price-based competition
+
+
+So, what are we to conclude (if anything)?
+
+

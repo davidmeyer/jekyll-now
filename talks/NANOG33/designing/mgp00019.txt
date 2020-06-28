@@ -1,0 +1,19 @@
+
+Coupling Principle Examples
+
+ACLs
+Couples application to packet transport
+Think extended ACL
+
+Peering Policy
+Decisions made at layer 7+, and translated to a set of filters
+
+
+So....Takeaways: 
+
+Localize the impact of any design or configuration change
+
+Engineer for "human entropy"
+Sprint Example				
+
+

@@ -1,0 +1,17 @@
+
+Issues/Problems
+
+
+Zebra and MRT data integrity
+Code-base split into Zebra/Quagga
+Is MRT's 1 second granularity sufficient?
+
+eBGP Multi-hop & external events
+Some routers don't do ebgp-multihop well
+multi-hop also makes it difficult to study events in the multi-hop path
+So we're trying to reduce ebgp-multihop scenarios
+
+And of course, the perennial
+Archival data storage 
+Data base front end(s)
+

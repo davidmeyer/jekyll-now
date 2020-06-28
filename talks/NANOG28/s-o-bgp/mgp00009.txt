@@ -1,0 +1,13 @@
+
+So what can or should we do?
+
+
+How about....
+Pre-collecting all of the published information into one local database and running authorization checks there
+Only send a router this 'precompiled' chunk of data instead of everything  
+But the router still need additional processing and memory to be able to handle this
+
+Still: Its unclear how big this precompiled information would be, or how much of it a router will need when it restarts
+How much do you need to cache on the router itself?  
+You may no longer have a routing system that can come up by itself
+

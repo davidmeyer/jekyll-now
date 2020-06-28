@@ -1,0 +1,14 @@
+
+So here's a challenge...
+
+
+During the talks, think a little about the following questions...
+
+First, is our methodology sound?
+
+Different views from different points in the topology
+www.telstra.net/ops/bgp
+www.telstra.net/gih/papers/ietf/draft-iab-bgparch-02.html
+
+What approaches should we be taking?
+And what results would be operationally useful?

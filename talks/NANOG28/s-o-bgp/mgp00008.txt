@@ -1,0 +1,18 @@
+
+So what is the 10K-mile goal?
+
+
+(Almost) every BGP speaker should be able to verify:
+that the address space has been properly allocated
+that the origin AS is valid 
+that the entire AS path is valid
+and what about other attributes (e.g. VPN?)
+and BTW, are there security/other implications of (continuing to) throw (almost) everything into BGP?
+
+Note that there are cryptographic signatures that will need to be checked and verified at each step
+
+So at 10K, this is probably what you would like
+
+But all of this comes at a price:
+Additional operational complexity and infrastructure
+

@@ -1,0 +1,8 @@
+
+Complexity Driver 2: Per-Session QoS
+
+
+It is IMS' per-session QoS model, with policy mediated by each service provider on the signaling path and data constrained to follow that (signaling) path, that is the second major source of complexity in IMS.
+
+In addition, the IMS roaming model vastly complicates the situation, since it encodes the desire to replicate the billing behavior of the PSTN for end-to-end flows, where the system has to simultaneously enforce three invariants. 
+

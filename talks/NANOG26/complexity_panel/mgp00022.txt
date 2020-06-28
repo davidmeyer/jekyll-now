@@ -1,0 +1,7 @@
+
+Long Story Short on Five Nines
+
+
+
+While a system like the Internet can reach five nines-like reliability, it is undesirable (and likely impossible) to try to make any individual component reach an arbitrary reliability standard.
+

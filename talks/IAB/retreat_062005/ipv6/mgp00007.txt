@@ -1,0 +1,14 @@
+
+Scaling the Routing System
+
+IPv6 uses the CIDR/PA approach
+Claim: IPv6's 128-bit address space + CIDR/PA scheme exacerbates many problems we see in IPv4.
+Claim: CIDR/PA effectively makes the tier-n's resellers
+for n > 1
+SHIMx?
+
+And BTW, does IPv6 enable an "routing system innovation space" not enabled by IPv4?
+Noting that such "innovation space(s)" are critical to the Internet's continued growth/survival (cf e2e principle, etc)
+
+Assertion: IPv6 offers little or no advantage over IPv4 in scaling the routing system.
+

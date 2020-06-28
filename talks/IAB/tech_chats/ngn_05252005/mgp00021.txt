@@ -1,0 +1,15 @@
+
+IMS Complexity Drivers
+
+
+IMS has 3 Fundamental Complexity Drivers
+
+Roaming Model
+
+Per-Session QoS
+
+Coupling of higher-layer services and packet transport 
+
+
+Let's look at each of these in a little more detail
+

@@ -1,0 +1,16 @@
+
+So here are a few questions...
+
+
+During this ISMA, think a little about the following questions...
+
+First, is our methodology sound?
+
+Different views from different points in the topology
+www.telstra.net/ops/bgp
+www.telstra.net/gih/papers/ietf/draft-iab-bgparch-02.html
+
+What approaches should we be taking?
+What results would be operationally useful?
+And what infrastructure do we need to support such results?
+Do we need a global, coordinated collection and archving infrastructure?

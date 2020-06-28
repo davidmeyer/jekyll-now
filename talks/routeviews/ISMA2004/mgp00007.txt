@@ -1,0 +1,13 @@
+
+Current Status
+
+
+1 Cisco, 1 Juniper, 6 Zebra boxes deployed
+Two more planned - where would be most useful?
+
+
+Realtime (CLI) access (all)
+Useful in diagnosing operational problems
+Takes O(7K) connections/day (up from about 5K)
+
+

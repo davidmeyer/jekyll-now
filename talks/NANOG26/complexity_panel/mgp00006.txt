@@ -1,0 +1,10 @@
+
+So, where is this complexity coming from?
+
+
+Lots of sources. I'll focus on...Non-linearity inherent in large systems such as the Internet
+
+Relatively recent work in the dynamical and non-linear systems field suggests that highly designed systems (such as the Internet) are "Robust yet Fragile" 
+
+Sounds like a contradiction of sorts, doesn't it?
+

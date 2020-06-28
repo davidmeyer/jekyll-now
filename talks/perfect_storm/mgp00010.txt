@@ -1,0 +1,15 @@
+
+Central Tenet #1, cont
+
+
+Lighting (even inexpensive) fiber is still expensive
+OPEX, however, still dominates margins
+And we need to watch out that our economic models are not based on "glut economics" or the availability of "distressed assets" [vaf]
+
+But even that is changing
+What are the future economics of lighting fiber?
+
+So what this is really about is...
+ The convolution of our technology with the economics of IP packet transport
+And BTW, in case you were wondering, we understand all of this about as well as we understand complexity
+

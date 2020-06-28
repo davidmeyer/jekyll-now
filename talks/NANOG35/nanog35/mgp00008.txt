@@ -1,0 +1,13 @@
+
+Goals and Objectives
+
+The Objective of this BOF is two-fold
+
+To provide context for the ongoing discussion of the evolution of technical aspects multi-homing in the Internet
+And of course, its consequences
+
+Provide additional opportunity for the operational community to provide feedback to the IETF on the direction the IETF is taking with respect to multi-homing in IPv6
+
+Finally, note that while this session is a bit of an experiment, the Best Way to get your input into the IETF is to participate in the IETF WGs
+In this case, the shim6 WG
+

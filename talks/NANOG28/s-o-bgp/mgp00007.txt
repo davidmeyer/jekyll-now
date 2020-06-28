@@ -1,0 +1,9 @@
+
+Pragmatism and the complexity challenge
+
+
+
+"My trepidations regarding complex tasks is based on our experience with simple tasks.  How many BGP speaking routers don't have VTY ACLs?  Too many!  We can't even get "simple" deployed, so what chance does "complex" really have?  I'm not trying to be a pessimist, but I am trying to be pragmatic."
+
+-- Rob Thomas
+

@@ -1,0 +1,27 @@
+
+Prefix to AS/AS_PATH zones
+
+
+[dmm@wayback:~] 6%  dig TXT 223.128.asn.routeviews.org
+
+; <<>> DiG 9.2.1 <<>> TXT 223.128.asn.routeviews.org
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26027
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;223.128.asn.routeviews.org.	  IN	TXT
+
+;; ANSWER SECTION:
+223.128.asn.routeviews.org. 86400 IN	TXT	"3582" "128.223.0.0" "16"
+
+;; AUTHORITY SECTION:
+asn.routeviews.org.	86400	  IN	NS	routeviews.org.
+
+;; ADDITIONAL SECTION:
+routeviews.org.		86400	  IN	A	128.223.162.49
+
+...
+
+

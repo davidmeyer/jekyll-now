@@ -1,0 +1,18 @@
+
+What's new...
+
+
+New Collector Sites
+WIDE/NSPIXP (hosted by KDDI)
+PAIX (ISC)
+Again, thanks to WIDE and PAIX for hosting these
+We need US East Coast and European locations (Hosts welcome!)
+
+Prefix to ASN and AS_PATH zones
+asn.routeviews.org and aspath.routeviews.org
+
+
+Database front ends
+This is in primordial state
+Input on what would be useful would be greatly appreciated		
+

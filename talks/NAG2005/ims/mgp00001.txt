@@ -1,0 +1,12 @@
+
+
+The IP Multimedia Subsystem 
+(and what it might mean to you)
+
+
+
+30 Mar 2005
+David Meyer
+dmm@cisco.com
+http://www.1-4-5.net/~dmm/talks/NAG2005/ims
+

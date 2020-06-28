@@ -1,0 +1,11 @@
+
+The Simplicity Principle
+
+
+
+Complexity is the primary mechanism which impedes efficient scaling, and as a result is the primary driver of increases in both capital expenditures (CAPEX) and operational expenditures (OPEX) [*].
+
+
+
+[*] Mike O'Dell (I think)
+

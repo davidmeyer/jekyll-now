@@ -1,0 +1,18 @@
+
+What's new...cont
+
+
+Database format converters
+e.g., MRT -> 'sh ip bgp'
+Would like to stop collecting "less reliable" formats 
+e.g., 'sh ip bgp'
+Should be released with the next month
+
+Peer "regularization"
+Make sure we have DFZ tables from all peers
+Non-multi-hop where possible
+Minimal overlap	
+
+Collection Communities Spec
+draft-ietf-grow-collection-communities-04.txt
+

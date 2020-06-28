@@ -1,0 +1,16 @@
+
+Content Providers Concerns
+
+
+State in servers
+
+Initial delay in setup 
+Customers will move to content provider if latency is significant
+This is about first hits
+
+And what about multi-homing for short conversations?
+
+And again, complexity
+Vijay's regarding low-margin customers
+
+

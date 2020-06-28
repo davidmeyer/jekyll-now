@@ -1,0 +1,20 @@
+
+IMS -- Underlying Models
+
+"Walled Garden" Architecture/Business Model
+Theory: Avoid the "Bit Pipe" Syndrome
+That is, the (perceived) commoditization of bit transport
+Every SIP packet inspected by at least one CSCF
+Consider what this means for the end-to-end principle
+And what kind of state storage/maintenance might be required
+
+Holy Grail: One Platform, Many Services
+Presence and Availability
+PoC (Push to talk over Cellular; PTT was taken :-)
+PoX (Push to X)
+Voicemail, Show (video), etc
+Peer to Peer
+IM
+and eventually
+Wireless/Wireline integration (e.g., dual-mode voice)
+

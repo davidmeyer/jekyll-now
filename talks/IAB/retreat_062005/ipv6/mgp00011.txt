@@ -1,0 +1,20 @@
+
+Is SHIMx the Answer to Multihoming?
+
+
+Assumptions
+All TE decisions are made by the source (*host*)
+Sources and destinations have provisions for failover
+Failure detection though forwarding plane mechanism(s)
+
+Implications
+w/o more specifics 
+*all* destinations of a particular ISP can be distanced
+*all* destinations of a particular ISP are either reachable or unreachable (aggregation)
+Destinations (or intermediate routers) cannot do TE
+i.e., No way for a destination to designate that a source should use the "best" path
+no provision for the destination to designate secondary paths
+
+Are there differences with IPv4?
+Oh, and does complexity matter?		
+

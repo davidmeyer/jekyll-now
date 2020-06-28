@@ -1,0 +1,10 @@
+
+SPEERMINT Charter
+
+
+SPEERMINT focuses architectures to identify, signal, and route delay-sensitive (real-time) communication sessions. 
+These sessions use the SIP signaling protocol to enable peering between two or more administrative domains over IP networks. 
+
+
+Note that where these domains peer, or meet, the establishment of trust, security, and a resistance to abuse and attack are in scope.
+

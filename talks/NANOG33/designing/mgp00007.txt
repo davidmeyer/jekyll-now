@@ -1,0 +1,12 @@
+
+The Simplicity Principle
+
+The Simplicity Principle states that "Complexity is the primary mechanism which impedes efficient scaling, and as a result is the primary driver of increases in both capital expenditures (CAPEX) and operational expenditures (OPEX)."
+Corollaries
+KISS Principle
+Law of Diminishing Returns
+Related: Occam's Razor
+
+That is, if you don't keep designs and implementations as simple as possible, it is going to wind up costing you both more to operate your network (OPEX), and more to grow as your business grows (CAPEX)
+But how simple is "simple as possible"?
+

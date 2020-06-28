@@ -1,0 +1,8 @@
+
+Is "TTL hard to spoof" useful?
+
+
+
+
+BTW, why not just set TTL=1 and let normal TTL=0 discard do its thing?
+

@@ -1,0 +1,16 @@
+
+Problem Statement
+
+
+Seeing a large number of DoS attacks against port 179
+TCP 4 tuple easy to discover
+Attack doesn't require sequence number. Why?
+Just overload the RP.   So...
+
+Conclusion: You don't have to own my router to disable BGP processing
+
+Is is there anything (short of crypto techniques) we can use to mitigate this effect?
+
+Well, TTL still (relatively) "hard" to spoof
+Can we somehow use that fact?
+

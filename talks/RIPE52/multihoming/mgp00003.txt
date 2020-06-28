@@ -1,0 +1,17 @@
+
+Agenda, cont
+
+
+Review of Issues from NANOG 35 BOF
+Inbound Traffic Engineering
+End system complexity
+DNS Latency
+Routing and Addressing Architectures
+Meyer/all (30 minutes)
+
+Community Discussion
+All (30 minutes)
+
+Wrap Up and Next Steps 
+All (10 minutes)
+

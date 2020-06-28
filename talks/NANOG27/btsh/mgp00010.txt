@@ -1,0 +1,7 @@
+
+Limitations
+
+
+
+BTSH is a simple procedure that protects single hop BGP sessions, except in those cases where the directly connected peer has been compromised. While the method is less effective for multi-hop BGP sessions, it still closes the window on several forms of attack
+

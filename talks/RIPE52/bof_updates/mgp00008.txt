@@ -1,0 +1,13 @@
+
+Issue 3: Inbound TE, continued
+
+
+The Internet facing routers and end hosts may not be managed same group of operators
+
+Operators want to manage the inter-AS TE policy in a few well defined places in their networks
+As opposed to in every host
+
+Transit AS TE capabilities may be a requirement
+
+
+

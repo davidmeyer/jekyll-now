@@ -1,0 +1,12 @@
+
+Central Tenet #2, cont
+
+
+Hypothesis: Policy-based architectures cost more to implement (complexity), are less reliable (complexity), and are less "service rich"
+Who buys that if there is a choice (read: competition)?
+And we can talk about the "bundling argument" 
+if we wind up with time
+So this is about a convolution of the Internet technology with public policy
+
+Public policy debate: Net Neutrality v. Net Diversity
+Plenty of references, just let me know

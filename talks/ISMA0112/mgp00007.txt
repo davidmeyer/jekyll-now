@@ -1,0 +1,31 @@
+
+Typical day -- route-views.oregon-ix.net connections
+
+
+ Route-views Connections for: 12/04/2001
+ Total Number of Connections: 2848
+-------------------------------------------------------------------------
+ Requests  IP Address        Hostname
+-------------------------------------------------------------------------
+     393   202.14.186.30	pericles.IPAustralia.gov.au
+     351   192.65.182.30	mippet.ci.com.au
+     235   129.188.33.191	gate01.mot.com
+     125   129.188.33.192	gate02.mot.com
+     119   192.172.226.110	anala.caida.org
+      94   128.95.219.243	pumpkin.cs.washington.edu
+      66   137.118.1.11	dhcp.neonova.net
+      47   136.182.2.22	gate32.motorola.com
+      42   24.0.16.70		ceres.eos.home.net
+      31   136.182.2.21	gate31.motorola.com
+      21   199.45.47.4	gni-gate.gnilink.net
+      20   209.240.224.6	trout.cpinternet.com
+      18   206.195.128.200	ws128-200.workstations.globalknowledge.com
+      17   130.217.248.196	voodoo.cs.waikato.ac.nz
+      15   209.198.223.250	us-la-gate.interpacket.net
+      ...
+      6   128.95.219.170	network-measurement-project.cs.washington.edu
+      6   195.126.111.65	nirvana.de.uu.net
+      6   216.223.6.1		nocpod1.internap.com
+      ...
+
+

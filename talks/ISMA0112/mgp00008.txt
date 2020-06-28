@@ -1,0 +1,23 @@
+
+Connections 
+
+
+A lot of operational use
+Connections come from everywhere:
+routescience.com
+navy.mil
+genuity.com
+spectrum.com.au
+uniroma3.it
+kddi-ok.ne.jp
+southcom.com.au
+ntt.net
+connect.com.au
+...
+
+A lot of research use	
+cs.washington.edu
+cs.waikato.ac.nz
+...
+Start of a bibliography of research using this data on 
+http://www.antc.uoregon.edu/route-views/rv-docs/biblio.html

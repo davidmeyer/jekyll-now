@@ -1,0 +1,14 @@
+
+Complexity Driver 2: Per-Session QoS, cont
+
+
+What are these invariants?
+The destination subscriber is not alerted unless the QoS resources are available for all data flows  
+Billing does not commence until the destination subscriber answers, and 
+QoS cannot be obtained on transmitted data until billing starts
+
+What does all of this mean?
+First, it requires reserve/commit phasing in the QoS signaling and pre-condition testing in the application signaling 
+And note that while IMS has adopted a bunch of SIP extensions to do the reserve/commit phasing (cf. RFC3312), suffice it to say that both the implementation costs and the operational complexity are considerable. 
+
+

@@ -1,0 +1,20 @@
+
+Agenda
+
+
+Introductions
+Meyer/all (5 minutes)	
+
+Goals and Objectives
+Meyer/All (5 minutes)
+
+So what is the heck is the IAB anyway?
+Meyer (15 minutes)
+
+Overview/history of multihoming in IPv6
+TBD (x minutes)
+
+SHIM6 Overview
+TBD (x minutes)
+
+

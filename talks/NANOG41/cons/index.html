@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="LISP-CONS A Mapping Database Service  NANOG 41  David Meyer, Dino Farinacci, Vince Fuller, Darrel Lewis, Scott Brim, Noel Chiappa  NANOG 41 October, 2007 http://www.1-4-5.net/~dmm/talks/NANOG41/cons  LISP-CONS NANOG 41 Agenda Brief Intro Design Considerations Brief Definitions How CONS Works What We’ve Learned Questions/Comments? LISP-CONS NANOG 41 What is LISP? Locator/ID Separation Protocol (LISP)  draft-farinacci-lisp-03.txt Creates two namespaces: IDs and Locators Why do this? Improve site multihoming Improve ISP Traffic Engineering Reduce site renumbering costs Reduce size of core routing tables PI for all? Some form of mobility? LISP-CONS NANOG 41 Locator/ID Split? The idea here is that the IP address is overloaded It encodes both location in the topology (locator) and the identity of the user of the address  The locator role is used by the routing system The identity role is used by upper layer protocols e.g., TCP pseudo-header Problem: Since we want locators to aggregate topologically, and since identifiers are usually allocated on organizational boundaries, it is difficult (impossible?) to get one number space to efficiently serve both purposes. There are other issues as well, including  The expected lifetime of a name (don’t want to reconfigure...) Who has control over the name(s)? ... LISP-CONS NANOG 41 Locator/ID Split? One solution: split the functions -- This is at the heart of the Locator/ID split idea So how might we achieve this? Architecturally, we might try to “Jack-up” the existing IP layer LISP-CONS NANOG 41 Implementing a Locator/ID Split There are two main ways to engineer a Loc/ID split Rewriting If you have enough address space (e.g., IPv6), you could use the lower 64 bits as an identifier, and the upper 64 bits as a locator, and rewrite the locator at the border  This is the basis of O’Dell’s 8+8/GSE scheme Credit to Bob Smart and Dave Clark on this one too Map-n-Encap You could also put another header on the packet, and make the inner header carry the  IDs and the outer header carry the locators  LISP is an instance of this approach Credit to Bob Hinden &amp; Steve Deering on map-n-encap... LISP-CONS NANOG 41 Loc/ID Split in practice 2001:0102:0304:0506:1111:2222:3333:4444 IPv6: LISP-CONS NANOG 41 LISP is a Jack-Up  LISP-CONS NANOG 41 LISP Parts Data-plane Design for encapsulation and tunnel router placement Design for locator reachability Data triggered mapping service Control-plane Design for a scalable mapping service This talk is about LISP Control-planes LISP-CONS NANOG 41 LISP Variants LISP 1 Routable IDs over existing topology to probe for mapping reply LISP 1.5 Routable IDs over another topology to probe for mapping reply LISP 2 EIDs are not routable and mappings are in DNS LISP 3 EIDs are not routable, mappings obtained using new mechanisms (DHTs perhaps, LISP-CONS, NERD, APT) LISP-CONS NANOG 41 Quick LISP Terms Endpoint Identifiers (EIDs) IDs for host-use and only routeable in source and dest sites Can be out of PA or PI address space Routing Locators (RLOCs) Routable addresses out of PA address space Ingress Tunnel Router (ITR) Device in source-site that prepends LISP header with RLOCs Egress Tunnel Router (ETR) Device in destination-site that strips LISP header LISP-CONS NANOG 41 LISP Control-Plane Build a large distributed mapping database service Scalability paramount to solution How to scale:(state * rate) If both factors large, we have a problem state will be “large” (O(1010) hosts) Aggregate EIDs into EID-prefixes to reduce state So rate must be small Make mappings have “subscription time” frequency i.e., we expect such mappings to change with low frequency And no reachibility information in the mapping database LISP-CONS NANOG 41 Some Questions for a LISP Control-Plane Where to put the mappings? How to find the mappings? Is it a push model? Is it a pull model? Do you use secondary storage? Do you use a cache? What about securing the mapping entries? What about protecting infrastructure from DOS-attacks? What about controlling packet loss and latency? LISP-CONS NANOG 41 LISP Control-Plane “Push doesn’t scale, caching doesn’t scale, pick one” LISP-CONS NANOG 41 LISP-CONS LISP-CONS is a hybrid approach Push EID-prefixes (but not mappings) at upper levels of hierarchy Pull from lower levels of hierarchy Mappings stored at lower-levels Requests get to where the mappings are Replies are returned This is a crucial point as we’ll see in a bit Getting to the lower-levels via pushing of EID-prefixes LISP-CONS is a mapping system for LISP 3.0 LISP-CONS NANOG 41 LISP-CONS We can get good EID-prefix aggregation If hierarchy based on EID-prefix allocation and not topology Then build a logical topology based on the EID-prefix allocation Map-Requests routed through logical hierarchy Key is the EID Map-Reply returned to originator With mapping record {EID-prefix, RLOC-set} LISP-CONS NANOG 41 LISP-CONS Network Elements Content Access Routers (CARs) Querying-CARs Generate Map-Requests on behalf of ITRs Answering-CARs Hold authoritative mappings at level-0 of hierarchy Aggregate only EID-prefix upwards  Respond with Map-Replies Content Distribution Routers (CDRs) Push around EID-prefixes with level-1 to n of hierarchy Aggregate EID-prefix upwards Advertise EID-prefixes in a mesh topology within level Forward Map-Requests and Map-Replies LISP-CONS NANOG 41 LISP-CONS -- Peering \\   CDR Mesh Level-1 Level-0 LISP-CONS NANOG 41    Here’s how it works Level-0 CDR Mesh Level-1 Level-n CDR Mesh CDR Mesh Legend:   { } : mapping entry   [ ] : EID aggregate        : mapping table LISP-CONS NANOG 41 What We’ve Learned We wanted to optimize aggregatability of EID prefixes That led to the design in which only EID prefixes were pushed around at the higher levels (but not the mappings themselves) We were concerned about the rate*state product However, some SPs articulated another dimension Latency So you have to tradeoff rate, state, and latency  If you push, you wind up with the whole database in network elements (state) If you pull, you incur latency If you try to do mobility, you get lots of updates (rate) LISP-CONS NANOG 41 What We’ve Learned Current thinking is that a different hybrid approach might be most feasible Push the whole mapping table around in the “CDR” level ITRs pull mappings from the “CAR” level This has a few nice properties: You can get the whole mapping table If you happen to want it Latency is reduced because you don’t have to traverse the whole hierarchy to retrieve the mappings LISP-CONS NANOG 41 Drafts LISP  draft-farinacci-lisp-03.txt   CONS  draft-meyer-lisp-cons-02.txt LISP-CONS NANOG 41 Questions/Comments? Thanks!"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (167);
+            images[0] = "cons.001-001.png";
+            images[1] = "cons.002-001.png";
+            images[2] = "cons.003-001.png";
+            images[3] = "cons.003-002.png";
+            images[4] = "cons.003-003.png";
+            images[5] = "cons.003-004.png";
+            images[6] = "cons.003-005.png";
+            images[7] = "cons.003-006.png";
+            images[8] = "cons.003-007.png";
+            images[9] = "cons.003-008.png";
+            images[10] = "cons.003-009.png";
+            images[11] = "cons.003-010.png";
+            images[12] = "cons.003-011.png";
+            images[13] = "cons.004-001.png";
+            images[14] = "cons.004-002.png";
+            images[15] = "cons.004-003.png";
+            images[16] = "cons.004-004.png";
+            images[17] = "cons.004-005.png";
+            images[18] = "cons.004-006.png";
+            images[19] = "cons.004-007.png";
+            images[20] = "cons.004-008.png";
+            images[21] = "cons.004-009.png";
+            images[22] = "cons.004-010.png";
+            images[23] = "cons.004-011.png";
+            images[24] = "cons.005-001.png";
+            images[25] = "cons.005-002.png";
+            images[26] = "cons.005-003.png";
+            images[27] = "cons.005-004.png";
+            images[28] = "cons.005-005.png";
+            images[29] = "cons.005-006.png";
+            images[30] = "cons.005-007.png";
+            images[31] = "cons.005-008.png";
+            images[32] = "cons.006-001.png";
+            images[33] = "cons.006-002.png";
+            images[34] = "cons.006-003.png";
+            images[35] = "cons.006-004.png";
+            images[36] = "cons.006-005.png";
+            images[37] = "cons.006-006.png";
+            images[38] = "cons.006-007.png";
+            images[39] = "cons.006-008.png";
+            images[40] = "cons.006-009.png";
+            images[41] = "cons.006-010.png";
+            images[42] = "cons.007-001.png";
+            images[43] = "cons.007-002.png";
+            images[44] = "cons.007-003.png";
+            images[45] = "cons.007-004.png";
+            images[46] = "cons.007-005.png";
+            images[47] = "cons.007-006.png";
+            images[48] = "cons.008-001.png";
+            images[49] = "cons.008-002.png";
+            images[50] = "cons.008-003.png";
+            images[51] = "cons.008-004.png";
+            images[52] = "cons.008-005.png";
+            images[53] = "cons.008-006.png";
+            images[54] = "cons.009-001.png";
+            images[55] = "cons.009-002.png";
+            images[56] = "cons.009-003.png";
+            images[57] = "cons.009-004.png";
+            images[58] = "cons.009-005.png";
+            images[59] = "cons.009-006.png";
+            images[60] = "cons.009-007.png";
+            images[61] = "cons.009-008.png";
+            images[62] = "cons.010-001.png";
+            images[63] = "cons.010-002.png";
+            images[64] = "cons.010-003.png";
+            images[65] = "cons.011-001.png";
+            images[66] = "cons.011-002.png";
+            images[67] = "cons.011-003.png";
+            images[68] = "cons.011-004.png";
+            images[69] = "cons.011-005.png";
+            images[70] = "cons.011-006.png";
+            images[71] = "cons.011-007.png";
+            images[72] = "cons.011-008.png";
+            images[73] = "cons.011-009.png";
+            images[74] = "cons.012-001.png";
+            images[75] = "cons.012-002.png";
+            images[76] = "cons.012-003.png";
+            images[77] = "cons.012-004.png";
+            images[78] = "cons.012-005.png";
+            images[79] = "cons.012-006.png";
+            images[80] = "cons.012-007.png";
+            images[81] = "cons.012-008.png";
+            images[82] = "cons.012-009.png";
+            images[83] = "cons.012-010.png";
+            images[84] = "cons.012-011.png";
+            images[85] = "cons.013-001.png";
+            images[86] = "cons.013-002.png";
+            images[87] = "cons.013-003.png";
+            images[88] = "cons.013-004.png";
+            images[89] = "cons.013-005.png";
+            images[90] = "cons.013-006.png";
+            images[91] = "cons.013-007.png";
+            images[92] = "cons.013-008.png";
+            images[93] = "cons.013-009.png";
+            images[94] = "cons.013-010.png";
+            images[95] = "cons.014-001.png";
+            images[96] = "cons.015-001.png";
+            images[97] = "cons.015-002.png";
+            images[98] = "cons.015-003.png";
+            images[99] = "cons.015-004.png";
+            images[100] = "cons.015-005.png";
+            images[101] = "cons.015-006.png";
+            images[102] = "cons.015-007.png";
+            images[103] = "cons.015-008.png";
+            images[104] = "cons.015-009.png";
+            images[105] = "cons.015-010.png";
+            images[106] = "cons.016-001.png";
+            images[107] = "cons.016-002.png";
+            images[108] = "cons.016-003.png";
+            images[109] = "cons.016-004.png";
+            images[110] = "cons.016-005.png";
+            images[111] = "cons.016-006.png";
+            images[112] = "cons.016-007.png";
+            images[113] = "cons.016-008.png";
+            images[114] = "cons.017-001.png";
+            images[115] = "cons.017-002.png";
+            images[116] = "cons.017-003.png";
+            images[117] = "cons.017-004.png";
+            images[118] = "cons.017-005.png";
+            images[119] = "cons.017-006.png";
+            images[120] = "cons.017-007.png";
+            images[121] = "cons.017-008.png";
+            images[122] = "cons.017-009.png";
+            images[123] = "cons.017-010.png";
+            images[124] = "cons.017-011.png";
+            images[125] = "cons.017-012.png";
+            images[126] = "cons.017-013.png";
+            images[127] = "cons.018-001.png";
+            images[128] = "cons.018-002.png";
+            images[129] = "cons.018-003.png";
+            images[130] = "cons.018-004.png";
+            images[131] = "cons.018-005.png";
+            images[132] = "cons.019-001.png";
+            images[133] = "cons.019-002.png";
+            images[134] = "cons.019-003.png";
+            images[135] = "cons.019-004.png";
+            images[136] = "cons.019-005.png";
+            images[137] = "cons.019-006.png";
+            images[138] = "cons.019-007.png";
+            images[139] = "cons.019-008.png";
+            images[140] = "cons.019-009.png";
+            images[141] = "cons.019-010.png";
+            images[142] = "cons.019-011.png";
+            images[143] = "cons.019-012.png";
+            images[144] = "cons.019-013.png";
+            images[145] = "cons.019-014.png";
+            images[146] = "cons.019-015.png";
+            images[147] = "cons.020-001.png";
+            images[148] = "cons.020-002.png";
+            images[149] = "cons.020-003.png";
+            images[150] = "cons.020-004.png";
+            images[151] = "cons.020-005.png";
+            images[152] = "cons.020-006.png";
+            images[153] = "cons.020-007.png";
+            images[154] = "cons.020-008.png";
+            images[155] = "cons.020-009.png";
+            images[156] = "cons.020-010.png";
+            images[157] = "cons.021-001.png";
+            images[158] = "cons.021-002.png";
+            images[159] = "cons.021-003.png";
+            images[160] = "cons.021-004.png";
+            images[161] = "cons.021-005.png";
+            images[162] = "cons.021-006.png";
+            images[163] = "cons.021-007.png";
+            images[164] = "cons.021-008.png";
+            images[165] = "cons.022-001.png";
+            images[166] = "cons.023-001.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="cons.001-001.png" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="prev.png" onclick="Step(-1)"/>
+        <input type="image" src="next.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>

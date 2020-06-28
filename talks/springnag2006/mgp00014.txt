@@ -1,0 +1,13 @@
+
+Aside: Fallacy of Division
+
+
+The logical fallacy of arguing that what is true for the whole is also true for the parts
+i.e., Coupling can cause the emergent behavior of a system
+
+In the study of economics...
+This takes the form of assuming that what works for the aggregate, or macroeconomy, also works for parts of the economy, such as households or businesses
+
+Example:
+NaCl is safe to eat, so Sodium and Chlorine are safe to eat
+

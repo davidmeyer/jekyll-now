@@ -1,0 +1,18 @@
+
+Network Schematics
+
+
+Fancy pictures of the in-building network:
+http://tesla.uoregon.edu/~llynch/NANOG26-Network.gif
+
+AP location map:
+http://tesla.uoregon.edu/~llynch/nanog26-wireless.jpg
+
+Network Monitoring:
+http://srv34.nanog26.merit.net
+
+All the network information:
+http://darkwing.uoregon.edu/~llynch/nanog26
+
+However....
+

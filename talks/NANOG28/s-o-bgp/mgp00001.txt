@@ -1,0 +1,15 @@
+
+
+
+BGP Security, Availability,
+and Operator Needs
+
+
+David Meyer/Andrew Partan
+dmm@1-4-5.net/asp@partan.com
+
+NANOG 28
+Salt Lake City, Utah
+
+
+

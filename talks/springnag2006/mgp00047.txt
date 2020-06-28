@@ -1,0 +1,21 @@
+
+Complexity References
+
+
+[Baran] "On Distributed Communications", Paul Baran, Rand Corporation Memorandum RM-3420-PR, http://www.rand.org/publications/RM/RM3420", August, 1964.
+
+[Doyle and Willinger] "Robustness and the Internet: Theoretical Foundations", John C. Doyle, et al. Draft, March, 2002. 
+
+[Doyle and Willinger] "Robustness and the Internet: Design and evolution", Walter Willinger and John Doyle, 2002.
+
+[Scott] "Making Smart Investments to Reduce Unplanned Downtime", D. Scott, Tactical Guidelines, TG-07-4033,  Gartner Group Research Note, March 1999. 
+
+
+
+
+
+
+
+
+
+ LocalWords:  claffy

@@ -1,0 +1,11 @@
+
+NGN Transport Requirements
+
+
+
+Each mode is specified with its its own addressing, routing, signaling, OAM, QoS metrics and traffic descriptions
+And these functions shouldn't be proxied by other "layer networks" (e.g., you shouldn't use the fact that your LDP session is gone to proxy for user-plane OAM in the PW).
+
+I sense a tremor in the force....
+Suffice it to say that the co-ps mode (MPLS) is contentious 
+

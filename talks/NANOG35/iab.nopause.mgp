@@ -1,0 +1,169 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "royalblue"
+%xfont "utopia-medium-r"
+
+%xfont "utopia-medium-r", size 8, fore "black"
+
+%center 
+%size 7
+What is the IAB Anyway?
+
+%size 5
+Brief Overview of The Role of the 
+IAB in the IETF
+
+
+
+
+%size 3
+David Meyer
+NANOG 35
+Los Angles, CA
+http://www.1-4-5.net/~dmm/talks/NANOG35/iab
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+What is the IAB anyway?
+%xfont "utopia-medium-r", fore "white", size 4
+
+	IAB == Internet Architecture Board
+
+	The role of the IAB is documented and defined in RFC2850 (BCP39)
+
+	We'll get into roles in a sec, but first...
+		How do you get on the IAB?
+
+	Members are selected by the NOMCOM
+		Except for Ex-Officio and Liaison members
+		Who are the Ex-Officio members?
+			IRTF chair and the IAB Executive Director
+		Who are the Liaison members?
+			Someone from the ISOC, RFC Editor, IANA and the IESG
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 5
+IAB Roles: IESG Appointment, RFC Series, IANA
+
+
+%xfont "utopia-medium-r", fore "white", size 6
+	IESG Appointment [BCP 10]
+		The NOMCOM annually provides a list of candidates for vacant IESG seats and for the IETF Chair if vacant (if is to become vacant). The IAB reviews the candidates, consenting to some, all, or none.
+
+	RFC Series
+		The IAB approves the appointment of an organization to act as RFC Editor and the general policy followed by the RFC Editor
+
+	IANA
+		The IAB approves the appointment of an organization to act as IANA on behalf of the IETF
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 7
+IAB Roles: Standards Process Oversight
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+	The IAB's role in  Standards Process Oversight and Appeal is documented in [BCP 9]. In particular, 
+
+
+	The IAB provides oversight of the process used to create Internet Standards
+
+
+	The IAB serves as an appeal board for complaints of improper execution of the standards process
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+IAB Roles: Liaisons
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+	ISOC Liaison
+		The IAB acts as a source of advice and guidance to Officers and BOT of the ISOC concerning technical, architectural, procedural, and (where appropriate) policy matters pertaining to the Internet and its enabling technologies. 
+
+
+	External Liaisons
+		The IAB acts as representative of the interests of the IETF and the ISOC in technical liaison relationships with other organizations concerned with standards and other technical and organizational issues relevant to the world-wide Internet. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 7
+IAB Roles: IAB Architectural Oversight
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+	Documented in section 2.2 of RFC2850
+		The IAB is chartered with providing oversight of the architecture for the protocols and procedures used by the Internet. 
+		ftp://ftp.rfc-editor.org/in-notes/rfc2850.txt
+
+
+	So, what "levers" can the IAB can pull?
+
+
+	Let's take a look at what section 2.2 of RFC 2850 actually provides for...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 7
+Levers the IAB can (actually) pull...
+
+%xfont "utopia-medium-r", fore "white", size 4
+		The IAB provides input to the IESG regarding BOFs and possible (subsequent) WG formation
+			Noting that the final decision on WG creation rests with the IESG
+
+		The IAB sponsors and organizes the Internet Research Task Force (IRTF)
+			as well as reviewing proposed IRTF groups
+
+		The IAB can convene invitational workshops to perform in-depth reviews of particular architectural issues
+			See, for example, ftp://ftp.rfc-editor.org/in-notes/rfc3535.txt
+
+		The IAB can organize ad hoc bodies of independent experts to adjudicate technical disputes
+			For example, the IAB IPv6 ad-hoc committee
+
+		The IAB can also write informational documents
+			See, for example ftp://ftp.rfc-editor.org/in-notes/rfc3724.txt
+			Noting that Standards Track document approval rests with the IESG
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Questions?
+%xfont "utopia-medium-r", fore "white", size 6
+
+
+
+
+
+%center
+%size 8
+Thanks
+
+http://www.iab.org
+
+%% LocalWords:  bgrad nodefault royalblue xfont IETF NANOG NOMCOM IRTF ISOC IANA
+%% LocalWords:  IESG IAB's BOFs

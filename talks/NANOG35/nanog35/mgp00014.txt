@@ -1,0 +1,18 @@
+
+Service Provider Conclusions
+
+
+Concern that shim6 doesn't address TE requirements
+Since this is a (the) primary concern, TE must be supported day one
+or worse, shim6 is in conflict with SP's TE requirements
+and what about RPF/Firewall issues
+
+Including in-bound TE
+and how transit ASes will multi-home?
+
+And does PI space --> much larger swamp?
+
+Running through the whole discussion....
+Complexity, complexity, complexity
+Specification, implementation, and operation
+

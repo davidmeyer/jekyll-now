@@ -1,0 +1,117 @@
+From darlewis@cisco.com  Tue Aug 21 10:55:17 2007
+Received: from sj-iport-2.cisco.com (sj-iport-2-in.cisco.com [171.71.176.71])
+	by cisco.com (8.8.8-Cisco List Logging/8.8.8) with ESMTP id KAA19415
+	for <dmm@pita.cisco.com>; Tue, 21 Aug 2007 10:55:17 -0700 (PDT)
+Received: from sj-dkim-2.cisco.com ([171.71.179.186])
+  by sj-iport-2.cisco.com with ESMTP; 21 Aug 2007 10:56:23 -0700
+X-IronPort-AV: i="4.19,290,1183359600"; 
+   d="scan'208"; a="393596760:sNHT51538330"
+Received: from sj-core-4.cisco.com (sj-core-4.cisco.com [171.68.223.138])
+	by sj-dkim-2.cisco.com (8.12.11/8.12.11) with ESMTP id l7LHuMQT018070
+	for <dmm@pita.cisco.com>; Tue, 21 Aug 2007 10:56:22 -0700
+Received: from xbh-sjc-221.amer.cisco.com (xbh-sjc-221.cisco.com [128.107.191.63])
+	by sj-core-4.cisco.com (8.12.10/8.12.6) with ESMTP id l7LHtuaP021183
+	for <dmm@pita.cisco.com>; Tue, 21 Aug 2007 17:56:22 GMT
+Received: from xmb-sjc-218.amer.cisco.com ([171.70.151.151]) by xbh-sjc-221.amer.cisco.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Tue, 21 Aug 2007 10:55:48 -0700
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Subject: RE: BTW, perfect storm slides for NANOG 41
+Date: Tue, 21 Aug 2007 10:55:55 -0700
+Message-ID: <60C4A248E730F249990993E3B9BD44D8042451A4@xmb-sjc-218.amer.cisco.com>
+In-Reply-To: <20070821170146.GA11038@cisco.com>
+Thread-Topic: BTW, perfect storm slides for NANOG 41
+Thread-Index: AcfkFRx/Btiboi7WQ6SNjlNOUeNrkgAASD8A
+References: <46CB12A5.8030703@cisco.com> <393394A1-E1DF-42D9-8DEB-68C2F84E1014@cisco.com> <46CB1575.2030708@cisco.com> <DCC4668B-DBB3-4854-A5B2-13B20CC8C5EC@cisco.com> <60C4A248E730F249990993E3B9BD44D8042450FE@xmb-sjc-218.amer.cisco.com> <CE5004E7-BC46-4A37-88C4-42A2B792FFE6@cisco.com> <20070821170146.GA11038@cisco.com>
+From: "Darrel Lewis \(darlewis\)" <darlewis@cisco.com>
+To: "David Meyer \(dmm\)" <dmm@cisco.com>
+X-OriginalArrivalTime: 21 Aug 2007 17:55:48.0936 (UTC) FILETIME=[81AFFC80:01C7E41C]
+DKIM-Signature: v=0.5; a=rsa-sha256; q=dns/txt; l=3108; t=1187718982; x=1188582982;
+	c=relaxed/simple; s=sjdkim2002;
+	h=Content-Type:From:Subject:Content-Transfer-Encoding:MIME-Version;
+	d=cisco.com; i=darlewis@cisco.com;
+	z=From:=20=22Darrel=20Lewis=20\(darlewis\)=22=20<darlewis@cisco.com>
+	|Subject:=20RE=3A=20BTW,=20perfect=20storm=20slides=20for=20NANOG=2041
+	|Sender:=20;
+	bh=/KW3ph7mAJNlgwf2xDJNSBWAWq7eeVWK1YC+V6ClvgA=;
+	b=d8ifeh2MHOjHeEMWXfAZgkQbXo4luZlfsneWzH0uh7SPvTEvs6+ZRMsILv4KXJMPzSbmD03m
+	3dRUl7g3b5yBqHuJUlFZF/X82Ym+XugsENN0INroRpJDh25OhYwWHkPu;
+Authentication-Results: sj-dkim-2; header.From=darlewis@cisco.com; dkim=pass (
+	sig from cisco.com/sjdkim2002 verified; ); 
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by cisco.com id KAA19415
+X-Spam-Checker-Version: SpamAssassin 3.0.2 (2004-11-16) on pita.cisco.com
+X-Spam-Level: 
+X-Spam-Status: No, score=0.0 required=5.0 tests=AWL autolearn=ham 
+	version=3.0.2
+Status: RO
+X-Status: A
+Content-Length: 2946
+Lines: 62
+
+Comments:
+
+
+Slide 8:
+
+'lower opex'  this seems like a qualitative, undefined value.  Can you give examples of opex as a function of total revenue/profit for other low margin industries?  Groceries, appliances, etc.
+
+Note also that there are examples of brand value and upselling even in comodities that allow for diferentiation and higher profits....
+
+Example: whole foods found a niche where people would pay more for organic foods.  
+
+GE introduced 'green' appliances that also allowed them to charge more/generate higher profits.
+
+So anyway, I'm not denying that if profits are slim, you optimize towards increasing it by squeezing expenses (increasing efficiency).  But innovation is always an option in a healthy  busness.  In the SP world this has usually been seen in increasing aggrigation density (@home had a breakthrough in broadband density that allowed it to squeeze more efficiency).
+
+I think the first point - the hypothesis - needs to be further developed. It seems rather simplistic.
+
+I suggest taking your 'aside' slides 12/13 and moving them into something that supports/defines your hypothesis.
+
+Slide 11:
+
+Convolution - really mean that term?  So functions A and B are describing that overlap C?  That's not specifically called out in your slide.
+
+http://en.wikipedia.org/wiki/Convolution
+
+Slide 15:
+
+Be carefull, things have changed in the market here.  I think this slide was used by Geoff in a highly questionable way.  I don't think the data supports the concusions that geoff made verbally.  The data on this slide doesn't reflect the contention that these company's have problems getting capital!
+
+Slide 18:
+
+This is a key slide.  It kind of comes out of no where.  I think the presentation would benefit from an agenda slide where you first define TPS... This is point #2 right?
+
+Slide 22/23:
+
+These asides are valuable, but I think it will help the flow of the presentation if you incorporate them into the topic itself.  
+
+
+Slide 24:
+
+Same comment as slide 18, would help to organize the preso and call out that this is TPS requirement #3 or whatever.
+
+Slide 26:  
+
+this strawman comes out of no where - which of the 3 TPS areas does v6 drive?  I think it may be better just to review how v6 relates to this... 
+
+Slide 27:
+
+Good summary, but very wordy slide - might want to use ordered #s instead of just a pile of bullets.  (steal dino's slide formats!)
+
+Slide 30:
+
+I don't believe that you can draw the conclusion based on the data you've shown that suppliers to low margin business's have to maintain low margins themselves.  Classic counter example is Boeing/Airbus.  I would submit that the same lack of competition in access that exists in the router space allows us to avoid profit errosion....
+
+Slide 32:
+
+Regulatory systems that require commodity providers (like electricity) to implement service also allow for profit magrins/relief.  
+
+
+Those are my thoughts.... Hope you get something from them. :)
+
+-D
+

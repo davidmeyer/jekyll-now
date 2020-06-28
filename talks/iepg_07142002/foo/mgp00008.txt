@@ -1,0 +1,11 @@
+
+Amplification Examples
+
+
+Multiplication of BGP messages across the peering mesh of the Internet
+
+Tim Griffin's work showing that a small amount of inter-connectivity causes the output of a routing mesh to be significantly more complex than its input.
+
+You see this in nature all the time 
+e.g., non-linear resonant amplification
+Tacoma Narrows Bridge

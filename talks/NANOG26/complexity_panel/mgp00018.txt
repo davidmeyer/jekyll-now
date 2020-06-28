@@ -1,0 +1,11 @@
+
+Example: The Myth of Five Nines...
+
+
+80% of unscheduled outages are caused by people or process errors [Scott, many others]
+So there is only a 20% window in which to optimize component reliability
+
+In order to increase component reliability, we frequently add complexity (which is the root cause of at least 80% of unplanned outages). This effectively narrows the 20% window 
+
+Bottom line: Optimization frequently increases complexity, which increases the likelihood of people and process failure
+

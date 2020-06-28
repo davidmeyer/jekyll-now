@@ -1,0 +1,15 @@
+
+Issue 3: Inbound TE, cont
+
+
+Issues raised at NANOG 35 included:
+
+Current multi-homing is site based not host based. Host based multi-homing does not lend itself to current operational processes, as there are 
+A large number of hosts,
+Complex routed network, and
+End users do not own network/traffic engineering preferences
+
+Note also that TE decisions are currently made and configured at the network level
+As opposed to in all end hosts
+
+

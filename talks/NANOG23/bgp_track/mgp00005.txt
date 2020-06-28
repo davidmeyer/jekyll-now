@@ -1,0 +1,21 @@
+
+route-views.oregon-ix.net -- history
+
+
+Circa 1995 
+route-views started life as a purely operational tool
+I needed a way to look how providers saw my routes
+Looking glasses still in the future
+Randy Bush was kind enough to give me a view from MAE-WEST
+People started using route-views and contributing views
+http://www.caida.org/analysis/topology/as_core_network/AS_Network.xml
+
+
+Currently
+Cisco 7200 VXR/NPE-400/512Mb
+12.0(19).S
+63 peers
+O(700K) paths
+O(200M) of RIB
+O(4K) connections/day, 30-50 downloads 
+archive.routeviews.org

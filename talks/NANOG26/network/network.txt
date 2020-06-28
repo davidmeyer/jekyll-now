@@ -1,0 +1,39 @@
+
+sl-bb23-tac --- Sprintlink (1239)
+    |
+    |                                                    
+    | 
+    |                                                      +------- dnvr
+    |            University of Oregon Switch Room          | 
+    |                                                      | OC3
+    |        198.32.165.2  +-----------+  198.32.165.5     |
+sl-gw12-tac -------------- | GE Switch | -------------- OGIG/Abilene (4600)
+                           +-----------+                   |
+                             | | |                         | OC3     
+                             | | |                         |
+                             | | |                         +------- snva
+                             | | |
+                             | | |        198.32.165.1
+                             | | +--------------------- UO (3582)
+                             | |
+                             | |          198.32.165.3
+                             | +----------------------- dmm (10876)
+                             |  
+                             |  
+                             | UO/City of Eugene Metro Fiber Plant
+                             |
+                             | Hilton
+                             |
+                           +-----------+  198.32.165.4                  
+             IDS (bro) --- | GE Switch | -------------- nanog26-gw (236)
+                           +-----------+                    | |  
+                                                            | |
+                                                            | | 192.35.169.1
+                                                            | | 
+                                                            | +---- multicast
+                                                            | 
+                                                            | 192.35.164.1
+                                                            |
+                                                In building switching fabric
+                                                     (wireless, etc)
+

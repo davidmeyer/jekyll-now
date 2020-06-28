@@ -1,0 +1,16 @@
+
+What went wrong?
+
+
+bgpd couldn't start all the peers
+appears to be a bug in the scanner thread
+
+The bgpd CLI thread is extremely slow
+"unusable"
+
+So what to do?
+work with zebra implementors
+other bgpd implementations
+replicate the peerings for data collection?
+route-views-test.oregon-ix.net
+

@@ -1,0 +1,19 @@
+
+What's new...
+
+
+New (and relatively new) Collector Sites
+WIDE/NSPIXP (KDDI)
+ISC (PAIX)
+Equinix (Ashburn, VA)
+LINX (London)
+Again, thanks to WIDE, ISC, Equinix and LINX for hosting
+We need US East Coast, Asian, and European locations
+
+Visualizations 
+bgplay -- http://bgplay.routeviews.org
+BGPlay was designed and written by the Computer Networks Research Group at Roma Tre University. It is currently in "beta".
+
+More to come ("watch this space")
+
+

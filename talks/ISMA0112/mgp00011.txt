@@ -1,0 +1,15 @@
+
+What went wrong?
+
+
+bgpd couldn't start all (~60) the peers
+appeared to be a bug in the scanner thread
+
+The bgpd CLI thread was extremely slow
+"unusable"
+
+So what to do?
+work with zebra implementors?
+other bgpd implementations?
+replicate the peerings for data collection?
+

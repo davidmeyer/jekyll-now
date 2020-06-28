@@ -1,0 +1,27 @@
+
+SPEERMINT Charter -- Division of Labor
+
+ E.164 number <--- Peer Discovery
+      |
+      | <--- ENUM lookup of NAPTR in DNS
+      |
+      | ENUM Working Group Scope
+      |
+==+=======================================
+      |
+      | SPEERMINT Working Group Scope
+      |
+ SIP URI <--- Call Routing Data (CRD)
+      |
+      | <--- Service Location (Lookup of SRV in DNS)
+      |
+ Hostname <--- Addressing and session establishment
+      |
+      | <---- Lookup of A and AAAA in DNS
+      |
+ IP address
+      |
+      | <---- Routing protocols, ARP etc
+      |
+ Mac-address
+

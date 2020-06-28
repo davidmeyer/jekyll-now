@@ -1,0 +1,58 @@
+From ryanm@sprint.net  Fri May 23 07:35:47 2003
+Return-Path: <ryanm@sprint.net>
+Received: from iscserv1.res.sprintlink.net (elle.sprintlink.net [199.0.234.34])
+	by sith.maoz.com (8.12.9/8.12.9) with ESMTP id h4NEZSoq009613
+	for <dmm@1-4-5.net>; Fri, 23 May 2003 07:35:47 -0700
+Received: from localhost (ryanm@localhost) by iscserv1.res.sprintlink.net (8.8.8+Sun/8.6.12) with ESMTP id KAA04458; Fri, 23 May 2003 10:39:12 -0400 (EDT)
+X-Authentication-Warning: iscserv1.res.sprintlink.net: ryanm owned process doing -bs
+Date: Fri, 23 May 2003 10:39:11 -0400 (EDT)
+From: Ryan McDowell <ryanm@sprint.net>
+X-X-Sender:  <ryanm@iscserv1>
+To: David Meyer <dmm@1-4-5.net>
+cc: <ip-people@sprint.net>
+Subject: Re: advice on operator needs for BGP security
+In-Reply-To: <20030522191332.A7256@1-4-5.net>
+Message-ID: <Pine.GSO.4.33.0305231030340.2692-100000@iscserv1>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: A
+Content-Length: 1195
+Lines: 35
+
+Once people do BTSH, I think the protocol itself is pretty safe.  The only
+problem left is somebody hacking a BGP speaking router (they're doing this
+already) and then using it so advertise rogue prefixes (not doing this
+yet).  We can filter the small static guys with prefix lists.  We
+can't filter the customers with 1000 routes that change on a daily
+basis with prefix lists, must use AS path lists which don't stop
+rogue prefixes.
+
+Before we talk about ways to authenticate the origin, we need an
+accurate/authoritative/secure source of information, as one does not exist
+(RADB sucks).  We need to solve this problem as simply as possible, and
+SBGP/SoBGP are not simple :(.
+
+My 2 cents.
+
+Ryan McDowell
+NTAC Internet (SprintLink)
+Sprint Network Services
+Office: (+1) 703.689.7527
+Mobile: (+1) 703.862.2570
+
+On Thu, 22 May 2003, David Meyer wrote:
+
+> Folks,
+>
+> I'm on a panel at NANOG dealing with {s,so}bgp and I wanted to
+> get your opinions on what level of security is needed/missing in
+> BGP. From your perspective, what (BGP) operational needs are not being
+> met today, and what BGP capability would help you operate the
+> network more securely and efficiently?
+>
+> Thanks,
+>
+> Dave
+>
+

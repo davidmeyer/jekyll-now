@@ -1,0 +1,98 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "royalblue"
+%xfont "utopia-medium-r"
+
+%xfont "utopia-medium-r", size 8, fore "black"
+%center 
+IAB IPv6 Multi-homing BOF
+
+%image "bgp-active-sum.png"
+
+%size 3
+NANOG 35
+Los Angles, CA
+http://www.1-4-5.net/~dmm/talks/NANOG35/multihoming
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+%xfont "utopia-medium-r", fore "white", size 4
+
+%size 5
+	Goals and Objectives
+		Meyer/All (5 minutes)
+
+%size 5
+	SHIM6 Context
+		Huston (10 minutes)
+
+%size 5
+	Service Provider Perspectives
+		Jason Schiller (MCI) (10 minutes)
+		Ted Seely (Sprint) (10 minutes)
+		Vijay Gill (AOL) (10 minutes)
+
+%size 5
+	Community Discussion
+		All (45 minutes)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Goals and Objectives
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	The Objective of this BOF is two-fold
+
+%pause
+		To provide context for the ongoing discussion of the evolution of technical aspects multi-homing in the Internet
+%pause
+			And of course, its consequences
+
+%pause
+		Provide the opportunity for the operational community to provide feedback to the IAB on the direction the IETF is taking with respect to multi-homing in IPv6
+
+%pause
+	Finally, note that while this is a bit of an experiment, the Best Way to get your input into the IETF is to participate in the IETF working groups (for example, shim6)
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Rules of Engagement
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	First and foremost,  we're here to listen to your comments and concerns
+
+
+%pause
+	Second, let's make sure we keep the information flow going in a bi-directional fashion
+
+
+%pause
+	So communication is key
+
+
+%pause
+	Now, on to Geoff to set the shim6 context...
+
+
+
+%%  LocalWords:  bgrad nodefault xfont timeline NANOG Seely IETF CLNS Internt IPng
+%%  LocalWords:  CIDR ietf Deering Locator Identifer locator CLNP Rekhter's

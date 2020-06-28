@@ -1,0 +1,21 @@
+
+So What is Complexity?
+
+Many ways to study complexity, including
+Classical Computational Complexity
+Captures static properties
+Upper/lower bounds on time, memory, etc of a given algorithm 
+For example, a full mesh is said to have complexity O(n^2), since you need n*(n-1)/2 unique connections, and n*(n-1)/2 ~ c*n^2 = O(n^2) 
+Many other techniques
+
+In this talk we'll look at "Dynamical Systems Theory"
+Focuses on a system's large scale, macroscopic properties 
+That is, those *dynamic* properties that emerge at scale
+Applies to the Internet as a system
+Which is what we are interested in from an operational perspective
+What kind of problems can we analyze this way?
+The convergence behavior of BGP
+BGP UPDATE propagation
+The behavior of IGPs under congestion
+PWE3 Alarm "multiplication"
+

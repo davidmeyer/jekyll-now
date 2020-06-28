@@ -1,0 +1,12 @@
+
+Issue 2: DNS Latency
+
+
+Several content providers expressed the concern that shim6 will require sifting though the DNS looking for viable ULID/locator pairs.
+
+In reality, shim6 doesn't require this. Rather, client connects to the server just like today.
+i.e, the application tries connect to each IPv6 address in turn until one succeeds. Nothing new for shim6 here.
+At some (later) point in time, shim6 at either end of the communication determines that some heuristic applies (e.g., number of packets between the pair of IP addresses; NOTE: not per TCP connection). 
+That point in time could be *never*
+
+

@@ -1,0 +1,18 @@
+
+Issue 3: Inbound TE, continued
+
+
+Finally....
+
+There was some concern that TE (as practiced in IPv4) won't scale in any event, so the lack of a TE solution for shim6 was seen by some as an unfair criticism
+
+
+Jason Schiller has a nice set of slides on this topic
+http://www.nanog.org/mtg-0510/pdf/schiller.bof.pdf
+
+Issues In Traffic Engineering with SHIM6
+Extended Shim6 Design for ID/loc split and Traffic Engineering
+draft-nordmark-shim6-esd-00.txt
+draft-meyer-shim6-and-te-00.txt
+Not yet finished; Please see me later if you'd like to help/contribute		
+

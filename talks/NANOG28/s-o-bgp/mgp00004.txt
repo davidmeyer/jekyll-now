@@ -1,0 +1,11 @@
+
+And in case you were wondering...
+
+
+
+"I would stress that all of these things, particularly prefix hijacking and backbone router 'ownage', are real threats, happening today, happening with alarming frequency.  Folks need to realize that the underground is abusing this stuff today, and has been for quite some time." 
+
+-- Rob Thomas
+
+
+

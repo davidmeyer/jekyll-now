@@ -1,0 +1,179 @@
+From chsharp@cisco.com  Wed Feb  2 09:18:13 2005
+Return-Path: <chsharp@cisco.com>
+Received: from sj-iport-3.cisco.com (sj-iport-3-in.cisco.com [171.71.176.72])
+	by m106.maoz.com (8.13.2/8.13.2) with ESMTP id j12HIBXl031285
+	for <dmm@m106.maoz.com>; Wed, 2 Feb 2005 09:18:11 -0800
+Received: from sj-core-5.cisco.com (171.71.177.238)
+  by sj-iport-3.cisco.com with ESMTP; 02 Feb 2005 10:28:27 +0000
+X-BrightmailFiltered: true
+X-Brightmail-Tracker: AAAAAA==
+Received: from cisco.com (cypher.cisco.com [171.69.11.142])
+	by sj-core-5.cisco.com (8.12.10/8.12.6) with ESMTP id j12HI3F1008527
+	for <dmm@m106.maoz.com>; Wed, 2 Feb 2005 09:18:04 -0800 (PST)
+Received: from rtp-iport-1.cisco.com (rtp-iport-1.cisco.com [64.102.122.148])
+	by cisco.com (8.8.8-Cisco List Logging/8.8.8) with ESMTP id JAA15255
+	for <dmm@cypher.cisco.com>; Wed, 2 Feb 2005 09:18:03 -0800 (PST)
+Received: from rtp-core-2.cisco.com (64.102.124.13)
+  by rtp-iport-1.cisco.com with ESMTP; 02 Feb 2005 12:28:06 -0500
+X-BrightmailFiltered: true
+X-Brightmail-Tracker: AAAAAA==
+Received: from [171.71.212.211] (dhcp-171-71-212-211.cisco.com [171.71.212.211])
+	by rtp-core-2.cisco.com (8.12.10/8.12.6) with ESMTP id j12HHmQQ002543;
+	Wed, 2 Feb 2005 12:18:00 -0500 (EST)
+Mime-Version: 1.0
+Message-Id: <p06200709be26bb262796@[171.71.212.211]>
+Date: Wed, 2 Feb 2005 09:17:10 -0800
+To: dmm@cisco.com, mmorrow@cisco.com, bgreene@cisco.com
+From: Chip Sharp <chsharp@cisco.com>
+Subject: SP futures
+Cc: mputz@cisco.com
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+X-Spam-Checker-Version: SpamAssassin 3.0.2 (2004-11-16) on m106.maoz.com
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.6 required=5.0 tests=AWL,BAYES_00 autolearn=ham 
+	version=3.0.2
+Status: RO
+X-Status: A
+Content-Length: 5945
+Lines: 139
+
+Folks,
+I just sent this to the SA SP team today with my thoughts on SP futures.
+This is based on reviewing the NGN teams work, the Delphi report and 
+Dave's work on complexity in the network.  I haven't worked through 
+all the angles yet (e.g., regulatory changes).
+
+Let me know what you think
+-------------
+
+
+
+Team,
+I've been thinking about this over the last week or so and my 
+thoughts are starting to coalesce a little.
+
+Basically, I went back to the basic principles on which the Internet 
+was founded and then studied up on some of the complexity issues that 
+Dave Meyer has been working on since he was at Sprint.  See RFC3439 
+for some of this.
+
+I'll try to briefly lay out my reasoning so far.
+
+Paul Baran laid the foundations of packet-switching in the '60's.
+"The tradeoff curves between
+    cost and system reliability suggest that the most reliable systems
+    might be built of relatively unreliable and hence low cost elements,
+    if it is system reliability at the lowest overall system cost that is
+    at issue"
+
+Metcalfe developed his "Metcalfe's Law" in the late 70's, early '80's 
+when developing ethernet.
+To paraphrase, the value of the a network is proportional to the 
+square of the number of nodes on the network.  Basically, the 
+connections that can be made on a network is proportional to the 
+square of the people on the network.
+
+Reed, Saltzer & Clark published their "End-to-end Argument" in the '80's.
+"end-to-end protocol design
+    should not rely on the maintenance of state (i.e., information about
+    the state of the end-to-end communication) inside the network.  Such
+    state should be maintained only in the end points, in such a way that
+    the state can only be destroyed when the end point itself breaks."
+
+The end-to-end argument actually involves more than just this simple statement.
+Dr. Reed has written an update to this at:
+http://www.reed.com/dprframeweb/dprframe.asp?section=paper&fn=endofendtoend.html
+
+Fundamentally, it states that you shouldn't build something into a 
+lower layer (i.e., into the network) functions that are better 
+handled at a higher layer (i.e., in the endpoints).  IP & TCP were 
+designed according to this principle.  X.25 was not.  Unfortunately, 
+a Bell Labs engineer suddenly got religion and trivialized the 
+end-to-end argument as the "stupid network."  But I guess it has paid 
+his mortgage.
+
+
+And Mike O'Dell of UUNET had the following to say:
+"complexity is  the primary mechanism which impedes efficient 
+scaling, and as a result is the primary driver of increases in both 
+capital expenditures (CAPEX) and operational expenditures (OPEX)."
+
+Complexity theory in network design is still in its infancy.  But 
+there are two components of it that Dave brings up in his talks:
+Amplification:  In a large network, small changes can get amplified 
+into large disturbances.
+Coupling:  As things get larger, they often exhibit increased 
+interdependence between components.  This sometimes causes 
+"unforeseen feature interaction".
+
+One conclusion from this is that adding queuing in the core of the 
+network (e.g., for QOS) increases complexity and slows down the 
+overall operation of the network.
+
+So, where does this leave us?
+
+Email, WWW, FTP, P2P, Skype all operate end-to-end over the Internet 
+without the need for the network to do anything more than carry 
+packets.  Thus any service that is offered over IP can be offered by 
+anyone as long as there is reachability.
+
+This means that any service offered by a SP over NGN can also be 
+offered by a competitor using the customers' Internet connection (see 
+Vonage & AT&T CallVantage).
+
+The value add is in the edges of the network.  In my view the edge of 
+the network can be internal to the SP (e.g., email servers owned by 
+the SP).
+
+The NGN contains a lot more complexity than the Internet.  In 
+addition, with the policy servers & QOS it is more tightly coupled. 
+This argues for that the complexity of the NGN will require more 
+expense to maintain robustness, which will increase the complexity 
+which will require more expense...
+
+This argues that the NGN architecture as currently envisioned is not 
+sustainable in the long run given less complex and less tightly 
+coupled systems offering services over the Internet.  It also argues 
+that convergence might not be desirable.
+
+however, it is likely that the carriers will spend a lot of money on 
+this over the next few years.  How do we maximize our share of this 
+revenue without jeopardizing our long-term profitability & revenue?
+
+One thing that falls out of this is that our partners (e.g., IBM, 
+EDS, etc.) are likely to become competitors to the telcos for 
+services, especially to enterprises.
+Services like managed hosting, managed voice, etc. could be offered 
+by IBM to enterprise customers either using private connections 
+(e.g., wavelengths over optics) or over the Internet.
+
+As for our SP partnering strategy, the recommendation that seems 
+appropriate given this argument is that we partner with others for 
+those components that we can't currently provide (e.g., air 
+interfaces for 3G) and those components that we see as a short term 
+growth market.  Items for the latter would seem to be IMS.
+
+BTW, it isn't clear that this argument favors either the "improve the 
+business model" or "grow the business" side.  But it does perhaps 
+help in making a decision about the pieces we want to keep.  The main 
+sticking point in the bifurcation really seems to be in the System 
+Integration side.  On one side we do the NI & SI and on the other 
+side we partner for the SI & NI.  Each one requires us to give up 
+something, its just a matter of what we want to do.
+
+Chip
+
+
+
+
+
+
+
+http://www.1-4-5.net/~dmm/talks/iepg_07142002
+http://www.1-4-5.net/~dmm/talks/NANOG26/complexity_panel
+http://www.1-4-5.net/~dmm/talks/NANOG33/ims
+http://www.1-4-5.net/~dmm/talks/NANOG33/designing
+http://www.1-4-5.net/~dmm/complexity_and_the_internet
+
+
+

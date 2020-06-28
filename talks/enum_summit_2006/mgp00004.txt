@@ -1,0 +1,16 @@
+
+History, cont
+
+
+Wound up with SPEERMINT
+Session PEERing for Multimedia INTerconnect
+Note that SPEERMINT is charted in the new Real-time Applications and Infrastructure (RAI) Area
+
+
+SPEERMINT generalized VOIPEER to cover SIP based Multimedia Interconnect
+ Jason Livingood and I are co-chairs
+
+
+So what work is SPEERMINT chartered to do?
+see http://www.ietf.org/html.charters/speermint-charter.html
+

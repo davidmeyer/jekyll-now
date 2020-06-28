@@ -1,0 +1,10 @@
+
+Amplification Principle
+
+
+The Amplification Principle states that there are non-linearities which occur at large scale.
+
+COROLLARY: In many large networks, even small things can and do cause huge events. In system-theoretic terms, in large systems such as these, even small perturbations on the input to a process can destabilize the system's output.
+
+In very large systems, even small things can be big
+

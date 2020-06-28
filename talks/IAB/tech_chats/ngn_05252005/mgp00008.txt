@@ -1,0 +1,18 @@
+
+NGN Transport Requirements
+
+
+Requirements specified in FGNGN WG 7 (FPBN)
+FPBN -- Future Packet Bearer Network
+FPBN_Arch_X200G8059_v2.doc
+
+Network Modes (ignore G.805/G.809 for now):
+Connection Oriented Circuit Switched (co-cs)
+e.g., nx64K, SDH, GMPLS/ASON/..
+Connection Oriented Packet Switched (co-ps)
+e.g., MPLS, ATM, FR
+Connectionless Packet Switched (cl-ps)
+e.g., IP		
+
+co-ps and cl-ps are in-scope for WG 7
+

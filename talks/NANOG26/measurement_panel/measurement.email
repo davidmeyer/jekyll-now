@@ -1,0 +1,310 @@
+From cmartin@gnilink.net  Tue Sep 10 12:37:38 2002
+Return-Path: <cmartin@gnilink.net>
+Received: from elle.res.sprintlink.net ([199.0.234.34])
+	by sith.maoz.com (8.12.6/8.12.6) with ESMTP id g8AJbc3Z028278
+	for <dmm@maoz.com>; Tue, 10 Sep 2002 12:37:38 -0700
+Received: from kay.res.sprintlink.net (kay [199.0.234.43])
+	by elle.res.sprintlink.net (8.11.6+Sun/8.11.6) with ESMTP id g8AJapt16601
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 15:36:51 -0400 (EDT)
+Received: from entmail.gnilink.net (entmail.gnilink.net [199.45.47.10])
+	by kay.res.sprintlink.net (8.8.8+Sun/0.0.0) with ESMTP id PAA07973
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 15:38:11 -0400 (EDT)
+Received: by entmail.gnilink.com with Internet Mail Service (5.5.2656.59)
+	id <QSYHRJHN>; Tue, 10 Sep 2002 15:37:19 -0400
+Message-ID: <94B9091E1149D411A45C00508BACEB35015F3261@entmail.gnilink.com>
+From: "Martin, Christian" <cmartin@gnilink.net>
+To: "'Christophe Diot'" <cdiot@sprintlabs.com>,
+   Tony Tauber
+	 <ttauber@genuity.net>
+Cc: David Meyer <dmm@sprint.net>, measurement-panel@maoz.com
+Subject: RE: [MEASUREMENT-PANEL@NANOG26] Another possible topic
+Date: Tue, 10 Sep 2002 15:37:09 -0400
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2656.59)
+Content-Type: text/plain
+Status: RO
+X-Status: A
+Content-Length: 2311
+Lines: 45
+
+>
+>this is a panel anyway and we will no got in much details. I 
+>suspect Jen and I will identify sampling as an area of 
+>investigation. it is 
+>definetely a very hot topic. as per routing, we are measuring routing 
+>and i believe it is important in order to fix some existing 
+>problem ) bgp policies, isis convergence, link failures, etc). 
+>but is dont 
+>necessarily see that as an operational need (except maybe to detect 
+>anomalies).
+>
+
+One of the things that we at VZ are interested in is sampling vs accounting
+based on BGP data.  For example, sampling gives you flow data, which may or
+may not be useful to a provider.  What is often useful is
+AS-pair/POP-pair/Router-pair aggregate flows, something that sampling has
+been traditionally poor at doing without lots of back-end work.  
+
+Furthermore, what sampling has not traditionally provided was some kind of
+selectivity mechanism, whereby in order to increase the sample space while
+at the same time not killing your router flow processing capability, you
+predetermine the subset of traffic passing through your router from which to
+sample from.  This is something on the horizon, but it is likely that it
+need be done based on changing business requirements in real time (billing
+vs DoS tracking vs Traffic Engineering, etc).
+
+On the other hand, there are new accounting techniques that allow providers
+to selectively and accurately account for traffic patterns based on routing
+data rather than addressing information (important distinction).  For
+example, and I will try and maintain vendor impartiality, I can now set up
+accounting policies based on all kinds of BGP attributes in a deterministic
+way.  So, if I need POP to POP data, I can account based on BGP communities
+for the POPs, or confed sub-AS, or routert-id, or whatever.  This is in
+contrast to some of the current mechanisms in place (such as MPLS LSPs or
+sampling with offline coalescence tools).  Furthermore, these mechanisms do
+have a close congruence to Diffserv (for whatever that is worth) in that
+they are behavioral aggregates.  The cool thing (for you Dave ;) ) is that
+it does NOT require MPLS.
+
+As an operator, I think that the routers need to be more flexible in what
+kind of data they can provide, in a way that is both accurate as well as
+succinct.
+
+Regards,
+--chris
+
+From ttauber@genuity.net  Tue Sep 10 11:03:14 2002
+Return-Path: <ttauber@genuity.net>
+Received: from elle.res.sprintlink.net ([199.0.234.34])
+	by sith.maoz.com (8.12.6/8.12.6) with ESMTP id g8AI3D3Z027334
+	for <dmm@maoz.com>; Tue, 10 Sep 2002 11:03:14 -0700
+Received: from kay.res.sprintlink.net (kay [199.0.234.43])
+	by elle.res.sprintlink.net (8.11.6+Sun/8.11.6) with ESMTP id g8AI2Rt09350
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 14:02:27 -0400 (EDT)
+Received: from mesa.bbnplanet.com (mesa.bbnplanet.com [171.78.172.21])
+	by kay.res.sprintlink.net (8.8.8+Sun/0.0.0) with ESMTP id OAA04908
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 14:03:46 -0400 (EDT)
+Received: from localhost (ttauber@localhost)
+	by mesa.bbnplanet.com (8.10.2+Sun/8.10.2) with ESMTP id g8AI2rW29326;
+	Tue, 10 Sep 2002 14:02:53 -0400 (EDT)
+X-Authentication-Warning: mesa.bbnplanet.com: ttauber owned process doing -bs
+Date: Tue, 10 Sep 2002 14:02:53 -0400 (EDT)
+From: Tony Tauber <ttauber@genuity.net>
+X-X-Sender: ttauber@mesa.bbnplanet.com
+To: Christophe Diot <cdiot@sprintlabs.com>
+cc: David Meyer <dmm@sprint.net>, <measurement-panel@maoz.com>
+Subject: Re: [MEASUREMENT-PANEL@NANOG26] Another possible topic
+In-Reply-To: <3D7E1AFB.237C652B@sprintlabs.com>
+Message-ID: <Pine.GSO.4.40.0209101354120.664-100000@mesa.bbnplanet.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; CHARSET=US-ASCII
+Content-ID: <Pine.GSO.4.40.0209101354122.664@mesa.bbnplanet.com>
+Status: RO
+Content-Length: 1516
+Lines: 32
+
+On Tue, 10 Sep 2002, Christophe Diot wrote:
+
+> > That's something we work on (a group here, not me personally).  I
+> > could see if they can crystallize their methodology, which is
+> > pretty complex.
+>
+> that is typically a great feedback. we all need traffic matrices,
+> face very complex computation issues unless vendors add something to
+> their routers :)
+
+So, I'm clearly on the "Ops" (vs. "research") side of things and I'm
+guessing you're representing the other side of the coin (and Jen, too?)
+
+The things I think that might be interesting from that side are
+thoughts about sampling, since it won't be possible to count every
+packet, and reductive approaches to topology to get a reasonable suss
+of what kinds of things are important to model and which can be
+disregarded.  Don't know if that last part makes sense or is
+legitimate but it's something that came to mind.  In all this stuff,
+it seems, there has to be some reduction so that the actual numbers
+and nodes which are addressed are just proxies for what you're really
+trying to measure.
+
+On a different note, I don't find it useful to really get into routing
+measurements, unless there's something I'm not thinking of.
+If the idea is routing table growth w/in a given network, that's good
+to keep track of, but not terribly difficult.  If it's different
+things about the global table, that's interesting research fodder and
+I'm glad the numbers and study results are available, but it doesn't
+affect carriers day-to-day or otherwise really.
+
+Tony
+
+From jrex@research.att.com  Tue Sep 10 14:07:55 2002
+Return-Path: <jrex@research.att.com>
+Received: from elle.res.sprintlink.net ([199.0.234.34])
+	by sith.maoz.com (8.12.6/8.12.6) with ESMTP id g8AL7t3Z029180
+	for <dmm@maoz.com>; Tue, 10 Sep 2002 14:07:55 -0700
+Received: from kay.res.sprintlink.net (kay [199.0.234.43])
+	by elle.res.sprintlink.net (8.11.6+Sun/8.11.6) with ESMTP id g8AL74t28446
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 17:07:04 -0400 (EDT)
+Received: from mail-blue.research.att.com (H-135-207-30-102.research.att.com [135.207.30.102])
+	by kay.res.sprintlink.net (8.8.8+Sun/0.0.0) with ESMTP id RAA12963
+	for <dmm@sprint.net>; Tue, 10 Sep 2002 17:08:22 -0400 (EDT)
+Received: from alliance.research.att.com (alliance.research.att.com [135.207.26.26])
+	by mail-blue.research.att.com (Postfix) with ESMTP
+	id 4209A4CE25; Tue, 10 Sep 2002 17:07:31 -0400 (EDT)
+Received: from chips.research.att.com (chips.research.att.com [135.207.27.139])
+	by alliance.research.att.com (8.8.7/8.8.7) with ESMTP id RAA18616;
+	Tue, 10 Sep 2002 17:07:30 -0400 (EDT)
+Received: (from jrex@localhost)
+	by chips.research.att.com (SGI-8.9.3/8.8.5) id RAA04630;
+	Tue, 10 Sep 2002 17:07:30 -0400 (EDT)
+Date: Tue, 10 Sep 2002 17:07:30 -0400 (EDT)
+Message-Id: <200209102107.RAA04630@chips.research.att.com>
+From: Jennifer Rexford <jrex@research.att.com>
+To: dmm@sprint.net
+Cc: measurement-panel@maoz.com
+In-reply-to: <20020910084703.A25840@sprint.net> (message from David Meyer on
+	Tue, 10 Sep 2002 08:47:03 -0700)
+Subject: Re: [MEASUREMENT-PANEL@NANOG26] Do we want to add...
+Status: RO
+Content-Length: 3567
+Lines: 72
+
+Dave,
+
+> So you're on the hook for that [PSAMP, greater ubiquity], ok?
+
+Sure, will do.
+
+> What does the "wish list" look like (can we construct such a list)
+
+One high-level "wish" is that measurement be treated as a first-class
+citizen and not the afterthought that it has traditionally been.  By
+that I mean that measurement should be in mind when protocols and
+equipment are designed.  But, this is a "wish" that is too broad and
+vague, and difficult to realize since we cannot start over and do a
+"design for measurability" for IP and the other higher-layer protocols.
+
+Instead, it would be good to have more ubiquitous support for
+collecting relatively fine-grain data about usage, performance, 
+and routing, while remaining conscious that collecting and
+transporting the measurement data should not impede the correct
+and efficient operation of the equipment and the network.  So,
+we have to consider techniques like filtering, aggregation, and
+sampling to reduce the amount of work required to collect the
+measurement data and the sheer volume of the data.  With this
+in mind, it would be great to have
+
+  - ubiquitous standard support for packet sampling on line cards 
+      and/or third-party devices (with the sampling tunable to 
+      the tolerable overhead and desirable accuracy, and support
+      for filtering to focus just on packets of interest)
+
+  - continuous real-time view of routing data (e.g., current BGP
+      routes, OSPF/IS-IS topology and weights, etc.) without having
+      to "dump" periodically from the router
+
+Together, these two types of data could provide a "network-wide"
+(e.g., AS wide) view of traffic, topology, and routing to guide
+a variety of operational tasks.  Going beyond a single AS (or
+set of related ASes) it would be great to have
+
+  - diverse collection of BGP feeds from different vantage points,
+       and analysis tools build on these feeds to detect anomalies
+  - platforms for controlled experiments in routing (e.g., injecting
+       update messages for a small set of prefixes)
+  - platforms (like NIMI) for measuring and characterizing end-to-end
+       paths
+
+> does it differ for the researchers and ops folks?
+
+I think so.  A lot of researchers would like to have measurement data
+from a small number of interesting vantage points (e.g., packet or
+flow traces of a given link, or BGP tables from a few locations).  A
+more network-wide view is needed for many operational tasks.  Also,
+many researchers in the measurement area focus on inference and
+end-to-end issues where you do not have (and cannot have) access to
+the underlying infrastructure.  Operations folks, instead, often have
+additional information and much more access to the infrastructure.
+(An exception to this "research vs. ops" distinction I'm drawing are
+the growing number of researchers interested in operations issues.
+These folks would love simply to have access to the kinds of data that
+operations folks already have, or could have in the future.)
+
+In terms of how folks would use the data, I think that researchers
+would tend to want public feeds of data and public distributed
+measurement platforms for characterizing the traffic, performance, and
+routing.  Operations folks may view the feeds differently, in terms of
+detecting and diagnosing problems as they arise.  In both cases,
+better distributed measurement efforts for routing and performance
+data would be a big help.  Live, online access to the data would be
+key for ops folks, whereas researchers might be happy with offline
+access to archives of such data.
+
+-- Jen
+
+From cdiot@sprintlabs.com  Tue Sep 10 14:18:57 2002
+Return-Path: <cdiot@sprintlabs.com>
+Received: from mailman.sprintlabs.com (mx.sprintlabs.com [199.2.53.192])
+	by sith.maoz.com (8.12.6/8.12.6) with ESMTP id g8ALIp3Z029269
+	for <measurement-panel@maoz.com>; Tue, 10 Sep 2002 14:18:57 -0700
+Received: by mailman.sprintlabs.com with Internet Mail Service (5.5.2653.19)
+	id <PNS5M9V5>; Tue, 10 Sep 2002 14:18:34 -0700
+Received: from sprintlabs.com (kaos3.sprintlabs.com [199.2.53.126]) by mailman.sprintlabs.com with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id PNS5M9VY; Tue, 10 Sep 2002 14:18:31 -0700
+From: Christophe Diot <cdiot@sprintlabs.com>
+To: David Meyer <dmm@sprint.net>
+Cc: "Martin, Christian" <cmartin@gnilink.net>,
+   Tony Tauber
+	 <ttauber@genuity.net>, measurement-panel@maoz.com
+Message-ID: <3D7E61A7.5533A8AB@sprintlabs.com>
+Date: Tue, 10 Sep 2002 14:18:31 -0700
+Organization: SPRINT ATL
+X-Mailer: Mozilla 4.75 [en] (Windows NT 5.0; U)
+X-Accept-Language: en,pdf
+MIME-Version: 1.0
+Subject: Re: [MEASUREMENT-PANEL@NANOG26] Another possible topic
+References: <94B9091E1149D411A45C00508BACEB35015F3261@entmail.gnilink.com> <20020910124621.A28366@sprint.net>
+Content-Type: multipart/mixed;
+ boundary="------------B1297E2916617B9E942636D1"
+Status: RO
+X-Status: A
+Content-Length: 972
+Lines: 37
+
+This is a multi-part message in MIME format.
+--------------B1297E2916617B9E942636D1
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+> So maybe that's an angle. What operators need from routers that
+> is missing?
+
+that's of major importance. one of the goal of having this panel
+at nanog is to get the vendors to react :)
+
+
+--------------B1297E2916617B9E942636D1
+Content-Type: text/x-vcard; charset=us-ascii;
+ name="cdiot.vcf"
+Content-Transfer-Encoding: 7bit
+Content-Description: Card for Christophe Diot
+Content-Disposition: attachment;
+ filename="cdiot.vcf"
+
+begin:vcard 
+n:diot;christophe
+tel;cell:+1-650-274-4250
+tel;fax:+1-650-3754490
+tel;work:+1-650-375-4539
+x-mozilla-html:FALSE
+url:www.sprintlabs.com/PEOPLE/diot/
+org:SPRINT;Advanced Technology Labs
+adr:;;1 Adrian Court;Burlingame;CA;94010;USA
+version:2.1
+email;internet:cdiot@sprintlabs.com
+x-mozilla-cpt:;-13480
+fn:christophe diot
+end:vcard
+
+--------------B1297E2916617B9E942636D1--
+

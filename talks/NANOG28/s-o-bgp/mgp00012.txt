@@ -1,0 +1,14 @@
+
+How about administrative delay for sBGP?
+
+
+So will it take longer to get a new address block routed under sBGP?
+
+Maybe
+
+Why?
+
+Hypothesis: All of the various signatures involved will first have to be generated, signed and published to a local database,then pushed to some global database(s), and then copied to each ISP's own local databases, checked and recompiled, and propagated to each router...
+
+So, are we willing to wait?
+

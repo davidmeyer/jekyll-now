@@ -1,0 +1,12 @@
+
+Complexity Driver 1: Roaming
+
+First, how is roaming defined in the IMS context?
+Defn:  In IMS, you are "roaming" when packet network resources in the network you are visiting are used to connect to your IMS core network (which importantly resides in your home PLMN, and the visited PLMN != the home PLMN)
+Implies that only the P-CSCF (and hence the GGSN) can be in the visited PLMN
+Also implies that the subscriber always registers with a S-CSCF in the home PLMN to get services
+Also implies that the visited PLMN doesn't even need an IMS (everything is tunneled back over a protocol called GPRS Tunneling Protocol (GTP))
+
+Contrast with IMS "Interworking", in which two IMS networks are connected through some inter-PLMN IP network to enable SIP control and transport of the user plane
+
+

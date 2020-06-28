@@ -1,0 +1,18 @@
+
+Complexity...
+
+
+Both sBGP and soBGP seek to protect different parts of the routing system via cryptographic means
+allocation of IP addresses/AS numbers
+granting routing authority for a chunk of address space
+and for of the BGP messages and peerings 
+note that soBGP doesn't envision protecting the session/peerings as the authors see that as a different part of the overall problem.  
+
+That is, you (might) want to authenticate every step of the allocation of an IP address 
+from IANA to the Registries 
+to an ISP to another ISP to a customer
+to AS number allocations
+to permitting an AS to originate routes to some address space
+to all BGP traffic - AS paths and next hops, etc
+
+

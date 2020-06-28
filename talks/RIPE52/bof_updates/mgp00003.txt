@@ -1,0 +1,17 @@
+
+Issues from NANOG 35
+
+
+Issue 1: End-System Complexity
+
+
+Issue 2: DNS Latency
+
+
+Issue 3: Inbound Traffic Engineering
+
+
+Issue 4: IPv6 Routing and Addressing Architectures
+
+
+

@@ -1,0 +1,10 @@
+
+Amplification Examples
+
+
+Multiplication of BGP messages across the peering mesh of the Internet
+
+Tim Griffin's work showing that even a small amount of inter-connectivity (multihoming, peering) causes the output of a routing mesh to be significantly more complex than its input
+
+BTW, you see this in nature all the time 
+

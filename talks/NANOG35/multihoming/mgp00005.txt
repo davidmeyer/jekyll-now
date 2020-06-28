@@ -1,0 +1,14 @@
+
+Rules of Engagement
+
+First and foremost,  we're here to listen to your comments and concerns
+
+Second, let's make sure we keep the information flow going in a bi-directional fashion
+
+During our discussions, please remember that 
+IPv6 is being deployed
+so the multi-homing problem for IPv6 must be solved
+shim6 is about IPv6 
+as opposed to IPv4 or other (future) version of IP
+shim6 may not solve all needs for multi-homing in IPv6
+rather, shim6 is designed to address the site multi-homing problem

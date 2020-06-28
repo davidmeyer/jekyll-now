@@ -1,0 +1,8 @@
+
+Why Do We Care?
+
+
+Because, as we will see, this type of complexity and the dynamic behavior it gives rise to is a major factor in the cost of both buying and operating our networks
+
+This idea was eloquently stated by Mike O'Dell and has come to be known as "The Simplicity Principle"
+

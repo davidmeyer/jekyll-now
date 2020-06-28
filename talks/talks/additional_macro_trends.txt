@@ -1,0 +1,24 @@
+We’re seeing multiple disruptions to data center networking
+Sources of disruption
+•Software defined networking
+–Controller-based configuration management
+•Automation based on cloud orchestration
+–OpenStack, Quantum/Neutron
+•Network function virtualization
+–Network services deployed in x86 VMs
+•Two-level (“overlay/underlay”) architectures
+–Virtual switch overlay on tunneled substrate
+•Parity for merchant silicon
+–New vendors; cost/feature tradeoff
+Barriers to adoption
+•Old change management models are broken
+–Responsibility split between automation and user
+•Compliance and security
+–Data flows are unpredictable
+–Technology has outstripped security tools
+•Heterogeneity
+–Uneven support for multiple vendor systems (physical + virtual)
+–Lack of virtual appliance provisioning
+•Loss of information
+–Abstraction & tunneling make it difficult to (e.g.) provide QoS
+

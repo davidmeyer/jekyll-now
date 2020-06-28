@@ -1,0 +1,426 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+
+%center 
+
+%xfont "utopia-medium-r", size 7, fore "black"
+
+BGP Security, Availability,
+and Operator Needs
+
+
+%size 4
+David Meyer/Andrew Partan
+dmm@1-4-5.net/asp@partan.com
+
+NANOG 28
+Salt Lake City, Utah
+
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+
+%xfont "utopia-medium-r", fore "white", size 7
+
+	What problem(s) are we trying to solve?
+
+	So why are/aren't we deploying a "secure" BGP?
+
+	Complexity Issues?
+
+	So what is the 10K-mile goal anyway?
+
+	Discussion
+
+	http://www.1-4-5.net/~dmm/NANOG28/s-o-bgp
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+What problem(s) are we trying to solve?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	Lots of threat model work, including
+
+%pause
+	Configuration mistakes
+
+%pause
+	Prefix hijacking
+
+%pause
+	Compromised backbone routers
+  
+%pause
+	Availability
+
+%pause
+	New attacks?
+%pause
+		"Using Link Cuts to Attack Routing" [Bellovin,Gansner]
+
+%pause
+	And all of those things we haven't seen/detected yet...
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+And in case you were wondering...
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+"I would stress that all of these things, particularly prefix hijacking and backbone router 'ownage', are real threats, happening today, happening with alarming frequency.  Folks need to realize that the underground is abusing this stuff today, and has been for quite some time." 
+
+-- Rob Thomas
+
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+So why aren't we deploying a "secure" BGP?
+
+%pause
+
+	Note that there are two works-in-progress 
+%pause
+		sBGP and soBGP
+
+%pause
+	So why aren't either of these being deployed?
+
+%pause
+	Community consensus
+
+%pause
+	Complexity
+%pause
+		But there is a paradox/tradeoff here 
+
+
+
+%pause
+	"Complexity is the enemy of security" -- smb
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Complexity...
+
+
+%pause
+	Both sBGP and soBGP seek to protect different parts of the routing system via cryptographic means
+%pause
+		allocation of IP addresses/AS numbers
+%pause
+		granting routing authority for a chunk of address space
+%pause
+		and for of the BGP messages and peerings 
+			note that soBGP doesn't envision protecting the session/peerings as the authors see that as a different part of the overall problem.  
+
+%pause
+	That is, you (might) want to authenticate every step of the allocation of an IP address 
+%pause
+		from IANA to the Registries 
+%pause
+		to an ISP to another ISP to a customer
+%pause
+		to AS number allocations
+%pause
+		to permitting an AS to originate routes to some address space
+%pause
+		to all BGP traffic - AS paths and next hops, etc
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+Pragmatism and the complexity challenge
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+
+"My trepidations regarding complex tasks is based on our experience with simple tasks.  How many BGP speaking routers don't have VTY ACLs?  Too many!  We can't even get "simple" deployed, so what chance does "complex" really have?  I'm not trying to be a pessimist, but I am trying to be pragmatic."
+
+-- Rob Thomas
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+So what is the 10K-mile goal?
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	(Almost) every BGP speaker should be able to verify:
+%pause
+		that the address space has been properly allocated
+%pause
+		that the origin AS is valid 
+%pause
+		that the entire AS path is valid
+%pause
+		and what about other attributes (e.g. VPN?)
+%pause
+			and BTW, are there security/other implications of (continuing to) throw (almost) everything into BGP?
+
+%pause
+	Note that there are cryptographic signatures that will need to be checked and verified at each step
+
+%pause
+	So at 10K, this is probably what you would like
+
+%pause
+	But all of this comes at a price:
+%pause
+		Additional operational complexity and infrastructure
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+So what can or should we do?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	How about....
+%pause
+		Pre-collecting all of the published information into one local database and running authorization checks there
+%pause
+		Only send a router this 'precompiled' chunk of data instead of everything  
+%pause
+		But the router still need additional processing and memory to be able to handle this
+
+%pause
+	Still: Its unclear how big this precompiled information would be, or how much of it a router will need when it restarts
+%pause
+		How much do you need to cache on the router itself?  
+%pause
+		You may no longer have a routing system that can come up by itself
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+So what can or should we do?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	Finally, there is a non-trivial amount of infrastructure needed for all of this
+
+%pause
+	Databases and certificate authorities and all of the rest
+
+%pause
+	And what is the effect on BGP convergence properties?
+
+%pause
+	And who pays?
+
+%pause
+		CAPEX/OPEX is the frontier for the carriers these days
+
+%pause
+		And what about "free market" issues?
+%pause
+			What stops users from moving to lower-cost ISPs who do not implement this?
+%pause
+			New kind of "No-SLA" service?
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+How about administrative delay for soBGP?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	In soBGP, the signatures and cerificates have to be generated the same way as sBGP
+
+%pause
+	However, the propagation of this information is significantly different. 
+
+%pause
+		Instead of relying on out-of-band databases (and their syncronization), the certificates are advertised in a new Security Message.
+%pause
+		This means that once a new block is allocated (and the certificates created), the security information can be propagated to everyone in the system at about the same rate as UPDATE propagation.
+
+%pause
+	So in theory, soBGP won't add admistrative delay
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+How about administrative delay for sBGP?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	So will it take longer to get a new address block routed under sBGP?
+
+%pause
+	Maybe
+
+%pause
+	Why?
+
+%pause
+		Hypothesis: All of the various signatures involved will first have to be generated, signed and published to a local database,then pushed to some global database(s), and then copied to each ISP's own local databases, checked and recompiled, and propagated to each router...
+
+%pause
+	So, are we willing to wait?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+And (sort of) finally....
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	If you think about the additional processing and memory and storage needed on a router, there are a fair number of routers that are adequate for today's needs but will be out of their depth with the new requirements.  A lot of upgrades and replacements would be needed...
+
+
+
+%pause
+	And again, who pays?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Alternate Position
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	How much of the problem can be solved by currently deployed techniques including BTSH, ingress filtering, unicast-RPF, and the current registry system/language
+
+%pause
+		RFC 2827/BCP 38		ingress filtering
+		draft-gill-btsh-02.txt	BTSH
+		RFC 2622			RPSL
+
+%pause
+	Would this be enough?
+
+%pause
+	And how would you define "enough"?
+
+%pause
+	And for how long?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+A few final thoughts
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	What are the cost/benefit tradeoffs are we looking at?
+
+%pause
+	And is there an incremental deployment approach?
+
+%pause
+	For example, can we start with signed-origin sBGP so the machinery is present for signed-AS_PATH in the future?
+
+%pause
+	Note that soBGP doesn't sign UPDATES
+%pause
+		Certificates are advertised in the new Security Message. 
+
+%pause
+	Oh yeah, and convolve all of this with IPv6....
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Questions/Comments?
+
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Reading
+
+%pause	
+		soBGP:	ftp://ftp-eng.cisco.com/sobgp/index.html
+		sBGP:	http://www.net-tech.bbn.com/sbgp/sbgp-index.html
+
+%pause
+	Next Steps?
+
+%pause
+	Thanks
+
+
+
+
+
+
+
+
+

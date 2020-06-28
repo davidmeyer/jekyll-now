@@ -1,0 +1,13 @@
+
+IAB Roles: Liaisons
+
+
+ISOC Liaison
+The IAB acts as a source of advice and guidance to Officers and BOT of the ISOC concerning technical, architectural, procedural, and (where appropriate) policy matters pertaining to the Internet and its enabling technologies. 
+
+
+External Liaisons
+The IAB acts as representative of the interests of the IETF and the ISOC in technical liaison relationships with other organizations concerned with standards and other technical and organizational issues relevant to the world-wide Internet. 
+
+
+

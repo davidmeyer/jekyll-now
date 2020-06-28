@@ -1,0 +1,217 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "royalblue"
+%xfont "utopia-medium-r"
+
+%xfont "utopia-medium-r", size 8, fore "black"
+%center 
+IAB IPv6 Multi-homing BOF
+
+%image "bgp-active-sum.png"
+
+%size 3
+NANOG 35
+Los Angles, CA
+http://www.1-4-5.net/~dmm/talks/NANOG35/multihoming
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+%xfont "utopia-medium-r", fore "white", size 4
+
+%size 4
+	Goals and Objectives
+		Meyer/All (5 minutes)
+
+%size 4
+	A (very) Brief History of the IPv{4,6} Universe 
+		Meyer (5 minutes)
+
+%size 4
+	SHIM6 Context
+		Huston (10 minutes)
+
+%size 4
+	Service Provider Perspectives (10 minutes each)
+		Jason Schiller (MCI):
+		Ted Seely (Sprint):
+		Vijay Gill (AOL): Economic Theory of Routing Prefix Growth 
+
+%size 4
+	Community Discussion
+		All (40 minutes)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Goals and Objectives
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	The Objective of this BOF is two-fold
+%pause
+		To provide context for the ongoing discussion of the evolution of technical aspects multi-homing in the Internet
+%pause
+			And of course, its consequences
+%pause
+		Provide the opportunity for the operational community to provide feedback to the IAB on the direction the IETF is taking with respect to multi-homing in IPv6
+
+
+%pause
+	A bit about the "Rules of Engagement"
+%pause
+		First, we're here primarily to listen to your comments/concerns
+%pause
+		Second, let's make sure we keep the information flow going in a bi-directional fashion
+%pause
+		Communication is key
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+A (very) Brief History of Internet Time
+
+%xfont "utopia-medium-r", fore "white", size 5
+%pause
+	Late 1980s
+		Recognition of exponential growth in the DFZ
+
+%pause
+	1990 
+		CLNP proposed as replacement for IPv4
+
+%pause
+	1991-1992  
+		ROAD group and the "three trucks"
+			Running out of class B network numbers
+			Exponential growth of the DFZ
+			Perceived exhaustion of the IPv4 address space
+			See "the LONG and windy ROAD" -- http://rms46.vlsm.org/1/42.html
+
+%pause
+	Today
+		Internet community deploying IPv6
+			The rate of adoption, however, has been slower than some anticipated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Dealing with Trucks...CIDR and IPng
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	Short Term -- CIDR 
+		RFC 1519 - Classless Inter-Domain Routing (CIDR): an Address Assignment and Aggregation Strategy (Sep 1993)
+		draft-ietf-grow-rfc1519bis-03.txt
+
+%pause
+	Long Term -- IPng
+		RFC 1550 - "IPNG" solicitation (Dec 1993)
+		RFC 1719/1726 - Direction and Technical Criteria for Selection of IPNG (Dec 1994)
+
+%pause
+	So how did we get from RFC 1550 to IPv6?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+%back "white"
+
+%xfont "utopia-medium-r", fore "black", size 7
+From RFC 1550 to RFC 2460 (IPv6)
+
+%xfont "utopia-medium-r", fore "black", size 5
+
+%center
+%image "timeline.png"
+
+%left
+%xfont "utopia-medium-r", fore "black", size 2
+Graphic courtesy Steve Deering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+How did we select IPv6?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%pause
+	Selection of IPv6 was "many faceted"
+%pause
+		However some feel that many of the hard questions were avoided in favor of packet header design, including
+%pause
+			Locator/Identifier split
+%pause
+			Variable Length Addressing
+%pause
+			Flexible Abstraction Boundaries
+%pause
+		See http://users.exis.net/~jnc/tech/endpoints.txt for a discussion of the the issues surrounding locator/identifier split
+
+%pause
+	All of these impact the scalability of the routing system in the face of multi-homing
+
+%pause
+	Which brings us to shim6...
+%pause
+		http://www.ietf.org/html.charters/shim6-charter.html
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+BTW, why bother with shim6?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%pause
+	Well, first note that IPv6 has increased the address capacity without increasing the capacity of the routing system
+%pause
+		...and current multi-homing approaches stress the routing system
+
+%pause
+	And recognizing that addressing and routing are related
+%pause
+		Noting that this is true iff addresses are used for routing
+
+
+%pause
+	We've made this pragmatic engineering decision to optimize one
+dimension (traffic engineering power == multihoming ) at the expense of
+the other (scalability of the routing system)
+
+(2) while we know these two factors (addressing capacity /routing
+scalability) are related, we have not formalized/quantified the tradeoff,
+which makes it hard to have a discussion about whether the tradeoff is
+'worth it' (on what dimension?)
+
+
+
+%pause
+	And finally....
+%pause
+		Is there an alternative approach to multi-homing that does not cause these pressures on the routing system?
+
+%pause
+	Now, on to Geoff to set the shim6 context...
+
+
+
+%%  LocalWords:  bgrad nodefault xfont timeline NANOG Seely IETF CLNS Internt IPng
+%%  LocalWords:  CIDR ietf Deering Locator Identifer locator CLNP Rekhter's

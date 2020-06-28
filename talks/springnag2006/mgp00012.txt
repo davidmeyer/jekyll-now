@@ -1,0 +1,13 @@
+
+Aside: Fallacy of Composition
+
+
+The logical fallacy of arguing that what is true for the parts is also true for the whole
+In particular, there may be amplification occurring in the system
+
+In the study of economics...
+This takes the form of assuming that what works for parts of the economy, such as households or businesses also works for the aggregate, or macroeconomy
+
+Example:
+Both Sodium and Chlorine are dangerous to humans, so any combination of Sodium and Chlorine must be dangerous to humans (NaCl)
+

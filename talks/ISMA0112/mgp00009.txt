@@ -1,0 +1,33 @@
+
+Typical day -- 'sh ip bgp' downloads 
+
+
+The following machines have accessed archive.routeviews.org
+
+1   04/Dec/2001   worf.netins.net
+2   04/Dec/2001   1Cust7.tnt4.st-charles.mo.da.uu.net
+3   04/Dec/2001   trek7.sv.av.com
+4   04/Dec/2001   kahuna.telstra.net
+5   04/Dec/2001   idefix.telecable.es
+6   04/Dec/2001   network-measurement-project.cs.washington.edu
+7   04/Dec/2001   voodoo.cs.waikato.ac.nz
+8   04/Dec/2001   mapping-project1.caida.org
+9   04/Dec/2001   disaster2.cs.ucr.edu
+10  04/Dec/2001   dspnet.claranet.fr
+11  04/Dec/2001   mail.ivmg.net
+....
+
+The following machines have downloaded one or more data
+files from archive.routeviews.org
+
+1   04/Dec/2001   worf.netins.net
+2   04/Dec/2001   1Cust7.tnt4.st-charles.mo.da.uu.net
+3   04/Dec/2001   kahuna.telstra.net
+4   04/Dec/2001   idefix.telecable.es
+5   04/Dec/2001   network-measurement-project.cs.washington.edu
+6   04/Dec/2001   voodoo.cs.waikato.ac.nz
+7   04/Dec/2001   mapping-project1.caida.org
+8   04/Dec/2001   disaster2.cs.ucr.edu
+9   04/Dec/2001   dspnet.claranet.fr
+....
+

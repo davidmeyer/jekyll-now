@@ -1,0 +1,11 @@
+
+A (Very) Few Conclusions 
+
+
+First, what would you need to do to be a "Inter-PLMN IP Network"?
+
+And BTW, what device goes at the edge of the PLMNs?
+
+Remember the picture
+
+

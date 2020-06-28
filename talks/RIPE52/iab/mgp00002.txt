@@ -1,0 +1,18 @@
+
+What is the IAB anyway?
+
+
+IAB == Internet Architecture Board
+
+The role of the IAB is documented and defined in RFC 2850 (BCP39)
+
+We'll get into roles in a sec, but first...
+How do you get on the IAB?
+
+Members are selected by the NOMCOM
+Except for Ex-Officio and Liaison members
+Who are the Ex-Officio members?
+IRTF chair and the IAB Executive Director
+Who are the Liaison members?
+Someone from the ISOC, RFC Editor, and the IESG
+

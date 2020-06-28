@@ -1,0 +1,185 @@
+From kurtis@kurtis.pp.se  Fri Oct  7 05:30:32 2005
+Return-Path: <kurtis@kurtis.pp.se>
+Received: from lemland.kurtis.pp.se ([213.204.46.37])
+	by m106.maoz.com (8.13.4/8.13.4) with ESMTP id j97CUU0S010677
+	for <dmm@1-4-5.net>; Fri, 7 Oct 2005 05:30:31 -0700
+Received: from [127.0.0.1] (host-50.homerun.telia.com [194.23.29.50])
+	(using TLSv1 with cipher RC4-SHA (128/128 bits))
+	(Client did not present a certificate)
+	by lemland.kurtis.pp.se (Postfix) with ESMTP id 5FEFD78C1F;
+	Fri,  7 Oct 2005 14:30:29 +0200 (CEST)
+In-Reply-To: <20051006153203.GA22651@1-4-5.net>
+References: <20051003215704.GA29558@1-4-5.net> <0B457813-2B2E-441F-B47D-3D80F31C8772@kurtis.pp.se> <20051006153203.GA22651@1-4-5.net>
+Mime-Version: 1.0 (Apple Message framework v734)
+Content-Type: text/plain; charset=US-ASCII; delsp=yes; format=flowed
+Message-Id: <2EC1F49A-5BA3-4A34-98AF-4577BE1C0CEB@kurtis.pp.se>
+Cc: iab@ietf.org
+Content-Transfer-Encoding: 7bit
+From: Kurt Erik Lindqvist <kurtis@kurtis.pp.se>
+Subject: Re: NANOG IPv6 multihoming BOF and @dmm.whereabouts.10042005;
+Date: Fri, 7 Oct 2005 14:30:22 +0200
+To: David Meyer <dmm@1-4-5.net>
+X-Mailer: Apple Mail (2.734)
+X-Spam-Checker-Version: SpamAssassin 3.0.4 (2005-06-05) on m106.maoz.com
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.7 required=4.5 tests=AWL,BAYES_00 autolearn=ham 
+	version=3.0.4
+Status: RO
+X-Status: A
+Content-Length: 7390
+Lines: 153
+
+
+
+     Dave,
+
+On 6 okt 2005, at 17.32, David Meyer wrote:
+>> I think that you should add a slide stressing that the best way to
+>> get your input into the IETF is to actually participate in the WGs.
+>> Also, I think you really need to stress that this is not "the IAB
+>> taking the Nanog view to the IETF on the behalf Nanog". OTherwise  
+>> you/
+>> we risk finding ourselves in the "we told the IAB and they didn't
+>> listen so we just ignored them and the IETF" discussion some time
+>> from now. Yes, I am overly sensitive to this.
+>>
+>
+>     Done. Although this defensive stuff puts me off, I've
+>     tried to do this in a way that doesn't seem to much so.
+>     Check my wording (slide 3; Note that the Best Way ...).
+
+I think slide 3 is really good now! Some additional comments at the  
+end....
+
+
+>> As for the slides, I would perhaps spend less time on why we choose
+>> IPv6 and more time on multihoming and the history there or you will
+>> end up in the discussion that we need to replace IPv6. That _might_
+>> be a discussion worth having but that is not what I thought the BOF
+>> was about.
+>>
+>
+>     Again, the defensive stuff puts me off. And while I
+>     understand the high emotions on both sides, either we can
+>     defend what we've done (and what we're promoting), or we
+>     can't; pretending there is no dissent is well,
+>     weak.
+
+I am not arguing that we should hide the dissent. But I think we all  
+have to realise that the IETF and the Internet by now is a state that  
+_any_ technology proposal of similar size as shim6 will slit the  
+community in half. I would love for us to all go have beer, talk  
+things over, and walk away with a unanimous view. Unfortunately those  
+days are gone. That said, I think the BOF is a really good idea, and  
+I must say I really appreciate that you are willing to take the task  
+on to set it up. If for nothing else at least we are raising  
+awareness among the Nanog goers and in the future hopefully among the  
+rest of the world.
+
+> Taking such a tack also also makes the IAB look
+>     weak (well, it makes the entire IETF look weak). In any
+>     event, since both you and Lixia objectived to the history
+>     slides, I removed them.
+
+I slightly disagree here. Simply put what is now on the slides are  
+reality. The IAB has no influence over WG output. Saying anything  
+else is giving false impressions and hopes. And I worry that THAT  
+would make the IAB/IETEF even weaker in the future. Remember that  
+this is hopefully not a one of excersise. Hopefully we can find other  
+topics in other context that we can discuss, and we need to set some  
+general expectations. But what I mostly worry for is below...
+
+>     So I'm down to 3 slides (not including the cover page).
+>
+>     http://www.1-4-5.net/~dmm/talks/NANOG35/multihoming
+>
+>     Comments please.
+
+I have a suggestion for one more slide. As below.
+
+So, what do _I_ expect out of this BOF? Unfortunately I can't attend  
+so here are some remarks/statements
+
+
+o SHIM6 is about a shim layer for IPv6. Not IPv4 or IPvFuture. IPv6.  
+So if there are concerns that IPv6 is flawed in way <foobar>, that is  
+an acceptable view but not in the context of shim6.
+
+o "shim6 is not what operator <barfoo> thinks will scale". Fine.  
+Neither will Longest prefix match. Pick one. Criticising shim6 is ok  
+with me, please come up with an alternative. There certainly was no  
+shortage of it in multi6 but at the same time consensus was that most  
+of the stuff would never work in large scale.
+
+o "IPv6 can't/won't be deployed". Fine, so this BOF is not for you.  
+This is multihoming _for IPv6_.
+
+o "IPv6 is broken". IPv6 is more addresses. Nothing more nothing less  
+(from an ops POV). Yes there are a lot of other things that we should  
+have solved, but didn't. Yes it might be time to start discussing  
+what will come after IPv6 (_after IPv6, after_). Good idea. Probably  
+a topic for an IAB BOF at the next Nanog/RIR meetings/whatever.
+
+o "shim6 does not solve all needs for multihoming in IPv6". Certainly  
+true. I don't think we have ever claimed that it was. The  
+complementary solution is called PI space with some form of  
+restrictions alternatively some relaxation of the rules for getting  
+PA. It's an interesting discussion and certainly one worth having at  
+the BOF. I would be really interested in the outcome.
+
+o "My solution XYZ that I proposed to multi6 was superior, much  
+better, cheaper, and would also have solved world-starvation, but the  
+clueless WG chairs Kurtis&Brian refused to listen to me". We called  
+for consensus on the list of proposal. Sorry, noone wanted to play  
+with you. Though luck.
+
+o Special case of above: "Proposal ZYX based on variation Y.598765 of  
+geo-allocations would have worked". Every single geo-aggregation/ 
+allocation proposal I have seen is based on a different economical  
+model of the net than today. Unfortunately Peter L doesn't go to  
+Nanogs anymore of I would have let him repeat the statements from  
+Seoul. Chaining the network economics is harder than deploying IPv6  
+worldwide and turning off IPv4.
+
+o "shim6 breaks traffic-engineering". Partly it does, partly it  
+doesn't. Any ISP that takes on a multihomed customer today takes a  
+traffic engineering risk. They have no idea if they are going to be  
+primary, backup or loabalancer for the customer. shim6 does not  
+change that fundamental. The old saying of "you need to have the  
+resource you sell" still holds. Yes, there is a long running  
+tradition among ISPs/carriers to break that rules, but that is their  
+problem. Sorry. Shim6 does affect their TE capabilities, true. But if  
+I where a carrier I would not loose sleep.
+
+o "shim6 is only for Ipv6 and we could have used the same solution  
+for IPv4!". Alternatively multi6/shim6 was forbidden to work on a  
+solution for v4/v6. Well. When I took over Thomas role as co-chair on  
+multi6 I asked Randy and be basically said I would have enough of  
+work to solve this for v6. I am pretty sure me and Brian also had  
+this discussion with Randy when Brian became co-chair. It was never  
+about "we should only specify this for v6 only" it was about taking  
+on chunks we could manage. Last time this was up was at the charter  
+discussion of shim6 in MPLS. I think I replied to whoever brought up  
+the question that "we will solve this for v6 first. If it happens to  
+work for v4, all the better". Looking back I am pretty glad Randy  
+said what he did. Or we would still be trying to sort out that list  
+of multi6 proposals.
+
+o Summary. I think you could add a slide saying that along what Tony  
+Li said to the list. If you are doing IPv6, shim6 is the only  
+solution we have that we know scales. If you have a better idea it  
+better be a quantum leap in graph theory (or whatever Brian calls it).
+
+No I don't expect to be quoted on the above :-)
+
+Again, I really appreciate the effort you are doing! But keep in mind  
+that I have done this BOF at quite a few IETFs as multi6 co-chair.  
+With much the same people. You really need to tie the tails of the  
+cats to something or you will never be able to hurd them in a  
+direction that is useful..:-( I am not against the idea of the BOF, I  
+think it is a good idea, I just see the problem with preventing this  
+from turning into the "IPv6 is broken and we knew it in Toronto"  
+discussion....
+
+- kurtis -
+

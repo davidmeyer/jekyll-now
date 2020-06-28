@@ -1,0 +1,12 @@
+
+Goals and Objectives
+
+Goal: Socialize the understanding of complexity and related design principles in the Internet engineering community 
+
+Focus on higher level principles, many of which aren't well understood in the Internet engineering community
+Point out where theory meets application
+List some key takeaways for everyday use 
+
+These slides:
+http://www.1-4-5.net/~dmm/talks/NANOG33/designing
+

@@ -1,0 +1,14 @@
+
+What is This All About?
+
+
+Up front: I'm taking an IP-Transport-Centric view 
+Carrier perspective (packet transport)
+
+So what is this talk about?
+The growing complexity of Internet technology
+And its implications
+
+So maybe this talk should be entitled: "Wake up and smell the complexity"
+
+draft-ymbk-arch-guidelines-03.txt

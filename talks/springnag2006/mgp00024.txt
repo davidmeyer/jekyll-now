@@ -1,0 +1,13 @@
+
+So what is the key takeaway here?
+
+
+Complexity isn't *inherently bad*
+A system needs some degree of complexity to achieve robustness
+Contrast with the "simple network" [ISENBERG]
+
+However, while a system's robustness is bounded, its complexity is not
+i.e., the complexity-robustness curve is heavy-tailed
+
+In other words...
+

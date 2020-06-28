@@ -1,0 +1,16 @@
+
+Alternate Position
+
+
+How much of the problem can be solved by currently deployed techniques including BTSH, ingress filtering, unicast-RPF, and the current registry system/language
+
+RFC 2827/BCP 38		ingress filtering
+draft-gill-btsh-02.txt	BTSH
+RFC 2622			RPSL
+
+Would this be enough?
+
+And how would you define "enough"?
+
+And for how long?
+

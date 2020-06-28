@@ -1,0 +1,16 @@
+
+Agenda
+
+
+What problem(s) are we trying to solve?
+
+So why are/aren't we deploying a "secure" BGP?
+
+Complexity Issues?
+
+So what is the 10K-mile goal anyway?
+
+Discussion
+
+http://www.1-4-5.net/~dmm/NANOG28/s-o-bgp
+

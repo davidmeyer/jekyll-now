@@ -1,0 +1,15 @@
+
+Current Events
+
+
+SPEERMINT WG was chartered, and met at IETF65 in Dallas
+
+However...
+
+Lots of discussion about the charter (on the list, at the meeting), specifically around
+How much should we be considering L3
+Private v. Public "Internets"
+Policy
+SBC
+...
+

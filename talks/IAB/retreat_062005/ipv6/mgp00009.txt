@@ -1,0 +1,17 @@
+
+Allocation Policies
+
+Significant cognitive dissonance in the community about	how to allocate IPv6 chunks
+See the ppml mailing list (for example)
+
+Summary
+Some folks claim RIR policies are too restrictive and thereby stifle both deployment uptake and innovation
+Others claim that proposed allocations are too big and thus violate stewardship principles
+And BTW, what the heck is all this HD ratio stuff?
+RFC 3194 (and what about RFC 3177?)
+HD = log(#hosts)/log(#addresses)
+Debate: HD ~ 0.8
+BTW, physics "assigned" later (2005-04-11-IPv6-HD.pdf, ARIN Public Policy Meeting)
+
+And what about the ITU's proposal(s)?
+

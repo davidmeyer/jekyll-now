@@ -1,0 +1,14 @@
+
+History
+
+
+In early 2005, I began discussions with the IETF's Transport Area Directors about whether we could do some useful work in the VoIP peering area
+
+Challenging for the IETF, as
+We haven't done much in the way of "architectures"
+In some sense, the IETF does "building blocks"
+Lots of other work in this area as well...
+ATIS, 3GPP, Cablelabs, ...
+
+In any event, we worked on a charter, held a few BOFs, changed names a few times, and...
+

@@ -1,0 +1,148 @@
+
+			    Draft Agenda:  NANOG 26
+			  Oct. 27-29, Eugene, Oregon
+			    ARIN X:  Oct. 30-Nov. 1 
+		          http://ww1.arin.net/ARIN-X/
+
+                              SUNDAY TUTORIALS	
+
+1:30 - 3:00 p.m.   Managing IP Networks with Free Software
+		   Level:  Intermediate	
+		     Stephen Stuart, ISC		
+
+1:30 - 3:00 p.m    BGP Troubleshooting Techniques 
+		   Level: Introductory/Intermediate	
+		     Philip Smith, Cisco
+
+3:00 - 3:30 p.m.   BREAK 	
+
+3:30 - 5:00 p.m.   ISP Security - Real World Techniques II	
+		     Barry Raveendran Greene, Cisco
+		     Kevin Houle, CERT
+
+3:30 - 5:00 p.m.   BGP Troubleshooting (cont'd.)	
+
+5:00 - 7:30 p.m.   DINNER BREAK
+
+7:30 - 9:00 p.m.   IPv6 Basics
+		   Level: Introductory
+	             Tony Hain, Cisco
+			
+Monday, October 28
+==================
+
+9:00 a.m.	Welcome, Introductions	
+		  Lucy L. Lynch, Univ. of Oregon
+		  Dave Meyer, Sprint/UO
+		  John Curran, ARIN Board Chair 
+		  Susan Harris, Merit 
+
+9:20 a.m.	Update on the National Strategy for Cyberspace Security
+		  Marc Sachs, Office of Cyberspace Security
+
+10:15 a.m.	BREAK	
+
+10:30 a.m.	How to Own the Internet in Your Spare Time	
+		  Stuart Staniford, Silicon Defense
+		  Vern Paxson, ICSI/ICIR
+		  Nicholas Weaver, UC Berkeley
+
+11:15 p.m.	Operational Feedback to IP Equipment Vendors	
+		  Vijay Gill, AOL Time Warner
+
+12:00 p.m.	LUNCH	
+
+1:30 p.m.	Route Flap Damping: Harmful?	
+		  Randy Bush, IIJ
+		  Tim Griffin, AT&T Research
+
+2:00 p.m.	Carrier-Class Availability for IP Networks	
+		  Sanjay Kalra, Juniper
+
+2:30 p.m.	Traffic Characteristics and Network Planning	
+		  Thomas Telkamp, Global Crossing
+
+2:50 p.m.	Fast Reroute - A High Availability Addition to MPLS
+		  Shankar Rao & Sohel Ahmed, Qwest
+  		  Richard Southern, Juniper
+
+3:20 p.m.	BREAK 	
+
+3:35 p.m.	Panel: Services, Complexity, and the Internet: What
+		Direction?	  
+		  Dave Meyer, Sprint, moderator
+		  Randy Bush, IIJ
+		  Vijay Gill, AOL Time Warner
+		  Lixia Zhang, UCLA
+		  Dave Ward, Cisco
+		  Thomas Telkamp, Global Crossing
+	
+5:30 - 7:30 p.m.  Beer 'n Gear
+
+Monday Evening BOFs	
+===================
+7:30-9:00 p.m.   Toolmaker BOF 	
+		   Stephen Stuart, ISC, moderator
+
+9:00-10:30 p.m.  ISP Security BOF I	
+		   Barry Raveendran Greene, Cisco
+	  	   Merike Kaeo, merike.com, moderators
+
+Tuesday, October 29
+===================
+9:00 a.m.	IPv6 Impressions: ARIN Update and Routing Table Overview
+		  Cathy Wittbrodt, Packet Design
+
+9:45 a.m.	Experiences With Developing, Testing, Planning, and
+		Operating IPv6-Enabled Nameservers	
+		  Paul Vixie, ISC
+
+10:05 a.m.	Commercial IPv6 Deployment by ISPs in Japan 	
+	  	  J. Hagino, IIJ/KAME
+
+10:25 a.m.	BREAK	
+
+10:40 a.m.	Panel:  Trends in Measurement and Monitoring of Internet
+		Backbones	
+		  Dave Meyer, Sprint/University of Oregon, moderator
+		  Chris Martin, Verizon
+		  Christophe Diot, Sprintlabs
+		  Jennifer Rexford, AT&T
+		  Research
+		  Mujahid Khan, Sprint
+		  Tony Tauber, Genuity 
+
+12:00 p.m.	LUNCH	
+
+1:30 p.m.	OC48 (and Above) Flow Sampling: Mice, Elephants and
+		Needles in Haystacks	
+		  Craig Labovitz, Scott Ikel-Johnson, Rob Malan, 
+		  Michael Bailey, Arbor Networks
+
+2:00 p.m.	Scriptroute: A Public Internet Measurement Facility
+		  Neil Spring, David Wetherall, & Tom Anderson, Dept. of CSE, 
+		  University of Washington
+
+2:20 p.m.	Panel:  Persistent Route Oscillation - Issues and
+		Solutions	
+		  Sue Hares, NextHop, moderator
+		  Enke Chen, Redback
+
+3:15 p.m.	BREAK	
+
+3:30 p.m.	Observation and Analysis of BGP Behavior under Stress
+		  Lan Wang, UCLA; Dan Pei, UCLA;  Randy Bush, AT&T;
+		  Xiaoliang Zhao, Daniel Massey & Allison Mankin, USC/ISI;
+		  Felix Wu, UC Davis; Lixia Zhang, UCLA
+
+4:00 p.m.	Toward Lowering the Load on DNS Root Nameservers
+		  Duane Wessels,  The Measurement Factory/ CAIDA
+
+4:30 p.m.	New Services From the RIPE NCC	
+		  Henk Uijterwaal, RIPE-NCC
+
+4:50 p.m.	Adjourn	
+
+
+Meeting web site:  http://www.nanog.org/mtg-0210/
+

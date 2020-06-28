@@ -1,0 +1,20 @@
+
+Other Topics For Consideration
+
+
+How long will the current routing system last?	     
+And will Moore's law come to our rescue?
+
+Address Space Coverage
+How many prefixes are required to cover the IPv4 space?
+
+Configuration Issues
+What is the effect of mis-configuration on policy
+What is the effect of multiple origin AS
+and how does it arise?		
+
+What about the effect of (D)DoS attacks
+Code Red and NIMDA were attacks on end systems
+Or were they?
+
+

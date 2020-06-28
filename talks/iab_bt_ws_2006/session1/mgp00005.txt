@@ -1,0 +1,18 @@
+
+Agenda/Panelists
+
+
+DNS Issues (20 minutes)
+Mark Kosters (markk@verisignlabs.com)
+
+Backbone Operator Issues (20 minutes)
+Ryan Mcdowel (rymcdowe@cisco.com)
+
+Access Provider Issues (20 minutes)
+Sean Donelan (sean@donelan.com)
+
+Enterprise Issues (20 minutes)
+Alan Mitchell (amitch@us.ibm.com)
+
+Discussion (20 minutes)
+All

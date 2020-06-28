@@ -1,0 +1,9 @@
+
+Before We Dive In To All Of This...
+
+If you take one thing away from this talk, it should be this:
+
+Keep your network designs and implementations as simple and understandable as possible 
+
+As we shall see, physics (and human nature) will be pushing you in the other direction
+

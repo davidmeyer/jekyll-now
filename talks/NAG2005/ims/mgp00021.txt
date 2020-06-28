@@ -1,0 +1,16 @@
+
+The Six Parties to Roaming
+
+
+(a) the subscriber wanting to send packets
+
+(b) the subscriber wishing to receive packets
+
+(c) the home service provider of subscriber (a)
+
+(d) the home service provider of subscriber (b)
+
+(e) the provider (a) is currently roamed on
+
+(f) the provider (b) is currently roamed on
+

@@ -1,0 +1,6 @@
+
+Complexity/Robustness Spirals
+
+
+The same phenomenon which makes five nines difficult to reach is also characterized as a "complexity/robustness" spiral [Doyle and Willinger], in which increases in complexity create further and more serious sensitivities, which then require additional robustness, which requires increases in complexity, which in turn requires additional robustness, and so on...(hence the spiral).  
+

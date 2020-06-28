@@ -1,0 +1,11 @@
+
+Another summary, cont
+
+
+Traffic engineering, traffic engineering and traffic engineering - do NOT put this in the hands of the end system, this needs to be site level, or at the very least the site needs to be able to override the end system's decisions.
+
+The first hit is of critical importance to content providers (many of whom couldn't legitimately justify a /32).  Hunting through DNS to find a locator that works won't fly.
+
+It was good to hear in a widespread forum that shim6 is not expected to be THE only multi-homing solution. However, we were left uninformed as to where the other work is going on.
+
+

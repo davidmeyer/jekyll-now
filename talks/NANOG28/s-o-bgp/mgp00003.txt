@@ -1,0 +1,20 @@
+
+What problem(s) are we trying to solve?
+
+
+Lots of threat model work, including
+
+Configuration mistakes
+
+Prefix hijacking
+
+Compromised backbone routers
+  
+Availability
+
+New attacks?
+"Using Link Cuts to Attack Routing" [Bellovin,Gansner]
+
+And all of those things we haven't seen/detected yet...
+
+

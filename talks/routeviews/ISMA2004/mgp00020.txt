@@ -1,0 +1,16 @@
+
+Coordination of Routing Data Sources, cont
+
+
+Private Listeners/Archives
+
+So there is a lot of BGP data around these days
+
+But...
+What is the quality of this data?
+Note recent Agilent work on this topic
+
+And who is coordinating archival storage
+Would "one-stop shopping" be useful?
+
+

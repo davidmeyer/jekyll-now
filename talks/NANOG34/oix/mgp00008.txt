@@ -1,0 +1,15 @@
+
+Futures
+
+       
+Additional fiber facilities
+
+Switch Fabric Upgrades (-> 10G)
+
+Services
+Experimental VoIP Peering
+
+Layer 1/Layer 2 extensions
+
+And of course, we'd like more traffic
+

@@ -1,0 +1,20 @@
+
+Current Events, cont
+
+
+That said, first deliverables are:
+
+Terminology
+draft-ietf-speermint-reqs-and-terminology-01.txt
+Soon to be draft-ietf-speermint-terminology-00.txt
+
+
+Requirements
+We have some initial work here, but its early on
+
+
+Then on to use cases (architectures)
+
+
+
+

@@ -1,0 +1,15 @@
+
+Central Tenet #3
+
+
+Third piece of this puzzle is that you get a set of peer-to-peer (p2p) applications that attack the incumbents revenue streams 
+"attack" in the capture-the-revenue sense (contrast DDOS)
+Key: p2p decentralization
+
+Starting with voice
+Large easily attacked revenue stream
+cf. Vonage, skype, etc...
+But also video, FMC, presence, IM, ...
+
+So this (again) is about a convolution of our technology with public policy
+

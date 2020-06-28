@@ -1,0 +1,12 @@
+
+
+Designing for Complexity: 
+A Few New Concepts And Their Application To Your Networks
+
+
+NANOG 33
+Las Vegas, NV
+
+Barry Greene (bgreene@senki.org)
+David Meyer  (dmm@1-4-5.net)
+http://www.1-4-5.net/~dmm/talks/NANOG33/designing

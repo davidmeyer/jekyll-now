@@ -1,0 +1,124 @@
+%include "default.mgp"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%nodefault
+%size 10, font "standard", fore "white", vgap 20, center
+
+
+
+Route-Views
+University of Oregon, ANTC
+
+%size 8
+http://www.routeviews.org/
+help@routeviews.org
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 8
+Brief History
+%size 0
+
+
+%size 7
+Started in 1997
+%size 4
+
+%size 7
+Provide views of operator's routes
+	Answer questions without calling peers/smoking gun
+	Blind TE?
+o%size 4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 7
+Evolution
+%size 0
+
+
+%size 7
+Hey, this data is useful for ...
+%size 4
+
+%size 7
+Collect RIBs in 'show ip bgp' format
+%size 4
+
+%size 7
+Collect MRT format RIBs and updates
+%size 4
+
+%size 7
+BGP Beacon (192.135.183/24)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 8
+Results
+%size 0
+
+
+%size 7
+Trace significant events
+%size 4
+
+%size 7
+State of the DFZ at time X
+%size 4
+
+%size 7
+CAIDA, NLANR, ... Used in
+	Several Internet research efforts
+	BGP dynamics studies
+	State of Internet reports
+%size 4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 8
+Problems
+%size 0
+
+
+%size 7
+eBGP Multi-hop & external events
+%size 4
+
+%size 7
+Vendor-X boxes do not take kindly to this abuse
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 8
+Future
+%size 0
+
+%size 7
+Locate boxes at exchanges
+	WIDE/NSPIXP (hosted by KDDI) and PAIX (ISC)
+		Local peers wanted!
+	U.S. east coast and Europe locations needed.
+		Hosts welcome!
+%size 4
+
+%size 7
+In progress
+	Improvements to Zebra
+	Data mining utilities
+%size 4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%size 0
+
+
+%size 7
+Mail Lists
+	help@routeviews.org
+%size 4
+
+%size 7
+Also see
+	http://www.routeviews.org/
+

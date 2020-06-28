@@ -1,0 +1,11 @@
+
+Complexity Driver 3: Coupling
+
+
+The issue here is the coupling of higher-layer services and the packet transport 
+
+
+More specifically, the complexity here derives from the direct coupling of higher-layer billable service to the packet transport, including the QoS policies associated with the previous point. 
+
+OK, but why?
+

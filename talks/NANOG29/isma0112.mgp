@@ -1,0 +1,604 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+
+%center 
+
+%xfont "utopia-medium-r", size 8, fore "black"
+
+Route Views Update
+
+%size 4
+ISMA Winter 2001 Workshop
+17 December 2001
+
+
+
+%size 3
+Joel Jaeggli 
+joelja@darkwing.uoregon.edu
+
+David Meyer
+dmm@{sprint.net,antc.uoregon.edu}
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+	Overview of BGP Data Sources
+
+	Route Views Update	
+
+	Route Views 2
+
+	A Few Questions for You
+
+	These slides: http://www.maoz.com/ISMA0112
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+BGP Data Sources
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+	RIPE RIS (www.ripe.net/ris)
+%pause
+		zebra bgpd 
+			www.zebra.org
+		MRT format RIB and UPDATES
+			www.merit.edu/mrt
+%pause
+
+	route-views.oregon-ix.net (archive.routeviews.org)
+%pause
+		'sh ip bgp' format at 2 hour intervals
+			collection script from Sean McCreary
+		hwb archive on moat.nlanr.net
+
+%pause
+	route-views2.oregon-ix.net (archive.routeviews.org)
+%pause
+		MTR RIB archiving (every 2 hours)
+		MTR UPDATES archiving (every 15 minutes)
+
+%pause
+	PCH (www.pch.net)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+BGP Data Sources, continued
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Numerous Looking Glasses
+		good list at http://neptune.dti.ad.jp
+
+%pause
+	Private Listeners/Archives
+
+%pause
+	So there is a lot of BGP data around these days
+
+%pause
+	But...
+%pause
+		What is the quality of this data?
+%pause
+		And what models do we have evaluate it?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+route-views.oregon-ix.net -- history
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+	Circa 1995 
+%pause
+		route-views started life as a purely operational tool
+%pause
+			We needed a way to look how providers saw our routes
+
+%pause
+		Looking glasses were still in the future
+
+%pause
+		Randy Bush was kind enough to give us a view from MAE-WEST
+
+%pause
+		People started using route-views and contributing views
+%pause
+			But this caused things to really take off -->
+%pause
+
+%center
+%image "AS_Network_thumb.gif"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Currently
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Cisco 7200 VXR/NPE-400/512Mb
+
+%pause
+	12.0(19).S
+
+%pause
+	63 peers
+
+%pause
+	O(700K) paths
+
+%pause
+	O(200M) of RIB
+
+%pause
+	O(4K) connections/day, 30-50 downloads 
+		archive.routeviews.org
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 5
+Typical day -- route-views.oregon-ix.net connections
+
+%xfont "utopia-medium-r", fore "white", size 3
+
+ Route-views Connections for: 12/04/2001
+ Total Number of Connections: 2848
+-------------------------------------------------------------------------
+ Requests  IP Address        Hostname
+-------------------------------------------------------------------------
+     393   202.14.186.30	pericles.IPAustralia.gov.au
+     351   192.65.182.30	mippet.ci.com.au
+     235   129.188.33.191	gate01.mot.com
+     125   129.188.33.192	gate02.mot.com
+     119   192.172.226.110	anala.caida.org
+      94   128.95.219.243	pumpkin.cs.washington.edu
+      66   137.118.1.11	dhcp.neonova.net
+      47   136.182.2.22	gate32.motorola.com
+      42   24.0.16.70		ceres.eos.home.net
+      31   136.182.2.21	gate31.motorola.com
+      21   199.45.47.4	gni-gate.gnilink.net
+      20   209.240.224.6	trout.cpinternet.com
+      18   206.195.128.200	ws128-200.workstations.globalknowledge.com
+      17   130.217.248.196	voodoo.cs.waikato.ac.nz
+      15   209.198.223.250	us-la-gate.interpacket.net
+      ...
+      6   128.95.219.170	network-measurement-project.cs.washington.edu
+      6   195.126.111.65	nirvana.de.uu.net
+      6   216.223.6.1		nocpod1.internap.com
+      ...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Connections 
+
+%xfont "utopia-medium-r", fore "white", size 3
+
+%pause
+	A lot of operational use
+%pause
+		Connections come from everywhere:
+			routescience.com
+			navy.mil
+			genuity.com
+			spectrum.com.au
+			uniroma3.it
+			kddi-ok.ne.jp
+			southcom.com.au
+			ntt.net
+			connect.com.au
+			...
+
+%pause
+	A lot of research use	
+		cs.washington.edu
+		cs.waikato.ac.nz
+		...
+		Start of a bibliography of research using this data on 
+			http://www.antc.uoregon.edu/route-views/rv-docs/biblio.html
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 5
+Typical day -- 'sh ip bgp' downloads 
+
+%xfont "utopia-medium-r", fore "white", size 3
+
+The following machines have accessed archive.routeviews.org
+
+1   04/Dec/2001   worf.netins.net
+2   04/Dec/2001   1Cust7.tnt4.st-charles.mo.da.uu.net
+3   04/Dec/2001   trek7.sv.av.com
+4   04/Dec/2001   kahuna.telstra.net
+5   04/Dec/2001   idefix.telecable.es
+6   04/Dec/2001   network-measurement-project.cs.washington.edu
+7   04/Dec/2001   voodoo.cs.waikato.ac.nz
+8   04/Dec/2001   mapping-project1.caida.org
+9   04/Dec/2001   disaster2.cs.ucr.edu
+10  04/Dec/2001   dspnet.claranet.fr
+11  04/Dec/2001   mail.ivmg.net
+....
+
+The following machines have downloaded one or more data
+files from archive.routeviews.org
+
+1   04/Dec/2001   worf.netins.net
+2   04/Dec/2001   1Cust7.tnt4.st-charles.mo.da.uu.net
+3   04/Dec/2001   kahuna.telstra.net
+4   04/Dec/2001   idefix.telecable.es
+5   04/Dec/2001   network-measurement-project.cs.washington.edu
+6   04/Dec/2001   voodoo.cs.waikato.ac.nz
+7   04/Dec/2001   mapping-project1.caida.org
+8   04/Dec/2001   disaster2.cs.ucr.edu
+9   04/Dec/2001   dspnet.claranet.fr
+....
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+route-views2.oregon-ix.net
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+	Well, as many of you know...
+
+%pause
+	Wanted to migrate to zebra bgpd for several reasons
+%pause
+		MRT format UPDATES and RIBs
+%pause
+		zebra bgpd has a Cisco-like CLI
+%pause
+			'|',ping/traceroute, and dampening stats (among others) are missing
+%pause
+		Less expensive hardware
+
+%pause
+	Built the following box for this:
+%pause
+		Supermicro P3DDE mainboard/2 x 1GHZ PIII
+		1.5G (pc133 registered ECC DIMMs)
+		40GB 7200rpm IDE disk
+		3ware Escalade 6800 hardware RAID controller
+		4 x 100GB maxtor 536dx 5400rpm IDE disks (raid 0+1)
+		SMC epicII 10/100 PCI NIC
+%pause
+		Linux 2.4.10
+%pause
+		cvs zebra bgpd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+What went wrong?
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	bgpd couldn't start all (~60) the peers
+%pause
+		appeared to be a bug in the scanner thread
+
+%pause		
+	The bgpd CLI thread was extremely slow
+%pause		
+		"unusable"
+
+%pause
+	So what to do?
+%pause
+		work with zebra implementors?
+%pause
+		other bgpd implementations?
+%pause
+		replicate the peerings for data collection?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+"Resolution"
+
+%xfont "utopia-medium-r", fore "white", size 5
+%pause
+
+	Replicated 23 large peers 
+		   on cvs zebra bgpd box described above
+
+%pause
+	Run a vtyd on port 23 
+
+	Looks about like route-views.oregon-ix.net CLI 
+%pause
+
+	Both CLI and MRT format data get a lot of use
+
+%pause
+	Issues to consider with route-views2...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 6
+Issues with route-views2.oregon-ix.net
+
+%xfont "utopia-medium-r", fore "white", size 5
+%pause
+
+	Verification of RIBs and UPDATES
+		Are the data correct (and can we verify somehow)?
+%pause
+		Does multi-hop eBGP effect timing for update data?
+
+%pause
+	Disk space (all numbers for 2001.11):
+
+%pause
+		UPDATES
+%pause
+			One month uncompressed MRT UPDATES:	4438212K
+			One month gziped MRT UPDATES:		829568K
+%pause
+
+		RIBS
+%pause
+			One month uncompressed MRT RIBs:	46899996K
+			One month gziped MRT RIBs:		6791700K
+			One month gziped 'sh ip bgp' RIBs:		4598820K
+			Note route-views has ~60 peers while route-views2 has 23
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Issues in maintaining route-views
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+	Acceptable Use
+
+%pause
+	Processor/Memory scaling
+
+%pause
+	Data export
+
+%pause
+	Dead Peer detection and resolution
+
+%pause
+	Contact maintenance
+
+%pause
+	NLRI Support
+
+%pause
+	Security 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%pcache 0
+%xfont "utopia-medium-r", fore "white", size 7
+Some Questions
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+%center 
+%image "fig1.png"
+%xfont "utopia-medium-r", fore "white", size 4
+Image courtesy Geoff Huston 
+gih@telstra.net, http://www.telstra.net/ops/bgp
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%pcache 0
+%xfont "utopia-medium-r", fore "white", size 8
+A closer look...
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+%center 
+%image "gih_classic.png"
+%xfont "utopia-medium-r", fore "white", size 4
+Image courtesy Geoff Huston 
+gih@telstra.net, http://www.telstra.net/ops/bgp
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+So here are a few questions...
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	During this ISMA, think a little about the following questions...
+
+%pause
+	First, is our methodology sound?
+
+%pause
+	Different views from different points in the topology
+%pause
+		www.telstra.net/ops/bgp
+%pause
+		www.telstra.net/gih/papers/ietf/draft-iab-bgparch-02.html
+
+%pause
+	What approaches should we be taking?
+%pause
+		What results would be operationally useful?
+%pause
+		And what infrastructure do we need to support such results?
+			Do we need a global, coordinated collection and archving infrastructure?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+RIB/FIB Growth Rates
+
+%pause
+%xfont "utopia-medium-r", fore "white", size 6
+
+	What is the current growth rate of the BGP RIB/FIB? 
+%pause
+		Is it exponential? Linear? Something else?
+%pause
+		And what are the drivers?
+%pause
+		Is it more specifics/multihoming, or something else?
+
+%pause
+	Are there observable problems related to table size?
+		e.g. not enough RP or LC memory? 
+%pause
+
+	If so, what tools are available?
+
+%pause
+	Related: Is AS 'meshiness" growing?
+%pause
+		How about AS number burn rate?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+RIB/FIB Dynamic Properties
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+	Is the dynamic nature of the routing table growing?
+		How much churn is there, and where does it come from
+
+%pause
+	We might expect increased churn if the fraction of longer prefixes is growing
+		So do more specifics churn more?
+%pause
+		As the table grows, what happens to the rate of change in the RIB on a macroscopic (say hourly) level?
+
+%pause
+		Hint: It looks like the /24 prefixes have a rate of change which is some 20% higher than the overall total table change rate. There are too few /25 and higher to make any observations, but at sizes <  /24 the most stable prefix lengths are /16, /17, /18 and /21. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+RIB/FIB Dynamic Properties
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Observable problems related to the BGP churn rate?
+		e.g. not enough CPU?
+		Protocol bandwidth utilization?
+%pause
+
+	If so, what tools are available
+%pause
+
+	If not, will it become an operational problem? 
+		And when?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+Other Topics For Consideration
+
+%xfont "utopia-medium-r", fore "white", size 6
+%pause
+
+	How long will the current routing system last?	     
+		And will Moore's law come to our rescue?
+
+%pause
+	Address Space Coverage
+%pause
+		How many prefixes are required to cover the IPv4 space?
+
+%pause
+	Configuration Issues
+%pause
+		What is the effect of mis-configuration on policy
+%pause
+		What is the effect of multiple origin AS
+%pause
+			and how does it arise?		
+
+%pause
+	What about the effect of (D)DoS attacks
+%pause
+		Code Red and NIMDA were attacks on end systems
+%pause
+		Or were they?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+%pcache 0
+
+%xfont "utopia-medium-r", fore "white", size 8
+Questions?
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="Perfect Storms, Internet Economics, and the Future of the Internet  David Meyer APRICOT 2007 http://www.1-4-5.net/~dmm/talks/apricot2007/perfect_storm  Agenda Background and Context So what is the “Perfect Storm”? Three Pieces of the Puzzle A Few Considerations Discussion Background &amp; Context I’d been spending a lot of time around things like NGN and IMS http://www.1-4-5.net/~dmm/talks/NANOG33/ims And studying complexity http://www.1-4-5.net/~dmm/talks/NANOG26/complexity_panel RFC 3439 Background &amp; Context So I started wondering where all this is going And how technologies like IMS (or more generally,  NGN) interacted with the Internet Architecture And what the implications of the growing number of policy based networks really was And in particular, I wondered about the implications of tying (perceived) high margin application revenue directly to the packet transport We’ll see why this is an interesting question in a moment Background &amp; Context And as you might imagine (given my background/sensibilities), I was skeptical about what those technologies might mean for the Internet In analyzing the space a bit, I proposed a scenario that became known as &quot;Meyer's Telecommunications Perfect Storm&quot;, or TPS “You name it, you own it” The rest of this talk reviews the TPS scenario and its implications What Exactly is the TPS? First, TPS is deeply multi-disciplinary Involves economics, public policy, and the Internet technology TPS is based on the Internet Architecture In particular, the end-to-end (e2e) principle  We can argue (like everyone else) about what the e2e principle actually states... http://www.chiappa.net/~jnc/tech/end_end.html However, the key feature of the e2e principle here is that it implies that IP packet carriage is a commodity business What Exactly is the TPS? TPS is based on three basic ideas Someone learns how to run a low margin yet profitable packet carriage business  Access monopolies are weakened or cease to exist A set of peer-to-peer applications emerge that co-opt the incumbents revenue streams Let’s look at each of these in detail... Low Margin yet Profitable Packet Carriage Business First, remember that the hypothesis here is that packet carriage will always be a low margin business as a direct consequence of the e2e principle  Note that some providers are already building &quot;simple&quot; networks in an attempt to lower OPEX  And lower OPEX is something you'll need if you want to get to a profitable low margin business And BTW, there is the question as to whether we're optimizing these networks for the &quot;right&quot; thing in the first place.. 80/20? (Or is it more like 95/5?) Consider &quot;convergence&quot; (in the holy grail sense) See e.g., http://www.potaroo.net/ispcol/2006-02/congconverged.html Low Margin yet Profitable Packet Carriage Business Lighting (even inexpensive) fiber is still expensive Well, it was... OPEX, however, still dominates margins And we need to watch out that our economic models are not based on &quot;glut economics&quot; or the availability of &quot;distressed assets&quot; But even that is changing (rapidly) Low Margin yet Profitable Packet Carriage Business So what this is really about is... The convolution of the Internet technology with the economics of IP packet transport  And BTW, in case you were wondering, we understand the economics of all of this about as well as we understand complexity So we need to encourage research in this area Aside: On Commodity Businesses Commodities tend toward low margins In particular, in those cases in which the incremental cost of providing a unit of the commodity goes to zero is the point at which it makes sense to price your commodity just below the price set by your competitor(s) What is the incremental cost of forwarding a packet in the core of the Internet? In any event,  a &quot;race to the bottom&quot; ensues Which is exactly what our industry has experienced over the past few years On Commodity Businesses A classic commodity also has the property that the incremental cost of providing the good or service approaches its marginal cost of production So what is the marginal cost of forwarding an IP packet in the core of the Internet? Well, there are high fixed capital costs (routers, circuits, etc) and high OPEX and very small marginal cost  i.e., the incremental cost of forwarding a packet On Commodity Businesses So what is the marginal cost of forwarding an IP packet in the core of the Internet?  Answer:  Approaching zero So what does this say about pricing power that an SP has in the market? On Economic Realities1 1Chart courtesy kc claffy  Summary: Low Margin Yet Profitable Packet Carriage Business The Internet Architecture, and in particular, the end-to-end principle, suggests that packet transport is a low margin, commodity business If you buy this, then one needs to question whether “policy-based” architectures can ever yield the higher margin transport infrastructures they promise Access Monopolies are Weakened/Cease to Exist Say, due to the emergence of technologies like WiMAX  or just competition in the access Truth in advertising #1: This is controversial (shocking) Truth in advertising #2: We still don't have a (inexpensive) wireless technology that could deliver 100s (or even 10s) of HDTV channels (in the access) Access Monopolies are Weakened/Cease to Exist Competition makes it much harder (impossible?) to profitably field policy-based access networks Why? Well, consider the cost (OPEX) of running one of these networks  and given the complexity, its reliability And there is no way your SP is going to be able to innovate at the same rate as the entire Internet Consider the success of AOL or other attempted &quot;walled-garden&quot; providers But then, what about IMS? Access Monopolies are Weakened/Cease to Exist Bottom line Policy-based networks cost more to build and operate, are less reliable, and are (ironically) less &quot;service rich&quot; And who buys that if there is choice? And we can talk about the &quot;bundling argument&quot; if we wind up with time... Access Monopolies are Weakened/Cease to Exist So what this is really about is... The convolution of the Internet technology with public policy Related to what is being called Net Neutrality http://www.potaroo.net/ispcol/2006-03/content.html Aside: Wall-GardensWhat’s the Problem? Innovation on the edges forces walled garden providers to let the new service through Their customers demand it (consider ports 80/443) This is part of the reason why the existence of competition in the access is a critical component of all of this So now everything can be tunneled over those (now open) ports e.g., skype plus encryption + anonimzation + lots of app developers Wall-Gardens, cont. And BTW, you can't really find this stuff with, say, a DPI engine Why, you ask? Well, because while you may be able to find the signature (e.g.) of encrypted voice (today), you basically have to block everything that you can't identify The implication is that most applications that are &quot;over-the-top&quot; must be treated by default logic Conclusion:  You can't effectively stop over-the-top services If there is competition in the access This is a classic arms race Applications Emerge that Target Incumbent Revenue Streams Third piece of this puzzle is that a set of peer-to-peer (p2p) applications emerge that attack the incumbents revenue streams  &quot;attack&quot; in the capture-the-revenue sense (contrast DDOS) Key: decentralization Starting with voice Large easily attacked revenue stream cf. Vonage, skype, etc... But also video, FMC, presence, IM, ... Applications Emerge that Target Incumbent Revenue Streams So this is about a convolution of the Internet technology and its end-to-end nature and the creativity it unleashed, with traditional carrier architectures and business models In particular, while traditional carrier networks were vertically integrated (the network was the application), the Internet is horizontally integrated This has the effect of making many of the services the vertically integrated networks provided into applications on the Internet Canonical example: Voice IPv6, The Perfect Storm Driver? So what happens if the IPv6 “everything networked” dream becomes reality, and everything is connected to the network? How much will I be willing to pay to have my teapot online? My guess: Not much I’ll just want someone to provide cheap transport for my 1000s of network connected gadgets And someone will provide that service So is IPv6 really a perfect storm driver? Summary So, what happens if we wind up with... Low margin but profitable packet transport Emergence of &quot;new world players&quot; No (or weakened) access monopolies Competition and/or new technologies Large scale co-opting of traditional service provider revenue streams p2p (or other) applications target revenue Is this really an “if”? Summary How many of these three basic conditions are already occurring?  And finally, what if we can’t find a way to make a commodity internet profitable?  What’s An ISP To Do?  Stop trying to make the packet network into a circuit network?  But more seriously... Be realistic about the complexity-opex tradeoffs “Be Rational” -- Vijay Gill We need better tools here (we have little or no analytic capability in this space) Keep in mind that the governmental intervention is the “trump card” Work with the vendors and the open source community to build platforms that have the needed properties  What’s An Vendor To Do?  Stop trying to make the packet network into a circuit network?   But more seriously... If the perfect storm scenario materializes, then vendors that are used to high margins may be able to preserve those margins for certain customers However, if what evolves is the need for low margin interfaces (perhaps riding the “ethernet cost/performance curve”), then a hedge strategy may need to be developed. Just how many core routers are there on the entire planet? So Where To From Here? Stop trying to make the packet network into a circuit network :-) But more seriously... All of this is just a (the?) scenario in which the e2e Internet that we all know and love continues to grow and thrive Contrast with the &quot;value-added-transport&quot; position Noting that everything is Over-the-Top on the Internet Continued education, of ourselves, our employers, and our public representatives is essential And perhaps controversially, smart engineering on our part A Few Final Thoughts We need to be teaching and informing the community at large Where &quot;community&quot; includes SPs, enterprise operators, content providers, researchers, vendors, ... A bad (tm) outcome would be to find ourselves in a situation in which Service Providers can't be profitable enough to continue bandwidth upgrade cycles Service Providers then attempt to choke off innovation for (perceived) self-preservation via legislative/regulatory action, and/or by technical means  Questions/Comments? Thanks!"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (31);
+            images[0] = "perfect_storm.001.png";
+            images[1] = "perfect_storm.002.png";
+            images[2] = "perfect_storm.003.png";
+            images[3] = "perfect_storm.004.png";
+            images[4] = "perfect_storm.005.png";
+            images[5] = "perfect_storm.006.png";
+            images[6] = "perfect_storm.007.png";
+            images[7] = "perfect_storm.008.png";
+            images[8] = "perfect_storm.009.png";
+            images[9] = "perfect_storm.010.png";
+            images[10] = "perfect_storm.011.png";
+            images[11] = "perfect_storm.012.png";
+            images[12] = "perfect_storm.013.png";
+            images[13] = "perfect_storm.014.png";
+            images[14] = "perfect_storm.015.png";
+            images[15] = "perfect_storm.016.png";
+            images[16] = "perfect_storm.017.png";
+            images[17] = "perfect_storm.018.png";
+            images[18] = "perfect_storm.019.png";
+            images[19] = "perfect_storm.020.png";
+            images[20] = "perfect_storm.021.png";
+            images[21] = "perfect_storm.022.png";
+            images[22] = "perfect_storm.023.png";
+            images[23] = "perfect_storm.024.png";
+            images[24] = "perfect_storm.025.png";
+            images[25] = "perfect_storm.026.png";
+            images[26] = "perfect_storm.027.png";
+            images[27] = "perfect_storm.028.png";
+            images[28] = "perfect_storm.029.png";
+            images[29] = "perfect_storm.030.png";
+            images[30] = "perfect_storm.031.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="perfect_storm.001.png" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="prev.png" onclick="Step(-1)"/>
+        <input type="image" src="next.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>

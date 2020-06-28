@@ -1,0 +1,17 @@
+
+Background and Context
+
+
+I'd been spending a lot of time around things like
+NGN and IMS 
+http://www.1-4-5.net/~dmm/talks/NANOG33/ims
+And studying complexity
+http://www.1-4-5.net/~dmm/talks/NANOG26/complexity_panel
+RFC 3439
+
+Its all about controlling how networks are used
+And in particular, its about tying (perceived) high margin application revenue directly to the packet transport (and...charge differently/prevent/degrade "over-the-top" services)
+And given my background/sensibilities, I was/am skeptical
+
+So I proposed a (hedge) strategy that became known as "Meyer's Telecommunications Perfect Storm " (TPS)
+

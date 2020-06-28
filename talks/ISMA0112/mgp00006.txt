@@ -1,0 +1,17 @@
+
+Currently
+
+
+Cisco 7200 VXR/NPE-400/512Mb
+
+12.0(19).S
+
+63 peers
+
+O(700K) paths
+
+O(200M) of RIB
+
+O(4K) connections/day, 30-50 downloads 
+archive.routeviews.org
+

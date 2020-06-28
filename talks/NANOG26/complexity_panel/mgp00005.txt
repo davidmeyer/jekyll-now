@@ -1,0 +1,15 @@
+
+Panelists/Discussion Format
+
+
+Lixia Zhang		(UCLA)
+What is the impact of complexity on system resilience?
+
+David Ward		(Cisco)
+What is the impact of multiple, asynchronous control planes and their interaction in a router and network?
+
+Thomas Telkamp	(Global Crossing)
+Is QoS/CoS necessary in a backbone network?
+
+Question and Answer
+

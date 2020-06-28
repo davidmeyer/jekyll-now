@@ -1,0 +1,17 @@
+
+Issues in maintaining route-views
+
+Acceptable Use
+
+Processor/Memory scaling
+
+Data export
+
+Dead Peer detection and resolution
+
+Contact maintenance
+
+NLRI Support
+
+Security 
+

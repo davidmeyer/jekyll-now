@@ -1,0 +1,20 @@
+
+First, Alphabet Soup -- SDOs
+
+SDO == Standards Developing Organizations
+
+ITU  -- International Telecommunication Union
+
+3GPP -- 3rd Generation Partnership Project
+Defines 3G specifications for GSM networks
+Part of the ITU
+3GPP2 -- 3rd Generation Partnership Project "2"
+Defines 3G specifications systems based on ANSI/TIA/EIA-41 networks
+Part of the ITU
+
+ETSI -- European Telecommunications Standard Institute
+Part of TISPAN (I.T. and Information Management)
+
+ATIS -- Alliance for Telecommunications Industry Solutions
+
+Oh yeah, and...the IETF

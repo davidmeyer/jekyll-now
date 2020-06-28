@@ -1,0 +1,9 @@
+
+Issue 1: End-System Complexity
+
+
+The issue here, articulated by Vijay Gill, is basically that assuming an industry standard 2% churn/month on low margin customers, one support call can destroy the margin on that customer for the expected lifetime of the customer.
+
+The concern here is that the dynamically changing ULIDs and locators will cause new and harder to diagnose problems, resulting in an increased frequency of calls to the help desk.
+Which in will either hurt or destroy the margin on the customer
+

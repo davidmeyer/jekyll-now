@@ -1,0 +1,16 @@
+
+Summary: Transport Network Requirements
+
+Designed to carry L{1,2,3}VPN, and IP
+
+IP/MPLS Control and Forwarding Plane
+Mod what I said about "MPLSv2"
+
+BT's requirement for an OOB Control Plane still being discussed 
+NSIS's path-coupled/decoupled terminology has crept in here...
+
+QoS requirements not yet jelled
+But some are starting to look surprisingly like NSIS
+
+Q: How is this different that the Internet again?
+

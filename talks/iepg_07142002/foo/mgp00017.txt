@@ -1,0 +1,13 @@
+
+Summary and A Few Conclusions
+
+
+
+Lots of sources of complexity in large IP networks
+
+
+Lots of sources of non-linearity in large IP networks
+
+
+See draft-ymbk-arch-guidelines-03.txt and Doyle and Willinger's excellent work on this topic 
+

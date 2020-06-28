@@ -1,0 +1,11 @@
+
+Is "TTL hard to spoof" useful?
+
+
+Well, since the vast majority of (eBGP) our peerings are between adjacent routers 
+
+So why not set the TTL on BGP packets to 255 and then reject any BGP packets that come from configured peers which do NOT have a TTL in the range 255-254?
+
+That is, the receive TTL is expected to be within a small range of 1 or 2 (254-255). The actual value depends upon the (router) architecture, but it is expected that the receiver will verify the range
+
+

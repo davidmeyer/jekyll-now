@@ -1,0 +1,346 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "white"
+%xfont "utopia-medium-r"
+
+%xfont "utopia-medium-r", size 7, fore "black"
+
+%center 
+Route-Views Update
+
+
+%size 4
+John Heasley
+heas@shrubbery.net
+
+NANOG 29
+Chicago, IL
+
+http://www.routeviews.org
+help@routeviews.org
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+
+%xfont "utopia-medium-r", fore "white", size 7
+
+	Project Overview and Purpose
+
+	Current Status and What's New
+
+	Issues/Problems
+
+	Questions and/or Comments
+
+	http://www.routeviews.org/talks/NANOG29
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Project Overview (Circa 1995)
+
+%xfont "utopia-medium-r", fore "white", size 4
+
+%pause
+	route-views started life as a ...
+%pause
+		purely operational tool
+%pause
+		We needed a way to look how providers saw our routes
+
+%pause
+	Looking glasses were still in the future
+
+%pause
+	Randy Bush was kind enough to give us a view from MAE-WEST
+
+%pause
+	People started using route-views and contributing views
+
+%pause
+	But this caused things to really take off...
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Skitter Core -- http://www.caida.org
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%center
+%image "skitter_core.gif"
+%size 5
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Current Status
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	Realtime (CLI) access
+%pause
+		Useful in diagnosing operational problems
+%pause
+		Takes O(5K) connections/day
+
+%pause
+	Data Collection
+%pause
+		Collect RIBs in 'show ip bgp' format
+%pause
+		Collect MRT format RIBs and updates
+%pause
+		Archival Internet Routing Data Repository
+%pause
+		Working on database front-end(s)
+
+%pause
+	BGP Beacon (192.135.183/24)
+
+%pause
+	Provide data to various research groups
+
+%pause
+	http://www.routeviews.org/papers
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Current Status -- Services
+
+%center
+
+
+%image "services.gif"
+
+
+See http://www.routevievws.org
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Current Status -- Mailing Lists
+
+%center
+
+
+
+%image "mailing_lists.gif"
+
+
+Again, see http://www.routevievws.org
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+What's new...
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	New Collector Sites
+%pause
+		WIDE/NSPIXP (hosted by KDDI)
+%pause
+		PAIX (ISC)
+%pause
+		Again, thanks to WIDE and PAIX for hosting these
+%pause
+		We need US East Coast and European locations (Hosts welcome!)
+
+%pause
+	Prefix to ASN and AS_PATH zones
+%pause
+		asn.routeviews.org and aspath.routeviews.org
+
+
+%pause
+	Database front ends
+%pause
+		This is in primordial state
+%pause
+		Input on what would be useful would be greatly appreciated		
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Prefix to AS/AS_PATH zones
+
+
+%xfont "utopia-medium-r", fore "white", size 3
+[dmm@wayback:~] 6%  dig TXT 223.128.asn.routeviews.org
+
+; <<>> DiG 9.2.1 <<>> TXT 223.128.asn.routeviews.org
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26027
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;223.128.asn.routeviews.org.	  IN	TXT
+
+;; ANSWER SECTION:
+223.128.asn.routeviews.org. 86400 IN	TXT	"3582" "128.223.0.0" "16"
+
+;; AUTHORITY SECTION:
+asn.routeviews.org.	86400	  IN	NS	routeviews.org.
+
+;; ADDITIONAL SECTION:
+routeviews.org.		86400	  IN	A	128.223.162.49
+
+...
+
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Issues/Problems
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+
+	Zebra and MRT data integrity
+%pause
+		Code-base split into Zebra/Quagga
+%pause
+		Is MRT's 1 second granularity sufficient?
+
+%pause
+	eBGP Multi-hop & external events
+%pause
+		Some routers don't do ebgp-multihop well
+%pause
+		multi-hop also makes it difficult to study events in the multi-hop path
+%pause
+		So we're trying to reduce ebgp-multihop scenarios
+
+%pause
+	And of course, the perennial
+%pause
+		Archival data storage 
+%pause
+		Data base front end(s)
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 6
+Aside: Coordination of Routing Data Sources
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	RIPE RIS (www.ripe.net/ris)
+%pause
+		MRT format RIB and UPDATES
+%pause
+		some quagga these days (RRC05 at least)
+%pause
+
+	route-views (www.routeviews.org)
+%pause
+		'sh ip bgp' format at 2 hour intervals
+		(older hwb archive on moat.nlanr.net)
+%pause
+		MTR RIB archiving (every 2 hours)
+		MTR UPDATES archiving (every 15 minutes)
+
+%pause
+	PCH (www.pch.net)
+
+%pause
+	Numerous Looking Glasses
+		good list at http://neptune.dti.ad.jp
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 6
+Coordination of Routing Data Sources, cont
+
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Private Listeners/Archives
+
+%pause
+	So there is a lot of BGP data around these days
+
+%pause
+	But...
+%pause
+		What is the quality of this data?
+%pause
+		Note recent Agilent work on this topic
+
+%pause
+	And who is coordinating archival storage
+%pause
+		Would "one-stop shopping" be useful?
+
+%xfont "utopia-medium-r", fore "white", size 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 7
+Questions and/or Comments?
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+
+
+Thanks
+
+
+[The Route-views crew]
+
+
+
+%size 4
+And again, many thanks to Cisco Systems, Juniper Networks, Sprint
+Advanced Technology Labs, and the National Science Foundation for
+their support. We also thank the ISC and WIDE projects for the
+co-location and transit they graciously provide to us.

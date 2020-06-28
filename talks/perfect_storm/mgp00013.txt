@@ -1,0 +1,16 @@
+
+Central Tenet #2
+
+
+Access monopolies cease to exist
+Say, due to the emergence of technologies like WiMAX 
+or just competition in the access
+Truth in advertising: We still don't have a (inexpensive) wireless technology that could deliver 100s (or even 10s) of HDTV channels 
+
+Competition makes it much harder (impossible?) to profitably field policy-based access networks
+Why? Well, consider the cost (OPEX) of running one of these networks 
+and given the complexity, its reliability
+
+And there is no way your SP is going to be able to innovate at the same rate as the *entire Internet*
+Consider the success of AOL or other attempted "walled-garden" providers
+

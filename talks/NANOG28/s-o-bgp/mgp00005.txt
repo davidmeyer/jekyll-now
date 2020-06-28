@@ -1,0 +1,19 @@
+
+So why aren't we deploying a "secure" BGP?
+
+
+Note that there are two works-in-progress 
+sBGP and soBGP
+
+So why aren't either of these being deployed?
+
+Community consensus
+
+Complexity
+But there is a paradox/tradeoff here 
+
+
+
+"Complexity is the enemy of security" -- smb
+
+

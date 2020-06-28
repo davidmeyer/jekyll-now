@@ -1,0 +1,11 @@
+
+A Few Usage Assumptions, cont.
+
+
+Use of BTSH is OPTIONAL, and can be configured on a per-peer/peer-group basis
+
+The router supports a method of classifying traffic destined for the route processor into interesting/control and not-control queues
+
+The peer routers both implement BTSH
+
+

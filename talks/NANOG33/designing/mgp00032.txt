@@ -1,0 +1,9 @@
+
+References
+
+[LUN2004] "A First-Principles Approach to Understanding the Internet's Router-level Topology", SIGCOMM 2004.
+
+[SCOTT] "Making Smart Investments to Reduce Unplanned Downtime", D. Scott, Tactical Guidelines, TG-07-4033,  Gartner Group Research Note, March 1999. 
+
+[TDMOIP] draft-ietf-pwe3-tdmoip-02.txt
+

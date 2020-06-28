@@ -1,0 +1,17 @@
+
+RIB/FIB Growth Rates
+
+
+What is the current growth rate of the BGP RIB/FIB? 
+Is it exponential? Linear? Something else?
+And what are the drivers?
+Is it more specifics/multihoming, or something else?
+
+Are there observable problems related to table size?
+e.g. not enough RP or LC memory? 
+
+If so, what tools are available?
+
+Related: Is AS 'meshiness" growing?
+How about AS number burn rate?
+

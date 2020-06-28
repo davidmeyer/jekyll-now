@@ -1,0 +1,12 @@
+
+IAB Roles: Standards Process Oversight
+
+
+The IAB's role in Standards Process Oversight and Appeal is documented in RFC 2026 (BCP 9). In particular, 
+
+
+The IAB provides oversight of the process used to create Internet Standards
+
+
+The IAB serves as an appeal board for complaints of improper execution of the standards process
+

@@ -1,0 +1,20 @@
+
+Aside: Coordination of Routing Data Sources
+
+
+RIPE RIS (www.ripe.net/ris)
+MRT format RIB and UPDATES
+some quagga these days (RRC05 at least)
+
+route-views (www.routeviews.org)
+'sh ip bgp' format at 2 hour intervals
+(older hwb archive on moat.nlanr.net)
+MTR RIB archiving (every 2 hours)
+MTR UPDATES archiving (every 15 minutes)
+
+PCH (www.pch.net)
+
+Numerous Looking Glasses
+good list at http://neptune.dti.ad.jp
+
+

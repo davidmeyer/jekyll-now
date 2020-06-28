@@ -1,0 +1,14 @@
+
+Example: "The Myth of Five Nines..."
+
+
+Brief Aside: Optimization Considered Harmful 
+
+Why? 
+
+Because optimization introduces complexity and tighter coupling between components and layers
+Not always: "The best code is no code" [Randy]
+Virus evolution argument
+
+The implication here is that trying to squeeze out efficiency past some point only adds complexity, increases system non-linearity, and hence leads to less reliable systems (Law of Diminishing Returns)
+But still, why?

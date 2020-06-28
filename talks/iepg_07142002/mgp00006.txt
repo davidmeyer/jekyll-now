@@ -1,0 +1,16 @@
+
+One Source of Complexity 
+
+
+Where is this complexity coming from?
+Lots of sources. I'll focus on...
+Non-linearity inherent in large systems such as the Internet
+
+Where then is the non-linearity coming from?
+
+Two well-known principles from non-linear systems theory:
+
+Amplification 
+
+Coupling 
+

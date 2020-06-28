@@ -1,0 +1,202 @@
+%include "default.mgp"
+%tab bullet icon arc "black" 40
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 0 0 32 0 0 "white" "#bb6644"
+%nodefault
+%back "royalblue"
+%xfont "utopia-medium-r"
+
+%xfont "utopia-medium-r", size 8, fore "black"
+%center 
+%size 6
+IAB IPv6 Multi-homing BOF
+
+%image "bgp-active-sum.png"
+
+%size 2
+NANOG 35
+Los Angles, CA
+http://www.1-4-5.net/~dmm/talks/NANOG35/nanog35
+%% http://www.1-4-5.net/~dmm/talks/NANOG35/multihoming
+%xfont "utopia-medium-r", size 4, fore "black"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad
+
+%xfont "utopia-medium-r", fore "white", size 8
+Agenda
+
+%xfont "utopia-medium-r", fore "white", size 5
+
+%size 4
+	Goals and Objectives
+%size 3
+		Meyer/All (5 minutes)
+
+%size 4
+	What is the IAB anyway?
+%size 3
+		Meyer (10 minutes)
+
+%size 4
+	Organized Input 
+%size 3
+		SHIM6 Context 
+%size 2
+			Huston (10 minutes)
+%size 3
+		Service Provider Perspectives
+%size 2
+			Jason Schiller (MCI) (7 minutes)
+%size 2
+			Ted Seely (Sprint)  (7 minutes)
+%size 2
+			Vijay Gill (AOL) (7 minutes)
+
+%size 4
+	Community Input and Discussion
+%size 3
+		All (45 minutes)
+
+%size 4
+	Wrap Up and Next Steps 
+%size 3
+		Meyer/All (10 minutes)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Goals and Objectives
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	The Objective of this BOF is two-fold
+
+%pause
+		To provide context for the ongoing discussion of the evolution of technical aspects multi-homing in the Internet
+%pause
+			And of course, its consequences
+
+%pause
+		Provide additional opportunity for the operational community to provide feedback to the IETF on the direction the IETF is taking with respect to multi-homing in IPv6
+
+%pause
+	Finally, note that while this session is a bit of an experiment, the Best Way to get your input into the IETF is to participate in the IETF WGs
+%pause
+		In this case, the shim6 WG
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Desired Outcomes
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	The beginning of an ongoing dialog
+
+%pause
+		For the operator community
+%pause
+			Awareness about the shim6 effort
+%pause
+			And how you can get involved with efforts in the IETF
+
+%pause
+		For the IETF community
+%pause
+			Awareness about operator concerns
+
+%pause
+	In general, we are seeking input on possible operational issues with the emerging shim6 spec
+%pause
+		And realizing that...
+%pause
+			shim6 is not the complete answer
+%pause
+			nor is a "pure" PI or PA allocation policy
+%pause
+		And...there are operational aspects of shim6 multi-homing are TDB
+%pause
+			e.g., traffic engineering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Rules of Engagement
+%xfont "utopia-medium-r", fore "white", size 5
+
+%pause
+	First and foremost,  we're here to listen to your comments and concerns
+
+%pause
+	Second, let's make sure we keep the information flow going in a bi-directional fashion
+
+%pause
+	During our discussions, please remember that 
+%pause
+		IPv6 is being deployed
+%pause
+			so the multi-homing problem for IPv6 must be solved
+%pause
+		shim6 is about IPv6 
+			as opposed to IPv4 or other (future) version of IP
+%pause
+		shim6 may not solve all needs for multi-homing in IPv6
+%pause
+			rather, shim6 is designed to address the site multi-homing problem
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+With that brief introduction...
+%xfont "utopia-medium-r", fore "white", size 6
+
+
+%pause
+	To join the shim6 mailing list:
+		To Subscribe:	shim6-request@psg.com
+		Archive:	http://ops.ietf.org/lists/shim6/
+		General Discussion:	shim6@psg.com
+
+
+
+%pause
+	On to Geoff to set the shim6 context
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%bgrad 
+
+%xfont "utopia-medium-r", fore "white", size 8
+Wrap Up and Next Steps
+%xfont "utopia-medium-r", fore "white", size 6
+
+%pause
+	Was discussion useful?
+%pause
+		And how could this kind of thing be made more useful?
+
+
+%pause
+	Was this a good forum?
+		Noting that we're hoping to do this at the other NOGs
+
+
+%pause
+	Summary/minutes will be posted on:
+
+
+%pause
+	http://utgard.ietf.org/iab/documents/open-mtgs
+
+
+%%  LocalWords:  bgrad nodefault xfont timeline NANOG Seely IETF CLNS Internt IPng
+%%  LocalWords:  CIDR ietf Deering Locator Identifer locator CLNP Rekhter's
+%%  LocalWords:  royalblue Vijay NOGs

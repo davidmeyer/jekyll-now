@@ -1,0 +1,8 @@
+
+Robust yet Fragile Systems? 
+
+
+Basically, a system needs some degree of complexity (design) to achieve robustness, but it does so at increasing sensitivity to (hopefully) rare events
+
+However, while a system's robustness is bounded, its complexity is not. That is, the robustness-complexity distribution is heavy-tailed. 
+

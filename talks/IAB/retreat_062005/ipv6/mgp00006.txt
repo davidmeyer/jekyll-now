@@ -1,0 +1,18 @@
+
+What has IPv6 "LAS" Solved?
+
+
+Clearly IPv6 *can* solve the IPv4 address shortage issue
+128 bits are a bunch
+
+So what's the problem?
+
+Well, to choose a few central topics...
+
+Scaling of the routing system
+
+Locator/Identifier Split
+
+Allocation Policies
+
+

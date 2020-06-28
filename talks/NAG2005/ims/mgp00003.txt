@@ -1,0 +1,13 @@
+
+Goals and Objectives
+
+The objective of this session is to raise awareness about IMS, and describe its high-level architecture and implications for the design and operation of carrier networks 
+As opposed to a tutorial on IMS
+
+These slides:
+http://www.1-4-5.net/~dmm/talks/NAG2005/ims
+
+Please feel free to contact me for more detail
+
+
+

@@ -1,0 +1,17 @@
+
+Ok, so what exactly is the TPS?
+
+
+TPS is deeply multi-disciplinary
+Involves economics, public policy, and the Internet technology
+
+TPS is based on the Internet Architecture
+In particular, the end-to-end (e2e) principle 
+We can argue (like everyone else) about what the e2e principle actually states...
+http://users.exis.net/~jnc/tech/end_end.html
+
+Key observation:
+e2e principle ==> IP packet carriage is a commodity business
+
+TPS is based on three central tenets
+

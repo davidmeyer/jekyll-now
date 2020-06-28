@@ -1,0 +1,41 @@
+
+Panel Abstract: Trends in Measurement and Monitoring of Internet Backbones
+
+David Meyer		Sprint and UO, moderator
+Chris Martin		Verizion
+Christophe Diot		Sprintlabs
+Jennifer Rexford	ATT Research
+Mujhaid Khan		Sprint
+Tony Tauber		Genuity
+
+
+	Backbone operator are facing new requirements for
+	backbone data collection and analysis. New services such 
+	as VPN and CoS based services, as well as various
+	security concerns, all contribute to new demands on
+	monitoring, measurement, and analysis infrastructures.
+	Combined with the desire for increasingly fine-grained
+	analysis of both Operational Expenditures (OPEX) and
+	Capital Expenditures (CAPEX), have served to put a new
+	importance and urgency on operator's ability to measure
+	and monitor its traffic. 
+
+	This panel will explore the operational uses of
+	measurement and monitoring in production Internet
+	backbones. Questions include what kind of data is
+	required (and how might we collect and analyze it) in
+	order to acilitate functions such as:
+
+	 o Traffic Engineering
+	 o Performance and SLA Verification
+	 o DOS Detection and Mitigation
+	 o Forecasting and capacity planning
+
+	In addition, the panel will consider:
+
+	 o Sampling vs. Accounting: Requirements and methods
+	 o Convergence: IGP and EGP Routing Analysis
+	 o Operator's Wish List: What is missing from routers?
+	 o Overview of standards activities: PSAMP Update
+
+

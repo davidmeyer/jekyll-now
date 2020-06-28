@@ -1,0 +1,16 @@
+
+So...I'll Start with a Few Observations
+
+
+On complexity
+What is it, how does it arise, what can/should we do about it?
+BTW, I started studying Internet complexity (at least formally) when I was at Sprint
+And my SVP said to me: "OK, if IP is so much simpler, why is the OPEX lower on both the FR and ATM platforms?"
+Somewhat surprisingly, there as very little work that had been done the area of the comparative complexity of circuit switched and packet switched networks
+
+On how complexity interacts with our technology
+
+In particular, how complexity interacts with the Internet Architecture and
+The economics of (IP) packet carriage, and
+Public policy
+

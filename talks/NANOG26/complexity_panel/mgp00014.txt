@@ -1,0 +1,12 @@
+
+Aside: Horizontal vs. Vertical Coupling
+
+
+Much of the non-linearity observed in large systems is due to coupling
+
+This coupling has both  horizontal and vertical components 
+
+In the context of networking, horizontal couping is exhibited within the same protocol layer, while vertical coupling occurs between layers 
+
+"Layering Considered Harmful"
+

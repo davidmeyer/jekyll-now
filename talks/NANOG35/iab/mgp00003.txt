@@ -1,0 +1,11 @@
+
+IAB Roles: IESG Appointment, RFC Series 
+
+
+IESG Appointment [BCP 10]
+The NOMCOM annually provides a list of candidates for vacant IESG seats and for the IETF Chair if vacant (if is to become vacant). The IAB reviews the candidates, consenting to some, all, or none.
+
+RFC Series
+The IAB approves the appointment of an organization to act as RFC Editor and the general policy followed by the RFC Editor
+
+

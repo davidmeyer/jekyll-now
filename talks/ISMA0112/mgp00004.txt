@@ -1,0 +1,15 @@
+
+BGP Data Sources, continued
+
+
+Numerous Looking Glasses
+good list at http://neptune.dti.ad.jp
+
+Private Listeners/Archives
+
+So there is a lot of BGP data around these days
+
+But...
+What is the quality of this data?
+And what models do we have evaluate it?
+
