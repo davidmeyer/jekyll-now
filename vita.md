@@ -327,14 +327,14 @@ Recent Advances in Machine Learning and Their Application to Networking</a>,
 IETF 93</a>, July 19-24, 2015. Prague. Czech Republic
 (<a
 href="https://www.youtube.com/watch?v=uodn7y6iCh4&feature=youtu.be">video
-here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here).</li>
+here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here). </li>
 <p>
 
 <li>
 <a href="https://www.youtube.com/watch?v=se-X3FStVHg">Kind words
 from Neela Jacques at the closing of the ODL summit</a>, <a
 href="http://events.linuxfoundation.org/events/opendaylight-summit">Open
-Daylight Summit</a>, July 27-31, 2015.</li>
+Daylight Summit</a>, July 27-31, 2015. </li>
 <p>
 
 <li><a
@@ -342,7 +342,7 @@ href="../talks/2015/ieee_netsoft_keynote.pptx">
 Keynote: SDN, NFV and Cloud, and Network Automation: The Journey from CLI to
 Machine Intelligence</a>, 
 <a href="http://sites.ieee.org/netsoft/">
-1st IEEE Conference on Network Softwarization (Netsoft 2015)</a>, 13-17 Apr 2015, London, UK.</li>
+1st IEEE Conference on Network Softwarization (Netsoft 2015)</a>, 13-17 Apr 2015, London, UK. </li>
 <p>
 
 <li><a
@@ -350,7 +350,7 @@ href="../talks/2015/openstack_austin.pdf">
 Introduction to OpenDaylight: Current Events and OpenStack
 Neutron Integration</a>, 
 <a href="http://www.meetup.com/OpenStack-Austin/events/218911185/">
-Openstack Meetup</a>, 18 Mar 2015, Austin, TX.</li>
+Openstack Meetup</a>, 18 Mar 2015, Austin, TX. </li>
 <p>
 
 <li><a
@@ -358,7 +358,7 @@ href="../talks/2015/MWC/mwc2015.pptx">
 A (Very) Brief Introduction to Machine Learning and its
 Application to Mobile Networks</a>,
 <a href="http://www.mobileworldcongress.com/">
-Mobile World Congress</a>, 02-05 Mar 2015, Barcelona, Spain.</li>
+Mobile World Congress</a>, 02-05 Mar 2015, Barcelona, Spain. </li>
 <p>
 
 <li><a
@@ -374,7 +374,7 @@ Next Steps for the Path Computation Element Workshop
 href="../talks/2015/ons-accelerate.pdf">
 OpenDaylight, OpenSource, and Why OSS is Important</a>,
 <a href="http://www.opennetsummit.org/ons-accelerate-feb15.php">
-ONS Accelerate! Workshop</a>, 10 Feb 2015.</li>
+ONS Accelerate! Workshop</a>, 10 Feb 2015. </li>
 <p>
 
 <li><a
@@ -388,7 +388,7 @@ Technology Exchange</a>, Oct 26-30, 2014.</li>
 href="../talks/nfd8.pptx">
 Software Defined Intelligence (slides)</a>, <a
 href="http://techfieldday.com/appearance/brocade-presents-at-networking-field-day-8/">
-Networking Field Day 8 (video)</a>, 11 Sep 2014.</li>
+Networking Field Day 8 (video)</a>, 11 Sep 2014. </li>
 <p>
 
 <li><a
@@ -438,7 +438,7 @@ href="talks/nanog61.pptx">
 Keynote: On the Hidden Nature of Complex Systems
 (Macro Trends, Architecture, Nets, Grids, Bugs, Brains, and the
 Meaning of Life)</a>,  <a href="https://www.nanog.org/meetings/nanog61/home">
-NANOG 61</a>, Bellveue, WA, June 2014.</li> 
+NANOG 61</a>, Bellveue, WA, June 2014. </li> 
 <p>
 
 <li><a 
@@ -446,14 +446,15 @@ href="talks/openstack_atl_2014.pdf">
 Introduction to OpenDaylight and Hydrogen, Learnings from the
 Year, and What's Next for OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
-OpenStack Summit Atlanta 2014</a>.</li>
+OpenStack Summit Atlanta 2014</a>. </li>
 <p>
 
 <li><a 
 href="talks/openstack_and_odl_atlanta.pdf">
 Using OpenStack With OpenDaylight</a>
 <a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">
-OpenStack Summit Atlanta 2014</a>.</li>
+
+OpenStack Summit Atlanta 2014</a>. </li>
 <p>
 
 <li><a 
@@ -936,7 +937,7 @@ draft-barkai-lisp-nfv-04.txt.</a></li>
 <li>Barkai, S., R. Katz, D. Farinacci, and D. Meyer, <i><a href="http://conferences.sigcomm.org/sigcomm/2013/papers/hotsdn/p149.pdf">Software
 Defined Flow-Mapping for Scaling Virtualized Network Functions</i>, <a
 href="http://conferences.sigcomm.org/sigcomm/2013/hotsdn.php">SIGCOMM
-HotSDN 2013</a>, Hong Kong, China.</li>
+HotSDN 2013</a>, Hong Kong, China. </li>
 <p>
 	
 <li>Kumaki, K., P. Mohapatra and D. Meyer, <i>A Virtualized Network
@@ -1164,13 +1165,13 @@ draft-ietf-grow-rift-01.txt</a> (expired).</li>
 	
 <li> <a href="../talks/LCN95.pdf">Moving
 Towards ATM: LAN/WAN Evolution and Experimentation at the
-University of Oregon </a></i>, Foldvik, Randolph, and David 
+University of Oregon </a> </i>, Foldvik, Randolph, and David 
 Meyer, 20th Annual Conference on Local Computer Networks:,
-Minneapolis, Minnesota, Oct. 1995.</li>  
+Minneapolis, Minnesota, Oct. 1995. </li>  
 <p>
 	
 <li> <a href="../talks/icc95.pdf"> 
-ATM Network Experimentation in the State of Oregon</a></i>,
+ATM Network Experimentation in the State of Oregon </a> </i>,
 Foldvik, Randolph, Meyer, David, and Doug Taylor, IEEE
 International Conference on Communications, Seattle, WA. June
 1995.</li>
