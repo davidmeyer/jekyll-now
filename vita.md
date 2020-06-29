@@ -222,7 +222,7 @@ Recent Advances in Machine Learning and Their Application to Networking </a>,
 </a>
 <a href="http://www.ancsconf.org/">
 ACM/IEEE Symposium on Architectures for Networking and
-Communications Systems</a>, 
+Communications Systems </a>, 
 18-19 May  2017, 
 Beijing, China. </li>
 <p>
