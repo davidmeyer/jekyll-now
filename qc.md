@@ -36,4 +36,10 @@ Quantum Teleportation
 <br>
 <li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment
 
+<br>
+<hr>
+<i>Last Update: 2020.06.29 by dmm@1-4-5.net
+
+
+
 
