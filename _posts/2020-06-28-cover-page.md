@@ -7,3 +7,17 @@ title: Under Construction
 
 Testing LaTeX: $$e^{i\pi} + 1 = 0$$
 
+$$
+\begin{equation*}
+\begin{array}{lllll}
+e^{i\phi}
+&=&                   \cos \phi + i \sin \phi                    &\quad  \mathrel{\#} \text{Euler's Formula}                            \\
+&\Rightarrow&  e^{i\pi} = \cos \pi + i \sin \pi          &\quad  \mathrel{\#} \text{set $\phi = \pi$}                              \\
+&\Rightarrow&  e^{i\pi} = -1 + i \cdot 0                  &\quad  \mathrel{\#} \text{$\cos \pi = -1$ and $\sin \pi = 0$}  \\
+&\Rightarrow&  e^{i\pi} = -1 + 0                            &\quad  \mathrel{\#} i \cdot 0 = 0                                            \\
+&\Rightarrow&  e^{i\pi} = -1                                  &\quad  \mathrel{\#} \text{simplify}                                          \\
+&\Rightarrow&  e^{i\pi} +1 = 0                              &\quad  \mathrel{\#} \text{Euler's Identity} 
+\end{array}
+\end{equation*}
+$$
+
