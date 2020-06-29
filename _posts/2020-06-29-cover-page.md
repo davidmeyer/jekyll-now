@@ -11,7 +11,9 @@ tags: [productivity]
 
 This is a test.
 
-<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" width="128;" height="128;" />
+<kbd>
+<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" width="256;" height="256;" />
+</kbd>
 
 $$
 \begin{equation*}
