@@ -77,7 +77,7 @@ SIGCOMM 2017 Industrial Demos</a> (Present).</li>
 <li>Chair, <a
 href="http://www.opendaylight.org/project/governance">Open
 Daylight Board of Directors</a>, <a
-href="http://www.opendaylight.org"/>The Open Daylight Project</a>
+href="http://www.opendaylight.org"/>The Open Daylight Project </a>
 (July 2014 - July 2015).</li>
 <p>
 <li>Chair, <a
