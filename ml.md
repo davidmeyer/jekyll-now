@@ -51,6 +51,8 @@ href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html">KDDCUP99
 data set </a>
 
 <br>
+<br>
+<br>
 <hr>
 <i>Last Update: 2020.06.29 by dmm@1-4-5.net
 
