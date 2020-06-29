@@ -41,17 +41,17 @@ href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - Jul 2017).
 href="http://www.brocade.com">Brocade Communications</a>, (Oct 2012 - Nov 2015).</li>
 <p>
 <li>Senior Research Scientist, <a
-href="http://cs.uoregon.edu">University of Oregon Department of Computer Science</a>, (Present).</li>
+href="http://cs.uoregon.edu">University of Oregon Department of Computer Science</a>. </li>
 <p>
 <li>Distinguished Engineer, <a
 href="http://www.cisco.com">Cisco Systems</a>, (2001-2012).</li>
 <p>
 <li>Director, <a href="http://antc.uoregon.edu">Advanced
-Network Technology Center</a>, <a href="http://www.uoregon.edu">University of Oregon</a> (Present).</li>
+Network Technology Center</a>, <a href="http://www.uoregon.edu">University of Oregon</a>. </li>
 <p>
 <li>Chair, <a
 href="http://conferences.sigcomm.org/sigcomm/2017/cf-industrial-demos.html">
-SIGCOMM 2017 Industrial Demos</a> (Present).</li>
+SIGCOMM 2017 Industrial Demos</a>. </li>
 <p>
 <li>Chair, <a
 href="http://www.opendaylight.org/project/governance">Open
@@ -95,7 +95,7 @@ SIGCOMM HotSDN Program Committee</a>.</li>
 <p>	
 <li>Member, <a
 href="http://www.ethernetsummit.com/">Ethernet Technology Summit
-Program Committee</a>, (Present).</li>
+Program Committee</a>. </li>
 <p>
 <li>Board Member, <a
 href="http://www.atis.org/topsc/index.asp">ATIS TOPS Council
