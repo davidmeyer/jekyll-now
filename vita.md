@@ -30,24 +30,7 @@ Curriculum Vitae
 <p> 
 	
 <h2>INTERESTS</h2> 
-<li> Machine Learning </li> 
-<li> Artificial General Intelligence (AGI) </li> 
-<li> Quantum Computation </li> 
-<li> Blockchain </li> 
-<li> Nanotech </li> 
-<li> Systems Biology </li> 
-<li> Control and Complexity Theory </li> 
-<li> Software Defined Networking </li> 
-<li> Open Source Software Development and Business Models </li> 
-<li> Programming Languages/Functional Reactive Programming/Domain Specific Programming Languages </li> 
-<li> Inter-domain Routing </li> 
-<li> High Performance Routing, Switching, and Optical Networking </li> 
-<li> Routing Protocol Design and Development </li> 
-<li> IP Business Models for Service Providers </li> 
-<li> Instrumentation, Measurement, and Analysis of the Global Routing System </li> 
-<li> Macro Economics </li> 
-<li> Cosmology </li> 
-<li> Surfing </li> 
+<li> Lots of stuff </li> 
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> </li>
 	
 <h2>EXPERIENCE </h2>
