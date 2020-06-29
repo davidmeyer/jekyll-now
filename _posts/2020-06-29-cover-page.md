@@ -8,7 +8,7 @@ title: test blog
 
 This is a test.
 
-<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" />
+<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" width="48"; height="48" />
 
 $$
 \begin{equation*}
