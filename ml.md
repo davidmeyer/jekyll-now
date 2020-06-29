@@ -10,7 +10,7 @@
 
 
 <h2>
-Random/incomplete thoughts/snippets on various ML topics
+Random/incomplete thoughts on various ML topics
 </h2>
 
 <!-- 
