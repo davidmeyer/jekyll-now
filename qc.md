@@ -12,9 +12,6 @@
 <h2>
 Notes on Various Topics Related to Quantum Theory
 </h2>
-<br>
-
-
 
 <li><a href="./projective_geometry.pdf">A Few Notes on the Projective Geometries (WIP) </a>
 <br>
