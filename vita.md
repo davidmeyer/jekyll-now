@@ -6,14 +6,11 @@
 # 
 #       $Header: /mnt/disk0/dmm/public_html/RCS/vita.html,v 1.306 2017/12/05 18:15:29 dmm Exp $ 
 # 
- 
 --> 
 
 
 <h1>
-<p align="left">
 Curriculum Vitae
-</p> 
 </h1>
 	
 <h2>PERSONAL</h2> 
