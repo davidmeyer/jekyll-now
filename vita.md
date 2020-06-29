@@ -177,7 +177,7 @@ Process and Tools (PROTO) Team </a>, (2003 - 2006).</li>
 <li>Chair, <a
 href="http://www.ietf.org/html.charters/msdp-charter.html">MSDP Working Group (IETF)</a>, (Closed 01.14.2004).</li>
 <p>
-<li>Chair, IP Multicast Directorate</a> (IETF), (2000 - 2001). </li>
+<li>Chair, IP Multicast Directorate </a> (IETF), (2000 - 2001). </li>
 <p>
 <li>Co-Chair, Routing Policy System Working Group (IETF), (1998). </li>
 <p>
@@ -239,9 +239,7 @@ Machine Intelligence and Networking: Challenges, Opportunities and Realities,
 IETF 97 (nmlrg)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="../ml/talks/2016/cor_ml4networking.pdf">pdf </a>). </li>
-<p>
-
+href="../ml/talks/2016/cor_ml4networking.pdf">pdf </a>). 
 <li> <a
 href="../ml/talks/2016/ideas.pptx">
 Anomaly Detection for the IDEAS Mapping System: A Machine
@@ -306,7 +304,7 @@ Recent Advances in Machine Learning and Their Application to Networking</a>,
 IETF 93</a>, July 19-24, 2015. Prague. Czech Republic
 (<a
 href="https://www.youtube.com/watch?v=uodn7y6iCh4&feature=youtu.be">video
-here</a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here). </li>
+here </a>, <a href="http://www.ietf.org/blog/2015/07/ietf-93-summary/">IETF Chair's review here). </li>
 <p>
 
 <li>
@@ -388,8 +386,8 @@ World 2014</a>, Beijing, China (07.02.2014) and Shanghai, China
 href="../talks/interop_tokyo_062014.pdf">
 Keynote: OpenDaylight and the Past, Present and Future of Open
 Source Networking</a>, <a href="http://www.interop.jp/2014/">Interop</a>, 
-Tokyo, Japan. </li>
-<p>
+Tokyo, Japan. 
+
 	
 <li><a
 href="../talks/opendaylight_futures.pdf">OpenDaylight
@@ -1159,7 +1157,7 @@ International Conference on Communications, Seattle, WA. June
 <li> <a href="http://dl.acm.org/citation.cfm?id=87991">Architected
 Failure Handling for AND-Parallel Logic Programs"</a></i>, David
 Meyer and John Conery, Proceedings of the Seventh International
-Conference on Logic Programming, Jerusalem, Israel, 1990.</li>
+Conference on Logic Programming, Jerusalem, Israel, 1990. </li>
 
 <h2>CURRENT AND PREVIOUS GRANTS</h2>
 <p>
@@ -1170,8 +1168,8 @@ NSF 1305218, David Meyer, PI. </li>
 
 <li><a href="http://www.routeviews.org">The Oregon RouteViews
 Project</a>, NSF 03213769, David Meyer, PI. </li>
-<p>
-<li>NetPath </i>, <a
+
+<li>NetPath, <a
 href="http://www.darpa.mil/ato/solicit/ControlPlane">DARPA
 Control Plane Project</a>, UCLA, Colorado State University, and
 the University of Oregon. BAA04-09. See e.g. <a
