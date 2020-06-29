@@ -117,7 +117,7 @@ href="http://www.ietf.org/iesg.html">IESG</a>, (2005/2007).</li>
 <li><a href="http://www.iab.org">IAB</a> Liaison to the <a
 href="http://www.faqs.org/rfcs/rfc3797.html">NOMCOM</a>, (2005/2006).</li>
 <p>
-<li><a href="http://www.iab.org">IAB</a> <a href="http://www.isoc.org">ISOC</a> Technical Communications Committee</a>.</li>
+<li><a href="http://www.iab.org">IAB</a> <a href="http://www.isoc.org">ISOC </a> Technical Communications Committee</a>. </li>
 <p>
 <li><a href="http://www.atis.org/">ATIS IPv6 Task Force </a>, (2005).</li>
 <p>
