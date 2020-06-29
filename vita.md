@@ -62,8 +62,8 @@ href="http://www.opendaylight.org"/>The Open Daylight Project </a>
 <li>Chair, <a
 href="http://www.opendaylight.org/project/governance/tsc">Open
 Daylight Technical Steering Committee (TSC) </a>, <a
-href="http://www.opendaylight.org"/>The Open Daylight Project</a>
-(2012 -2014).</li>
+href="http://www.opendaylight.org"/>The Open Daylight Project </a>
+(2012 -2014). </li>
 <p>
 <li>Board Member, <a href="http://www.opendaylight.org">Open
 Daylight Project</a> (2015-2016).</li>
@@ -79,7 +79,7 @@ Model Coordination Group</a> (2014 - 2016). </li>
 <li>co-Chair, <a
 href="http://irtf.org/ncrg">Network
 Complexity Research Group </a> </a> <a
-href="http://irtf.org/"> (IRTF) </a>, (2014). </li>
+href="http://irtf.org/"> (IRTF), (2014). </li>
 <p>
 <li>Original co-Author, <a
 href="http://lispmob.org/home">Open Source LISP Mobile Node
