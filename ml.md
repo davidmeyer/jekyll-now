@@ -58,7 +58,7 @@ Clustering for Netflow data
 (Spark/MLlib/Scala) on the <a
 href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html">KDDCUP99
 data set </a>
-</ul>
+
 
 <br>
 <br>
