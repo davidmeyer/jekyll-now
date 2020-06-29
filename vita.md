@@ -177,9 +177,9 @@ Process and Tools (PROTO) Team </a>, (2003 - 2006).</li>
 <li>Chair, <a
 href="http://www.ietf.org/html.charters/msdp-charter.html">MSDP Working Group (IETF)</a>, (Closed 01.14.2004).</li>
 <p>
-<li>Chair, IP Multicast Directorate</a> (IETF), (2000 - 2001).</li>
+<li>Chair, IP Multicast Directorate</a> (IETF), (2000 - 2001). </li>
 <p>
-<li>Co-Chair, Routing Policy System Working Group (IETF), (1998).</li>
+<li>Co-Chair, Routing Policy System Working Group (IETF), (1998). </li>
 <p>
 <li>Chair, Internet2 Multicast Working Group, (1998).</li>
 <p>
