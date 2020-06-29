@@ -17,24 +17,19 @@ Curriculum Vitae
 </h1>
 	
 <h2>PERSONAL</h2> 
-<ul>
 <li>Mobile:  +1.541.221.1843</li>
 <li>Email:   <a href="mailto:dmm@1-4-5.net">dmm@1-4-5.net</a></li>
 <li>Email:   <a href="mailto:dmm@uoregon.edu">dmm@uoregon.edu</a></li>
 <li>Vita:    <a href="https://davidmeyer.github.io/vita">https://davidmeyer.github.io/vita</a></li>
-</ul>
 
 <p>
 	
 <h2>EDUCATION</h2>
-<ul>
    <li> B.S. University of Oregon, Biology (with Honors,  Phi Beta Kappa, minor  concentration in statistics), June, 1981. </li>
    <li> M.S. University of Oregon, Computer and Information Science (4.0/4.0), December,1984. Tektronix Research Fellow, 1986-1987. </li>
-</ul>
 <p> 
 	
 <h2>INTERESTS</h2> 
-<ul> 
 <li> Machine Learning </li> 
 <li> Artificial General Intelligence (AGI) </li> 
 <li> Quantum Computation </li> 
@@ -54,10 +49,8 @@ Curriculum Vitae
 <li> Cosmology </li> 
 <li> Surfing </li> 
 <li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> </li>
-</ul>
 	
 <h2>EXPERIENCE </h2>
-<ul>
 <li>Chief Scientist,  <a
 href="http://www.noahlab.com.hk">Huawei Future Network Theory
 Laboratory</a>,  (Oct 2017 - Oct 2018).</li>
@@ -234,10 +227,8 @@ Continuation Center, (January, 1991 - June, 1995).</li>
 <li>Systems Programmer/Administrator, Department of
 Computer and Information Science, University of Oregon, Eugene
 (September, 1983 - August, 1984). </li>
-</ul>
 
 <h2>Recent Talks</h2>
-<ul>
 <li><a href="../qc">Thoughts on Various Topics Related to Quantum Computing</a>, WIP. Last update: 30 Oct 2016.</li>
 <P>
 
@@ -804,11 +795,9 @@ Track, Moderator</a>. NANOG 23, 21 Oct - 23 Oct 2001.  Please  see
 	
 <li><a href="../talks/ISMA0112"> Route Views Update</a>. Winter ISMA 2001. Please see also <a
 href="http://www.caida.org/outreach/isma">http://www.caida.org/outreach/isma</a>.</li>
-</ul>
 
 
 <h2>Recent Blogs and the like</h2>
-<ul>
 <li>
 <a href="http://packetpushers.net/podcast/podcasts/pq-show-107-applicability-machine-learning-networking/">The
 Applicability Of Machine Learning To Networking</a>,
@@ -891,12 +880,10 @@ href="http://www.opendaylight.org/">The OpenDaylight Project</a>.</li>
 	
 <li><a href="http://www.opendaylight.org/blogs/2013/06/rapid-innovation-open-source-sdn-opendaylight-hackfest">
 Rapid Innovation of Open Source SDN At The Opendaylight Hackfest</a>.</li>
-</ul>
 
 <p>
 <h2>Recent Publications</h2>
 
-<ul>
 <li> Meyer RFC Overview, <a
 href="http://www.arkko.com/tools/allstats/davidmeyer.html">http://www.arkko.com/tools/allstats/davidmeyer.html.</a></li>
 
@@ -1193,11 +1180,9 @@ International Conference on Communications, Seattle, WA. June
 Failure Handling for AND-Parallel Logic Programs"</a></i>, David
 Meyer and John Conery, Proceedings of the Seventh International
 Conference on Logic Programming, Jerusalem, Israel, 1990.</li>
-</ul>
 
 <h2>CURRENT AND PREVIOUS GRANTS</h2>
 <p>
-<ul>
 <li> <a href="http://www.routeviews.org">Collaborative Research:
 CI-ADDO-EN: Making Internet Routing Data Accessible To All</a>,
 NSF 1305218, David Meyer, PI. </li>
@@ -1220,7 +1205,6 @@ Forensics -- A Framework for Understanding, Monitoring and Detecting Abnormal BG
 <p>
 <br>
 <hr>
-<i>Last Update: 2017.12.05 by <a href=mailto:dmm@1-4-5.net>dmm@1-4-5.net</a>
-</i>
+<i>Last Update: 2017.12.05 by dmm@1-4-5.net
 
 
