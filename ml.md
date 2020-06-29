@@ -30,18 +30,16 @@ and the log derivative trick for reinforcement learning (under construction)
 maximizing likelihood is the same thing as finding a low energy state...
 <li><a href="./seq2seq.pdf">A bit on sequence to sequence learning (e.g Google Inbox smart reply)</a>
 
+
 <h2>Code Snippets</h2>
-<ul>
 <li><a
 href="https://github.com/davidmeyer/ml/tree/master/tensorflow">VariationalAutoencoder</a>
 (VAE) and other examples written in tensorflow. An example
 reconstruction of MNIST digits by the VAE is shown below.
 <a href="https://github.com/davidmeyer/ml/blob/master/tensorflow/variational_autoencoder.ipynb"><img src="./images/training_epochs.png" style="width:300px;height:250px;"></a>.
-
 <li><a href="code/lr.py">lr.py: </a>Very simple linear regression in
 tensorflow (made up dataset)
 <img src="./images/lr.png" style="width:350px;height:250px;">
-
 
 <li><a href="code/k-prototypes.py">k-prototypes.py:</a> Categorical
 Clustering for Netflow data
@@ -52,8 +50,5 @@ Clustering for Netflow data
 href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html">KDDCUP99
 data set </a>
 
-
-<br>
-<br>
 
 
