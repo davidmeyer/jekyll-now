@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Test 
+comments: true
+category: tools
+tags: [productivity]
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -8,7 +11,7 @@ title: Test
 
 This is a test.
 
-<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" width="96;" height="96;" />
+<img src="{{site.url}}/images/taylor_series_approximation.png" style="display: block; margin: auto;" width="128;" height="128;" />
 
 $$
 \begin{equation*}
