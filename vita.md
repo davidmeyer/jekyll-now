@@ -31,7 +31,6 @@ Curriculum Vitae
 	
 <h2>INTERESTS</h2> 
 <li> Lots of stuff </li> 
-<li> <a href="http://en.wikipedia.org/wiki/Antikythera_mechanism">The Antikythera Mechanism</a> </li>
 	
 <h2>EXPERIENCE </h2>
 <li>Chief Scientist,  <a
@@ -78,12 +77,12 @@ Research Group </a> <a href="http://irtf.org/">(IRTF)</a>, (2013 - 2016).</li>
 <p>
 <li>Member, <a
 href="https://www.ietf.org/mailman/listinfo/yang-coord">IETF YANG
-Model Coordination Group</a> </b> (2014 - 2016). </li>
+Model Coordination Group</a> (2014 - 2016). </li>
 <p>
 <li>co-Chair, <a
 href="http://irtf.org/ncrg">Network
 Complexity Research Group </a> </a> <a
-href="http://irtf.org/">(IRTF) </a>, (2014). </li>
+href="http://irtf.org/"> (IRTF) </a>, (2014). </li>
 <p>
 <li>Original co-Author, <a
 href="http://lispmob.org/home">Open Source LISP Mobile Node
@@ -243,7 +242,7 @@ Machine Intelligence and Networking: Challenges, Opportunities and Realities,
 IETF 97 (nmlrg)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="../ml/talks/2016/cor_ml4networking.pdf">pdf</a>). </li>
+href="../ml/talks/2016/cor_ml4networking.pdf">pdf </a>). </li>
 <p>
 
 <li> <a
@@ -254,7 +253,7 @@ Learning Approach,
 IETF 97 (IDEAS)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="../ml/talks/2016/ideas.pdf">pdf </a>). </li>
+href="../ml/talks/2016/ideas.pdf">pdf </a>). 
 <p>
 
 <li> <a
