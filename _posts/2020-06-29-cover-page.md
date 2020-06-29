@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test 
+title: Test Post
 comments: true
 category: tools
 tags: [productivity]
