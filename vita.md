@@ -239,13 +239,13 @@ Last update: 29 Jun 2020. </li>
 
 <li> <a
 href="../ml/talks/2017/ancs2017.pptx">
-Recent Advances in Machine Learning and Their Application to Networking</a>,
+Recent Advances in Machine Learning and Their Application to Networking </a>,
 </a>
 <a href="http://www.ancsconf.org/">
 ACM/IEEE Symposium on Architectures for Networking and
 Communications Systems</a>, 
 18-19 May  2017, 
-Beijing, China.</li>
+Beijing, China. </li>
 <p>
 
 <li> <a href="../ml/talks/2017/ons.pptx"> Going Beyond Siri: Applying Machine Learning to Network
@@ -260,7 +260,7 @@ Machine Intelligence and Networking: Challenges, Opportunities and Realities,
 IETF 97 (nmlrg)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="../ml/talks/2016/cor_ml4networking.pdf">pdf</a>).</li>
+href="../ml/talks/2016/cor_ml4networking.pdf">pdf</a>). </li>
 <p>
 
 <li> <a
@@ -271,7 +271,7 @@ Learning Approach,
 IETF 97 (IDEAS)</a>, 
 13-18 Nov 2016, 
 Seoul, Republic of Korea (<a
-href="../ml/talks/2016/ideas.pdf">pdf</a>). </li>
+href="../ml/talks/2016/ideas.pdf">pdf </a>). </li>
 <p>
 
 <li> <a
