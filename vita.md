@@ -76,13 +76,13 @@ SIGCOMM 2017 Industrial Demos</a> (Present).</li>
 <p>
 <li>Chair, <a
 href="http://www.opendaylight.org/project/governance">Open
-Daylight Board of Directors</a>, <a
+Daylight Board of Directors </a>, <a
 href="http://www.opendaylight.org"/>The Open Daylight Project </a>
 (July 2014 - July 2015).</li>
 <p>
 <li>Chair, <a
 href="http://www.opendaylight.org/project/governance/tsc">Open
-Daylight Technical Steering Committee (TSC)</a>, <a
+Daylight Technical Steering Committee (TSC) </a>, <a
 href="http://www.opendaylight.org"/>The Open Daylight Project</a>
 (2012 -2014).</li>
 <p>
@@ -95,12 +95,12 @@ Research Group </a> <a href="http://irtf.org/">(IRTF)</a>, (2013 - 2016).</li>
 <p>
 <li>Member, <a
 href="https://www.ietf.org/mailman/listinfo/yang-coord">IETF YANG
-Model Coordination Group</a></b> (2014 - 2016). </li>
+Model Coordination Group</a> </b> (2014 - 2016). </li>
 <p>
 <li>co-Chair, <a
 href="http://irtf.org/ncrg">Network
 Complexity Research Group </a> </a> <a
-href="http://irtf.org/">(IRTF)</a>, (2014). </li>
+href="http://irtf.org/">(IRTF) </a>, (2014). </li>
 <p>
 <li>Original co-Author, <a
 href="http://lispmob.org/home">Open Source LISP Mobile Node
