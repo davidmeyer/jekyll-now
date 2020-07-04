@@ -13,6 +13,7 @@
 Random/incomplete thoughts on various ML topics
 </h2>
 
+<li><a href="./fisher.pdf">A Few Notes on Fisher Information (WIP)
 <li><a href="./algorithmic_markov_condition.pdf">Some Notes on Kolmogorov Complexity, the Algorithmic Markov Condition, and Causality
 <li><a href="./dags_causality_and_bias.pdf">Causal Graphs and Sources of Bias
 <li><a href="./trpo.pdf">Notes on Policy Gradients (Trust Region Policy Optimization, under construction)
