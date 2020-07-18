@@ -34,7 +34,8 @@ Quantum Teleportation
 <br>
 <li><a href="./bloch_sphere.pdf">Notes on the Bloch Sphere
 <br>
-<li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment <\a>
+<li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment </li>
+
 
 
 <br>
