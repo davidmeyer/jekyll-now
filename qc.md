@@ -10,7 +10,7 @@
 -->
 
 <h2>
-Notes on Various Topics Related to Quantum Theory
+Notes on Various Mathematical Topics
 </h2>
 
 <li><a href="./projective_geometry.pdf">A Few Notes on the Projective Geometries (WIP) </a>
