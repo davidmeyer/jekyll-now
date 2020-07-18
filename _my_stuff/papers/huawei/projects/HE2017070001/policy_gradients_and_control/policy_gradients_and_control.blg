@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: policy_gradients_and_control.aux
+The style file: ieeetr.bst
+Database file #1: /Users/dmm/papers/bib/ml.bib
+Name 1 in "Sutton, Richard S., and Andrew G. Barto." has a comma at the end for entry SuttonBook
+while executing---line 969 of file ieeetr.bst
+Warning--empty booktitle in Barto:1990:NAE:104134.104143
+You've used 22 entries,
+            1876 wiz_defined-function locations,
+            618 strings with 8002 characters,
+and the built_in function-call counts, 5665 in all, are:
+= -- 504
+> -- 294
+< -- 0
++ -- 106
+- -- 84
+* -- 451
+:= -- 849
+add.period$ -- 24
+call.type$ -- 22
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 268
+empty$ -- 535
+format.name$ -- 84
+if$ -- 1333
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 71
+num.names$ -- 24
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 162
+stack$ -- 0
+substring$ -- 318
+swap$ -- 89
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 49
+width$ -- 24
+write$ -- 203
+(There was 1 error message)

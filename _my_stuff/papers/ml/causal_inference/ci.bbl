@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{Pearl:2009:CMR:1642718}
+J.~Pearl, {\em Causality: Models, Reasoning and Inference}.
+\newblock New York, NY, USA: Cambridge University Press, 2nd~ed., 2009.
+
+\bibitem{2015arXiv150101332P}
+J.~{Peters}, P.~{B{\"u}hlmann}, and N.~{Meinshausen}, ``{Causal inference using
+  invariant prediction: identification and confidence intervals},'' {\em ArXiv
+  e-prints}, Jan. 2015.
+
+\bibitem{wright1921}
+S.~Wright, ``Correlation and causation,'' {\em Journal of Agricultural
+  Research}, 1921.
+
+\bibitem{2017arXiv170608576H}
+C.~{Heinze-Deml}, J.~{Peters}, and N.~{Meinshausen}, ``{Invariant Causal
+  Prediction for Nonlinear Models},'' {\em ArXiv e-prints}, June 2017.
+
+\bibitem{doi:10.1146/annurev-soc-071913-043455}
+F.~Elwert and C.~Winship, ``Endogenous selection bias: The problem of
+  conditioning on a collider variable,'' {\em Annual Review of Sociology},
+  vol.~40, no.~1, pp.~31--53, 2014.
+
+\end{thebibliography}

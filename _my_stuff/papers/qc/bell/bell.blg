@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bell.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/qc.bib
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            533 strings with 5043 characters,
+and the built_in function-call counts, 1653 in all, are:
+= -- 157
+> -- 74
+< -- 0
++ -- 30
+- -- 24
+* -- 101
+:= -- 294
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 56
+empty$ -- 135
+format.name$ -- 24
+if$ -- 338
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 4
+newline$ -- 34
+num.names$ -- 12
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 42
+stack$ -- 0
+substring$ -- 84
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 14
+width$ -- 7
+write$ -- 66

@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tableless.aux
+The style file: ieeetr.bst
+Database file #1: /Users/dmm/papers/huawei/bib/huawei.bib.bib
+You've used 12 entries,
+            1876 wiz_defined-function locations,
+            562 strings with 5607 characters,
+and the built_in function-call counts, 2799 in all, are:
+= -- 265
+> -- 123
+< -- 0
++ -- 46
+- -- 34
+* -- 209
+:= -- 411
+add.period$ -- 12
+call.type$ -- 12
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 125
+empty$ -- 267
+format.name$ -- 34
+if$ -- 666
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 8
+newline$ -- 39
+num.names$ -- 12
+pop$ -- 44
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 99
+stack$ -- 0
+substring$ -- 160
+swap$ -- 48
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 27
+width$ -- 14
+write$ -- 107

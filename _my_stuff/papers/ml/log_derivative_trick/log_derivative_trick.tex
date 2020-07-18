@@ -1,0 +1,202 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+ % \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage{bigints}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{Notes on policy gradients and the log derivative trick for reinforcement learning}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
+\date{February 18, 2014}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\noindent
+The \emph{log derivative trick}\footnote{http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick} is a widely used identity that allows us to find various gradients required for policy learning.  For policy-based reinforcement learning, we directly parameterize the policy. In value-based learning, we imagine we have value function approximator (either state-value or action-value) parameterized by $\theta$:
+
+\begin{flalign}
+V_\theta(s) & \approx V^\pi(s) \qquad \qquad \qquad  \; \; \;   \mathbin{\#} \text{state-value approximation}\\
+Q_\theta(s,a) & \approx Q^\pi(s,a) \qquad \qquad  \; \;  \; \; \; \; \; \mathbin{\#} \text{action-value approximation}
+\end{flalign}
+
+\bigskip
+\noindent
+Here our goal is to directly parameterize the policy (i.e., \emph{model-free reinforcement learning}):
+\begin{flalign}
+\pi_\theta(s,a) & = \mathbb{P}[a | s, \theta] \qquad \qquad   \mathbin{\#} \text{parameterized policy}
+\end{flalign}
+
+\bigskip
+\noindent
+\section{Policy Objective Functions}
+
+There are three basic policy objective functions, each of which has the goal of given a policy $\pi_\theta(s,a)$ with paramters $\theta$,  find the best $\theta$.
+\begin{itemize}
+\item In episodic environments we can use the \emph{start value}: $J_1(\theta) = V^{\pi_\theta}(s_1) = \mathbb{E}_{\pi_\theta}[v_1]$
+\item In continuing environments we can use the \emph{average value}: $J_{aaV}(\theta) = \sum \limits_s^{} d^{\pi_\theta}(s)  V^{\pi_\theta}(s)$
+\item Or we can use the \emph{average reward per time step}: $J_{avR}(\theta) =  \sum \limits_s^{} d^{\pi_\theta}(s)  \sum \limits_a^{} \pi_\theta(s,a) \mathcal{R}_s^a $
+\end{itemize}
+
+\bigskip
+\noindent
+where $d^{\pi_\theta}(s)$ is the \emph{stationary distribution} of a Markov chain for $\pi_\theta$.
+
+\bigskip
+\noindent
+So now we're casting policy based reinforcement learning as an optimization problem (e.g., there is a neural network that we want to learn the policy, e.g., via gradient ascent). Now, let $J(\theta)$ be a \emph{policy objective function}. A policy gradient algorithm searches for a local maximum\footnote{in the case that $J(\theta)$ is \emph{non-convex}.} in $J(\theta)$ by ascending the gradient of the policy with respect to the parameters $\theta$. The update rule for $\theta$ is 
+
+\begin{flalign}
+\theta \leftarrow \theta + \alpha \nabla_{\theta} J(\theta)  
+\end{flalign}
+
+\bigskip
+\noindent
+where $\nabla_{\theta} J(\theta)$ is the \emph{policy gradient} and $\alpha$ is the \emph{learning rate} (sometimes step-size parameter). In particular
+
+\begin{flalign}
+\nabla_{\theta}J(\theta)           & = \begin{pmatrix}  \frac{ \partial J(\theta)}{\partial \theta_{1}}   \\  
+\frac{ \partial J(\theta)}{\partial \theta_{2}}      \\ 
+\vdots \\ 
+ \frac{ \partial J(\theta)}{\partial \theta_{n}}         
+ \end{pmatrix} 
+\end{flalign}
+
+
+\section{Computing the gradient analytically}
+
+First, we assume that the policy $\pi_\theta$ is differentiable wherever it is non-zero (this is a softer requirement than requiring $\pi_\theta$ be differentiable \emph{everywhere}). In addition, we know the gradient: $\nabla_\theta J(\theta)$. In this case, let  $p(\mathbf{x};\theta)$ be the likelihood parametrized by $\theta$ and let $\log p(\mathbf{x}; \theta)$ be the \emph{log likelihood}. Then
+
+
+\begin{flalign*}
+y & = p(\mathbf{x}; \theta) \qquad \qquad \qquad \; \;  \; \; \; \mathbin{\#} \text{definition; see above} \\
+z &= \log y = \log p(\mathbf{x}; \theta)  \qquad  \; \; \mathbin{\#} \text{definition; z is the  log likelihood} \\
+\frac{dz}{d \theta} &= \frac{dz}{dy} \cdot \frac{dy}{d\theta}  \qquad \qquad \quad \; \; \; \; \; \; \; \mathbin{\#} \text{chain rule definition} \\
+\frac{dz}{dy} &=  \frac{1}{p(\mathbf{x};\theta)}  \quad \qquad \qquad \qquad  \:  \mathbin{\#} \frac{\log (X)}{dX} \approx \frac{1}{X} \\
+ \frac{dy}{d\theta} &= \frac{d}{d\theta} \; p(\mathbf{x};\theta) = \nabla_\theta p(\mathbf{x};\theta) \;   \mathbin{\#} \text{definition (chain rule, again)}\\
+\frac{dz}{d \theta} & = \frac{dz}{dy} \cdot \frac{dy}{d\theta} = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)} 
+\quad   \mathbin{\#} \text{chain rule}\\
+&= \nabla_\theta \log p(\mathbf{x};\theta) \qquad \qquad \; \; \mathbin{\#} \text{using the identity }\nabla_{\theta} \log (w) = \frac{1}{w} \nabla_\theta w 
+\end{flalign*}
+
+\bigskip
+\noindent
+and setting $w = p(\mathbf{x};\theta)$. Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometimes the \emph{Fischer} information. So the \emph{log derivative trick} (sometimes \emph{likelihood ratio}) is 
+\begin{align*}
+\nabla_\theta \log p(\mathbf{x};\theta)   = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)}
+\end{align*}
+
+\bigskip
+\noindent
+Setting  $\pi_\theta(s,a) = p(\mathbf{x};\theta)$ we see that
+
+\begin{align*}
+\nabla_\theta \pi_\theta(s,a) &= \pi_\theta(s,a) \frac{\nabla_\theta \; \pi_\theta(s,a)}{\pi_\theta(s,a)} \\
+                                             &= \pi_\theta(s,a)  \nabla_\theta \log \pi_\theta(s,a)    \qquad \qquad \quad \; \; \; \mathbin{\#} \text{log derivative trick}                 
+\end{align*}
+
+\bigskip
+\noindent
+and the score function is $\nabla_\theta \log \pi_\theta(s,a)$.
+ 
+
+\bigskip
+\noindent 
+Another yet similar way to look policy gradients is as follows:\footnote{h/t Andrej  Karpathy http://karpathy.github.io/2016/05/31/rl/}
+First, as Andrej points out policy gradients are a special case of a more general \emph{score function gradient estimator}. Here we have an expectation of the form $\mathrm{E}_{x \sim{p(x|\theta)}} \big[f(x)\big ]$. This is the expectation of a scalar valued function $f(x)$ under some probability distribution $p(x|\theta)$. Here $f(x)$ can be thought of as a \emph{reward function} and $p(x|\theta)$ is the \emph{policy} network. 
+
+\bigskip
+\noindent
+The problem we want to solve is how we should shift the distribution (though its parameters $\theta$) to increase its score as judged by $f$. Since the general gradient decent update rule is 
+
+\begin{flalign}
+\theta \leftarrow \theta + \alpha \nabla_{\theta} J(\theta) 
+\label{eqn:grad_update}
+\end{flalign}
+
+\noindent
+our goal is to find $\nabla_{\theta}E_{x \sim p(x|\theta)}\big[f(x)\big]$ and update $\theta$ in the direction indicated by the gradient. However, what we know is $f$ and $p$. 
+
+\begin{flalign}
+\nabla_{\theta}E_{x \sim p(x|\theta)} \big [f(x)\big] &= \nabla_{\theta} \sum \limits_{x}p(x) f(x) \qquad \qquad    \qquad  \mathbin{\#} \text{defn expectation} \\
+& = \sum \limits_{x} \nabla_{\theta} p(x) f(x) \; \qquad \qquad  \qquad  \mathbin{\#} \text{swap sum and gradient}  \\
+&= \sum \limits_{x}  p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) \; \qquad \qquad  \mathbin{\#} \text{multiply/divide by } p(x) \\
+&=  \sum \limits_{x}  p(x) \nabla_{\theta} \log p(x) f(x) \qquad \quad  \mathbin{\#}  \frac{1}{z} \nabla_{\theta} z = \nabla_{\theta} \log (z)  \\
+&= E_{x \sim p(x|\theta)} \big [ f(x) \nabla_{\theta} \log p(x) \big ] \quad \quad \mathbin{\#} \text{defn expectation again} 
+\end{flalign}
+
+\bigskip
+\noindent
+The basic idea here is that we have some distribution $p(x|\theta)$ which we can sample from,\footnote{for example,  $p(x|\theta)$ could be a Gaussian} and for each sample we evaluate its score $f(x)$; then the gradient 
+
+\begin{flalign}
+\nabla_{\theta}E_{x \sim p(x|\theta)} \big [f(x)\big]  = E_{x \sim p(x|\theta)} \big [ f(x) \nabla_{\theta} \log p(x) \big ]
+\end{flalign}
+
+\bigskip
+\noindent
+is telling us how we should shift the distribution (through its parameters $\theta$) if we wanted its samples to achieve higher scores (as judged by $f$). The second term $\nabla_{\theta} \log p(x)$ is telling us which direction in parameter space would lead to increase of the probability assigned to a given $x$.  That is,  if we were to move $\theta$  in the direction $\nabla_{\theta} \log p(x)$ we would see the new probability assigned to some $x$ slightly increase (see Equation \ref{eqn:grad_update}).
+
+\section{The Policy Gradient Theorem}
+Recall that the the start value policy for episodic environments was
+
+\begin{flalign}
+J_1(\theta) = V^{\pi_\theta}(s_1) =  \mathbb{E}_{\pi_\theta}[v_1] = \sum \limits_{s \in \mathcal{S}} d(s) \sum \limits_{a \in \mathcal{A}} \pi_{\theta}(s,a) \mathcal{R}_{s}^{a}
+\end{flalign}
+
+\bigskip
+\noindent
+and thus
+\begin{flalign}
+\nabla_\theta J(\theta) & = \sum \limits_{s \in \mathcal{S}} d(s) \sum \limits_{a \in \mathcal{A}} \pi_{\theta}(s,a) \nabla_\theta \log \pi_\theta(s,a) \mathcal{R}_{s}^{a}  \\
+&= \mathbb{E}_{\pi_\theta} [\nabla_\theta \log \pi_\theta(s,a) r]
+\end{flalign}
+
+\bigskip
+\noindent
+A few things to notice:
+\begin{itemize}
+\item The policy gradient theorem generalizes the likelihood ratio
+\item In the policy gradient theorem we replace $r$ with the long-term value $Q^{\pi}(s,a)$ (our estimate of $r$).
+\item The policy gradient theorem applies to the start-state, average reward and average value objectives
+\end{itemize}
+
+\bigskip
+\noindent
+For any differentiable policy $\pi_\theta(s,a)$ and for any policy objective $J_1$, $J_{avR}$ or $\frac{1}{1-\gamma}J_{avV}$, the \textbf{policy gradient} is:
+\begin{flalign}
+\nabla_\theta J(\theta) & =  \mathbb{E}_{\pi_\theta} \Big[\nabla_\theta \log \pi_\theta(s,a)  Q^{\pi_\theta}(s,a)\Big]
+\end{flalign}
+
+\bigskip
+\noindent
+Now that we have $\nabla_\theta J(\theta)$, we can use this gradient to train a neural network (e.g., the policy networks of AlphaGo).
+\end{document} 
+

@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ae.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "RFC7223" isn't style-file defined
+--line 12 of file /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "RFC2863" isn't style-file defined
+--line 27 of file /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "ANALYTICS" isn't style-file defined
+--line 42 of file /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "DLNET" isn't style-file defined
+--line 79 of file /Users/dmm/papers/bib/ml.bib
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            574 strings with 5862 characters,
+and the built_in function-call counts, 3182 in all, are:
+= -- 305
+> -- 105
+< -- 2
++ -- 46
+- -- 30
+* -- 120
+:= -- 577
+add.period$ -- 39
+call.type$ -- 15
+change.case$ -- 60
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 143
+empty$ -- 285
+format.name$ -- 30
+if$ -- 658
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 8
+newline$ -- 72
+num.names$ -- 30
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 45
+quote$ -- 0
+skip$ -- 126
+stack$ -- 0
+substring$ -- 108
+swap$ -- 22
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 0
+while$ -- 33
+width$ -- 17
+write$ -- 140
+(There were 4 warnings)

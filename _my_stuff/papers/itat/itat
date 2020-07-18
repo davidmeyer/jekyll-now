@@ -1,0 +1,244 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% § \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+
+
+\title{On the Complexity of Engineered Systems\\
+(and its effect on protocol deployment)}
+
+\author{David Meyer}
+\affil{\url{dmm@1-4-5.net}}
+\date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+
+While advanced technological and biological systems have very
+different implementations at the molecular and component levels,
+they show surprising similarities in systems-level organization.
+In fact, Systems Biology can inform network engineering as to
+system-level architectural features that imbue advanced
+engineered systems with scalability, adaptability and
+evolvability. Perhaps most surprisingly, convergent evolution in both
+domains has produced modular architectures that are composed of
+elaborate hierarchies of protocols and layers of feedback
+regulation in response to the demand for robustness to uncertain
+environments. These somewhat paradoxical features are neither
+accidental nor artificial. Rather, they derive from a deep and
+necessary interplay between complexity and robustness,
+modularity, feedback, and fragility. This paper explores insights
+from both biological systems and engineering theory that can help inform the
+design and deployment of engineered systems such as the Internet
+as well as helping to describe why some technologies are
+difficult to evolve and deploy.
+
+\end{abstract}
+\section{Introduction} 
+\label{sec:intro}
+%\subsection{}
+
+While advanced technological and biological systems have very
+different implementations at the molecular and component levels,
+they show surprising similarities in systems-level organization.
+In fact, Systems Biology \cite{bruggeman2006}  can inform network engineering as to
+system-level architectural features that imbue advanced
+engineered systems with scalability, adaptability and
+evolvability. Perhaps most surprisingly, convergent evolution
+in both domains has produced modular architectures that are composed of
+elaborate hierarchies of protocols and layers of feedback
+regulation in response to the demand for robustness to uncertain
+environments. These somewhat paradoxical features are neither
+accidental nor artificial. Rather, they derive from a deep and
+necessary interplay between complexity and robustness,
+modularity, feedback, and fragility. This paper explores insights
+from both biological systems and engineering theory that can help inform the
+design and deployment of engineered systems such as the Internet
+as well as helping to describe why some technologies are
+difficult to evolve and deploy.
+
+ This paper briefly explores principles learned in the biological domain with an eye towards gaining a deeper understanding of the implications of architecture on the design and deployment of Internet technologies.  One perhaps surprising consequence is that while "narrow waist" architectures\footnote{Such as the Internet architecture} which provide for diversity and evolvability above and below the waist, it is just this property that at the same time causes difficulty in deploying new technologies in the waist itself. This effect can be seen in biological systems as well as technological systems and perhaps surprisingly, is an inherent feature of robust and evolvable systems.
+ 
+The remainder of this paper is organized as follows: Section~\ref{sec:ryf} briefly introduces the ideas underlying Robustness and Fragility. Section~\ref{sec:architectural-features} discusses system-level architectural features for scalability and evolvablity, and discusses how these same features inhibit the deployment of protocols with specific features. Section~\ref{sec:complexity} provides one definition of complexity, and Section~\ref{sec:future} provides a view to the future as well as recommendations as to what we, the Internet engineering community, should consider as paradigms for more deeply understanding the network. Finally, Section~\ref{sec:mqta} provides a summary and \emph{More Questions Than Answers}.
+
+\section{Robustness and Fragility} 
+\label{sec:ryf}
+\begin{figure}[here]
+\center{\includegraphics[width=150mm,height=100mm]{heavy_tail.png}}
+\caption{Robustness vs. Complexity -- Systems View}
+\label{fig:heavy-tail}
+\end{figure}
+
+Figure~\ref{fig:heavy-tail} depicts a typical  "Complexity-Robustness" curve for a class of familiar systems which includes the Internet and many biological systems \cite{Carlson:1999uq}. As we can see such systems  require some degree of   complexity to acquire robustness. However, beyond a certain point (P\textsubscript{max}) additional complexity causes  fragility and brittleness. While detailed discussion of robustness, fragility, and complexity are beyond the scope of this paper, the next sections provide an overview of these topics.
+
+\subsection{Robustness}
+\bigskip
+\textbf{Definition}: A \emph{[property]} of a \emph{[system]} is robust if it is \emph{[invariant]} with respect to a  \emph{[set of perturbations]}, up to some limit \cite{AldersonDoyle2010}.
+
+\bigskip
+Another way to think about this is that robustness is the preservation of a certain property in the presence of uncertainty in a system's components or environment. Interestingly, a system can have the property that it is robust to one set of perturbations and yet fragile for a different property and/or set of perturbations. Such a system is called \emph{Robust Yet Fragile} (or RYF-complex).   For example, a possible \emph{RYF tradeoff}is that a system with high efficiency (i.e., using minimal system resources) might be unreliable (i.e., fragile to component failure) or hard to evolve. Examples of systems exhibiting RYF-complex behavior include many biological signaling paths and the Internet \cite{AldersonDoyle2010}.
+
+Note that we can characterize many familiar system properties as forms of robustness. For example:
+\begin{itemize}
+\item \textbf {Reliability} is robustness to component failures
+\item \textbf {Efficiency} is robustness to resource scarcity
+\item \textbf {Scalability} is robustness to changes to the size/complexity of the system as a whole
+\item \textbf {Modularity} is robustness to structure component rearrangements
+\item \textbf {Evolvability} is robustness of lineages to changes on long time scales
+\end{itemize}
+
+\subsection{Fragility}
+\label{subsec:fragility}
+
+Fragility can be most easily seen in an example. Consider a coffee cup on a sitting on a table. The cup  is \emph{fragile} because suffers non-linearly more from large deviations than from the cumulative effect of smaller events. More concretely, the cup is dropped on average 1 cm every time it is set down. Picking it up and setting it down say, 300 times, has no effect on the cup. However, dropping the cup from 3 meters destroys it (i.e., the damage grows in a non-linear fashion). Another example: consider the difference in damage to a human who jumps off something that is, 0.3 meters high 30 times versus jumping off something that 9 meters high one time; in the first case, no real damage; in the second case the person is dead.
+
+In the network world, we see several examples of fragility, including
+\begin{itemize}
+\item ARP storms \cite{Vidya20122}
+\item Micro-loops in the Internet routing system \cite{rfc5714}
+\item TCP congestion collapse \cite{Floyd:1999:PUE:316739.316740}
+\item The AS 7007 route leakage incident \cite{Zhao:2001:ABM:505202.505207}
+\end{itemize}
+\subsubsection{Formal Definition of Fragility}
+Let \emph{z} be some stress level, \emph{p} some property, and let \emph{H(p,z)} be the (negative valued)  harm function
+Then for the fragile the following must hold
+\begin{equation} \label{eqn:fragility}
+H(p,nz) < nH(p,z)  \text{ for } 0 <  nz <  K
+\end{equation}
+where  \emph{K} is the level at which the system collapses. We say such a system is \emph{K-fragile}. The intuition here is that the cumulative damage to a fragile system from a series of small shocks is non-linearly less that the damage from one large shock \cite{Taleb2007}.
+
+Note that Equation~\ref{eqn:fragility} is a variation on JensenÕs Inequality \cite{Csiszar:1966fk} and  importantly is not mean-preserving for convex \emph{H}. In particular
+\begin{equation} \label{eqn:not-mean-preserving}
+ H(p,(z1 + z2)/2) \neq (H(p,z1) + H(p,z2))/2 
+ \end{equation}
+That is, \emph{the convex function of the mean is not equal to the mean of convex functions}. Assuming that a distribution's mean is preserved by averaging is a  common technique when the underlying distribution is unknown (perhaps the most common case).  As shown here however, such averaging leads to model error and hence additional uncertainty.
+
+Finally, there is a close relationship between fragility as defined here and what we typically think of as scaling. For example, when we say something scales like \emph{O(n\textsuperscript{2}}) what we mean is the damage to the network has constant acceleration (2), and as such is of concern as  \emph{n} gets large.
+
+\section{Defining Complexity}
+\label{sec:complexity}
+
+Alderson and Doyle \cite{AldersonDoyle2010} provide the following insightful description of complexity:
+
+\begin{center}
+\begin{alltt}
+\begin{em}
+ In our view, however, complexity is most succinctly discussed in 
+ terms of functionality and its robustness. Specifically, we argue 
+ that complexity in highly organized systems arises primarily from 
+ design strategies intended to create robustness to uncertainty 
+ in their environments and component parts.
+ \end{em}
+ \end{alltt}
+ \end{center}
+ 
+ That is, complexity is really about \emph{structure} that is "designed" to create robustness to environmental and component uncertainty. We will return to this theme later in this paper.
+
+
+\section{Architectural Structures for Scalability and Evolvability} 
+\label{sec:architectural-features}
+In this section we describe six \emph{systems-level architectural features} found in both technological and biological systems that confer scalability and evolvability. These include bowties (thin waists),  protocols, massively distributed, \emph{robust} control\footnote{Here the term "robust" is used in the control-theoretic sense, i.e., risk aware controllers such as TCP/IP},  a high degree of layering, and component reuse. Interestingly, these are also the same features that result in the RYF-complex behavior of these systems\footnote{Note that it has been shown that RYF-complexity is conserved so while this behavior might be mitigated (to some degree), it cannot be eliminated \cite{csete2002}.} 
+
+\subsubsection{Bowties and Thin Waist Architectures}
+\label{subsec:thin-waist}
+
+While the view of architecture as \emph{constraints that deconstrain} originated in biology \cite{KirschnerGerhart1998},  similar (if not isomorphic) concepts are  found in many engineered systems,  including the Internet\cite{deering2001}  \cite{akhshabi2011} and many manufacturing, transportation and economic systems\cite{DoyleCsete2011}.  In biology, this structure is typically called a bowtie. In engineered systems like the Internet, the same structure is generally called an hourglass (the key difference revolves around whether a system's layering is seen as either horizontal or vertical). A robust architecture is constrained by protocols, but the resulting plug and play modularity that these shared constraints enable deconstrain (i.e., make flexible) systems designed using this architecture. Constraints give a convenient starting language to formalize and quantify architecture and ultimately, a mathematical foundation\cite{Carlson:1999uq}. In the domain of manufacturing (in this case clothing), consider  a given wardrobe that is a collection of garments and the problem of assembling an outfit that provides suitable robustness to the wearer's environment. Three distinct but interrelated types of constraints are universal in clothing as in all architecture: (i) component (garment) constraints, (ii) system (outfit) constraints, and (iii) protocol constraints. Therefore, in combination, diverse, heterogeneous components (garments) that are constrained by materials and construction combine synergistically (through protocols) to yield outfits that satisfy system constraints not directly provided by any single component. Note that these system constraints are \emph{weakly emergent} \cite{chalmers2006}.
+
+\begin{figure}[here]
+\center{\includegraphics[width=125mm,height=75mm]{bowtie.png}}
+\caption{Biological bowtie}
+\label{fig:horizontal_bowtie}
+\end{figure}
+
+Figure ~\ref{fig:horizontal_bowtie} shows a typical biological bowtie. Here the focus is on the set of the metabolic reactions and processes that take place in the cells of organisms to convert biochemical energy from nutrients into adenosine triphosphate (ATP). ATP is the "knot" of the bowtie, as every cell uses ATP for energy transport (think of the ATP molecule as being analogous to an IP packet). Many components can be used to make ATP, and all of life uses ATP for energy transport. Note that if you turn this bowtie on its side see something that looks like the classical "Internet Hourglass (Figure ~\ref{fig:internet_hourglass}). 
+
+
+\begin{figure}[here]
+\center{\includegraphics [width=50mm,height=75mm]{deering_hourglass.png}}
+\caption{Internet Hourglass}
+\label{fig:internet_hourglass}
+\end{figure}
+
+
+ As shown in Figure ~\ref{fig:comparison}, the bowtie and hourglass are similar architectural features who's difference lies mainly in whether one views layering as horizontal or vertical. 
+
+\begin{figure}[here]
+\center{\includegraphics [width=150mm,height=75mm]{comparison.png}}
+\caption{Comparing the Bowtie and Hourglass}
+\label{fig:comparison}
+\end{figure}
+
+In summary, bowties are a fundamental systems-level structure found in both biological and technological systems that are scalable and evolvable. \emph{However, the architectural features that allow for the remarkable diversity and robustness of life on earth (or the Internet) are the same features that make IPv6 (for example) hard to deploy.}
+
+% \begin{figure}
+% \center{\includegraphics [width=75mm,height=75mm]{vertical_bowtie.png}}
+% \caption{Rotated bowtie}
+% \label{fig:vertical_bowtie}
+% \end{figure}
+
+\section{A View to the Future} 
+\label{sec:future}
+
+The underlying thesis embodied in this paper is that complex systems such as the Internet can be understood only by identifying their organizing principles, theories, design rules, and protocols.  Hence the approach advocated here is more akin to Systems Biology as it seeks a complete computational system model which embodies such organizing principles. These principles lead us to understand why deployment of certain protocols, most notably those that exist around the "bowtie" are hard to change. We have seen this effect embodied in the difficulties in deploying with both IPv6 and DNSSec.
+
+In summary, the claim articulated here is that as an engineering community, we need to develop a multidisciplinary approach to describing, understanding, and controlling the properties and dynamics of the whole network. Of course, this requires the integration of information from many sources. Fortunately, there are highly organized (and common) universal structures (architectural features) underlying biological and technological networks. These are the structures mediate that effective tradeoffs among efficiency, robustness, and evolvability with predicable fragilities while at the same time enforcing structure that makes acceptance and deployment of certain technologies difficult. Unfortunately, the theory for the type of distributed and asynchronous global control used in the Internet (or biology) is relatively new (and its natural language is mathematics). That said, it is still possible to find insight into candidate universal structures that can be identified by comparing biological and technological systems \cite{dmm2013}.
+
+\section{More Questions than Answers} 
+\label{sec:mqta}
+
+\begin{figure}
+\center{\includegraphics [width=125mm,height=75mm]{ndn_hourglass.png}}
+\caption{Classic Internet and NDN Hourglasses}
+\label{fig:ndn-hourglass}
+\end{figure}
+
+While we are just at the beginning of what is undoubtably a long endeavour,  we have learned  that there are fundamental architectural building blocks found in systems that scale and are evolvable. These include
+
+\begin{itemize}
+\item RYF complexity/tradeoffs (really a behavior)
+
+\item Bowtie architectures 
+
+\item Protocol Based Architectures (PBAs)
+
+\item Massively distributed with robust control loops
+
+\item Complexity-robustness  spirals
+
+\item Highly layered
+\end{itemize}
+
+However, while these structures lead to scalability and evolvablity, the "knot" of the bowtie is notoriously unevolvable (again, this follows for the notion of \emph{constraints that deconstrain}). This is, at least in part, what make protocols that live in the "knot" hard to evolve (read: change). While the idea of narrow waists (or bowties) is well socialized in both the networking and systems biology communities, deeper understanding of how these architectural features inhibit evolvability of protocols and modules that make up the knot is an area of active research. For example,  Figure~\ref{fig:ndn-hourglass} depicts an hourglass architecture for Named Data Networking \cite{named-data} and compares it to the classic Internet hourglass. Finally as noted above, while we focused on the structure of the "bowtie" in this brief discussion, the bowtie is only one of the architectural features which simultaneously confer scalability and evolvability while at the same time making protocols in the "knot"  difficult to evolve. Understanding these structures and how they interact with other socio-economic factors is fundamental to our understanding of deployability of new protocols in the Internet.
+
+
+
+\newpage
+% \cite{test}
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/ryf}
+% \bibliography{/Users/dmm/papers/bib/rfc}
+
+
+\end{document}  

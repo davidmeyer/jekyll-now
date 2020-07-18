@@ -1,0 +1,189 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+
+
+
+
+\title{Macro Trends, Complexity, and Software Defined Networking\
+An Architectural View}
+\author{David Meyer}
+\affil{\url{dmm@1-4-5.net}}
+\date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+A series of powerful \emph{Macro Trends} are reshaping our ideas about how we architect, design and engineer network systems. This has lead network researchers, designers and operators to propose novel new architectures, including Software Defined Networking, to address the consequences of these trends. This paper explores these trends and associated architectures and applies ideas from diverse fields such as biological systems theory and quantitative risk management (as well as traditional network theory) with an eye towards gaining a deeper understanding of the implications for network operators. One perhaps surprising consequence is that rather than creating enhanced stability, those network systems that reside "above" the narrow waist of the Internet protocol stack are the source of increasing volatility and uncertainty. We argue that  this volatility and uncertainty is a direct consequence of the increasing role of software in the design, deployment, and operation of network systems.
+
+\end{abstract}
+\section{Introduction} 
+\label{sec:intro}
+%\subsection{}
+A series of powerful \emph{Macro Trends} are reshaping our ideas about how we architect, design and engineer network systems. This has lead network researchers, designers and operators to propose novel new architectures such as Software Defined Networking (SDN) to address the consequences of these trends. This paper explores these trends and associated architectures and applies ideas from diverse fields such as biological systems theory and quantitative risk management (as well as traditional network theory) with an eye towards gaining a deeper understanding of the implications for network operators. One perhaps surprising consequence is that rather than creating enhanced stability, those network systems that reside "above" the narrow waist of the Internet protocol stack are the source of increasing volatility and uncertainty. We argue that  this volatility and uncertainty is a direct consequence of the increasing role of software in the design, deployment, and operation of network systems.
+
+The remainder of this paper is organized as follows Section~\ref{sec:hypothesis} describes the SDN problem space and hypothesis. . Section~\ref{sec:macro-trends} discusses several of the macro trends and architectural features that are shaping current thinking. Section~\ref{sec:past} describes the history of SDN technology  and Section~\ref{sec:present} describes the current state of SDN technology and thinking. Finally, Section~\ref{sec:future} concludes with a discussion of where SDN and its associated  technologies are headed.
+
+
+\section{The SDN Problem Space and Hypothesis} 
+\label{sec:hypothesis}
+
+Network architects, engineers and operators are being presented with the following challenge: 
+
+\begin{center}
+\emph{Provide state of the art network infrastructure and services while minimizing TCO}
+\end{center}
+
+The \emph{SDN Hypothesis}, then, is that it is the lack of ability to innovate in the underlying network coupled with the lack of proper network abstractions that is the root cause of the inability to keep pace with user requirements and to keep TCO under control \cite{McKeown:2008:OEI:1355734.1355746}.  A key observation was that network requirements  were in most cases stated informally in an out of band manner and were static in nature suggested that these tasks are better done by machine (i.e., programmatically). In particular,  programatic automation of configuration, management, and monitoring, as well as robust feedback channels to the network are required for scale and resilience.\footnote{In fact, as many as 80\% of unscheduled outages are caused by people and process errors  \cite{Scott1999}.}  In addition, networks were seen to suffer from the following three problems  \cite{Voellmy:2012:PLH:2342441.2342451}:
+\bigskip
+\begin{itemize}
+\item No common data plane abstraction; every device was different
+\item Few network-wide abstractions; the network provided an myopic,box centric view
+\item Configuration and policy were deeply intertwined
+\end{itemize}
+\bigskip
+The lack of data plane programmability and network-wide abstractions resulted in, according to the SDN hypothesis,  the design and implementation of networks that are complex, fragile, and close to impossible to evolve\footnote{As we shall see, this paper presents a somewhat different view.}. As we will see in Section~\ref{sec:past},  a new network architecture, OpenFlow/SDN (OF/SDN) \cite{McKeown:2008:OEI:1355734.1355746} was proposed to address these shortcomings. The rest of this paper analyzes the OF/SDN architecture in light of an emerging set of macro trends and new insight into complexity and architecture gleaned from the biological system theory and quantatative risk management fields.
+
+\subsection{Robustness and Fragility}
+
+\begin{figure}[here]
+\center{\includegraphics[width=150mm,height=100mm]{heavy_tail.png}}
+\caption{Robustness vs. Complexity -- Systems View}
+\label{fig:heavy-tail}
+\end{figure}
+
+Figure~\ref{fig:heavy-tail} depicts a typical  "Complexity-Robustness" curve for a class of familiar systems which includes the Internet and many biological systems, among others \cite{Carlson:1999uq}. As we can see such systems  need  complexity to acquire robustness. However, beyond a certain point (P\textsubscript{max}) additional complexity causes the fragility and brittleness, two of the properties OF/SDN is designed to mitigate. While precise detailed discussions of robustness, fragility, and complexity are beyond the scope of this paper, the next sections provide an overview of these topics.
+
+\subsection{Robustness}
+\bigskip
+\textbf{Definition}: A \emph{[property]} of a \emph{[system]} is robust if it is \emph{[invariant]} with respect to a  \emph{[set of perturbations]}, up to some limit \cite{AldersonDoyle2010}.
+
+\bigskip
+Interestingly, a system can have the property that it is robust to one set of perturbations and yet fragile for a different property and/or set of perturbations. Such a system is called \emph{Robust Yet Fragile} (or RYF-complex).   For example, a possible \emph{RYF tradeoff}is that a system with high efficiency (i.e., using minimal system resources) might be unreliable (i.e., fragile to component failure) or hard to evolve. Examples of systems exhibiting RYF-complex behavior include many biological signaling paths and the Internet \cite{AldersonDoyle2010}.
+
+Note that we can characterize many familiar system properties as forms of robustness. For example:
+\begin{itemize}
+\item \textbf {Reliability} is robustness to component failures
+\item \textbf {Efficiency} is robustness to resource scarcity
+\item \textbf {Scalability} is robustness to changes to the size/complexity of the system as a whole
+\item \textbf {Modularity} is robustness to structure component rearrangements
+\item \textbf {Evolvability} is robustness of lineages to changes on long time scales
+\end{itemize}
+
+\subsection{Fragility}
+\label{subsec:fragility}
+
+Fragility can be most easily seen in an example. Consider a coffee cup on a sitting on a table. The cup  is \emph{fragile} because suffers non-linearly more from large deviations than from the cumulative effect of smaller events. More concretely, the cup is dropped on average 1 cm every time it is set down. Picking it up and setting it down say, 300 times, has no effect on the cup. However, dropping the cup from 3 meters destroys it (i.e., the damage grows in a non-linear fashion). Another example: consider the difference in damage to a human who jumps off something that is, 0.3 meters high 30 times versus jumping off something that 9 meters high one time; in the first case, no real damage; in the second case the person is dead.
+
+In the network world, we see several examples of fragility, including
+\begin{itemize}
+\item ARP storms \cite{Vidya20122}
+\item Micro-loops in the Internet routing system \cite{rfc5714}
+\item TCP congestion collapse \cite{Floyd:1999:PUE:316739.316740}
+\item The AS 7007 route leakage incident \cite{Zhao:2001:ABM:505202.505207}
+\end{itemize}
+\subsubsection{Formal Definition}
+Let \emph{z} be some stress level, \emph{p} some property, and let \emph{H(p,z)} be the (negative valued)  harm function
+Then for the fragile the following must hold
+\begin{equation} \label{eqn:fragility}
+H(p,nz) < nH(p,z)  \text{ for } 0 <  nz <  K
+\end{equation}
+where  \emph{K} is the level at which the system collapses. We say such a system is \emph{K-fragile}. The intuition here is that the cumulative damage to a fragile system from a series of small shocks is non-linearly less that the damage from one large shock \cite{Taleb2007}.
+
+Note that Equation~\ref{eqn:fragility} is a variation on JensenÕs Inequality \cite{Csiszar:1966fk} and  importantly is not mean-preserving for convex \emph{H}. In particular
+\begin{equation} \label{eqn:not-mean-preserving}
+ H(p,(z1 + z2)/2) \neq (H(p,z1) + H(p,z2))/2 
+ \end{equation}
+That is, \emph{the convex function of the mean is not equal to the mean of convex functions}. Assuming that a distribution's mean is preserved by averaging is a  common technique when the underlying distribution is unknown (perhaps the most common case).  As shown here however, such averaging leads to model error and hence additional uncertainty.
+
+Finally, there is a close relationship between fragility as defined here and what we typically think of as scaling. For example, when we say something scales like \emph{O(n\textsuperscript{2}}) what we mean is the damage to the network has constant acceleration (2), and as such is of concern as  \emph{n} gets large.
+
+\section{Defining Complexity}
+
+Alderson and Doyle \cite{AldersonDoyle2010} provide the following insightful description of complexity:
+
+\begin{center}
+\begin{alltt}
+\begin{em}
+ In our view, however, complexity is most succinctly discussed in 
+ terms of functionality and its robustness. Specifically, we argue 
+ that complexity in highly organized systems arises primarily from 
+ design strategies intended to create robustness to uncertainty 
+ in their environments and component parts.
+ \end{em}
+ \end{alltt}
+ \end{center}
+ 
+ That is, complexity is really about \emph{structure} that is "designed" to create robustness to uncertainty. We will return to this theme later in this paper.
+
+
+\section{Macro Trends} 
+\label{sec:macro-trends}
+In this section we describe six \emph{macro trends} that are shaping the SDN landscape. 
+
+\subsection{The Rise of Software and Associated Intelligence}
+In many ways the rise of Software and its associated growth of intelligence closely mimics what we find in the biological world. For example,  the evolution of the Precambrian (reptilian) brain to mammalian  neocortex is very much akin to the shift from hardware-centric to software-centric infrastructures \cite{Northcutta1995}. Not surprisingly, there are many architectural themes which are shared by large  dynamic systems which are both scalable and evolvable. These include thin-waist architectures (see Section~\ref{subsec:thin-waist}), massively distributed control planes,  highly layered architectures and a high degree of component reuse.
+
+\subsubsection{Bowties and Thin Waist Architectures}
+\label{subsec:thin-waist}
+
+\cite{DoyleCsete2011}
+\cite{KirschnerGerhart1998}
+
+The view of architecture as constraints that deconstrain (17, 18) originated in biology, but it is consistent with engineering (16) and illustrated by clothing. A robust architecture is constrained by protocols, but the resulting plug and play modularity that these shared constraints enable deconstrain (i.e., make flexible) systems designed using this architecture. Constraints give a convenient starting language to formalize and quantify architecture and ultimately, a mathematical foundation (19). Concretely, consider a given wardrobe that is a collection of garments and the problem of assembling an outfit that provides suitable robustness to the wearer's environment. Three distinct but interrelated types of constraints are universal in clothing as in all architecture (16): (i) component (garment) constraints, (ii) system (outfit) constraints, and (iii) protocol constraints. Therefore, in combination, diverse, heterogeneous components (garments) that are constrained by materials and construction combine synergistically (through protocols) to yield outfits that satisfy system constraints not directly provided by any single component. We will use outfit to describe a functional, robust set of garments, and heap (Craver uses aggregates) (47) to describe a random collection not required to have any other system features.
+
+\newpage
+While \emph{Software Defined Networking (SDN)} is a concept that has escaped precise definition. However, initial definitions we're comprised of three basic architectural components\cite{Yap:2010:TSN:1851276.1851288}:
+\begin{itemize}
+\item An open and standardized interface to the switching data plane
+\item Separation of control and data planes
+\item Centralized control
+\end{itemize}
+
+
+
+
+\begin{figure}
+\center{\includegraphics[width=150mm,height=100mm]{sdn_continuum.png}}
+\caption{The SDN Continuum}
+\label{fig:continuum}
+\end{figure}
+
+\section{How Did We Get Here?} 
+\label{sec:past}
+\cite{Koponen:2011:AI:2002250.2002256}
+\cite{McKeown2009}
+
+
+
+\section{What is the Current State of Affairs} 
+\label{sec:present}
+
+
+\section{A View to the Future} 
+\label{sec:future}
+
+
+
+\newpage
+% \cite{test}
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/sdn}
+% \bibliography{/Users/dmm/papers/bib/rfc}
+
+
+\end{document}  

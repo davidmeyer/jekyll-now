@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{2017arXiv170908339W}
+M.~{Wang}, Y.~{Cui}, X.~{Wang}, S.~{Xiao}, and J.~{Jiang}, ``{Machine Learning
+  for Networking: Workflow, Advances and Opportunities},'' {\em ArXiv
+  e-prints}, Sept. 2017.
+
+\bibitem{2018arXiv181001257N}
+O.~{Nachum}, S.~{Gu}, H.~{Lee}, and S.~{Levine}, ``{Near-Optimal Representation
+  Learning for Hierarchical Reinforcement Learning},'' {\em ArXiv e-prints},
+  Oct. 2018.
+
+\bibitem{Walraven:2016:TFO:2937770.2937891}
+E.~Walraven, M.~T. Spaan, and B.~Bakker, ``Traffic flow optimization,'' {\em
+  Eng. Appl. Artif. Intell.}, vol.~52, pp.~203--212, June 2016.
+
+\bibitem{Melo:2008:ARL:1390156.1390240}
+F.~S. Melo, S.~P. Meyn, and M.~I. Ribeiro, ``An analysis of reinforcement
+  learning with function approximation,'' in {\em Proceedings of the 25th
+  International Conference on Machine Learning}, ICML '08, (New York, NY, USA),
+  pp.~664--671, ACM, 2008.
+
+\bibitem{Andradottir:1993:VRT:174153.174154}
+S.~Andrad\'{o}ttir, D.~P. Heyman, and T.~J. Ott, ``Variance reduction through
+  smoothing and control variates for markov chain simulations,'' {\em ACM
+  Trans. Model. Comput. Simul.}, vol.~3, pp.~167--189, July 1993.
+
+\bibitem{2016arXiv161101142G}
+W.~{Genders} and S.~{Razavi}, ``{Using a Deep Reinforcement Learning Agent for
+  Traffic Signal Control},'' {\em ArXiv e-prints}, Nov. 2016.
+
+\bibitem{imagenet_cvpr09}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei, ``{ImageNet: A
+  Large-Scale Hierarchical Image Database},'' in {\em CVPR09}, 2009.
+
+\end{thebibliography}

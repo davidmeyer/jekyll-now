@@ -1,0 +1,171 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+%\usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+
+
+\title{A Few Notes on Trust Region Policy Optimization}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,...\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+\label{sec:intro}
+
+One of the goals of this note is to prove Theorem 1 of Schulman, J. et al., "Trust Region Policy Optimization \cite{DBLP:journals/corr/SchulmanLMJA15}.  This is the proof of the \emph{Policy Improvement Bound} described in \cite{DBLP:journals/corr/SchulmanLMJA15}, The proof begins with a  lemma from Kakade \& Langford \cite{Kakade+Langford:2002} that shows that the difference in policy performance $\eta(\tilde{\pi}) - \eta(\pi)$ can be decomposed as a sum of per-timestep \emph{advantages}.
+
+\bigskip
+\noindent
+First, define $\eta(\pi)$ as follows. Let $\pi$ denote a stochastic policy $\pi :  \mathcal{S} \times \mathcal{A} \rightarrow  [0,1]$, and let $\eta(\pi)$ be the expected 
+discounted reward under $\pi$. Then define $\eta(\pi)$:
+\begin{flalign*}
+\eta(\pi) &= \mathbb{E}_{s_0, a_0, s_1, a_1, \cdots} \Bigg [\sum\limits_{t = 0}^\infty \gamma^t r(s_t) \Bigg ] \text{ where} \\
+& s_0 \sim \rho(s_0), a_t \sim \pi(a_t \mid s_t), s_{t + 1} \sim P(s_{t + 1} \mid s_t, a_t)
+\end{flalign*}
+
+
+\begin{lemma}
+\label{lemma:advantages}
+Given two policies $\pi$ and $\tilde{\pi}$
+
+\begin{flalign*}
+\eta(\tilde{\pi})= \eta(\pi) +  \mathbb{E}_{\tau \sim \tilde{\pi}} \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t A_{\pi} (s_t,a_t) \Bigg ]
+\end{flalign*}
+\end{lemma}
+
+\bigskip
+\noindent 
+where the expectation is taken over trajectories $\tau \coloneqq (s_0,a_0,s_1,a_1,\cdots)$ and the notation $\mathbb{E}_{\tau \sim \tilde{\pi}} \big [\cdots\big]$ means that actions are sampled from $\tilde{\pi}$ to generate $\tau$. 
+
+\bigskip
+\noindent
+\emph{Proof}. First, recall that the advantage $A_{\pi}(s,a)$ of an action $a$ in state $s$ is defined as follows:
+
+\begin{flalign*}
+A_{\pi} (s,a) =  \mathbb{E}_{s^\prime \sim P(s^\prime \mid s,a)}  \big [r(s) + \gamma V_\pi(s^\prime) - V_\pi(s) \big ]
+\end{flalign*}
+
+\bigskip
+\noindent 
+From here we can just work out the result:
+\begin{flalign*}
+% \label{eqn:defnA:1}
+\mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t  A_{\pi}(s_t,a_t) \Bigg ] 
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \Big [ \gamma^t (r(s_t) +  \gamma V_{\pi}(s_{t+1})  -  V_{\pi}(s_t)) \Big ] \Bigg ] \\
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \Big [\gamma^t r(s_t) + 
+\gamma^{t + 1} V_{\pi}(s_{t+1})  -  \gamma^t V_{\pi}(s_t) \Big ] \Bigg ] \\
+% \label{eqn:defnA:2}
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) + \sum\limits_{t = 0}^{\infty} \gamma^{t + 1} V_{\pi}(s_{t+1})  
+-  \sum\limits_{t = 0}^{\infty} \gamma^t V_{\pi}(s_t) \Bigg ] \\
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) + \sum\limits_{t = 1}^{\infty} \gamma^{t} V_{\pi}(s_t) 
+-  \sum\limits_{t = 0}^{\infty} \gamma^t V_{\pi}(s_t) \Bigg ] \\
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t)  + \sum\limits_{t = 1}^{\infty} \gamma^{t} V_{\pi}(s_t) 
+-  \Bigg (V_{\pi}(s_0)  +\sum\limits_{t = 1}^{\infty} \gamma^t V_{\pi}(s_t) \Bigg)\Bigg ] \\
+&= \mathbb{E}_{\tau \mid \tilde{\pi}}  \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) + \Bigg (\sum\limits_{t = 1}^{\infty} \gamma^{t} V_{\pi}(s_t) 
+- \sum\limits_{t = 1}^{\infty} \gamma^{t} V_{\pi}(s_t)  \Bigg) -  V_{\pi}(s_0) \Bigg ] \\
+&= \mathbb{E}_{\tau \mid \tilde{\pi}} \Bigg [ \sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) -V_{\pi}(s_0) \Bigg ]  \\
+&= -\mathbb{E}_{s_0} \Bigg [ V_{\pi}(s_0) + \mathbb{E}_{\tau \mid \tilde{\pi}}  \bigg [\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) \bigg ] \Bigg ] \\
+&= -\eta(\pi)+ \eta(\tilde{\pi}) \qquad \qquad \qquad \qquad  \quad \qquad \mathrel{\#} \text{Definition $\eta(\pi)$}
+\end{flalign*}
+
+\subsection{A Bit of Intuition}
+Another way to see this result: we can see that $\gamma V_{\pi}(s_{t+1})  -  V_{\pi}(s_t) = -V_{\pi}(s_0)$ by expanding the first few terms:
+
+\bigskip
+\begin{center}
+\captionof{table}{Expansion of terms} \label{table:expansion}
+\begin{tabular} {|| c | l ||}
+ \hline \hline
+ t  & $\gamma^t (r(s_t) + \gamma V_{\pi}(s_{t+1})  -  V_{\pi}(s_t))$  \\ 
+ \hline \hline
+ 0 & $r(s_0) + {\color{red} \gamma V_{\pi}(s_1)}  - V_{\pi}(s_0)$  \\
+ \hline
+ 1 & $ \gamma r(s_1) + {\color{red} \gamma^2 V_{\pi}(s_2)}  - {\color{blue}\gamma V_{\pi}(s_1)}$ \\
+ \hline
+ 2 & $ \gamma^2 r(s_2) + {\color{red} \gamma^3 V_{\pi}(s_3)}  - {\color{blue}\gamma^2 V_{\pi}(s_2)}$ \\
+\hline
+ 3 & $ \gamma^3 r(s_3) + {\color{red} \gamma^4 V_{\pi}(s_4)}  - {\color{blue}\gamma^3 V_{\pi}(s_3)}$ \\
+\hline
+\vdots &  \multicolumn{1}{c||}{\vdots} \\
+\hline
+$\infty$ & \multicolumn{1}{c||}{$\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t)  -  V_{\pi}(s_0)$} \\
+ \hline
+ \hline
+\end{tabular}
+\end{center}
+
+\bigskip
+\noindent
+Notice that in Table \ref{table:expansion} the {\color{red} red} term at time {\color{red} $t$} minus the {\color{blue} blue} term at time {\color{blue} $t+1$} equals zero. 
+For example, at times {\color{red} $t = 0$} and {\color{blue}  $t = 1$}  we have  ${\color{red} \gamma V_{\pi}(s_1)} - {\color{blue}\gamma V_{\pi}(s_1)} = 0$.  More 
+generally, at time {\color{red} $t$}  we have the term  ${\color{red} \gamma^t V_{\pi}(s_t)}$ and at time {\color{blue} $t+1$} we have the term  
+${\color{blue}\gamma^t V_{\pi}(s_t)}$ whose difference is again zero.  So in the limit we are left with $\sum\limits_{t = 0}^{\infty} \gamma^t r(s_t) -  V_{\pi}(s_0)$.
+
+\bigskip
+\noindent
+Armed with this result we can now define the expected advantage of $\tilde{\pi}$ over $\pi$ at state $s$ as 
+$\bar{A}(s) = \mathbb{E}_{a \sim \tilde{\pi} (\cdot \mid s)} \Big [A_{\pi}(s,a) \Big]$. Now Lemma \ref{lemma:advantages} can be written as follows:
+
+
+
+\begin{flalign*}
+\eta(\tilde{\pi})= \eta(\pi) +  \mathbb{E}_{\tau \sim \tilde{\pi}} \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t \bar{A}_{\pi} (s_t,a_t) \Bigg ]
+\end{flalign*}
+
+\bigskip
+\noindent
+and that $L_\pi(\tilde{\pi})$ can be written as 
+\begin{flalign*}
+L_{\pi}(\tilde{\pi})= \eta(\pi) +  \mathbb{E}_{\tau \sim \tilde{\pi}} \Bigg [\sum\limits_{t = 0}^{\infty} \gamma^t \bar{A}_{\pi} (s_t,a_t) \Bigg ]
+\end{flalign*}
+\bigskip
+\noindent
+The difference between $\eta(\tilde{\pi})$ and $L_{\pi}(\tilde{\pi})$ is whether the states are sampled using $\pi$ or $\tilde{\pi}$. To bound the difference between $\eta(\tilde{\pi})$ and $L_{\pi}(\tilde{\pi})$ we need to bound the difference arising at each timestep. To do this, we first need to introduce a measure of how much $\pi$ and $\tilde{\pi}$ agree. 
+The approach taken in this paper is to \emph{couple} the policies so that they define a joint distribution over pairs of actions.
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{/Users/dmm/papers/bib/ml}
+
+
+
+\end{document} 

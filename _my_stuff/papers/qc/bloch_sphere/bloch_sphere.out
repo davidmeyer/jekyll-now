@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{The Bloch Sphere}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Bloch Sphere Coordinate System}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Why does \040vary between 0 and \040in Equation 1?}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Deriving Equation 1}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{What can we say about \040and ?}{subsection.2.3}% 6
+\BOOKMARK [1][-]{section.3}{Normalization Constraints}{}% 7
+\BOOKMARK [1][-]{section.4}{Qubits, Kronecker/Tensor Products and States}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Computational Basis}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Tensor Products}{subsection.4.1}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Superpositions}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Acknowledgements}{}% 12

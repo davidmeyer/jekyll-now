@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/corr/SchulmanLMJA15}
+J.~Schulman, S.~Levine, P.~Moritz, M.~I. Jordan, and P.~Abbeel, ``Trust region
+  policy optimization,'' {\em CoRR}, vol.~abs/1502.05477, 2015.
+
+\bibitem{Kakade+Langford:2002}
+S.~Kakade and J.~Langford, ``Approximately optimal approximate reinforcement
+  learning,'' in {\em Proceedings of the Nineteenth International Conference on
+  Machine Learning (ICML 2002)} (C.~Sammut and A.~Hoffman, eds.), (San
+  Francisco, CA, USA), pp.~267--274, Morgan Kauffman, 2002.
+
+\end{thebibliography}

@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{GRAVES2013}
+Alex Graves.
+\newblock Generating sequences with recurrent neural networks.
+\newblock 08 2013.
+
+\bibitem{SEQ2SEQ}
+Ilya Sutskever, Oriol Vinyals, and Quoc V.~V Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.D. Lawrence, and K.Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  27}, pages 3104--3112. Curran Associates, Inc., 2014.
+
+\end{thebibliography}

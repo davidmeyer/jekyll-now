@@ -1,0 +1,6 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Score Function/Likelihood Ratio Estimators}{}% 2
+\BOOKMARK [1][-]{section.3}{Derivation of the Gradient via Importance Sampling}{}% 3
+\BOOKMARK [1][-]{section.4}{A Bit of Intuition}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Reorganizing Equation 10}{section.4}% 5
+\BOOKMARK [1][-]{section.5}{Adding a Baseline: Deriving an Unbiased Estimator}{}% 6

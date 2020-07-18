@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+
+\bibitem{akhshabi2011}
+Saamer Akhshabi and Constantine Dovrolis.
+\newblock The evolution of layered protocol stacks leads to an hourglass-shaped
+  architecture.
+\newblock In {\em SIGCOMM}, 2011.
+
+\bibitem{AldersonDoyle2010}
+D.~Alderson and J.~Doyle.
+\newblock Contrasting views of complexity and their implications for
+  network-centric infrastructures.
+\newblock In {\em IEEE Transactions on Systems, Man and Cybernetics, Part A:
+  Systems and Human}, volume 40 Issue 4, pages 839-- 852, 2012.
+
+\bibitem{bruggeman2006}
+Frank~J. Bruggeman and Hans~V. Westerhoff.
+\newblock The nature of systems biology.
+\newblock {\em TRENDS in Microbiology}, 15(1), 2006.
+
+\bibitem{Carlson:1999uq}
+J.~Carlson".
+\newblock Highly optimized tolerance: a mechanism for power laws in designed
+  systems.
+\newblock {\em Physical Review E}, 60(2):1412--1427, 1999.
+
+\bibitem{chalmers2006}
+David~J. Chalmers.
+\newblock Strong and weak emergence.
+\newblock {\em Australian National University}, 2006.
+
+\bibitem{csete2002}
+Marie~E. Csete and John~C. Doyle.
+\newblock Reverse engineering of biological complexity.
+\newblock {\em Science}, 295, 2002.
+
+\bibitem{Csiszar:1966fk}
+I~Csiszar.
+\newblock A note on jensen's inequality.
+\newblock {\em Studia Sci. Math. Hungar}, 1, 1966.
+
+\bibitem{deering2001}
+Steve Deering.
+\newblock Watching the waist of the internet hourglass.
+\newblock {\em IETF}, 2001.
+
+\bibitem{DoyleCsete2011}
+John~C. Doyle and Marie Csete.
+\newblock Architecture, constraints, and behavior.
+\newblock In Donald~W. Pfaff, editor, {\em Proceedings of the National Academy
+  of Sciences of the United States}, volume 108, pages 15624--15630, Septemeber
+  2011.
+
+\bibitem{Floyd:1999:PUE:316739.316740}
+Sally Floyd and Kevin Fall.
+\newblock Promoting the use of end-to-end congestion control in the internet.
+\newblock {\em IEEE/ACM Trans. Netw.}, 7(4):458--472, August 1999.
+
+\bibitem{KirschnerGerhart1998}
+Marc Kirschner and John Gerhart.
+\newblock Evolvablity.
+\newblock In {\em Proceedings of the National Academy of Sciences of the United
+  States}, volume~95, pages 8420--8427, July 1998.
+
+\bibitem{dmm2013}
+David Meyer.
+\newblock Macro trends, complexity, and software defined networking,
+  http://www.1-4-5.net/~dmm/talks/ausnog2013.pdf, Septemeber 2013.
+
+\bibitem{named-data}
+Named~Data Networking.
+\newblock http://named-data.net.
+
+\bibitem{rfc5714}
+M.~Shand and S.~Bryant.
+\newblock {IP Fast Reroute Framework}.
+\newblock RFC 5714 (Informational), January 2010.
+
+\bibitem{Vidya20122}
+S.Vidya and R.Bhaskaran.
+\newblock Arp storm detection and prevention measures.
+\newblock In {\em IJCSI International Journal of Computer Science Issues},
+  volume~8, March 2011.
+
+\bibitem{Taleb2007}
+Nassim~Nicholas Taleb.
+\newblock Black swans and the domains of statistics, 2007.
+
+\bibitem{Zhao:2001:ABM:505202.505207}
+Xiaoliang Zhao, Dan Pei, Lan Wang, Dan Massey, Allison Mankin, S.~Felix Wu, and
+  Lixia Zhang.
+\newblock An analysis of bgp multiple origin as (moas) conflicts.
+\newblock In {\em Proceedings of the 1st ACM SIGCOMM Workshop on Internet
+  Measurement}, IMW '01, pages 31--35, New York, NY, USA, 2001. ACM.
+
+\end{thebibliography}

@@ -1,0 +1,19 @@
+
+While advanced technological and biological systems have very
+different implementations at the molecular and component levels,
+they show surprising similarities in systems-level organization.
+In fact, Systems Biology can inform network engineering as to
+system-level architectural features that imbue advanced
+engineered systems with scalability, adaptability and
+evolvability. Perhaps surprisingly, convergent evolution in both
+domains produces modular architectures that are composed of
+elaborate hierarchies of protocols and layers of feedback
+regulation in response to the demand for robustness to uncertain
+environments. These somewhat paradoxical features are neither
+accidental nor artificial. Rather, they derive from a deep and
+necessary interplay between complexity and robustness,
+modularity, feedback, and fragility. This paper explores insights
+from both biological systems and theory that can help inform the
+design and deployment of engineered systems such as the Internet
+as well as helping to describe why some technologies are
+difficult to evolve and hence deploy.

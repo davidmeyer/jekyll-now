@@ -1,0 +1,837 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+@book{Pearl:1988:PRI:52121,
+ author = {Pearl, Judea},
+ title = {Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference},
+ year = {1988},
+ isbn = {0-934613-73-7},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+} 
+
+
+@Article{FISHER1958,
+author={FISHER, RONALD A.},
+title={Cancer and Smoking},
+journal={Nature},
+year={1958},
+month={Aug},
+day={30},
+publisher={Nature Publishing Group SN  -},
+volume={182},
+pages={596 EP  -},
+url={http://dx.doi.org/10.1038/182596a0}
+}
+
+
+@ARTICLE{2018arXiv180210031T,
+   author = {{Tucker}, G. and {Bhupatiraju}, S. and {Gu}, S. and {Turner}, R.~E. and
+	{Ghahramani}, Z. and {Levine}, S.},
+    title = "{The Mirage of Action-Dependent Baselines in Reinforcement Learning}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1802.10031},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning, Statistics - Machine Learning},
+     year = 2018,
+    month = feb,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180210031T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015arXiv150602438S,
+   author = {{Schulman}, J. and {Moritz}, P. and {Levine}, S. and {Jordan}, M. and
+	{Abbeel}, P.},
+    title = "{High-Dimensional Continuous Control Using Generalized Advantage Estimation}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1506.02438},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning, Computer Science - Robotics, Computer Science - Systems and Control},
+     year = 2015,
+    month = jun,
+   adsurl = {http://adsabs.harvard.edu/abs/2015arXiv150602438S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2018arXiv180307246W,
+   author = {{Wu}, C. and {Rajeswaran}, A. and {Duan}, Y. and {Kumar}, V. and 
+	{Bayen}, A.~M and {Kakade}, S. and {Mordatch}, I. and {Abbeel}, P.
+	},
+    title = "{Variance Reduction for Policy Gradient with Action-Dependent Factorized Baselines}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1803.07246},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning, Computer Science - Artificial Intelligence, Statistics - Machine Learning},
+     year = 2018,
+    month = mar,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180307246W},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@inproceedings{Sutton:1999:PGM:3009657.3009806,
+ author = {Sutton, Richard S. and McAllester, David and Singh, Satinder and Mansour, Yishay},
+ title = {Policy Gradient Methods for Reinforcement Learning with Function Approximation},
+ booktitle = {Proceedings of the 12th International Conference on Neural Information Processing Systems},
+ series = {NIPS'99},
+ year = {1999},
+ location = {Denver, CO},
+ pages = {1057--1063},
+ numpages = {7},
+ url = {http://dl.acm.org/citation.cfm?id=3009657.3009806},
+ acmid = {3009806},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
+
+
+@ARTICLE{2017arXiv171011198L,
+   author = {{Liu}, H. and {Feng}, Y. and {Mao}, Y. and {Zhou}, D. and {Peng}, J. and
+	{Liu}, Q.},
+    title = "{Action-depedent Control Variates for Policy Optimization via Stein's Identity}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1710.11198},
+ primaryClass = "stat.ML",
+ keywords = {Statistics - Machine Learning, Computer Science - Learning},
+     year = 2017,
+    month = oct,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171011198L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016arXiv161102247G,
+   author = {{Gu}, S. and {Lillicrap}, T. and {Ghahramani}, Z. and {Turner}, R.~E. and 
+	{Levine}, S.},
+    title = "{Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1611.02247},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning},
+     year = 2016,
+    month = nov,
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv161102247G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE {oALE68a,
+	AUTHOR="V. M. Aleksandrov and V. I. Sysoyev and V. V. Shemeneva",
+	YEAR={1968},
+	TITLE="Stochastic Optimization",
+	JOURNAL={Engineering Cybernetics},
+	VOLUME={5},
+	PAGES={11--16}  }
+
+
+@INPROCEEDINGS{szechtman2003, 
+author={R. Szechtman}, 
+booktitle={Proceedings of the 2003 Winter Simulation Conference, 2003.}, 
+title={Control variates techniques for Monte Carlo simulation}, 
+year={2003}, 
+volume={1}, 
+number={}, 
+pages={144-149 Vol.1}, 
+keywords={Monte Carlo methods;digital simulation;operations research;Monte Carlo simulation;control variates techniques;optimal control coefficient;practitioner;relevant applications;theory;variance reduction technique;Books;Context modeling;Finance;Least squares methods;Operations research;Optimal control;Parameter estimation;Random variables;Steady-state;Vectors}, 
+doi={10.1109/WSC.2003.1261417}, 
+ISSN={}, 
+month={Dec},}
+
+
+
+@article{Baxter:2001:IPE:1622845.1622855,
+ author = {Baxter, Jonathan and Bartlett, Peter L.},
+ title = {Infinite-horizon Policy-gradient Estimation},
+ journal = {J. Artif. Int. Res.},
+ issue_date = {July 2001},
+ volume = {15},
+ number = {1},
+ month = nov,
+ year = {2001},
+ issn = {1076-9757},
+ pages = {319--350},
+ numpages = {32},
+ url = {http://dl.acm.org/citation.cfm?id=1622845.1622855},
+ acmid = {1622855},
+ publisher = {AI Access Foundation},
+ address = {USA},
+}
+
+@incollection{Barto:1990:NAE:104134.104143,
+ author = {Barto, Andrew G. and Sutton, Richard S. and Anderson, Charles W.},
+ chapter = {Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems},
+ title = {Artificial Neural Networks},
+ editor = {Diederich, Joachim},
+ year = {1990},
+ isbn = {0-8186-2015-3},
+ pages = {81--93},
+ numpages = {13},
+ url = {http://dl.acm.org/citation.cfm?id=104134.104143},
+ acmid = {104143},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+}
+
+
+@ARTICLE{2016arXiv161001945P,
+   author = {{Pfau}, D. and {Vinyals}, O.},
+    title = "{Connecting Generative Adversarial Networks and Actor-Critic Methods}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1610.01945},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning, Statistics - Machine Learning},
+     year = 2016,
+    month = oct,
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv161001945P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016arXiv160201783M,
+   author = {{Mnih}, V. and {Puigdom{\`e}nech Badia}, A. and {Mirza}, M. and
+	{Graves}, A. and {Lillicrap}, T.~P. and {Harley}, T. and {Silver}, D. and
+	{Kavukcuoglu}, K.},
+    title = "{Asynchronous Methods for Deep Reinforcement Learning}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1602.01783},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning},
+     year = 2016,
+    month = feb,
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160201783M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{2018arXiv180302811S,
+   author = {{Stooke}, A. and {Abbeel}, P.},
+    title = "{Accelerated Methods for Deep Reinforcement Learning}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1803.02811},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning, Computer Science - Artificial Intelligence, Computer Science - Distributed, Parallel, and Cluster Computing},
+     year = 2018,
+    month = mar,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180302811S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}                  
+
+
+@incollection{NIPS1999_1786,
+title = {Actor-Critic Algorithms},
+author = {Vijay R. Konda and John N. Tsitsiklis},
+booktitle = {Advances in Neural Information Processing Systems 12},
+editor = {S. A. Solla and T. K. Leen and K. M\"{u}ller},
+pages = {1008--1014},
+year = {2000},
+publisher = {MIT Press},
+url = {http://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf}
+}
+
+
+@article{Greensmith:2004:VRT:1005332.1044710,
+ author = {Greensmith, Evan and Bartlett, Peter L. and Baxter, Jonathan},
+ title = {Variance Reduction Techniques for Gradient Estimates in Reinforcement Learning},
+ journal = {J. Mach. Learn. Res.},
+ issue_date = {12/1/2004},
+ volume = {5},
+ month = dec,
+ year = {2004},
+ issn = {1532-4435},
+ pages = {1471--1530},
+ numpages = {60},
+ url = {http://dl.acm.org/citation.cfm?id=1005332.1044710},
+ acmid = {1044710},
+ publisher = {JMLR.org},
+} 
+
+@ARTICLE{2017arXiv170706347S,
+   author = {{Schulman}, J. and {Wolski}, F. and {Dhariwal}, P. and {Radford}, A. and 
+	{Klimov}, O.},
+    title = "{Proximal Policy Optimization Algorithms}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1707.06347},
+ primaryClass = "cs.LG",
+ keywords = {Computer Science - Learning},
+     year = 2017,
+    month = jul,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170706347S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Williams1992,
+	Abstract = {This article presents a general class of associative reinforcement learning algorithms for connectionist networks containing stochastic units. These algorithms, called REINFORCE algorithms, are shown to make weight adjustments in a direction that lies along the gradient of expected reinforcement in both immediate-reinforcement tasks and certain limited forms of delayed-reinforcement tasks, and they do this without explicitly computing gradient estimates or even storing information from which such estimates could be computed. Specific examples of such algorithms are presented, some of which bear a close relationship to certain existing algorithms while others are novel but potentially interesting in their own right. Also given are results that show how such algorithms can be naturally integrated with backpropagation. We close with a brief discussion of a number of additional issues surrounding the use of such algorithms, including what is known about their limiting behaviors as well as further considerations that might be used to help develop similar but potentially more powerful reinforcement learning algorithms.},
+	Author = {Williams, Ronald J.},
+	Date-Added = {2016-05-13 19:09:54 +0000},
+	Date-Modified = {2016-05-13 19:09:54 +0000},
+	Doi = {10.1007/BF00992696},
+	File = {:Users/jaanaltosaar/papers/mendeley collection/Williams - 1992 - Simple statistical gradient-following algorithms for connectionist reinforcement learning.pdf:pdf},
+	Isbn = {0885-6125},
+	Issn = {08856125},
+	Journal = {Machine Learning},
+	Keywords = {Reinforcement learning,connectionist networks,gradient descent,mathematical analysis},
+	Number = {3-4},
+	Pages = {229--256},
+	Pmid = {903},
+	Title = {{Simple statistical gradient-following algorithms for connectionist reinforcement learning}},
+	Url = {http://www-anw.cs.umass.edu/{~}barto/courses/cs687/williams92simple.pdf},
+	Volume = {8},
+	Year = {1992},
+	Bdsk-Url-1 = {http://www-anw.cs.umass.edu/%7B~%7Dbarto/courses/cs687/williams92simple.pdf},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1007/BF00992696}}
+
+
+
+
+@inproceedings{Peters:2006fk,
+  added-at = {2008-03-10T10:19:21.000+0100},
+  address = {Beijing, China},
+  author = {Peters, J. and Schaal, S.},
+  biburl = {https://www.bibsonomy.org/bibtex/232ec379c1f59b22bb350bea0c09da1c8/janrpeters},
+  booktitle = {{Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}},
+  date-added = {2006-10-25 20:11:50 -0700},
+  date-modified = {2007-04-24 16:08:54 +0200},
+  interhash = {9c7b45c7618d5ad49475e9ebd3c1453c},
+  intrahash = {32ec379c1f59b22bb350bea0c09da1c8},
+  keywords = {gradients imitation learning, learning,reinforcement motor policy primitives, reinforcement robotics,},
+  local-url = {http://www-clmc.usc.edu/publications/P/Peters_IROS_2006.pdf},
+  timestamp = {2008-03-10T10:22:52.000+0100},
+  title = {{Policy gradient methods for robotics}},
+  year = 2006
+}
+
+
+
+
+@misc{log_derivative_trick,
+author = {Mohamed, Shakir},
+title = {The Log Derivative Trick},
+month = nov,
+year = {2015},
+howpublished = {\url {http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/}},
+note = {Accessed: Sun Jun  3 11:33:18 PDT 2018}
+}
+
+                  
+@inproceedings{Silver:2014:DPG:3044805.3044850,
+ author = {Silver, David and Lever, Guy and Heess, Nicolas and Degris, Thomas and Wierstra, Daan and Riedmiller, Martin},
+ title = {Deterministic Policy Gradient Algorithms},
+ booktitle = {Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32},
+ series = {ICML'14},
+ year = {2014},
+ location = {Beijing, China},
+ pages = {I-387--I-395},
+ url = {http://dl.acm.org/citation.cfm?id=3044805.3044850},
+ acmid = {3044850},
+ publisher = {JMLR.org},
+}
+
+
+@book{Kay:1993:FSS:151045,
+ author = {Kay, Steven M.},
+ title = {Fundamentals of Statistical Signal Processing: Estimation Theory},
+ year = {1993},
+ isbn = {0-13-345711-7},
+ publisher = {Prentice-Hall, Inc.},
+ address = {Upper Saddle River, NJ, USA},
+} 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+@ARTICLE{2017arXiv170501064L,
+   author = {{Ly}, A. and {Marsman}, M. and {Verhagen}, J. and {Grasman}, R. and 
+	{Wagenmakers}, E.-J.},
+    title = "{A Tutorial on Fisher Information}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1705.01064},
+ primaryClass = "math.ST",
+ keywords = {Mathematics - Statistics Theory, 62-01, 62B10 (Primary), 62F03, 62F12, 62F15, 62B10 (Secondary)},
+     year = 2017,
+    month = may,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170501064L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@InProceedings{Kakade+Langford:2002,
+  author =       "Kakade, Sham and Langford, John",
+  title =        "Approximately Optimal Approximate Reinforcement Learning",
+  booktitle =    "Proceedings of the Nineteenth International Conference on Machine Learning (ICML 2002)",
+  editor = "Sammut, Claude and Hoffman, Achim",
+  year =         "2002",
+  ISBN =         "1-55860-873-7",
+  publisher = "Morgan Kauffman",
+  address =   "San Francisco, CA, USA",
+  pages =     "267--274",
+  url = "http://ttic.uchicago.edu/~sham/papers/rl/aoarl.pdf",
+  bib2html_rescat = "Learning Methods",
+}
+
+
+@article{DBLP:journals/corr/SchulmanLMJA15,
+  author    = {John Schulman and
+               Sergey Levine and
+               Philipp Moritz and
+               Michael I. Jordan and
+               Pieter Abbeel},
+  title     = {Trust Region Policy Optimization},
+  journal   = {CoRR},
+  volume    = {abs/1502.05477},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.05477},
+  timestamp = {Wed, 07 Jun 2017 14:42:34 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SchulmanLMJA15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}                  
+
+
+@article{Schulman:2015ab,
+	Abstract = {We describe an iterative procedure for optimizing policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified procedure, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is similar to natural policy gradient methods and is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.},
+	Author = {John Schulman and Sergey Levine and Philipp Moritz and Michael I. Jordan and Pieter Abbeel},
+	Date-Added = {2017-09-15 14:53:05 +0000},
+	Date-Modified = {2017-09-15 14:53:05 +0000},
+	Eprint = {1502.05477},
+	Month = {02},
+	Title = {Trust Region Policy Optimization},
+	Url = {https://arxiv.org/abs/1502.05477},
+	Year = {2015},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1502.05477}}
+
+@article{Schulman:2015aa,
+	Abstract = {In a variety of problems originating in supervised, unsupervised, and reinforcement learning, the loss function is defined by an expectation over a collection of random variables, which might be part of a probabilistic model or the external world. Estimating the gradient of this loss function, using samples, lies at the core of gradient-based learning algorithms for these problems. We introduce the formalism of stochastic computation graphs---directed acyclic graphs that include both deterministic functions and conditional probability distributions---and describe how to easily and automatically derive an unbiased estimator of the loss function's gradient. The resulting algorithm for computing the gradient estimator is a simple modification of the standard backpropagation algorithm. The generic scheme we propose unifies estimators derived in variety of prior work, along with variance-reduction techniques therein. It could assist researchers in developing intricate models involving a combination of stochastic and deterministic operations, enabling, for example, attention, memory, and control actions.},
+	Author = {John Schulman and Nicolas Heess and Theophane Weber and Pieter Abbeel},
+	Date-Added = {2017-09-11 16:19:52 +0000},
+	Date-Modified = {2017-09-11 16:19:52 +0000},
+	Eprint = {1506.05254},
+	Month = {06},
+	Title = {Gradient Estimation Using Stochastic Computation Graphs},
+	Url = {https://arxiv.org/abs/1506.05254},
+	Year = {2015},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1506.05254}}
+
+@article{Goodfellow:2017aa,
+	Abstract = {This report summarizes the tutorial presented by the author at NIPS 2016 on generative adversarial networks (GANs). The tutorial describes: (1) Why generative modeling is a topic worth studying, (2) how generative models work, and how GANs compare to other generative models, (3) the details of how GANs work, (4) research frontiers in GANs, and (5) state-of-the-art image models that combine GANs with other methods. Finally, the tutorial contains three exercises for readers to complete, and the solutions to these exercises.},
+	Author = {Ian Goodfellow},
+	Date-Added = {2017-09-11 15:32:53 +0000},
+	Date-Modified = {2017-09-11 15:32:53 +0000},
+	Eprint = {1701.00160},
+	Month = {01},
+	Title = {{NIPS} 2016 Tutorial: Generative Adversarial Networks},
+	Url = {https://arxiv.org/abs/1701.00160},
+	Year = {2017},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1701.00160}}
+
+@book{SuttonBook,
+	Author = {Sutton, Richard S., and Andrew G. Barto.},
+	Date-Added = {2017-09-10 18:27:29 +0000},
+	Date-Modified = {2017-09-10 18:28:15 +0000},
+	Publisher = {MIT Press},
+	Title = {Reinforcement learning: An Introduction},
+	Year = {1998}}
+
+@article{Graves:2016aa,
+	Abstract = {Artificial neural networks are remarkably adept at sensory processing, sequence learning and reinforcement learning, but are limited in their ability to represent variables and data structures and to store data over long timescales, owing to the lack of an external memory. Here we introduce a machine learning model called a differentiable neural computer (DNC), which consists of a neural network that can read from and write to an external memory matrix, analogous to the random-access memory in a conventional computer. Like a conventional computer, it can use its memory to represent and manipulate complex data structures, but, like a neural network, it can learn to do so from data. When trained with supervised learning, we demonstrate that a DNC can successfully answer synthetic questions designed to emulate reasoning and inference problems in natural language. We show that it can learn tasks such as finding the shortest path between specified points and inferring the missing links in randomly generated graphs, and then generalize these tasks to specific graphs such as transport networks and family trees. When trained with reinforcement learning, a DNC can complete a moving blocks puzzle in which changing goals are specified by sequences of symbols. Taken together, our results demonstrate that DNCs have the capacity to solve complex, structured tasks that are inaccessible to neural networks without external read{\^a}€``write memory.},
+	Author = {Graves, Alex and Wayne, Greg and Reynolds, Malcolm and Harley, Tim and Danihelka, Ivo and Grabska-Barwi{\AA}„ska, Agnieszka and Colmenarejo, Sergio G{\~A}³mez and Grefenstette, Edward and Ramalho, Tiago and Agapiou, John and Badia, Adri{\~A}Puigdom{\~A}¨nech and Hermann, Karl Moritz and Zwols, Yori and Ostrovski, Georg and Cain, Adam and King, Helen and Summerfield, Christopher and Blunsom, Phil and Kavukcuoglu, Koray and Hassabis, Demis},
+	Date = {2016/10/27/print},
+	Date-Added = {2017-06-28 21:38:08 +0000},
+	Date-Modified = {2017-06-28 21:38:08 +0000},
+	Day = {27},
+	Isbn = {0028-0836},
+	Journal = {Nature},
+	L3 = {10.1038/nature20101; http://www.nature.com/nature/journal/v538/n7626/abs/nature20101.html#supplementary-information},
+	M3 = {Article},
+	Month = {10},
+	Number = {7626},
+	Pages = {471--476},
+	Publisher = {Macmillan Publishers Limited, part of Springer Nature. All rights reserved.},
+	Title = {Hybrid computing using a neural network with dynamic external memory},
+	Ty = {JOUR},
+	Url = {http://dx.doi.org/10.1038/nature20101},
+	Volume = {538},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1038/nature20101}}
+
+@article{Graves:2014aa,
+	Abstract = {We extend the capabilities of neural networks by coupling them to external memory resources, which they can interact with by attentional processes. The combined system is analogous to a Turing Machine or Von Neumann architecture but is differentiable end-to-end, allowing it to be efficiently trained with gradient descent. Preliminary results demonstrate that Neural Turing Machines can infer simple algorithms such as copying, sorting, and associative recall from input and output examples.},
+	Author = {Alex Graves and Greg Wayne and Ivo Danihelka},
+	Date-Added = {2017-06-28 21:35:20 +0000},
+	Date-Modified = {2017-06-28 21:35:20 +0000},
+	Eprint = {1410.5401},
+	Month = {10},
+	Title = {Neural Turing Machines},
+	Url = {https://arxiv.org/abs/1410.5401},
+	Year = {2014},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1410.5401}}
+
+@article{Cho:2014aa,
+	Abstract = {In this paper, we propose a novel neural network model called RNN Encoder-Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixed-length vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+	Author = {Kyunghyun Cho and Bart van Merrienboer and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
+	Date-Added = {2017-06-27 17:08:19 +0000},
+	Date-Modified = {2017-06-27 17:08:19 +0000},
+	Eprint = {1406.1078},
+	Month = {06},
+	Title = {Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation},
+	Url = {https://arxiv.org/abs/1406.1078},
+	Year = {2014},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1406.1078}}
+
+@incollection{NIPS2014_5346,
+	Author = {Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Date-Added = {2017-06-27 16:33:55 +0000},
+	Date-Modified = {2017-06-27 16:33:55 +0000},
+	Editor = {Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence and K. Q. Weinberger},
+	Pages = {3104--3112},
+	Publisher = {Curran Associates, Inc.},
+	Title = {Sequence to Sequence Learning with Neural Networks},
+	Url = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf}}
+
+@article{Daniluk:2017aa,
+	Abstract = {Neural language models predict the next token using a latent representation of the immediate token history. Recently, various methods for augmenting neural language models with an attention mechanism over a differentiable memory have been proposed. For predicting the next token, these models query information from a memory of the recent history which can facilitate learning mid- and long-range dependencies. However, conventional attention mechanisms used in memory-augmented neural language models produce a single output vector per time step. This vector is used both for predicting the next token as well as for the key and value of a differentiable memory of a token history. In this paper, we propose a neural language model with a key-value attention mechanism that outputs separate representations for the key and value of a differentiable memory, as well as for encoding the next-word distribution. This model outperforms existing memory-augmented neural language models on two corpora. Yet, we found that our method mainly utilizes a memory of the five most recent output representations. This led to the unexpected main finding that a much simpler model based only on the concatenation of recent output representations from previous time steps is on par with more sophisticated memory-augmented neural language models.},
+	Author = {Micha{\l} Daniluk and Tim Rockt{\"a}schel and Johannes Welbl and Sebastian Riedel},
+	Date-Added = {2017-06-27 15:22:00 +0000},
+	Date-Modified = {2017-06-27 15:22:00 +0000},
+	Eprint = {1702.04521},
+	Month = {02},
+	Title = {Frustratingly Short Attention Spans in Neural Language Modeling},
+	Url = {https://arxiv.org/abs/1702.04521},
+	Year = {2017},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1702.04521}}
+
+@article{Vaswani:2017aa,
+	Abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
+	Author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+	Date-Added = {2017-06-27 15:21:27 +0000},
+	Date-Modified = {2017-06-27 15:21:27 +0000},
+	Eprint = {1706.03762},
+	Month = {06},
+	Title = {Attention Is All You Need},
+	Url = {https://arxiv.org/abs/1706.03762},
+	Year = {2017},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1706.03762}}
+
+@article{Bahdanau:2014aa,
+	Abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+	Author = {Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
+	Date-Added = {2017-06-27 15:19:10 +0000},
+	Date-Modified = {2017-06-27 15:19:10 +0000},
+	Eprint = {1409.0473},
+	Month = {09},
+	Title = {Neural Machine Translation by Jointly Learning to Align and Translate},
+	Url = {https://arxiv.org/abs/1409.0473},
+	Year = {2014},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1409.0473}}
+
+@article{Goodfellow:2014aa,
+	Abstract = {Several machine learning models, including neural networks, consistently misclassify adversarial examples---inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks' vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset.},
+	Author = {Ian J. Goodfellow and Jonathon Shlens and Christian Szegedy},
+	Date-Added = {2017-03-13 19:04:38 +0000},
+	Date-Modified = {2017-03-13 19:04:38 +0000},
+	Eprint = {1412.6572},
+	Journal = {https://arxiv.org/abs/1412.6572},
+	Title = {Explaining and Harnessing Adversarial Examples},
+	Url = {https://arxiv.org/abs/1412.6572},
+	Year = {2014},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1412.6572}}
+
+@article{Szegedy:2013aa,
+	Abstract = {Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties.},
+	Author = {Christian Szegedy and Wojciech Zaremba and Ilya Sutskever and Joan Bruna and Dumitru Erhan and Ian Goodfellow and Rob Fergus},
+	Date-Added = {2017-03-13 19:01:49 +0000},
+	Date-Modified = {2017-03-13 19:01:49 +0000},
+	Eprint = {1312.6199},
+	Journal = {https://arxiv.org/abs/1312.6199},
+	Title = {Intriguing properties of neural networks},
+	Url = {https://arxiv.org/abs/1312.6199},
+	Year = {2013},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1312.6199}}
+
+@article{Hochreiter:1997aa,
+	Annote = {doi: 10.1162/neco.1997.9.8.1735},
+	Author = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+	Booktitle = {Neural Computation},
+	Da = {1997/11/01},
+	Date = {1997/11/01},
+	Date-Added = {2017-03-14 15:17:42 +0000},
+	Date-Modified = {2017-03-14 15:17:42 +0000},
+	Doi = {10.1162/neco.1997.9.8.1735},
+	Isbn = {0899-7667},
+	Journal = {Neural Computation},
+	Journal1 = {Neural Computation},
+	M3 = {doi: 10.1162/neco.1997.9.8.1735},
+	Month = {2017/03/14},
+	Number = {8},
+	Pages = {1735--1780},
+	Publisher = {MIT Press},
+	Title = {Long Short-Term Memory},
+	Ty = {JOUR},
+	Url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+	Volume = {9},
+	Year = {1997},
+	Year1 = {1997},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1162/neco.1997.9.8.1735}}
+
+@article{goodfellow2013maxout,
+	Author = {Goodfellow, Ian J and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron C and Bengio, Yoshua},
+	Date-Added = {2017-03-14 15:11:07 +0000},
+	Date-Modified = {2017-03-14 15:11:07 +0000},
+	Journal = {ICML (3)},
+	Pages = {1319--1327},
+	Title = {Maxout Networks.},
+	Volume = {28},
+	Year = {2013}}
+
+@inproceedings{glorot2011deep,
+	Author = {Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
+	Booktitle = {Aistats},
+	Date-Added = {2017-03-14 15:08:54 +0000},
+	Date-Modified = {2017-03-14 15:08:54 +0000},
+	Number = {106},
+	Pages = {275},
+	Title = {Deep Sparse Rectifier Neural Networks.},
+	Volume = {15},
+	Year = {2011}}
+
+@incollection{NIPS2014_5423,
+	Author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Date-Added = {2017-03-13 18:58:01 +0000},
+	Date-Modified = {2017-03-13 18:58:01 +0000},
+	Editor = {Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence and K. Q. Weinberger},
+	Pages = {2672--2680},
+	Publisher = {Curran Associates, Inc.},
+	Title = {Generative Adversarial Nets},
+	Url = {http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}}
+
+@misc{Mikolov2014,
+	Author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+	Date-Added = {2015-12-03 20:41:35 +0000},
+	Date-Modified = {2015-12-03 20:49:04 +0000},
+	Title = {word2vec},
+	Year = {2014}}
+
+@url{LLN,
+	Author = {The Wikipedia},
+	Date-Added = {2015-10-27 19:51:26 +0000},
+	Date-Modified = {2015-10-27 19:53:07 +0000},
+	Keywords = {Law of Large Numbers},
+	Title = {Law of Large Numbers},
+	Url = {https://en.wikipedia.org/wiki/Law_of_large_numbers},
+	Bdsk-Url-1 = {https://en.wikipedia.org/wiki/Law_of_large_numbers}}
+
+@url{COSINE_SIMILARITY,
+	Author = {The Wikipedia},
+	Date-Added = {2015-10-27 17:02:56 +0000},
+	Date-Modified = {2015-10-27 19:30:40 +0000},
+	Keywords = {cosine similarity},
+	Title = {Cosine similarity},
+	Url = {https://en.wikipedia.org/wiki/Cosine_similarity},
+	Urldate = {10/27/2015},
+	Bdsk-Url-1 = {https://en.wikipedia.org/wiki/Cosine_similarity}}
+
+@article{GRAVES2013,
+	Abstract = {This paper shows how Long Short-term Memory recurrent neural networks can be used to generate complex sequences with long-range structure, simply by predicting one data point at a time. The approach is demonstrated for text (where the data are discrete) and online handwriting (where the data are real-valued). It is then extended to handwriting synthesis by allowing the network to condition its predictions on a text sequence. The resulting system is able to generate highly realistic cursive handwriting in a wide variety of styles.},
+	Author = {Alex Graves},
+	Date-Added = {2015-10-21 20:24:48 +0000},
+	Date-Modified = {2015-10-22 20:11:42 +0000},
+	Eprint = {1308.0850},
+	Month = {08},
+	Title = {Generating Sequences With Recurrent Neural Networks},
+	Url = {http://arxiv.org/abs/1308.0850},
+	Year = {2013},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1308.0850}}
+
+@incollection{SEQ2SEQ,
+	Author = {Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V. V},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Date-Added = {2015-10-21 19:44:16 +0000},
+	Date-Modified = {2015-10-21 19:46:53 +0000},
+	Editor = {Z. Ghahramani and M. Welling and C. Cortes and N.D. Lawrence and K.Q. Weinberger},
+	Pages = {3104--3112},
+	Publisher = {Curran Associates, Inc.},
+	Title = {Sequence to Sequence Learning with Neural Networks},
+	Url = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf}}
+
+@url{RFC7223,
+	Author = {M. Bjorklund},
+	Date-Added = {2014-10-23 19:43:12 +0000},
+	Date-Modified = {2014-10-23 19:44:14 +0000},
+	Keywords = {https://datatracker.ietf.org/doc/rfc7223/?include_text=1},
+	Title = {{RFC 7223: A YANG Data Model for Interface Management}}}
+
+@article{LUI2007,
+	Author = {{Shao Liu, Mung Chiang, Mathias Jourdain, and Jin Li}},
+	Date-Added = {2014-10-23 19:18:01 +0000},
+	Date-Modified = {2014-10-23 19:19:49 +0000},
+	Journal = {17th IEEE International Workshop on Quality of Service},
+	Title = {Congestion Location Detection: Methodology, Algorithm, and Performance},
+	Year = {2007}}
+
+@url{RFC2863,
+	Author = {{K. McCloghrie and F. Kastenholz}},
+	Date-Added = {2014-10-23 19:01:38 +0000},
+	Date-Modified = {2014-10-23 19:05:36 +0000},
+	Keywords = {http://tools.ietf.org/html/rfc2863},
+	Title = {{RFC 2863: The Interfaces Group MIB}}}
+
+@techreport{CHIANG2011,
+	Author = {Mung Chiang},
+	Date-Added = {2014-10-23 18:41:19 +0000},
+	Date-Modified = {2014-10-23 18:42:53 +0000},
+	Institution = {Princeton University},
+	Title = {Nonconvex Optimization for Communication Systems},
+	Year = {2011}}
+
+@url{ANALYTICS,
+	Author = {https://angel.co/big-data-analytics},
+	Date-Added = {2014-10-23 17:47:21 +0000},
+	Date-Modified = {2014-10-23 17:48:17 +0000}}
+
+@article{HULL,
+	Author = {{M. Alizadeh, A. Kabbani, T. Edsall, B. Prabhakar, A. Vahdat, and M. Yasuda}},
+	Date-Added = {2014-10-23 17:17:55 +0000},
+	Date-Modified = {2014-10-23 17:18:50 +0000},
+	Journal = {Proceedings of the USENIX NSDI},
+	Title = {Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center},
+	Year = {2012}}
+
+@article{DCTCP,
+	Author = {{M. Alizadeh, A. Greenberg, D. A. Maltz, J. Padhye, P. Patel, B. Prabhakar, S. Sengupta, and M. Sridharan}},
+	Date-Added = {2014-10-23 17:15:04 +0000},
+	Date-Modified = {2014-10-23 17:15:57 +0000},
+	Journal = {Proceedings of the ACM SIGCOMM},
+	Title = {Data Center TCP (DCTCP)},
+	Year = {2010}}
+
+@article{WILSON2011,
+	Author = {{C. Wilson, H. Ballani, T. Karagiannis, and A. Rowtron. Better}},
+	Date-Added = {2014-10-23 17:08:17 +0000},
+	Date-Modified = {2014-10-23 17:10:18 +0000},
+	Journal = {Proceedings of the ACM SIGCOMM},
+	Title = {Never than Late: Meeting Deadlines in Datacenter Networks},
+	Year = {2011}}
+
+@article{WIDROW2002,
+	Author = {B Widrow},
+	Date-Added = {2014-10-22 22:05:04 +0000},
+	Date-Modified = {2014-10-22 22:09:41 +0000},
+	Journal = {Proceedings of the IEEE},
+	Title = {30 years of adaptive neural networks: perceptron, Madaline, and backpropagation},
+	Year = {2002}}
+
+@url{DLNET,
+	Author = {http://deeplearning.net},
+	Date-Added = {2014-10-22 21:31:39 +0000},
+	Date-Modified = {2014-10-22 21:36:08 +0000},
+	Keywords = {Deep Learning},
+	Url = {http://deeplearning.net},
+	Bdsk-Url-1 = {http://deeplearning.net}}
+
+@article{HINTON2006,
+	Author = {{Geoffrey E. Hinton, Simon Osindero, and Yee-Whye Teh}},
+	Date-Added = {2014-10-22 21:22:54 +0000},
+	Date-Modified = {2014-10-22 21:23:51 +0000},
+	Journal = {Neural Computation},
+	Title = {A fast learning algorithm for deep belief nets},
+	Year = {2006}}
+
+@techreport{CRUZ2011,
+	Author = {Fernando Perez-Cruz},
+	Date-Added = {2014-10-22 20:36:30 +0000},
+	Date-Modified = {2014-10-22 20:38:56 +0000},
+	Institution = {Princeton University},
+	Title = {Kullback-Leibler Divergence Estimation of Continuous Distributions},
+	Year = {2011}}
+
+@article{DIETTERICH95,
+	Author = {Tom Dietterich},
+	Date-Added = {2014-10-22 19:41:08 +0000},
+	Date-Modified = {2014-10-22 19:43:59 +0000},
+	Institution = {Oregon State University},
+	Journal = {ACM Comuting Surveys},
+	Title = {Overfitting and Undercomputing in Machine Learning Overfitting and Undercomputing in Machine Learning},
+	Year = {1995}}
+
+@techreport{VINCENT2008,
+	Author = {{Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol }},
+	Date-Added = {2014-10-22 17:36:49 +0000},
+	Date-Modified = {2014-10-22 17:42:30 +0000},
+	Institution = {Universit´e de Montr´eal},
+	Number = {1316},
+	Title = {Extracting and Composing Robust Features with Denoising Autoencoders},
+	Year = {2008}}
+
+@article{BENGIO2013,
+	Author = {{Yoshua Bengio, Aaron Courville and Pascal Vincent}},
+	Date-Added = {2014-10-21 19:16:25 +0000},
+	Date-Modified = {2014-10-21 19:32:24 +0000},
+	Journal = {IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE},
+	Title = {Representation Learning: A Review and New Perspectives},
+	Year = {2013}}
+
+@article{PALM2012,
+	Author = {R. B. Palm},
+	Date-Added = {2014-10-21 19:00:43 +0000},
+	Date-Modified = {2014-10-21 19:08:10 +0000},
+	Journal = {Technical Univ. Denmark, Palm, Denmark},
+	Title = {Prediction as a candidate for learning deep hierarchical models of data,},
+	Year = {2012}}
+
+@article{BENGIO2007,
+	Author = {{Y. Bengio, P. Lamblin, D. Popovici and H. Larochelle}},
+	Date-Added = {2014-10-21 16:47:34 +0000},
+	Date-Modified = {2014-10-21 19:31:01 +0000},
+	Journal = {Proc. Adv. NIPS},
+	Pages = {153--160},
+	Title = {Greedy layerwise training of deep networks},
+	Year = {2007}}
+
+@article{LV2014,
+	Author = {{Yisheng Lv, Yanjie Duan, Wenwen Kang, Zhengxi Li, and Fei-Yue Wang}},
+	Date-Added = {2014-10-21 16:03:45 +0000},
+	Date-Modified = {2014-10-21 19:31:15 +0000},
+	Journal = {EEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS},
+	Title = {Traffic Flow Prediction With Big Data: A Deep Learning Approach},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIi4uL21sL2NwL3RyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGbSFwsYGVdOUy5kYXRhTxEBoAAAAAABoAACAAAIdGF0b29pbmUAAAAAAAAAAAAAAAAAAAAAAAAAz8IBB0grAAAAdGJ+GXRyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0YsLQaosuAAAAAAAAAAAAAQADAAAJIAAAAAAAAAAAAAAAAAAAAAJjcAAQAAgAAM/CY3cAAAARAAgAANBq7Z4AAAABABQAdGJ+AHRifQB0YngAB0ptAAOGmAACAD50YXRvb2luZTpVc2VyczoAZG1tOgBwYXBlcnM6AG1sOgBjcDoAdHJhZmZpY19mbG93X2JpZ19kYXRhLnBkZgAOADQAGQB0AHIAYQBmAGYAaQBjAF8AZgBsAG8AdwBfAGIAaQBnAF8AZABhAHQAYQAuAHAAZABmAA8AEgAIAHQAYQB0AG8AbwBpAG4AZQASADBVc2Vycy9kbW0vcGFwZXJzL21sL2NwL3RyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGYAEwABLwAAFQACAAr//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgCzALgAwAJkAmYCawJ2An8CjQKRApgCoQKmArMCtgLIAssC0AAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALS}}
+
+@misc{Rosenblatt1958,
+	Author = {Rosenblatt, F.},
+	Citation_Abstract_Html_Url = {http://psycnet.apa.org/journals/rev/65/6/386},
+	Citation_Authors = {Rosenblatt, F.},
+	Citation_Date = {Nov 1958},
+	Citation_Doi = {10.1037/h0042519},
+	Citation_Firstpage = {386},
+	Citation_Fulltext_Html_Url = {http://psycnet.apa.org/journals/rev/65/6/386.html},
+	Citation_Issn = {0033-295X (Print)},
+	Citation_Issue = {6},
+	Citation_Journal_Title = {Psychological Review},
+	Citation_Keywords = {probabilistic model; information storage; brain},
+	Citation_Language = {English},
+	Citation_Pdf_Url = {http://psycnet.apa.org/journals/rev/65/6/386.pdf},
+	Citation_Publisher = {American Psychological Association},
+	Citation_Reference = {von Neumann, J. (1951). The general and logical theory of automata. In L. A. Jeffress (Ed.), Cerebral mechanisms in behavior; the Hixon Symposium (pp. 1-41). Oxford, England: Wiley.},
+	Citation_Title = {The perceptron: A probabilistic model for information storage and organization in the brain.},
+	Citation_Volume = {65},
+	Date-Added = {2017-04-19 15:23:35 +0000},
+	Date-Modified = {2017-04-19 15:24:41 +0000},
+	Month = {Nov},
+	Robots = {noindex,nofollow},
+	Title = {http://psycnet.apa.org/psycinfo/1959-09865-001},
+	Year = {1958}}

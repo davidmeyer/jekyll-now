@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{RFC7223}
+M.~Bjorklund.
+\newblock {RFC 7223: A YANG Data Model for Interface Management}.
+
+\bibitem{WILSON2011}
+{C. Wilson, H. Ballani, T. Karagiannis, and A. Rowtron. Better}.
+\newblock Never than late: Meeting deadlines in datacenter networks.
+\newblock {\em Proceedings of the ACM SIGCOMM}, 2011.
+
+\bibitem{CHIANG2011}
+Mung Chiang.
+\newblock Nonconvex optimization for communication systems.
+\newblock Technical report, Princeton University, 2011.
+
+\bibitem{DIETTERICH95}
+Tom Dietterich.
+\newblock Overfitting and undercomputing in machine learning overfitting and
+  undercomputing in machine learning.
+\newblock {\em ACM Comuting Surveys}, 1995.
+
+\bibitem{HINTON2006}
+{Geoffrey E. Hinton, Simon Osindero, and Yee-Whye Teh}.
+\newblock A fast learning algorithm for deep belief nets.
+\newblock {\em Neural Computation}, 2006.
+
+\bibitem{DLNET}
+http://deeplearning.net.
+
+\bibitem{ANALYTICS}
+https://angel.co/big-data analytics.
+
+\bibitem{RFC2863}
+{K. McCloghrie and F. Kastenholz}.
+\newblock {RFC 2863: The Interfaces Group MIB}.
+
+\bibitem{DCTCP}
+{M. Alizadeh, A. Greenberg, D. A. Maltz, J. Padhye, P. Patel, B. Prabhakar, S.
+  Sengupta, and M. Sridharan}.
+\newblock Data center tcp (dctcp).
+\newblock {\em Proceedings of the ACM SIGCOMM}, 2010.
+
+\bibitem{HULL}
+{M. Alizadeh, A. Kabbani, T. Edsall, B. Prabhakar, A. Vahdat, and M. Yasuda}.
+\newblock Less is more: Trading a little bandwidth for ultra-low latency in the
+  data center.
+\newblock {\em Proceedings of the USENIX NSDI}, 2012.
+
+\bibitem{PALM2012}
+R.~B. Palm.
+\newblock Prediction as a candidate for learning deep hierarchical models of
+  data,.
+\newblock {\em Technical Univ. Denmark, Palm, Denmark}, 2012.
+
+\bibitem{VINCENT2008}
+{Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol }.
+\newblock Extracting and composing robust features with denoising autoencoders.
+\newblock Technical Report 1316, Universit´e de Montr´eal, 2008.
+
+\bibitem{CRUZ2011}
+Fernando Perez-Cruz.
+\newblock Kullback-leibler divergence estimation of continuous distributions.
+\newblock Technical report, Princeton University, 2011.
+
+\bibitem{LUI2007}
+{Shao Liu, Mung Chiang, Mathias Jourdain, and Jin Li}.
+\newblock Congestion location detection: Methodology, algorithm, and
+  performance.
+\newblock {\em 17th IEEE International Workshop on Quality of Service}, 2007.
+
+\bibitem{WIDROW2002}
+B~Widrow.
+\newblock 30 years of adaptive neural networks: perceptron, madaline, and
+  backpropagation.
+\newblock {\em Proceedings of the IEEE}, 2002.
+
+\bibitem{BENGIO2007}
+{Y. Bengio, P. Lamblin, D. Popovici and H. Larochelle}.
+\newblock Greedy layerwise training of deep networks.
+\newblock {\em Proc. Adv. NIPS}, pages 153--160, 2007.
+
+\bibitem{BENGIO2012}
+{Yoshua Bengio, Aaron Courville, and Pascal Vincent}.
+\newblock Representation learning: A review and new perspectives.
+\newblock {\em arXiv.org}, 2012.
+
+\bibitem{BENGIO2013}
+{Yoshua Bengio, Aaron Courville and Pascal Vincent}.
+\newblock Representation learning: A review and new perspectives.
+\newblock {\em IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE},
+  2013.
+
+\end{thebibliography}

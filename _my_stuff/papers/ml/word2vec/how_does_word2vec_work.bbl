@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bengio2003}
+Yoshua Bengio, R{\'e}jean Ducharme, Pascal Vincent, and Christian Janvin.
+\newblock A neural probabilistic language model.
+\newblock {\em J. Mach. Learn. Res.}, 3:1137--1155, March 2003.
+
+\bibitem{Gutmann:2012:NEU:2188385.2188396}
+Michael~U. Gutmann and Aapo Hyv\"{a}rinen.
+\newblock Noise-contrastive estimation of unnormalized statistical models, with
+  applications to natural image statistics.
+\newblock {\em J. Mach. Learn. Res.}, 13:307--361, February 2012.
+
+\bibitem{Mikolov:2013aa}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock 01 2013.
+
+\bibitem{Mikolov2014}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock word2vec, 2014.
+
+\bibitem{NIPS2013_5021}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In C.J.C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  26}, pages 3111--3119. Curran Associates, Inc., 2013.
+
+\bibitem{Mnih:2012aa}
+Andriy Mnih and Yee~Whye Teh.
+\newblock A fast and simple algorithm for training neural probabilistic
+  language models.
+\newblock 06 2012.
+
+\end{thebibliography}

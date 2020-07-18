@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Review: Latent Variable Models}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Latent Variables?}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{The Problem of Approximate Inference}{}% 4
+\BOOKMARK [1][-]{section.4}{Variational Autoencoders}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Choosing the Latent Variables z}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{VAE Objective Function}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{So where do the z's come from?}{section.5}% 8
+\BOOKMARK [1][-]{section.6}{VAE Inference Model}{}% 9
+\BOOKMARK [1][-]{section.7}{One Important "Trick"}{}% 10
+\BOOKMARK [1][-]{section.8}{A Few Final Thoughts}{}% 11
+\BOOKMARK [1][-]{section.9}{Acknowledgements}{}% 12
+\BOOKMARK [1][-]{section.10}{Appendix}{}% 13
+\BOOKMARK [2][-]{subsection.10.1}{Strong Law of Large Numbers}{section.10}% 14
+\BOOKMARK [2][-]{subsection.10.2}{Ergodic Theorem}{section.10}% 15

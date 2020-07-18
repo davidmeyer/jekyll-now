@@ -1,0 +1,136 @@
+Introduction
+
+The “Moore’s Law” effect has seen network hardware improve along
+almost all hardware oriented dimensions, including port
+densities, speeds and feeds, and price/bit over the past several
+decades. At the same time network control plane has experienced
+dramatically slower evolution. In fact, configuring and managing
+networks continues to be about network element operations (as
+opposed to network services). This mix of ever growing networks
+and ever advancing configuration requirements makes network
+agility, service velocity, operation, debugging increasingly
+difficult and expensive. This effect is seen across all network
+types, including enterprise, data center, and service provider
+networks. Software-Defined Networks (SDNs) are widely seen as a
+promising set of solutions to resolve these challenges. In
+particular, SDN promises to provide a multi-layer platform which
+encompasses programability not only at the forwarding and control
+planes, but also at the transport layers below and orchestration
+and services layers above the data and control planes.
+
+Early SDN models focused primarily on moving the control plane
+out of the network elements into “controllers” on the theory that
+the switching elements could remain simple, general-purpose, and
+cost-effective while at the same time allowing the control plane
+to rapidly evolve. A number of recent SDN models, on the other
+hand, include approaches in which control and data plane
+programability works in concert with existing and future
+distributed control planes.
+
+SDNRG Goals and Ojectives
+
+SDN aims to benefit all types of networks, including wireless,
+cellular, home, enterprise, data centers, and wide-area
+networks. The Software-Defined Networking Research Group (SDNRG)
+investigates SDN from various perspectives with the goal of
+identifying the approaches that can be defined, deployed and used
+in the near term as well identifying future research
+challenges. In particular, key areas of interest include solution
+scalability, abstractions, and programming languages and
+paradigms particularly useful in the context of SDN. In addition,
+it is an explicit goal of the SDNRG to provide a forum for
+researchers to investigate key and interesting problems in the
+Software-Defined Networking field.
+
+Finally, the SDNRG provides objective definitions, metrics and
+background research with the goal of providing this information
+as input to protocol, network, and service design to SDOs and
+other standards producing organizations such as the IETF, ETSI,
+ATIS, ITU-T, IEEE, ONF, MEF, and DMTF.
+
+
+Current Events
+
+While there is wide variety of what people call SDN that are
+familiar, SDN is still a nacent idea. And while many of the ideas
+underlying SDN, for example, separation of control and data
+planes, have turned up in telecommunications in prior
+technologies, what is interesting about SDN is the design space
+it represents. For example, SDN models range from OpenFLow/SDN,
+which is charactized by complete separation of control and data
+planes and open access to the fowarding plane to overlay models
+that are less concerned with existing control and data
+planes. Equally diverse are ideas about what kinds of APIs
+(Application Programming Interfaces) should exist and what kinds
+of abstrations they do or should implent. There are also many
+ideas about distributed controller design and implementation,
+many revolving around how state is managed. Finally, the number of
+SDN use cases is growing daily. Given this backdrop, the SDNRG
+currently operates as more of a workshop to allow the diverse SDN
+community to explore all of these factors and their interactions.
+
+Notwithstanding the vast diversity of thought in the SDN
+commmunity, there are several topics that we agree could use some
+directed consideration. These include
+
+o Classification of SDN models, including
+  Definitions
+  Taxonomies
+
+o SDN model scalability and applicability
+
+o Multi-layer programability and feedback control systems
+
+o System Complexity
+
+o Network description languages, abstractions, interfaces and compilers
+
+O Methods and mechanisms for (on-line) verification of  correct
+operation of network/node function. 
+
+o Security
+
+Drafts have been submitted to the SDNRG on terminology for SDN,
+security, and formal methods for correctness.
+
+Standards and SDN
+
+Givin the multitude of ideas as to what an SDN architecture might
+look like and what its compoents are, it is not surprising
+that almost every SDN and many-quasi SDNs (for example, The Open
+Networking Foundation) are involved in SDN standardization. In
+the case of the IETF, one could consider ForCES, NetConf, YANG,
+I2RS, PCE, LISP, and many other technologies to be "SDN enabling". Even
+BGP is being used in many SDN solutions.
+
+Given that it is very early in the evolution of SDN, the SDNRG
+has a very important role to play in the Standards Process. In
+particular, research into many of the SDN technologies being
+currently standardized in the IETF, for example, I2RS or PCE, is
+essential to guide the developement of not only the standards
+theselves but also can help to inform deployment models. Hence
+the SDNRG encourages research and provides a forum for
+discussion. Finally, the SDNRG seeks to help understand the
+larger SDN context and where standardization might be needed.
+
+Open Problems
+
+There are several open problems in the SDN space. These range
+from architectural questions to implemention issues. For example,
+how much programmability should an SDN system provide? OpenFlow
+provides one solution while I2RS provides a different
+solution. Other questions include how distributed state
+management systems (e.g., controllers) should implement state
+consistency, and which APIs and conrresponding abstractions
+should be standardized, if any. 
+
+Summary and Next Steps
+
+SDN is a nacent and active area of research. Several components
+of SDN systems are the subject of standardization. However, there
+are many open questions and the SDNRG strives to provide a forum
+for discussion and documentation of these open questions. The
+SDNRG operates in a workshop format, although that may change as
+SDN matures.
+
+

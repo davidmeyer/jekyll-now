@@ -1,0 +1,87 @@
+
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% § \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+
+
+% \documentclass[11pt]{amsart}
+
+\title{On Virtualization}
+\author{David Meyer}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A precise definition of \emph{virtualization} has been elusive. Given the advent of virtualization as a major compute, storage and networking building block a working definition of virtualization would be helpful....blah blah blah
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+Virtualization is a relationship between producers and consumers of a given resource. For example, a physical server may provide sharing of cores (virtualization) to some number of consumers of those cores. Let $P_r$ be the set of producers of a resource $r$ such that
+
+\begin{align} % requires amsmath; align* for no eq. number
+   P_r = \sum\limits_{i = 1}^n P_{i,r} 
+\end{align}
+
+and let $C_r$ be the set of consumers of a resource $r$ such that 
+
+\begin{align} 
+  C_r = \sum\limits_{j = 1}^m C_{j,r}
+\end{align}
+
+Then the $virtualization$ of a resource $r$, $V_r$ is defined to be
+
+\begin{align}
+V_r = (P_r, C_r, F_r(P_r,C_r)) 
+\end{align}
+
+where 
+
+\begin{align}
+F_r = \iint \limits_{i,j}   f_{r_{x,y}}(P_{x,r},C_{y,r}) \,dx \,dy
+\end{align}
+
+and 
+\begin{align}
+f_{r_{x,y}}: C_{y,r} \rightarrow P_{x,r}
+\end{align}
+
+That is, a resource $r$ is "virtualized" by a function $F_r$. That is,  $F_r:  C_r \rightarrow P_r$. Note that $V_r \approx L(r)$, i.e., \emph{virtualization is a layering}.
+
+\subsection{Interesting Boundary Conditions}
+There are several interesting cases for $P:C$, namely
+
+\begin{itemize}
+\item $1:1$  -- This is the "no virtualization" case
+\item $1:M$  -- This is the hypervisor case
+\item $N:1$  -- This is the "big switch" case
+\item $N:M$  -- This is the "scale out" case
+\end{itemize}
+%\subsection{}
+
+
+
+\end{document}  
