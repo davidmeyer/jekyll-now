@@ -1,0 +1,98 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometryhttps://www.washingtonpost.com/world/europe/amid-impeachment-probe-gordon-sondland-is-overseeing-a-renovation-of-his-residence-that-has-cost-1-million-in-taxpayer-money/2019/10/16/d0eece92-ef86-11e9-bb7e-d2026ee0c199_story.html?tid=sm_tw
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						\label{thm:integral_domain}
+
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+\usepackage{mathtools}
+
+
+
+\usepackage[hyphenbreaks]{breakurl}
+
+\newtheorem{thm}{Theorem}[section]
+% \newtheorem{defn}[thm]{Definition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{example}{Example}[section]
+
+
+
+
+\newcommand{\veq}{\mathrel{\rotatebox{90}{$=$}}}
+\DeclareMathOperator{\bda}{\Big \downarrow}
+
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+
+
+\begin{document}
+
+\noindent
+Let $P$ represent the President, and let $A$ be the statement "Is above the law". Let $E$ be the statement "There are Elections" and $L$ be the statement "There are laws".
+Then
+
+\begin{equation*}
+\begin{array}{rcll}
+P
+&\Rightarrow& A                                              &\qquad \mathrel{\#} \text{If you are president ($P$) then you are above the law ($A$)}   \\
+A &\Rightarrow& \neg L                                   &\qquad \mathrel{\#} \text{If you are above the law ($A$) then laws don't apply ($\neg L)$}  \\
+P &\Rightarrow& \neg L                                   &\qquad \mathrel{\#} A \Rightarrow B \text{ and } B \Rightarrow C \text{ then } A \Rightarrow C \text { (transitivity of $\Rightarrow$)}  \\
+E &\Rightarrow& L                                           &\qquad \mathrel{\#} \text{If there are elections ($E$) then there is a law creating that election ($L$)} \\
+&\Rightarrow& \neg E \lor L                             &\qquad \mathrel{\#} \text{Definition of $\Rightarrow$}  \\
+&\Rightarrow&  L \lor \neg E                            &\qquad \mathrel{\#} \text{$\lor$ is commuatative}  \\
+&\Rightarrow&  \neg L \Rightarrow \neg E      &\qquad \mathrel{\#} \text{Definition of $\Rightarrow$}  
+\end{array}
+\end{equation*}
+
+
+\bigskip
+\noindent
+So we have $\mathbf{(P \Rightarrow \neg L) \land ( \neg L \Rightarrow \neg E)}$  and so  $\mathbf{(P \Rightarrow \neg E)}$  by the transitivity of $\Rightarrow$.
+That is,
+
+\bigskip
+\begin{center}
+ {\bf \large If you are President ($P$) then Elections ($E$) don't apply to you}.
+ \end{center}
+
+\end{document} 

@@ -1,0 +1,615 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{A Few Notes on Density Operators, Expectation Values and Matrix Shapes}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+These notes started life as an experiment in drawing matrices and their shapes (see Section \ref{sec:shapes}). However, it has evolved into a more ad-hoc collection of notes
+covering a few topics in quantum mechanics. So its a WIP. We start with a review of Orthonormality, Completeness, and Projection...
+
+
+\section{Orthonormality, Completeness, and Projection}
+As we saw above, unitary matrices are matrices which satisfy 
+
+\begin{equation}
+\mathbf{U}^{-1} = \mathbf{U}^{\dagger}
+\label{eqn:inverse}
+\end{equation}
+
+\bigskip
+\noindent
+Unitary matrices are ubiquitous and important in quantum mechanics, in 
+particular because they have the following unique and useful properties: Orthonormality, Completeness, and Projection \cite{cresser2007}. 
+We'll briefly look at each of these below\footnote{I will use the 
+notation $\begin{pmatrix} x_1, \hdots, x_n \end{pmatrix}^{\text{T}}$ and $\begin{bmatrix} x_1, \hdots, x_n \end{bmatrix}^\text{T}$ interchangably in the following discussion.}.
+
+\subsection{Orthornomality}
+We can rewrite Equation \ref{eqn:inverse} as
+
+\begin{equation}
+\mathbf{U}^{\dagger} \mathbf{U} = \mathbf{I}
+\label{eqn:dagger}
+\end{equation}
+
+\bigskip
+\noindent
+where \textbf{I} is the \emph{identity} matrix. What Equation \ref{eqn:dagger} is really telling us is that the columns of the matrix \textbf{U} form a set of orthnormal vectors.
+
+\bigskip
+\noindent
+Note that we can interpret a matrix as a row vector where the entries are the columns  $\mathbf{v}_i$ of \textbf{U}. That is
+
+\begin{equation*}
+\mathbf{U} = \begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \hdots & \mathbf{v}_{N} \end{bmatrix}
+\end{equation*}
+
+\bigskip
+\noindent
+Similarly, $\mathbf{U}^{-1}$ can be written as a column vector where the entries are the row vectors $ \mathbf{v}_{i}^\dagger$:
+
+\begin{equation*}
+\mathbf{U}^{-1} = \mathbf{U}^{\dagger} = \begin{bmatrix} \mathbf{v}_1^\dagger \\ \mathbf{v}_2^\dagger \\ \vdots  \\ \mathbf{v}_{N}^\dagger  \end{bmatrix}
+\end{equation*}
+
+\bigskip
+\noindent
+Now we can see that 
+
+\begin{flalign*}
+\mathbf{U}^{\dagger} \mathbf{U} &= \begin{bmatrix} \mathbf{v}_1^\dagger \\ \mathbf{v}_2^\dagger \\ \vdots  \\ \mathbf{v}_{N}^\dagger  \end{bmatrix}
+ \begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \hdots & \mathbf{v}_{N} \end{bmatrix}  \\
+ &= 
+ \begin{bmatrix}  
+ \mathbf{v}_1^\dagger  \cdot  \mathbf{v}_1 & \mathbf{v}_1^\dagger  \cdot  \mathbf{v}_2 &  \mathbf{v}_1^\dagger  \cdot  \mathbf{v}_3 & \hdots & \mathbf{v}_1^\dagger  \cdot  \mathbf{v}_N \\
+ \mathbf{v}_2^\dagger  \cdot  \mathbf{v}_1 & \mathbf{v}_2^\dagger  \cdot  \mathbf{v}_2 &  \mathbf{v}_2^\dagger  \cdot  \mathbf{v}_3 & \hdots & \mathbf{v}_2^\dagger  \cdot  \mathbf{v}_N \\
+ \mathbf{v}_3^\dagger  \cdot  \mathbf{v}_1 & \mathbf{v}_3^\dagger  \cdot  \mathbf{v}_2 &  \mathbf{v}_3^\dagger  \cdot  \mathbf{v}_3 & \hdots & \mathbf{v}_3^\dagger  \cdot  \mathbf{v}_N \\
+ \vdots & \vdots & \vdots &\ddots & \vdots \\
+ \mathbf{v}_N^\dagger  \cdot  \mathbf{v}_1 & \mathbf{v}_N^\dagger  \cdot  \mathbf{v}_2 &  \mathbf{v}_N^\dagger  \cdot  \mathbf{v}_3 & \hdots & \mathbf{v}_N^\dagger  \cdot  \mathbf{v}_N 
+ \end{bmatrix} \\
+ &= \mathbf{I}
+\end{flalign*}
+
+\noindent
+or in Dirac notation \cite{2000RPPh...63.1893G}
+
+\begin{flalign*}
+\mathbf{U}^{\dagger} \mathbf{U} &= \begin{bmatrix} \mathbf{v}_1^\dagger \\ \mathbf{v}_2^\dagger \\ \vdots  \\ \mathbf{v}_{N}^\dagger  \end{bmatrix}
+ \begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \hdots & \mathbf{v}_{N} \end{bmatrix} \\
+ &= 
+ \begin{bmatrix} 
+ \bra{v_1} \\  \bra{v_2} \\ \vdots \\ \bra{v_N} 
+\end{bmatrix}
+ \begin{bmatrix} 
+ \ket{v_1} &  \ket{v_2} & \hdots & \ket{v_N} 
+\end{bmatrix} \\
+&= 
+\begin{bmatrix}  
+\braket{v_1 | v_1} & \braket{v_1 | v_2} & \braket{v_1 | v_3} & \hdots & \braket{v_1 | v_N} \\
+\braket{v_2 | v_1} & \braket{v_2 | v_2} & \braket{v_2 | v_3} & \hdots & \braket{v_2 | v_N} \\
+\braket{v_3 | v_1} & \braket{v_3 | v_2} & \braket{v_3 | v_3} & \hdots & \braket{v_3 | v_N} \\
+\vdots & \vdots & \vdots & \ddots &   \vdots \\
+\braket{v_N | v_1} & \braket{v_N | v_2} & \braket{v_N | v_3} & \hdots & \braket{v_N | v_N} 
+\end{bmatrix}  \\
+&= \mathbf{I}
+\end{flalign*}
+
+\bigskip
+\noindent
+What we can notice\footnote{$\delta_{ij}$ is the Kronecker Delta function \cite{wiki:kronecker_delta}, $\delta_{ij} = \bigg \{
+\begin{array}{ll}
+1 & {\rm when  ~}  i = j \\
+0 & {\rm when  ~}  i \ne j 
+\end{array}$}
+here is that since $(\mathbf{U}^{\dagger} \mathbf{U})_{ij} = (\mathbf{U}^{-1} \mathbf{U})_{ij} = \delta_{ij}$,  
+the columns of \textbf{U} can be written as the inner product  $\braket{v_i | v_j} = \delta_{ij}$. Said another way,
+the vectors $v_i$ form an orthonormal set. In particular, if $\mathbf{V} = \{v_j\}$ is an orthonormal set, then for  $v_i, v_j \in \mathbf{V}$,
+the inner product $\braket{v_i | v_j} = \delta_{ij}$. See Section \ref{sec:shapes} for a brief discussion on matrix shapes.
+
+
+\subsection{Completeness}
+From $\mathbf{U}^\dagger \mathbf{U} = \mathbf{I}$ we saw that we could derive orthonormality. But we also expect that $\mathbf{U} \mathbf{U}^\dagger = \mathbf{I}$.
+It turns out that we can get something interesting by observing this. In particular 
+
+\begin{flalign*}
+\mathbf{U} \mathbf{U}^\dagger &= \begin{bmatrix} \ket{v_1} &  \ket{v_2} & \ket{v_3} & \hdots & \ket{v_N} \end{bmatrix} 
+\begin{bmatrix} \bra{v_1} \\ \bra{v_2} \\ \bra{v_3} \\ \vdots \\ \bra{v_N} \end{bmatrix}
+\end{flalign*}
+
+\bigskip
+\noindent
+If we multiply this out we find that
+
+\begin{equation}
+\ket{v_1}\bra{v_1} + \ket{v_2} \bra{v_2} + \cdots + \ket{v_N} \bra{v_N} = \sum\limits_{i = 1}^{N} \ket{v_i} \bra{v_i} = \mathbf{I}
+\label{eqn:completeness}
+\end{equation}
+
+\bigskip
+\noindent
+Equation \ref{eqn:completeness} is known as the \emph{completeness} relation. Completeness turns out to be useful and is a sort of
+flip-side of orthonormality. While orthonormality is kind of an "inner product" ($\mathbf{U}^{\dagger}\mathbf{U}$), completeness is 
+like an outer product in that $\mathbf{U}\mathbf{U}^\dagger$ is a sum over $i$ of $\ket{v_i}\bra{v_i}$ (although the shapes are reversed). Interestingly, the trace of the outer product of two 
+$n \times 1$ column vectors \textbf{a} and \textbf{b} is $\text{Tr}(\ket{a}\bra{b}) = \braket{a | b}$.
+
+\subsection{Projection}
+To get an idea of what projection is all about, consider the expansion of a vector into components in a basis:
+
+\begin{equation}
+\ket{w} =  \sum\limits_{i = 1}^{N} w_i \ket{v_i}
+\label{eqn:ket_w}
+\end{equation}
+
+\bigskip
+\noindent
+Now, if the set of vectors basis vectors  $\{v_i\}$ are orthonormal, then we know that 
+
+\begin{equation*}
+w_i  =  \braket{v_i  | w}
+\end{equation*}
+
+\bigskip
+\noindent
+and substituting back into Equation \ref{eqn:ket_w} we get
+
+\begin{equation*}
+\ket{w} =  \sum\limits_{i = 1}^{N}  \braket{v_i  | w} \ket{v_i}
+\end{equation*}
+
+\bigskip
+\noindent
+Interestingly, there is another way to derive this result:  use the completeness relation, which is simply a fancy but useful way to write \textbf{I}:
+
+\begin{equation*}
+\ket{w} =  \mathbf{I} \cdot \ket{w} =  \Bigg (\sum\limits_{i = 1}^{N}  \ket{v_i} \bra{v_i} \Bigg ) \ket{w} = \sum\limits_{i = 1}^{N}  \ket{v_i} \braket{v_i | w}
+\end{equation*} 
+
+\bigskip
+\noindent
+In words, we were able to use the completeness relation to project a vector onto its components in a particular basis.
+
+\bigskip
+\noindent
+For example, we know that for vectors $\ket{\alpha}$ and $\ket{\beta}$, we can take the inner product between them by using their components in a basis $\{v_i\}$:
+
+\bigskip
+\begin{equation*}
+\braket{\alpha  | \beta} = \sum\limits_{i = 1}^{N} a_i^* b_i
+\end{equation*} 
+
+\bigskip
+\noindent
+where $a_i = \braket{v_i | \alpha}$ and $b_i = \braket{v_i | \beta}$. Interestingly, we can again derive this using the completeness relation:
+
+%
+% Thanks to Alan Barrett, Job Sniders, Pierre Francois and  Nikolai Matni for their suggestions to make 
+% my "comment" code better (essentially wrap in in an array)
+%
+%  Sat Dec 15 10:41:23 PST 2018
+%
+
+\begin{equation*}
+\begin{array}{rcll}
+\braket{\alpha | \beta} 
+&=& \bra{\alpha}  \mathbf{I} \ket{\beta}                                                                           & \quad \mathrel{\#} \braket{\alpha | \beta} = \bra{\alpha} \ket{\beta} = \bra{\alpha}  \mathbf{I} \ket{\beta} \\
+&=& \bra{\alpha} \Bigg (\sum\limits_{i = 1}^{N}  \ket{v_i} \bra{v_i} \Bigg )  \ket{\beta}    & \quad \mathrel{\#} \sum\limits_{i = 1}^{N}  \ket{v_i} \bra{v_i}   = \mathbf{I}  \;\; (\text{Equation } \ref{eqn:completeness}) \\
+&=& \sum\limits_{i = 1}^{N} \braket{\alpha | v_i} \braket{v_i | \beta}                               & \quad \mathrel{\#}  \text{rearrange} \\
+&=& \sum\limits_{i = 1}^{N} \braket{v_i | \alpha}^* \braket{v_i | \beta}                            & \quad  \mathrel{\#} \braket{a | b} = \braket{ b | a}^* \text{so} \braket{\alpha | v_i}  = \braket{v_i | \alpha}^* \\
+&=& \sum\limits_{i = 1}^{N} a_i^*b_i                                                                               & \quad \mathrel{\#} a_i^* =  \braket{v_i | \alpha}^*  \text{ and } b_i = \braket{v_i | \beta}
+\end{array}
+\end{equation*}
+
+
+\bigskip
+\section{Expectation Values}
+\label{sec:shapes}
+Consider an observable \textbf{A}  in the pure state $\ket{\psi}$.  The expectation value $\braket{A}_{\psi}$ is given by
+
+\begin{flalign}
+\braket{A}_{\psi} &= \bra{\psi} A \ket{\psi} 
+\label{eqn:exp}
+\end{flalign}
+
+\bigskip
+\noindent
+where $\dim (\bra{\psi}) = 1 \times n$, $\dim (A) = n \times n$, and $\dim (\ket{\psi}) = n \times 1$. 
+
+\bigskip
+\noindent
+So why is $\braket{A}_{\psi}$ an expectation? 
+Well, first, if $A$ is an observable for a system with a discrete set of values $\{a_1, a_2, \hdots, a_N\}$,
+then this observable is represented by a Hermitean operator $\hat{A}$ that has these discrete values as its eigenvalues, and associated eigenstates 
+$\{\ket{a_n\}}$, for $n = 1,2,3,\hdots$ satisfying the eigenvalue equation $\hat{A}\ket{a_n} = a_n \ket{a_n}$. I drop the "hat" in most of the below.
+
+\bigskip
+\noindent
+First, observe that $ \bra{a_n} A = a_n \bra{a_n}$. Why? 
+
+\begin{equation}
+\begin{array}{rcllll}
+A \ket{a_n}
+&=& a_n \ket{a_n}                                                                                                         && \quad \mathrel{\#} \text{eigenvector equation:  $AX = \lambda X$} \\
+&\implies& (A \ket{a_n})^{\dagger}               &= (a_n \ket{a_n})^{\dagger}                       & \quad \mathrel{\#} \text{conjugate transpose both sides} \\
+&\implies& \ket{a_n}^{\dagger} A^{\dagger} &= \ket{a_n}^{\dagger} a_n^{\dagger}        & \quad \mathrel{\#} (AB)^\dagger = B^\dagger A^\dagger \\
+&\implies& \ket{a_n}^{\dagger} A^{\dagger} &= a_n^{\dagger} \ket{a_n}^{\dagger}        & \quad \mathrel{\#} \text{rearrange ($a_n^\dagger$ is a scalar)} \\
+&\implies& \ket{a_n}^{\dagger} A                 &= a_n^{\dagger} \ket{a_n}^{\dagger}         & \quad \mathrel{\#} \text{$A$ is Hermitian so $A = A^\dagger$} \\
+&\implies& \ket{a_n}^{\dagger} A                 & = a_n^{*} \ket{a_n}^{\dagger}                   & \quad \mathrel{\#} a_n^{\dagger} = a_n^* \; \text{($a_n$ is a scalar)} \\
+&\implies& \bra{a_n} A                                 &= a_n^{*} \bra{a_n}                                    & \quad \mathrel{\#} \ket{a_n}^{\dagger} = \bra{a_n} \\
+&\implies& \bra{a_n} A                                 &= a_n  \bra{a_n}                                         & \quad \mathrel{\#} a_n* = a_n
+\label{eqn:aketan}
+\end{array}
+\end{equation}
+
+\bigskip
+\noindent
+Why is $a_n^* = a_n$? Well, consider
+
+
+\begin{equation}
+\begin{array}{lclll}
+A X
+&=& \lambda X                                                                                               && \quad \mathrel{\#} \text{eigenvector equation} \\
+&\implies& (A X)^{\dagger} &= (\lambda X)^{\dagger}                                      & \quad \mathrel{\#} \text{take conjugate transpose of both sides} \\
+&\implies& X^{\dagger} A^\dagger&= X^{\dagger} \lambda^{\dagger}             & \quad \mathrel{\#} (AB)^\dagger = B^\dagger  A^\dagger \\
+&\implies& X^{\dagger} A^\dagger &= \lambda^{\dagger} X^{\dagger}             & \quad \mathrel{\#} \text{rearrange ($\lambda^\dagger$ is a scalar)} \\
+&\implies& X^{\dagger} A^\dagger &= \lambda^{*} X^{\dagger}                        & \quad \mathrel{\#} \lambda^\dagger = \lambda^* \; \text{($\lambda$ is a scalar)} \\
+&\implies& X^{\dagger} A &= \lambda^{*} X^{\dagger}                                     & \quad \mathrel{\#} A^\dagger = A  \text{ since $A$ is Hermitian} \\
+&\implies& X^{\dagger} A &= X^{\dagger}   \lambda^{*}                                   & \quad \mathrel{\#} \text{rearrange} \\
+&\implies& X^\dagger  A X &= X^{\dagger}  \lambda^{*} X                               & \quad \mathrel{\#}  \text{multiply both sides by $X$}
+\end{array}
+\label{eqn:ax}
+\end{equation}
+
+\bigskip
+\noindent
+Now notice that if we multiply both sides of the original eignenvector equation $A X = \lambda X$ by $X^{\dagger}$ we get 
+$X^{\dagger} AX = X^{\dagger} \lambda X$.  We know from (\ref{eqn:ax}) that $X^\dagger  A X = X^{\dagger}  \lambda^{*} X$
+and therefore that $X^{\dagger}  \lambda^{*} X = X^{\dagger}  \lambda X $.
+This implies that $\lambda^{*} = \lambda$, so $\lambda \in \mathbb{R}$.
+Similarly $a_n^* = a_n$ so $a_n \in \mathbb{R}$.
+
+\bigskip
+\noindent
+Another way to look at this is to assume the computational basis\footnote{(\ref{eqn:aketan}) doesn't seem to require this assumption.}
+and then
+
+\begin{equation*}
+\begin{array}{rcll}
+ \bra{a_n} A
+&=& a_n \bra{n} A  
+    & \quad \mathrel{\#} \bra{a_n}   =  a_n \begin{bmatrix} 0 & \hdots & 1 & \hdots 0 \end{bmatrix} = a_n \bra{n}    \\
+&=& a_n \bra{n} A^{\dagger}
+    & \quad \mathrel{\#} \text{$A$ is Hermitian so $A = A^{\dagger}$}    \\
+&=& a_n \bra{n} \begin{bmatrix} \bra{a_1}  \\  \vdots \\ \bra{a_n} \\ \vdots \\  \bra{a_N}  \end{bmatrix}      
+    & \quad \mathrel{\#}  A^{\dagger} =  \begin{bmatrix} \bra{a_1}  \\  \vdots \\ \bra{a_n} \\ \vdots \\  \bra{a_N}  \end{bmatrix}  \\
+&=& a_n \begin{bmatrix} 0 & \cdots & 1 & \cdots 0 \end{bmatrix}  \begin{bmatrix} \bra{a_1}  \\  \vdots \\ \bra{a_n} \\ \vdots \\  \bra{a_N}  \end{bmatrix}  
+    & \quad \mathrel{\#}  \bra{n}  = \begin{bmatrix} 0 & \hdots & 1 & \hdots 0 \end{bmatrix}  \\
+&=& a_n \bra{a_n} 
+    & \quad \mathrel{\#}  \bra{n} \text{ selects the $n^{th}$ element of $A^{\dagger}, \bra{a_n}$}
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+In any event, now we have $\bra{a_n} A = a_n \bra{a_n}$. So we can observe that 
+
+\begin{equation*}
+\begin{array}{rcll}
+\braket{A}_{\psi} 
+&=& \braket{\psi |A | \psi}                             
+    & \qquad\qquad \mathrel{\#} \text{definition of $\braket{A}_{\psi}$ for \emph{pure} state $\ket{\psi}$} \\
+&=& \braket{\psi  | IA | \psi}                             
+    & \qquad\qquad \mathrel{\#} I \cdot A = A \\
+&=& \braket{\psi | \bigg (\sum\limits_{n = 1}^{N} \ket{a_n} \bra{a_n} \bigg ) A | \psi}                      
+    & \qquad\qquad \mathrel{\#} \sum\limits_{n = 1}^{N} \ket{a_n} \bra{a_n} = \mathbf{I} \;\;  \text{\big (Equation \ref{eqn:completeness}} \big ) \\
+&=& \sum\limits_{n = 1}^{N} \braket{\psi | a_n} \braket{a_n | A | \psi}                 
+     & \qquad\qquad \mathrel{\#} \text{rearrange} \\
+&=& \sum\limits_{n = 1}^{N} \braket{\psi | a_n} a_n   \braket{a_n | \psi}
+    & \qquad\qquad \mathrel{\#}  \bra{a_n} A = a_n \bra{a_n} \text{ (see above)} \\
+&=& \sum\limits_{n = 1}^{N} \braket{\psi | a_n}  \braket{a_n | \psi} a_n
+    & \qquad\qquad \mathrel{\#}  \text{rearrange} \\
+&=& \sum\limits_{n = 1}^{N} | \braket{\psi | a_n}|^2  a_n
+    & \qquad\qquad \mathrel{\#} |\braket{\psi | a_n}|^2  = \braket{\psi | a_n}  \braket{\psi | a_n}^*  = \braket{\psi | a_n}  \braket{a_n | \psi}  \\
+&=& \sum\limits_{n = 1}^{N} p(a_n)  a_n
+    & \qquad\qquad \mathrel{\#}  |\braket{\psi | a_n}|^2 = p(a_n),  \text{the probability of observing $a_n$} \\
+&=& \E [A]
+    & \qquad\qquad \mathrel{\#}  \E [X] = \sum\limits_{n = 1}^{N} p(X_n) X_n
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+So the expectation value for the result of a measurement represented by a self-adjoint operator $A$, $\braket{A}_{\psi}$,
+ is the weighted average of all possible outcomes under $A$, that is, $\E [A]$.
+
+\section{Shapes}
+\label{sec:shapes}
+One way to visualize $\braket{A}_{\psi}$ is
+
+\bigskip
+\begin{flalign*}
+\braket{A}_{\psi} & \rightarrow
+\underbrace{\begin{bmatrix} \hdots \hdots  \hdots \end{bmatrix}}_{1 \times n} 
+\underbrace{
+\begin{bmatrix}
+\hdots & \hdots  & \hdots \\
+\vdots & \ddots  &  \vdots \\
+ \hdots & \hdots  & \hdots 
+\end{bmatrix}}_{n \times n} 
+\underbrace{\begin{bmatrix} \hdots \\ \vdots \\  \hdots  \end{bmatrix}}_{n \times 1} \\
+& \rightarrow c
+\end{flalign*}
+
+\noindent
+where $c \in \mathbb{C}$.
+
+\bigskip
+\noindent
+The \emph{density operator} $\rho$ for pure state $\ket{\psi}$ is given by $\rho = \ket{\psi} \bra{\psi}$. The shape of $\rho$ is 
+
+\bigskip
+\begin{flalign*}
+\rho \rightarrow
+\underbrace{\begin{bmatrix} \hdots \\ \vdots \\  \hdots  \end{bmatrix}}_{n \times 1} 
+\underbrace{\begin{bmatrix} \hdots \hdots  \hdots \end{bmatrix}}_{1 \times n} \rightarrow
+\underbrace{
+\begin{bmatrix}
+\hdots & \hdots  & \hdots \\
+\vdots & \ddots  &  \vdots \\
+ \hdots & \hdots  & \hdots 
+\end{bmatrix}}_{n \times n} 
+\end{flalign*}
+
+\bigskip
+\noindent
+The shape of the inner product of two $n \times 1$ column vectors  $\braket{\mathbf{u}, \mathbf{v}} = \braket{u | v} =  \mathbf{u}^{\text{T}}\mathbf{v}$ is 
+
+\bigskip
+\begin{flalign*}
+\mathbf{u}^{\text{T}}\mathbf{v}  & \rightarrow
+\underbrace{\begin{bmatrix} \hdots \hdots  \hdots \end{bmatrix}}_{1 \times n}  \underbrace{\begin{bmatrix} \hdots \\ \vdots \\  \hdots  \end{bmatrix}}_{n \times 1}  \rightarrow c
+\end{flalign*}
+
+\bigskip
+\noindent
+where $c \in \mathbb{C}$. The shape of the outer product $\mathbf{u} \otimes \mathbf{v} = \ket{u} \bra{v} = \mathbf{u} \mathbf{v}^{\text{T}}$ is 
+
+\bigskip
+\begin{flalign*}
+\mathbf{u} \mathbf{v}^{\text{T}}  \rightarrow
+\underbrace{\begin{bmatrix} \hdots \\ \vdots \\  \hdots  \end{bmatrix}}_{n \times 1} 
+\underbrace{\begin{bmatrix} \hdots \hdots  \hdots \end{bmatrix}}_{1 \times n} \rightarrow
+\underbrace{
+\begin{bmatrix}
+\hdots & \hdots  & \hdots \\
+\vdots & \ddots  &  \vdots \\
+ \hdots & \hdots  & \hdots 
+\end{bmatrix}}_{n \times n} 
+\end{flalign*}
+
+
+\bigskip
+\section{The Density $\rho$ and the Trace of an Operator $D$}
+So $\rho$ is an $n \times n$ \emph{linear operator} with $\text{Tr}(\rho)  = \text{Tr}(\ket{\psi} \bra{\psi}) = \braket{\psi | \psi}$. 
+In addition, $\text{Tr}(\ket{\psi_i} \bra{\psi_i}) = \braket{\psi_i | \psi_i}  = \delta_{ii} = 1$, and if $\{\ket{\psi_i}\}$ is an
+orthonormal basis then $\text{Tr}(\ket{\psi_i} \bra{\psi_j}) = \braket{\psi_i | \psi_j}  = \delta_{ij}$.
+
+\bigskip
+\noindent
+The density matrix \cite{porter04052011} $\rho$ has the following important properties:
+
+\begin{equation*}
+\begin{array}{lll}
+& \text{Projection:}            & \quad \rho^2 = \rho           \\
+& \text{Hermiticity:}           & \quad \rho^\dagger = \rho \\
+& \text{Normalization:}      & \quad \text{Tr}(\rho) = 1    \\
+& \text{Positivity:}              & \quad \rho \geq 1
+\end{array}
+\end{equation*}
+
+\noindent
+The \emph{trace} of an operator $D$,  $\text{Tr}(D)$, is defined to be $\text{Tr}(D) = \sum\limits_{i = 1}^{n} \bra{n} D \ket{n}$.
+Now, suppose $D = \ket{\psi} \bra{\phi}$. Then we can see that $\text{Tr}(D) = \text{Tr}(\ket{\psi} \bra{\phi}) = \braket{\phi | \psi}$ as follows:
+
+\begin{equation*}
+\begin{array}{rcll}
+\text{Tr}(D) 
+&=& \sum\limits_{n = 1}^{N} \bra{n} D \ket{n}                                                          & \quad  \mathrel{\#} \text{definition of $\text{Tr}(D)$}  \\
+&=& \sum\limits_{n = 1}^{N} \bra{n} (\ket{\psi} \bra{\phi})  \ket{n}                            & \quad  \mathrel{\#} D = \ket{\psi} \bra{\phi} \\
+&=& \sum\limits_{n = 1}^{N} \bra{n} \ket{\psi} \bra{\phi}\ket{n}                                & \quad  \mathrel{\#} \text{drop parens} \\
+&=& \sum\limits_{n = 1}^{N} \braket{n | \psi} \braket{\phi | n}                                  & \quad  \mathrel{\#} \braket{a | b} = \bra{a} \ket{b} \\
+&=& \sum\limits_{n = 1}^{N} \braket{\phi | n} \braket{n | \psi}                                  & \quad  \mathrel{\#} \text{rearrange} \\
+&=& \bra{\phi}  \Bigg (  \sum\limits_{n = 1}^{N}  \ket{n} \bra{n} \Bigg )  \ket{\psi}    & \quad  \mathrel{\#} \text{neither $\phi$ nor $\psi$ depend on $n$}\\
+&=& \braket{\phi | I | \psi}                                                                                        & \quad  \mathrel{\#} \sum\limits_{n = 1}^{N} \ket{n} \bra{n} = \mathbf{I}  \;\;  \text{\big (Equation \ref{eqn:completeness}} \big ) \\
+&=& \bra{\phi } \ket{\psi}                                                                                          & \quad  \mathrel{\#} \bra{\phi } I = \bra{\phi} \text{ and } I \ket{\psi}  = \ket{\psi}  \\
+&=& \braket{\phi | \psi}                                                                                            & \quad  \mathrel{\#} \braket{\phi | \psi} = \bra{\phi} \ket{\psi}
+\end{array}
+\end{equation*}
+
+
+\bigskip
+\noindent
+So the trace of the outer product  $\ket{\psi} \bra{\phi}$,  $\text{Tr}(\ket{\psi} \bra{\phi})$, is the inner product  $\braket{\phi | \psi}$.
+
+\bigskip
+\noindent
+A simple theorem relates the expectation value of an observable $A$ in a state represented by a density matrix $\rho$ to the trace of $A$:
+
+\begin{equation}
+\braket{A}_\rho = \text{Tr}(\rho A)
+\label{eqn:braket_A}
+\end{equation}
+
+\bigskip
+\noindent
+The proof of Equation \ref{eqn:braket_A} is also pretty simple:
+
+\begin{equation*}
+\begin{array}{rcll}
+\text{Tr}(\rho A) 
+&=& \text{Tr}(\ket{\psi} \bra{\psi}  A)                                                                      & \quad \mathrel{\#} \rho = \ket{\psi} \bra{\psi} \\
+&=& \sum\limits_{n = 1}^{N} \bra{n} \ket{\psi} \bra{\psi} A \ket{n}                          & \quad \mathrel{\#} \text{definition of Tr($\cdot$)} \\
+&=& \sum\limits_{n = 1}^{N} \braket{n | \psi} \bra{\psi} A \ket{n}                           & \quad \mathrel{\#}  \braket{n | \psi}  =  \bra{n} \ket{\psi}  \\
+&=& \sum\limits_{n = 1}^{N} \bra{\psi} A \ket{n} \braket{n | \psi}                           & \quad \mathrel{\#} \text{rearrange} \\
+&=& \bra{\psi}  A \Bigg (\sum\limits_{n = 1}^{N} \ket{n} \bra{n} \Bigg ) \ket{\psi}   & \quad \mathrel{\#} \text{neither $A$ nor $\psi$ depend on $n$} \\
+&=& \bra{\psi} A  \cdot I  \ket{\psi}                                                                         & \quad \mathrel{\#} \sum\limits_{n = 1}^{N} \ket{n} \bra{n} = \mathbf{I} \;\; \text{\big (Equation \ref{eqn:completeness}} \big )  \\
+&=& \bra{\psi} A \ket{\psi}                                                                                      & \quad  \mathrel{\#} \mathbf{A} \cdot \mathbf{I} = \mathbf{A} \\
+&=& \braket{A}                                                                                                      & \quad \mathrel{\#} \braket{A}_{\psi} = \bra{\psi} A \ket{\psi}   \big (\text{Equation } \ref{eqn:exp} \big )
+\end{array}
+\end{equation*}
+
+\bigskip
+\section{A More General View of the Density Operator}
+Consider an ensemble of identical quantum systems. The system has probability $w_i$ to be in quantum state $\ket{\psi_i}$.  Here $\braket{\psi_i | \psi_i} = 1$,  but
+the states $\ket{\psi_i}$ aren't necessarily orthogonal to one another.   That means that out of all the examples in the ensemble, a fraction $w_i$  are in state $\ket{\psi_i}$, with
+$w_i  >  0$ and $\sum\limits_{i} w_i = 1$.
+\bigskip
+\noindent
+The expectation value for the result of a measurement represented by a self-adjoint operator $A$ is
+
+\begin{equation}
+\braket{A}_{\psi} = \sum\limits_{i} w_i \braket{\psi_i | A | \psi_i}
+\label{eqn:braketA}
+\end{equation}
+
+\bigskip
+\noindent
+We can write the expectation value in a different way using a basis $\ket{K}$ as 
+
+\begin{equation*}
+\begin{array}{rcll}
+\braket{A}_{\psi}
+&=& \sum\limits_{i} w_i \braket{\psi_i | A | \psi_i}                                                                          
+     & \quad \mathrel{\#} \text{defintion of } \braket{A}_{\psi} , \text{Equation } \ref{eqn:braketA} \\
+&=& \sum\limits_{i} w_i \braket{\psi_i | I A I | \psi_i}                                                                      
+     & \quad \mathrel{\#} \mathbf{A} = \mathbf{I} \cdot \mathbf{A} \cdot \mathbf{I} \\
+&=& \sum\limits_{i} w_i \braket{\psi_i | \Big (  \sum\limits_{J} \ket{J} \bra{J} \Big ) |A | \Big ( \sum\limits_{K} \ket{K} \bra{K} \Big ) | \psi_i}   
+     & \quad \mathrel{\#} \sum\limits_{J} \ket{J}\bra{J} = \mathbf{I}, \sum\limits_{K} \ket{K}\bra{K} = \mathbf{I} \\
+&=& \sum\limits_{i} w_i \sum\limits_{J,K} \braket{\psi_i | J} \braket{J |A | K} \braket{K | \psi_i}    
+     & \quad \mathrel{\#} \text{rearrange} \\
+&=& \sum\limits_{i} w_i \sum\limits_{J,K}  \braket{K | \psi_i}   \braket{\psi_i | J} \braket{J |A | K} 
+     & \quad \mathrel{\#} \text{rearrange} \\
+&=&  \sum\limits_{J,K} \sum\limits_{i} w_i \braket{K | \psi_i}   \braket{\psi_i | J} \braket{J |A | K} 
+     & \quad \mathrel{\#} \text{none of $A$, $J$, or $K$ depend on $i$} \\
+&=&  \sum\limits_{J,K}  \braket{K | \Big ( \sum\limits_{i} w_i  \ket{\psi_i}\bra{\psi_i}  \Big) | J} \braket{J |A | K} 
+     & \quad \mathrel{\#} \text{rearrange} \\
+&=& \sum\limits_{J,K} \braket{K | \rho | J} \braket{J | A | K}
+     & \quad \mathrel{\#} \rho = \sum\limits_{i} w_i \ket{\psi_i} \bra{\psi_i} \\\
+&=& \sum\limits_{K} \braket{K | \rho  I A | K}
+     & \quad \mathrel{\#} \sum\limits_{J} \ket{J} \bra{J} = \mathbf{I} \\
+&=& \sum\limits_{K} \braket{K | \rho A | K}
+     & \quad \mathrel{\#}  \mathbf{I} \cdot \mathbf{A} = \mathbf{A} \\
+&=&  \text{Tr}(\rho A)
+     & \quad \mathrel{\#} \text{Tr}(D) = \sum\limits_{n} \braket{n | D | n}
+\end{array}
+\end{equation*}
+
+\subsection{Properties of the Density Operator}
+As mentioned above, there are several important properties of the density operator $\rho$.  The first of these is that $\text{Tr}(\rho) = 1$.
+This follows from $w_i$ has $w_i  >  0$ and $\sum\limits_{i} w_i = 1$. 
+
+\bigskip
+\noindent
+Next, $\rho$ is self-adjoint: $\rho^{\dagger} = \rho$. Because it is self-adjoint, 
+$\rho$ has eigenvectors $\ket{J}$ with eigenvalues $\lambda_{J}$ and the eigenvectors form a basis for vector space. Thus $\rho$ has a standard spectral
+representation
+
+\begin{equation*}
+\rho = \sum\limits_{J} \lambda_{J} \ket{J} \bra{J}
+\end{equation*}
+
+\bigskip
+\noindent
+We can express $\lambda_{J}$ as $\lambda_{J}  = \braket{J | \rho | J}$. Then
+
+\bigskip
+\begin{equation*}
+\begin{array}{rcll}
+\lambda_{J} 
+&=& \braket{J | \rho | J}                                                                                   & \quad \mathrel{\#}  \\
+&=& \braket{J | \Big ( \sum\limits_{i} w_i \ket{\psi_i} \bra{\psi_i} \Big ) | J}      & \quad \mathrel{\#}  \rho = \sum\limits_{i} w_i \ket{w_i} \bra{w_i}  \\
+&=& \sum\limits_{i} w_i  \braket{J | \psi_i} \braket{\psi_i | J}                           & \quad \mathrel{\#}  \text{rearrange} \\
+&=& \sum\limits_{i} w_i \braket{J | \psi_i} \braket{J | \psi_i}^*                         & \quad \mathrel{\#} \braket{J | \psi_i}^* = \braket{\psi_i | J} \\
+&=& \sum\limits_{i} w_i |\braket{J | \psi_i}|^2                                                  & \quad \mathrel{\#} \braket{J | \psi_i} \braket{J | \psi_i}^* =  |\braket{J | \psi_i}|^2 
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+Since $w_i > 0$ and $ |\braket{J | \psi_i}|^2 > 0$, each eigenvalue must be non-negative, that is, $\lambda_{J} \geq 0$. In addition, the trace of $\rho$ is the sum of its 
+eigenvalues, so $\sum\limits_{J} \lambda_{J} = 1$. Since each eigenvalue is non-negative, $\lambda_{J} \leq 1$.
+
+
+
+\bigskip
+\noindent
+Another way to see why $|\braket{a_n | \psi}|^2 = p(\psi)$:
+
+
+\begin{equation*}
+\begin{array}{rcll}
+\ket{\psi}
+&=& I \ket{\psi}                                                                                                   & \quad \mathrel{\#}  \mathbf{I} \cdot \mathbf{X} = \mathbf{X} \\
+&=& \sum\limits_{n} \ket{a_n} \bra{a_n} \ket{\psi}                                              & \quad \mathrel{\#} \sum\limits_{n} \ket{a_n} \bra{a_n} = I \\
+&=& \sum\limits_{n} \ket{a_n} \braket{a_n | \psi}                                               & \quad \mathrel{\#} \bra{a_n} \ket{\psi} = \braket{a_n | \psi} 
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+So $\braket{a_n | \psi}$ is the amplitude of $\ket{a_n}$, making $| \braket{a_n | \psi} |^2 = p(a_n)$.
+
+\bigskip
+\section{Acknowledgements}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/qc}
+\end{document} 

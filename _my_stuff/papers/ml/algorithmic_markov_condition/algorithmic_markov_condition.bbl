@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{Janzing:2010:CIU:1870245.1870271}
+D.~Janzing and B.~Sch\"{o}lkopf, ``Causal inference using the algorithmic
+  markov condition,'' {\em IEEE Trans. Inf. Theor.}, vol.~56, pp.~5168--5194,
+  Oct. 2010.
+
+\bibitem{Cover2006}
+T.~M. Cover and J.~A. Thomas, {\em Elements of Information Theory 2nd Edition
+  (Wiley Series in Telecommunications and Signal Processing)}.
+\newblock Wiley-Interscience, July 2006.
+
+\bibitem{2009arXiv0910.1691J}
+D.~{Janzing} and B.~{Steudel}, ``{Justifying additive-noise-model based causal
+  discovery via algorithmic information theory},'' {\em ArXiv e-prints}, Oct.
+  2009.
+
+\end{thebibliography}

@@ -1,0 +1,125 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+%
+% so you can do e.g., \begin{bmatrix}[r] (or [c] or [l])
+%
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{A Few Notes on Algebraic Structures (WIP)}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+\begin{center}
+\begin{table}[H]
+\scalebox{0.83}{
+\begin{tabular}{l | c | c | c | c |  c | c}
+{\bf Structure}           & $\textbf{ABO}^1$ & {\bf Identity}  & {\bf Inverse} & {\bf $\text{Distributive}^2$} & {\bf $\text{Commutative}^3$} & {\bf Comments} \\
+\hline
+Semigroup                & \checkmark & no                            & no                            & N/A                & no                           & $(S,\circ)$                                    \\
+Monoid                      & \checkmark & \checkmark             & no                            & N/A                & no                           & Semigroup plus idenity  $\in S$   \\
+Group                        & \checkmark & \checkmark             & \checkmark              & N/A               & no                           & Monoid plus inverse $\in S$         \\
+Abelian Group           & \checkmark & \checkmark             & \checkmark              & N/A               & \checkmark             & Commutative group                      \\
+$\text{Ring}_{+}$       & \checkmark & \checkmark             & \checkmark              & \checkmark  & \checkmark             & Abelian group under $+$               \\
+$\text{Ring}_{*}$        & \checkmark & \checkmark             & no                            & \checkmark  &  no                           & Monoid under $*$                          \\
+$\text{Field}_{(+,*)}$  & \checkmark & \checkmark $(+,*)$ & \checkmark $(+,*)$  & \checkmark  & \checkmark             & Abelian group under $+$ and $*$  \\
+Vector Space             & \checkmark & \checkmark $(+,*)$ & \checkmark $(+)$    & \checkmark  & \checkmark              & Abelian group under $+$
+\end{tabular}}
+\caption{A Few Algebraic Structures and Their Features}
+\label{tab:algebraic_structures}
+\end{table}
+\end{center}
+
+\noindent
+\textbf{Abbreviations:}
+
+\begin{enumerate}
+\item \textbf{ABO:} Associative Binary Operation 
+\begin{itemize}
+\item $(x \circ y) \circ z = x \circ  (y \circ z)$  for all $x, y, z \in S$
+\item $x \circ y \in S$ (closure under $\circ$)
+\end{itemize}
+
+\item \textbf{Distributive:} Distributive Property 
+\begin{itemize}
+\item Left Distributive Property: $x * (y+z )= (x*y) + (x*z)$ for all $x, y, z \in S$
+\item Right Distributive Property: $(y + z) * x = (y*x) + (z*x)$ for all $x, y, z \in S$
+\item $*$ is \emph{distributive} over $+$ if $*$ is left and right distributive
+\end{itemize}
+
+\item \textbf{Commutative:} Commutative Property
+\begin{itemize}
+\item $x \circ y = y \circ x {\mbox{ for all }}x,y\in S$
+\end{itemize}
+\end{enumerate}
+
+
+\noindent
+\textbf{Notes:}
+\begin{itemize}
+\item Table \ref{tab:algebraic_structures} implies that $\text{F} \subset \text{R} \subset \text{G} \subset \text{M} \subset \text{SG}$
+\item $\text{VS} \subset \text{G}_{+}$ (vector spaces are Abelian groups under $+$)
+\item $\text{F} \subset \text{VS}$ since the field axioms require a multiplicative inverse ($a^{-1}$) while vector spaces do not
+\end{itemize}
+
+
+\section{Acknowledgements}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/qc}
+
+
+
+\end{document} 

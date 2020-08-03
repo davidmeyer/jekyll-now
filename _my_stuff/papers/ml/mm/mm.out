@@ -1,0 +1,7 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Minimizing Cost is a Sum}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Linear Regression Cost Function}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Logistic Regression Cost Function}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Deriving the Loss/Error function for Logistic Regression}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Maximizing Probability is a Product}{}% 6
+\BOOKMARK [1][-]{section.4}{Minimizing Energy}{}% 7

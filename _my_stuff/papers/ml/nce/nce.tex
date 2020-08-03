@@ -1,0 +1,256 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+%\usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+
+
+\title{Notes on Noise Contrastive Estimation (NCE)}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,...\}}
+
+% \date{}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+\label{sec:intro}
+
+In this note we follow the notation used in \cite{GUTMANN12a}. Suppose $\mathcal{X} = (x_1,x_2, \cdots, x_{T_d})$ is a sample of a random vector $x \in \mathbb{R}^n$, where each $x_i$ is drawn \emph{unknown} probability density function $p_d$. 
+Now, one way to describe the properties of the observed data $\mathcal{X}$ is to describe its properties relative to the properties of some reference data $\mathcal{Y}$. The basic idea behind Noise Contrastive Estimation (NCE) is to draw the reference (noise) sample $\mathcal{Y} = (y_1,y_2,\cdots, y_{T_n })$ from a known pdf $p_n$ and then estimate the ratio $p_d/p_n$, which will in turn give us an estimate of $p_d$. 
+
+\section{Definitions}
+
+Let $\mathcal{U} = \mathcal{X} \cup \mathcal{Y} = \{\mathbf{u}_1, \mathbf{u}_2,\cdots,\mathbf{u}_{T_d + T_n}\}$, where $T_d$ is  the number of data samples and $T_n$ is the number of  samples from a noise distribution.\footnote{Some authors characterize the problem as drawing 1 sample from the empirical distribution ($Td = 1$) and $k$ samples from the reference (noise) distribution ($T_n = k$), where the total number of samples per "turn" is $k+1$. See e.g., https://arxiv.org/pdf/1410.8251.pdf}
+We associate with each datapoint  $\mathbf{u}_t$  a class label $C_t$ such that 
+
+\begin{flalign*}C_t =  
+\left \{ 
+        \begin{array}{ll}
+		1 & \mbox{if  }\mathbf{u}_t \in \mathcal{X} \\
+		0 & \mbox{if } \mathbf{u}_t \in \mathcal{Y}
+	\end{array}
+\right.
+\end{flalign*}
+
+\bigskip
+\noindent
+Since  $p_d$ is unknown,  we model $p(.|C=1) = p_m(.;\theta)$. Note that we're making an assumption here that there exists a $\boldsymbol{\theta}^*$ such that $p_d(.) = p_m(.;\boldsymbol{\theta}^*)$. That is, we assume that the empirical distribution $p_d(.)$ is a member of the parameterized family $p_m(.;\boldsymbol{\theta})$.
+
+\bigskip
+\noindent
+Given these definitions,  the likelihoods are 
+
+\begin{flalign}
+p(\mathbf{u}|C=1) &= p_m(\mathbf{u};\theta)  \quad \qquad  \mathbin{\#} \text{data} \\
+p(\mathbf{u}|C=0) &= p_n(\mathbf{u})              \qquad \qquad  \mathbin{\#} \text{noise} 
+\end{flalign}
+
+\noindent
+The priors are
+\begin{flalign}
+P(C=1) &= \frac{T_d}{T_d + T_n} \\
+P(C=0) &= \frac{T_n}{T_d + T_n}
+\end{flalign}
+
+\bigskip
+\noindent
+The probability of any given $\mathbf{u}$,  $P(\mathbf{u})$, is thus
+
+\begin{flalign}
+P(\mathbf{u}) &= (P(C = 1) * p(\mathbf{u}|C = 1)) + (P(C = 0) * p(\mathbf{u}|C = 0)) \\
+&= \Big(\frac{T_d}{T_d + T_n}  * p_m(\mathbf{u};\theta) \Big) + \Big(\frac{T_n}{T_d + T_n} * p_n(\mathbf{u}) \Big)
+\end{flalign}
+
+\bigskip
+\noindent
+Remembering Bayes' Rule: 
+
+\begin{flalign*}
+P(\Theta | \mathcal{X}) &= \frac{P(\mathcal{X}|\Theta) P(\Theta)}{P(\mathcal{X})}  \qquad \qquad  \mathbin{\#}  
+\text{posterior} = \frac{\text{likelihood} \cdot \text{prior}}{\text{evidence}}
+\end{flalign*}
+
+\bigskip
+\noindentå
+we get the posterior probabilities 
+
+\begin{flalign}
+P(C=1| \mathbf{u};\theta) &= \frac{P(\mathbf{u}| C=1;\theta) * P(C=1)}{P(\mathbf{u})} \\
+&= \frac{p_m(\mathbf{u};\theta) *  \frac{T_d}{T_d + T_n}} {\Big(\frac{T_d}{T_d + T_n}  * p_m(\mathbf{u};\theta) \Big) + \Big(\frac{T_n}{T_d + T_n} * p_n(\mathbf{u}) \Big)} \\
+&= \frac{p_m(\mathbf{u};\theta)}{\Big(\Big(\frac{T_d}{T_d + T_n}  * p_m(\mathbf{u};\theta) \Big) + \Big(\frac{T_n}{T_d + T_n} * p_n(\mathbf{u}) \Big)\Big) * \frac{T_d + T_n}{T_d}} \\
+&= \frac{p_m(\mathbf{u};\theta)} {p_m(\mathbf{u};\theta) + (\frac{T_n}{T_d}) p_n(\mathbf{u})} \\
+P(C=1| \mathbf{u};\theta) & = \frac{p_m(\mathbf{u};\theta)} {p_m(\mathbf{u};\theta) + v p_n(\mathbf{u})} 
+\qquad \qquad  \mathbin{\#} v = \frac{T_n}{T_d} =  \frac{P(C=0)}{P(C=1)} 
+\\
+P(C=0|\mathbf{u};\theta) &= \frac{v p_n(\mathbf{u})}{p_m(\mathbf{u};\theta) + v p_n(\mathbf{u})}  \qquad \qquad  \mathbin{\#} \text{same analysis} 
+\end{flalign}
+
+\noindent
+Now we have 
+
+\begin{flalign}
+P(C=1| \mathbf{u};\theta) & = \frac{p_m(\mathbf{u};\theta)} {p_m(\mathbf{u};\theta) + v p_n(\mathbf{u})} \\
+& = \frac{p_m(\mathbf{u};\theta) * \frac{1}{p_m(\mathbf{u};\theta)}} {(p_m(\mathbf{u};\theta) + v p_n(\mathbf{u})) * \frac{1}{p_m(\mathbf{u};\theta)}} \\
+&= \frac{1}{1 + v \frac{p_n(\mathbf{u)}}{p_m(\mathbf{u};\theta)}} \\
+&= \Big (1 + v\frac{p_n(\mathbf{u)}}{p_m(\mathbf{u};\theta)}\Big)^{-1}
+\end{flalign}
+
+\noindent
+This is the first time we see an estimate of ratio we are looking for, namely $\frac{p_n(\mathbf{u)}}{p_m(\mathbf{u};\theta)}$. Now, define $G(\mathbf{u};\theta)$
+\begin{flalign}
+G(\mathbf{u};\theta)  &= \ln \frac{p_m(\mathbf{u};\theta)}{p_n(\mathbf{u)}} \\
+&=  \ln p_m(\mathbf{u};\theta) - \ln p_n(\mathbf{u)}
+\end{flalign}
+\noindent
+$G(\mathbf{u};\theta)$ is called the \emph{log-ratio} between $p_m(\mathbf{u};\theta)$ and $p_n(\mathbf{u)}$. If we let  $P(C=1| \mathbf{u};\theta) = h(\mathbf{u};\theta)$ then $h(\mathbf{u};\theta)$ can be written as
+\begin{flalign}
+h(\mathbf{u};\theta) &= r_v(G(\mathbf{u};\theta)) 
+\label{eqn:h}
+\end{flalign}
+\noindent
+where 
+\begin{flalign}
+r_v(u) = \frac{1}{1 + v \exp(-u)}
+\end{flalign}
+\noindent
+that is,  $r_v(.)$ is the sigmoid/logistic function parameterized by $v$.
+
+\bigskip
+\noindent
+Note that the class labels $C_t$ are assumed to be Bernoulli and iid. The \emph{conditional log-likelihood} is given by
+\bigskip
+\begin{flalign}
+\ell(\boldsymbol{\theta}) &= \sum\limits_{t=1}^{T_d + T_n} C_t \ln P(C_t = 1 | \mathbf{u}_t;\boldsymbol{\theta}) +
+(1 - C_t) \ln P(C = 0 | \mathbf{u}_t;\boldsymbol{\theta)} \\
+&=  \sum\limits_{t=1}^{T_d} \ln \big [h(\mathbf{x}_t; \boldsymbol{\theta})\big] +
+\sum\limits_{t=1}^{T_n} \ln \big [1 - h(\mathbf{y}_t; \boldsymbol{\theta})\big]
+\label{eqn:cll}
+\end{flalign}
+
+\bigskip
+\noindent
+Of the many interesting things here: optimizing $\ell(\boldsymbol{{\theta}})$ with respect to $\boldsymbol{{\theta}}$
+leads to an estimate $G(.;\hat{\boldsymbol{\theta}})$ of the log-ratio $\ln (p_d/p_n)$. Said another way, an approximate description of $X$ relative to $Y$ can be obtained by optimizing Equation \ref{eqn:cll}. Note also that $-\ell(\boldsymbol{\theta})$ is the cross-entropy function.
+
+\bigskip
+\noindent
+This result shows that \emph{density estimation}, an unsupervised learning task, can be performed by logistic regression (which is supervised learning). 
+
+\section{The NCE Estimator}
+
+Recall that the normalized pdf $p_m(.;\hat{\theta})$ satisfies the following constraints:
+
+\begin{flalign}
+\int p_m(\mathbf{u};\boldsymbol{\theta}) d\mathbf{u} &= 1  \qquad  \mathbin{\#} \text{normalization constraint} \\
+\label{eqn:normalization_constraint}
+p_m(.;\boldsymbol{\theta}) &\ge 0  \qquad  \mathbin{\#} \text{positivity constraint}
+\end{flalign}
+
+\bigskip
+\noindent
+Note that if the constraints for the  model $p_m(.;\boldsymbol{\theta})$  hold for all $\boldsymbol{\theta}$ (and not just 
+$\hat{\boldsymbol{\theta}}$) then the model is said to be \emph{normalized} and Maximum Likelihood can be used to estimate $\boldsymbol{\theta}$. If only the positivity constraint (and not the normalization constraint) is satisfied then we say the model is \emph{unnormalized}. The main assumption here is that there exists at least one set of parameters, $\boldsymbol{\theta}^*$,  for which the unnormalized model integrations to one\footnote{Another way to think about this: as mentioned above, $p_d(.)$ comes from the family of parameterized distributions, $p_m(\mathbf{u};\boldsymbol{\theta})$.}. That is, $p_d(.) = p_m(.;\boldsymbol{\theta}^*)$. The unnormalized model is usually denoted by $p^0_m(.;\boldsymbol{\alpha})$.\footnote{$p^0_m(.;\alpha)$, the unnormalized model, is sometimes written $\phi(\xi;\theta)$ \cite{GUTMANN2016}; the usual lack of standardized notation in machine learning....}
+
+\bigskip
+\noindent
+Now, define the partition function $Z(\alpha)$ as
+
+\begin{flalign}
+Z(\alpha) = \int p^0_m(\boldsymbol{u};\alpha) d\boldsymbol{u}
+\label{eqn:alpha2Z}
+\end{flalign}
+
+\noindent
+$Z(\alpha)$ can be used to convert an unnormalized model $p^0_m(.;\alpha)$ into a normalized one: $p^0_m(.;\alpha)/Z(\alpha)$ which integrates to one for every value of $\alpha$. Examples of distributions that are typically specified by unnormalized models include Gibbs distributions and Markov networks. The problem, however, is that the mapping $\alpha  \to Z(\alpha)$ is defined by an integral (Equation \ref{eqn:alpha2Z}), so unless $p^0_m(.;\alpha)$ has some convenient form, the integral usually cannot be computed analytically (and thus $Z(\alpha)$ is not available in closed form). For low-dimensional problems numerical integration can provide good accuracy, but for high-dimensional problems computation of $Z(\alpha)$ becomes intractable (cf the curse of dimensionality).
+
+\bigskip
+\noindent
+It is worth noting that unnormalized models are widely used, with examples including models of images (Markov Random Fields), models of text (neural probabilistic language models), various models in physics (Ising models), and more. The advantages of using unnormalized models in that they are often easier to specify than normalized models. The disadvantage is that the likelihood function is generally intractable.
+
+\bigskip
+\noindent
+Noise Contrastive Estimation (NCE) is an estimation method for unnormalized models.  The basic idea here is to consider $Z$, or equivalently $c = \ln 1/Z$ as a parameter to the model (rather than a partition function). In particular, 
+NCE considers $p^0_m(.;\alpha)$ to include a new normalizing parameter $c$ and estimates
+
+\begin{flalign}
+\ln p_m(;.;\boldsymbol{\theta}) = \ln p^0_m(.;\alpha) + c
+\label{eqn:c}
+\end{flalign}
+
+\bigskip
+\noindent
+where the parameter $\boldsymbol{\theta} = (\alpha,c)$. In particular, the estimate $\hat{\boldsymbol{\theta}} = (\hat{\alpha},\hat{c})$ then causes the unnormalized model ($p^0_m(.;\alpha)$) to match the shape of $p_d$ and $\hat{c}$ provides the appropriate scaling so that the normalization constraint  (Equation \ref{eqn:normalization_constraint}) holds.
+
+\bigskip
+\noindent
+Observe that after training, $\hat{c}$ provides an estimate for $\ln 1/Z(\alpha)$. Of course, if the model is normalized in the first place $c$ is unnecessary. Given these definitions, we can define the estimator $\hat{\boldsymbol{\theta}}_T$ as the value of $\boldsymbol{\theta}$ which maximizes 
+
+\begin{flalign}
+J_T(\boldsymbol{\theta}) = \frac{1}{T_d}\Bigg\{\sum\limits_{t=1}^{T_d} \ln \big[h(\mathbf{x}_t; \boldsymbol{\theta})\big] +
+\sum\limits_{t=1}^{T_n} \ln \big[1 - h(\mathbf{y}_t;\boldsymbol{\theta})\big] \Bigg\}
+\end{flalign}
+
+\bigskip
+\noindent
+where the nonlinearity $h(.;\boldsymbol{\theta})$ is defined in Equation \ref{eqn:h}. Note that the objection function $J_T$ is the log-likelihood (Equation \ref{eqn:cll}) divided by $T_d$. $J_T$ can be rewritten as
+
+
+\begin{flalign}
+J_T(\boldsymbol{\theta}) = \frac{1}{T_d} \sum\limits_{t=1}^{T_d} \ln \big [h(\mathbf{x}_t; \boldsymbol{\theta})\big] +
+v \frac{1}{T_n}\sum\limits_{t=1}^{T_n} \ln \big[1 - h(\mathbf{y}_t;\boldsymbol{\theta})\big]
+\end{flalign}
+
+\bigskip
+\noindent
+Interestingly, note that $h(.;\boldsymbol{\theta}) \in (0,1)$ and 
+
+\begin{flalign*} h(.;\boldsymbol{\theta})=  
+\left \{ 
+        \begin{array}{ll}
+		0 & \lim G(.;\boldsymbol{\theta}) \to - \infty\\
+		1 & \lim G(.;\boldsymbol{\theta}) \to \infty\
+	\end{array}
+\right.
+\end{flalign*}
+
+\bigskip
+\noindent
+As a result, the optimal paratement $\hat{\boldsymbol{\theta}}_T$ makes 
+$G(\mathbf{u}_T;\hat{\boldsymbol{\theta}}_T)$ as large as possible for $\mathbf{u}_T \in X$ 
+and as small as possible for $\mathbf{u}_T \in Y$. Said another way, we determine the parameters $\boldsymbol{\theta}$ such that $P(C=1;\mathbf{u}; \boldsymbol{\theta})$ is large for most $\mathbf{x}_i$ and small for most $\mathbf{y}_i$.
+
+\bigskip
+\noindent
+Amazingly, this means that in this case logistic regression has learned  to discriminate (classify) between the data and noise sets. That is, what we end up with is unsupervised learning by supervised learning, where successful classification is equivalent to learning the differences between the data and the noise. Here we used nonlinear logistic regression for classification, but other classifiers are possible.
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/ml}
+
+
+
+\end{document} 

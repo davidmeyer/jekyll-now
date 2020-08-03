@@ -1,0 +1,116 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+ % \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage{bigints}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{Notes on NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING \\
+Barret Zoph, Quoc V. Le}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,brocade.com,...\}}
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+Notes
+\begin{itemize}
+\item $\pi_\theta(s,a) = P[A_t = a | S_t = s, \theta] = P_{(a_1{:T};\theta_c)}$ (policy parameterized by $\theta$)
+\item $J(\theta_c) = \mathbb{E}_{P(a_1:T;  \theta_c)} [R]$  (hook the RNN loss function to the RL reward)
+\item $J_1(\theta) = V^{\pi_\theta}(s_1) = \mathbb{E}_{\pi_\theta}[v_1] = \mathbb{E}_{P(a_1:T;  \theta_c)}[R]$ (episodic environments)
+\item $\nabla_{\theta_{c}} J(\theta_c) = \sum\limits_{t = 1}^{T} E_{P(a_1:T;\theta_c)}
+\big[ \nabla_{\theta_c} \log P(a_t | a_{(t-1):1};\theta_c)R \big] $ (REINFORCE policy gradient)
+\item $a_t$ is the predicted action ($a$) and $a_{(t-1):1}$ is the state $s$ up to step $t-1$ encoded in the RNN
+
+\end{itemize}
+
+\section{Computing the gradient analytically}
+
+First, we assume that the policy $\pi_\theta$ is differentiable wherever it is non-zero (this is a softer requirement than requiring $\pi_\theta$ be differentiable \emph{everywhere}). In addition, we know the gradient: $\nabla_\theta J(\theta)$. In this case, let  $p(\mathbf{x};\theta)$ be the likelihood parametrized by $\theta$ and let $\log p(\mathbf{x}; \theta)$ be the \emph{log likelihood}. Then
+
+\begin{flalign}
+y & = p(\mathbf{x}; \theta) \qquad \qquad \qquad \; \;  \; \; \; \mathbin{\#} \text{definition; see above} \\
+z &= \log y = \log p(\mathbf{x}; \theta)  \qquad  \; \; \mathbin{\#} \text{definition; z is the  log likelihood} \\
+\frac{dz}{d \theta} &= \frac{dz}{dy} \cdot \frac{dy}{d\theta}  \qquad \qquad \quad \; \; \; \; \; \; \; \mathbin{\#} \text{chain rule definition} \\
+\frac{dz}{dy} &=  \frac{1}{p(\mathbf{x};\theta)}  \quad \qquad \qquad \qquad  \;  \mathbin{\#} \frac{\log (X)}{dX} \approx \frac{1}{X} \\
+ \frac{dy}{d\theta} &= \frac{d \; p(\mathbf{x};\theta)}{d\theta} = \nabla_\theta p(\mathbf{x};\theta) \quad   \mathbin{\#} \text{definition (chain rule, again)}\\
+\frac{dz}{d \theta} & = \frac{dz}{dy} \cdot \frac{dy}{d\theta} = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)} 
+\quad   \mathbin{\#} \text{chain rule}\\
+&= \nabla_\theta \log p(\mathbf{x};\theta) \qquad \qquad \; \; \mathbin{\#} \text{using the identity }\nabla_{\theta} \log (w) = \frac{1}{w} \nabla_\theta w  
+\end{flalign}
+
+\bigskip
+\noindent
+and setting $w = p(\mathbf{x};\theta)$. Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometimes the \emph{Fischer} information. So the \emph{log derivative trick} (sometimes \emph{likelihood ratio}) is 
+\begin{align*}
+\nabla_\theta \log p(\mathbf{x};\theta)   = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)}
+\end{align*}
+
+\bigskip
+\noindent
+Setting  $\pi_\theta(s,a) = p(\mathbf{x};\theta)$ we see that
+
+\begin{align}
+\label{eqn:ld_identity}
+\nabla_\theta \pi_\theta(s,a) &= \pi_\theta(s,a) \frac{\nabla_\theta \; \pi_\theta(s,a)}{\pi_\theta(s,a)} \\
+                                             &= \pi_\theta(s,a)  \nabla_\theta \log \pi_\theta(s,a)    \qquad \qquad \quad \; \; \; \mathbin{\#} 
+\label{eqn:ld_identity}
+\text{log derivative trick}                 
+\end{align}
+
+\bigskip
+\noindent
+and the score function is $\nabla_\theta \log \pi_\theta(s,a)$. 
+
+\bigskip
+\noindent
+Now, since here $\pi_\theta(s,a) = P(a_{1:T};\theta_c)$, we have  
+ 
+ \bigskip
+ \noindent
+ 
+\begin{align}
+\nabla_{\theta_{c}} J(\theta_c) 
+&= \sum\limits_{s \in S} d(s) \sum\limits_{a \in A} \nabla_{\theta_c}\pi_{\theta_c}(s,a) \mathcal{R}_{s,a}
+\qquad \qquad \quad \; \mathbin{\#}\text{defn policy gradient} \\ 
+&=  \sum\limits_{s \in S} d(s) \sum\limits_{a \in A} \pi_{\theta_c}(s,a) \nabla \log \pi_{\theta_c}(s,a) R_{s,a} 
+\quad \mathbin{\#} \text{log derivative trick (Eqn \ref{eqn:ld_identity})
+}  \\      
+& =  \mathbb{E}_{\pi_{\theta_c}} \big [ \nabla_{\theta_c} \log \pi_{\theta_c}(s,a)R\big]
+\qquad \qquad \qquad \quad \;  \mathbin{\#} \text{defn expectation}  \\
+&= \mathbb{E}_{a_i \sim  P} \big [\nabla_{\theta_c}  \log P(a_t | a_{(t-1):1};\theta_c) R \big] \qquad \quad  \mathbin{\#} \pi_\theta(s,a) = P(a_{1:T};\theta_c) \\     
+& = \sum\limits_{t = 1}^{T} P_{(a_1:T;\theta_c)} \big [ \nabla_{\theta_c} \log P(a_t | a_{(t-1):1};\theta_c) R \big]  
+\;  \mathbin{\#} \text{REINFORCE pg}
+\end{align}
+
+
+
+
+
+
+\end{document}  

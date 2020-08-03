@@ -1,0 +1,403 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+%
+% so you can do e.g., \begin{bmatrix}[r] (or [c] or [l])
+%
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{Notes on Change of Basis}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+This document contains a few of my notes made when I was reviewing change of basis in linear algebra.
+
+\section{Definitions}
+Consider a set $B \subseteq V$ where $V$ is a $n$-dimensional vector space. $B$ is a \emph{basis} of $V$ if every element of 
+$V$ may be written in a unique way as a (finite) linear combination of elements of $B$. The coefficients of this linear combination 
+are referred to as components or \emph{coordinates} on $B$ of the vector. The coordinates of a given vector $x \in V$ expressed in 
+basis $B$ is denoted as $[x]_B$.
+
+\section{The Basis of a Vector Space}
+\label{sub:basis_vectors}
+A basis $B$ of a vector space $V$ over a field $\mathbb{F}$ (e.g. $\mathbb{Q}$, $\mathbb{R}$ or $\mathbb{C}$) is a linearly independent subset of $V$
+that spans $V$. This means that a subset $B$ of $V$ is a basis if the following two conditions hold:
+
+\begin{itemize}
+\item Linear Independence
+\begin{itemize}
+\item for every finite subset of  $\{b_1, \cdots, b_n\}$ of $B$ and $\{a_1, \cdots, a_n\} $ of $\mathbb{F}$ if  \\
+$a_1b_1 +  \hdots + a_nb_n = 0$ then $a_1 = \hdots = a_n = 0$
+\end{itemize}
+\item $B$ \emph{spans} $V$
+\begin{itemize}
+\item for every vector $\mathbf{v} \in V$ it is possible to choose $\{a_1, \cdots,  a_n\}$ in $\mathbb{F}$ and \\
+$\{b_1,  \cdots, b_n\}$ in $B$ such that $\mathbf{v} = a_1b_1 + \cdots +  a_nb_n$. 
+\end{itemize}
+\end{itemize}
+
+\bigskip
+\noindent
+The elements of $B$  are called basis vectors and importantly both $B$ and $V$ are ordered sets.
+
+
+\bigskip
+\noindent
+The summary is that the elements of a basis $B$ are linearly independent and every element of $V$ can be represented as a linear combination 
+of the elements of $B$ with coefficients from the field $\mathbb{F}$. 
+
+\section{The Standard Basis}
+The standard basis (also called natural basis) for a Euclidean space is the set of unit vectors pointing in the direction of the axes of a Cartesian coordinate system.
+For example, the standard basis for three-dimensional space is formed by the vectors
+
+\begin{equation*}
+\mathbf{e}_{x} = (1,0,0),\quad \mathbf{e}_{y} = (0,1,0), \quad \mathbf{e}_{z} = (0,0,1)
+\end{equation*}
+
+\bigskip
+\noindent
+These vectors are a basis in the sense that any other vector can be expressed uniquely as a linear combination of these. 
+For example, every vector $\mathbf{v}$ in three-dimensional space can be written uniquely as
+
+\begin{equation*}
+\mathbf{v} = v_{x} \mathbf {e} _{x} + v_{y}\mathbf {e} _{y} + v_{z}\mathbf {e}_{z}
+\end{equation*}
+
+\bigskip
+\noindent
+where  $v_x, v_y, v_z \in \mathbb{F}$  are the scalar "coordinates" of $\mathbf{v}$ in the standard basis. The \emph{coordinate vector} for $\mathbf{v}$ is denoted
+$[\mathbf{v}]_B$ for basis $B$. Here  $[\mathbf{v]}_{STD} = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix}$.
+
+\bigskip
+\noindent
+In general,  the standard basis (which is sometimes called the computational basis)  for the $n$-dimensional Euclidean space consists of the ordered set
+of $n$ distinct vectors
+
+\begin{equation*}
+\{\mathbf {e} _{i}: 1 \leq i \leq n\}
+\end{equation*}
+
+\bigskip
+\noindent
+where $\mathbf{e}_i$ is the $i^\text{th}$ basis vector which has a 1 in the $i^\text{th}$ coordinate and 0's elsewhere.\footnote{This is also called a "one-hot" 
+encoding in machine learning parlance, where the $i$'s might be the classes in a classification problem.}
+That is, the $\mathbf{e}_i$ are the $n \times 1$ column vectors 
+
+\begin{flalign*}
+\mathbf{e}_{1} = 
+\begin{bmatrix} 
+1 \\
+0 \\
+\vdots \\
+0 \\
+0
+\end{bmatrix}, 
+\mathbf{e}_{2} = 
+\begin{bmatrix} 
+0 \\
+1 \\
+\vdots \\
+0 \\
+0
+\end{bmatrix}, 
+\hdots, 
+\mathbf{e}_{n-1} =
+\begin{bmatrix} 
+0 \\
+0 \\
+\vdots \\
+1 \\
+0
+\end{bmatrix}, 
+\mathbf{e}_{n} =
+\begin{bmatrix} 
+0 \\
+0 \\
+\vdots \\
+0 \\
+1
+\end{bmatrix}
+\end{flalign*}
+
+
+\bigskip
+\noindent
+Standard bases can be defined for other vector spaces such as polynomials and matrices. In both cases, the standard basis consists of the elements of the 
+vector space such that all coefficients but one are 0 and the non-zero one is 1. For polynomials, the standard basis thus consists of the monomials and is 
+commonly called monomial basis. 
+
+\bigskip
+\noindent
+For example, the standard basis for $\mathcal{P}^2$, the set of polynomials of degree $\leq 2$ over some field $\mathbb{F}$ is the ordered set
+
+\begin{equation*}
+B_{\mathcal{P}^2} = \left \{ \begin{bmatrix} x^0 \\ 0 \\0 \end{bmatrix}, \begin{bmatrix} 0 \\ x^1 \\0 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ x^2 \end{bmatrix} \right \} \\
+=  \left \{ \begin{bmatrix} 1 \\ 0 \\0 \end{bmatrix}, \begin{bmatrix} 0 \\ x \\0 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ x^2 \end{bmatrix} \right \}
+\end{equation*} 
+
+\bigskip
+\noindent
+By the definition of basis any polynomial $a +bx +cx^2 \in \mathcal{P}^2$ can be written as a linear combination of vectors from $B_{\mathcal{P}^2}$. That is 
+
+
+\begin{equation*}
+a +bx +cx^2 = a  \begin{bmatrix} 1 \\ 0 \\0 \end{bmatrix} + b \begin{bmatrix} 0 \\ x \\0 \end{bmatrix} + c \begin{bmatrix} 0 \\ 0 \\ x^2 \end{bmatrix} \\
+\end{equation*}
+
+\noindent
+for $a,b,c \in \mathbb{F}$. 
+
+\bigskip
+\noindent
+We can also see this in matrix form by loading the vectors of $B_{\mathcal{P}^2}$ into a matrix. We call this matrix
+$P_{\mathcal{P}^2} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & x & 0 \\ 0 & 0 & x^2 \end{bmatrix}$. In matrix form:
+
+\bigskip
+\begin{equation*}
+\begin{bmatrix} 1 & 0 & 0 \\ 0 & x & 0 \\ 0 & 0 & x^2 \end{bmatrix} \begin{bmatrix} a \\ b \\ c \end{bmatrix} =
+\begin{bmatrix} [l]
+a \cdot 1 &+& b \cdot 0 &+& c \cdot 0 \\
+a \cdot 0 &+& b \cdot x &+& c \cdot 0 \\
+a \cdot 0 &+& b \cdot 0 &+& c \cdot x^2 
+\end{bmatrix}
+= a  \begin{bmatrix} 1 \\ 0 \\0 \end{bmatrix} + b \begin{bmatrix} 0 \\ x \\0 \end{bmatrix} + c \begin{bmatrix} 0 \\ 0 \\ x^2 \end{bmatrix} \\
+= a +bx +cx^2 
+\end{equation*}
+
+
+
+\bigskip
+\noindent
+This example shows an interesting property of vector spaces: once a basis is chosen for a $n$-dimensional vector space $V$ we get an
+isomorphism between $V$ and $\mathbb{F}^n$. For polynomials $a +bx +cx^2 \in \mathcal{P}^2$ over a field $\mathbb{F}$, we get the
+isomorphism  $\mathcal{P}^2 \cong \mathbb{F}^3$. Here the mapping is
+
+\bigskip
+\begin{equation*}
+ a +bx +cx^2 \longmapsto \begin{bmatrix} a \\ b \\ c \end{bmatrix} \text{and} \\
+ \begin{bmatrix} a \\ b \\ c \end{bmatrix} \longmapsto a +bx +cx^2
+\end{equation*}
+
+\bigskip
+\noindent
+where $a +bx +cx^2 \in  \mathcal{P}^2$, $\begin{bmatrix} a \\ b \\ c \end{bmatrix}  \in \mathbb{F}^3$, and $\mathbb{F}$ could be any field.
+
+
+\bigskip
+\noindent
+For matrices $\mathcal {M}_{m \times n}$ , the standard basis consists of the $m \times n$-matrices with exactly one 
+non-zero entry, which is 1.  For example, the standard basis for $2 \times 2$ over $\mathbb{R}$ matrices is formed by the 4 matrices
+
+\bigskip
+\begin{equation*}
+\mathbf{e}_{11} = \begin{bmatrix}1&0\\0&0 \end{bmatrix}, \quad \mathbf{e}_{12} = \begin{bmatrix} 0&1\\0&0 \end{bmatrix},\quad
+\mathbf{e}_{21} = \begin{bmatrix}0&0\\1&0\end{bmatrix},\quad \mathbf{e}_{22} = \begin{bmatrix}0&0\\0&1\end{bmatrix}
+\end{equation*}
+
+\bigskip
+\section{Examples}
+Consider the bases $B = \Bigg \{\begin{bmatrix}  1 \\ 1\end{bmatrix}, \begin{bmatrix} 2 \\ 0 \end{bmatrix} \Bigg \}$ and
+$C = \Bigg \{\begin{bmatrix}  0 \\ 1\end{bmatrix}, \begin{bmatrix} 1 \\ 2 \end{bmatrix} \Bigg \}$ of the vector space $\mathbb{R}^2$. Suppose 
+further that we know that $[x]_B = \begin{bmatrix}  3 \\ 1 \end{bmatrix}$.
+
+\bigskip
+\noindent
+First question: How do we find $[x]_C$? The brute force method is to convert 
+
+\begin{equation*}
+[x]_B \rightarrow [x]_{STD} \rightarrow [x]_C
+\end{equation*}
+
+\bigskip
+\noindent
+To do this, first we multiply $[x]_B$ by the corresponding basis elements:
+
+\begin{equation*}
+[x]_B = \begin{bmatrix} 3 \\ 1 \end{bmatrix} \implies x =  [x]_{STD}   = 3 \cdot  \begin{bmatrix}  1 \\ 1\end{bmatrix} + 1 \cdot  \begin{bmatrix}  2 \\ 0\end{bmatrix} 
+= \begin{bmatrix}  3 \\ 3 \end{bmatrix}  + \begin{bmatrix}  2 \\ 0\end{bmatrix} = \begin{bmatrix}  5 \\ 3\end{bmatrix} 
+\end{equation*}
+
+\bigskip
+\noindent
+So $[x]_{STD} = \begin{bmatrix}  5 \\ 3\end{bmatrix}$.  Next we have to solve 
+
+\begin{equation*}
+[x]_C = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \implies x_1 \cdot \begin{bmatrix} 0 \\ 1 \end{bmatrix} + x_2 \cdot \begin{bmatrix} 1 \\  2 \end{bmatrix} =  \begin{bmatrix}  5 \\ 3\end{bmatrix}
+\end{equation*} 
+
+\bigskip
+\noindent
+So  
+
+\begin{equation}
+x_1 \cdot \begin{bmatrix} 0 \\ 1 \end{bmatrix} + x_2 \cdot \begin{bmatrix} 1 \\  2 \end{bmatrix}  =  \begin{bmatrix}  5 \\ 3\end{bmatrix}
+\label{eqn:solve}
+\end{equation} 
+
+\bigskip
+\noindent
+First, recall that if $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ and $\det(A) \neq 0$ 
+then\footnote{Recall also that a $n \times n$ matrix $A$ is invertible ($A^{-1}$ exists) iff $\det(A) \neq 0$.}
+
+\bigskip
+\begin{equation}
+A^{-1} = \frac{1}{\det(A)} \begin{bmatrix}[r] d & -b \\ -c & a \end{bmatrix}
+\label{eqn:a_inverse}
+\end{equation}
+
+\noindent
+and
+
+\begin{equation}
+\det(A) = ad - bc
+\label{eqn:det}
+\end{equation}
+
+\bigskip
+\noindent
+\textbf{Aside}: The set of $2 \times 2$ invertible matrices over the real numbers with the group operation being matrix multiplication is called $GL(2,\mathbb{R})$, 
+the \emph{General Linear Group}  over $\mathbb{R}$. That is,  
+
+\begin{flalign*}
+GL(2,\mathbb{R}) 
+& = \big \{2 \times 2 \text{ matrices $A$ over $\mathbb{R}$}  \mid  \det(A) \neq 0 \big \}  \\
+&=  \Bigg \{\begin{bmatrix} a & b \\ c & d \end{bmatrix} \mid   a,b,c,d \in \mathbb{R} \text{ and } ad-bc \neq 0 \Bigg \}
+\end{flalign*}
+
+\bigskip
+\noindent
+Next, rewriting Equation \ref{eqn:solve} in matrix form we get
+
+
+\begin{equation*}
+\begin{array}{rcll}
+\begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix}   \begin{bmatrix} x_1 \\  x_2 \end{bmatrix}  
+&=& \begin{bmatrix}  5 \\ 3\end{bmatrix}
+     & \qquad \mathrel{\#}  \text{solve for} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \text{in matrix form} \\
+\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
+&=& \frac{1} {\det \Bigg (\begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix} \Bigg )} \begin{bmatrix}[r] 2 & -1 \\ -1 & 0 \end{bmatrix} \begin{bmatrix} 5 \\ 3 \end{bmatrix} 
+     & \qquad \mathrel{\#}  \text{multiply both sides by} \begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix}^{-1}, \text{ Equation } \ref{eqn:a_inverse}  \\
+&=& \frac{1}{-1} \begin{bmatrix}[r] 2 & -1 \\ -1 & 0 \end{bmatrix} \begin{bmatrix} 5 \\ 3 \end{bmatrix} 
+     & \qquad \mathrel{\#}  \det \Bigg (\begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix} \Bigg ) =  0 \cdot 2 -1 \cdot 1 = -1, \text{ Equation } \ref{eqn:det} \\
+&=& \begin{bmatrix}[r] -2 & 1 \\ 1 & 0 \end{bmatrix} \begin{bmatrix} 5 \\ 3 \end{bmatrix} 
+     & \qquad \mathrel{\#} \text{scalar multiplication} \\
+&=& \begin{bmatrix}[r] -7 \\ 5 \end{bmatrix} 
+     & \qquad \mathrel{\#} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix}[r] -7 \\ 5 \end{bmatrix} 
+\end{array}
+\end{equation*}
+
+
+\bigskip
+\noindent
+Note that since we need to compute $A^{-1}$ the determinate of $A$ cannot be zero.  The set of
+$n \times n$ invertible matrices $S$ are just those for which $ A \in S \implies \det(A) \neq 0$. 
+
+\bigskip
+\noindent
+Here  the matrix $\begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix}$ is called $P_C$. Similarly, the matrix $\begin{bmatrix} 1 & 2 \\ 1 & 0  \end{bmatrix}$ is called
+$P_B$. So we have
+
+\bigskip
+\begin{equation*}
+P_B [\mathbf{e}_1]_B = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, P_B[\mathbf{e}_2]_B = \begin{bmatrix} 2 \\ 0 \end{bmatrix},
+ P_C[\mathbf{e}_1]_C = \begin{bmatrix} 0 \\ 1 \end{bmatrix}, \text{ and } P_C[\mathbf{e}_2]_C= \begin{bmatrix} 1 \\ 2 \end{bmatrix}
+ \end{equation*}
+ 
+ \bigskip
+ \noindent
+where  $\mathbf{e}_i$ is the $i^{\text{th}}$ element of the (ordered) basis. What we can observe here is that in general  
+$P_B[x]_B = [x]_{STD}$  and  $P_C [x]_C = [x]_{STD}$ and so $P_{B}[x]_B =  P_{C}[x]_C$. 
+
+
+\bigskip
+\noindent
+Note that the method above converts $[x]_B$ to $[x]_{STD}$ then to $[x]_C$. In general you wouldn't want to do this since we can compute the conversion matrix
+$P_{B \rightarrow C}$ directly without having to go through the standard basis. 
+
+\bigskip
+\noindent
+So how do we compute $P_{B \rightarrow C}$?  We saw above that  $P_{B}[x]_B =  P_{C}[x]_C$, so if we multiply 
+both sides by $P^{-1}_C$ we get  $[x]_C = P^{-1}_{C} P_{B} [x]_B$, which tells us that $P_{B \rightarrow C} = P^{-1}_{C} P_{B}$.
+
+
+\bigskip
+\noindent
+Applying this result to our example above
+
+\begin{equation*}
+\begin{array}{rcll}
+[x]_C
+&=& \underbrace{ \frac{1}{-1}  \begin{bmatrix}[r] 2 & -1 \\ -1 & 0 \end{bmatrix}}_{P^{-1}_C}
+        \underbrace{\begin{bmatrix} 1 & 2  \\ 0 & 1 \end{bmatrix}}_{P_B}
+        \underbrace{\begin{bmatrix} 3 \\1 \end{bmatrix}}_{[x]_B}
+     & \qquad \qquad \mathrel{\#}  [x]_C =  P^{-1}_{C} P_{B} [x]_B = P_{B \rightarrow C}  [x]_B \\
+&=&  \begin{bmatrix}[r] -2 & 1 \\ 1 & 0 \end{bmatrix}  \begin{bmatrix} 1 & 2  \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 3 \\1 \end{bmatrix}
+     & \qquad\qquad \mathrel{\#}  \text{multiply by -1 }  \\
+&=&  \begin{bmatrix}[r] -1 & -4 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 3 \\1 \end{bmatrix}
+     & \qquad \qquad \mathrel{\#}  P_{B \rightarrow C} = \frac{1}{-1}  \begin{bmatrix}[r] 2 & -1 \\ -1 & 0 \end{bmatrix} \begin{bmatrix} 1 & 2  \\ 0 & 1 \end{bmatrix} =  
+         \begin{bmatrix}[r] -1 & -4 \\ 1 & 2 \end{bmatrix}\\
+&=&  \begin{bmatrix}[r] -7 \\ 5 \end{bmatrix}
+     & \qquad\qquad \mathrel{\#}  [x]_C = P_{B \rightarrow C} [x]_B = \begin{bmatrix}[r] -1 & -4 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 3 \\1 \end{bmatrix} =  \begin{bmatrix}[r] -7 \\ 5 \end{bmatrix}
+
+\end{array}
+\end{equation*}
+
+\section{Acknowledgements}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/qc}
+
+
+
+\end{document} 

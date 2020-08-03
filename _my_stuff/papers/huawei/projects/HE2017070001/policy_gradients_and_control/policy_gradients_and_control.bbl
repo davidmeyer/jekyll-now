@@ -1,0 +1,111 @@
+\begin{thebibliography}{10}
+
+\bibitem{SuttonBook}
+R.~S. Sutton and A.~G. Barto., {\em Reinforcement learning: An Introduction}.
+\newblock MIT Press, 1998.
+
+\bibitem{NIPS1999_1786}
+V.~R. Konda and J.~N. Tsitsiklis, ``Actor-critic algorithms,'' in {\em Advances
+  in Neural Information Processing Systems 12} (S.~A. Solla, T.~K. Leen, and
+  K.~M\"{u}ller, eds.), pp.~1008--1014, MIT Press, 2000.
+
+\bibitem{Todorov06optimalcontrol}
+E.~Todorov, ``Optimal control theory,'' 2006.
+
+\bibitem{oALE68a}
+V.~M. Aleksandrov, V.~I. Sysoyev, and V.~V. Shemeneva, ``Stochastic
+  optimization,'' {\em Engineering Cybernetics}, vol.~5, pp.~11--16, 1968.
+
+\bibitem{Barto:1990:NAE:104134.104143}
+A.~G. Barto, R.~S. Sutton, and C.~W. Anderson, ``Artificial neural networks,''
+  ch.~Neuronlike Adaptive Elements That Can Solve Difficult Learning Control
+  Problems, pp.~81--93, Piscataway, NJ, USA: IEEE Press, 1990.
+
+\bibitem{Williams1992}
+R.~J. Williams, ``{Simple statistical gradient-following algorithms for
+  connectionist reinforcement learning},'' {\em Machine Learning}, vol.~8,
+  no.~3-4, pp.~229--256, 1992.
+
+\bibitem{Baxter:2001:IPE:1622845.1622855}
+J.~Baxter and P.~L. Bartlett, ``Infinite-horizon policy-gradient estimation,''
+  {\em J. Artif. Int. Res.}, vol.~15, pp.~319--350, Nov. 2001.
+
+\bibitem{Silver:2014:DPG:3044805.3044850}
+D.~Silver, G.~Lever, N.~Heess, T.~Degris, D.~Wierstra, and M.~Riedmiller,
+  ``Deterministic policy gradient algorithms,'' in {\em Proceedings of the 31st
+  International Conference on International Conference on Machine Learning -
+  Volume 32}, ICML'14, pp.~I--387--I--395, JMLR.org, 2014.
+
+\bibitem{log_derivative_trick}
+S.~Mohamed, ``The log derivative trick.'' \url
+  {http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/},
+  Nov. 2015.
+\newblock Accessed: Sun Jun 3 11:33:18 PDT 2018.
+
+\bibitem{szechtman2003}
+R.~Szechtman, ``Control variates techniques for monte carlo simulation,'' in
+  {\em Proceedings of the 2003 Winter Simulation Conference, 2003.}, vol.~1,
+  pp.~144--149 Vol.1, Dec 2003.
+
+\bibitem{Peters:2006fk}
+J.~Peters and S.~Schaal, ``{Policy gradient methods for robotics},'' in {\em
+  {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}}, (Beijing, China), 2006.
+
+\bibitem{Greensmith:2004:VRT:1005332.1044710}
+E.~Greensmith, P.~L. Bartlett, and J.~Baxter, ``Variance reduction techniques
+  for gradient estimates in reinforcement learning,'' {\em J. Mach. Learn.
+  Res.}, vol.~5, pp.~1471--1530, Dec. 2004.
+
+\bibitem{DBLP:journals/corr/SchulmanLMJA15}
+J.~Schulman, S.~Levine, P.~Moritz, M.~I. Jordan, and P.~Abbeel, ``Trust region
+  policy optimization,'' {\em CoRR}, vol.~abs/1502.05477, 2015.
+
+\bibitem{2017arXiv170706347S}
+J.~{Schulman}, F.~{Wolski}, P.~{Dhariwal}, A.~{Radford}, and O.~{Klimov},
+  ``{Proximal Policy Optimization Algorithms},'' {\em ArXiv e-prints}, July
+  2017.
+
+\bibitem{2015arXiv150602438S}
+J.~{Schulman}, P.~{Moritz}, S.~{Levine}, M.~{Jordan}, and P.~{Abbeel},
+  ``{High-Dimensional Continuous Control Using Generalized Advantage
+  Estimation},'' {\em ArXiv e-prints}, June 2015.
+
+\bibitem{2016arXiv161102247G}
+S.~{Gu}, T.~{Lillicrap}, Z.~{Ghahramani}, R.~E. {Turner}, and S.~{Levine},
+  ``{Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic},''
+  {\em ArXiv e-prints}, Nov. 2016.
+
+\bibitem{2017arXiv171011198L}
+H.~{Liu}, Y.~{Feng}, Y.~{Mao}, D.~{Zhou}, J.~{Peng}, and Q.~{Liu},
+  ``{Action-depedent Control Variates for Policy Optimization via Stein's
+  Identity},'' {\em ArXiv e-prints}, Oct. 2017.
+
+\bibitem{2018arXiv180307246W}
+C.~{Wu}, A.~{Rajeswaran}, Y.~{Duan}, V.~{Kumar}, A.~M. {Bayen}, S.~{Kakade},
+  I.~{Mordatch}, and P.~{Abbeel}, ``{Variance Reduction for Policy Gradient
+  with Action-Dependent Factorized Baselines},'' {\em ArXiv e-prints}, Mar.
+  2018.
+
+\bibitem{2018arXiv180210031T}
+G.~{Tucker}, S.~{Bhupatiraju}, S.~{Gu}, R.~E. {Turner}, Z.~{Ghahramani}, and
+  S.~{Levine}, ``{The Mirage of Action-Dependent Baselines in Reinforcement
+  Learning},'' {\em ArXiv e-prints}, Feb. 2018.
+
+\bibitem{Sutton:1999:PGM:3009657.3009806}
+R.~S. Sutton, D.~McAllester, S.~Singh, and Y.~Mansour, ``Policy gradient
+  methods for reinforcement learning with function approximation,'' in {\em
+  Proceedings of the 12th International Conference on Neural Information
+  Processing Systems}, NIPS'99, (Cambridge, MA, USA), pp.~1057--1063, MIT
+  Press, 1999.
+
+\bibitem{2018arXiv180302811S}
+A.~{Stooke} and P.~{Abbeel}, ``{Accelerated Methods for Deep Reinforcement
+  Learning},'' {\em ArXiv e-prints}, Mar. 2018.
+
+\bibitem{2016arXiv160201783M}
+V.~{Mnih}, A.~{Puigdom{\`e}nech Badia}, M.~{Mirza}, A.~{Graves}, T.~P.
+  {Lillicrap}, T.~{Harley}, D.~{Silver}, and K.~{Kavukcuoglu}, ``{Asynchronous
+  Methods for Deep Reinforcement Learning},'' {\em ArXiv e-prints}, Feb. 2016.
+
+\end{thebibliography}

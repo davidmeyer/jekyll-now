@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{SuttonBook}
+R.~S. Sutton and A.~G. Barto., {\em Reinforcement learning: An introduction},
+  vol.~1.
+\newblock MIT Press, 1998.
+
+\bibitem{Goodfellow:2017aa}
+I.~Goodfellow, ``{NIPS} 2016 tutorial: Generative adversarial networks,'' 01
+  2017.
+
+\bibitem{Schulman:2015aa}
+J.~Schulman, N.~Heess, T.~Weber, and P.~Abbeel, ``Gradient estimation using
+  stochastic computation graphs,'' 06 2015.
+
+\end{thebibliography}

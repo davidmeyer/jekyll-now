@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: stage.1.deliverable.1.aux
+The style file: ieeetr.bst
+Database file #1: /Users/dmm/papers/huawei/bib/huawei.bib.bib
+Name 1 in "Chiosi, Margaret, and others" has a comma at the end for entry nfv
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in Lillicrap:2015aa
+Warning--empty journal in Stampa:2017aa
+You've used 7 entries,
+            1876 wiz_defined-function locations,
+            527 strings with 4952 characters,
+and the built_in function-call counts, 1865 in all, are:
+= -- 161
+> -- 109
+< -- 0
++ -- 38
+- -- 31
+* -- 149
+:= -- 290
+add.period$ -- 8
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 86
+empty$ -- 164
+format.name$ -- 31
+if$ -- 430
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 8
+newline$ -- 25
+num.names$ -- 9
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 53
+stack$ -- 0
+substring$ -- 96
+swap$ -- 29
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 17
+width$ -- 8
+write$ -- 63
+(There was 1 error message)
