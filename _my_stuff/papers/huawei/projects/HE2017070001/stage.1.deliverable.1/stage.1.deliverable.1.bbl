@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{nfv}
+M.~Chiosi {\em et~al.}, ``Network functions virtualisation,'' {\em ETSI},
+  November 2012.
+
+\bibitem{Tennenhouse:2007:TAN:1290168.1290180}
+D.~L. Tennenhouse and D.~J. Wetherall, ``Towards an active network
+  architecture,'' {\em SIGCOMM Comput. Commun. Rev.}, vol.~37, pp.~81--94, Oct.
+  2007.
+
+\bibitem{Sutton:1998:IRL:551283}
+R.~S. Sutton and A.~G. Barto, {\em Introduction to Reinforcement Learning}.
+\newblock Cambridge, MA, USA: MIT Press, 1st~ed., 1998.
+
+\bibitem{Lillicrap:2015aa}
+T.~P. Lillicrap, J.~J. Hunt, A.~Pritzel, N.~Heess, T.~Erez, Y.~Tassa,
+  D.~Silver, and D.~Wierstra, ``Continuous control with deep reinforcement
+  learning,'' 09 2015.
+
+\bibitem{NIPS2015_5775}
+K.~Sohn, H.~Lee, and X.~Yan, ``Learning structured output representation using
+  deep conditional generative models,'' in {\em Advances in Neural Information
+  Processing Systems 28} (C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama,
+  and R.~Garnett, eds.), pp.~3483--3491, Curran Associates, Inc., 2015.
+
+\bibitem{Tao:2001aa}
+N.~Tao, N.~Tao, J.~Baxter, and L.~Weaver, ``A multi-agent, policy-gradient
+  approach to network routing,'' {\em IN: PROC. OF THE 18TH INT. CONF. ON
+  MACHINE LEARNING}, pp.~553--560, 2001.
+
+\bibitem{Stampa:2017aa}
+G.~Stampa, M.~Arias, D.~Sanchez-Charles, V.~Muntes-Mulero, and A.~Cabellos, ``A
+  deep-reinforcement learning approach for software-defined networking routing
+  optimization,'' 09 2017.
+
+\end{thebibliography}

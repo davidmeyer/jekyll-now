@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{glorot2011deep}
+{\sc Glorot, X., Bordes, A., and Bengio, Y.}
+\newblock Deep sparse rectifier neural networks.
+\newblock In {\em Aistats\/} (2011), vol.~15, p.~275.
+
+\bibitem{NIPS2014_5423}
+{\sc Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D.,
+  Ozair, S., Courville, A., and Bengio, Y.}
+\newblock Generative adversarial nets.
+\newblock In {\em Advances in Neural Information Processing Systems 27},
+  Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q. Weinberger,
+  Eds. Curran Associates, Inc., 2014, pp.~2672--2680.
+
+\bibitem{Goodfellow:2014aa}
+{\sc Goodfellow, I.~J., Shlens, J., and Szegedy, C.}
+\newblock Explaining and harnessing adversarial examples.
+\newblock {\em https://arxiv.org/abs/1412.6572\/} (2014).
+
+\bibitem{goodfellow2013maxout}
+{\sc Goodfellow, I.~J., Warde-Farley, D., Mirza, M., Courville, A.~C., and
+  Bengio, Y.}
+\newblock Maxout networks.
+\newblock {\em ICML (3) 28\/} (2013), 1319--1327.
+
+\bibitem{Hochreiter:1997aa}
+{\sc Hochreiter, S., and Schmidhuber, J.}
+\newblock Long short-term memory.
+\newblock {\em Neural Computation 9}, 8 (2017/03/14 1997), 1735--1780.
+
+\bibitem{Szegedy:2013aa}
+{\sc Szegedy, C., Zaremba, W., Sutskever, I., Bruna, J., Erhan, D., Goodfellow,
+  I., and Fergus, R.}
+\newblock Intriguing properties of neural networks.
+\newblock {\em https://arxiv.org/abs/1312.6199\/} (2013).
+
+\end{thebibliography}

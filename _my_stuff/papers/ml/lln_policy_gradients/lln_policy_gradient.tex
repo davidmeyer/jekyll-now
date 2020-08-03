@@ -1,0 +1,133 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTex format
+
+
+%\usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometryA. G. Barto, R. S. Sutton, and C. W. Anderson
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% Tex will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+
+
+
+\title{The Law of Large Numbers and Policy Gradients}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,...\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+
+The \emph{Strong Law of Large Numbers} (LLN) is usually stated as follows: 
+
+\bigskip
+\noindent
+Let $x_{1}, x_{2}, \hdots, x_{M}$ be a sequence of independent and identically distributed (i.i.d) random variables, each having a finite mean $\mu_i = E[x_{i}]$. 
+
+\bigskip
+\noindent
+Then with probability one
+\begin{equation}
+\frac{1}{M}\sum\limits_{i=1}^{M} x_i \rightarrow E[x]
+\end{equation}
+as  $M \rightarrow \infty$.
+
+\bigskip
+\noindent
+A complementary theorem, Ergodic Theorem, is stated as follows:
+\bigskip
+\noindent
+Let $\theta^{(1)}, \theta^{(2)}, \hdots, \theta^{(M)}$ be $M$ samples from a Markov chain that is \emph{aperiodic}, \emph{irreducible}, and \emph{positive recurrent}\footnote{In this case, the chain is said to be \emph{ergodic}.}, and $E[g(\theta)] < \infty$.
+
+\bigskip
+\noindent
+Then with probability one
+\begin{equation}
+\frac{1}{M}\sum\limits_{i = 1}^{M} g(\theta_{i}) \rightarrow E[g(\theta)]  = \int_{\Theta}^{}g(\theta) \: \pi(\theta) \:d\theta
+\end{equation}
+as $M \rightarrow \infty$ and where $\pi$ is the stationary distribution of the Markov chain.
+
+\section{The LLN and Likelihood Ratio Policy Gradients} 
+Suppose that $r(x)$ is a performance measure that depends on some random variable $X$, and 
+$q(x; \theta)$ is the is the probability that $X = x$, 
+parameterized by $\theta \in \mathbb{R}^K$. Under mild regularity conditions, the gradient with respect to $\theta$ 
+of the expected performance $\eta(\theta)$ can be seen to be the following:
+
+\begin{flalign}
+\eta(\theta) &= \E_{x \sim q(xl \theta)} [r(x)] 
+ \: \quad \qquad \qquad \qquad \qquad \qquad \mathrel{\#} \text{definition of }  \eta(\theta) \\
+&= \sum\limits_{x} r(x) \cdot q(x; \theta) 
+ \: \; \qquad \qquad \qquad \qquad \qquad \mathrel{\#} \text{definition of expectation}  \\
+\nabla \eta(\theta)  &= \sum_{x} r(x) \nabla_{\theta} q(x; \theta) 
+\qquad \qquad \qquad \qquad \qquad \mathrel{\#} \text{take the derivative of both sides}  \\
+&= \sum_{x} r(x) \frac{\nabla_{\theta} q(x; \theta)}{q(x; \theta)} q(x; \theta) 
+\quad \qquad \qquad \qquad \mathrel{\#} \text{multiply by } 1 = \frac{q(x; \theta)} {q(x; \theta)} \\
+&= \E_{x \sim q(x;\theta)} r(x)  \frac{\nabla_{\theta} q(x; \theta)}{q(x; \theta)}
+ \; \quad \qquad \qquad \qquad \mathrel{\#} \text{definition of expectation} 
+\end{flalign}
+
+\bigskip
+\noindent
+So our gradient 
+$\nabla_{\theta} \eta(\theta) = \E_{x \sim q(x;\theta)} r(x)  \frac{\nabla_{\theta} q(x; \theta)}{q(x; \theta)}$, which 
+means we can estimate the expectation (gradient) with 
+
+\begin{equation*}
+\hat{\eta}(\theta) = \frac{1}{N} \sum\limits_{i = 1}^N  r(x)  \frac{\nabla_{\theta} q(x; \theta)}{q(x; \theta)}
+\end{equation*}
+
+\bigskip
+\noindent
+Now, given the law of large numbers we know 
+
+\begin{flalign*}
+\hat{\eta}(\theta) \rightarrow \eta(\theta) \text{ with probability one}
+\end{flalign*}
+
+\bigskip
+\noindent
+This means our gradient estimator ($\hat{\eta}(\theta)$) is \emph{unbiased} since its expected value 
+equals the true gradient. Specifically:
+
+\begin{flalign}
+\E[\hat{\eta}(\theta)] &= \nabla \eta(\theta) 
+\end{flalign}
+
+
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{/Users/dmm/papers/bib/ml}
+
+
+
+\end{document} 

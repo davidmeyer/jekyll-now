@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: moc_proposal.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "ImageNet" isn't style-file defined
+--line 11 of file /Users/dmm/papers/bib/ml.bib
+I was expecting an "="---line 31 of file /Users/dmm/papers/bib/ml.bib
+ : ` 
+ :   Bdsk-Url-1 = {https://en.wikipedia.org/wiki/Law_of_large_numbers}}
+I'm skipping whatever remains of this entry
+Warning--entry type for "ANALYTICS" isn't style-file defined
+--line 98 of file /Users/dmm/papers/bib/ml.bib
+Warning--entry type for "DLNET" isn't style-file defined
+--line 135 of file /Users/dmm/papers/bib/ml.bib
+Warning--I didn't find a database entry for "BENGIO2012"
+You've used 12 entries,
+            2118 wiz_defined-function locations,
+            563 strings with 5537 characters,
+and the built_in function-call counts, 2569 in all, are:
+= -- 246
+> -- 84
+< -- 2
++ -- 37
+- -- 24
+* -- 99
+:= -- 465
+add.period$ -- 30
+call.type$ -- 12
+change.case$ -- 47
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 116
+empty$ -- 229
+format.name$ -- 24
+if$ -- 531
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 6
+newline$ -- 57
+num.names$ -- 24
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 104
+stack$ -- 0
+substring$ -- 93
+swap$ -- 19
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 0
+while$ -- 27
+width$ -- 14
+write$ -- 111
+(There was 1 error message)

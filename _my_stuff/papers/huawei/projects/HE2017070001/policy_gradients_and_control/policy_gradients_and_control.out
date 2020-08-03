@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Policy Optimization}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Why Policy Optimization?}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Likelihood Ratio Policy Gradients}{}% 4
+\BOOKMARK [1][-]{section.4}{Reducing the Variance of the \(Gradient\) Estimator}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Aside on Control Variates}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{Using a \(constant\) Baseline}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{Exploiting Temporal Structure}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{How to choose b?}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Appendix A}{}% 10
+\BOOKMARK [1][-]{section.6}{Appendix B}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Strong Law of Large Numbers}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{Ergodic Theorem}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 14

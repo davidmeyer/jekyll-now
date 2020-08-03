@@ -1,0 +1,309 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+ % \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage{bigints}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+
+\title{Notes on some basic  probability stuff}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,brocade.com,...\}}
+
+\date{September 30, 2014}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+\label{sec:intro}
+
+Note well: There are likely to be many mistakes in this document. That said...
+
+\bigskip
+\noindent
+Much of what is described here follows from two simple rules:
+\begin{flalign}
+\label{eqn:sum_rule}
+\text{Sum Rule:}  & \qquad P(\mathcal{X}) = \sum\limits_{y}{}P(\mathcal{X},\mathcal{Y})\\
+\label{eqn:product_rule}
+\text{Product Rule:} & \qquad P(\mathcal{X},\mathcal{Y}) = P(\mathcal{X}|\mathcal{Y}) P(\mathcal{Y})
+\end{flalign}
+
+\bigskip
+\noindent
+\begin{itemize}
+\item{The Sum Rule is sometimes called marginalization}
+\item{The Product Rule is part of the proof of the Hammersley-Clifford Theorem}
+\end{itemize}
+
+\bigskip
+\noindent
+Remember also that $\mathcal{X} =  \{x_i\}_{i = 1}^{|\mathcal{X}|}$, where each $x_i$ is a realization of the random variable $x$\footnote{Each observation $x_i$ is, in general, a data point in a multidimensional space.}. Lets also say that the set $\Theta$ of probability distribution parameters can be used to explain the \emph{evidence} $\mathcal{X}$.  Then we say that the "manner in which the evidence $\mathcal{X}$ depends on the parameters $\Theta$" is the \emph{observation model}. The analytic form of the observation model is the likelihood $P(\mathcal{X} | \Theta)$.
+
+\section{Estimating the parameters $\Theta$ with Bayes Rule}
+Note that
+\begin{flalign}
+P(\Theta, \mathcal{X})  &= P(\mathcal{X},\Theta) \\
+P(\Theta, \mathcal{X})  &= P(\Theta|\mathcal{X}) P(\mathcal{X}) \\
+P(\mathcal{X}, \Theta)  &= P(\mathcal{X} | \Theta) P(\Theta) \\
+P(\Theta | \mathcal{X}) P(\mathcal{X}) &= P(\mathcal{X}|\Theta) P(\Theta)
+\end{flalign}
+
+\bigskip
+\noindent
+Solving for $P(\Theta | \mathcal{X})$ we get Bayes rule
+
+\begin{flalign}
+P(\Theta | \mathcal{X}) &= \frac{P(\mathcal{X}|\Theta) P(\Theta)}{P(\mathcal{X})} \\
+\end{flalign}
+
+\bigskip
+\noindent
+Said another way
+\begin{flalign}
+\text{posterior} &= \frac{\text{likelihood} \cdot \text{prior}}{\text{evidence}}
+\end{flalign}
+
+\bigskip
+\noindent
+You might also see Bayes rule written using the \emph{Law of Total Probability}\footnote{The Law of Total Probability is a combination of the Sum and Product Rules} which is sometimes written as follows:
+
+\begin{flalign}
+P(A) &= \sum\limits_{n}{} P(A \cap B_{n}) \qquad \qquad  \mathbin{\#} \text{by the \emph{Sum Rule} (Equation \ref{eqn:sum_rule})}\\
+&= \sum\limits_{n}{} P(A , B_{n})  \qquad \qquad  \;  \; \, \mathbin{\#} \text{in the notation used in Equation \ref{eqn:sum_rule}}\\
+&= \sum\limits_{n}{} P(A|B_{n}) P(B_{n})  \qquad \mathbin{\#} \text{by the \emph{Product Rule} (Equation \ref{eqn:product_rule})}
+\end{flalign}
+
+
+\bigskip
+\noindent
+so that the posterior distribution $P(\mathcal{C}_{1} | \mathbf{x})$ for two classes $\mathcal{C}_1$ and $\mathcal{C}_2$ given input vector $\mathbf{x}$ would look like 
+\bigskip
+
+\begin{flalign}
+P(\mathcal{C}_{1} | \mathbf{x}) = \frac{P(\mathbf{x} | \mathcal{C}_1) P(\mathcal{C}_1)}
+{P(\mathbf{x}|\mathcal{C}_1)P(\mathcal{C}_1) + P(\mathbf{x}|\mathcal{C}_2)P(\mathcal{C}_2)}
+\end{flalign}
+
+\bigskip
+\noindent
+Interestingly, the posterior distribution is related to logistic regression as follows: First recall that the posterior  $P(\mathcal{C}_{1} | \mathbf{x})$ is
+
+
+\bigskip
+\begin{flalign}
+P(\mathcal{C}_{1} | \mathbf{x}) &= \frac{P(\mathbf{x} | \mathcal{C}_1) P(\mathcal{C}_1)}
+{P(\mathbf{x}|\mathcal{C}_1)P(\mathcal{C}_1) + P(\mathbf{x}|\mathcal{C}_2)P(\mathcal{C}_2)} 
+\end{flalign}
+
+\bigskip
+\noindent
+Now, if we set 
+
+\begin{flalign}
+a &= \ln \frac{P(\mathbf{x}|\mathcal{C}_1)P(\mathcal{C}_1)}
+ {P(\mathbf{x}|\mathcal{C}_2)P(\mathcal{C}_2)}
+\end{flalign}
+
+\noindent
+we can see that 
+
+\begin{flalign}
+P(\mathcal{C}_{1} | \mathbf{x}) &=  \frac{1}{1 + e^{-a}}  = \sigma(a)
+\end{flalign}
+
+\noindent
+that is, the sigmoid function.
+
+
+\subsection{Maximum Likelihood Estimation (MLE)}
+
+Given all of that, for the MLE we seek the value of $\Theta$ that maximizes the likelihood $P(\mathcal{X}|\Theta)$ for our observations $\mathcal{X}$. Remembering that $\mathcal{X} = \{x_{1}, x_{2},\hdots\}$ and that the $x_i$ are iid, the value of $\Theta$ we seek maximizes
+
+\begin{flalign}
+\prod\limits_{x_{i} \in \mathcal{X}}^{}P(x_{i}|\Theta)
+\end{flalign}
+
+\noindent
+Because of the product it is easier to use the log\footnote{and since log(x) is monotonically increasing it doesn't effect the argmax}, we use the log likelihood $\mathcal{L}$:
+
+\begin{flalign}
+\mathcal{L} &= \sum\limits_{x_{i} \in \mathcal{X}}^{} \log P(x_{i}| \Theta)
+\end{flalign}
+
+\noindent
+and define $\hat{\Theta}_{ML}$ as follows:
+
+\begin{flalign}
+\hat{\Theta}_{ML} &= \argmax\limits_{\Theta}^{}\mathcal{L}
+\end{flalign}
+
+\noindent
+The maximization is obtained by (calculus tricks):
+
+\begin{equation}
+\frac{\partial \mathcal{L}}{\partial \theta_{i}} = 0 \quad  \forall \theta_{i} \in \Theta
+\end{equation}
+
+\bigskip
+\noindent
+Note finally that in a Generalized Linear Regression setting, we have
+\begin{flalign}
+\eta = \mathbf{w}^{T}\mathbf{x} + b \\
+p(y|\mathbf{x}) = p(y|g(\eta); \theta)
+\end{flalign}
+\noindent
+where $g(.)$ is an \emph{inverse link function}, also referred to as an activation function. For example, if the link function is the logistic function, then the inverse link function $g(\eta) = \frac{1}{1 + e^{-\eta}}$ and the negative log-likelihood $\mathcal{L}$ is 
+\begin{flalign}
+\mathcal{L} &=  - \log p(y | g(\eta); \theta)
+\end{flalign}
+
+
+\subsection{Maximum a Posteriori (MAP) Estimation of $\Theta$}
+
+Recall that
+
+\begin{flalign}
+P(\Theta | \mathcal{X}) &= \frac{P(\mathcal{X}|\Theta) P(\Theta)}{P(\mathcal{X})} 
+\end{flalign}
+
+\bigskip
+\noindent
+We are seeking the value of $\Theta$ that maximizes $P(\Theta|\mathcal{X}$), so the solution can be stated as 
+
+\begin{flalign}
+\hat{\Theta}_{MAP} &= \argmax\limits_{\Theta}^{}P(\Theta|\mathcal{X}) \\
+&= \argmax\limits_{\Theta}^{} \frac{P(\mathcal{X}|\Theta) \cdot P(\Theta)}{P(\mathcal{X})}
+\end{flalign}
+
+\noindent
+\bigskip
+However, since $P(\mathcal{X})$ does not depend on $\Theta$,  we can write 
+\begin{flalign}
+\hat{\Theta}_{MAP} &= \argmax\limits_{\Theta}^{} P(\mathcal{X}|\Theta) \cdot P(\Theta) \\
+&= \prod\limits_{x_{i} \in \mathcal{X}}^{} P(x_{i} |\Theta) \cdot P(\Theta)
+\end{flalign}
+
+\bigskip
+\noindent
+If we again take the log, we get
+
+\begin{flalign}
+\hat{\Theta}_{MAP} &= \argmax\limits_{\Theta}^{} \Bigg (\sum\limits_{x_{i} \in \mathcal{X}}^{} \log P(x_{i}|\Theta) +  \log  P(\Theta) \Bigg)
+\end{flalign}
+
+\subsection{Notes}
+\begin{itemize}
+\item{Both MLE and MAP are point estimates for $\Theta$ (contrast probability distributions)}
+\item{MLE notoriously overfits}
+\item{MAP allows us to take into account knowledge about the prior (which is a sort of a regularizer)}
+\item{Bayesian estimation, by contrast, calculates the full posterior distribution $P(\Theta | \mathcal{X})$}
+\end{itemize}
+
+\subsection{Bayesian Estimation}
+\label{sec:be}
+
+Recall that Bayesian estimation calculates the full posterior distribution $P(\Theta | \mathcal{X})$, where 
+\bigskip
+\begin{flalign}
+P(\Theta | \mathcal{X}) &= \frac{P(\mathcal{X}|\Theta) \: P(\Theta)}{P(\mathcal{X})} 
+\end{flalign}
+
+\bigskip
+\noindent
+In this case, however, the denominator $P(\mathcal{X})$ cannot be ignored, and we know from the \emph{sum} and \emph{product} rules that
+\begin{flalign}
+P(\mathcal{X}) &= \int_{\Theta}^{} P(\mathcal{X},\Theta) \; d \Theta \\
+                        &=\int_{\Theta}^{} P(\mathcal{X}|\Theta) \: P(\Theta) \: d\Theta
+\end{flalign}
+
+\noindent
+putting it all together we get
+
+\begin{flalign}
+P(\Theta | \mathcal{X}) &= \frac{P(\mathcal{X}|\Theta) \: P(\Theta)}{\int_{\Theta}^{} P(\mathcal{X}|\Theta) \: P(\Theta) \: d\Theta}
+\end{flalign}
+
+\bigskip
+\noindent
+If we want to be able to derive an algebraic form for the posterior $P(\Theta|\mathcal{X})$, the most challenging part will be finding the integral in the denominator. This is where the idea of \emph{conjugate priors} and appoximate inference approaches (\emph{Monte Carlo Integration} and \emph{Variational Bayesian methods}\footnote{Variational Bayesian methods are a family of techniques for approximating intractable integrals arising in Bayesian inference and machine learning. They are typically used in complex statistical models consisting of observed variables (usually termed "data") as well as unknown parameters and latent variables, with various sorts of relationships among the three types of random variables, as might be described by a graphical model.}) are useful. Need to futher expand this...
+
+\section{Monte Carlo Integration}
+Suppose we have a distribution $p(\theta)$ (perhaps a posterior) the we want to sample quantities of interest from. To do this analytically, we need to take an integral of the form
+\begin{flalign}
+I = \int_{\Theta}^{}g(\theta) \: p(\theta) \:d\theta
+\end{flalign}
+where $g(\theta)$ is some function of $\theta$ (typically $g(\theta) = \theta$ (the mean), etc).
+\noindent
+Need a deeper analysis here (note to self), but the punchline is that you can estimate \emph{I} using \emph{Monte Carlo Integration} as follows: Sample $M$ values ($\theta^{i}$) from $p(\theta)$ and calculate
+
+\begin{equation}
+\hat{I}_{M} = \frac{1}{M} \sum\limits_{i = 1}^{M} g(\theta^{i})
+\end{equation}
+
+\noindent
+Note that this works fine if the samples from $p(\theta)$ are iid\footnote{We know this by the Strong Law of Large Numbers, see Section \ref{sec:slln}.} but if not, we can use a Markov Chain to draw "slightly dependent" samples and depend on the \emph{Ergodic Theorem} (see Section \ref{sec:ergodic}).
+
+
+\section{Acknowledgements}
+
+\newpage
+% \cite{test}
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/ml}
+
+
+\section{Appendix}
+\subsection{Strong Law of Large Numbers}
+\label{sec:slln}
+
+Let $X_{1}, X_{2}, \hdots, X_{M}$ be a sequence of \textbf{independent} and \textbf{identically distributed} random variables, each having a finite mean $\mu_i = E[X_{i}]$. 
+
+\bigskip
+\noindent
+Then with probability 1
+\begin{equation}
+\frac{1}{M}\sum\limits_{i=1}^{M} X_i \rightarrow E[X]
+\end{equation}
+as  $M \rightarrow \infty$.
+
+\subsection{Ergodic Theorem}
+\label{sec:ergodic}
+Let $\theta^{(1)}, \theta^{(2)}, \hdots, \theta^{(M)}$ be $M$ samples from a Markov chain that is \emph{aperiodic}, \emph{irreducible}, and \emph{positive recurrent}\footnote{In this case, the chain is said to be \emph{ergodic}.}, and $E[g(\theta)] < \infty$.
+
+\bigskip
+\noindent
+Then with probability 1
+\begin{equation}
+\frac{1}{M}\sum\limits_{i = 1}^{M} g(\theta_{i}) \rightarrow E[g(\theta)]  = \int_{\Theta}^{}g(\theta) \: \pi(\theta) \:d\theta
+\end{equation}
+as $M \rightarrow \infty$ and where $\pi$ is the stationary distribution of the Markov chain.
+
+\end{document} 
+

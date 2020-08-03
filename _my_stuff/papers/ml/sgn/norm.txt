@@ -1,0 +1,6 @@
+https://i.stack.imgur.com/1EiIs.png
+https://www.google.com/search?q=norm+ball&espv=2&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjoheXZgNnSAhVKv7wKHSZ2BmYQsAQIQA&biw=1120&bih=685#imgrc=VFnu67lm18DVFM:
+
+https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE127/Lectures/2_vectors_notes.pdf
+
+https://books.google.com/books?id=kbm1BAAAQBAJ&pg=PA34&lpg=PA34&dq=relationship+between+inner+product+and+max+norm+sgn+function&source=bl&ots=zvkmXezM0F&sig=qPlunb2e6R6gyLvo4e9CgiLntyE&hl=en&sa=X&ved=0ahUKEwiRkMrF-9jSAhXIwLwKHX9UBvAQ6AEIUzAI#v=onepage&q=relationship%20between%20inner%20product%20and%20max%20norm%20sgn%20function&f=false

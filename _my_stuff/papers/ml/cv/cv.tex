@@ -1,0 +1,592 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+%\usepackage{draftwatermark}
+% \SetWatermarkText{Confidential}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.85} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometryA. G. Barto, R. S. Sutton, and C. W. Anderson
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+
+
+
+\title{Likelihood Ratio Policy Gradients for Reinforcement Learning}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,...\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+\label{sec:intro}
+These are some notes on policy gradients for Reinforcement Learning (RL). They started life as background notes I made while I was reading "Policy Gradient Methods for Robotics" \cite{Peters:2006fk}. 
+Policy gradients are a natural choice in the robotics domain where a large change in the policy (like you might have when learning value functions) could damage the robot or its environment, and
+where the action and/or state spaces are continuous. Policy gradient methods are really beautiful in form and function. In these notes I'll try to point out a few of these amazing 
+features\footnote{Here we follow the notation used in \cite{SuttonBook}.} and how trying to lower the variance of the "naive" likelihood ratio policy gradient
+leads to actor-critic designs \cite{NIPS1999_1786}. The basic reinforcement learning setup is shown in Figure \ref{fig:rl}. 
+Finally, the notation and much of the material here is taken from Pieter Abbeel  and John Schulman's excellent RL bootcamps. 
+
+
+
+\bigskip
+\noindent
+Policy Gradient algorithms have a long history in Operations Research, Statistics, Control Theory, Discrete Event Systems and Machine Learning. These
+Policy Gradient methods have been known for some time, at least since Aleksandrov, V. M., Sysoyev, V. I., \& Shemeneva, V. V. \cite{oALE68a}, and today including
+Barto, Sutton, and Anderson \cite{Barto:1990:NAE:104134.104143}, Williams \cite{Williams1992},  Baxter and Bartlett \cite{Baxter:2001:IPE:1622845.1622855}, 
+and many others. Essentially, our problem is that the performance gradient ($\nabla U(\theta)$ in the below) is unlikely to be computable in closed form, especially 
+when learning control in large-scale problems or problems where the system dynamics are unknown. Hence the challenging aspect of the policy-gradient approach 
+is to find an algorithm for estimating  the gradient via \emph{simulation}.
+
+\bigskip
+\noindent
+One of the critical challenges for policy gradient methods is the high variance of the gradient estimator. This high variance is caused in part due to difficulty in 
+credit assignment to the actions which affected the future rewards. Such issues are further exacerbated in long horizon problems, where assigning credit 
+properly becomes even more challenging. Some approaches to reducing the variance of the gradient estimator are discussed in Section \ref{sec:variance}.
+
+\bigskip
+\noindent
+In these notes we will consider methods that can directly learn a parameterized policy $\pi(u | s, \theta)$ (sometimes written $\pi_{\theta}(u | s)$)
+ which can select actions without consulting a value function, 
+again via simulation\footnote{The simulated trajectories are frequently called rollouts.}. 
+ A value function may still be used  to learn the policy weights (e.g., in Actor-Critic methods, see Section \ref{seq:choosing_b}), but that is not required 
+ for action selection. The notation $\theta \in \mathbb{R}^n$ is typically used for the primary learned weight vector, and
+$\pi_{\theta}(u | s) = \pi(u | s, \theta) = P(u_t = u | s_t = s, \theta_t = \theta)$  is the probability that action $u$ is taken at time $t$ given that the agent is in state $s$ at time $t$ with weight vector $\theta$. If a method uses a learned value function as well, then the value function's weight vector is denoted $w$ to distinguish it from $\theta$, such as in $\hat{v}(s,w)$.
+
+\begin{figure}
+\center{\includegraphics[scale=0.4] {images/rl_1.png}}
+\caption{Basic Reinforcement Learning Setup (Figure courtesy \cite{SuttonBook})}
+\label{fig:rl}
+\end{figure}
+
+
+\bigskip
+\noindent
+We wish to consider methods for learning the policy weights $\theta$ based on the gradient of some utility/performance measure $U(\theta)$) with respect to the policy weights. These methods seek to maximize performance, so their updates approximate gradient ascent in $U$. As is typical for gradient descent/ascent, 
+
+\begin{flalign}
+\boldsymbol{\theta}_{t+1} \coloneqq \boldsymbol{\theta}_t + \alpha \widehat{\nabla U(\boldsymbol{\theta}_t)}
+\label{eqn:gd}
+\end{flalign}
+
+\bigskip
+\noindent
+where $\widehat{\nabla U(\boldsymbol{\theta}_t)}$ is a stochastic estimate whose expectation approximates the gradient of the performance measure $U$ with respect to its argument $\theta_t$. As we will see, $\widehat{\nabla U(\boldsymbol{\theta}_t)}$ will turn out to be something like $\nabla_{\theta} \mathbb{E}_{\tau}[R(\tau)]$, where $\tau$ is a \emph{trajectory} and $R(\tau)$ is the return for path $\tau$ (see Section \ref{sec:scorefunction}).
+
+
+
+
+\section{Policy Optimization}
+\label{sec:scorefunction}
+
+In policy optimization we consider control policy $\pi_{\theta}$, the parameterized policy (parameterized by parameter vector $\theta$),
+ and a utility/performance function $U(\theta)$, defined as follows:
+
+\begin{flalign}
+U(\theta) = \max_\theta \mathbb{E} \Bigg [\sum\limits_{t = 0}^{H - 1} R(s_t) | \pi_\theta \Bigg ]
+\label{eqn:utility}
+\end{flalign}
+
+\bigskip
+\noindent 
+where $\pi_{\theta}(u | s)$ is a stochastic policy, that is, the probability of action $u$ in state $s$. Note that frequently the action is denoted by $a$, but we will
+follow the notation of the control theory community and call the actions $u$. In addition, the utility (sometimes performance) function $U(\theta)$ is 
+frequently referred to as $\eta(\theta)$ (for example, in \cite{Baxter:2001:IPE:1622845.1622855}); however we shall use $U(\theta)$ here.
+
+\subsection{Why Policy Optimization?}
+There are several reasons we might want to directly optimize our policy rather than say, a value function. These include
+
+\begin{itemize}
+\item Stochastic policies tend to smooth out the problem\footnote{Note that there are Deterministic Policy Gradient approaches,
+ e.g. \cite{Silver:2014:DPG:3044805.3044850}.}
+\item Policy optimization directly optimizes what we are interested in, namely $\pi_{\theta}(s,u)$
+\item Frequently the policy $\pi$ is simpler that either value function Q or V
+\item The state value function V does not prescribe actions, so would need a dynamics model (plus one or more Bellman backups)
+\item Using the action-value function Q is problematic (difficult if not impossible) when the action space (the $u$'s) and or the state
+spaces (the $s$'s) are continuous or high dimensional (such as in robotic arm manipulation). This is because instead of directly parameterizing a policy, 
+Q-value learning methods estimate the Q-function as $Q_{\theta}(s, u)$. The greedy policy selects the (discrete) action maximizing value:
+$u^{*}= \argmax\limits_{u} Q_{\theta}(s, u)$. Exploration can be performed using an $\epsilon$-greedy policy, which chooses a uniform random action with probability 
+$\epsilon$ and otherwise uses the greedy action. By its off-policy nature, Q-learning permits repeated training use of samples. Note that on-policy TD(0) approaches 
+such as SARSA \cite{SuttonBook} suffer from the same problem(s) since both SARSA and Q-learning use an $\epsilon$-greedy policy (i.e. $\max\limits_u Q(s,u)$ ) 
+to strike the balance between exploration and exploitation.
+\end{itemize}
+
+\section{Likelihood Ratio Policy Gradients}
+
+We want to compute the gradient $\nabla_{\theta} U(\theta)$ so that we can use gradient ascent/descent to improve the probability of good trajectories $\tau$ 
+(Equation \ref{eqn:gd}). In this section we will derive the Likelihood Ratio Policy Gradient which we can use for this purpose.  Before doing so, however, first 
+notice that Likelihood Ratio methods only change the probabilities of experienced paths, and further, these methods do not try to change the  actions taken in a given path. 
+
+\bigskip
+\noindent
+Now, let $\tau$ denote a state-action sequence with \emph{horizon} $H$,  $s_0,u_0,\cdots,s_{H - 1},u_{H - 1}$ and let the total reward from 
+trajectory $\tau$ be 
+
+\bigskip
+\begin{equation*}
+R(\tau) = \sum\limits_{t = 0}^{H - 1} R(s_t,u_t)
+\end{equation*}
+
+\noindent
+Notes:
+\begin{itemize}
+\item Slight overloading of $R$
+\item Lack of discounting (or $\gamma = 1$); we will add discounting later as a means to lower the variance of our estimator.
+\end{itemize}
+
+\bigskip
+\noindent
+Using the overloaded notation
+ for $R$ and rewriting $U(\theta)$ we have
+
+\bigskip
+\begin{equation*}
+U(\theta) = \E_{\tau \sim P(\tau;\theta)} \Bigg [\sum\limits_{t = 0}^{H - 1} R(s_t,u_t) ; \pi_\theta \Bigg ] = \sum\limits_{\tau}P(\tau; \theta)R(\tau)
+\end{equation*}
+
+\bigskip
+\noindent
+Here $H = |\tau |$ and $\tau$ is a trajectory (rollout)  with $\tau = [s_0,u_0, s_1,u_1, \cdots s_{H-1},u_{H-1}]$. We can now rewrite our goal as follows: Find $\theta$ such that 
+
+\bigskip
+\begin{equation*}
+\max\limits_{\theta} U(\theta) = \max\limits_{\theta} \sum\limits_{\tau}P(\tau; \theta) R(\tau)
+\end{equation*}
+
+\bigskip
+\noindent
+Now, taking the gradient with respect to $\theta$ we get
+
+\bigskip
+\begin{flalign}
+\nabla_{\theta} U(\theta) &= \nabla_{\theta} \sum\limits_{\tau}P(\tau; \theta) R(\tau) \: \; \quad \qquad  \qquad \mathrel{\#} \text{definition of $U(\theta)$} \\
+&= \sum\limits_{\tau} \nabla_{\theta} P(\tau; \theta) R(\tau) \; \;  \quad \qquad \qquad \mathrel{\#} \text{Leibniz integral rule: swap $\nabla$ and $\sum$} \\
+\label{eqn:pit}
+&= \sum\limits_{\tau} \frac{P(\tau;\theta)} {P(\tau;\theta)}  \nabla_{\theta} P(\tau; \theta) R(\tau) \; \: \qquad \mathrel{\#} \text{multiply by $1 =  \frac{P(\tau;\theta)} {P(\tau;\theta)}$} \\
+&= \sum\limits_{\tau} P(\tau;\theta)  \frac{\nabla_{\theta} P(\tau; \theta)}{P(\tau;\theta)} R(\tau)  \: \; \qquad \mathrel{\#} \text{rearrange} \\
+\label{eqn:log-dt}
+&= \sum\limits_{\tau} P(\tau;\theta)  \nabla_{\theta} \log P(\tau; \theta) R(\tau) \; \quad \mathrel{\#} \frac{\nabla_{\theta} P(\tau;\theta)}{P(\tau;\theta)} = \nabla_{\theta} \log P(\tau;\theta) \\
+&= \E_{\tau \sim P(\tau;\theta)} \Big [\nabla_{\theta} \log P(\tau; \theta) R(\tau) \Big ] \quad \mathrel{\#} \text{definition of expectation}
+\label{eqn:expectation}
+\end{flalign}
+
+\bigskip
+\noindent
+Notes:
+\begin{itemize}
+\item Equation \ref{eqn:pit}: Multiplying by $\frac{P(\tau;\theta)} {P(\tau;\theta)}$ is sometimes called the "Probabilistic Identity Trick"  \cite{log_derivative_trick}. This allows us to form
+the score function (see "Log Derivative Trick" in the next bullet). Ed: Not sure why these are called tricks.
+\item Equation \ref{eqn:log-dt}:  $\frac{\nabla_{\theta} P(\tau;\theta)}{P(\tau;\theta)} = \nabla_{\theta} \log P(\tau;\theta)$ is known as the "Log Derivative Trick" \cite{log_derivative_trick} or 
+sometimes the "likelihood ratio trick" or even the "REINFORCE trick" \cite{Williams1992} .
+$\frac{\nabla_{\theta} p(x \mid \theta)}{p(x \mid \theta)}$ is called the "likelihood ratio" or "score function" in classical statistics. 
+The log derivative trick is sometimes framed up like this: 
+The gradient of something divided by something is the gradient of the log of something. Also frequently
+pronounced "grad something divided by something is grad log something".
+\item  Equation \ref{eqn:expectation}: This derivation reduces the computation of the gradient $\nabla_{\theta}U(\theta)$ to a simple expectation. 
+This means, among other things,  that we know from the Strong Law of Larger Numbers (see Section \ref{sec:slln}) that an \emph{unbiased} estimate of the gradient $\hat{g}$
+can be computed directly from our samples (Equation \ref{eqn:g-hat}).
+\item Appendix A gives a slightly more general version of this derivation.
+\end{itemize}
+
+\bigskip
+\noindent
+So our result is that 
+
+\begin{equation}
+\nabla_{\theta} U(\theta) = \E_{\tau \sim P(\tau;\theta)} \Big [\nabla_{\theta} \log P(\tau; \theta) R(\tau) \Big ]
+\label{eqn:egradient}
+\end{equation}
+
+\bigskip
+\noindent
+An immediate implication of the fact that the gradient is reduced to an expectation is that we can approximate the gradient ($\hat{g}$) with the empirical estimate for $m$ 
+sample paths under policy $\pi_\theta$,  as follows:
+
+\begin{equation}
+\nabla_\theta U(\theta) \approx \hat{g} = \frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log  P(\tau^{(i)} ; \theta) R(\tau^{(i)})
+\label{eqn:g-hat}
+\end{equation}
+
+\bigskip
+\noindent
+A couple of notes here. First, we know by the law of large numbers (Appendix B) that 
+$\frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log  P(\tau^{(i)} ; \theta) R(\tau^{(i)}) \rightarrow \nabla_\theta U(\theta)$ with probability one; this is
+another way of saying our estimator $\hat{g}$  is unbiased. Next,  the estimate $\hat{g}$ holds even if 
+
+\begin{itemize}
+\item $R(\tau)$ is not continuous and/or unknown
+\item The sample space of paths is a discrete set
+\end{itemize}
+
+\bigskip
+\noindent
+So for each sample path we need to be able to compute $\nabla_{\theta} \log  P(\tau^{(i)};\theta)$. How might we do this? We can decompose $P(\tau^{(i)}; \theta)$ into 
+a states and actions, as follows:
+
+\begin{flalign}
+\nabla_{\theta} \log P(\tau^{(i)}; \theta) &= \nabla_{\theta} \log \Bigg [ \prod\limits_{t = 0}^{H - 1} \underbrace{P(s^{(i)}_{t+1} | s^{(i)}_t, u^{(i)}_t)}_{\text{dynamics/plant model}} \cdot 
+\underbrace{\pi_{\theta}(u^{(i)}_t |  s^{(i)}_t)}_{\text{policy}} \Bigg ]  \\
+\label{eqn:log_prod}
+&= \nabla_{\theta} \Bigg [\sum\limits_{i = 0}^{H - 1} \log P(s^{(i)}_{t+1} | s^{(i)}_t, u^{(i)}_t) + \sum\limits_{i = 0}^{H - 1} \log \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t) \Bigg ]  \\
+&= \nabla_{\theta} \sum\limits_{i = 0}^{H - 1} \log P(s^{(i)}_{t+1} | s^{(i)}_t, u^{(i)}_t)  + \nabla_{\theta} \sum\limits_{i = 0}^{H - 1} \log \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t) \\
+\label{eqn:dynamics_model}
+&= \sum\limits_{i = 0}^{H - 1} \nabla_{\theta}  \log P(s^{(i)}_{t+1} | s^{(i)}_t, u^{(i)}_t)  + \sum\limits_{i = 0}^{H - 1} \nabla_{\theta}  \log \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t) \\
+\label{eqn:ldt}
+&= \sum\limits_{i = 0}^{H - 1} \nabla_{\theta}  \log \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t)  
+\end{flalign}
+
+\bigskip
+\noindent
+So $\nabla_{\theta} \log P(\tau^{(i)}; \theta) = \sum\limits_{i = 0}^{H - 1}  \nabla_{\theta} \log \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t)$. This result is stated
+in a slightly different form in Baxter \& Bartlett \cite{Baxter:2001:IPE:1622845.1622855}:
+
+\begin{flalign}
+\frac{\nabla_{\theta} P(\tau^{(i)}; \theta)}{P(\tau^{(i)}; \theta)} = 
+\sum\limits_{i = 0}^{H - 1} \frac{\nabla_{\theta} \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t)}{ \pi_{\theta}(u^{(i)}_t |  s^{(i)}_t)}
+\end{flalign}
+
+\bigskip
+\noindent
+You can see that this is equivalent to Equation \ref{eqn:ldt} by applying the "log derivative trick" \cite{log_derivative_trick},  $\nabla \log f(X)= \frac{\nabla f(X)}{f(X)}$,
+to both sides of Equation \ref{eqn:ldt}.
+
+\bigskip
+\noindent
+Notice that the dynamics/plant model $P(s^{(i)}_{t+1} | s^{(i)}_t, u^{(i)}_t)$  drops out of Equation \ref{eqn:dynamics_model}. This is because the 
+dynamics of the system do not depend on the parameters $\theta$ of our model, so the gradient is zero. This is a handy result as we are trying 
+to do model-free learning (model-based learning would require the dynamics as part of the model).  Now we can compute an unbiased 
+estimate\footnote{Unbiased means that $\E[\hat{g}] = \nabla_{\theta}U(\theta)$.} 
+of the gradient without the need for a dynamics model:
+
+\begin{flalign}
+\hat{g} & = \frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log P(\tau^{(i)};\theta) R(\tau^{(i)})
+\end{flalign}
+
+\noindent
+where 
+
+\begin{flalign}
+\nabla_{\theta} \log P(\tau^{(i)};\theta)  = \sum\limits_{t = 0}^{H - 1} \nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t  | s^{(i)}_t)
+\label{eqn:likelihood_ratio}
+\end{flalign}
+
+\bigskip
+\noindent
+Note that the gradients $\nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t  | s^{(i)}_t)$ required by Equation \ref{eqn:likelihood_ratio} are exactly what are computed by
+the backpropagation algorithm on the (log) policy neural network.
+
+\section{Reducing the Variance of the (Gradient) Estimator}
+\label{sec:variance}
+The likelihood ratio estimate of the policy gradient as described so far can be very sample inefficient due to its high variance. The next few sections describe straight forward ways to 
+reduce the variance of the estimator $\hat{g}$. The methods described below are part of a more general approach to variance reduction which uses one ore more \emph{control variates} 
+\cite{szechtman2003}:
+\begin{itemize}
+\item Centering our estimate around a constant baseline \cite{Williams1992}.
+\item Taking advantage of temporal structure based on the observation that future actions do not depend on past rewards (unless the policy has been changed) . This can result in a significant 
+reduction of the variance of the policy gradient estimate. See Section II. B (1) of \cite{Peters:2006fk}.
+\item Use an estimate of the state value function, $V^{\pi}(s^{(i)}_t)$ as a control variate. The value function is a typical control variate used
+with Monte Carlo estimators \cite{Greensmith:2004:VRT:1005332.1044710}.  See for example Equation \ref{eqn:a2c}.
+\item More advanced Policy Gradient methods such as Trust Region Policy Optimization \cite{DBLP:journals/corr/SchulmanLMJA15} and Proximal Policy Optimization Algorithms \cite{2017arXiv170706347S} 
+provide still better estimates. These ideas relate to the one of the main reasons for their use in robotics: how to make "small" changes to the policy $\pi_\theta$ while improving it.  
+Section II C \cite{Peters:2006fk} discusses this point in some detail. 
+\end{itemize}
+
+\subsection{Using a (constant) Baseline}
+
+This idea seems to have originated in Williams \cite{Williams1992}. To see how adding a baseline can reduce the variance of our estimator, recall that the gradient estimator $\hat{g}$ is defined as follows:
+
+\begin{equation}
+\nabla_\theta U(\theta) \approx \hat{g} = \frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log  P(\tau^{(i)} ; \theta) R(\tau^{(i)})
+\end{equation}
+
+\bigskip
+\noindent
+We can add a baseline \textcolor{red}{$b$} to capture the idea that what we really care about is how good the reward $R(t)$ is compared to some baseline, such as the mean reward. 
+The way we might formalize this is as follows:
+
+\begin{equation}
+\nabla_\theta U(\theta) \approx \hat{g} = \frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log  P(\tau^{(i)} ; \theta) (R(\tau^{(i)}) \textcolor{red}{\;-\;  b})
+% \label{eqn:g-hat}
+\end{equation}
+
+\bigskip
+\noindent
+$b$ here is assumed to be constant, but in reality as long as $b$ doesn't depend on the action $u$, adding a baseline $b$ does not introduce bias to the gradient estimate 
+$\nabla_{\theta} U(\theta)$ \cite{Williams1992}. Why? We can see this pretty easily. The following result is used in Equation 7 of  
+\cite{Peters:2006fk}; there they state that $\int_{\mathbb{T}} \nabla_{\theta} p_{\theta}(\tau) \; d\tau = 0$, which is important as
+can be seen (with a bit more detail) in Equations \ref{eqn:before_sum_zero} through \ref{eqn:sum_zero} of the following:
+
+\begin{flalign}
+\label{eqn:g-hat+baseline}
+\E[\hat{g}] &= \E_{\tau \sim P(\tau;\theta)} \Big [\nabla_{\theta} \log P(\tau; \theta) [R(\tau) \textcolor{red}{\; - \; b}] \Big ] 
+\; \quad \quad \qquad
+ \mathrel{\#} \text{definition of } \E[\hat{g}] \\
+&= \sum\limits_{\tau} P(\tau;\theta)  \nabla_{\theta} \log P(\tau; \theta) [R(\tau) \textcolor{red}{\; - \; b}]  
+\; \; \quad \quad \qquad
+ \mathrel{\#} \text{definition of  expectation}\\
+&=  \sum\limits_{\tau}   \nabla_{\theta} P(\tau; \theta) [R(\tau) \textcolor{red}{\; - \; b}]  
+\:  \quad \qquad \qquad \qquad \qquad
+ \mathrel{\#} \frac{\nabla_{\theta} P(\tau;\theta)}{P(\tau;\theta)} = \nabla_{\theta} \log P(\tau;\theta) \\
+&=  \sum\limits_{\tau} \Big [\nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; b \cdot \nabla_{\theta} P(\tau; \theta)} \Big ] 
+\ : \: \quad \quad \quad
+ \mathrel{\#} \text{multiply through} \\
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; \sum\limits_{\tau} b \cdot \nabla_{\theta} P(\tau; \theta)} 
+\: \; \; \quad \quad
+ \mathrel{\#} \text{distribute $\sum$} \\
+\label{eqn:before_sum_zero}
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; b \cdot \sum\limits_{\tau} \nabla_{\theta} P(\tau; \theta)} 
+\: \; \; \quad \quad
+ \mathrel{\#} \text{factor out $b$} \\
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; b \cdot  \nabla_{\theta} \sum\limits_{\tau} P(\tau; \theta)} 
+\;  \; \quad \quad
+ \mathrel{\#} \text{swap } \sum\limits_{\tau} \text{ and } \nabla_\theta \\
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; b \cdot  \nabla_{\theta} 1} 
+\quad \qquad \qquad \qquad
+ \mathrel{\#} \sum\limits_{\tau} P(\tau; \theta) = 1 \\
+\label{eqn:sum_zero}
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) \textcolor{red}{\; - \; b \cdot 0} 
+\; \qquad \qquad \qquad \qquad
+ \mathrel{\#} \nabla c = 0 \text{ for constant $c$} \\
+&=  \sum\limits_{\tau}  \nabla_{\theta} P(\tau; \theta) R(\tau) 
+\; \quad \qquad \qquad \qquad \qquad \qquad
+ \mathrel{\#} b \cdot 0 = 0 \\
+&= \nabla_{\theta} U(\theta) 
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad
+\mathrel{\#} \Rightarrow \text{Equation } \ref{eqn:egradient}
+\end{flalign}
+
+\bigskip
+\noindent
+We see that $\E[\hat{g} ] = \nabla_{\theta} U(\theta)$, that is,  $\hat{g}$ is unbiased, even if we subtract an arbitrary baseline $b$ (so long as 
+$b$ doesn't depend on the action $u$).  And again, we used 
+the implication $\sum\limits_{\tau} P(\tau; \theta) = 1 \Rightarrow \sum\limits_{\tau} \nabla_{\theta} P(\tau; \theta) = 0$ to go from 
+Equation \ref{eqn:before_sum_zero} to Equation \ref{eqn:sum_zero}. 
+
+\subsection{Exploiting Temporal Structure}
+ We know that in general, removing terms that don't depend on the current action can reduce variance.  
+ We can take advantage of this observation and of temporal structure of our problem.
+In particular, we know that future actions do not depend on past rewards (unless the policy has been changed). So if we can remove past rewards 
+from our current estimate $\hat{g}$, we would expect a significant reduction of the variance of our gradient estimate (which in general we observe).  
+This observation seems to have originated in Williams \cite{Williams1992}. See also Section II. B (1) of \cite{Peters:2006fk}.
+We can implement this strategy in our current estimate $\hat{g}$ by simply removing rewards received at times $j < t -1$, where 
+$t$ is the current timestep in the current rollout $i$, as follows:
+
+\begin{flalign}
+\hat{g} &= \frac{1}{m} \sum\limits_{i = 1}^{m} \nabla_{\theta} \log P(\tau^{(i)}; \theta) (R(\tau^{(i)}) - b) \\
+&= \frac{1}{m} \sum\limits_{i = 1}^{m} \Bigg ( \sum\limits_{t = 0}^{H - 1} \nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t | s^{(i)}_t) \Bigg )
+\Bigg (\sum\limits_{t = 0}^{H - 1} R(s^{(i)}_t, u^{(i)}_t) -b\Bigg ) \\
+\label{eqn:t=0}
+&= \frac{1}{m} \sum\limits_{i = 1}^{m} \Bigg ( \sum\limits_{t = 0}^{H - 1} \nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t | s^{(i)}_t) \Bigg [
+\Bigg (\sum\limits_{j = 0}^{t - 1} R(s^{(i)}_j, u^{(i)}_j) \Bigg ) + \Bigg ( \sum\limits_{k = t}^{H - 1} R(s^{(i)}_k, u^{(i)}_k) \Bigg )
+-b \Bigg ] \\
+\label{eqn:t=k}
+&=  \frac{1}{m} \sum\limits_{i = 1}^{m} \Bigg ( \sum\limits_{t = 0}^{H - 1} \nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t | s^{(i)}_t) \Bigg [
+ \Bigg ( \sum\limits_{k = t}^{H - 1} R(s^{(i)}_k, u^{(i)}_k) \Bigg )
+-b \Bigg ] \Bigg )
+\end{flalign}
+
+\bigskip
+\noindent 
+Note that the term $\sum\limits_{j = 0}^{t - 1} R(s^{(i)}_t, u^{(i)}_t)$ drops out going from Equation \ref{eqn:t=0} to Equation \ref{eqn:t=k}.  This is again because
+future actions do not depend on past rewards.
+
+\subsection{How to choose $b$?}
+\label{seq:choosing_b}
+
+That's all good, but now how do we choose $b$? The next few sections will look at this question, which will lead to actor-critic models, in which $b$ is chosen to be the value function $V^\pi$. The basic 
+choices for $b$ are part of a more general variance reduction approach known as "control variates" \cite{Greensmith:2004:VRT:1005332.1044710}. These include
+
+\begin{itemize}
+\item Constant baseline: $b = \E [R(t)] \approx \frac{1}{m} \sum\limits_{i = 1}^{m} R(\tau^{(i)})$ \\
+\item Optimal baseline: $b = \frac{\sum\limits_i (\nabla_\theta \log P(\tau^{(i)}; \theta))^2 R(\tau^{(i)})}
+{\sum\limits_i (\nabla_\theta \log P(\tau^{(i)}; \theta))^2}$
+\item Time dependent baseline: $b_t = \frac{1}{m} \sum\limits_{i = 1}^{m} \sum\limits_{k = t}^{H -1} R(s^{(i)}_t, u^{(i)}_t)$
+\item State-dependent expected return: $b(s^{(i)}_t) = \E[r_t + r_{t + 1} + \hdots + r_{H - 1}] = V^{\pi}(s^{(i)}_t)$
+\end{itemize}
+
+\bigskip
+\noindent
+Using the state-dependent expected return, i.e. the value function $V^\pi(s^{(i)}_t)$,  as a control variate\footnote{Alternatively we can think of this as using a baseline 
+$b = b(s_t) = V^{\pi}(s^{(i)}_t)$ in Equation \ref{eqn:g-hat+baseline}.} gives us what are called Actor-Critic (AC) models:
+
+\bigskip
+\begin{equation}
+\hat{g} = \frac{1}{m} \sum\limits_{i = 1}^{m} \Bigg ( \sum\limits_{t = 0}^{H - 1} \nabla_{\theta} \log \pi_{\theta} (u^{(i)}_t | s^{(i)}_t) \Bigg [
+ \sum\limits_{k = t}^{H - 1} R(s^{(i)}_t, u^{(i)}_t) 
+- V^{\pi}(s^{(i)}_t) \Bigg ] \Bigg )
+\label{eqn:a2c}
+\end{equation}
+
+\bigskip
+\noindent
+Equation \ref{eqn:a2c} is generally referred to as the Advantage Actor-Critic (A2C) gradient \cite{2018arXiv180302811S}. Here the agent estimates
+$V^\pi (s^{(i)}_t)$ from the data, for instance using a separate
+output from the same network used to estimate  $\log \pi_{\theta} (u^{(i)}_t | s^{(i)}_t)$.  
+
+\bigskip
+\noindent
+Note that $R(s^{(i)}_t, u^{(i)}_t)  - V^{\pi}(s^{(i)}_t)$ estimates the advantage $A(s, a) = Q(s, a) - V (s)$.  $R(s^{(i)}_t, u^{(i)}_t)$ 
+is typically computed using the discounted sum of as many future returns as are observed in a given batch, up to $H$ , and is bootstrapped with $V^{\pi}(s^{(i)}_H)$, 
+appropriately discounted. $R(s^{(i)}_t, u^{(i)}_t)$ can also be seen as part of a single rollout estimate of the action value function  $Q(s^{(i)}_t, u^{(i)}_t)$; more on this later.
+
+\bigskip
+\noindent
+The estimated advantage $R(s^{(i)}_t, u^{(i)}_t) - V^{\pi}(s^{(i)}_t)$ gives us a way to train the estimator $V^{\pi}(s^{(i)}_t)$: it is simply a supervised learning problem
+where $R(s^{(i)}_t, u^{(i)}_t)$, the reward observed at step $t$ on the $i^{th}$ rollout, is the label and $V^{\pi}(s^{(i)}_t)$ is our estimate. Thus we can train $V^{\pi}(s^{(i)}_t)$
+using something like the squared-error or cross-entropy loss at the same time we are training $\pi_{\theta}$. Lastly, A2C adds an entropy term,
+$\nabla_{\theta} H(\pi_{\theta} (u^{(i)}_t | s^{(i)}_t))$, to the gradient to promote exploration and discourage premature convergence.
+
+\bigskip
+\noindent
+In a slight variation on A2C, Asynchronous Advantage Actor-Critic (A3C) \cite{2016arXiv160201783M}, separate actor-learner threads sample environment steps and update a 
+centralized copy of the parameters asynchronously to each other. In (batched) A2C, which performs similarly to A3C \cite{2017arXiv170706347S}, separate environment instances 
+are sampled, but the learner is single-threaded and gathers all data into one mini-batch to compute the gradient.
+
+\bigskip
+\noindent
+Interestingly, Actor-Critic methods share important architectural features with Generative Adversarial Networks (GANs) \cite{2016arXiv160201783M}. In particular, in AC models the actor 
+has access only to the gradient estimate (Equation \ref{eqn:a2c}) to update the policy, whereas the critic ($ V^{\pi}(s^{(i)}_t)$) is trained on the actual data instances (the rollouts).  In the GAN setting, 
+the generator has access only to the gradient to update the generator, and the discriminator is trained on the actual data. Thus the actor in AC methods is similar to the generator in a GAN; similarily,
+the critic in AC models and the discriminator in GANs are trained on the actual data and are used to form the gradient used to train the actor/generator. 
+
+\subsection{Estimating $V^{\pi}$}
+\label{seq:estimating_v}
+
+There are two basic ways of estimating  $V^{\pi}$: regression against the empirical return and using the Bellman optimality equation for $V^{\pi}$. Each will be considered briefly below.
+
+\subsubsection{Estimating $V^{\pi}$ by regression against the empirical return}
+
+\newpage
+\section{Appendix A}
+\label{appendix:a}
+
+We can think about he derivation of the likelihood ratio policy gradient in a more general way. The basic result we would like to prove is 
+ 
+\begin{flalign}
+\nabla_{\theta} \mathbb{E}_{x \sim p(x \mid \theta)} [f(x)] =  \mathbb{E}_{x} [f(x) \nabla_{\theta} \log p(x  \mid  \theta)]
+\label{eqn:E}
+\end{flalign}
+
+\bigskip
+\noindent
+To see this, imagine that $f(x) = R(\tau)$.
+
+\bigskip
+\noindent
+So the proof of this is amazingly simple given the log derivative trick \cite{log_derivative_trick}. First, consider a function $f(x)$ for which we wish to find 
+$\nabla_{\theta} \mathbb{E}_{x \sim p(x \mid \theta)} [f(x)]$. Then
+\begin{flalign}
+\nabla_{\theta} \mathbb{E}_{x \sim p(x \mid \theta)} [f(x)] 
+&= \nabla_{\theta} \int_x p(x \mid \theta) f(x) dx  \; \quad \qquad \qquad \mathbin{\#} \text{definition} \\
+&= \int_x \nabla_{\theta} p(x \mid \theta) f(x) dx  \; \quad \qquad \qquad \mathrel{\#} \text{exchange grad and sum} \\
+&= \int_x p(x \mid \theta) \frac{\nabla_{\theta} p(x \mid \theta)} {p(x \mid \theta)} f(x) dx   \qquad \mathrel{\#} \text{multiply by }  \frac{p(x \mid \theta)}{p(x \mid \theta)} \\
+&= \int_x p(x \mid \theta)  \nabla_{\theta} \log{p(x \mid \theta)} f(x)  \qquad \mathrel{\#} \text{log-derivative trick} \\
+&= \mathbb{E}_{x \sim p(x \mid \theta)} [f(x) \nabla_{\theta} \log{p(x \mid \theta)}] \qquad \mathrel{\#} \text{defn expectation} 
+\end{flalign}
+
+\bigskip
+\noindent
+Define $\hat{g}_i = f(x_i)  \nabla_\theta \log p(x_i  \mid  \theta)$.  An empirical estimate the gradient for $m$ samples is
+\begin{flalign}
+\nabla_{\theta} \mathbb{E}_{x \sim p(x \mid \theta)} [f(x)] 
+= g \approx \frac{1}{m} \sum\limits_{i = 1}^{m} \hat{g}_i 
+= \frac{1}{m} \sum\limits_{i = 1}^{m} f(x_i)  \nabla_\theta \log p(x_i  \mid  \theta)
+\end{flalign}
+
+\bigskip
+\noindent
+
+
+\bigskip
+\noindent
+So $\nabla_{\theta} E_{x \sim p(x \mid \theta)} [f(x)] =  E_{x \sim p(x \mid \theta)} [f(x) \nabla_{\theta} \log{p(x \mid \theta)}]$. 
+This gives us an unbiased gradient estimator; to compute the gradient estimate, just sample $x_i \sim p(x  \mid \theta)$ and then compute the gradient estimate
+$\hat{g}_i = f(x_i)  \nabla_\theta \log p(x_i  \mid  \theta)$. Now, let the trajectory (sometimes path)  $\tau$ be the state-action sequence  $(s_0,a_0, r_0,s_1,a_1,r_1,\cdots, a_{T-1}, a_{T-1},r_{T-1})$ and suppose $f(x) = R(\tau)$, the total return for \emph{path} $\tau$. Then
+
+\bigskip
+
+\begin{flalign}
+\nabla_{\theta} \mathbb{E}_{\tau}[R(\tau)] &= E_{\tau} [\nabla_{\theta} \log{p(\tau \mid \theta)} R(\tau) ]
+\label{eqn:gradient}
+\end{flalign}
+
+\bigskip
+\noindent
+so that all we really need to do is see that we can compute $p(\tau \mid \theta)$:
+
+\begin{flalign}
+p(\tau \mid \theta) &= \mu_0(s_0) \prod\limits_{t = 0}^{T - 1} \underbrace{\pi(a_t \mid s_t,\theta)}_{\text{policy}} \underbrace{P(s_{t+1},r_t) \mid s_t,a_t)}_{\text{dynamics}} 
+\qquad \qquad \mathbin{\#} \text{definition }\\
+\log p(\tau \mid \theta) &= \log{\mu_0(s_0)} + \sum\limits_{t = 0}^{T-1} \log{\pi(a_t \mid s_t,\theta)} + \log{P(s_{t+1},r_t) \mid s_t,a_t)} \\
+\nabla_{\theta} \log p(\tau \mid \theta) &= \nabla_{\theta} \sum\limits_{t = 0}^{T-1}\log{\pi(a_t \mid s_t,\theta)} \\
+&= \sum\limits_{t = 0}^{T-1} \nabla_{\theta}  \log{\pi(a_t \mid s_t,\theta)} 
+\end{flalign}
+
+\bigskip
+\noindent
+So $\nabla_{\theta} \mathbb{E}_{\tau} [R] = \mathbb{E}_{\tau} [R(\tau) \nabla_{\theta} \sum\limits_{t = 0}^{T-1} \log{\pi(a_t \mid s_t,\theta)}]$, which gives a direct way of computing a gradient we can use with standard Stochastic Gradient Ascent (or Descent), where the parameter update rule would be something like $\theta \coloneqq \theta + \alpha \nabla_{\theta} \mathbb{E}_{\tau}[R(\tau)]$. Essentially move $\theta$ in the direction of better expected return. Note also that the model dynamics, $P(s_{t+1},r_t) \mid s_t,a_t)$, conveniently drops out of the gradient (good thing given that we're trying to learn model-free control).
+
+\newpage
+\section{Appendix B}
+\label{appendix:b}
+
+\subsection{Strong Law of Large Numbers}
+\label{sec:slln}
+
+Let $X_{1}, X_{2}, \hdots, X_{M}$ be a sequence of \textbf{independent} and \textbf{identically distributed} random variables, each having a finite mean $\mu_i = E[X_{i}]$. 
+
+\bigskip
+\noindent
+Then with probability 1
+\begin{equation}
+\frac{1}{M}\sum\limits_{i=1}^{M} X_i \rightarrow E[X]
+\end{equation}
+as  $M \rightarrow \infty$.
+
+\subsection{Ergodic Theorem}
+\label{sec:ergodic}
+Let $\theta^{(1)}, \theta^{(2)}, \hdots, \theta^{(M)}$ be $M$ samples from a Markov chain that is \emph{aperiodic}, \emph{irreducible}, and \emph{positive recurrent}\footnote{In this case, the chain is said to be \emph{ergodic}.}, and $E[g(\theta)] < \infty$.
+
+\bigskip
+\noindent
+Then with probability 1
+\begin{equation}
+\frac{1}{M}\sum\limits_{i = 1}^{M} g(\theta_{i}) \rightarrow E[g(\theta)]  = \int_{\Theta}^{}g(\theta) \: \pi(\theta) \:d\theta
+\end{equation}
+as $M \rightarrow \infty$ and where $\pi$ is the stationary distribution of the Markov chain.
+
+
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{/Users/dmm/papers/bib/ml}
+
+
+
+\end{document} 

@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+
+\bibitem{GUTMANN2016}
+Noise-Contrastive Estimation and its Generalizations.
+
+\bibitem{GUTMANN12a}
+Aapo~Hyvarinen Michael U.~Gutmann.
+\newblock Noise-contrastive estimation of unnormalized statistical models, with
+  applications to natural image statistics.
+\newblock {\em Journal of Machine Learning Research}, 12:307--361, 2012.
+
+\end{thebibliography}

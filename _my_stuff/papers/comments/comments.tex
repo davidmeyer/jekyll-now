@@ -1,0 +1,87 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+%
+% so you can do e.g., \begin{bmatrix}[r] (or [c] or [l])
+%
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\title{Comments}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+
+
+\begin{document}
+\maketitle
+
+\bigskip
+\noindent
+If you think about it, suppose your age is $x$ and mine is $y$. Then
+
+\begin{equation*}
+\lim_{n \rightarrow \infty} \frac{x + n}{y + n} = 1
+\end{equation*}
+
+\bigskip
+\noindent
+Why? Suppose that you are 10 years old ($x = 10$) and I am 20 years old ($y = 20$). Then at year $0$ (now, $n = 0$), then  
+$\frac{x + n}{y + n} =  \frac{10 + 0}{20 + 0}  = \frac{1}{2}$ = 0.50.  Now,  in 10 years ($n = 10$) $\frac{x + n}{y + n} =  
+\frac{10 + 10}{20 + 10}  = \frac{20}{30} = \frac{2}{3}$ = 0.67. In 100 years ($n = 100$)  $\frac{x + n}{y + n} =  \frac{10 + 100}{20 + 100}  
+= \frac{110}{120} = \frac{11}{12} = 0.92$.  In 1000 years, $\frac{1010}{1020} = 0.99$. When $n = \infty$ (asymptotically or "in the limit"), 
+$\frac{x + \infty}{y + \infty} = 1$.
+ 
+\bigskip
+\noindent
+{\Large Long story short:  Given enough time we're all the same age.}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{/Users/dmm/papers/bib/qc}
+
+
+
+\end{document} 

@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Continuous Bag-of-Words Model}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Updating Weights: hidden layer to output layer}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Updating Weights: Input to hidden layers}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{General Continuous Bag-of-Words Model}{}% 5
+\BOOKMARK [1][-]{section.4}{Skip-Gram Model}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Revisiting Learning In Neural Probabilisitic Language Models}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{An Obvious Question}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Basics of Parametric Density Estimation}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Noise Contrastive Estimation}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{NCE Cost Function}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Skip-Gram Negative Sampling}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Acknowledgements}{}% 13

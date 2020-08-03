@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{Aharonov:aa}
+Dorit Aharonov.
+\newblock Quantum computation.
+
+\bibitem{2000RPPh...63.1893G}
+F.~{Gieres}.
+\newblock {Mathematical surprises and Dirac's formalism in quantum mechanics}.
+\newblock {\em Reports on Progress in Physics}, 63:1893--1931, December 2000.
+
+\bibitem{Henault:2015aa}
+Francois Henault.
+\newblock Quantum physics and the beam splitter mystery.
+\newblock https://arxiv.org/abs/1509.00393, September 2015.
+
+\bibitem{wiki:kronecker_delta}
+{Wikipedia contributors}.
+\newblock Kronecker delta --- {Wikipedia}{,} the free encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Kronecker_delta&oldid=862709627},
+  2018.
+\newblock [Online; accessed 11-December-2018].
+
+\bibitem{0031-9120-35-1-308}
+K~P Zetie, S~F Adams, and R~M Tocknell.
+\newblock How does a mach-zehnder interferometer work?
+\newblock {\em Physics Education}, 35(1):46, 2000.
+
+\end{thebibliography}

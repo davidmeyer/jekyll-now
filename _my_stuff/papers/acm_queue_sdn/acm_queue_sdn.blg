@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: acm_queue_sdn.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/sdn.bib
+Warning--entry type for "Taleb2007" isn't style-file defined
+--line 62 of file /Users/dmm/papers/bib/sdn.bib
+Warning--can't use both volume and number fields in DoyleCsete2011
+Warning--can't use both volume and number fields in KirschnerGerhart1998
+Warning--empty institution in Scott1999
+Warning--can't use both volume and number fields in Vidya20122
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            631 strings with 7522 characters,
+and the built_in function-call counts, 6569 in all, are:
+= -- 640
+> -- 319
+< -- 11
++ -- 129
+- -- 109
+* -- 486
+:= -- 1043
+add.period$ -- 52
+call.type$ -- 17
+change.case$ -- 105
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 251
+empty$ -- 502
+format.name$ -- 109
+if$ -- 1398
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 13
+newline$ -- 86
+num.names$ -- 34
+pop$ -- 110
+preamble$ -- 1
+purify$ -- 89
+quote$ -- 0
+skip$ -- 202
+stack$ -- 0
+substring$ -- 391
+swap$ -- 82
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 67
+warning$ -- 4
+while$ -- 58
+width$ -- 19
+write$ -- 193
+(There were 5 warnings)

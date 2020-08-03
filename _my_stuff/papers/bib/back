@@ -1,0 +1,31 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for David Meyer at 2013-03-05 13:16:07 -0800 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{Yap:2010:TSN:1851276.1851288,
+	Acmid = {1851288},
+	Address = {New York, NY, USA},
+	Author = {Yap, Kok-Kiong and Huang, Te-Yuan and Dodson, Ben and Lam, Monica S. and McKeown, Nick},
+	Booktitle = {Proceedings of the first ACM asia-pacific workshop on Workshop on systems},
+	Date-Added = {2013-03-05 19:34:13 +0000},
+	Date-Modified = {2013-03-05 19:34:13 +0000},
+	Doi = {10.1145/1851276.1851288},
+	Isbn = {978-1-4503-0195-4},
+	Keywords = {network os, network services, openflow, software-defined networks},
+	Location = {New Delhi, India},
+	Numpages = {6},
+	Pages = {49--54},
+	Publisher = {ACM},
+	Series = {APSys '10},
+	Title = {Towards software-friendly networks},
+	Url = {http://doi.acm.org/10.1145/1851276.1851288},
+	Year = {2010},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1851276.1851288},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1145/1851276.1851288}}

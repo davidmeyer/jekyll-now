@@ -1,0 +1,238 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for David Meyer at 2017-03-14 08:11:17 -0700 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{goodfellow2013maxout,
+	Author = {Goodfellow, Ian J and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron C and Bengio, Yoshua},
+	Date-Added = {2017-03-14 15:11:07 +0000},
+	Date-Modified = {2017-03-14 15:11:07 +0000},
+	Journal = {ICML (3)},
+	Pages = {1319--1327},
+	Title = {Maxout Networks.},
+	Volume = {28},
+	Year = {2013}}
+
+@inproceedings{glorot2011deep,
+	Author = {Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
+	Booktitle = {Aistats},
+	Date-Added = {2017-03-14 15:08:54 +0000},
+	Date-Modified = {2017-03-14 15:08:54 +0000},
+	Number = {106},
+	Pages = {275},
+	Title = {Deep Sparse Rectifier Neural Networks.},
+	Volume = {15},
+	Year = {2011}}
+
+@incollection{NIPS2014_5423,
+	Author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Date-Added = {2017-03-13 18:58:01 +0000},
+	Date-Modified = {2017-03-13 18:58:01 +0000},
+	Editor = {Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence and K. Q. Weinberger},
+	Pages = {2672--2680},
+	Publisher = {Curran Associates, Inc.},
+	Title = {Generative Adversarial Nets},
+	Url = {http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}}
+
+@misc{Mikolov2014,
+	Author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+	Date-Added = {2015-12-03 20:41:35 +0000},
+	Date-Modified = {2015-12-03 20:49:04 +0000},
+	Title = {word2vec},
+	Year = {2014}}
+
+@url{LLN,
+	Author = {The Wikipedia},
+	Date-Added = {2015-10-27 19:51:26 +0000},
+	Date-Modified = {2015-10-27 19:53:07 +0000},
+	Keywords = {Law of Large Numbers},
+	Title = {Law of Large Numbers},
+	Url = {https://en.wikipedia.org/wiki/Law_of_large_numbers},
+	Bdsk-Url-1 = {https://en.wikipedia.org/wiki/Law_of_large_numbers}}
+
+@url{COSINE_SIMILARITY,
+	Author = {The Wikipedia},
+	Date-Added = {2015-10-27 17:02:56 +0000},
+	Date-Modified = {2015-10-27 19:30:40 +0000},
+	Keywords = {cosine similarity},
+	Title = {Cosine similarity},
+	Url = {https://en.wikipedia.org/wiki/Cosine_similarity},
+	Urldate = {10/27/2015},
+	Bdsk-Url-1 = {https://en.wikipedia.org/wiki/Cosine_similarity}}
+
+@article{GRAVES2013,
+	Abstract = {This paper shows how Long Short-term Memory recurrent neural networks can be used to generate complex sequences with long-range structure, simply by predicting one data point at a time. The approach is demonstrated for text (where the data are discrete) and online handwriting (where the data are real-valued). It is then extended to handwriting synthesis by allowing the network to condition its predictions on a text sequence. The resulting system is able to generate highly realistic cursive handwriting in a wide variety of styles.},
+	Author = {Alex Graves},
+	Date-Added = {2015-10-21 20:24:48 +0000},
+	Date-Modified = {2015-10-22 20:11:42 +0000},
+	Eprint = {1308.0850},
+	Month = {08},
+	Title = {Generating Sequences With Recurrent Neural Networks},
+	Url = {http://arxiv.org/abs/1308.0850},
+	Year = {2013},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1308.0850}}
+
+@incollection{SEQ2SEQ,
+	Author = {Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V. V},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Date-Added = {2015-10-21 19:44:16 +0000},
+	Date-Modified = {2015-10-21 19:46:53 +0000},
+	Editor = {Z. Ghahramani and M. Welling and C. Cortes and N.D. Lawrence and K.Q. Weinberger},
+	Pages = {3104--3112},
+	Publisher = {Curran Associates, Inc.},
+	Title = {Sequence to Sequence Learning with Neural Networks},
+	Url = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf},
+	Year = {2014},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf}}
+
+@url{RFC7223,
+	Author = {M. Bjorklund},
+	Date-Added = {2014-10-23 19:43:12 +0000},
+	Date-Modified = {2014-10-23 19:44:14 +0000},
+	Keywords = {https://datatracker.ietf.org/doc/rfc7223/?include_text=1},
+	Title = {{RFC 7223: A YANG Data Model for Interface Management}}}
+
+@article{LUI2007,
+	Author = {{Shao Liu, Mung Chiang, Mathias Jourdain, and Jin Li}},
+	Date-Added = {2014-10-23 19:18:01 +0000},
+	Date-Modified = {2014-10-23 19:19:49 +0000},
+	Journal = {17th IEEE International Workshop on Quality of Service},
+	Title = {Congestion Location Detection: Methodology, Algorithm, and Performance},
+	Year = {2007}}
+
+@url{RFC2863,
+	Author = {{K. McCloghrie and F. Kastenholz}},
+	Date-Added = {2014-10-23 19:01:38 +0000},
+	Date-Modified = {2014-10-23 19:05:36 +0000},
+	Keywords = {http://tools.ietf.org/html/rfc2863},
+	Title = {{RFC 2863: The Interfaces Group MIB}}}
+
+@techreport{CHIANG2011,
+	Author = {Mung Chiang},
+	Date-Added = {2014-10-23 18:41:19 +0000},
+	Date-Modified = {2014-10-23 18:42:53 +0000},
+	Institution = {Princeton University},
+	Title = {Nonconvex Optimization for Communication Systems},
+	Year = {2011}}
+
+@url{ANALYTICS,
+	Author = {https://angel.co/big-data-analytics},
+	Date-Added = {2014-10-23 17:47:21 +0000},
+	Date-Modified = {2014-10-23 17:48:17 +0000}}
+
+@article{HULL,
+	Author = {{M. Alizadeh, A. Kabbani, T. Edsall, B. Prabhakar, A. Vahdat, and M. Yasuda}},
+	Date-Added = {2014-10-23 17:17:55 +0000},
+	Date-Modified = {2014-10-23 17:18:50 +0000},
+	Journal = {Proceedings of the USENIX NSDI},
+	Title = {Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center},
+	Year = {2012}}
+
+@article{DCTCP,
+	Author = {{M. Alizadeh, A. Greenberg, D. A. Maltz, J. Padhye, P. Patel, B. Prabhakar, S. Sengupta, and M. Sridharan}},
+	Date-Added = {2014-10-23 17:15:04 +0000},
+	Date-Modified = {2014-10-23 17:15:57 +0000},
+	Journal = {Proceedings of the ACM SIGCOMM},
+	Title = {Data Center TCP (DCTCP)},
+	Year = {2010}}
+
+@article{WILSON2011,
+	Author = {{C. Wilson, H. Ballani, T. Karagiannis, and A. Rowtron. Better}},
+	Date-Added = {2014-10-23 17:08:17 +0000},
+	Date-Modified = {2014-10-23 17:10:18 +0000},
+	Journal = {Proceedings of the ACM SIGCOMM},
+	Title = {Never than Late: Meeting Deadlines in Datacenter Networks},
+	Year = {2011}}
+
+@article{WIDROW2002,
+	Author = {B Widrow},
+	Date-Added = {2014-10-22 22:05:04 +0000},
+	Date-Modified = {2014-10-22 22:09:41 +0000},
+	Journal = {Proceedings of the IEEE},
+	Title = {30 years of adaptive neural networks: perceptron, Madaline, and backpropagation},
+	Year = {2002}}
+
+@url{DLNET,
+	Author = {http://deeplearning.net},
+	Date-Added = {2014-10-22 21:31:39 +0000},
+	Date-Modified = {2014-10-22 21:36:08 +0000},
+	Keywords = {Deep Learning},
+	Url = {http://deeplearning.net},
+	Bdsk-Url-1 = {http://deeplearning.net}}
+
+@article{HINTON2006,
+	Author = {{Geoffrey E. Hinton, Simon Osindero, and Yee-Whye Teh}},
+	Date-Added = {2014-10-22 21:22:54 +0000},
+	Date-Modified = {2014-10-22 21:23:51 +0000},
+	Journal = {Neural Computation},
+	Title = {A fast learning algorithm for deep belief nets},
+	Year = {2006}}
+
+@techreport{CRUZ2011,
+	Author = {Fernando Perez-Cruz},
+	Date-Added = {2014-10-22 20:36:30 +0000},
+	Date-Modified = {2014-10-22 20:38:56 +0000},
+	Institution = {Princeton University},
+	Title = {Kullback-Leibler Divergence Estimation of Continuous Distributions},
+	Year = {2011}}
+
+@article{DIETTERICH95,
+	Author = {Tom Dietterich},
+	Date-Added = {2014-10-22 19:41:08 +0000},
+	Date-Modified = {2014-10-22 19:43:59 +0000},
+	Institution = {Oregon State University},
+	Journal = {ACM Comuting Surveys},
+	Title = {Overfitting and Undercomputing in Machine Learning Overfitting and Undercomputing in Machine Learning},
+	Year = {1995}}
+
+@techreport{VINCENT2008,
+	Author = {{Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol }},
+	Date-Added = {2014-10-22 17:36:49 +0000},
+	Date-Modified = {2014-10-22 17:42:30 +0000},
+	Institution = {Universit´e de Montr´eal},
+	Number = {1316},
+	Title = {Extracting and Composing Robust Features with Denoising Autoencoders},
+	Year = {2008}}
+
+@article{BENGIO2013,
+	Author = {{Yoshua Bengio, Aaron Courville and Pascal Vincent}},
+	Date-Added = {2014-10-21 19:16:25 +0000},
+	Date-Modified = {2014-10-21 19:32:24 +0000},
+	Journal = {IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE},
+	Title = {Representation Learning: A Review and New Perspectives},
+	Year = {2013}}
+
+@article{PALM2012,
+	Author = {R. B. Palm},
+	Date-Added = {2014-10-21 19:00:43 +0000},
+	Date-Modified = {2014-10-21 19:08:10 +0000},
+	Journal = {Technical Univ. Denmark, Palm, Denmark},
+	Title = {Prediction as a candidate for learning deep hierarchical models of data,},
+	Year = {2012}}
+
+@article{BENGIO2007,
+	Author = {{Y. Bengio, P. Lamblin, D. Popovici and H. Larochelle}},
+	Date-Added = {2014-10-21 16:47:34 +0000},
+	Date-Modified = {2014-10-21 19:31:01 +0000},
+	Journal = {Proc. Adv. NIPS},
+	Pages = {153--160},
+	Title = {Greedy layerwise training of deep networks},
+	Year = {2007}}
+
+@article{LV2014,
+	Author = {{Yisheng Lv, Yanjie Duan, Wenwen Kang, Zhengxi Li, and Fei-Yue Wang}},
+	Date-Added = {2014-10-21 16:03:45 +0000},
+	Date-Modified = {2014-10-21 19:31:15 +0000},
+	Journal = {EEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS},
+	Title = {Traffic Flow Prediction With Big Data: A Deep Learning Approach},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIi4uL21sL2NwL3RyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGbSFwsYGVdOUy5kYXRhTxEBoAAAAAABoAACAAAIdGF0b29pbmUAAAAAAAAAAAAAAAAAAAAAAAAAz8IBB0grAAAAdGJ+GXRyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0YsLQaosuAAAAAAAAAAAAAQADAAAJIAAAAAAAAAAAAAAAAAAAAAJjcAAQAAgAAM/CY3cAAAARAAgAANBq7Z4AAAABABQAdGJ+AHRifQB0YngAB0ptAAOGmAACAD50YXRvb2luZTpVc2VyczoAZG1tOgBwYXBlcnM6AG1sOgBjcDoAdHJhZmZpY19mbG93X2JpZ19kYXRhLnBkZgAOADQAGQB0AHIAYQBmAGYAaQBjAF8AZgBsAG8AdwBfAGIAaQBnAF8AZABhAHQAYQAuAHAAZABmAA8AEgAIAHQAYQB0AG8AbwBpAG4AZQASADBVc2Vycy9kbW0vcGFwZXJzL21sL2NwL3RyYWZmaWNfZmxvd19iaWdfZGF0YS5wZGYAEwABLwAAFQACAAr//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgCzALgAwAJkAmYCawJ2An8CjQKRApgCoQKmArMCtgLIAssC0AAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALS}}

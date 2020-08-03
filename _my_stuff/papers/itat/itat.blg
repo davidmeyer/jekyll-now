@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: itat.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/ryf.bib
+Warning--entry type for "dmm2013" isn't style-file defined
+--line 12 of file /Users/dmm/papers/bib/ryf.bib
+Warning--entry type for "named-data" isn't style-file defined
+--line 21 of file /Users/dmm/papers/bib/ryf.bib
+Warning--entry type for "Taleb2007" isn't style-file defined
+--line 161 of file /Users/dmm/papers/bib/ryf.bib
+Warning--can't use both volume and number fields in DoyleCsete2011
+Warning--can't use both volume and number fields in KirschnerGerhart1998
+Warning--can't use both volume and number fields in Vidya20122
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            610 strings with 6430 characters,
+and the built_in function-call counts, 5298 in all, are:
+= -- 511
+> -- 208
+< -- 8
++ -- 86
+- -- 65
+* -- 318
+:= -- 848
+add.period$ -- 49
+call.type$ -- 17
+change.case$ -- 83
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 224
+empty$ -- 457
+format.name$ -- 65
+if$ -- 1143
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 13
+newline$ -- 85
+num.names$ -- 36
+pop$ -- 101
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 196
+stack$ -- 0
+substring$ -- 284
+swap$ -- 69
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 3
+while$ -- 49
+width$ -- 19
+write$ -- 181
+(There were 6 warnings)

@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: references.aux
+The style file: ieeetr.bst
+Database file #1: /Users/dmm/papers/bib/huawei.bib
+Repeated entry---line 195 of file /Users/dmm/papers/bib/huawei.bib
+ : @article{2017arXiv170803074V
+ :                             ,
+I'm skipping whatever remains of this entry
+Database file #2: /Users/dmm/papers/bib/ml.bib
+Warning--empty journal in Stampa:2017aa
+Warning--empty journal in Lillicrap:2015aa
+Warning--empty journal in Schulman:2015ab
+Warning--empty journal in Schulman:2015aa
+Warning--empty journal in Goodfellow:2017aa
+Warning--empty journal in Vaswani:2017aa
+Warning--empty journal in Bahdanau:2014aa
+Warning--empty journal in GRAVES2013
+You've used 52 entries,
+            1876 wiz_defined-function locations,
+            786 strings with 14230 characters,
+and the built_in function-call counts, 13051 in all, are:
+= -- 1128
+> -- 769
+< -- 0
++ -- 273
+- -- 221
+* -- 1091
+:= -- 2021
+add.period$ -- 53
+call.type$ -- 52
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 60
+duplicate$ -- 619
+empty$ -- 1143
+format.name$ -- 221
+if$ -- 3000
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 53
+newline$ -- 160
+num.names$ -- 58
+pop$ -- 170
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 363
+stack$ -- 0
+substring$ -- 655
+swap$ -- 202
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 8
+while$ -- 114
+width$ -- 54
+write$ -- 458
+(There was 1 error message)

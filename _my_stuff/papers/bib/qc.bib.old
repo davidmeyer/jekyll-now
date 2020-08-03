@@ -1,0 +1,23 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for David Meyer at 2016-10-30 11:39:43 -0700 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@misc{Henault:2015aa,
+	Abstract = {Optical lossless beam splitters are frequently encountered in fundamental physics experiments regarding the nature of light, including "which-way" determination of light particles, N. Bohr's complementarity principle, or the EPR paradox and all their measurement apparatus. Although they look as common optical components at first glance, their behaviour remains somewhat mysterious since they apparently exhibit stand-alone particle-like features, and then wave-like characteristics when inserted into a Mach-Zehnder interferometer. In this communication are examined and discussed some basic properties of these beamssplitters, both from a classical optics and quantum physics point of view. Herein some convergences and contradictions are highlighted, and the results of a few emblematic experiments demonstrating photon existence are discussed. An alternative empirical model in wave optics is also proposed in order to shed light on some remaining questions},
+	Author = {Francois Henault},
+	Date-Added = {2016-10-30 18:32:24 +0000},
+	Date-Modified = {2016-10-30 18:39:04 +0000},
+	Eprint = {1509.00393},
+	Howpublished = {https://arxiv.org/abs/1509.00393},
+	Month = {September},
+	Title = {Quantum physics and the beam splitter mystery},
+	Url = {https://arxiv.org/abs/1509.00393},
+	Year = {2015},
+	Bdsk-Url-1 = {https://arxiv.org/abs/1509.00393}}
