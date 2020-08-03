@@ -1,5 +1,10 @@
 
-<li><a href="./images/twiv648.jpg">My guess at the table Daniel Griffin was talking about on <a href="https://www.microbe.tv/twiv/twiv-648/">TWiV 648</a>.
+<li>My guess at the
+<a href="./images/twiv648.jpg">table</a>
+that
+<a href="https://parasiteswithoutborders.com/daniel-griffin-md-phd/">
+Daniel Griffin</a> was talking about on
+<a href="https://www.microbe.tv/twiv/twiv-648/">TWiV 648</a>.     
 
 <br>
 <br>
