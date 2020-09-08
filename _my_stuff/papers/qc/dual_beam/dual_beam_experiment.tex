@@ -196,12 +196,14 @@ q_1
 \end{flalign*}
 
 \subsection{Aside: The Dirac Notation}
-The Dirac Notation, also known as bra-ket notation, was invented by Paul Dirac for use in quantum mechanics \cite{2000RPPh...63.1893G}. The problem Dirac faced was that,  while 
-column vector notation is ubiquitous in linear algebra, 
-it is often cumbersome in quantum computing. This is especially true when dealing with multiple qubits. For example, when we define $\psi$  to be a vector it is not clear whether $\psi$  is a row or a 
-column vector. Similarly,  if $\phi$ and $\psi$ are vectors then it is equally unclear if $\phi \psi$ is even defined because the shapes of $\phi$ and $\psi$ may be unclear in the context\footnote{Recall
-that matrix multiplication is only defined when the number of columns of the first matrix (vector) is equal to the number of rows in the second matrix.}. Beyond the 
-ambiguity about the shapes of vectors, expressing even simple vectors using the linear algebraic notation introduced earlier can be very less elegant. For example, if we wish to describe an 
+The Dirac Notation, also known as bra-ket notation, was invented by Paul Dirac for use in quantum mechanics \cite{2000RPPh...63.1893G}. 
+The problem Dirac faced was that, while  column vector notation is ubiquitous in linear algebra,  the standard notation was often cumbersome
+ in quantum mechanical derivations. This is especially true when dealing with both inner and outer products (e.g., with multiple qubits).  For
+  example, when we define $\psi$  to be a vector it is not clear whether $\psi$  is a row or a column vector. Similarly,  if $\phi$ and $\psi$ 
+  are vectors then it is equally unclear if $\phi \psi$ is even 
+ defined because the shapes of $\phi$ and $\psi$ may be unclear in the context\footnote{Recall that matrix multiplication is only defined when the 
+ number of columns of the first matrix (vector) is equal to the number of rows in the second matrix.}. Beyond the  ambiguity about the shapes of 
+ vectors, expressing even simple vectors using the linear algebraic notation introduced earlier can be very less elegant. For example, if we wish to describe an 
 n-qubit state where each qubit takes the value 0 then we would express the state as
 
 \begin{flalign*}

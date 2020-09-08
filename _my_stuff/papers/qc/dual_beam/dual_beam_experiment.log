@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 DEC 2018 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 SEP 2020 06:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1169,42 +1169,39 @@ Package pdftex.def Info: images/circuit.png used on input line 58.
 s/circuit.png>] [2]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 163.
- [3]
-Overfull \vbox (0.78674pt too high) has occurred while \output is active []
-
-
-[4] <images/complex_congugate.png, id=115, 301.125pt x 423.5825pt>
+ [3] [4]
+<images/complex_congugate.png, id=114, 301.125pt x 423.5825pt>
 File: images/complex_congugate.png Graphic file (type png)
 
 <use images/complex_congugate.png>
-Package pdftex.def Info: images/complex_congugate.png used on input line 270.
+Package pdftex.def Info: images/complex_congugate.png used on input line 272.
 (pdftex.def)             Requested size: 135.50499pt x 190.61037pt.
  [5 <./images/complex_congugate.png>]
 [6] [7] <images/math_physics.png, id=136, 963.6pt x 542.025pt>
 File: images/math_physics.png Graphic file (type png)
 
 <use images/math_physics.png>
-Package pdftex.def Info: images/math_physics.png used on input line 547.
+Package pdftex.def Info: images/math_physics.png used on input line 549.
 (pdftex.def)             Requested size: 337.26506pt x 189.71158pt.
  [8] [9 <./images/math_physics.png>] [10] [11]
 [12] [13] <images/90-45.png, id=185, 963.6pt x 542.025pt>
 File: images/90-45.png Graphic file (type png)
 
 <use images/90-45.png>
-Package pdftex.def Info: images/90-45.png used on input line 750.
+Package pdftex.def Info: images/90-45.png used on input line 752.
 (pdftex.def)             Requested size: 337.26506pt x 189.71158pt.
  [14 <./images/90-45.png>]
 <images/theta.png, id=192, 309.155pt x 218.8175pt>
 File: images/theta.png Graphic file (type png)
  <use images/theta.png>
-Package pdftex.def Info: images/theta.png used on input line 829.
+Package pdftex.def Info: images/theta.png used on input line 831.
 (pdftex.def)             Requested size: 200.94836pt x 142.22968pt.
 
 [15 <./images/theta.png>] [16]
 <images/cnot.png, id=207, 228.855pt x 183.68625pt>
 File: images/cnot.png Graphic file (type png)
  <use images/cnot.png>
-Package pdftex.def Info: images/cnot.png used on input line 954.
+Package pdftex.def Info: images/cnot.png used on input line 956.
 (pdftex.def)             Requested size: 183.08423pt x 146.94917pt.
 
 [17 <./images/cnot.png>]
@@ -1213,7 +1210,7 @@ File: images/one_beam_splitter_setup.png Graphic file (type png)
 
 <use images/one_beam_splitter_setup.png>
 Package pdftex.def Info: images/one_beam_splitter_setup.png used on input line 
-1030.
+1032.
 (pdftex.def)             Requested size: 338.06345pt x 174.25122pt.
  [18]
 <images/measurement_statistics_with_one_beam_splitter.png, id=231, 478.78876pt 
@@ -1222,7 +1219,7 @@ File: images/measurement_statistics_with_one_beam_splitter.png Graphic file (ty
 pe png)
  <use images/measurement_statistics_with_one_beam_splitter.png>
 Package pdftex.def Info: images/measurement_statistics_with_one_beam_splitter.p
-ng used on input line 1057.
+ng used on input line 1059.
 (pdftex.def)             Requested size: 383.03152pt x 161.40321pt.
 
 [19 <./images/one_beam_splitter_setup.png>] [20 <./images/measurement_statistic
@@ -1231,10 +1228,10 @@ s_with_one_beam_splitter.png>]
 File: images/2_beam_splitters.png Graphic file (type png)
 
 <use images/2_beam_splitters.png>
-Package pdftex.def Info: images/2_beam_splitters.png used on input line 1118.
+Package pdftex.def Info: images/2_beam_splitters.png used on input line 1120.
 (pdftex.def)             Requested size: 462.52863pt x 216.00728pt.
 
-Overfull \hbox (32.524pt too wide) in paragraph at lines 1118--1119
+Overfull \hbox (32.524pt too wide) in paragraph at lines 1120--1121
  [] 
  []
 
@@ -1243,7 +1240,7 @@ Overfull \hbox (32.524pt too wide) in paragraph at lines 1118--1119
 File: images/measurement_with_two_beam_splitters.png Graphic file (type png)
 <use images/measurement_with_two_beam_splitters.png>
 Package pdftex.def Info: images/measurement_with_two_beam_splitters.png used on
- input line 1263.
+ input line 1265.
 (pdftex.def)             Requested size: 420.77255pt x 215.20428pt.
  [23] [24 <./images/measurement_with_two_beam_splitters.png>] [25] (./dual_beam
 _experiment.bbl
@@ -1253,16 +1250,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1336.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1338.
  [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1338.
  (./dual_beam_experiment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1336.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1336.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1338.
 
 Package rerunfilecheck Info: File `dual_beam_experiment.out' has not changed.
 (rerunfilecheck)             Checksum: C837B63D0375278168B9B87203F88753;1154.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1336.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1338.
  ) 
 Here is how much of TeX's memory you used:
  18360 strings out of 493089
@@ -1295,7 +1292,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dual_beam_experiment.pdf (26 pages, 513519 bytes).
+Output written on dual_beam_experiment.pdf (26 pages, 513546 bytes).
 PDF statistics:
  385 PDF objects out of 1000 (max. 8388607)
  311 compressed objects within 4 object streams
