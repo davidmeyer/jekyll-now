@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 SEP 2020 08:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 SEP 2020 08:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,7 +1242,7 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on division.pdf (8 pages, 185371 bytes).
+Output written on division.pdf (8 pages, 185347 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
