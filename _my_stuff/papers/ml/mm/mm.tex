@@ -29,9 +29,9 @@
 
 \title{Random Musings on a Sunday Morning\\
 \normalsize{(extraordinarily basic stuff that's worth reflecting upon now and then)}}
-\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,brocade.com,...\}}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
 
-% \date{}							% Activate to display a given date or no date
+ \date{13 Oct 2015}							% Activate to display a given date or no date
 
 
 \begin{document}
@@ -42,6 +42,7 @@
 
 One of the interesting things about machine learning is that it affords many different ways to look at the same data and hence underlying phenomena (aside: why exactly should this be?). For example, the Logistic Function is really a special case of a Conditional Random Field and PCA is a special case of a Linear AutoEncoder (with no regularization). This document looks at a different correspondence. Here well look at why  minimizing error (a sum), maximizing probability (a product), and minimizing energy (in an energy based model, for example,  a Restricted Boltzmann Machine) are all really the same thing. Note that this document is likely to have many errors.
 
+%\newpage
 
 \section{Minimizing Cost is a Sum}
 \subsection{Linear Regression Cost Function}
@@ -50,14 +51,9 @@ For linear regression, our  \textit{hypothesis}  $h_{\theta}(\boldsymbol{x}) = g
 \bigskip
 
 \begin{flalign*}
-\boldsymbol{x}             & = \begin{bmatrix}  x_{1}         \\  x_{2}         \\ \vdots \\  x_{n}          \end{bmatrix} 
-\end{flalign*}
-\bigskip
-
-
-\begin{flalign*}
+\boldsymbol{x}             & = \begin{bmatrix}  x_{1}         \\  x_{2}         \\ \vdots \\  x_{n}          \end{bmatrix} \\ \\
 \boldsymbol{\theta}      & = \begin{bmatrix}  \theta_{1}  \\  \theta_{2} \\  \vdots \\ \theta_{n}   \end{bmatrix}  \\ \\
-\boldsymbol{\theta}^T  & = \begin{bmatrix}  \theta_{1}, & \theta_{2}, & \hdots, &  \theta_{n}  \end{bmatrix}
+\boldsymbol{\theta}^T  & = \big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \big ]
 \end{flalign*}
 
 \bigskip
@@ -67,7 +63,7 @@ which implies
 \begin{equation}
 \label{eqn:dot_product}
 \boldsymbol{\theta}^T\boldsymbol{x} = 
-\left[\begin{array}{cccc} \theta_{1}, & \theta_{2}, & \cdots, & \theta_{n} \end{array} \right]  
+\big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \big ]
 \left[ \begin{array}{cccc} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right] =
 \sum\limits_{i = 1}^{n}\theta_{i}x_{i} = \theta_{1}x_1 + \theta_{2}x_2 +  \ldots + \theta_{n}x_n
 \end{equation}
