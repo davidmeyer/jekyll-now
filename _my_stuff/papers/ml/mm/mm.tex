@@ -53,17 +53,17 @@ For linear regression, our  \textit{hypothesis}  $h_{\theta}(\boldsymbol{x}) = g
 \begin{flalign*}
 \boldsymbol{x}             & = \begin{bmatrix}  x_{1}         \\  x_{2}         \\ \vdots \\  x_{n}          \end{bmatrix} \\ \\
 \boldsymbol{\theta}      & = \begin{bmatrix}  \theta_{1}  \\  \theta_{2} \\  \vdots \\ \theta_{n}   \end{bmatrix}  \\ \\
-\boldsymbol{\theta}^T  & = \big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \big ]
+\boldsymbol{\theta}^T  & = \Big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \Big ]
 \end{flalign*}
 
 \bigskip
 \noindent
-which implies
+which implies that
   
 \begin{equation}
 \label{eqn:dot_product}
 \boldsymbol{\theta}^T\boldsymbol{x} = 
-\big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \big ]
+\Big [\theta_{1}, \theta_{2}, \cdots, \theta_{n}  \Big ]
 \left[ \begin{array}{cccc} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right] =
 \sum\limits_{i = 1}^{n}\theta_{i}x_{i} = \theta_{1}x_1 + \theta_{2}x_2 +  \ldots + \theta_{n}x_n
 \end{equation}
