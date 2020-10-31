@@ -13,7 +13,7 @@
 Notes on Various Mathematical Topics
 </h2>
 
-<li><a href="./projective_geometry.pdf">A Few Notes on the Projective Geometries (WIP) </a>
+<li><a href="./sqrt2.pdf">Prove that the sqaure root of 2 is irrational</a>
 <br>
 <li><a href="./division.pdf">A Few Notes on the Division Algorithm (WIP) </a>
 <br>
