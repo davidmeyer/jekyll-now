@@ -15,15 +15,15 @@
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
-\usepackage{mathrsfs}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{authblk}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{fixltx2e}
-\usepackage{hyperref}
-\usepackage{alltt}
+% \usepackage{mathrsfs}
+% \usepackage{hyperref}
+% \usepackage{url}
+% \usepackage{authblk}
+% \usepackage{amsmath}
+% \usepackage{graphicx}
+% \usepackage{fixltx2e}
+% \usepackage{hyperref}
+% \usepackage{alltt}
 \usepackage{color}
 \usepackage{bigints}
 
@@ -140,10 +140,15 @@ Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometime
 \noindent
 Setting  $\pi_\theta(s,a) = p(\mathbf{x};\theta)$ we see that
 
-\begin{align*}
-\nabla_\theta \pi_\theta(s,a) &= \pi_\theta(s,a) \frac{\nabla_\theta \; \pi_\theta(s,a)}{\pi_\theta(s,a)} \\
-                                             &= \pi_\theta(s,a)  \nabla_\theta \log \pi_\theta(s,a)    \qquad \qquad \quad \; \; \; \mathbin{\#} \text{log derivative trick}                 
-\end{align*}
+
+\begin{equation*}
+\begin{array}{lllll}
+\nabla_\theta \pi_\theta(s,a) 
+&=&  \nabla_\theta \pi_\theta(s,a) \cdot \Big [\frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} \Big]   & \qquad \qquad\mathbin{\#} \text{ multiply by $1 = \frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} $}  \\
+&=& \Big [\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)} \Big ] \cdot \pi_\theta(s,a)   & \qquad \qquad\mathbin{\#} \text{ rearrange}                                                                       \\
+&=& \nabla_\theta \log \pi_\theta(s,a) \cdot \pi_\theta(s,a)                                               & \qquad \qquad\mathbin{\#} \text{ log derivative trick: } \frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)} = \nabla_\theta \log \pi_\theta(s,a) 
+\end{array}
+\end{equation*}
 
 \bigskip
 \noindent
