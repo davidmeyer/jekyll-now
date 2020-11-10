@@ -126,7 +126,7 @@ Then
  &=&          \dfrac{dz}{dy} \cdot \dfrac{dy}{d\theta} = \dfrac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)} & \qquad \qquad  \mathbin{\#} \text{ apply chain rule} \\
  \vspace{0.80mm}
  \dfrac{dz}{d \theta} 
-&=&  \nabla_\theta \log p(\mathbf{x};\theta)                                           & \qquad \qquad\mathbin{\#} \text{ set $w = p(\mathbf{x};\theta)$ and noting that } \nabla_{\theta} \log w = \frac{1}{w}\nabla_\theta w 
+&=&  \nabla_\theta \log p(\mathbf{x};\theta)                                           & \qquad \qquad\mathbin{\#} \text{ set $w = p(\mathbf{x};\theta)$ and note that } \frac{1}{w}\nabla_\theta w = \nabla_{\theta} \log w
 \end{array}
 \end{equation*}
 
