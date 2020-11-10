@@ -82,11 +82,11 @@ So now we're casting policy based reinforcement learning as an optimization prob
 where $\nabla_{\theta} J(\theta)$ is the \emph{policy gradient} and $\alpha$ is the \emph{learning rate} (sometimes step-size parameter). In particular
 
 \begin{flalign}
-\nabla_{\theta}J(\theta)           & = \begin{pmatrix}  \frac{ \partial J(\theta)}{\partial \theta_{1}}   \\  
+\nabla_{\theta}J(\theta)           & = \begin{bmatrix}  \frac{ \partial J(\theta)}{\partial \theta_{1}}   \\  
 \frac{ \partial J(\theta)}{\partial \theta_{2}}      \\ 
 \vdots \\ 
  \frac{ \partial J(\theta)}{\partial \theta_{n}}         
- \end{pmatrix} 
+ \end{bmatrix} 
 \end{flalign}
 
 
@@ -94,21 +94,34 @@ where $\nabla_{\theta} J(\theta)$ is the \emph{policy gradient} and $\alpha$ is 
 
 First, we assume that the policy $\pi_\theta$ is differentiable wherever it is non-zero (this is a softer requirement than requiring $\pi_\theta$ be differentiable \emph{everywhere}). In addition, we know the gradient: $\nabla_\theta J(\theta)$. In this case, let  $p(\mathbf{x};\theta)$ be the likelihood parametrized by $\theta$ and let $\log p(\mathbf{x}; \theta)$ be the \emph{log likelihood}. Then
 
-
-\begin{flalign*}
-y & = p(\mathbf{x}; \theta) \qquad \qquad \qquad \; \;  \; \; \; \mathbin{\#} \text{definition; see above} \\
-z &= \log y = \log p(\mathbf{x}; \theta)  \qquad  \; \; \mathbin{\#} \text{definition; z is the  log likelihood} \\
-\frac{dz}{d \theta} &= \frac{dz}{dy} \cdot \frac{dy}{d\theta}  \qquad \qquad \quad \; \; \; \; \; \; \; \mathbin{\#} \text{chain rule definition} \\
-\frac{dz}{dy} &=  \frac{1}{p(\mathbf{x};\theta)}  \quad \qquad \qquad \qquad  \:  \mathbin{\#} \frac{\log (X)}{dX} \approx \frac{1}{X} \\
- \frac{dy}{d\theta} &= \frac{d}{d\theta} \; p(\mathbf{x};\theta) = \nabla_\theta p(\mathbf{x};\theta) \;   \mathbin{\#} \text{definition (chain rule, again)}\\
-\frac{dz}{d \theta} & = \frac{dz}{dy} \cdot \frac{dy}{d\theta} = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)} 
-\quad   \mathbin{\#} \text{chain rule}\\
-&= \nabla_\theta \log p(\mathbf{x};\theta) \qquad \qquad \; \; \mathbin{\#} \text{using the identity }\nabla_{\theta} \log (w) = \frac{1}{w} \nabla_\theta w 
-\end{flalign*}
+\begin{equation*}
+\begin{array}{lllll}
+y 
+&=&  p(\mathbf{x}; \theta)                                                                                        & \qquad \qquad \mathrel{\#} \text{define $y$; see above} \\  
+\vspace{0.80mm}
+z 
+&=&                  \log y = \log p(\mathbf{x}; \theta)                                                    & \qquad \qquad \mathrel{\#}  \text{definition; z is the  log likelihood}\\  
+\vspace{0.80mm}
+\dfrac{dz}{d \theta} 
+&=&                   \dfrac{dz}{dy} \cdot \dfrac{dy}{d\theta}                                               & \qquad \qquad \mathrel{\#}  \text{chain rule} \\
+\vspace{0.80mm}
+\dfrac{dz}{dy} 
+&=&                     \dfrac{1}{p(\mathbf{x};\theta)}                                                        & \qquad \qquad \mathbin{\#} \dfrac{d}{dx} \log x \approx \frac{1}{x} \\
+\vspace{0.80mm}
+ \dfrac{dy}{d\theta} 
+ &=& \dfrac{d}{d\theta}  \:p(\mathbf{x};\theta) = \nabla_\theta p(\mathbf{x};\theta)   & \qquad \qquad  \mathbin{\#} \text{ definition (chain rule, again)}\\
+ \vspace{0.80mm}
+ \dfrac{dz}{d \theta} 
+ &=&          \dfrac{dz}{dy} \cdot \dfrac{dy}{d\theta} = \dfrac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)} & \qquad \qquad  \mathbin{\#} \text{ apply chain rule} \\
+ \vspace{0.80mm}
+ \dfrac{dz}{d \theta} 
+&=&  \nabla_\theta \log p(\mathbf{x};\theta)                                           & \qquad \qquad\mathbin{\#} \text{ set $w = p(\mathbf{x};\theta)$ and noting that } \nabla_{\theta} \log w = \frac{1}{w}\nabla_\theta w 
+\end{array}
+\end{equation*}
 
 \bigskip
 \noindent
-and setting $w = p(\mathbf{x};\theta)$. Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometimes the \emph{Fischer} information. So the \emph{log derivative trick} (sometimes \emph{likelihood ratio}) is 
+Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometimes the \emph{Fischer} information. So the \emph{log derivative trick} (sometimes \emph{likelihood ratio}) is 
 \begin{align*}
 \nabla_\theta \log p(\mathbf{x};\theta)   = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)}
 \end{align*}
@@ -144,13 +157,13 @@ The problem we want to solve is how we should shift the distribution (though its
 \noindent
 our goal is to find $\nabla_{\theta}E_{x \sim p(x|\theta)}\big[f(x)\big]$ and update $\theta$ in the direction indicated by the gradient. However, what we know is $f$ and $p$. 
 
-\begin{flalign}
+\begin{flalign*}
 \nabla_{\theta}E_{x \sim p(x|\theta)} \big [f(x)\big] &= \nabla_{\theta} \sum \limits_{x}p(x) f(x) \qquad \qquad    \qquad  \mathbin{\#} \text{defn expectation} \\
 & = \sum \limits_{x} \nabla_{\theta} p(x) f(x) \; \qquad \qquad  \qquad  \mathbin{\#} \text{swap sum and gradient}  \\
 &= \sum \limits_{x}  p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) \; \qquad \qquad  \mathbin{\#} \text{multiply/divide by } p(x) \\
 &=  \sum \limits_{x}  p(x) \nabla_{\theta} \log p(x) f(x) \qquad \quad  \mathbin{\#}  \frac{1}{z} \nabla_{\theta} z = \nabla_{\theta} \log (z)  \\
 &= E_{x \sim p(x|\theta)} \big [ f(x) \nabla_{\theta} \log p(x) \big ] \quad \quad \mathbin{\#} \text{defn expectation again} 
-\end{flalign}
+\end{flalign*}
 
 \bigskip
 \noindent
