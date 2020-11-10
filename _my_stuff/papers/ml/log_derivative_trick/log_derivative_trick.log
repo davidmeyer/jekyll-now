@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 NOV 2020 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 NOV 2020 13:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -298,7 +298,7 @@ Overfull \hbox (24.15825pt too wide) detected at line 131
  []
 
 [2]
-Overfull \hbox (53.6047pt too wide) detected at line 152
+Overfull \hbox (53.6047pt too wide) detected at line 153
 []
  []
 
@@ -331,7 +331,7 @@ m/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on log_derivative_trick.pdf (5 pages, 205791 bytes).
+Output written on log_derivative_trick.pdf (5 pages, 205877 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

@@ -90,7 +90,7 @@ where $\nabla_{\theta} J(\theta)$ is the \emph{policy gradient} and $\alpha$ is 
  \end{bmatrix} 
 \end{flalign}
 
-% \newpage
+ % \newpage
 
 \section{Computing the gradient analytically}
 
@@ -133,6 +133,7 @@ Then
 \bigskip
 \noindent
 Here $\nabla_\theta \log p(\mathbf{x};\theta)$ is known as the score or sometimes the \emph{Fischer} information. So the \emph{log derivative trick} (sometimes \emph{likelihood ratio}) is 
+
 \begin{align*}
 \nabla_\theta \log p(\mathbf{x};\theta)   = \frac{\nabla_\theta \; p(\mathbf{x};\theta)}{p(\mathbf{x};\theta)}
 \end{align*}
@@ -153,7 +154,7 @@ Setting  $\pi_\theta(s,a) = p(\mathbf{x};\theta)$ we see that
 
 \bigskip
 \noindent
-and the score function is $\nabla_\theta \log \pi_\theta(s,a)$.
+and that the score function is $\nabla_\theta \log \pi_\theta(s,a)$.
  
 
 \bigskip
