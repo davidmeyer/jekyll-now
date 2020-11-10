@@ -89,18 +89,28 @@ where $\nabla_{\theta} J(\theta)$ is the \emph{policy gradient} and $\alpha$ is 
  \end{bmatrix} 
 \end{flalign}
 
+% \newpage
 
 \section{Computing the gradient analytically}
 
-First, we assume that the policy $\pi_\theta$ is differentiable wherever it is non-zero (this is a softer requirement than requiring $\pi_\theta$ be differentiable \emph{everywhere}). In addition, we know the gradient: $\nabla_\theta J(\theta)$. In this case, let  $p(\mathbf{x};\theta)$ be the likelihood parametrized by $\theta$ and let $\log p(\mathbf{x}; \theta)$ be the \emph{log likelihood}. Then
+First, we assume that the policy $\pi_\theta$ is differentiable wherever it is non-zero (this is a softer requirement than requiring $\pi_\theta$ be differentiable \emph{everywhere}). In addition, we know the gradient: $\nabla_\theta J(\theta)$. In this case, let  $p(\mathbf{x};\theta)$ be the likelihood parametrized by $\theta$ and let $\log p(\mathbf{x}; \theta)$ be the \emph{log likelihood}. Then define
 
 \begin{equation*}
 \begin{array}{lllll}
 y 
-&=&  p(\mathbf{x}; \theta)                                                                                        & \qquad \qquad \mathrel{\#} \text{define $y$; see above} \\  
+&=&  p(\mathbf{x}; \theta)                                                                                        & \qquad \qquad \mathrel{\#} \text{define $y$ to be the likelihood parametrized by $\theta$} \\  
 \vspace{0.80mm}
 z 
-&=&                  \log y = \log p(\mathbf{x}; \theta)                                                    & \qquad \qquad \mathrel{\#}  \text{definition; z is the  log likelihood}\\  
+&=&                  \log y = \log p(\mathbf{x}; \theta)                                                    & \qquad \qquad \mathrel{\#}  \text{$z$ is the  log likelihood}\\  
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+Then 
+
+\begin{equation*}
+\begin{array}{lllll}
 \vspace{0.80mm}
 \dfrac{dz}{d \theta} 
 &=&                   \dfrac{dz}{dy} \cdot \dfrac{dy}{d\theta}                                               & \qquad \qquad \mathrel{\#}  \text{chain rule} \\
