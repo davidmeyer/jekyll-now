@@ -144,8 +144,8 @@ Setting  $\pi_\theta(s,a) = p(\mathbf{x};\theta)$ we see that
 \begin{equation*}
 \begin{array}{lllll}
 \nabla_\theta \pi_\theta(s,a) 
-&=&  \nabla_\theta \pi_\theta(s,a) \cdot \Big [\frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} \Big]   & \qquad \qquad\mathbin{\#} \text{ multiply by $1 = \frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} $}  \\
-&=& \Big [\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)} \Big ] \cdot \pi_\theta(s,a)   & \qquad \qquad\mathbin{\#} \text{ rearrange}                                                                       \\
+&=&  \nabla_\theta \pi_\theta(s,a) \cdot \Big [\frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} \Big]   & \qquad \qquad\mathbin{\#} \text{ multiply by $1 = \frac{\pi_\theta(s,a)}{\pi_\theta(s,a)} $}   \\
+&=& \Big [\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)} \Big ] \cdot \pi_\theta(s,a)   & \qquad \qquad\mathbin{\#} \text{ multiplication is associative}                                            \\
 &=& \nabla_\theta \log \pi_\theta(s,a) \cdot \pi_\theta(s,a)                                               & \qquad \qquad\mathbin{\#} \text{ log derivative trick: } \frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)} = \nabla_\theta \log \pi_\theta(s,a) 
 \end{array}
 \end{equation*}
