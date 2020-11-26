@@ -13,7 +13,7 @@
 Notes on Various Mathematical Topics
 </h2>
 
-<li><a href="./one_over_three_to_the_k.pdf">A bit on infinite series</a>
+<li><a href="./infinite_sum_a_over_b.pdf">A bit on infinite series</a>
 <br>
 <li><a href="./sqrt2.pdf">Proof that the sqaure root of 2 is irrational</a>
 <br>
