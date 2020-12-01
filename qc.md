@@ -13,6 +13,8 @@
 Notes on Various Mathematical Topics
 </h2>
 
+<li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
+<br>
 <li><a href="./infinite_sum_a_over_b.pdf">A bit on infinite series</a>
 <br>
 <li><a href="./sqrt2.pdf">Proof that the sqaure root of 2 is irrational</a>
