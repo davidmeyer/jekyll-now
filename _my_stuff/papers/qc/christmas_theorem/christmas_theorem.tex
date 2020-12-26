@@ -64,27 +64,24 @@
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
 
-\title{Merry X-mas!}
+\title{Fermat's Christmas Theorem}
 \author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
 
-\date{Last update: December 25, 2019}
+\date{Last update: December 26, 2020}
 
 
 \begin{document}
 \maketitle
 
+\noindent
+Fermat's Christmas Theorem (aka Fermat's Theorem on sums of two squares) states that any odd prime number $p$ can be expressed as
 
-\begin{equation*}
-\begin{array}{rcll} 
-y
-&=& \frac{\ln \big (\frac{x}{m} -  sa  \big ) }{r^2}                                              &\qquad \qquad \mathrel{\#} \text{define $y$}                                                                   \\
-&\Rightarrow& r^2 y                                = \ln \big (\frac{x}{m} -  sa  \big )    &\qquad \qquad  \mathrel{\#} \text{multiply both sides by $r^2$}                                       \\
-&\Rightarrow& e^{r^2y}                           = \frac{x}{m} -  sa                           &\qquad \qquad \mathrel{\#} \text{exponentiate both sides, noting that $e^{\ln(x)} = x$}  \\
-&\Rightarrow& m e^{r^2y}                       = x - msa                                        &\qquad \qquad \mathrel{\#} \text{multiply both sides on the left by $m$}                         \\
-&\Rightarrow& m e^{r^2y}                       = x - mas                                        &\qquad \qquad \mathrel{\#} \text{$sa = as$ (assume multiplication is commutative)}      \\
-&\Rightarrow& \bf{\color{red}{m e^{rry}   = x - mas}}                                     &\qquad \qquad \mathrel{\#} \text{$r^2 = rr \rightarrow$ \bf{Merry X-mas!}}
-\end{array}
-\end{equation*}
+\begin{center}
+\scalebox{1.5} {$p = r^{2} + s^{2}$}
+\end{center}
+
+\noindent
+where $r,s \in \mathbb{N}$, if and only if $p$ is congruent to  $1$ modulo $4$.
 
 
 \end{document} 

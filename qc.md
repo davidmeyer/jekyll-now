@@ -13,6 +13,8 @@
 Notes on Various Mathematical Topics
 </h2>
 
+<li><a href="./christmas_theorem.pdf">Fermat's Christmas Theorem</a>
+<br>
 <li><a href="./merry_x-mas.pdf">Merry Christmas!</a>
 <br>
 <li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
