@@ -50,7 +50,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 2020.12.18 by dmm@1-4-5.net
+<i>Last Update: 2020.12.26 by dmm@1-4-5.net
 
 
 
