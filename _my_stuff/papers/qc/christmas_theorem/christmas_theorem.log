@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 DEC 2020 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 DEC 2020 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1201,23 +1201,23 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
 (./christmas_theorem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `christmas_theorem.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
  18657 strings out of 493089
  350696 string characters out of 6134842
- 397501 words of memory out of 5000000
+ 398501 words of memory out of 5000000
  21900 multiletter control sequences out of 15000+600000
  12322 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1229,7 +1229,7 @@ sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on christmas_theorem.pdf (1 page, 65018 bytes).
+Output written on christmas_theorem.pdf (1 page, 66670 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
