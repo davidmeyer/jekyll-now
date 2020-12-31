@@ -13,6 +13,8 @@
 Notes on Various Mathematical Topics
 </h2>
 
+<li><a href="./2021.pdf">Happy New Year 2021!</a>
+<br>
 <li><a href="./christmas_theorem.pdf">Fermat's Christmas Theorem</a>
 <br>
 <li><a href="./merry_x-mas.pdf">Merry Christmas!</a>
@@ -50,7 +52,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 2020.12.26 by dmm@1-4-5.net
+<i>Last Update: 2020.12.31 by dmm@1-4-5.net
 
 
 
