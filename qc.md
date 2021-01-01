@@ -8,17 +8,8 @@
 #	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.17 2019/10/04 18:11:15 dmm Exp $
 #
 -->
+<h2>Random notes on various mathematical topics</h>
 
-<h2>
-Notes on Various Mathematical Topics
-</h2>
-
-<li><a href="./2021.pdf">Happy New Year 2021!</a>
-<br>
-<li><a href="./christmas_theorem.pdf">Fermat's Christmas Theorem</a>
-<br>
-<li><a href="./merry_x-mas.pdf">Merry Christmas!</a>
-<br>
 <li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
 <br>
 <li><a href="./infinite_sum_a_over_b.pdf">A bit on infinite series</a>
@@ -47,12 +38,20 @@ Quantum Teleportation
 <li><a href="./dual_beam_experiment.pdf">Notes on the Dual Beam Splitter Experiment </a>
 
 
+<h2>Just for fun</h2>
+<li><a href="./2021.pdf">Happy New Year 2021!</a>
+<br>
+<li><a href="./christmas_theorem.pdf">Fermat's Christmas Theorem</a>
+<br>
+<li><a href="./merry_x-mas.pdf">Merry Christmas!</a>
+
+
 
 <br>
 <br>
 <br>
 <hr>
-<i>Last Update: 2020.12.31 by dmm@1-4-5.net
+<i>Last Update: 2021.01.01 by dmm@1-4-5.net
 
 
 
