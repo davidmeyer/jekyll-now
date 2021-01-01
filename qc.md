@@ -8,7 +8,7 @@
 #	$Header: /mnt/disk0/dmm/public_html/qc/RCS/index.html,v 1.17 2019/10/04 18:11:15 dmm Exp $
 #
 -->
-<h2>Random notes on various mathematical topics</h>
+<h2>Notes on various mathematical topics</h2>
 
 <li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
 <br>
