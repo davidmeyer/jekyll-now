@@ -10,7 +10,7 @@
 -->
 <h2>Notes on various mathematical topics</h2>
 
-<li><a href="./i_to_the_i_is_real.pdf">Is $$i^i$$ a real number?</a>
+<li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
 <br>
 <li><a href="./infinite_sum_a_over_b.pdf">A bit on infinite series</a>
 <br>
