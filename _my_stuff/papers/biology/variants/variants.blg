@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: variants.aux
+The style file: plain.bst
+Database file #1: /Users/dmm/papers/bib/biology.bib
+Warning--to sort, need author or key in covid:nextstrain
+Warning--to sort, need author or key in covid:lineages
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            505 strings with 4215 characters,
+and the built_in function-call counts, 364 in all, are:
+= -- 36
+> -- 2
+< -- 0
++ -- 2
+- -- 0
+* -- 14
+:= -- 49
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 14
+empty$ -- 47
+format.name$ -- 0
+if$ -- 87
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 0
+newline$ -- 13
+num.names$ -- 0
+pop$ -- 16
+preamble$ -- 1
+purify$ -- 4
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 10
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 2
+while$ -- 0
+width$ -- 3
+write$ -- 22
+(There were 2 warnings)
