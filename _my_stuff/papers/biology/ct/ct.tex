@@ -1,0 +1,73 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+%
+% so you can do e.g., \begin{bmatrix}[r] (or [c] or [l])
+%
+
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\begin{document}
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{r|c|c|c} 
+      \textbf{RNA/ml} & \textbf{$\text{C}_t$} & \textbf{Transmissible} & \textbf{Which Test Can Detect This RNA Load} \\
+      \hline 
+      \hline 
+      $<$ 1,000     & 39 & no    & RT-PCR                                                            \\
+      $>$ 1,000     & 36 & no    & Hologic Panther, RT-PCR                                 \\
+      4,000            & 34 & no    & Abbott ID NOW, RT-PCR                                  \\
+      50,000          & 30 & no    & Rapid antigen tests, Abbott ID NOW, RT-PCR  \\
+      3,000,000     & 24 & yes  & All of the above
+    \end{tabular}
+  \end{center}
+ \caption{My guess at the table Daniel Griffin was talking about on TWiV 648}
+\end{table}
+
+
+
+\end{document} 
+
