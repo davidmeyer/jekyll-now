@@ -6,7 +6,7 @@ that
 Daniel Griffin</a> was talking about on
 <a href="https://www.microbe.tv/twiv/twiv-648/">TWiV 648</a>    
 <br>
-<a href="./variants.pdf">A Few SARS-CoV-2 mutations of interest</a>     
+<li> A few SARS-CoV-2 <a href="./variants.pdf">mutations</a> of interest     
 <br>
 <br>
 <br>
