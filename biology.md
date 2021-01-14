@@ -4,7 +4,7 @@
 that
 <a href="https://parasiteswithoutborders.com/daniel-griffin-md-phd/">
 Daniel Griffin</a> was talking about on
-<a href="https://www.microbe.tv/twiv/twiv-648/">TWiV 648</a>.     
+<a href="https://www.microbe.tv/twiv/twiv-648/">TWiV 648</a>    
 <br>
 <a href="./variants.pdf">A Few SARS-CoV-2 mutations of interest</a>     
 <br>
