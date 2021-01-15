@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{covid:voc}
+Investigation of novel sars-cov-2 variant (variant of concern 202012/01).
+\newblock
+  \url{https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/947048/Technical_Briefing_VOC_SH_NJL2_SH2.pdf},
+  2021.
+\newblock [Online; accessed 15-January-2021].
+
 \bibitem{covid:nextstrain}
 Nextstrain: Real-time tracking of pathogen evolution.
 \newblock \url{https://nextstrain.org}, 2021.
