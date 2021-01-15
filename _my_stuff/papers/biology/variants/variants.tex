@@ -35,6 +35,12 @@
 \usepackage{bigints}
 \usepackage{braket}
 \usepackage{siunitx}
+\usepackage{adjustbox}
+\usepackage{mathtools}
+\usepackage{array}
+ \usepackage{makecell}
+ \usepackage{stackengine}
+
 
 %
 % so you can do e.g., \begin{bmatrix}[r] (or [c] or [l])
@@ -62,15 +68,20 @@
 \begin{table} [H]
   \begin{center}
     \begin{tabular}{c|c|c c} 
-      \textbf{B.1.1.7  (20B/501Y.V1)} & \textbf{B.1.351 (20C/501Y.V2)} & \textbf{P.1 (20J/501Y.V3)} \\
+    \textbf{\thead{B.1.1.7   \\ 20B/501Y.V1}} &
+    \textbf{ \thead{B.1.351 \\ 20C/501Y.V2}} &
+    \textbf{\thead{P.1         \\ 20J/501Y.V3}}  \\
+    
+   % \Xhline{0.8pt}  
+     
       \hline 
       \hline 
-      - & S:K417N & S:K417T   \\
-      - & S:E484K & S:E484K   \\
+      - & S:K417N & S:K417T                \\
+      - & S:E484K & S:E484K                \\
       S:N501Y & S:N501Y & S:N501Y  \\
-      S:P681H & - & - &  \\
-      S:69-70del & - &- &  \\
-      Orf8:Q27* & - & - &  \\
+      S:P681H & - & - &                         \\
+      S:69-70del & - &- &                       \\
+      Orf8:Q27* & - & - & 
     \end{tabular}
   \end{center}
  \caption{Mutations (substitutions) of interest found in current SARS-CoV-2 variants  \cite{covid:nextstrain,covid:lineages}.}
