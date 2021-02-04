@@ -4,45 +4,45 @@ The top-level auxiliary file: fusion.aux
 The style file: plain.bst
 Database file #1: /Users/dmm/papers/bib/biology.bib
 Warning--to sort, need author or key in covid:spike
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            506 strings with 4347 characters,
-and the built_in function-call counts, 409 in all, are:
-= -- 40
-> -- 8
+            511 strings with 4584 characters,
+and the built_in function-call counts, 626 in all, are:
+= -- 62
+> -- 15
 < -- 0
-+ -- 4
-- -- 2
-* -- 14
-:= -- 66
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 7
++ -- 7
+- -- 4
+* -- 20
+:= -- 103
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 14
-empty$ -- 46
-format.name$ -- 2
-if$ -- 92
+cite$ -- 4
+duplicate$ -- 21
+empty$ -- 68
+format.name$ -- 4
+if$ -- 140
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 0
-newline$ -- 14
-num.names$ -- 2
-pop$ -- 16
+newline$ -- 20
+num.names$ -- 4
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 8
 quote$ -- 0
-skip$ -- 12
+skip$ -- 18
 stack$ -- 0
-substring$ -- 10
-swap$ -- 2
+substring$ -- 15
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 1
-while$ -- 2
-width$ -- 3
-write$ -- 24
+while$ -- 4
+width$ -- 4
+write$ -- 36
 (There was 1 warning)
