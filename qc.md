@@ -10,6 +10,8 @@
 -->
 <h2>Notes on various mathematical topics</h2>
 
+<li><a href="./rings.pdf">A bit on a structural correspondence between rings and groups</a>
+<br>
 <li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
 <br>
 <li><a href="./infinite_sum_a_over_b.pdf">A bit on infinite series</a>
@@ -51,7 +53,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 2021.01.13 by dmm@1-4-5.net
+<i>Last Update: 02.26.2021 by dmm@1-4-5.net
 
 
 
