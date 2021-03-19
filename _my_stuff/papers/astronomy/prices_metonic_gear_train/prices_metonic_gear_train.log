@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2021 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2021 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1225,7 +1225,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `prices_metonic_gear_train.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 92DC771BA49344133114844CB01B34E7;231.
+(rerunfilecheck)             Checksum: E7F86EDE970BE31A716B6D46C333E1FE;231.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
@@ -1247,7 +1247,7 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on prices_metonic_gear_train.pdf (6 pages, 1693997 bytes).
+Output written on prices_metonic_gear_train.pdf (6 pages, 1693984 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
