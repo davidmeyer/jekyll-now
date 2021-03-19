@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2021 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2021 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1221,7 +1221,7 @@ File: images/price_gear_train.png Graphic file (type png)
 
 <use images/price_gear_train.png>
 Package pdftex.def Info: images/price_gear_train.png used on input line 208.
-(pdftex.def)             Requested size: 321.19922pt x 200.74951pt.
+(pdftex.def)             Requested size: 256.95544pt x 160.59715pt.
  [5 <./images/price_gear_train.png>]
 (./prices_metonic_gear_train.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
@@ -1253,11 +1253,12 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on prices_metonic_gear_train.pdf (6 pages, 3600932 bytes).
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on prices_metonic_gear_train.pdf (6 pages, 3614945 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 140 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,16 +5,16 @@ The style file: plain.bst
 Database file #1: /Users/dmm/papers/bib/astronomy.bib
 You've used 5 entries,
             2118 wiz_defined-function locations,
-            532 strings with 5152 characters,
-and the built_in function-call counts, 1913 in all, are:
-= -- 165
+            533 strings with 5211 characters,
+and the built_in function-call counts, 1922 in all, are:
+= -- 168
 > -- 142
 < -- 0
-+ -- 58
++ -- 57
 - -- 52
 * -- 162
-:= -- 342
-add.period$ -- 15
+:= -- 345
+add.period$ -- 16
 call.type$ -- 5
 change.case$ -- 41
 chr.to.int$ -- 0
@@ -22,19 +22,19 @@ cite$ -- 5
 duplicate$ -- 47
 empty$ -- 120
 format.name$ -- 52
-if$ -- 369
+if$ -- 372
 int.to.chr$ -- 0
 int.to.str$ -- 5
 missing$ -- 3
-newline$ -- 28
+newline$ -- 29
 num.names$ -- 10
-pop$ -- 45
+pop$ -- 44
 preamble$ -- 1
 purify$ -- 36
 quote$ -- 0
-skip$ -- 35
+skip$ -- 34
 stack$ -- 0
-substring$ -- 75
+substring$ -- 74
 swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
@@ -43,4 +43,4 @@ type$ -- 20
 warning$ -- 0
 while$ -- 14
 width$ -- 6
-write$ -- 55
+write$ -- 57
