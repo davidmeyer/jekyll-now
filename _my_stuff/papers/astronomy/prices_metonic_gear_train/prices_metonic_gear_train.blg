@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: prices_metonic_gear_train.aux
 The style file: plain.bst
 Database file #1: /Users/dmm/papers/bib/astronomy.bib
-You've used 4 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            529 strings with 5056 characters,
-and the built_in function-call counts, 1705 in all, are:
-= -- 146
-> -- 135
+            532 strings with 5152 characters,
+and the built_in function-call counts, 1913 in all, are:
+= -- 165
+> -- 142
 < -- 0
-+ -- 54
-- -- 50
-* -- 156
-:= -- 308
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 37
++ -- 58
+- -- 52
+* -- 162
+:= -- 342
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 40
-empty$ -- 98
-format.name$ -- 50
-if$ -- 324
+cite$ -- 5
+duplicate$ -- 47
+empty$ -- 120
+format.name$ -- 52
+if$ -- 369
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 5
 missing$ -- 3
-newline$ -- 23
-num.names$ -- 8
-pop$ -- 36
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 36
 quote$ -- 0
-skip$ -- 28
+skip$ -- 35
 stack$ -- 0
-substring$ -- 69
-swap$ -- 4
+substring$ -- 75
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 20
 warning$ -- 0
-while$ -- 12
-width$ -- 5
-write$ -- 45
+while$ -- 14
+width$ -- 6
+write$ -- 55
