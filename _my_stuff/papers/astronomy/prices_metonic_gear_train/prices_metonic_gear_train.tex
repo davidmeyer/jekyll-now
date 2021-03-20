@@ -39,6 +39,8 @@
 \usepackage{braket}
 \usepackage{siunitx}
 \usepackage{mathtools}
+\usepackage[most]{tcolorbox}
+
 
 
 
@@ -128,7 +130,7 @@ I have not been able to learn.}
 \bigskip
 \bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.20,frame] {images/metonic.png}}
+\center{\includegraphics[scale=0.20,cfbox=red] {images/metonic.png}}
 \caption{The Metonic Cycle \cite{youtube:freeth2021}}
 \label{fig:metonic_cycle}
 \end{figure}
@@ -158,7 +160,9 @@ is shown in Figure \ref{fig:general_gearing_plan}.
 For calculating gear ratios,  Price's sectional gearing diagram Figure \ref{fig:sectional_gearing} is more useful. As we can see from Figure \ref{fig:sectional_gearing}, the gears of interest
 are B2, C1, C2, D1, D2, and E2, with the following tooth counts\footnote{The tooth counts were controversial in the 1950s when Price did much of his work.}:
 
+
 \bigskip
+\newpage
 \begin{figure}[H]
 \center{\includegraphics[scale=0.65,frame] {images/sectional_diagram.png}}
 \caption{Price's Sectional Gearing Diagram \cite{gears_from_the_greeks}}
@@ -166,6 +170,9 @@ are B2, C1, C2, D1, D2, and E2, with the following tooth counts\footnote{The too
 \end{figure}
 
 \bigskip
+\bigskip
+\bigskip
+\begin{minipage}[c]{0.45\textwidth}
 \begin{itemize}
 \item B2: 64 teeth
 \item C1: 38 teeth
@@ -174,11 +181,20 @@ are B2, C1, C2, D1, D2, and E2, with the following tooth counts\footnote{The too
 \item D2: 127 teeth
 \item E2: 32 teeth
 \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.5\textwidth}
+\includegraphics[width=\textwidth,cfbox=red]{images/price_metonic_gear_train.png}
+\captionof{figure}{Price's Metonic Gear Train \cite{youtube:freeth2021}}
+\end{minipage}
+
+\newpage
 
 \bigskip
 \noindent
 We know that in simple gear trains, we can calculate the Gear Ratio (GR) as 
 
+\bigskip
 \begin{center}
 {\Large $\text{GR} = \frac{\text{Number of Teeth on the Driven Gear}}{\text{Number of Teeth on the Driver Gear}}$}
 \end{center}
@@ -209,7 +225,7 @@ Specifically:
 \bigskip
 \bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.25,frame] {images/price_gear_train.png}}
+\center{\includegraphics[scale=0.20,cfbox=red] {images/price_gear_train.png}}
 \caption{Price's Metonic Gear Train Ratios and the Metonic Cycle}
 \label{fig:metonic_gear_ratios}
 \end{figure}
