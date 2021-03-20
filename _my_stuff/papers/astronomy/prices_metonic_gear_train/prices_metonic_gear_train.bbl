@@ -7,6 +7,11 @@ Derek de~Solla~Price.
 \newblock {\em Transactions of the American Philosophical Society},
   64(7):1--70, 1974.
 
+\bibitem{Evans2010}
+James Evans, Christi{\'a}n~C. Carman, and Alan~S. Thorndike.
+\newblock {Solar Anomaly and Planetary Displays in the Antikythera Mechanism}.
+\newblock {\em Journal for the History of Astronomy}, 41(1):1--39, Feb 2010.
+
 \bibitem{Freeth2006}
 T.~Freeth, Y.~Bitsakis, X.~Moussas, J.~H. Seiradakis, A.~Tselikas, H.~Mangou,
   M.~Zafeiropoulou, R.~Hadland, D.~Bate, A.~Ramsey, M.~Allen, A.~Crawley,
@@ -28,9 +33,24 @@ Tony Freeth, David Higgon, Aris Dacanalis, Lindsay MacDonald, Myrto
 \newblock {A Model of the Cosmos in the ancient Greek Antikythera Mechanism}.
 \newblock {\em Scientific Reports}, 11(1):5821, Mar 2021.
 
+\bibitem{Wright2005}
+M.T. Wight.
+\newblock {Epicyclic Gearing and the Antikythera Mechanism, parts 1 \& 2}.
+\newblock {\em Antiquarian Horology}, 29:54--60, Sep 2005.
+
 \bibitem{wiki:price}
 {Wikipedia contributors}.
-\newblock {"Derek J. de Solla Price --- {Wikipedia}{,} The Free Encyclopedia"},
+\newblock {"Derek J. de Solla Price --- {Wikipedia}{,} The Free Encyclopedia"}.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Derek_J._de_Solla_Price&oldid=1007148723},
+  2021.
+\newblock [Online; accessed 19-March-2021].
+
+\bibitem{wiki:menton}
+{Wikipedia contributors}.
+\newblock {"Meton of Athens --- {Wikipedia}{,} The Free Encyclopedia"}.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Meton_of_Athens&oldid=1011807751},
   2021.
 \newblock [Online; accessed 19-March-2021].
 

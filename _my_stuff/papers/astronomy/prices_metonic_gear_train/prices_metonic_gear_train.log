@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 MAR 2021 07:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 MAR 2021 08:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1189,14 +1189,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
 
-<images/metonic.png, id=44, 1284.8pt x 803.0pt>
+<images/metonic.png, id=50, 1284.8pt x 803.0pt>
 File: images/metonic.png Graphic file (type png)
  <use images/metonic.png>
 Package pdftex.def Info: images/metonic.png used on input line 131.
 (pdftex.def)             Requested size: 256.95544pt x 160.59715pt.
 
 [2 <./images/metonic.png>]
-<images/general_gearing_plan.png, id=59, 405.515pt x 539.01375pt>
+<images/general_gearing_plan.png, id=65, 405.515pt x 539.01375pt>
 File: images/general_gearing_plan.png Graphic file (type png)
 
 <use images/general_gearing_plan.png>
@@ -1204,7 +1204,7 @@ Package pdftex.def Info: images/general_gearing_plan.png used on input line 150
 .
 (pdftex.def)             Requested size: 263.58162pt x 350.35478pt.
 
-<images/sectional_diagram.png, id=65, 440.64626pt x 512.91624pt>
+<images/sectional_diagram.png, id=71, 440.64626pt x 512.91624pt>
 File: images/sectional_diagram.png Graphic file (type png)
 
 <use images/sectional_diagram.png>
@@ -1216,7 +1216,7 @@ Overfull \hbox (81.74881pt too wide) detected at line 206
 []
  []
 
-<images/price_gear_train.png, id=82, 1284.8pt x 803.0pt>
+<images/price_gear_train.png, id=88, 1284.8pt x 803.0pt>
 File: images/price_gear_train.png Graphic file (type png)
 
 <use images/price_gear_train.png>
@@ -1236,10 +1236,10 @@ ed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 18378 strings out of 493089
- 348032 string characters out of 6134842
- 392652 words of memory out of 5000000
- 21584 multiletter control sequences out of 15000+600000
+ 18385 strings out of 493089
+ 348121 string characters out of 6134842
+ 392751 words of memory out of 5000000
+ 21588 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,75p,10414b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1255,10 +1255,10 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (6 pages, 3617899 bytes).
+Output written on prices_metonic_gear_train.pdf (6 pages, 3623257 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
