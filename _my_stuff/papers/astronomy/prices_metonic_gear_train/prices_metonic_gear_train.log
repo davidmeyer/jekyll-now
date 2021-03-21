@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 MAR 2021 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 MAR 2021 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1586,95 +1586,35 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
-
-
-LaTeX Warning: Citation `Freeth2021' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Citation `wiki:price' on page 1 undefined on input line 80.
-
-
-LaTeX Warning: Citation `Freeth2006' on page 1 undefined on input line 81.
-
-
-LaTeX Warning: Citation `Wright2005' on page 1 undefined on input line 82.
-
-
-LaTeX Warning: Citation `Evans2010' on page 1 undefined on input line 82.
-
-
-LaTeX Warning: Citation `wiki:menton' on page 1 undefined on input line 92.
-
-[1
+ [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
 
-<images/metonic.png, id=30, 1284.8pt x 803.0pt>
+<images/metonic.png, id=54, 1284.8pt x 803.0pt>
 File: images/metonic.png Graphic file (type png)
  <use images/metonic.png>
 Package pdftex.def Info: images/metonic.png used on input line 142.
 (pdftex.def)             Requested size: 256.95544pt x 160.59715pt.
 
-
-LaTeX Warning: Citation `youtube:freeth2021' on page 2 undefined on input line 
-143.
-
-
-LaTeX Warning: Citation `youtube:freeth2021' on page 2 undefined on input line 
-143.
-
-
-LaTeX Warning: Citation `gears_from_the_greeks' on page 2 undefined on input li
-ne 157.
-
-
-LaTeX Warning: Reference `fig:general_gearing_plan' on page 2 undefined on inpu
-t line 158.
-
 [2 <./images/metonic.png>]
-<images/general_gearing_plan.png, id=39, 405.515pt x 539.01375pt>
+<images/general_gearing_plan.png, id=68, 405.515pt x 539.01375pt>
 File: images/general_gearing_plan.png Graphic file (type png)
 
 <use images/general_gearing_plan.png>
 Package pdftex.def Info: images/general_gearing_plan.png used on input line 162
 .
 (pdftex.def)             Requested size: 263.58162pt x 350.35478pt.
-
-
-LaTeX Warning: Citation `gears_from_the_greeks' on page 3 undefined on input li
-ne 163.
-
-
-LaTeX Warning: Citation `gears_from_the_greeks' on page 3 undefined on input li
-ne 163.
-
-
-LaTeX Warning: Reference `fig:sectional_gearing' on page 3 undefined on input l
-ine 169.
-
-
-LaTeX Warning: Reference `fig:sectional_gearing' on page 3 undefined on input l
-ine 169.
-
-[3 <./images/general_gearing_plan.png>]
-<images/sectional_diagram.png, id=49, 440.64626pt x 512.91624pt>
+ [3 <./images/general_gearing_plan.png>]
+<images/sectional_diagram.png, id=83, 440.64626pt x 512.91624pt>
 File: images/sectional_diagram.png Graphic file (type png)
 
 <use images/sectional_diagram.png>
 Package pdftex.def Info: images/sectional_diagram.png used on input line 176.
 (pdftex.def)             Requested size: 286.41667pt x 333.3916pt.
 
-
-LaTeX Warning: Citation `gears_from_the_greeks' on page 4 undefined on input li
-ne 177.
-
-
-LaTeX Warning: Citation `gears_from_the_greeks' on page 4 undefined on input li
-ne 177.
-
-<images/price_metonic_gear_train.png, id=50, 1284.8pt x 803.0pt>
+<images/price_metonic_gear_train.png, id=86, 1284.8pt x 803.0pt>
 File: images/price_metonic_gear_train.png Graphic file (type png)
 
 <use images/price_metonic_gear_train.png>
@@ -1692,20 +1632,12 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
-
-LaTeX Warning: Citation `youtube:freeth2021' on page 4 undefined on input line 
-196.
-
-
-LaTeX Warning: Citation `youtube:freeth2021' on page 4 undefined on input line 
-196.
-
 [4 <./images/sectional_diagram.png> <./images/price_metonic_gear_train.png>]
 Overfull \hbox (81.74881pt too wide) detected at line 231
 []
  []
 
-<images/price_gear_train.png, id=59, 1284.8pt x 803.0pt>
+<images/price_gear_train.png, id=96, 1284.8pt x 803.0pt>
 File: images/price_gear_train.png Graphic file (type png)
 
 <use images/price_gear_train.png>
@@ -1718,50 +1650,35 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
  (./prices_metonic_gear_train.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
-
-
-Package rerunfilecheck Warning: File `prices_metonic_gear_train.out' has change
-d.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `prices_metonic_gear_train.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  202AD068DB2FB4AA7189B337F7EA4802;231.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `prices_metonic_gear_train.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 202AD068DB2FB4AA7189B337F7EA4802;231.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 33376 strings out of 493089
- 680661 string characters out of 6134842
- 732152 words of memory out of 5000000
- 36295 multiletter control sequences out of 15000+600000
- 20286 words of font info for 83 fonts, out of 8000000 for 9000
+ 33377 strings out of 493089
+ 680664 string characters out of 6134842
+ 732776 words of memory out of 5000000
+ 36298 multiletter control sequences out of 15000+600000
+ 19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,13n,101p,10414b,731s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (6 pages, 5843115 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on prices_metonic_gear_train.pdf (6 pages, 5827978 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 161 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
  28 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
