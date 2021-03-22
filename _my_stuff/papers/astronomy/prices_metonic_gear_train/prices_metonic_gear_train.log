@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2021 07:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2021 08:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1590,12 +1590,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
 
 <images/metonic.png, id=54, 1284.8pt x 803.0pt>
 File: images/metonic.png Graphic file (type png)
  <use images/metonic.png>
-Package pdftex.def Info: images/metonic.png used on input line 133.
+Package pdftex.def Info: images/metonic.png used on input line 136.
 (pdftex.def)             Requested size: 321.19922pt x 200.74951pt.
 
 [2 <./images/metonic.png>]
@@ -1603,7 +1603,7 @@ Package pdftex.def Info: images/metonic.png used on input line 133.
 File: images/general_gearing_plan.png Graphic file (type png)
 
 <use images/general_gearing_plan.png>
-Package pdftex.def Info: images/general_gearing_plan.png used on input line 152
+Package pdftex.def Info: images/general_gearing_plan.png used on input line 155
 .
 (pdftex.def)             Requested size: 263.58162pt x 350.35478pt.
  [3 <./images/general_gearing_plan.png>]
@@ -1611,7 +1611,7 @@ Package pdftex.def Info: images/general_gearing_plan.png used on input line 152
 File: images/sectional_diagram.png Graphic file (type png)
 
 <use images/sectional_diagram.png>
-Package pdftex.def Info: images/sectional_diagram.png used on input line 165.
+Package pdftex.def Info: images/sectional_diagram.png used on input line 168.
 (pdftex.def)             Requested size: 286.41667pt x 333.3916pt.
 
 <images/price_metonic_gear_train.png, id=86, 1284.8pt x 803.0pt>
@@ -1619,21 +1619,21 @@ File: images/price_metonic_gear_train.png Graphic file (type png)
 
 <use images/price_metonic_gear_train.png>
 Package pdftex.def Info: images/price_metonic_gear_train.png used on input line
- 184.
+ 187.
 (pdftex.def)             Requested size: 215.0023pt x 134.3762pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 185.
+(caption)                particular \caption on input line 188.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 184--185
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
 [4 <./images/sectional_diagram.png> <./images/price_metonic_gear_train.png>]
-Overfull \hbox (81.74881pt too wide) detected at line 220
+Overfull \hbox (81.74881pt too wide) detected at line 223
 []
  []
 
@@ -1641,24 +1641,24 @@ Overfull \hbox (81.74881pt too wide) detected at line 220
 File: images/price_gear_train.png Graphic file (type png)
 
 <use images/price_gear_train.png>
-Package pdftex.def Info: images/price_gear_train.png used on input line 225.
+Package pdftex.def Info: images/price_gear_train.png used on input line 228.
 (pdftex.def)             Requested size: 256.95544pt x 160.59715pt.
  [5 <./images/price_gear_train.png>]
 (./prices_metonic_gear_train.bbl) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
  (./prices_metonic_gear_train.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
 Package rerunfilecheck Info: File `prices_metonic_gear_train.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: 202AD068DB2FB4AA7189B337F7EA4802;231.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
  33377 strings out of 493089
  680664 string characters out of 6134842
- 732775 words of memory out of 5000000
+ 732776 words of memory out of 5000000
  36298 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1675,7 +1675,7 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (6 pages, 5827970 bytes).
+Output written on prices_metonic_gear_train.pdf (6 pages, 5827963 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
