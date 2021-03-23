@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{gears_from_the_greeks}
 Derek de~Solla~Price.
@@ -61,5 +61,12 @@ M.T. Wight.
   \url{https://en.wikipedia.org/w/index.php?title=Meton_of_Athens&oldid=1011807751},
   2021.
 \newblock [Online; accessed 19-March-2021].
+
+\bibitem{Wright2005a}
+M.T. Wright.
+\newblock {Counting Months and Years: The Upper Back Dial of the Antikythera
+  Mechanism 1}.
+\newblock {\em Bulletin of the Scientific Instrument Society}, 87:8–13, Dec
+  2005.
 
 \end{thebibliography}
