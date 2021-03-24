@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAR 2021 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAR 2021 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1599,7 +1599,7 @@ Package pdftex.def Info: images/metonic.png used on input line 150.
 (pdftex.def)             Requested size: 321.19922pt x 200.74951pt.
 
 [2 <./images/metonic.png>]
-<images/general_gearing_plan.png, id=78, 405.515pt x 539.01375pt>
+<images/general_gearing_plan.png, id=79, 405.515pt x 539.01375pt>
 File: images/general_gearing_plan.png Graphic file (type png)
 
 <use images/general_gearing_plan.png>
@@ -1607,14 +1607,14 @@ Package pdftex.def Info: images/general_gearing_plan.png used on input line 169
 .
 (pdftex.def)             Requested size: 263.58162pt x 350.35478pt.
  [3 <./images/general_gearing_plan.png>]
-<images/sectional_diagram.png, id=91, 440.64626pt x 512.91624pt>
+<images/sectional_diagram.png, id=93, 440.64626pt x 512.91624pt>
 File: images/sectional_diagram.png Graphic file (type png)
 
 <use images/sectional_diagram.png>
 Package pdftex.def Info: images/sectional_diagram.png used on input line 181.
 (pdftex.def)             Requested size: 220.32259pt x 256.45749pt.
 
-<images/price_metonic_gear_train.png, id=94, 1284.8pt x 803.0pt>
+<images/price_metonic_gear_train.png, id=96, 1284.8pt x 803.0pt>
 File: images/price_metonic_gear_train.png Graphic file (type png)
 
 <use images/price_metonic_gear_train.png>
@@ -1637,21 +1637,21 @@ Overfull \hbox (81.74881pt too wide) detected at line 235
 []
  []
 
-<images/price_gear_train.png, id=106, 1284.8pt x 803.0pt>
+<images/price_gear_train.png, id=108, 1284.8pt x 803.0pt>
 File: images/price_gear_train.png Graphic file (type png)
 
 <use images/price_gear_train.png>
 Package pdftex.def Info: images/price_gear_train.png used on input line 240.
 (pdftex.def)             Requested size: 256.95544pt x 160.59715pt.
 
-<images/fragmentA.jpg, id=110, 1039.885pt x 927.465pt>
+<images/fragmentA.jpg, id=112, 1039.885pt x 927.465pt>
 File: images/fragmentA.jpg Graphic file (type jpg)
 
 <use images/fragmentA.jpg>
 Package pdftex.def Info: images/fragmentA.jpg used on input line 256.
 (pdftex.def)             Requested size: 207.97331pt x 185.48972pt.
  [5 <./images/price_gear_train.png>]
-<images/turning_the_metonic_pointer_wright.png, id=120, 1284.8pt x 803.0pt>
+<images/turning_the_metonic_pointer_wright.png, id=122, 1284.8pt x 803.0pt>
 File: images/turning_the_metonic_pointer_wright.png Graphic file (type png)
 
 <use images/turning_the_metonic_pointer_wright.png>
@@ -1687,10 +1687,10 @@ ed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 347.
  ) 
 Here is how much of TeX's memory you used:
- 33409 strings out of 493089
- 681341 string characters out of 6134842
- 735105 words of memory out of 5000000
- 36315 multiletter control sequences out of 15000+600000
+ 33411 strings out of 493089
+ 681370 string characters out of 6134842
+ 735140 words of memory out of 5000000
+ 36316 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,13n,101p,10414b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1707,10 +1707,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8303373 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8303617 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
