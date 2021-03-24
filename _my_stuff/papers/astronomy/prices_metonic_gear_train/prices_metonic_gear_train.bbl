@@ -12,6 +12,12 @@ James Evans, Christi{\'a}n~C. Carman, and Alan~S. Thorndike.
 \newblock {Solar Anomaly and Planetary Displays in the Antikythera Mechanism}.
 \newblock {\em Journal for the History of Astronomy}, 41(1):1--39, Feb 2010.
 
+\bibitem{pmid25075747}
+T.~Freeth.
+\newblock {{E}clipse prediction on the ancient {G}reek astronomical calculating
+  machine known as the {A}ntikythera {M}echanism}.
+\newblock {\em PLoS One}, 9(7):e103275, 2014.
+
 \bibitem{Freeth2006}
 T.~Freeth, Y.~Bitsakis, X.~Moussas, J.~H. Seiradakis, A.~Tselikas, H.~Mangou,
   M.~Zafeiropoulou, R.~Hadland, D.~Bate, A.~Ramsey, M.~Allen, A.~Crawley,
@@ -61,6 +67,14 @@ M.T. Wight.
   \url{https://en.wikipedia.org/w/index.php?title=Meton_of_Athens&oldid=1011807751},
   2021.
 \newblock [Online; accessed 19-March-2021].
+
+\bibitem{wiki:saros}
+{Wikipedia contributors}.
+\newblock Saros (astronomy) --- {Wikipedia}{,} the free encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Saros_(astronomy)&oldid=1013468074},
+  2021.
+\newblock [Online; accessed 23-March-2021].
 
 \bibitem{Wright2005a}
 M.T. Wright.
