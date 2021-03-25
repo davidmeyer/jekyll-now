@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAR 2021 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 MAR 2021 07:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1651,6 +1651,10 @@ File: images/fragmentA.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/fragmentA.jpg used on input line 255.
 (pdftex.def)             Requested size: 207.97331pt x 185.48972pt.
  [5 <./images/price_gear_train.png>]
+Overfull \hbox (5.52655pt too wide) in paragraph at lines 266--266
+[]\OT1/cmr/bx/n/14.4 Michael Wright's Scheme For Turn-ing The Metonic Pointer 
+ []
+
 <images/turning_the_metonic_pointer_wright.png, id=120, 1284.8pt x 803.0pt>
 File: images/turning_the_metonic_pointer_wright.png Graphic file (type png)
 
@@ -1683,13 +1687,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `prices_metonic_gear_train.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: D5214FD7CEA4B740D71EB48847A517CD;334.
+(rerunfilecheck)             Checksum: 402EAA93D969AD824F0DAD0610A98B1C;334.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
  33410 strings out of 493089
  681360 string characters out of 6134842
- 735140 words of memory out of 5000000
+ 735139 words of memory out of 5000000
  36315 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1707,7 +1711,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8303771 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8303776 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  172 compressed objects within 2 object streams
