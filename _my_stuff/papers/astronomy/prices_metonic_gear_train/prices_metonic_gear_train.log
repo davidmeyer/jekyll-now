@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 MAR 2021 06:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 MAR 2021 09:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1678,8 +1678,13 @@ Overfull \hbox (40.93486pt too wide) in paragraph at lines 274--289
 []$[]$  $[]$ 
  []
 
-[6 <./images/fragmentA.jpg>] [7 <./images/turning_the_metonic_pointer_wright.pn
-g>] (./prices_metonic_gear_train.bbl [8]) [9]
+[6 <./images/fragmentA.jpg>]
+Overfull \hbox (7.91254pt too wide) in paragraph at lines 326--335
+[]  
+ []
+
+[7 <./images/turning_the_metonic_pointer_wright.png>]
+(./prices_metonic_gear_train.bbl [8]) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./prices_metonic_gear_train.aux)
@@ -1693,7 +1698,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
 Here is how much of TeX's memory you used:
  33411 strings out of 493089
  681371 string characters out of 6134842
- 735139 words of memory out of 5000000
+ 735140 words of memory out of 5000000
  36315 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1711,7 +1716,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8304119 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8304159 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams
