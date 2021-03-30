@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 MAR 2021 09:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 MAR 2021 09:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,8 +1655,7 @@ Overfull \hbox (5.52655pt too wide) in paragraph at lines 268--268
 []\OT1/cmr/bx/n/14.4 Michael Wright's Scheme For Turn-ing The Metonic Pointer 
  []
 
-[6 <./images/fragmentA.jpg>]
-<images/turning_the_metonic_pointer_wright.png, id=130, 1284.8pt x 803.0pt>
+<images/turning_the_metonic_pointer_wright.png, id=121, 1284.8pt x 803.0pt>
 File: images/turning_the_metonic_pointer_wright.png Graphic file (type png)
 
 <use images/turning_the_metonic_pointer_wright.png>
@@ -1679,7 +1678,7 @@ Overfull \hbox (40.93486pt too wide) in paragraph at lines 275--290
 []$[]$  $[]$ 
  []
 
-
+[6 <./images/fragmentA.jpg>]
 Overfull \hbox (7.91254pt too wide) in paragraph at lines 327--336
 []  
  []
@@ -1717,7 +1716,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8305074 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8305010 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  178 compressed objects within 2 object streams
