@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2021 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2021 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1651,55 +1651,61 @@ File: images/fragmentA.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/fragmentA.jpg used on input line 256.
 (pdftex.def)             Requested size: 207.97331pt x 185.48972pt.
 
-Overfull \hbox (5.52655pt too wide) in paragraph at lines 274--274
+Overfull \hbox (5.52655pt too wide) in paragraph at lines 275--275
 []\OT1/cmr/bx/n/14.4 Michael Wright's Scheme For Turn-ing The Metonic Pointer 
  []
 
 [6 <./images/fragmentA.jpg>]
-<images/turning_the_metonic_pointer_wright.png, id=130, 1284.8pt x 803.0pt>
+<images/turning_the_metonic_pointer_wright.png, id=132, 1284.8pt x 803.0pt>
 File: images/turning_the_metonic_pointer_wright.png Graphic file (type png)
 
 <use images/turning_the_metonic_pointer_wright.png>
 Package pdftex.def Info: images/turning_the_metonic_pointer_wright.png used on 
-input line 295.
+input line 296.
 (pdftex.def)             Requested size: 258.00539pt x 161.24655pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 296.
+(caption)                particular \caption on input line 297.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 295--296
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 296--297
 [][] 
  []
 
 
-Overfull \hbox (40.93486pt too wide) in paragraph at lines 283--298
+Overfull \hbox (40.93486pt too wide) in paragraph at lines 284--299
 []$[]$  $[]$ 
  []
 
 [7 <./images/turning_the_metonic_pointer_wright.png>]
-Overfull \hbox (7.91254pt too wide) in paragraph at lines 335--344
+Overfull \hbox (7.91254pt too wide) in paragraph at lines 336--345
 []  
  []
 
-(./prices_metonic_gear_train.bbl [8]) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+(./prices_metonic_gear_train.bbl [8]
+Underfull \hbox (badness 1163) in paragraph at lines 61--67
+[]\OT1/cmr/m/n/10.95 Freeth, T. et al.  Na-ture Sup-ple-men-tary Notes.  []$\OT
+1/cmtt/m/n/10.95 http : / / www . antikythera -[]
+ []
+
+) [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
  (./prices_metonic_gear_train.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
 Package rerunfilecheck Info: File `prices_metonic_gear_train.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: 402EAA93D969AD824F0DAD0610A98B1C;334.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
  ) 
 Here is how much of TeX's memory you used:
- 33413 strings out of 493089
- 681396 string characters out of 6134842
- 734173 words of memory out of 5000000
- 36316 multiletter control sequences out of 15000+600000
+ 33415 strings out of 493089
+ 681425 string characters out of 6134842
+ 735208 words of memory out of 5000000
+ 36317 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,13n,101p,10414b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1716,10 +1722,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8305401 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8306003 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
