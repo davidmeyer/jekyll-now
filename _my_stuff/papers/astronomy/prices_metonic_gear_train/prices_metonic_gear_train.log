@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2021 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2021 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1656,7 +1656,7 @@ Overfull \hbox (5.52655pt too wide) in paragraph at lines 274--274
  []
 
 [6 <./images/fragmentA.jpg>]
-<images/turning_the_metonic_pointer_wright.png, id=131, 1284.8pt x 803.0pt>
+<images/turning_the_metonic_pointer_wright.png, id=130, 1284.8pt x 803.0pt>
 File: images/turning_the_metonic_pointer_wright.png Graphic file (type png)
 
 <use images/turning_the_metonic_pointer_wright.png>
@@ -1679,12 +1679,11 @@ Overfull \hbox (40.93486pt too wide) in paragraph at lines 283--298
 []$[]$  $[]$ 
  []
 
-
+[7 <./images/turning_the_metonic_pointer_wright.png>]
 Overfull \hbox (7.91254pt too wide) in paragraph at lines 335--344
 []  
  []
 
-[7 <./images/turning_the_metonic_pointer_wright.png>]
 (./prices_metonic_gear_train.bbl [8]) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
@@ -1699,7 +1698,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
 Here is how much of TeX's memory you used:
  33413 strings out of 493089
  681396 string characters out of 6134842
- 735173 words of memory out of 5000000
+ 734173 words of memory out of 5000000
  36316 multiletter control sequences out of 15000+600000
  19670 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1717,7 +1716,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on prices_metonic_gear_train.pdf (9 pages, 8305311 bytes).
+Output written on prices_metonic_gear_train.pdf (9 pages, 8305401 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  179 compressed objects within 2 object streams
