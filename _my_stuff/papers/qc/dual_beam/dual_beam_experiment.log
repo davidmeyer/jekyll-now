@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 SEP 2020 06:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 APR 2021 08:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1264,7 +1264,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1338.
 Here is how much of TeX's memory you used:
  18360 strings out of 493089
  348199 string characters out of 6134842
- 398406 words of memory out of 5000000
+ 398419 words of memory out of 5000000
  21515 multiletter control sequences out of 15000+600000
  18013 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1292,7 +1292,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dual_beam_experiment.pdf (26 pages, 513546 bytes).
+Output written on dual_beam_experiment.pdf (26 pages, 513261 bytes).
 PDF statistics:
  385 PDF objects out of 1000 (max. 8388607)
  311 compressed objects within 4 object streams
