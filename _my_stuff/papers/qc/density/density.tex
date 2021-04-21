@@ -44,7 +44,7 @@
 \title{A Few Notes on Density Operators, Expectation Values and Matrix Shapes}
 \author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu\}}
 
-\date{Last update: \today}							% Activate to display a given date or no date
+\date{Last update: January 18, 2017}							% Activate to display a given date or no date
 
 
 
@@ -282,7 +282,7 @@ A \ket{a_n}
 &\implies& (A \ket{a_n})^{\dagger}               &= (a_n \ket{a_n})^{\dagger}                    & \quad \mathrel{\#} \text{conjugate transpose both sides} \\
 &\implies& \ket{a_n}^{\dagger} A^{\dagger} &= \ket{a_n}^{\dagger} a_n^{\dagger}       & \quad \mathrel{\#} (AB)^\dagger = B^\dagger A^\dagger \\
 &\implies& \ket{a_n}^{\dagger} A^{\dagger} &= a_n^{\dagger} \ket{a_n}^{\dagger}       & \quad \mathrel{\#} \text{rearrange ($a_n^\dagger$ is a scalar)} \\
-&\implies& \ket{a_n}^{\dagger} A                 &= a_n^{\dagger} \ket{a_n}^{\dagger}       & \quad \mathrel{\#} \text{$A$ is Hermitian so $A = A^\dagger$} \\
+&\implies& \ket{a_n}^{\dagger} A                 &= a_n^{\dagger} \ket{a_n}^{\dagger}       & \quad \mathrel{\#} \text{$A$ is Hermitean so $A = A^\dagger$} \\
 &\implies& \ket{a_n}^{\dagger} A                 & = a_n^{*} \ket{a_n}^{\dagger}                 & \quad \mathrel{\#} a_n^{\dagger} = a_n^* \; \text{($a_n$ is a scalar)} \\
 &\implies& \bra{a_n} A                                 &= a_n^{*} \bra{a_n}                                  & \quad \mathrel{\#} \ket{a_n}^{\dagger} = \bra{a_n} \\
 &\implies& \bra{a_n} A                                 &= a_n  \bra{a_n}                                      & \quad \mathrel{\#} a_n* = a_n
@@ -302,7 +302,7 @@ A X
 &\implies& X^{\dagger} A^\dagger   &= X^{\dagger} \lambda^{\dagger}           & \quad \mathrel{\#} (AB)^\dagger = B^\dagger  A^\dagger \\
 &\implies& X^{\dagger} A^\dagger   &= \lambda^{\dagger} X^{\dagger}           & \quad \mathrel{\#} \text{rearrange ($\lambda^\dagger$ is a scalar)} \\
 &\implies& X^{\dagger} A^\dagger   &= \lambda^{*} X^{\dagger}                      & \quad \mathrel{\#} \lambda^\dagger = \lambda^* \; \text{($\lambda$ is a scalar)} \\
-&\implies& X^{\dagger} A                 &= \lambda^{*} X^{\dagger}                      & \quad \mathrel{\#} A^\dagger = A  \text{ since $A$ is Hermitian} \\
+&\implies& X^{\dagger} A                 &= \lambda^{*} X^{\dagger}                      & \quad \mathrel{\#} A^\dagger = A  \text{ since $A$ is Hermitean} \\
 &\implies& X^{\dagger} A                 &= X^{\dagger}   \lambda^{*}                    & \quad \mathrel{\#} \text{rearrange} \\
 &\implies& X^\dagger  A X               &= X^{\dagger}  \lambda^{*} X                  & \quad \mathrel{\#} \text{multiply both sides by $X$}
 \end{array}
