@@ -139,17 +139,29 @@ or in Dirac notation \cite{2000RPPh...63.1893G}
 \vdots & \vdots & \vdots & \ddots &   \vdots \\
 \braket{v_N | v_1} & \braket{v_N | v_2} & \braket{v_N | v_3} & \hdots & \braket{v_N | v_N} 
 \end{bmatrix}  \\
+&= 
+\begin{bmatrix}  
+1 & 0 & 0 & \hdots & 0 \\
+0 & 1 & 0 & \hdots & 0 \\
+0 & 0 & 1 & \hdots & 0 \\
+\vdots & \vdots & \vdots & \ddots &   \vdots \\
+0 & 0 & 0 & \hdots & 1 
+\end{bmatrix}  \\
 &= \mathbf{I}
 \end{flalign*}
 
 \bigskip
 \noindent
-What we can notice\footnote{$\delta_{ij}$ is the Kronecker Delta function \cite{wiki:kronecker_delta}, $\delta_{ij} = \bigg \{
+Noting that $\braket{v_i | v_i} = 1$ (the $v_i$ are unit vectors) and $\braket{v_i | v_j} = 0$ ($v_i$ and $v_j$ are orthogonal).
+
+\bigskip
+\noindent
+Another way to say this to notice\footnote{$\delta_{ij}$ is the Kronecker Delta function \cite{wiki:kronecker_delta}, $\delta_{ij} = \bigg \{
 \begin{array}{ll}
 1 & {\rm when  ~}  i = j \\
 0 & {\rm when  ~}  i \ne j 
 \end{array}$}
-here is that since $(\mathbf{U}^{\dagger} \mathbf{U})_{ij} = (\mathbf{U}^{-1} \mathbf{U})_{ij} = \delta_{ij}$,  
+that since $(\mathbf{U}^{\dagger} \mathbf{U})_{ij} = (\mathbf{U}^{-1} \mathbf{U})_{ij} = \delta_{ij}$, 
 the columns of \textbf{U} can be written as the inner product  $\braket{v_i | v_j} = \delta_{ij}$. Said another way,
 the vectors $v_i$ form an orthonormal set. In particular, if $\mathbf{V} = \{v_j\}$ is an orthonormal set, then for  $v_i, v_j \in \mathbf{V}$,
 the inner product $\braket{v_i | v_j} = \delta_{ij}$. See Section \ref{sec:shapes} for a brief discussion on matrix shapes.
@@ -247,7 +259,6 @@ where $a_i = \braket{v_i | \alpha}$ and $b_i = \braket{v_i | \beta}$. Interestin
 &=& \sum\limits_{i = 1}^{N} a_i^*b_i                                                                               & \quad \mathrel{\#} a_i^* =  \braket{v_i | \alpha}^*  \text{ and } b_i = \braket{v_i | \beta}
 \end{array}
 \end{equation*}
-
 
 \bigskip
 \section{Expectation Values}
