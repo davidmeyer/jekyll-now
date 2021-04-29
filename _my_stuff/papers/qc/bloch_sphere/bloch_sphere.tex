@@ -244,12 +244,9 @@ The maximally superimposed state is
 \noindent
 Here the probability of measuring $\ket{0}$ is $|a|^2 = aa^* = \Big ( \frac{1}{\sqrt{2}} \Big )^2 = \frac{1}{2}$.  Similarly,  and the probability of measuring $\ket{1}$ is $\frac{1}{2}$.  
 
-
-
 \bigskip
 \noindent
 Now, note that 
-
 
 \begin{equation}
 \ket{\psi}  =  \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}} \ket{1}  = \frac{1}{\sqrt{2}} \ket{0} + \frac{e^{i \theta}}{\sqrt{2}} \ket{1} 
@@ -258,8 +255,8 @@ Now, note that
 
 \bigskip
 \noindent
-Why does the second equality in Equation \ref{eqn:e_equality} hold? In short its because $|\frac{e^{i \theta}}{\sqrt{2}} |^2 = |\frac{1}{\sqrt{2}}|^2$. But still why? 
-Consider $|e^{i \theta}|^2$. By Euler's Formula\footnote{$e^{i\theta} = \cos \theta + i \sin \theta$} 
+Why does the second equality in Equation \ref{eqn:e_equality} hold? Well, consider $|e^{i \theta}|^2$. By 
+Euler's Formula\footnote{Euler's Formula: $e^{i\theta} = \cos \theta + i \sin \theta$} we can see that
 
 \begin{flalign*}
 |e^{i\theta}|^2 &= |(\cos \theta + i \sin \theta )|^2 \\
@@ -269,6 +266,15 @@ Consider $|e^{i \theta}|^2$. By Euler's Formula\footnote{$e^{i\theta} = \cos \th
 &= \cos^2\theta  +\sin^2 \theta   \\
 &= 1
 \end{flalign*}
+
+\bigskip
+\noindent
+So $|e^{i\theta}|^2 = 1$. Now,  dividing both sides by 2  and taking the square roots givs
+
+\bigskip
+\begin{equation}
+ \sqrt{ \frac{\big | e^{i \theta} \big |^2}{2}} = \sqrt{\frac{1}{2}}\implies  \frac{e^{i \theta}}{\sqrt{2}}= \frac{1}{\sqrt{2}}
+ \end{equation}
 
 \bigskip
 \noindent
