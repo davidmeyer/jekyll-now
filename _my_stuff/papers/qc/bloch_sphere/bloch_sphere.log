@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 APR 2021 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 APR 2021 12:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1178,88 +1178,88 @@ Overfull \hbox (59.37709pt too wide) in paragraph at lines 190--190
  []
 
 [4] [5] [6]
-Overfull \hbox (55.13797pt too wide) in paragraph at lines 330--330
+Overfull \hbox (55.13797pt too wide) in paragraph at lines 329--329
 [] 
  []
 
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\theta' on input line 336.
+(hyperref)                removing `\theta' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 336.
+(hyperref)                removing `\pi' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 336.
+(hyperref)                removing `math shift' on input line 335.
 
 <images/complex_plane_cartoon.jpg, id=159, 2978.12625pt x 2578.63374pt>
 File: images/complex_plane_cartoon.jpg Graphic file (type jpg)
 
 <use images/complex_plane_cartoon.jpg>
 Package pdftex.def Info: images/complex_plane_cartoon.jpg used on input line 37
-2.
+1.
 (pdftex.def)             Requested size: 208.49014pt x 180.5228pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
+(hyperref)                removing `math shift' on input line 376.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 377.
+(hyperref)                removing `\alpha' on input line 376.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
+(hyperref)                removing `math shift' on input line 376.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
+(hyperref)                removing `math shift' on input line 376.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 377.
+(hyperref)                removing `\beta' on input line 376.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
+(hyperref)                removing `math shift' on input line 376.
 
 [8] [9 <./images/complex_plane_cartoon.jpg>] [10] [11]
-Overfull \hbox (12.1451pt too wide) detected at line 616
+Overfull \hbox (12.1451pt too wide) detected at line 615
 [] \OMS/cmsy/m/n/10.95 
  [] \OT1/cmr/m/n/10.95 = [] = [] = []
  []
 
 [12] [13] [14]
-Overfull \hbox (5.60378pt too wide) in paragraph at lines 736--736
+Overfull \hbox (5.60378pt too wide) in paragraph at lines 735--735
 [] 
  []
 
 [15]
-Overfull \hbox (26.18526pt too wide) in paragraph at lines 780--780
+Overfull \hbox (26.18526pt too wide) in paragraph at lines 779--779
 [] 
  []
 
@@ -1300,20 +1300,20 @@ g / w / index . php ? title = Unitary _ matrix & oldid =
  []
 
 [17])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 787.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 786.
  [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 787.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 786.
  (./bloch_sphere.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 787.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 787.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 786.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 786.
 Package rerunfilecheck Info: File `bloch_sphere.out' has not changed.
 (rerunfilecheck)             Checksum: 995FC93E06C4339593976702003D1B30;832.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 786.
  ) 
 Here is how much of TeX's memory you used:
  18321 strings out of 493089
  347048 string characters out of 6134842
- 401479 words of memory out of 5000000
+ 402479 words of memory out of 5000000
  21494 multiletter control sequences out of 15000+600000
  19285 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1340,7 +1340,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bloch_sphere.pdf (18 pages, 1335662 bytes).
+Output written on bloch_sphere.pdf (18 pages, 1335651 bytes).
 PDF statistics:
  345 PDF objects out of 1000 (max. 8388607)
  272 compressed objects within 3 object streams
