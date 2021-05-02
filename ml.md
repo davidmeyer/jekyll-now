@@ -17,6 +17,7 @@ Random/incomplete thoughts on various ML topics
 <li><a href="./fisher.pdf">A Few Notes on Fisher Information (WIP)
 <li><a href="./algorithmic_markov_condition.pdf">Some Notes on Kolmogorov Complexity, the Algorithmic Markov Condition, and Causality
 <li><a href="./dags_causality_and_bias.pdf">Causal Graphs and Sources of Bias
+<li><a href="./policy_gradient_methods_for_robotics.pdf">Likelihood Ratio Policy Gradients for Reinforcement Learnin
 <li><a href="./trpo.pdf">Notes on Policy Gradients (Trust Region Policy Optimization, under construction)
 <li><a href="./pg.pdf">Notes on Policy Gradients (under construction)
 <li><a href="./nce.pdf">Notes on Noise Contrastive Estimation (NCE)
@@ -58,6 +59,6 @@ data set </a>
 <br>
 <br>
 <hr>
-<i>Last Update: 04.01.2021 by dmm@1-4-5.net
+<i>Last Update: 05.02.2021 by dmm@1-4-5.net
 
 
