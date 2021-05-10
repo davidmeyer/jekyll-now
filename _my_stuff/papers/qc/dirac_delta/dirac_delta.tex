@@ -1,0 +1,112 @@
+\documentclass{article}
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Draft}
+% \SetWatermarkScale{5}
+% \SetWatermarkLightness {0.9} 
+% \SetWatermarkColor[rgb]{0.7,0,0}
+
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{bigints}
+\usepackage{braket}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usepackage{verbatim}
+\usetikzlibrary{plotmarks}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+ \usepackage{relsize}
+
+
+\title{A Few Notes On The Dirac Delta Function}
+\author{David Meyer \\ dmm@\{1-4-5.net,uoregon.edu,...\}}
+
+\date{Last update: \today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+These notes began life as some thoughts on the Dirac Delta Function and evolved into notes on several related topics including  Laplace Transforms. More TBD.
+
+\section{The Dirac Delta Function}
+We can think of the delta function as being  defined as shown in Figure \ref{fig:delta} and Equation \ref{eqn:delta}. In the limit ($\mathlarger{\epsilon} \to 0$) the
+ Dirac Delta function is written $\delta_a(t)$ or sometimes $\delta(t - a)$. 
+
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=2.0]
+     \draw [<->] (0,2) -- (0,0) -- (3,0);
+     \draw [dashed] (1,0) node[below] {$a$} -- (1,1);
+     \draw (0,1) node[left] {$\frac{1}{\mathlarger{\epsilon}}$} ;
+     \draw [dashed] (2,0) node[below] {$a + \epsilon$} -- (2,1);
+     \coordinate (y) at (0,1);\fill [red] (y) circle (1pt)  (0,1) circle (1pt);
+     \draw [thick,red] (0,0) -- (1,0);
+     \draw [thick,red] (2,0) -- (3,0);
+     \draw [thick,red] (1,1) -- (2,1);
+     \draw [dashed]  (0,1) -- (1,1);
+     \draw[] (3,0) node [ label=below:{t}] {};
+     \draw[] (0,2) node [ label=above:{$\delta_{a,\epsilon}(t)$}] {};
+  \end{tikzpicture}
+  \caption{The $\delta_{a,\epsilon}(t)$ function}
+  \label{fig:delta}
+\end{figure}
+
+\bigskip
+\noindent
+$\delta_{a,\epsilon}(t)$ is defined to be
+
+\begin{equation}
+\delta_{a,\epsilon}(t) =  
+ \begin{cases} 
+      \frac{1}{\mathlarger {\epsilon}} & a \leq t \leq a + \epsilon \\
+      0                                               & \text{otherwise}
+   \end{cases}
+\label{eqn:delta}
+\end{equation}
+
+\noindent
+\bigskip
+and has the constraint that
+
+
+\begin{equation*}
+  \int_{0}^{\infty} \delta_{a,\epsilon}(t) =  1
+\end{equation*}
+
+\bigskip
+\bigskip
+\noindent
+\bigskip
+That is, $\delta_{a,\epsilon}(t)$ is in some sense a probability density.
+
+
+
+
+\end{document}
