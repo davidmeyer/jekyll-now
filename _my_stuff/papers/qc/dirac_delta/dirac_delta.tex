@@ -116,6 +116,127 @@ and has the constraint that
 \bigskip
 That is, $\delta_{a,\epsilon}(t)$ is in some sense a probability density.
 
+\bigskip
+\noindent
+In the limit the Dirac Delta Function looks like
+
+\begin{equation*}
+\lim_{\epsilon \to 0} \delta_{a,\epsilon}(t) =
+\delta_{a}(t) =  
+ \begin{cases} 
+     \infty & t = a\\
+      0     & t \neq a
+   \end{cases}
+\end{equation*}
+
+\bigskip
+\noindent
+or sometimes
+
+\begin{equation*}
+\delta (t - a) =  
+  \begin{cases} 
+     0 & t \neq a\\
+      \infty     & t = a
+  \end{cases}
+\end{equation*}
+
+\bigskip
+\noindent
+$\delta_a(t)$ also has the constraint that 
+
+
+\begin{equation*}
+  \int_{0}^{\infty} \delta_{a}(t) =  1
+\end{equation*}
+
+\bigskip
+\noindent
+and so is also a probability density. $\delta_a(t)$  is shown in Figure \ref{fig:delta_limit}.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=2.0]
+     \draw [<->] (0,2) -- (0,0) -- (4,0);                                                                      % draw axes
+     \draw (3,1) node[rectangle] {                                                                           % draw function to the left
+         $\delta_{a}(t) =  
+           \begin{cases} 
+              \infty & t = a  \\
+               0      & \text{otherwise}
+           \end{cases}$
+       }; 
+     \draw (1,0) node[below] {$a$};
+     \draw [dashed,red] (1,0) -- (1,2);
+     \draw[] (4,0) node [ label=below:{$t$}] {};
+     \draw[] (0,2) node [ label=above:{$\delta_{a}(t)$}] {};
+  \end{tikzpicture}
+  \caption{The $\delta_{a}(t)$ function}
+  \label{fig:delta_limit}
+\end{figure}
+
+\subsection{Integrals Involving $\delta_{a,\epsilon}(t)$}
+$\delta_{a,\epsilon}(t)$ has all kinds of interesting properties. One of them involves the integral of the product $\delta_{a,\epsilon}(t)$ with some function $g(t)$.  
+Here we would like to evaluate integrals of the form
+
+\bigskip
+\begin{equation}
+  \int_{0}^{\infty} \delta_{a,\epsilon}(t) g(t) dt
+  \label{eqn:delta_integral}
+\end{equation}
+
+\bigskip
+\noindent
+where $g(t)$ is continuous on the interval $[a, a+\epsilon]$. 
+
+\bigskip
+\noindent
+The Mean Value Theorem for Integrals  \cite{wiki:meam_value_theorem_for_integrals}  tells us that
+
+\begin{equation}
+  \int_{a}^{b} g(t) dt = (b -a) g(c)
+  \label{eqn:mvti}
+\end{equation}
+
+\bigskip
+\noindent
+where the point $c$ lies in the interval $[a, a+\epsilon]$. Now, since we know that $\delta_{a,\epsilon}(t)$ is zero everywhere except on the interval
+$[a, a+\epsilon]$ we can rewrite the improper integral in Equation \ref{eqn:delta_integral} as the proper integral
+
+\begin{equation*}
+  \int_{a}^{a + \epsilon} \delta_{a,\epsilon}(t) g(t) dt
+\end{equation*}
+
+\bigskip
+\noindent
+Now we can notice that $ \delta_{a,\epsilon}(t) = \frac{1}{\mathlarger{\epsilon}}$ on the interval $[a, a+\epsilon]$ so we can rewrite our integral as 
+
+\bigskip
+\begin{equation*}
+  \int_{a}^{a + \epsilon} \frac{1}{\mathlarger{\epsilon}} g(t) dt =  \frac{1}{\mathlarger{\epsilon}} \int_{a}^{a + \epsilon} g(t) dt
+\end{equation*}
+
+\bigskip
+\noindent
+Now we can use Equation \ref{eqn:mvti}, the Mean Value Theorem for Integrals\footnote{This is where the $\delta_{a,\epsilon}(t)$ form of the delta function comes in handy.},
+by setting $b = a + \epsilon$ and $a = a$ so that $b - a = \epsilon$. Then by the Mean Value Theorem for Integrals
+
+\bigskip
+\begin{equation*}
+ \frac{1}{\mathlarger{\epsilon}} \int_{a}^{a + \epsilon} g(t) dt =  \frac{1}{\mathlarger{\epsilon}} \underbrace{ \Big [(a + \epsilon) - a \Big]}_{b -a} g(c) = \frac{1}{\mathlarger{\epsilon}} \epsilon g(c) = g(c)
+\end{equation*}
+
+\bigskip
+\noindent
+where $c \in [a, a + \epsilon]$. Finally, if we look at the limit as $\epsilon \to 0$ we see that $\lim_{\epsilon \to 0} c = a$ so that 
+
+\bigskip
+\begin{equation}
+  \int_{0}^{\infty} \delta_{a}(t) g(t) dt = g(a)
+\end{equation}
+
+\bigskip
+\noindent
+Essentially $\delta_{a}(t)$ pulls out the value of $g$ at $a$, that is, $g(a)$.
 
 \section*{Acknowledgements}
 
