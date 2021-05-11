@@ -220,6 +220,7 @@ Now we can notice that $ \delta_{a,\epsilon}(t) = \frac{1}{\mathlarger{\epsilon}
 Now we can use Equation \ref{eqn:mvti}, the Mean Value Theorem for Integrals\footnote{This is where the $\delta_{a,\epsilon}(t)$ form of the delta function comes in handy.},
 by setting $b = a + \epsilon$ and $a = a$ so that $b - a = \epsilon$. Then by the Mean Value Theorem for Integrals
 
+
 \bigskip
 \begin{equation*}
  \frac{1}{\mathlarger{\epsilon}} \int_{a}^{a + \epsilon} g(t) dt =  \frac{1}{\mathlarger{\epsilon}} \underbrace{ \Big [(a + \epsilon) - a \Big]}_{b -a} g(c) = \frac{1}{\mathlarger{\epsilon}} \epsilon g(c) = g(c)
@@ -238,6 +239,25 @@ where $c \in [a, a + \epsilon]$. Finally, if we look at the limit as $\epsilon \
 \noindent
 Essentially $\delta_{a}(t)$ pulls out the value of $g$ at $a$, that is, $g(a)$.
 
+\bigskip
+\noindent
+Another way to get this result is to notice that the integrand of 
+
+\bigskip
+\begin{equation*}
+  \int_{0}^{\infty} \delta (t-a) g(t) dt
+\end{equation*}
+
+\bigskip
+\noindent
+is zero everywhere except where $t = a$, so we can rewrite our integral as
+ $\int_{0}^{\infty} \delta (t-a) g(a) dt = g(a) \int_{0}^{\infty} \delta (t-a) dt$ (since $g(a)$ doesn't depend on $t$). 
+ Then since by definition $ \int_{0}^{\infty} \delta (t-a) dt = 1$ we get
+
+\bigskip
+\begin{equation*}
+  \int_{0}^{\infty} \delta (t-a) g(t) dt = g(a)
+\end{equation*}
 \section*{Acknowledgements}
 
 \newpage
