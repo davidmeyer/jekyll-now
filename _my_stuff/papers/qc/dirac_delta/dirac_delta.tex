@@ -76,11 +76,11 @@ The Dirac Delta Function is defined as shown in Figure \ref{fig:delta}. In the l
      \draw [dashed] (1,0) node[below] {$a$} -- (1,1); 
      \draw [dashed] (2,0) node[below] {$a + \epsilon$} -- (2,1);
      \draw (0,1) node[left] {$\frac{1}{\mathlarger{\epsilon}}$} ;
-     \coordinate (y) at (0,1);\fill [red] (y) circle (1pt)  (0,1) circle (1 pt);
+     \coordinate (y) at (0,1);\fill [black] (y) circle (1pt)  (0,1) circle (1 pt);
      \draw [thick,red] (0,0) -- (1,0);
      \draw [thick,red] (2,0) -- (4,0);
      \draw [thick,red] (1,1) -- (2,1);
-     \draw [dashed]  (0,1) -- (1,1);
+     \draw [dashed]   (0,1) -- (1,1);
      \draw[] (4,0) node [ label=right:{$t$}] {};
      \draw[] (0,3) node [ label=above:{$\delta_{a,\epsilon}(t)$}] {};
   \end{tikzpicture}
@@ -171,7 +171,6 @@ and so is also a probability density. $\delta_a(t)$  is shown in Figure \ref{fig
      \draw[] (0,2) node [ label=above:{$\delta_{a}(t)$}] {};
      \draw [thick,red] (0,0) -- (1,0);
      \draw [thick,red] (1,0) -- (4,0);
-
   \end{tikzpicture}
   \caption{The Dirac Delta Function $\delta_{a}(t)$}
   \label{fig:delta_limit}
