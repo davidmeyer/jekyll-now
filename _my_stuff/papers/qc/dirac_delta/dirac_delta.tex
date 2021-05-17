@@ -261,6 +261,33 @@ is zero everywhere except where $t = a$, so we can rewrite our integral as
 \begin{equation*}
   \int_{0}^{\infty} \delta (t-a) g(t) dt = g(a)
 \end{equation*}
+
+\bigskip
+\section{The Laplace Transform}
+The Laplace Transform of a function $f(t)$ is defined to be
+
+
+\bigskip
+\begin{equation*}
+\mathcal{L}\{f(t)\} = \int_0^\infty e^{-st} f(t) dt
+\end{equation*}
+
+\bigskip
+\noindent
+and is useful when solving ordinary differential equations (ODEs). Interestingly, the Laplace Transform of the Dirac Delta function turns out to be
+
+\bigskip
+\begin{equation*}
+\begin{array}{lllll}
+\mathcal{L}\{\delta_a(t)\} 
+&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform} \\
+&=& e^{-sa}                                            &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$ and apply Equation \ref{eqn:g(a)}}
+\end{array}
+\end{equation*}
+
+
+\bigskip
+\bigskip
 \section*{Acknowledgements}
 
 \newpage
