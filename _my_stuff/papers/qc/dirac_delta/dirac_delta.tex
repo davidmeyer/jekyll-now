@@ -218,7 +218,6 @@ Here we can notice that $ \delta_{a,\epsilon}(t) = \frac{1}{\mathlarger{\epsilon
   \int_{a}^{a + \epsilon} \frac{1}{\mathlarger{\epsilon}} g(t) dt =  \frac{1}{\mathlarger{\epsilon}} \int_{a}^{a + \epsilon} g(t) dt
 \end{equation*}
 
-% \newpage
 \bigskip
 \noindent
 Now we can use Equation \ref{eqn:mvti}, the Mean Value Theorem for Integrals\footnote{This is where the $\delta_{a,\epsilon}(t)$ form of the delta function comes in handy.},
@@ -231,9 +230,12 @@ by setting $b = a + \epsilon$ and $a = a$ so that $b - a = \epsilon$. Then
 
 \bigskip
 \noindent
-where $c \in [a, a + \epsilon]$. Finally, if we look at what happens to $c$ as $\epsilon \to 0$ we see that $\lim\limits_{\epsilon \to 0} c = a$ (sorry about the notation misuse)
-so that 
+where $c \in [a, a + \epsilon]$. 
 
+\bigskip
+\noindent
+Finally, if we look at what happens to $c$ as $\epsilon \to 0$ we see that $\lim\limits_{\epsilon \to 0} c = a$ (sorry about the notation abuse)
+so that 
 
 \begin{equation}
   \int_{0}^{\infty} \delta_{a}(t) g(t) dt = g(a)
@@ -276,20 +278,22 @@ The Laplace Transform of a function $f(t)$ is defined to be
 
 \bigskip
 \noindent
-and is useful when solving ordinary differential equations (ODEs). Interestingly, the Laplace Transform of the Dirac Delta function turns out to be
+and is useful when solving ordinary differential equations (ODEs). Interestingly, the Laplace Transform of the Dirac Delta Function turns out to be
 
 \bigskip
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform} \\  
-[3pt]                                                        % get a bit of space
-&=& e^{-sa}                                            &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$ and apply Equation \ref{eqn:g(a)}}
+&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform, with $f(t) = \delta_a(t)$} \\  
+[4pt]                                                        % get a bit of space
+&=& \int_0^\infty e^{-st} g(t) dt               &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$} \\
+[4pt]                                                        % get a bit of space
+&=& g(a)  &\quad  \mathrel{\#} \text{By Equation \ref{eqn:g(a)}} \\
+[4pt]                                                        % get a bit of space
+&=& e^{-sa}                                            &\quad  \mathrel{\#} \text{$g(a) = e^{-sa}$ since $g(t) = e^{-st}$}
 \end{array}
 \end{equation*}
 
-
-\bigskip
 \bigskip
 \section*{Acknowledgements}
 

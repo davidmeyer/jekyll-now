@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 MAY 2021 07:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 MAY 2021 08:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1607,18 +1607,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 180.
 
 [2] [3] [4] (./dirac_delta.bbl) [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 (rerunfilecheck)             Checksum: 34C2A9D2891ADC0A321A4A69EEFD97F9;238.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 299.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
  36918 strings out of 493089
@@ -1644,7 +1640,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (5 pages, 174613 bytes).
+Output written on dirac_delta.pdf (5 pages, 174695 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
