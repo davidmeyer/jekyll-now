@@ -232,7 +232,7 @@ by setting $b = a + \epsilon$ and $a = a$ so that $b - a = \epsilon$. Then
 \noindent
 where $c \in [a, a + \epsilon]$. 
 
-%\newpage
+% \newpage
 \bigskip
 \noindent
 Finally, if we look at what happens to $c$ as $\epsilon \to 0$ we see that $\lim\limits_{\epsilon \to 0} c = a$ (sorry about the notation abuse)
@@ -274,7 +274,7 @@ The Laplace Transform of a function $f(t)$ is defined to be
 
 \bigskip
 \begin{equation*}
-\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st} f(t) dt
+\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty f(t) e^{-st} dt
 \end{equation*}
 
 \bigskip
@@ -285,9 +285,9 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform, with $f(t) = \delta_a(t)$} \\  
+&=& \int_0^\infty  \delta_a(t) e^{-st} dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform, with $f(t) = \delta_a(t)$} \\  
 [4pt]                                                        % get a bit of space
-&=& \int_0^\infty g(t) \delta_a(t) dt               &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$} \\
+&=& \int_0^\infty \delta_a(t) g(t)  dt               &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$} \\
 [4pt]                                                        % get a bit of space
 &=& g(a)  &\quad  \mathrel{\#} \text{By Equation \ref{eqn:g(a)}} \\
 [4pt]                                                        % get a bit of space
