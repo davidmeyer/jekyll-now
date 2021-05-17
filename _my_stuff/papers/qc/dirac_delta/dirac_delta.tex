@@ -176,6 +176,7 @@ and so is also a probability density. $\delta_a(t)$  is shown in Figure \ref{fig
   \label{fig:delta_limit}
 \end{figure}
 
+
 \subsection{Integrals Involving $\delta_{a,\epsilon}(t)$}
 $\delta_{a,\epsilon}(t)$ has all kinds of interesting properties. One of them involves the integral of the product $\delta_{a,\epsilon}(t)$ with some function $g(t)$.  
 Here we would like to evaluate integrals of the form
@@ -189,7 +190,7 @@ Here we would like to evaluate integrals of the form
 \bigskip
 \noindent
 where $g(t)$ is continuous on the interval $[a, a+\epsilon]$. 
-
+ 
 \bigskip
 \noindent
 The Mean Value Theorem for Integrals  \cite{wiki:meam_value_theorem_for_integrals}  tells us that
@@ -217,6 +218,7 @@ Here we can notice that $ \delta_{a,\epsilon}(t) = \frac{1}{\mathlarger{\epsilon
   \int_{a}^{a + \epsilon} \frac{1}{\mathlarger{\epsilon}} g(t) dt =  \frac{1}{\mathlarger{\epsilon}} \int_{a}^{a + \epsilon} g(t) dt
 \end{equation*}
 
+% \newpage
 \bigskip
 \noindent
 Now we can use Equation \ref{eqn:mvti}, the Mean Value Theorem for Integrals\footnote{This is where the $\delta_{a,\epsilon}(t)$ form of the delta function comes in handy.},
@@ -280,7 +282,8 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform} \\
+&=& \int_0^\infty e^{-st} \delta_a(t) dt     &\quad  \mathrel{\#} \text{Definition of the Laplace Transform} \\  
+[3pt]                                                        % get a bit of space
 &=& e^{-sa}                                            &\quad  \mathrel{\#} \text{Set $g(t) = e^{-st}$ and apply Equation \ref{eqn:g(a)}}
 \end{array}
 \end{equation*}
