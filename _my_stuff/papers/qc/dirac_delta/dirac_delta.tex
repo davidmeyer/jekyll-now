@@ -285,11 +285,11 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty  \delta_a(t) e^{-st} dt     &\quad  \mathrel{\#} \text{definition of the Laplace Transform, with $f(t) = \delta_a(t)$} \\  
+&=& \int_0^\infty  \delta_a(t) e^{-st} dt     &\quad  \mathrel{\#} \text{definition of the Laplace Transform} \\  
 [4pt]                                                        % get a bit of space
-&=& \int_0^\infty \delta_a(t) g(t)  dt               &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$} \\
+&=& \int_0^\infty \delta_a(t) g(t)  dt               &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                     \\
 [4pt]                                                        % get a bit of space
-&=& g(a)  &\quad  \mathrel{\#} \text{by Equation \ref{eqn:g(a)}} \\
+&=& g(a)  &\quad  \mathrel{\#} \text{by Equation \ref{eqn:g(a)}}                                                               \\
 [4pt]                                                        % get a bit of space
 &=& e^{-sa}                                            &\quad  \mathrel{\#} \text{since $g(t) = e^{-st}$}
 \end{array}
