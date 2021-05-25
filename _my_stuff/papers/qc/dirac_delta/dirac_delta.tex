@@ -395,13 +395,13 @@ F(s)
 [6pt]                                                                                     % get a bit of space
 &\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                  &\quad  \mathrel{\#} \text{definition of exponential order with constants $M$ and $c$}                                                            \\  
 [6pt]                                                                                     % get a bit of space
-&=& M  \int_0^\infty e^{(c-s)t}  dt                                        &\quad  \mathrel{\#} \text{M doesn't depend on $t$, consolidate powers of $e$}                                                                      \\     
+&=& M  \int_0^\infty e^{(c-s)t}  dt                                         &\quad  \mathrel{\#} \text{M doesn't depend on $t$, consolidate powers of $e$}                                                                      \\     
 [6pt]                                                                                     % get a bit of space
 &=& M \frac{e^{(c-s)t}} {c-s} \Big |_0^\infty                          &\quad  \mathrel{\#} \int_0^\infty e^{kx} dx = \frac{1}{k}e^{kx} + C \text{ (ignore $C$, use $u = kt$ so that $du = k dt$...)} \\
 [6pt]                                                                                     % get a bit of space     
 &=& M \frac{e^{(c-s)\infty}} {c-s} - \frac{Me^{(c-s)0}} {c-s}   &\quad  \mathrel{\#} \text{evaluate at endpoints}                                                                                                                      \\
 [6pt]                                                                                     % get a bit of space
-&=& 0 - \frac{M} {\mathlarger{c-s}}                                      &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0$ $\Rightarrow$ the first term goes to zero}                          \\    
+&=& 0 - \frac{M} {\mathlarger{c-s}}                                      &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0$ so the first term goes to zero}                          \\    
 [6pt]                                                                                     % get a bit of space
 &=& \frac{M}{\mathlarger{s-c}}                                            &\quad  \mathrel{\#} \text{simplify...}                          \\    
 
@@ -411,6 +411,7 @@ F(s)
 \bigskip
 \noindent
 All of this implies that functions $f(t)$ that do not satisfy the Existence Theorem do not have Laplace Transforms since $\mathcal{L}\{f(t)\}$ doesn't converge.
+
 
 % \newpage
 \bigskip
