@@ -9,18 +9,21 @@
 
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
-%\geometry{landscape}                		% Activate for for rotated page geometry
+%\geometry{landscape}                		% Activate for for rotated page geometryhttps://www.washingtonpost.com/world/europe/amid-impeachment-probe-gordon-sondland-is-overseeing-a-renovation-of-his-residence-that-has-cost-1-million-in-taxpayer-money/2019/10/16/d0eece92-ef86-11e9-bb7e-d2026ee0c199_story.html?tid=sm_tw
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps� with pdflatex; use eps in DVI mode
-								% TeX will automatically convert eps --> pdf in pdflat						
+								% TeX will automatically convert eps --> pdf in pdflat						\label{thm:integral_domain}
+
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{mathrsfs}
-\usepackage{hyperref}
+\usepackage[hyphens,spaces,obeyspaces]{url}
 \usepackage{url}
+\usepackage{hyperref}
 \usepackage{subcaption}
 \usepackage{authblk}
-\usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
@@ -34,6 +37,8 @@
 \usepackage{bigints}
 \usepackage{braket}
 \usepackage{siunitx}
+\usepackage{mathtools}
+
 
 \usepackage{tikz}
 \usepackage{verbatim}
@@ -41,6 +46,21 @@
 \usepackage{pgfplots}
 \usepackage{amsmath}
  \usepackage{relsize}
+ 
+ \usepackage[hyphenbreaks]{breakurl}
+ 
+ \newtheorem{thm}{Theorem}[section]
+% \newtheorem{defn}[thm]{Definition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{example}{Example}[section]
+
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+
 
 
 \title{A Few Notes On The Dirac Delta Function}
@@ -269,6 +289,33 @@ is zero everywhere except where $t = a$, so we can rewrite our integral as
 
 \bigskip
 \section{The Laplace Transform}
+We start by defining the integral transform of some function $f(t)$.
+
+\bigskip
+\begin{definition} 
+{\bf Integral Transform}
+\end{definition}
+
+\noindent
+If a function $f(t)$ is defined on $[0,\infty)$ then we can define an integral transform to be the improper integral
+
+
+\begin{equation*}
+F(s) = \int_0^\infty K(s,t) f(t) dt
+\end{equation*}
+
+\bigskip
+\noindent
+If the improper integral converges then we say that $F(s)$ is the integral transform of $f(t)$. The function $K(s,t)$ is called the \emph{kernel}
+of the transform. When $K(s,t) = e^{-st}$ the transform is called the {\bf Laplace Transform}.
+
+\bigskip
+\begin{definition} 
+{\bf Laplace Transform}
+\end{definition}
+
+\bigskip
+\noindent
 The Laplace Transform of a function $f(t)$ is defined to be
 
 
@@ -294,6 +341,75 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 &=& e^{-sa}                                            &\quad  \mathrel{\#} \text{since $g(t) = e^{-st}$}
 \end{array}
 \end{equation*}
+
+\subsection{Linearity Property of The Laplace Transform}
+\bigskip
+\noindent
+$\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}$. Why? Consider:
+
+
+\begin{equation*}
+\begin{array}{lllll}
+\mathcal{L}\{af (t) + bg(t)\} 
+&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          &\quad  \mathrel{\#} \text{definition of the Laplace Transform}                          \\  
+[6pt]                                                        % get a bit of space
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt           &\quad  \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}  \\
+[6pt]                                                        % get a bit of space
+&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   &\quad  \mathrel{\#} \text{definition of the Laplace Transform} 
+\end{array}
+\end{equation*}
+
+\subsection{So Does Every Function Have A Laplace Transform?}
+The answer is no (consider a function like $f(t) = t^{-1}$). There are two properties that $f(t)$ must have in order to have a Laplace Transform. First, $f(t)$ must
+be of "exponential order". So what does that mean?
+
+\bigskip
+\begin{definition} 
+{\bf Exponential Order}
+\end{definition}
+\noindent
+A function $f$ is said to be of {\bf exponential order} $c$ if there exist constants $c, M > 0, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
+Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
+approach its limit first. That is, $\lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0$.
+ 
+\bigskip
+\noindent
+Next, we need the following theorem:
+
+
+\begin{thm} 
+{\bf Existence Theorem:} 
+\normalfont If $f$ is s piecewise continuous on $[0,\infty)$ and of exponential order $c$ then 
+$F (s) = \mathcal{L}\{f (t)\} \text{ is defined for all $s > c$}.$
+\end{thm}
+
+\bigskip
+\noindent
+Ok, but why? Consider
+
+
+\begin{equation*}
+\begin{array}{lllll}
+F(s)
+&=& \int_0^\infty e^{-st} f(t) dt                                             &\quad  \mathrel{\#} \text{definition of the Laplace Transform}                                                                                                  \\  
+[6pt]                                                                                     % get a bit of space
+&\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                  &\quad  \mathrel{\#} \text{definition of exponential order with constants $M$ and $c$}                                                            \\  
+[6pt]                                                                                     % get a bit of space
+&=& M  \int_0^\infty e^{(c-s)t}  dt                                        &\quad  \mathrel{\#} \text{M doesn't depend on $t$, consolidate powers of $e$}                                                                      \\     
+[6pt]                                                                                     % get a bit of space
+&=& M \frac{e^{(c-s)t}} {c-s} \Big |_0^\infty                          &\quad  \mathrel{\#} \int_0^\infty e^{kx} dx = \frac{1}{k}e^{kx} + C \text{ (ignore $C$, use $u = kt$ so that $du = k dt$...)} \\
+[6pt]                                                                                     % get a bit of space     
+&=& M \frac{e^{(c-s)\infty}} {c-s} - \frac{Me^{(c-s)0}} {c-s}   &\quad  \mathrel{\#} \text{evaluate at endpoints}                                                                                                                      \\
+[6pt]                                                                                     % get a bit of space
+&=& 0 - \frac{M} {\mathlarger{c-s}}                                      &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0$ $\Rightarrow$ the first term goes to zero}                          \\    
+[6pt]                                                                                     % get a bit of space
+&=& \frac{M}{\mathlarger{s-c}}
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+This implies that functions $f(t)$ that do not satisfy the Existence Theorem do not have Laplace Transforms since $\mathcal{L}\{f(t)\}$ doesn't converge.
 
 % \newpage
 \bigskip
