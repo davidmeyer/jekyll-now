@@ -370,16 +370,25 @@ be of "exponential order". So what does that mean?
 \noindent
 A function $f$ is said to be of {\bf exponential order} $c$ if there exist constants $c, M > 0, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
 Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
-approach its limit first. That is, $\lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0$.
- 
+approach its limit first. That is, $\lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0$. See Figure \ref{fig:exponential_order}.
+
+\bigskip
+\bigskip
+\begin{figure}[H]
+\center{\includegraphics[scale=0.45,frame] {images/exponential_order.png}}
+\caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
+\label{fig:exponential_order}
+\end{figure}
+
+\bigskip
 \bigskip
 \noindent
 Next, we need the following theorem:
 
-
+\newpage
 \begin{thm} 
 {\bf Existence Theorem:} 
-\normalfont If $f$ is s piecewise continuous on $[0,\infty)$ and is of exponential order $c$ then 
+\normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
 $F (s) = \mathcal{L}\{f (t)\} \text{ is defined for all $s > c$}.$
 \end{thm}
 
@@ -391,19 +400,27 @@ Ok, but why? Consider
 \begin{equation*}
 \begin{array}{lllll}
 F(s)
-&=& \int_0^\infty e^{-st} f(t) dt                                             &\quad  \mathrel{\#} \text{definition of the Laplace Transform}                                                                                                  \\  
-[6pt]                                                                                     % get a bit of space
-&\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                  &\quad  \mathrel{\#} \text{definition of exponential order with constants $M$ and $c$}                                                            \\  
-[6pt]                                                                                     % get a bit of space
-&=& M  \int_0^\infty e^{(c-s)t}  dt                                         &\quad  \mathrel{\#} \text{M doesn't depend on $t$, consolidate powers of $e$}                                                                      \\     
-[6pt]                                                                                     % get a bit of space
-&=& M \frac{e^{(c-s)t}} {c-s} \Big |_0^\infty                          &\quad  \mathrel{\#} \int_0^\infty e^{kt} dt = \frac{1}{k}e^{kt} + C \text{ (ignore $C$, use $u = kt$ so that $du = k dt$...)} \\
-[6pt]                                                                                     % get a bit of space     
-&=& M \frac{e^{(c-s)\infty}} {c-s} - \frac{Me^{(c-s)0}} {c-s}   &\quad  \mathrel{\#} \text{evaluate at endpoints}                                                                                                                      \\
-[6pt]                                                                                     % get a bit of space
-&=& 0 - \frac{M} {\mathlarger{c-s}}                                      &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0$ so the first term goes to zero}                          \\    
-[6pt]                                                                                     % get a bit of space
-&=& \frac{M}{\mathlarger{s-c}}                                            &\quad  \mathrel{\#} \text{simplify...}                          \\    
+&=& \int_0^\infty e^{-st} f(t) dt                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform}                                                                                                                           \\  
+[8pt]                                                                                   % get a bit of space
+&\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                &\quad  \mathrel{\#} \text{definition of exponential order with constants $M$ and $c$}                                                                                      \\  
+[8pt]                                                                                   % get a bit of space
+&=& M  \int_0^\infty e^{(c-s)t}  dt                                       &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$, consolidate powers of $e$}                                                                                           \\     
+[8pt]                                                                                   % get a bit of space
+&=&  M \int_0^\infty e^u dt                                                &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
+[8pt]                                                                                   % get a bit of space
+&=&  M \int_0^\infty e^u \frac{du}{c-s}                              &\quad  \mathrel{\#} \text{$du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}$}                                                                                                    \\     
+[8pt]                                                                                  % get a bit of space
+&=&  \frac{M}{c-s} \int_0^\infty e^u du                              &\quad  \mathrel{\#} \text{rearrange}                                                                                                                                                                    \\     
+[8pt]                                                                                  % get a bit of space
+&=&  M \frac{e^u}{c-s}   \Big |_0^\infty                              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C                                                                                                                                               \\     
+[8pt]                                                                                  % get a bit of space
+&=& M \frac{e^{(c-s)t}} {c-s} \Big |_0^\infty                       &\quad  \mathrel{\#}  u = (c-s)t                                                                                                                                                                              \\
+[8pt]                                                                                  % get a bit of space     
+&=& \lim\limits_{d \to \infty}\Big [M \frac{e^{(c-s)d}} {c-s} \Big ]- \frac{Me^{(c-s)0}} {c-s}   &\quad  \mathrel{\#} \text{evaluate at endpoints}                                                                                                 \\
+[8pt]                                                                                  % get a bit of space
+&=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0 \Rightarrow \lim\limits_{d \to \infty}\Big [M \frac{e^{(c-s)d}} {c-s} \Big ] = 0$}   \\    
+[8pt]                                                                                  % get a bit of space
+&=& \frac{M}{\mathlarger{s-c}}                                         &\quad  \mathrel{\#} \text{simplify...} 
 
 \end{array}
 \end{equation*}
@@ -413,7 +430,7 @@ F(s)
 All of this implies that functions $f(t)$ that do not satisfy the Existence Theorem do not have Laplace Transforms since $\mathcal{L}\{f(t)\}$ doesn't converge.
 
 
-% \newpage
+ \newpage
 \bigskip
 \section*{Acknowledgements}
 
