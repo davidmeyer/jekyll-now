@@ -321,10 +321,10 @@ The Laplace Transform of a function $f(t)$ is defined to be
 
 
 \bigskip
-\begin{equation*}
+\begin{equation}
 \mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st} f(t) dt
-%\label{eqn:laplace_transform}
-\end{equation*}
+\label{eqn:laplace_transform}
+\end{equation}
 
 \bigskip
 \noindent
@@ -334,11 +334,11 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty  e^{-st} \delta_a(t) dt    &\quad  \mathrel{\#} \text{definition of the Laplace Transform} \\  
+&=& \int_0^\infty  e^{-st} \delta_a(t) dt    &\quad  \mathrel{\#} \text{definition (Equation \ref{eqn:laplace_transform} with $f(t) = \delta_a(t)$)} \\  
 [4pt]                                                        % get a bit of space
-&=& \int_0^\infty g(t) \delta_a(t) dt         &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                            \\
+&=& \int_0^\infty g(t) \delta_a(t) dt         &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                                                                                      \\
 [4pt]                                                        % get a bit of space
-&=& g(a)                                                &\quad  \mathrel{\#} \text{by Equation \ref{eqn:g(a)}}                 \\
+&=& g(a)                                                &\quad  \mathrel{\#} \text{by Equation \ref{eqn:g(a)}}                                                                           \\
 [4pt]                                                        % get a bit of space
 &=& e^{-sa}                                            &\quad  \mathrel{\#} \text{since $g(t) = e^{-st}$}
 \end{array}
@@ -423,7 +423,7 @@ Ok, but why? Consider
 [10pt]                                                                                 % get a bit of space               
 &=& M  \int_0^\infty e^{-st} e^{ct} dt                                  &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                                       \\   
 [10pt]                                                                                 % get a bit of space
-&=& M  \int_0^\infty  e^{(c-s)t}  dt                                      &\quad  \mathrel{\#} \text{collect powers of $e$}                                                                                                                                                \\      
+&=& M  \int_0^\infty  e^{(c-s)t}  dt                                      &\quad  \mathrel{\#} \text{collect powers of $e$ ($x^n \cdot x^m = x^{n+m}$)}                                                                                                  \\      
 [10pt]                                                                                 % get a bit of space
 &=&  M \int_0^\infty e^u dt                                                &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
 [10pt]                                                                                 % get a bit of space
