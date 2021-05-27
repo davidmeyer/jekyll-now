@@ -352,11 +352,11 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{af (t) + bg(t)\} 
-&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          &\quad  \mathrel{\#} \text{definition of the Laplace Transform}                          \\  
-[6pt]                                                        % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt           &\quad  \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}  \\
-[6pt]                                                        % get a bit of space
-&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   &\quad  \mathrel{\#} \text{definition of the Laplace Transform} 
+&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}  \\  
+[10pt]                                                                                                    % get a bit of space
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt           & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                    \\
+[10pt]                                                                                                    % get a bit of space
+&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform} 
 \end{array}
 \end{equation*}
 
@@ -387,9 +387,8 @@ approach its limit first. Said another way:
 This is shown in Figure \ref{fig:exponential_order}.
 
 \bigskip
-\bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.45,frame] {images/exponential_order.png}}
+\center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
 \caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
 \label{fig:exponential_order}
 \end{figure}
