@@ -403,7 +403,7 @@ Next we need the following theorem:
 \bigskip
 
 \begin{thm} 
-{\bf Existence Theorem:} 
+{\bf Existence Theorem for Laplace Transforms:} 
 \normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
 $F (s) = \mathcal{L}\{f (t)\} \text{ is defined for all $s > c$}.$
 \end{thm}
@@ -447,8 +447,8 @@ Ok, but why? Consider
 
 \bigskip
 \noindent
-All of this implies that functions $f(t)$ that do not satisfy the Existence Theorem do not have Laplace Transforms since $\mathcal{L}\{f(t)\}$ doesn't converge.
-
+Note that if $s = c$ then $\frac{M}{\mathlarger{s-c}}$ does not converge and $\mathcal{L}\{f(t)\}$ does not exist. Similarly, if $c > s$ then $\lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ]$ 
+does not converge and $\mathcal{L}\{f(t)\}$ does not exist. All of this implies that functions $f(t)$ that do not satisfy the conditions of the Existence Theorem do not have Laplace Transforms.
 
 % \newpage
 \bigskip
