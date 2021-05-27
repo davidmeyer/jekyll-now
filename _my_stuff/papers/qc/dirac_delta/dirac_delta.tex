@@ -306,7 +306,7 @@ F(s) = \int_0^\infty K(s,t) f(t) dt
 
 \bigskip
 \noindent
-If the improper integral converges then we say that $F(s)$ is the integral transform of $f(t)$. The function $K(s,t)$ is called the \emph{kernel}
+If the improper integral converges then we say that $F(s)$ is the \emph{integral transform} of $f(t)$. The function $K(s,t)$ is called the \emph{kernel}
 of the transform. When $K(s,t) = e^{-st}$ the transform is called the {\bf Laplace Transform}.
 
 \bigskip
@@ -322,7 +322,8 @@ The Laplace Transform of a function $f(t)$ is defined to be
 
 \bigskip
 \begin{equation*}
-\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty f(t) e^{-st} dt
+\mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st} f(t) dt
+%\label{eqn:laplace_transform}
 \end{equation*}
 
 \bigskip
@@ -333,9 +334,9 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty  \delta_a(t) e^{-st} dt    &\quad  \mathrel{\#} \text{definition of the Laplace Transform}  \\  
+&=& \int_0^\infty  e^{-st} \delta_a(t) dt    &\quad  \mathrel{\#} \text{definition of the Laplace Transform} \\  
 [4pt]                                                        % get a bit of space
-&=& \int_0^\infty \delta_a(t) g(t)  dt        &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                            \\
+&=& \int_0^\infty g(t) \delta_a(t) dt         &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                            \\
 [4pt]                                                        % get a bit of space
 &=& g(a)                                                &\quad  \mathrel{\#} \text{by Equation \ref{eqn:g(a)}}                 \\
 [4pt]                                                        % get a bit of space
@@ -348,20 +349,21 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \noindent
 $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}$. Why? Consider:
 
-
+\bigskip
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{af (t) + bg(t)\} 
-&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}  \\  
-[10pt]                                                                                                    % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt           & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                    \\
-[10pt]                                                                                                    % get a bit of space
-&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform} 
+&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
+[6pt]                                                                                                     % get a bit of space
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
+[6pt]                                                                                                     % get a bit of space
+&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
 \end{equation*}
 
+\bigskip
 \subsection{So Does Every Function Have A Laplace Transform?}
-The answer is no (consider a function like $f(t) = t^{-1}$). There are two properties that $f(t)$ must have in order to have a Laplace Transform. First, $f(t)$ must
+The answer is no (consider a function like $f(t) = t^{-1}$). OK, then what are the properties that $f(t)$ must have in order to have a Laplace Transform? First, $f(t)$ must
 be of "exponential order". So what does that mean?
 
 \bigskip
@@ -370,7 +372,7 @@ be of "exponential order". So what does that mean?
 \label{def:exponential_order}
 \end{definition}
 \noindent
-A function $f$ is said to be of {\bf exponential order $c$} if there exist constants $c, M > 0, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
+A function $f$ is said to be of {\bf exponential order c} if there exist constants $c, M > 0, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
 
 \bigskip
 \noindent
@@ -384,7 +386,7 @@ approach its limit first. Said another way:
 
 \bigskip
 \noindent
-This is shown in Figure \ref{fig:exponential_order}.
+This is situation shown in Figure \ref{fig:exponential_order}.
 
 \bigskip
 \begin{figure}[H]
@@ -399,6 +401,7 @@ Next we need the following theorem:
 
 % \newpage
 \bigskip
+
 \begin{thm} 
 {\bf Existence Theorem:} 
 \normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
