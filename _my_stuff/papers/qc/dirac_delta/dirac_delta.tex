@@ -374,17 +374,25 @@ A function $f$ is said to be of {\bf exponential order $c$} if there exist const
 \bigskip
 \noindent
 Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
-approach its limit first. Said in another way:  $\lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0$. This is shown in Figure \ref{fig:exponential_order}.
+approach its limit first. Said another way:  
+
+\bigskip
+\begin{equation*}
+\lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0
+\end{equation*}
+
+\bigskip
+\noindent
+This is shown in Figure \ref{fig:exponential_order}.
 
 \bigskip
 \bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
+\center{\includegraphics[scale=0.45,frame] {images/exponential_order.png}}
 \caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
 \label{fig:exponential_order}
 \end{figure}
 
-\bigskip
 \bigskip
 \noindent
 Next we need the following theorem:
@@ -426,7 +434,7 @@ Ok, but why? Consider
 [10pt]                                                                                % get a bit of space     
 &=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}e^{(c-s)0}  &\quad \mathrel{\#} \text{evaluate at the limits}                                                                                                   \\
 [10pt]                                                                                % get a bit of space
-&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = 1                                                                                                                       \\
+&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                                             \\
 [10pt]                                                                                % get a bit of space
 &=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0 \Rightarrow  \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] = 0$}   \\    
 [10pt]                                                                                % get a bit of space
