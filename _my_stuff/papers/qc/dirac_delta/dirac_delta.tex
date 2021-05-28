@@ -353,9 +353,11 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{af (t) + bg(t)\} 
-&=& \int_0^\infty e^{-st} \big [\mathcal{L}\{af (t) + bg(t)\} \big] dt          & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
+&=& \int_0^\infty e^{-st} \big [af (t) + bg(t) \big] dt                                & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
 [6pt]                                                                                                     % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
+&=& \int_0^\infty e^{-st} af (t) + \int_0^\infty e^{-st}  bg(t)  dt               & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
+[6pt]                                                                                                     % get a bit of space
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{constant multiple rule:} \int_a^b k f(x) dx = k \int _a^b f(x) dx                           \\
 [6pt]                                                                                                     % get a bit of space
 &=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
@@ -364,7 +366,8 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 \bigskip
 \subsection{So Does Every Function Have A Laplace Transform?}
 The answer is no (consider a function like $f(t) = t^{-1}$). OK, then what are the properties that $f(t)$ must have in order to have a Laplace Transform? First, $f(t)$ must
-be of "exponential order". So what does that mean?
+be of "exponential order". 
+
 
 \bigskip
 \begin{definition} 
@@ -372,22 +375,24 @@ be of "exponential order". So what does that mean?
 \label{def:exponential_order}
 \end{definition}
 \noindent
-A function $f$ is said to be of {\bf exponential order c} if there exist constants $c, M > 0, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
+A function $f$ is said to be of exponential order $c$ if there exist constants $c, M, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
 
 \bigskip
 \noindent
-Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
-approach its limit first. Said another way, in order for $f(t)$ to be of exponential order $c$ we require that  
+Said another way, in order for $f(t)$ to be of exponential order $c$ we require that  
 
 \bigskip
 \begin{equation*}
 \lim\limits_{t \to \infty} \frac{f(t)}{e^{ct}} = 0
 \end{equation*}
 
+\medskip
 \bigskip
 \noindent
-This is situation shown in Figure \ref{fig:exponential_order}.
+Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
+approach its limit first. This situation is depicted in Figure \ref{fig:exponential_order}.
 
+\smallskip
 \bigskip
 \begin{figure}[H]
 \center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
