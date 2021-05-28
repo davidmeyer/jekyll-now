@@ -355,7 +355,7 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 \mathcal{L}\{af (t) + bg(t)\} 
 &=& \int_0^\infty e^{-st} \big [af (t) + bg(t) \big] dt                                & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
 [6pt]                                                                                                     % get a bit of space
-&=& \int_0^\infty e^{-st} af (t) + \int_0^\infty e^{-st}  bg(t)  dt               & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
+&=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
 [6pt]                                                                                                     % get a bit of space
 &=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{constant multiple rule:} \int_a^b k f(x) dx = k \int _a^b f(x) dx                           \\
 [6pt]                                                                                                     % get a bit of space
