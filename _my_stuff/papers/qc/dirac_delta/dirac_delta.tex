@@ -426,8 +426,10 @@ Ok, but why? Consider
 &\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                &\quad  \mathrel{\#} \text{$f$ is of exponential order $c$ (Definition \ref{def:exponential_order})}                                                                     \\  
 [10pt]                                                                                 % get a bit of space               
 &=& M  \int_0^\infty e^{-st} e^{ct} dt                                  &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                                       \\   
+[10pt]                                                                                % get a bit of space
+&=& M  \int_0^\infty  e^{-st + ct}  dt                                  &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                                         \\      
 [10pt]                                                                                 % get a bit of space
-&=& M  \int_0^\infty  e^{(c-s)t}  dt                                      &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                                       \\      
+&=& M  \int_0^\infty  e^{(c-s)t}  dt                                      &\quad  \mathrel{\#}  e^{-st + ct} = e^{ct -st} = e^{(c-s)t}                                                                                                                                     \\      
 [10pt]                                                                                 % get a bit of space
 &=&  M \int_0^\infty e^u dt                                                &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
 [10pt]                                                                                 % get a bit of space
@@ -441,7 +443,7 @@ Ok, but why? Consider
 [10pt]                                                                                % get a bit of space     
 &=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}e^{(c-s)0}  &\quad \mathrel{\#} \text{evaluate at the limits}                                                                                                   \\
 [10pt]                                                                                % get a bit of space
-&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                                             \\
+&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = e^0 = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                                   \\
 [10pt]                                                                                % get a bit of space
 &=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} \text{we assumed that $s > c$ so $c -s < 0 \Rightarrow  \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] = 0$}   \\    
 [10pt]                                                                                % get a bit of space
