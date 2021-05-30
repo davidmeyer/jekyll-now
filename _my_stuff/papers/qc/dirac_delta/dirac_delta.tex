@@ -419,7 +419,7 @@ Ok, but why? Consider
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f(t)\}
-&=& F(s)                                                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                             \\  
+&=& F(s)                                                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
 [10pt]                                                                                 % get a bit of space
 &=& \int_0^\infty e^{-st} f(t) dt                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
 [10pt]                                                                                 % get a bit of space
@@ -435,9 +435,9 @@ Ok, but why? Consider
 [10pt]                                                                                 % get a bit of space
 &=&  M \int_0^\infty e^u \frac{du}{c-s}                              &\quad  \mathrel{\#} \text{$du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}$}                                                                                                    \\     
 [10pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ] \int_0^\infty e^u du            &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depend on $t$}                                                                                                                             \\     
+&=& \Big [ \frac{M}{c-s} \Big ] \int_0^\infty e^u du            &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depends on $t$}                                                                                                                            \\     
 [10pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ] e^u \Big |_0^\infty              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C \text{ and the Fundamental Theorem of Calculus}                                                                                                                                               \\     
+&=& \Big [ \frac{M}{c-s} \Big ] e^u \Big |_0^\infty              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C \text{ and the Fundamental Theorem of Calculus}                                                                 \\     
 [10pt]                                                                                % get a bit of space
 &=& \Big [ \frac{M}{c-s} \Big ]  e^{(c-s)t} \Big |_0^\infty     &\quad  \mathrel{\#} u = (c-s)t                                                                                                                                                                              \\
 [10pt]                                                                                % get a bit of space     
