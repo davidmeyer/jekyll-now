@@ -456,6 +456,90 @@ Ok, but why? Consider
 So if $s = c$ then $\frac{M}{\mathlarger{s-c}}$ is not defined and $\mathcal{L}\{f(t)\}$ does not exist. Similarly, if $s < c$ then $\lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ]$ 
 does not converge and $\mathcal{L}\{f(t)\}$ does not exist. All of this implies that functions that do not satisfy the conditions of the Existence Theorem do not have Laplace Transforms.
 
+\subsection{Inverse Laplace Transform}
+
+\begin{definition} {\bf Inverse Laplace Transform:}
+If $F(s)$ represents the Laplace Transform of a function $f(t)$ such that $\mathcal{L}\{f(t)\} = F(s)$
+then the Inverse Laplace Transform of $F(s)$ is $f(t)$, i.e. $\mathcal{L}^{-1}\{F(s)\} = f(t)$.
+\end{definition}
+
+\bigskip
+\noindent
+Here are a few examples:
+
+\bigskip
+
+\begin{minipage}[c]{0.45\textwidth}
+\renewcommand{\arraystretch}{2}
+\begin{tabular} { | c | c  |}
+\hline
+\multicolumn{2} { | c | }{\bf Laplace Transform}   \\
+\hline
+$f(t)$  & $F(s) = \mathcal{L}\{f(t)\}$                     \\
+\hline \hline
+1                       & $\frac{1}{s}$                            \\
+[4pt]
+\hline
+$t^n$                & $\frac{n!}{S^{n+1}}$                 \\
+[4pt]
+\hline
+$e^{at}$            & $\frac{1}{s - a}$                       \\
+[4pt]
+\hline
+$\sin(kt)$           & $\frac{k}{s^2 + k^2}$               \\
+[4pt]
+\hline
+$\cos(kt)$          & $\frac{s}{s^2 + k^2}$               \\
+[4pt]
+\hline
+$\sinh(kt)$         & $\frac{k}{s^2 - k^2}$                \\
+[4pt]
+\hline
+$\cosh(kt)$        & $\frac{s}{s^2 - k^2}$                \\
+[4pt]
+\hline
+$\dfrac{dg}{dt}$ & $sG(s) - g(0)$                          \\
+[4pt]
+\hline
+\end{tabular}
+\end{minipage}
+%
+\begin{minipage}[c]{0.45\textwidth}
+\renewcommand{\arraystretch}{2}
+\begin{tabular} { | c | c  |}
+\hline
+\multicolumn{2} { | c | }{\bf Inverse Laplace Transform}    \\
+\hline
+$F(s)$  & $f(t) = \mathcal{L}^{-1}\{F(s)\}$                         \\
+\hline \hline
+$\frac{1}{s}$           & 1                                                     \\
+[4pt]
+\hline
+$\frac{n!}{S^{n+1}}$ & $t^n$                                             \\
+[4pt]
+\hline
+$\frac{1}{s - a}$       & $e^{at}$                                         \\
+[4pt]
+\hline
+$\frac{k}{s^2 + k^2}$ & $\sin(kt)$                                      \\
+[4pt]
+\hline
+$\frac{s}{s^2 + k^2}$ & $\cos(kt)$                                     \\
+[4pt]
+\hline
+ $\frac{k}{s^2 - k^2}$ & $\sinh(kt)$                                     \\
+[4pt]
+\hline
+$\frac{s}{s^2 - k^2}$  & $\cosh(kt)$                                    \\
+[4pt]
+\hline
+$sG(s) - g(0)$           & $\dfrac{dg}{dt}$                              \\
+[4pt]
+\hline
+\end{tabular}
+\end{minipage}
+
+
 % \newpage
 \bigskip
 \section*{Acknowledgements}
