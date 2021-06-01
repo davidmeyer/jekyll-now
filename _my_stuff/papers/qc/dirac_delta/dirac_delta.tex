@@ -344,6 +344,7 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \end{equation*}
 
 \subsection{The Linearity Property Of The Laplace Transform}
+\label{subsec:linearity}
 \bigskip
 \noindent
 $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}$. Why? Consider:
@@ -596,7 +597,8 @@ F^\prime(s)
 [20pt]
 &=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)                                                                                                                       \\
 [20pt]
-&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\} \text{ where $a$ doesn't depend on $t$}
+&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{by the linearity of $\mathcal{L}\{f(t)\}$, with $a = -1$ (Section \ref{subsec:linearity})}
+
 \end{array}
 \end{equation*}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 JUN 2021 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 JUN 2021 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1633,7 +1633,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 199.
 
 [2] [3] [4]
-Overfull \hbox (73.5066pt too wide) detected at line 363
+Overfull \hbox (73.5066pt too wide) detected at line 364
 []
  []
 
@@ -1641,41 +1641,46 @@ Overfull \hbox (73.5066pt too wide) detected at line 363
 File: images/exponential_order.png Graphic file (type png)
 
 <use images/exponential_order.png>
-Package pdftex.def Info: images/exponential_order.png used on input line 397.
+Package pdftex.def Info: images/exponential_order.png used on input line 398.
 (pdftex.def)             Requested size: 181.87627pt x 129.2807pt.
  [5 <./images/exponential_order.png>]
-Overfull \hbox (78.99245pt too wide) detected at line 451
+Overfull \hbox (78.99245pt too wide) detected at line 452
 []
  []
 
 [6] [7]
-Overfull \hbox (41.18436pt too wide) detected at line 570
+Overfull \hbox (41.18436pt too wide) detected at line 571
 []
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 577.
+(hyperref)                removing `math shift' on input line 578.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 577.
+(hyperref)                removing `math shift' on input line 578.
+
+
+Overfull \hbox (7.73134pt too wide) detected at line 603
+[]
+ []
 
 [8] [9] (./dirac_delta.bbl) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 614.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 614.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
  (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 614.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 614.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 (rerunfilecheck)             Checksum: 2B7606ACDCE43FB17E7D0693841064DF;587.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 614.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 616.
  ) 
 Here is how much of TeX's memory you used:
- 37068 strings out of 493089
- 855343 string characters out of 6134842
+ 37069 strings out of 493089
+ 855361 string characters out of 6134842
  1016317 words of memory out of 5000000
- 39921 multiletter control sequences out of 15000+600000
+ 39922 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,10400b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1699,10 +1704,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (10 pages, 348800 bytes).
+Output written on dirac_delta.pdf (10 pages, 348830 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  37 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
