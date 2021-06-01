@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 JUN 2021 08:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 JUN 2021 08:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1609,9 +1609,21 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
- [1
+
+
+LaTeX Warning: Reference `fig:delta' on page 1 undefined on input line 78.
+
+
+LaTeX Warning: Citation `wiki:meam_value_theorem_for_integrals' on page 1 undef
+ined on input line 80.
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `fig:delta_limit' on page 2 undefined on input line 17
+4.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 199.
@@ -1632,18 +1644,71 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 199.
 
-[2] [3] [4]
-Overfull \hbox (73.5066pt too wide) detected at line 363
+[2]
+
+LaTeX Warning: Citation `wiki:meam_value_theorem_for_integrals' on page 3 undef
+ined on input line 215.
+
+
+LaTeX Warning: Reference `eqn:delta_integral' on page 3 undefined on input line
+ 225.
+
+
+LaTeX Warning: Reference `eqn:mvti' on page 3 undefined on input line 242.
+
+
+LaTeX Warning: Citation `youtube:suskind2008.4' on page 3 undefined on input li
+ne 271.
+
+[3]
+
+LaTeX Warning: Reference `eqn:laplace_transform' on page 4 undefined on input l
+ine 336.
+
+
+LaTeX Warning: Reference `eqn:g(a)' on page 4 undefined on input line 340.
+
+[4]
+
+LaTeX Warning: Reference `def:laplace_transform' on page 5 undefined on input l
+ine 355.
+
+
+LaTeX Warning: Citation `lewis2014' on page 5 undefined on input line 357.
+
+
+LaTeX Warning: Reference `def:laplace_transform' on page 5 undefined on input l
+ine 361.
+
+
+Overfull \hbox (71.58984pt too wide) detected at line 363
 []
  []
 
-<images/exponential_order.png, id=109, 454.69875pt x 323.2075pt>
+
+LaTeX Warning: Reference `fig:exponential_order' on page 5 undefined on input l
+ine 392.
+
+<images/exponential_order.png, id=55, 454.69875pt x 323.2075pt>
 File: images/exponential_order.png Graphic file (type png)
 
 <use images/exponential_order.png>
 Package pdftex.def Info: images/exponential_order.png used on input line 397.
 (pdftex.def)             Requested size: 227.34882pt x 161.60335pt.
  [5 <./images/exponential_order.png>]
+
+LaTeX Warning: Reference `def:laplace_transform' on page 6 undefined on input l
+ine 422.
+
+
+LaTeX Warning: Reference `def:laplace_transform' on page 6 undefined on input l
+ine 424.
+
+
+LaTeX Warning: Reference `def:exponential_order' on page 6 undefined on input l
+ine 426.
+
+
 Overfull \hbox (78.99245pt too wide) detected at line 452
 []
  []
@@ -1654,16 +1719,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
  (./dirac_delta.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
-Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
-(rerunfilecheck)             Checksum: 8DB0FEB0EBB02F820CF64C53052FCDD6;505.
+
+
+Package rerunfilecheck Warning: File `dirac_delta.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dirac_delta.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  8DB0FEB0EBB02F820CF64C53052FCDD6;505.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 550.
  ) 
 Here is how much of TeX's memory you used:
- 37064 strings out of 493089
- 855300 string characters out of 6134842
+ 37060 strings out of 493089
+ 855239 string characters out of 6134842
  1016317 words of memory out of 5000000
- 39920 multiletter control sequences out of 15000+600000
- 15659 words of font info for 64 fonts, out of 8000000 for 9000
+ 39914 multiletter control sequences out of 15000+600000
+ 16278 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,10400b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1686,10 +1764,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (8 pages, 342038 bytes).
+Output written on dirac_delta.pdf (8 pages, 341513 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
+ 168 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
