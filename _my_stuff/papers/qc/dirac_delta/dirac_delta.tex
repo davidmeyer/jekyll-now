@@ -356,7 +356,7 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 [6pt]                                                                                                     % get a bit of space
 &=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
 [6pt]                                                                                                     % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{constant multiple rule:} \int k f(x) dx = k \int f(x) dx                                          \\
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{constant multiple rule:} \int \! k f(x) dx = k \int \! f(x) dx                                    \\
 [6pt]                                                                                                     % get a bit of space
 &=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
@@ -394,7 +394,7 @@ approach its limit first. This situation is depicted in Figure \ref{fig:exponent
 \smallskip
 \bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
+\center{\includegraphics[scale=0.40,frame] {images/exponential_order.png}}
 \caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
 \label{fig:exponential_order}
 \end{figure}
@@ -403,8 +403,7 @@ approach its limit first. This situation is depicted in Figure \ref{fig:exponent
 \noindent
 Next we need the following theorem:
 
-% \newpage
-\bigskip
+\newpage
 
 \begin{thm} 
 {\bf Existence Theorem for Laplace Transforms:} 
@@ -420,33 +419,33 @@ Ok, but why? Consider
 \begin{array}{lllll}
 \mathcal{L}\{f(t)\}
 &=& F(s)                                                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
-[10pt]                                                                                 % get a bit of space
-&=& \int_0^\infty e^{-st} f(t) dt                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
-[10pt]                                                                                 % get a bit of space
-&\leq& \int_0^\infty e^{-st}  Me^{ct}dt                                &\quad  \mathrel{\#} \text{$f$ is of exponential order $c$ (Definition \ref{def:exponential_order})}                                                                     \\  
-[10pt]                                                                                 % get a bit of space               
-&=& M  \int_0^\infty e^{-st} e^{ct} dt                                  &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                                       \\   
-[10pt]                                                                                % get a bit of space
-&=& M  \int_0^\infty  e^{-st + ct}  dt                                  &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                                         \\      
-[10pt]                                                                                 % get a bit of space
-&=& M  \int_0^\infty  e^{(c-s)t}  dt                                      &\quad  \mathrel{\#}  e^{-st + ct} = e^{ct -st} = e^{(c-s)t}                                                                                                                                     \\      
-[10pt]                                                                                 % get a bit of space
-&=&  M \int_0^\infty e^u dt                                                &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
-[10pt]                                                                                 % get a bit of space
-&=&  M \int_0^\infty e^u \frac{du}{c-s}                              &\quad  \mathrel{\#} u = (c-s)t  \: \Rightarrow \: du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}                                                                       \\     
-[10pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ] \int_0^\infty e^u du            &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depends on $t$}                                                                                                                           \\     
-[10pt]                                                                                % get a bit of space
+[15pt]                                                                                 % get a bit of space
+&=&   \mathlarger{\int}_0^\infty \! e^{-st} f(t) dt                  &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
+[15pt]                                                                                 % get a bit of space
+&\leq& \mathlarger{\int}_0^\infty \! e^{-st}  Me^{ct}dt         &\quad  \mathrel{\#} \text{$f$ is of exponential order $c$ (Definition \ref{def:exponential_order})}                                                                     \\  
+[15pt]                                                                                 % get a bit of space               
+&=& M \mathlarger{\int}_0^\infty \! e^{-st} e^{ct} dt           &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                                       \\   
+[15pt]                                                                                % get a bit of space
+&=& M \mathlarger{\int}_0^\infty \! e^{-st + ct}  dt             &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                                         \\      
+[15pt]                                                                                 % get a bit of space
+&=& M \mathlarger{\int}_0^\infty\! e^{(c-s)t}  dt                 &\quad  \mathrel{\#}  e^{-st + ct} = e^{ct -st} = e^{(c-s)t}                                                                                                                                     \\      
+[15pt]                                                                                 % get a bit of space
+&=&  M \mathlarger{\int}_0^\infty \! e^u dt                         &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
+[15pt]                                                                                 % get a bit of space
+&=&  M \mathlarger{\int}_0^\infty \! e^u \frac{du}{c-s}       &\quad  \mathrel{\#} u = (c-s)t  \: \Rightarrow \: du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}                                                                       \\     
+[15pt]                                                                                % get a bit of space
+&=& \Big [ \frac{M}{c-s} \Big ] \mathlarger{\int}_0^\infty \! e^u du                                    &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depends on $t$}                                                                            \\     
+[15pt]                                                                                % get a bit of space
 &=& \Big [ \frac{M}{c-s} \Big ] e^u \Big |_0^\infty              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C \text{ and the Fundamental Theorem of Calculus}                                                                \\     
-[10pt]                                                                                % get a bit of space
+[15pt]                                                                                % get a bit of space
 &=& \Big [ \frac{M}{c-s} \Big ]  e^{(c-s)t} \Big |_0^\infty     &\quad  \mathrel{\#} u = (c-s)t                                                                                                                                                                              \\
-[10pt]                                                                                % get a bit of space     
+[15pt]                                                                                % get a bit of space     
 &=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}e^{(c-s)0}  &\quad \mathrel{\#} \text{evaluate at the limits}                                                                                                   \\
-[10pt]                                                                                % get a bit of space
+[15pt]                                                                                % get a bit of space
 &=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = e^0 = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                                   \\
-[10pt]                                                                                % get a bit of space
+[15pt]                                                                                % get a bit of space
 &=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} s > c \: \Rightarrow \: c -s < 0 \: \Rightarrow  \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] = 0                        \\    
-[10pt]                                                                                % get a bit of space
+[15pt]                                                                                % get a bit of space
 &=& \frac{M}{\mathlarger{s-c}}                                         &\quad  \mathrel{\#} \text{simplify} 
 \end{array}
 \end{equation*}
@@ -539,6 +538,41 @@ $sG(s) - g(0)$           & $\dfrac{dg}{dt}$                              \\
 \end{tabular}
 \end{minipage}
 
+\newpage
+
+\noindent
+Here's a worked example: Suppose $f(t)$ is continuous, piecewise smooth and of exponential order, and suppose $f^\prime(t)$ is the derivative of $f(t)$. Then the
+Laplace Transform of $f^\prime(t)$ turns out to be
+
+\begin{equation*}
+\begin{array}{lllll}
+\mathcal{L}\{f^\prime(t)\}
+&=& \mathlarger{\int} ^\infty_0 \! e^{-st}  f^\prime(t) dt                                                                                                                       &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}        \\  
+[20pt]
+&=& \mathlarger{\int}^\infty_0 \! \underbracket [0.15 ex] {\strut e^{-st}}_{v}  \underbracket [0.15 ex] {\strut f^\prime(t) dt}_{du}      &\mathrel{\#} \text{use integration by parts}                                                               \\  
+[20pt]
+&=& \underbracket [0.15 ex] {\strut e^{-st}}_{v}  \underbracket [0.15 ex] {\strut f(t)}_{u} \bigg |^\infty_0   -   
+        \mathlarger{\int}^\infty_0 \! \underbracket [0.15 ex] {\strut (-s) e^{-st}}_{dv}  \underbracket [0.15 ex] {\strut f(t)}_{u} dt 
+        &\mathrel{\#} \mathlarger{\int}_0^\infty \! v \: du = uv - \mathlarger{\int}_0^\infty \! u \: dv                                                                                                                                                                                           \\  
+[20pt]
+&=& \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] - e^{-s \cdot 0} \cdot f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt            &\mathrel{\#} \text{evaluate first term at the limits}                                                   \\
+[20pt]
+&=& 0  - e^{-s \cdot 0} \cdot f(0)  - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                              &\mathrel{\#} \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] = 0                                \\
+[20pt]
+&=& 0 - f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                                                              &\mathrel{\#} e^{-s \cdot 0} = e^0 = 1 \text{ and } 1 \cdot f(0) = f(0)                         \\
+[20pt]
+&=& -f(0) + s \mathlarger{\int}^\infty_0 \!  e^{-st}  f(t) dt                                                                                                                     &\mathrel{\#} \text{simplify, $s$ doesn't depend on $t$}                                          \\
+[20pt]
+&=& -f(0) + s F(s)                                                                                                                                                                              &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}       \\   
+[20pt]
+&=& -f(0) + \mathcal{L}\{f(t)\}                                                                                                                                                            &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                          
+\end{array}
+\end{equation*}
+
+\bigskip
+\bigskip
+\noindent
+So $\mathcal{L}\{f^\prime(t)\} = -f(0) + \mathcal{L}\{f(t)\}$.
 
 % \newpage
 \bigskip
