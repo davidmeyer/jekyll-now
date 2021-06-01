@@ -580,15 +580,21 @@ So $\mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}$.
 \begin{equation*}
 \begin{array}{lllll}
 F^\prime(s)
-&=& \dfrac{d}{ds} F(s)                                                                                        &\qquad \qquad \mathrel{\#} \text{switch to more a convenient notation}                                                         \\
+&=& \dfrac{d}{ds} F(s)                                                                                        &\qquad \qquad \mathrel{\#} \text{switch to more a convenient notation}                                                                   \\
 [20pt]
-&=& \dfrac{d}{ds} \mathlarger{\int} ^\infty_0 \! e^{-st}  f(t) dt                              &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                        \\  
+&=& \dfrac{d}{ds} \mathlarger{\int} ^\infty_0 \! e^{-st}  f(t) dt                              &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                  \\  
 [20pt]
-&=&  \mathlarger{\int}^\infty_0 \! (-t) e^{-st} f(t) dt                                             &\qquad \qquad \mathrel{\#} \mathlarger{\int}^\infty_0 e^{-st}\: ds = -t \cdot e^{-st} \text{ by the chain rule}      \\
+&=& \mathlarger{\int} ^\infty_0 \! \dfrac{\partial}{\partial s} e^{-st}  f(t) dt           &\qquad \qquad \mathrel{\#} \text{Leibniz integral rule}                                                                                               \\  
 [20pt]
-&=&  \mathlarger{\int}^\infty_0 \! e^{-st}  (-t) f(t) dt                                            &\qquad \qquad \mathrel{\#} \text{rearrange}                                                                                                      \\
+&=&  \mathlarger{\int}^\infty_0 \! (-t) e^{-st} f(t) dt                                             &\qquad \qquad \mathrel{\#} \mathlarger{\dfrac{\partial}{\partial s} e^{-st}} = -t e^{-st} \text{ by the chain rule}           \\
 [20pt]
-&=& \mathcal{L}\{-t f(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)} 
+&=&  \mathlarger{\int}^\infty_0 \! e^{-st}  (-t) f(t) dt                                            &\qquad \qquad \mathrel{\#} \text{rearrange}                                                                                                                \\
+[20pt]
+&=&  \mathlarger{\int}^\infty_0 \! e^{-st} g(t) dt                                                  &\qquad \qquad \mathrel{\#} \text{set $g(t) = -t f(t)$}                                                                                                   \\
+[20pt]
+&=& \mathcal{L}\{g(t)\}                                                                                       &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                  \\
+[20pt]
+&=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)
 \end{array}
 \end{equation*}
 
