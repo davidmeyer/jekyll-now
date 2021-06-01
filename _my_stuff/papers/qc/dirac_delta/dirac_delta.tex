@@ -565,13 +565,36 @@ Laplace Transform of $f^\prime(t)$ turns out to be
 [20pt]
 &=& -f(0) + s F(s)                                                                                                                                                                              &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}       \\   
 [20pt]
-&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                            &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                          
+&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                          &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                          
 \end{array}
 \end{equation*}
 
 \bigskip
 \noindent
 So $\mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}$.
+
+\bigskip
+\subsection{What is the Derivative of $F(s)$?}
+
+\bigskip
+\begin{equation*}
+\begin{array}{lllll}
+F^\prime(s)
+&=& \dfrac{d}{ds} F(s)                                                                                        &\qquad \qquad \mathrel{\#} \text{switch to more a convenient notation}                                                         \\
+[20pt]
+&=& \dfrac{d}{ds} \mathlarger{\int} ^\infty_0 \! e^{-st}  f(t) dt                              &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                        \\  
+[20pt]
+&=&  \mathlarger{\int}^\infty_0 \! (-t) e^{-st} f(t) dt                                             &\qquad \qquad \mathrel{\#} \mathlarger{\int}^\infty_0 e^{-st}\: ds = -t \cdot e^{-st} \text{ by the chain rule}      \\
+[20pt]
+&=&  \mathlarger{\int}^\infty_0 \! e^{-st}  (-t) f(t) dt                                            &\qquad \qquad \mathrel{\#} \text{rearrange}                                                                                                      \\
+[20pt]
+&=& \mathcal{L}\{-t f(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)} 
+\end{array}
+\end{equation*}
+
+\bigskip
+\noindent
+We can see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
 
 \bigskip
 \section*{Acknowledgements}
