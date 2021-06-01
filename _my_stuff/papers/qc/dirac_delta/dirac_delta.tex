@@ -590,17 +590,19 @@ F^\prime(s)
 [20pt]
 &=&  \mathlarger{\int}^\infty_0 \! e^{-st}  (-t) f(t) dt                                            &\qquad \qquad \mathrel{\#} \text{rearrange}                                                                                                                \\
 [20pt]
-&=&  \mathlarger{\int}^\infty_0 \! e^{-st} g(t) dt                                                  &\qquad \qquad \mathrel{\#} \text{set $g(t) = -t f(t)$}                                                                                                   \\
+&=&  \mathlarger{\int}^\infty_0 \! e^{-st} g(t) dt                                                  &\qquad \qquad \mathrel{\#} \text{set $g(t) = -t f(t)$}                                                                                                    \\
 [20pt]
-&=& \mathcal{L}\{g(t)\}                                                                                       &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                  \\
+&=& \mathcal{L}\{g(t)\}                                                                                       &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                   \\
 [20pt]
-&=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)
+&=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)                                                                                                                       \\
+[20pt]
+&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\} \text{ where $a$ doesn't depend on $t$}
 \end{array}
 \end{equation*}
 
 \bigskip
 \noindent
-We can see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
+So $F^\prime(s) = -\mathcal{L}\{tf(t)\}$ We can also see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
 
 \bigskip
 \section*{Acknowledgements}
