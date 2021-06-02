@@ -548,24 +548,24 @@ Laplace Transform of $f^\prime(t)$ turns out to be
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f^\prime(t)\}
-&=& \mathlarger{\int} ^\infty_0 \! e^{-st}  f^\prime(t) dt                                                                                                                       &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}        \\  
-[20pt]
-&=& \mathlarger{\int}^\infty_0 \! \underbracket [0.15 ex] {\strut e^{-st}}_{v}  \underbracket [0.15 ex] {\strut f^\prime(t) dt}_{du}      &\mathrel{\#} \text{use integration by parts}                                                               \\  
-[20pt]
+&=& \mathlarger{\int} ^\infty_0 \! e^{-st}  f^\prime(t) dt                                                                                                                      &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}       \\  
+[20pt]                                                                                                                                                                                                 % get some space
+&=& \mathlarger{\int}^\infty_0 \! \underbracket [0.15 ex] {\strut e^{-st}}_{v}  \underbracket [0.15 ex] {\strut f^\prime(t) dt}_{du}      &\mathrel{\#} \text{use integration by parts}                                                             \\  
+[20pt]                                                                                                                                                                                                 % get some space
 &=& \underbracket [0.15 ex] {\strut e^{-st}}_{v}  \underbracket [0.15 ex] {\strut f(t)}_{u} \bigg |^\infty_0   -   
         \mathlarger{\int}^\infty_0 \! \underbracket [0.15 ex] {\strut (-s) e^{-st}}_{dv}  \underbracket [0.15 ex] {\strut f(t)}_{u} dt 
-        &\mathrel{\#} \mathlarger{\int}_0^\infty \! v \: du = uv - \mathlarger{\int}_0^\infty \! u \: dv                                                                                                                                                                                           \\  
-[20pt]
-&=& \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] - e^{-s \cdot 0} \cdot f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt            &\mathrel{\#} \text{evaluate first term at the limits}                                                   \\
-[20pt]
-&=& 0  - e^{-s \cdot 0} \cdot f(0)  - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                              &\mathrel{\#} \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] = 0                                \\
-[20pt]
-&=& 0 - f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                                                              &\mathrel{\#} e^{-s \cdot 0} = e^0 = 1 \text{ and } 1 \cdot f(0) = f(0)                         \\
-[20pt]
-&=& -f(0) + s \mathlarger{\int}^\infty_0 \!  e^{-st}  f(t) dt                                                                                                                     &\mathrel{\#} \text{simplify, $s$ doesn't depend on $t$}                                          \\
-[20pt]
+        &\mathrel{\#} \mathlarger{\int}_0^\infty \! v \: du = uv - \mathlarger{\int}_0^\infty \! u \: dv                                                                                                                                                                                          \\  
+[20pt]                                                                                                                                                                                                 % get some space
+&=& \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] - e^{-s \cdot 0} \cdot f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt           &\mathrel{\#} \text{evaluate first term at the limits}                                                   \\
+[20pt]                                                                                                                                                                                                % get some space
+&=& 0  - e^{-s \cdot 0} \cdot f(0)  - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                            &\mathrel{\#} \lim\limits_{d \to \infty}\Big [e^{-sd} f(d) \Big ] = 0                                 \\
+[20pt]                                                                                                                                                                                                % get some space
+&=& 0 - f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                                                             &\mathrel{\#} e^{-s \cdot 0} = e^0 = 1 \text{ and } 1 \cdot f(0) = f(0)                          \\
+[20pt]                                                                                                                                                                                                % get some space
+&=& -f(0) + s \mathlarger{\int}^\infty_0 \!  e^{-st}  f(t) dt                                                                                                                    &\mathrel{\#} \text{simplify, $s$ doesn't depend on $t$}                                           \\
+[20pt]                                                                                                                                                                                                 % get some space
 &=& -f(0) + s F(s)                                                                                                                                                                              &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}       \\   
-[20pt]
+[20pt]                                                                                                                                                                                                 % get some space
 &=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                          &\mathrel{\#} \mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}                                           
 \end{array}
 \end{equation*}
