@@ -352,7 +352,7 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 \bigskip
 \begin{equation*}
 \begin{array}{lllll}
-\mathcal{L}\{af (t) + bg(t)\} 
+\mathcal{L}\{af(t) + bg(t)\} 
 &=& \int_0^\infty e^{-st} \big [af (t) + bg(t) \big] dt                                & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
 [6pt]                                                                                                     % get a bit of space
 &=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
@@ -362,6 +362,33 @@ $\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)
 &=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
 \end{equation*}
+
+
+\bigskip
+\noindent
+One useful rule we can pull from the above is the constant rule for Laplace Transforms:
+
+\bigskip
+\begin{definition} 
+{\bf Constant Rule: } If $a$ is a constant then $\mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\}$.
+\label{def:constant_rule}
+\end{definition}
+
+\bigskip
+\noindent
+It is pretty easy to see why the constant rule holds:
+
+\begin{equation*}
+\begin{array}{lllll}
+\mathcal{L}\{af(t)\} 
+&=& \int_0^\infty \! a e^{-st} f(t) dt                 & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
+[6pt]                                                                                 % get a bit of space
+&=& a \int_0^\infty \! e^{-st} f(t) dt                 & \mathrel{\#} \text{$a$ doesn't depend on $t$}                                                                              \\  
+[6pt]                                                                                 % get a bit of space
+&=& a \mathcal{L}\{f(t)\}                                                    & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
+\end{array}
+\end{equation*}
+
 
 \bigskip
 \subsection{So Does Every Function Have A Laplace Transform?}
@@ -392,8 +419,6 @@ Said another way, in order for $f(t)$ to be of exponential order $c$ we require 
 Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
 approach its limit first. This situation is depicted in Figure \ref{fig:exponential_order}.
 
-\smallskip
-\bigskip
 \begin{figure}[H]
 \center{\includegraphics[scale=0.40,frame] {images/exponential_order.png}}
 \caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
@@ -404,8 +429,7 @@ approach its limit first. This situation is depicted in Figure \ref{fig:exponent
 \noindent
 Next we need the following theorem:
 
-\newpage
-
+\bigskip
 \begin{thm} 
 {\bf Existence Theorem for Laplace Transforms:} 
 \normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
@@ -456,6 +480,9 @@ Ok, but why? Consider
 So if $s = c$ then $\frac{M}{\mathlarger{s-c}}$ is not defined and $\mathcal{L}\{f(t)\}$ does not exist. Similarly, if $s < c$ then $\lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ]$ 
 does not converge and $\mathcal{L}\{f(t)\}$ does not exist. All of this implies that functions that do not satisfy the conditions of the Existence Theorem do not have Laplace Transforms.
 
+
+
+\newpage
 \subsection{Inverse Laplace Transform}
 
 \begin{definition} {\bf Inverse Laplace Transform:}
@@ -467,6 +494,7 @@ then the Inverse Laplace Transform of $F(s)$ is $f(t)$, i.e. $\mathcal{L}^{-1}\{
 \noindent
 Here are a few examples:
 
+\bigskip
 \bigskip
 
 \begin{minipage}[c]{0.45\textwidth}
@@ -599,14 +627,18 @@ F^\prime(s)
 [20pt]
 &=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)                                                                                                                       \\
 [20pt]
-&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{by the linearity of $\mathcal{L}\{f(t)\}$, with $a = -1$ (Section \ref{subsec:linearity})}
-
+&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{by the constant rule with $a = -1$ (Definition \ref{def:constant_rule})}
 \end{array}
 \end{equation*}
 
 \bigskip
 \noindent
-So $F^\prime(s) = -\mathcal{L}\{tf(t)\}$. We can also pretty easily see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
+So $F^\prime(s) = -\mathcal{L}\{tf(t)\}$. 
+
+\bigskip
+\noindent
+We can also pretty easily see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
+
 
 \bigskip
 \section*{Acknowledgements}

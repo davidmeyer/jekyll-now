@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 JUN 2021 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2021 06:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1637,53 +1637,48 @@ Overfull \hbox (73.5066pt too wide) detected at line 364
 []
  []
 
-<images/exponential_order.png, id=113, 454.69875pt x 323.2075pt>
+<images/exponential_order.png, id=121, 454.69875pt x 323.2075pt>
 File: images/exponential_order.png Graphic file (type png)
 
 <use images/exponential_order.png>
-Package pdftex.def Info: images/exponential_order.png used on input line 398.
+Package pdftex.def Info: images/exponential_order.png used on input line 423.
 (pdftex.def)             Requested size: 181.87627pt x 129.2807pt.
- [5 <./images/exponential_order.png>]
-Overfull \hbox (78.99245pt too wide) detected at line 452
+ [5]
+Overfull \hbox (78.99245pt too wide) detected at line 476
 []
  []
 
-[6] [7]
-Overfull \hbox (41.18436pt too wide) detected at line 571
+[6 <./images/exponential_order.png>] [7] [8]
+Overfull \hbox (41.18436pt too wide) detected at line 599
 []
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 580.
+(hyperref)                removing `math shift' on input line 608.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 580.
+(hyperref)                removing `math shift' on input line 608.
 
-
-Overfull \hbox (7.73134pt too wide) detected at line 605
-[]
- []
-
-[8] [9] (./dirac_delta.bbl) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 618.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
+[9] [10] (./dirac_delta.bbl) [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
  (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 618.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 618.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 (rerunfilecheck)             Checksum: 2B7606ACDCE43FB17E7D0693841064DF;587.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 650.
  ) 
 Here is how much of TeX's memory you used:
- 37069 strings out of 493089
- 855361 string characters out of 6134842
- 1017317 words of memory out of 5000000
- 39922 multiletter control sequences out of 15000+600000
+ 37072 strings out of 493089
+ 855401 string characters out of 6134842
+ 1016316 words of memory out of 5000000
+ 39923 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,77p,10400b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,77p,10400b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1704,10 +1699,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (10 pages, 349183 bytes).
+Output written on dirac_delta.pdf (11 pages, 351126 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
