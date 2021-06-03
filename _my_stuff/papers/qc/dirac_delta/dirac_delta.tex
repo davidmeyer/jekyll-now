@@ -381,11 +381,11 @@ It is pretty easy to see why the constant rule holds:
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{af(t)\} 
-&=& \int_0^\infty \! a e^{-st} f(t) dt                 & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
-[6pt]                                                                                 % get a bit of space
+&=& \int_0^\infty \! e^{-st} a f(t) dt                 & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
+[6pt]                                                              % get a bit of space
 &=& a \int_0^\infty \! e^{-st} f(t) dt                 & \mathrel{\#} \text{$a$ doesn't depend on $t$}                                                                              \\  
-[6pt]                                                                                 % get a bit of space
-&=& a \mathcal{L}\{f(t)\}                                                    & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
+[6pt]                                                              % get a bit of space
+&=& a \mathcal{L}\{f(t)\}                               & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
 \end{equation*}
 
