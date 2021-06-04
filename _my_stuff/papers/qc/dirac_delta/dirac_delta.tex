@@ -429,6 +429,7 @@ approach its limit first. This situation is depicted in Figure \ref{fig:exponent
 \noindent
 Next we need the following theorem:
 
+\newpage
 \bigskip
 \begin{thm} 
 {\bf Existence Theorem for Laplace Transforms:} 
@@ -498,6 +499,7 @@ Here are a few examples:
 \bigskip
 
 \begin{minipage}[c]{0.45\textwidth}
+\centering
 \renewcommand{\arraystretch}{2}
 \begin{tabular} {| c | c  |}
 \hline
@@ -534,6 +536,7 @@ $\dfrac{dg}{dt}$ & $sG(s) - g(0)$                          \\
 %
 \begin{minipage}[c]{0.45\textwidth}
 \renewcommand{\arraystretch}{2}
+\centering
 \begin{tabular} {| c | c  |}
 \hline
 \multicolumn{2} {| c |}{\bf Inverse Laplace Transform}      \\
@@ -569,7 +572,7 @@ $sG(s) - g(0)$           & $\dfrac{dg}{dt}$                              \\
 
 \newpage
 
-\subsection{Ok, then what is the Laplace Transform of $f'(t)$?}
+\subsection{Ok, then what is the Laplace Transform of $f^\prime (t)$?}
 \label{sec:f_prime}
 Suppose $f(t)$ is continuous, piecewise smooth and of exponential order, and suppose $f^\prime(t)$ is the derivative of $f(t)$. Then the
 Laplace Transform of $f^\prime(t), \mathcal{L}\{f^\prime(t)\}$, turns out to be
@@ -610,20 +613,20 @@ when we want to solve differential equations.
 
 \bigskip
 \noindent
-Once we know how to compute $\mathcal{L}\{f^{\prime}(t)\}$ it is pretty easy to see what $\mathcal{L}\{f^{\prime\prime}(t)\}$ is:
+Once we know how to compute $\mathcal{L}\{f^{\prime}(t)\}$ it is pretty easy to see how to compute $\mathcal{L}\{f^{\prime\prime}(t)\}$:
 
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f^{\prime \prime}(t)\}           
-&=&  \mathcal{L}\{g^\prime (t)\}                                 &\qquad \mathrel{\#} \text{set } g(t) = f'(t)                                                                                                         \\   
+&=&  \mathcal{L}\{g^\prime (t)\}                                 &\qquad \qquad \mathrel{\#} \text{set } g(t) = f'(t)                                                                                                         \\   
 [8pt]
-&=& s \mathcal{L}\{g(t)\}  - g(0)                                 &\qquad \mathrel{\#} \mathcal{L}\{f(t)^\prime\} = s \mathcal{L}\{f(t)\}  -f(0) \text{ (Section \ref{sec:f_prime})}  \\   
+&=& s \mathcal{L}\{g(t)\}  - g(0)                                 &\qquad  \qquad \mathrel{\#} \mathcal{L}\{f(t)^\prime\} = s \mathcal{L}\{f(t)\}  -f(0) \text{ (Section \ref{sec:f_prime})}  \\   
 [8pt]
-&=& s \mathcal{L}\{f^\prime(t)\} - f^\prime(0)             &\qquad \mathrel{\#} g(t) = f^\prime(t)                                                                                                              \\
+&=& s \mathcal{L}\{f^\prime(t)\} - f^\prime(0)             &\qquad \qquad \mathrel{\#} g(t) = f^\prime(t)                                                                                                              \\
 [8pt] 
-&=& s \big [ sF(s) - f(0) \big ] - f^\prime(0)                 &\qquad \mathrel{\#} \mathcal{L}\{f(t)^\prime\} = s F(s) -f(0) \text{ (Section \ref{sec:f_prime})}                        \\  
+&=& s \big [ sF(s) - f(0) \big ] - f^\prime(0)                 &\qquad \qquad \mathrel{\#} \mathcal{L}\{f(t)^\prime\} = s F(s) -f(0) \text{ (Section \ref{sec:f_prime})}                        \\  
 [8pt]
-&=& s^2F(s) - sf(0) - f^\prime(0)                                &\qquad \mathrel{\#} \text{multiply through by $s$}
+&=& s^2F(s) - sf(0) - f^\prime(0)                                &\qquad \qquad \mathrel{\#} \text{multiply through by $s$}
 \end{array}
 \end{equation*}
 
@@ -631,6 +634,7 @@ Once we know how to compute $\mathcal{L}\{f^{\prime}(t)\}$ it is pretty easy to 
 \noindent
 The general form of the Laplace Transform of the $n^{th}$ derivative of some function $f(t)$ is 
 
+\bigskip
 \begin{equation}
 \mathcal{L}\{f^{(n)}(t)\} =  s^{n}F(s)- \sum_{k=1}^n s^{n-k} f^{(k-1)}(0)
 \label{eqn:nth-derivative}
@@ -638,25 +642,26 @@ The general form of the Laplace Transform of the $n^{th}$ derivative of some fun
 
 \bigskip  
 \noindent
-Here $f$ is assumed to be n-times differentiable and that it's $n^{th}$ derivative, denoted $f^{(n)}$, is of exponential order. Note also that $f^{(0)}$, the
-$0^{\text{th}}$ derivative of $f$,  is just $f$. The result follows by mathematical induction.
+Here $f$ is assumed to be n-times differentiable and that it's $n^{th}$ derivative, denoted $f^{(n)}$, is piecewise continuous and of exponential order. The 
+result then follows by mathematical induction. Note that $f^{(0)}$, the $0^{\text{th}}$ derivative of $f$, is just $f$.
 
 \bigskip
 \noindent
-So for example, for the second derivative ($n = 2$) we get
+So for example, for the Laplace Transform of the second derivative ($n = 2$) of some function $f$ Equation \ref{eqn:nth-derivative} tells us
 
 \begin{equation*}
 \begin{array}{lllll}
-\mathcal{L}\{f^{(2)}(t)\}            
-&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{n-k} f^{(k-1)}(0)                                            &\qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}   \\
+\mathcal{L}\{f^{(2)}(t)\}  
+&=& \mathcal{L}\{f^{\prime \prime}(t)\}                                                                   &\qquad \qquad \mathrel{\#} \text{alternate notation}                                                \\
+&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{n-k} f^{(k-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}    \\
 [10pt]
-&=&  s^{2}F(s)- s^{2-1}f^{(1-1)}(0)  - s^{2-2}f^{(2-1)}(0)                                            &\qquad \mathrel{\#} \text{expand terms}                                                     \\
+&=&  s^{2}F(s)- s^{2-1}f^{(1-1)}(0)  - s^{2-2}f^{(2-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{expand terms}                                                      \\
 [10pt]
-&=&  s^{2}F(s)- s^{1}f^{(0)}(0)  - s^0f^{(1)}(0)                                                           &\qquad \mathrel{\#} \text{arithmetic}                                                            \\
+&=&  s^{2}F(s)- s^{1}f^{(0)}(0)  - s^0f^{(1)}(0)                                                        &\qquad \qquad \mathrel{\#} \text{arithmetic}                                                             \\
 [10pt]
-&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                               &\qquad \mathrel{\#} f^{(0)} = f                                                                      \\
+&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                            &\qquad \qquad \mathrel{\#} \text{recall that $f^{(0)} = f$}                                          \\
 [10pt]
-&\Rightarrow& \mathcal{L}\{f^{\prime \prime}(t)\} = s^{2}F(s)- sf(0)  - f^{\prime}(0)  &\qquad \mathrel{\#} \text{alternate notation}
+&=& s^{2}F(s)- sf(0)  - f^{\prime}(0)                                                                       &\qquad \qquad \mathrel{\#} \text{alternate notation}
 \end{array}
 \end{equation*}
 
