@@ -292,12 +292,8 @@ We start by defining the integral transform of some function $f(t)$.
 
 \bigskip
 \begin{definition} 
-{\bf Integral Transform}
+{\bf Integral Transform:} If a function $f(t)$ is defined on $[0,\infty)$ then we can define an integral transform to be the improper integral
 \end{definition}
-
-\noindent
-If a function $f(t)$ is defined on $[0,\infty)$ then we can define an integral transform to be the improper integral
-
 
 \begin{equation*}
 F(s) = \int_0^\infty K(s,t) f(t) dt
@@ -310,16 +306,11 @@ of the transform. When $K(s,t) = e^{-st}$ the transform is called the {\bf Lapla
 
 \bigskip
 \begin{definition} 
-{\bf Laplace Transform}
+{\bf Laplace Transform:} The Laplace Transform of a function $f(t)$ is defined to be
 \label{def:laplace_transform}
 \end{definition}
 
-\bigskip
-\noindent
-The Laplace Transform of a function $f(t)$ is defined to be
 
-
-\bigskip
 \begin{equation}
 \mathcal{L}\{f(t)\} = F(s) = \int_0^\infty e^{-st} f(t) dt
 \label{eqn:laplace_transform}
@@ -333,7 +324,7 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{\delta_a(t)\} 
-&=& \int_0^\infty  e^{-st} \delta_a(t) dt    &\quad  \mathrel{\#} \text{definition (Equation \ref{eqn:laplace_transform} with $f(t) = \delta_a(t)$)} \\  
+&=& \int_0^\infty  e^{-st} \delta_a(t) dt    &\quad  \mathrel{\#} \text{Equation \ref{eqn:laplace_transform} with $f(t) = \delta_a(t)$}                    \\  
 [4pt]                                                        % get a bit of space
 &=& \int_0^\infty g(t) \delta_a(t) dt         &\quad  \mathrel{\#} \text{set $g(t) = e^{-st}$}                                                                                      \\
 [4pt]                                                        % get a bit of space
@@ -370,7 +361,7 @@ One useful rule we can pull from the above is the Constant Rule for Laplace Tran
 
 \bigskip
 \begin{definition} 
-{\bf Constant Rule: } If $a$ is a constant then $\mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\}$.
+{\bf Constant Rule:} If $a$ is a constant then $\mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\}$.
 \label{def:constant_rule}
 \end{definition}
 
@@ -398,11 +389,9 @@ be of "exponential order".
 
 \bigskip
 \begin{definition} 
-{\bf Exponential Order}
+{\bf Exponential Order:} A function $f$ is said to be of exponential order $c$ if there exist constants $c, M, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
 \label{def:exponential_order}
 \end{definition}
-\noindent
-A function $f$ is said to be of exponential order $c$ if there exist constants $c, M, \text{ and } T > 0$ such that $|f(t)| \leq Me^{ct}$ for all $t > T$.
 
 \bigskip
 \noindent
@@ -432,8 +421,7 @@ Next we need the following theorem:
 \newpage
 \bigskip
 \begin{thm} 
-{\bf Existence Theorem for Laplace Transforms:} 
-\normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
+{\bf Existence Theorem for Laplace Transforms:} \normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
 $F (s) = \mathcal{L}\{f (t)\} \text{ is defined for all $s > c$}.$
 \end{thm}
 
