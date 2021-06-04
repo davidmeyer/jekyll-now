@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 JUN 2021 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 JUN 2021 06:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1672,10 +1672,10 @@ Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
  ) 
 Here is how much of TeX's memory you used:
- 37072 strings out of 493089
- 855401 string characters out of 6134842
- 1016317 words of memory out of 5000000
- 39923 multiletter control sequences out of 15000+600000
+ 37073 strings out of 493089
+ 855418 string characters out of 6134842
+ 1017316 words of memory out of 5000000
+ 39924 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,10400b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1699,7 +1699,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (11 pages, 351364 bytes).
+Output written on dirac_delta.pdf (11 pages, 352163 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  196 compressed objects within 2 object streams

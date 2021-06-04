@@ -10,7 +10,8 @@
 -->
 <h2>Notes on various mathematical topics</h2>
 
-<li><a href="./dirac_delta.pdf">A few notes on the Dirac delta function</a>
+<li><a href="./dirac_delta.pdf">A few notes on the Dirac Delta Function and
+the Laplace Transform</a>
 <br>
 <li><a href="./rings.pdf">A bit on a structural correspondence between rings and groups</a>
 <br>
@@ -55,7 +56,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 05.10.2021 by dmm@1-4-5.net
+<i>Last Update: 06.04.2021 by dmm@1-4-5.net
 
 
 
