@@ -173,6 +173,7 @@ $\delta_a(t)$ also has the constraint that
 \noindent
 and so is also a probability density. $\delta_a(t)$  is shown in Figure \ref{fig:delta_limit}.
 
+\bigskip
 \begin{figure}[H]
   \centering
   \begin{tikzpicture}[scale=2.0]
@@ -643,7 +644,7 @@ So for example, for the Laplace Transform of the second derivative ($n = 2$) of 
 \begin{array}{lllll}
 \mathcal{L}\{f^{(2)}(t)\}  
 &=& \mathcal{L}\{f^{\prime \prime}(t)\}                                                                   &\qquad \qquad \mathrel{\#} \text{alternate notation}                                                \\
-&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{n-k} f^{(k-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}    \\
+&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{2-k} f^{(k-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}    \\
 [10pt]
 &=&  s^{2}F(s)- s^{2-1}f^{(1-1)}(0)  - s^{2-2}f^{(2-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{expand terms}                                                      \\
 [10pt]
