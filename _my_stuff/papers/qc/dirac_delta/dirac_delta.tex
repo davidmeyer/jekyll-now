@@ -587,14 +587,16 @@ Laplace Transform of $f^\prime(t), \mathcal{L}\{f^\prime(t)\}$, turns out to be
 [20pt]                                                                                                                                                                                                 % get some space
 &=& -f(0) + s F(s)                                                                                                                                                                              &\mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}       \\   
 [20pt]                                                                                                                                                                                                 % get some space
-&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                          &\mathrel{\#} \mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}                                           
+&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                          &\mathrel{\#} \mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}                       \\   
+[20pt]                                                                                                                                                                                                 % get some space
+&=& s \mathcal{L}\{f(t)\} - f(0)                                                                                                                                                            &\mathrel{\#} \text{rearrange}                                                                        
 \end{array}
 \end{equation*}
 
 \bigskip
 \noindent
 One of the interesting things to note here is that by using the Laplace Transform we've taken a statement about the derivative of $f$, namely $\mathcal{L}\{f^\prime(t)\}$,
-and converted it into a statement about $f$ itself: $ -f(0) + s \mathcal{L}\{f(t)\} $. That is, we've converted a differential equation into an algebraic one. This will come in handy later 
+and converted it into a statement about $f$ itself: $s \mathcal{L}\{f(t)\} - f(0)$. That is, we've converted a differential equation into an algebraic one. This will come in handy later 
 when we want to solve differential equations.
 
 \newpage
