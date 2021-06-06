@@ -338,36 +338,6 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 \subsection{The Linearity Property Of The Laplace Transform}
 \label{subsec:linearity}
 
-\bigskip
-\noindent
-One useful rule we can use in analyzing the linearity of Laplace Transforms is the Constant Rule:
-
-\bigskip
-\begin{definition} 
-{\bf Constant Rule:} If $a$ is a constant then $\mathcal{L}\{a f(t)\} = a \mathcal{L}\{f(t)\}$.
-\label{def:constant_rule}
-\end{definition}
-
-\bigskip
-\noindent
-The Constant Rule is also called "homogeneity of degree 1" for vector spaces (aka scalar multiplication) \cite{wiki:linear_map}. It is pretty easy to see why the 
-Constant Rule holds:
-
-\begin{equation*}
-\begin{array}{lllll}
-\mathcal{L}\{af(t)\} 
-&=& \int_0^\infty \! e^{-st} a f(t) dt                 &\qquad \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
-[10pt]                                                            % get a bit of space
-&=& a \int_0^\infty \! e^{-st} f(t) dt                 &\qquad \mathrel{\#} \text{$a$ doesn't depend on $t$}                                                                              \\  
-[10pt]                                                            % get a bit of space
-&=& a \mathcal{L}\{f(t)\}                               &\qquad \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
-\end{array}
-\end{equation*}
-
-
-\bigskip
-\noindent
-Now that we have the Constant Rule we can define the Linearity Property for $\mathcal{L}$.
 
 \bigskip
 \begin{definition} 
@@ -377,8 +347,13 @@ Now that we have the Constant Rule we can define the Linearity Property for $\ma
 
 \bigskip
 \noindent
-So  $\mathcal{L}$ is a linear operator \cite{wiki:linear_map}. But why? Consider
+Interestingly, $\mathcal{L}$ is what is called a linear operator in vector space parlance \cite{wiki:linear_map}. 
 
+\bigskip
+\noindent
+All good, but why does $\mathcal{L}$ have this property? Here's one way to think about it:
+
+\smallskip
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{af(t) + bg(t)\} 
@@ -386,7 +361,7 @@ So  $\mathcal{L}$ is a linear operator \cite{wiki:linear_map}. But why? Consider
 [10pt]                                                                                                   % get a bit of space
 &=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                                                 \\
 [10pt]                                                                                                   % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{Constant Rule (Definition \ref{def:constant_rule})}                                                                       \\
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{neither $a$ or $b$ depend on $t$}               \\
 [10pt]                                                                                                   % get a bit of space
 &=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}
 \end{array}
@@ -424,17 +399,16 @@ approach its limit first. This situation is depicted in Figure \ref{fig:exponent
 \bigskip
 \bigskip
 \begin{figure}[H]
-\center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
-\caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
+\center{\includegraphics[scale=0.39,frame] {images/exponential_order.png}}
+\caption{$f$ is of exponential order with constants $c, M$ and $T$}
 \label{fig:exponential_order}
 \end{figure}
 
 \bigskip
 \bigskip
 \noindent
-Now we can define the theorem which answers the question:
+Now we can answer the question of when $f$ has a Laplace Transfrom:
 
-\newpage
 \bigskip
 \begin{thm} 
 {\bf Existence Theorem for Laplace Transforms:} \normalfont If $f$ is s piecewise continuous on the interval $[0,\infty)$ and is of exponential order $c$ then 
