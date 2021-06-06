@@ -598,11 +598,11 @@ Laplace Transform of $f^\prime(t), \mathcal{L}\{f^\prime(t)\}$, turns out to be
 [20pt]                                                                                                                                                                                              % get some space
 &=& 0 - f(0) - \mathlarger{\int}^\infty_0 \!  (-s) e^{-st}  f(t) dt                                                                                                           &\mathrel{\#} e^{-s \cdot 0} = e^0 = 1 \text{ and } 1 \cdot f(0) = f(0)                                  \\
 [20pt]                                                                                                                                                                                              % get some space
-&=& -f(0) + s \mathlarger{\int}^\infty_0 \!  e^{-st}  f(t) dt                                                                                                                  &\mathrel{\#} \text{simplify, $s$ doesn't depend on $t$}                                                   \\
+&=& -f(0) + s \mathlarger{\int}^\infty_0 \!  e^{-st}  f(t) dt                                                                                                                  &\mathrel{\#} \text{$s$ doesn't depend on $t$ and simplify}                                             \\
 [20pt]                                                                                                                                                                                               % get some space
 &=& -f(0) + s F(s)                                                                                                                                                                           &\mathrel{\#} \text{definition Laplace Transform (Definition \ref{def:laplace_transform})} \\   
 [20pt]                                                                                                                                                                                              % get some space
-&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                       &\mathrel{\#} \mathcal{L}\{f^\prime(t)\} = -f(0) + s \mathcal{L}\{f(t)\}                                  \\   
+&=& -f(0) + s \mathcal{L}\{f(t)\}                                                                                                                                                       &\mathrel{\#} \mathcal{L}\{f(t)\} = F(s) \text{ (Definition \ref{def:laplace_transform})}        \\   
 [20pt]                                                                                                                                                                                              % get some space
 &=& s \mathcal{L}\{f(t)\} - f(0)                                                                                                                                                         &\mathrel{\#} \text{rearrange}                                                                        
 \end{array}
@@ -667,7 +667,7 @@ So for example, for the Laplace Transform of the second derivative ($n = 2$) of 
 [10pt]
 &=&  s^{2}F(s)- s^{1}f^{(0)}(0)  - s^0f^{(1)}(0)                                                        &\qquad \qquad \mathrel{\#} \text{arithmetic}                                                                        \\
 [10pt]
-&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                            &\qquad \qquad \mathrel{\#} f^{(0)} = f                                                                                  \\
+&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                            &\qquad \qquad \mathrel{\#} \text{$s^1 = s$, $f^{(0)} = f$ and $s^0 = 1$}                                                                                  \\
 [10pt]
 &=& s^{2}F(s)- sf(0)  - f^{\prime}(0)                                                                       &\qquad \qquad \mathrel{\#} \text{alternate notation (Section \ref{eqn:f_double_prime})}
 \end{array}
