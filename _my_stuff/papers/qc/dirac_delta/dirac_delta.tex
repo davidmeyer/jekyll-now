@@ -601,6 +601,7 @@ when we want to solve differential equations.
 
 \newpage
 \subsection{What about $\mathcal{L}\{f^{\prime\prime}(t)\}$?}
+\label{eqn:f_double_prime}
 
 \bigskip
 \noindent
@@ -617,12 +618,12 @@ Once we know how to compute $\mathcal{L}\{f^{\prime}(t)\}$ it is pretty easy to 
 [8pt] 
 &=& s \big [ sF(s) - f(0) \big ] - f^\prime(0)                 &\qquad \qquad \mathrel{\#} \mathcal{L}\{f(t)^\prime\} = s F(s) -f(0) \text{ (Section \ref{sec:f_prime})}                             \\  
 [8pt]
-&=& s^2F(s) - sf(0) - f^\prime(0)                                &\qquad \qquad \mathrel{\#} \text{multiply out}
+&=& s^2F(s) - sf(0) - f^\prime(0)                                &\qquad \qquad \mathrel{\#} \text{simplify}
 \end{array}
 \end{equation*}
 
 \smallskip
-\subsection{What is the General Form of $\mathcal{L}\{f^{(n)}(t)\}$?}
+\subsection{So what is the General Form of $\mathcal{L}\{f^{(n)}(t)\}$?}
 \bigskip
 \noindent
 The general form of the Laplace Transform of the $n^{th}$ derivative of some function $f(t)$ is 
@@ -645,16 +646,15 @@ So for example, for the Laplace Transform of the second derivative ($n = 2$) of 
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f^{(2)}(t)\}  
-&=& \mathcal{L}\{f^{\prime \prime}(t)\}                                                                   &\qquad \qquad \mathrel{\#} \text{alternate notation}                                                \\
-&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{2-k} f^{(k-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}    \\
+&=&  s^{2}F(s)- \sum\limits_{k=1}^2 s^{2-k} f^{(k-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{Equation \ref{eqn:nth-derivative} with $n = 2$}               \\
 [10pt]
-&=&  s^{2}F(s)- s^{2-1}f^{(1-1)}(0)  - s^{2-2}f^{(2-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{expand terms}                                                      \\
+&=&  s^{2}F(s)- s^{2-1}f^{(1-1)}(0)  - s^{2-2}f^{(2-1)}(0)                                         &\qquad \qquad \mathrel{\#} \text{expand terms}                                                                  \\
 [10pt]
-&=&  s^{2}F(s)- s^{1}f^{(0)}(0)  - s^0f^{(1)}(0)                                                        &\qquad \qquad \mathrel{\#} \text{arithmetic}                                                             \\
+&=&  s^{2}F(s)- s^{1}f^{(0)}(0)  - s^0f^{(1)}(0)                                                        &\qquad \qquad \mathrel{\#} \text{arithmetic}                                                                        \\
 [10pt]
-&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                            &\qquad \qquad \mathrel{\#} \text{recall that $f^{(0)} = f$}                                          \\
+&=&  s^{2}F(s)- sf(0)  - f^{(1)}(0)                                                                            &\qquad \qquad \mathrel{\#} f^{(0)} = f                                                                                  \\
 [10pt]
-&=& s^{2}F(s)- sf(0)  - f^{\prime}(0)                                                                       &\qquad \qquad \mathrel{\#} \text{alternate notation}
+&=& s^{2}F(s)- sf(0)  - f^{\prime}(0)                                                                       &\qquad \qquad \mathrel{\#} \text{alternate notation (Section \ref{eqn:f_double_prime})}
 \end{array}
 \end{equation*}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2021 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2021 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1693,15 +1693,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 625.
+(hyperref)                removing `math shift' on input line 626.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 625.
+(hyperref)                removing `superscript' on input line 626.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 625.
+(hyperref)                removing `math shift' on input line 626.
+
+
+Overfull \hbox (23.85182pt too wide) detected at line 659
+[]
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1718,14 +1723,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 700.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 700.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 700.
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
-(rerunfilecheck)             Checksum: 2A27D7C5667A5658BE858C82C9AE5234;861.
+(rerunfilecheck)             Checksum: 17F5BAAFD98DCCFC2D4E728294579504;864.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 700.
  ) 
 Here is how much of TeX's memory you used:
- 37083 strings out of 493089
- 855560 string characters out of 6134842
+ 37084 strings out of 493089
+ 855580 string characters out of 6134842
  1016317 words of memory out of 5000000
- 39929 multiletter control sequences out of 15000+600000
+ 39930 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,10400b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1750,10 +1755,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (12 pages, 365554 bytes).
+Output written on dirac_delta.pdf (12 pages, 365597 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
+ 318 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
  44 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
