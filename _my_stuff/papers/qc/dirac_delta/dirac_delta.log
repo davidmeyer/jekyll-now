@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2021 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 JUN 2021 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1633,98 +1633,98 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 200.
 
 [2] [3] [4]
-Overfull \hbox (73.5066pt too wide) detected at line 356
+Overfull \hbox (24.1176pt too wide) detected at line 389
 []
  []
 
-<images/exponential_order.png, id=133, 454.69875pt x 323.2075pt>
+<images/exponential_order.png, id=137, 454.69875pt x 323.2075pt>
 File: images/exponential_order.png Graphic file (type png)
 
 <use images/exponential_order.png>
-Package pdftex.def Info: images/exponential_order.png used on input line 413.
+Package pdftex.def Info: images/exponential_order.png used on input line 423.
 (pdftex.def)             Requested size: 227.34882pt x 161.60335pt.
  [5] [6 <./images/exponential_order.png>]
-Overfull \hbox (78.99245pt too wide) detected at line 466
+Overfull \hbox (78.99245pt too wide) detected at line 477
 []
  []
 
 [7] [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 564.
+(hyperref)                removing `superscript' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 564.
+(hyperref)                removing `\prime' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 575.
 
 
-Overfull \hbox (41.18436pt too wide) detected at line 594
+Overfull \hbox (41.18436pt too wide) detected at line 605
 []
  []
 
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 603.
+(hyperref)                removing `math shift' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 603.
+(hyperref)                removing `superscript' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 603.
+(hyperref)                removing `\prime' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 603.
+(hyperref)                removing `\prime' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 603.
+(hyperref)                removing `math shift' on input line 614.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 626.
+(hyperref)                removing `math shift' on input line 637.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 626.
+(hyperref)                removing `superscript' on input line 637.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 626.
+(hyperref)                removing `math shift' on input line 637.
 
 
-Overfull \hbox (23.85182pt too wide) detected at line 659
+Overfull \hbox (23.85182pt too wide) detected at line 670
 []
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 662.
+(hyperref)                removing `math shift' on input line 673.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 662.
+(hyperref)                removing `math shift' on input line 673.
 
 [10] [11] (./dirac_delta.bbl) [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 700.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 700.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 711.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 711.
  (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 700.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 700.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 711.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 711.
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 (rerunfilecheck)             Checksum: 17F5BAAFD98DCCFC2D4E728294579504;864.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 700.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
  ) 
 Here is how much of TeX's memory you used:
  37084 strings out of 493089
@@ -1733,7 +1733,7 @@ Here is how much of TeX's memory you used:
  39930 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,77p,10400b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,77p,10400b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1755,10 +1755,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (12 pages, 365529 bytes).
+Output written on dirac_delta.pdf (12 pages, 365591 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
+ 322 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
  44 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

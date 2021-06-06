@@ -337,28 +337,10 @@ and is useful when solving ordinary differential equations (ODEs). Interestingly
 
 \subsection{The Linearity Property Of The Laplace Transform}
 \label{subsec:linearity}
-\bigskip
-\noindent
-$\mathcal{L}$ is a linear operator, in other words: $\mathcal{L}\{af (t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}$. Why? Consider:
-
-\bigskip
-\begin{equation*}
-\begin{array}{lllll}
-\mathcal{L}\{af(t) + bg(t)\} 
-&=& \int_0^\infty e^{-st} \big [af (t) + bg(t) \big] dt                                & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
-[6pt]                                                                                                     % get a bit of space
-&=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                                     \\
-[6pt]                                                                                                     % get a bit of space
-&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{constant multiple rule:} \int \! k f(x) dx = k \int \! f(x) dx                                    \\
-[6pt]                                                                                                     % get a bit of space
-&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
-\end{array}
-\end{equation*}
-
 
 \bigskip
 \noindent
-One useful rule we can pull from the above is the Constant Rule for Laplace Transforms:
+One useful rule we can use in analyzing the linearity of Laplace Transforms is the Constant Rule:
 
 \bigskip
 \begin{definition} 
@@ -374,12 +356,38 @@ It is pretty easy to see why the Constant Rule holds:
 \begin{array}{lllll}
 \mathcal{L}\{af(t)\} 
 &=& \int_0^\infty \! e^{-st} a f(t) dt                 & \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}   \\  
-[6pt]                                                              % get a bit of space
+[10pt]                                                            % get a bit of space
 &=& a \int_0^\infty \! e^{-st} f(t) dt                 & \mathrel{\#} \text{$a$ doesn't depend on $t$}                                                                              \\  
-[6pt]                                                              % get a bit of space
+[10pt]                                                            % get a bit of space
 &=& a \mathcal{L}\{f(t)\}                               & \mathrel{\#} \text{definition of the Laplace Transform  (Definition \ref{def:laplace_transform})}
 \end{array}
 \end{equation*}
+
+
+\bigskip
+\noindent
+The Linearity Property is saying that $\mathcal{L}$ is a linear operator or in other words: 
+
+\begin{equation*}
+\mathcal{L}\{af (t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}
+\end{equation*}
+
+\noindent
+Why? Consider:
+
+\begin{equation*}
+\begin{array}{lllll}
+\mathcal{L}\{af(t) + bg(t)\} 
+&=& \int_0^\infty e^{-st} \big [af (t) + bg(t) \big] dt                                & \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}        \\  
+[10pt]                                                                                                     % get a bit of space
+&=& \int_0^\infty e^{-st} af (t)  dt + \int_0^\infty e^{-st}  bg(t)  dt          & \mathrel{\#} \text{by the linearity of improper integrals \cite{lewis2014}}                 \\
+[10pt]                                                                                                     % get a bit of space
+&=& a \int_0^\infty e^{-st}  f(t) dt + b \int_0^\infty e^{-st}  g(t) dt          & \mathrel{\#} \text{Definition \ref{def:constant_rule} (Constant Rule)}                \\
+[10pt]                                                                                                     % get a bit of space
+&=& a \mathcal{L}\{f(t)\}  + b \mathcal{L}\{g(t)\}                                   & \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}
+\end{array}
+\end{equation*}
+
 
 
 \smallskip
@@ -409,12 +417,15 @@ Said another way, in order for $f(t)$ to be of exponential order $c$ we require 
 Basically this is saying that in order for $f(t)$ to have a Laplace Transform then in a race between $|f(t)|$ and $e^{ct}$ as $t \to \infty$ $e^{ct}$ must
 approach its limit first. This situation is depicted in Figure \ref{fig:exponential_order}.
 
+\bigskip
+\bigskip
 \begin{figure}[H]
 \center{\includegraphics[scale=0.50,frame] {images/exponential_order.png}}
 \caption{$f(t)$ is of exponential order with constants $c, M$ and $T$}
 \label{fig:exponential_order}
 \end{figure}
 
+\bigskip
 \bigskip
 \noindent
 Next we need the following theorem:
@@ -433,33 +444,33 @@ Ok, but why? Consider
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f(t)\}
-&=& F(s)                                                                            &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
+&=& F(s)                                                                            &\quad  \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                                                         \\  
 [12pt]                                                                                 % get a bit of space
-&=&   \mathlarger{\int}_0^\infty \! e^{-st} f(t) dt                  &\quad  \mathrel{\#} \text{definition of the Laplace Transform (Definition \ref{def:laplace_transform})}                                                              \\  
+&=&   \mathlarger{\int}_0^\infty \! e^{-st} f(t) dt                  &\quad  \mathrel{\#} \text{Definition \ref{def:laplace_transform} (Laplace Transform)}                                                                         \\  
 [12pt]                                                                                 % get a bit of space
-&\leq& \mathlarger{\int}_0^\infty \! e^{-st}  Me^{ct}dt         &\quad  \mathrel{\#} \text{$f$ is of exponential order $c$ (Definition \ref{def:exponential_order})}                                                                     \\  
+&\leq& \mathlarger{\int}_0^\infty \! e^{-st}  Me^{ct}dt         &\quad  \mathrel{\#} \text{Definition \ref{def:exponential_order} ($f$ is of exponential order $c$)}                                                      \\  
 [12pt]                                                                                 % get a bit of space               
-&=& M \mathlarger{\int}_0^\infty \! e^{-st} e^{ct} dt           &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                                        \\   
+&=& M \mathlarger{\int}_0^\infty \! e^{-st} e^{ct} dt           &\quad  \mathrel{\#} \text{$M$ doesn't depend on $t$}                                                                                                                          \\   
 [12pt]                                                                                % get a bit of space
-&=& M \mathlarger{\int}_0^\infty \! e^{-st + ct}  dt             &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                                         \\      
+&=& M \mathlarger{\int}_0^\infty \! e^{-st + ct}  dt             &\quad  \mathrel{\#} \text{$x^n \cdot x^m = x^{n+m}$}                                                                                                                           \\      
 [12pt]                                                                                 % get a bit of space
-&=& M \mathlarger{\int}_0^\infty\! e^{(c-s)t}  dt                 &\quad  \mathrel{\#}  e^{-st + ct} = e^{ct -st} = e^{(c-s)t}                                                                                                                                      \\      
+&=& M \mathlarger{\int}_0^\infty\! e^{(c-s)t}  dt                 &\quad  \mathrel{\#}  e^{-st + ct} = e^{ct -st} = e^{(c-s)t}                                                                                                                        \\      
 [12pt]                                                                                 % get a bit of space
-&=&  M \mathlarger{\int}_0^\infty \! e^u dt                         &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                                     \\     
+&=&  M \mathlarger{\int}_0^\infty \! e^u dt                         &\quad  \mathrel{\#} \text{use a $u$ substitution with $u = (c-s)t$}                                                                                                       \\     
 [12pt]                                                                                 % get a bit of space
-&=&  M \mathlarger{\int}_0^\infty \! e^u \frac{du}{c-s}       &\quad  \mathrel{\#} u = (c-s)t  \: \Rightarrow \: du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}                                                                       \\     
+&=&  M \mathlarger{\int}_0^\infty \! e^u \frac{du}{c-s}       &\quad  \mathrel{\#} u = (c-s)t  \: \Rightarrow \: du = (c-s) dt \: \Rightarrow \: dt = \dfrac{du}{c-s}                                                         \\     
 [12pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ] \mathlarger{\int}_0^\infty \! e^u du                                    &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depends on $t$}                                                                            \\     
+&=& \Big [ \frac{M}{c-s} \Big ] \mathlarger{\int}_0^\infty \! e^u du                                    &\quad  \mathrel{\#} \text{neither $c$ nor $s$ depends on $t$}                                                              \\     
 [12pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ] e^u \Big |_0^\infty              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C \text{ and the Fundamental Theorem of Calculus}                                                                \\     
+&=& \Big [ \frac{M}{c-s} \Big ] e^u \Big |_0^\infty              &\quad  \mathrel{\#} \int_0^\infty e^u du = e^u +C \text{ and the Fundamental Theorem of Calculus}                                                  \\     
 [12pt]                                                                                % get a bit of space
-&=& \Big [ \frac{M}{c-s} \Big ]  e^{(c-s)t} \Big |_0^\infty     &\quad  \mathrel{\#} u = (c-s)t                                                                                                                                                                              \\
+&=& \Big [ \frac{M}{c-s} \Big ]  e^{(c-s)t} \Big |_0^\infty     &\quad  \mathrel{\#} u = (c-s)t                                                                                                                                                                \\
 [12pt]                                                                                % get a bit of space     
-&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}e^{(c-s)0}  &\quad \mathrel{\#} \text{evaluate at the limits}                                                                                                   \\
+&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}e^{(c-s)0}  &\quad \mathrel{\#} \text{evaluate at the limits}                                                                                     \\
 [12pt]                                                                                % get a bit of space
-&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = e^0 = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                                   \\
+&=& \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] - \frac{M}{c - s}                 &\quad  \mathrel{\#} e^{(c-s)0} = e^0 = 1 \text{ and } \frac{M}{c-s} \cdot 1 = \frac{M}{c-s}                     \\
 [12pt]                                                                                % get a bit of space
-&=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} s > c \: \Rightarrow \: c -s < 0 \: \Rightarrow  \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] = 0                        \\    
+&=& 0 - \frac{M} {\mathlarger{c-s}}                                   &\quad  \mathrel{\#} s > c \: \Rightarrow \: c -s < 0 \: \Rightarrow  \lim\limits_{d \to \infty}\Big [\frac{M}{c-s} e^{(c-s)d} \Big ] = 0          \\    
 [12pt]                                                                                % get a bit of space
 &=& \frac{M}{\mathlarger{s-c}}                                         &\quad  \mathrel{\#} \text{simplify} 
 \end{array}
@@ -681,7 +692,7 @@ F^\prime(s)
 [20pt]
 &=& \mathcal{L}\{-tf(t)\}                                                                                     &\qquad \qquad \mathrel{\#} g(t) = -t f(t)                                                                                                                       \\
 [20pt]
-&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{by the Constant Rule with $a = -1$ (Definition \ref{def:constant_rule})}
+&=& -\mathcal{L}\{tf(t)\}                                                                                    &\qquad \qquad \mathrel{\#} \text{Definition \ref{def:constant_rule} (Constant Rule with $a = -1$)}
 \end{array}
 \end{equation*}
 
