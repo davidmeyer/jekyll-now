@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JUN 2021 10:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JUN 2021 10:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1602,13 +1602,6 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 \c__siunitx_mathtt_int=\count213
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1727,10 +1720,10 @@ Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 692.
  ) 
 Here is how much of TeX's memory you used:
- 37085 strings out of 493089
- 855616 string characters out of 6134842
+ 37067 strings out of 493089
+ 855293 string characters out of 6134842
  1016317 words of memory out of 5000000
- 39931 multiletter control sequences out of 15000+600000
+ 39916 multiletter control sequences out of 15000+600000
  15659 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,10400b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1755,7 +1748,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (11 pages, 365196 bytes).
+Output written on dirac_delta.pdf (11 pages, 364723 bytes).
 PDF statistics:
  314 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams
