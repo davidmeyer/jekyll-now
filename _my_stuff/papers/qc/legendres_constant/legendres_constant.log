@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 JUN 2021 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JUN 2021 12:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**dirac_delta.tex
-(./dirac_delta.tex
+**legendres_constant.tex
+(./legendres_constant.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -1390,29 +1390,23 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-)
-\c@thm=\count200
-\c@definition=\count201
-\c@proposition=\count202
-\c@lemma=\count203
-\c@example=\count204
- (./dirac_delta.aux)
-\openout1 = `dirac_delta.aux'.
+) (./legendres_constant.aux)
+\openout1 = `legendres_constant.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1433,12 +1427,12 @@ LaTeX Font Info:    ... okay on input line 70.
 * \topmargin=-13.87262pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1450,16 +1444,16 @@ LaTeX Font Info:    ... okay on input line 70.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count205
+\scratchcounter=\count200
 \scratchdimen=\dimen280
 \scratchbox=\box66
-\nofMPsegments=\count206
-\nofMParguments=\count207
+\nofMPsegments=\count201
+\nofMParguments=\count202
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count208
+\MPscratchCnt=\count203
 \MPscratchDim=\dimen281
-\MPnumerator=\count209
-\makeMPintoPDFobject=\count210
+\MPnumerator=\count204
+\makeMPintoPDFobject=\count205
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1477,7 +1471,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 64.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1485,15 +1479,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count211
+\c@section@level=\count206
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
-(./dirac_delta.out) (./dirac_delta.out)
+(./legendres_constant.out) (./legendres_constant.out)
 \@outlinefile=\write4
-\openout4 = `dirac_delta.out'.
+\openout4 = `legendres_constant.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1584,174 +1578,58 @@ File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into 
 your preamble.
- on input line 70.
+ on input line 64.
 
-\c__siunitx_mathsf_int=\count212
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+\c__siunitx_mathsf_int=\count207
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 64.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-\c__siunitx_mathtt_int=\count213
+\c__siunitx_mathtt_int=\count208
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 200.
-
-[2] [3] [4]
-Overfull \hbox (73.5066pt too wide) detected at line 369
-[]
- []
-
-<images/exponential_order.png, id=126, 454.69875pt x 323.2075pt>
-File: images/exponential_order.png Graphic file (type png)
-
-<use images/exponential_order.png>
-Package pdftex.def Info: images/exponential_order.png used on input line 403.
-(pdftex.def)             Requested size: 177.33179pt x 126.05042pt.
- [5 <./images/exponential_order.png>]
-Overfull \hbox (78.99245pt too wide) detected at line 456
-[]
- []
-
-[6] [7]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 554.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 554.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 554.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 554.
-
-
-Overfull \hbox (85.6289pt too wide) detected at line 586
-[]
- []
-
-[8]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 595.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 595.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 595.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\prime' on input line 595.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 595.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 618.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 618.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 618.
-
-
-Overfull \hbox (3.85179pt too wide) detected at line 651
-[]
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 654.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 654.
-
-[9] [10] (./dirac_delta.bbl) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 692.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
- (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
-Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
-(rerunfilecheck)             Checksum: B2C87D8F6EF3428C018DD98D53E538D0;864.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 692.
+(./legendres_constant.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package rerunfilecheck Info: File `legendres_constant.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 37067 strings out of 493089
- 855293 string characters out of 6134842
- 1016317 words of memory out of 5000000
- 39916 multiletter control sequences out of 15000+600000
- 15659 words of font info for 64 fonts, out of 8000000 for 9000
+ 36840 strings out of 493089
+ 851724 string characters out of 6134842
+ 1007421 words of memory out of 5000000
+ 39740 multiletter control sequences out of 15000+600000
+ 13654 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,77p,10400b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (11 pages, 364776 bytes).
+ 55i,7n,77p,10407b,729s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on legendres_constant.pdf (1 page, 73292 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 52 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
