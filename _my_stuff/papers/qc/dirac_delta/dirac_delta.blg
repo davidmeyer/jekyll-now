@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dirac_delta.aux
 The style file: plain.bst
 Database file #1: /Users/dmm/papers/bib/qc.bib
-You've used 4 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            520 strings with 4712 characters,
-and the built_in function-call counts, 888 in all, are:
-= -- 88
-> -- 28
+            524 strings with 4919 characters,
+and the built_in function-call counts, 1105 in all, are:
+= -- 110
+> -- 35
 < -- 0
-+ -- 12
-- -- 8
-* -- 26
-:= -- 157
-add.period$ -- 16
-call.type$ -- 4
-change.case$ -- 16
++ -- 15
+- -- 10
+* -- 32
+:= -- 194
+add.period$ -- 20
+call.type$ -- 5
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 28
-empty$ -- 89
-format.name$ -- 8
-if$ -- 193
+cite$ -- 5
+duplicate$ -- 35
+empty$ -- 111
+format.name$ -- 10
+if$ -- 241
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 5
 missing$ -- 0
-newline$ -- 27
-num.names$ -- 8
-pop$ -- 32
+newline$ -- 33
+num.names$ -- 10
+pop$ -- 40
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 15
 quote$ -- 0
-skip$ -- 24
+skip$ -- 30
 stack$ -- 0
-substring$ -- 20
-swap$ -- 4
+substring$ -- 25
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 20
 warning$ -- 0
-while$ -- 8
-width$ -- 5
-write$ -- 50
+while$ -- 10
+width$ -- 6
+write$ -- 62
