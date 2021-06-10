@@ -682,6 +682,7 @@ F^\prime(s)
 \noindent
 So $F^\prime(s) = -\mathcal{L}\{tf(t)\}$. We can also pretty easily see that in general $F^{(n)}(s) = (-1)^n \mathcal{L}\{t^n f(t)\}$.
 
+
 \subsection{Example: Solving Ordinary Differential Equations (ODEs)}
 \label{sec:example_ode}
 \bigskip
@@ -701,36 +702,37 @@ We can use the Laplace Transform to solve this ODE. We start by taking the Lapla
 \bigskip
 \begin{equation*}
 \begin{array}{lllll}
-y^{\prime \prime} - y^\prime -2y                                                                                     &= 0                                                 &\mathrel{\#} \text{ODE we want to solve (Equation \ref{eqn:ode}})                                    \\
+y^{\prime \prime} - y^\prime -2y                                                                                     
+&=& 0                                                                                                                                                                        &\mathrel{\#} \text{ODE we want to solve (Equation \ref{eqn:ode}})                                    \\
 [15pt]
- \mathcal{L}\{y^{\prime \prime}\} - \mathcal{L}\{y^\prime\} -\mathcal{L}\{2y\}                &= \mathcal{L}\{0\}                           &\mathrel{\#} \text{take the Laplace Transform of both sides}                                              \\
+ &\Rightarrow& \mathcal{L}\{y^{\prime \prime}\} - \mathcal{L}\{y^\prime\} -\mathcal{L}\{2y\}  = \mathcal{L}\{0\}      &\mathrel{\#} \text{take the LT of both sides}                                                                        \\
 [15pt]
-\mathcal{L}\{y^{\prime \prime}\} - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\}                &= 0                                                 &\mathrel{\#} \text{$\mathcal{L}\{a f(t) \} = a \mathcal{L}\{f(t)\}$ and $\mathcal{L}\{0\} = 0$} \\
+&\Rightarrow& \mathcal{L}\{y^{\prime \prime}\} - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\}                 = 0             &\mathrel{\#} \text{$\mathcal{L}\{a f(t) \} = a \mathcal{L}\{f(t)\}$ and $\mathcal{L}\{0\} = 0$} \\
 [15pt]
-\big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\} &= 0                                                 &\mathrel{\#} \text{set $Y(s) = \mathcal{L}\{y\}$ and Section \ref{eqn:f_double_prime}}      \\
+&\Rightarrow& \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\} = 0             &\mathrel{\#} \text{set $Y(s) = \mathcal{L}\{y\}$ and Section \ref{eqn:f_double_prime}}      \\
 [15pt]
-\big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]- 2\mathcal{L}\{y\} &= 0                                                  &\mathrel{\#} \text{$ \mathcal{L}\{y^\prime\} = sY(s) - y(0)$ (Section \ref{sec:f_prime})}      \\
+&\Rightarrow&  \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]- 2\mathcal{L}\{y\} = 0             &\mathrel{\#} \text{$ \mathcal{L}\{y^\prime\} = sY(s) - y(0)$ (Section \ref{sec:f_prime})}      \\
 [15pt]
-\big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]-  2 Y(s)                 &= 0                                                  &\mathrel{\#} Y(s) = \mathcal{L}\{y\}                                                                                      \\
+&\Rightarrow&  \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]-  2 Y(s)                 = 0            &\mathrel{\#} Y(s) = \mathcal{L}\{y\}                                                                                      \\
 [15pt]
-s^2 Y(s) -s \cdot 1 - 0 - sY(s) + 1 - 2 Y(s)                                                                      &= 0                                                  &\mathrel{\#} \text{IVP: $y(0) = 1$ and $y^\prime (0) = 0$}                                                  \\
+&\Rightarrow&  s^2 Y(s) -s \cdot 1 - 0 - sY(s) + 1 - 2 Y(s)                                                                     = 0            &\mathrel{\#} \text{IVP: $y(0) = 1$ and $y^\prime (0) = 0$}                                                  \\
 [15pt]
-s^2 Y(s) -s  - sY(s) + 1 -2 Y(s)                                                                                      &= 0                                                    &\mathrel{\#} \text{simplify}                                                                                                  \\
+&\Rightarrow&  s^2 Y(s) -s  - sY(s) + 1 -2 Y(s)                                                                                      = 0             &\mathrel{\#} \text{simplify}                                                                                                  \\
 [15pt]         
-s^2 Y(s) - s Y(s) - 2 Y(s) - (s - 1)                                                                                   &= 0                                                    &\mathrel{\#} \text{collect terms}                                                                                          \\
+&\Rightarrow&  s^2 Y(s) - s Y(s) - 2 Y(s) - (s - 1)                                                                                   = 0             &\mathrel{\#} \text{collect terms}                                                                                          \\
 [15pt]
-Y(s) \big [s^2- s - 2 \big] - (s - 1)                                                                                   &= 0                                                     &\mathrel{\#} \text{factor out $Y(s)$}                                                                                   \\
+&\Rightarrow&  Y(s) \big [s^2- s - 2 \big] - (s - 1)                                                                                   = 0             &\mathrel{\#} \text{factor out $Y(s)$}                                                                                   \\
 [15pt]
-Y(s) \big [s^2- s - 2 \big]                                                                                               &= s - 1                                                &\mathrel{\#} \text{add $s - 1$ to both sides}                                                                      \\
+&\Rightarrow&  Y(s) \big [s^2- s - 2 \big]                                                                                               = s - 1         &\mathrel{\#} \text{add $s - 1$ to both sides}                                                                      \\
 [12pt]
-Y(s)                                                                                                                              &= \mathlarger{\frac{s - 1}{s^2 -s -2}}  &\mathrel{\#} \text{solve for $Y(s)$}
+&\Rightarrow&  Y(s) = \mathlarger{\frac{s - 1}{s^2 -s -2}}  &\mathrel{\#} \text{solve for $Y(s)$}
 \end{array}
 \end{equation*}
 
 \bigskip
 \noindent
-So $\mathcal{L}\{y\} = Y(s) = \mathlarger{\frac{s - 1}{s^2 -s -2}}$. We can split $Y(s)$ into two fractions using partial fractions and the Inverse Laplace Transform 
-to solve for $y(t)$, as follows:
+So $\mathcal{L}\{y\} = Y(s) = \mathlarger{\frac{s - 1}{s^2 -s -2}}$. Now we can split $Y(s)$ into two fractions using partial fractions 
+and solve for $y(t)$ using the Inverse Laplace Transform:
 
 \bigskip
 \begin{equation*}
