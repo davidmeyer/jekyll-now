@@ -709,11 +709,13 @@ y^{\prime \prime} - y^\prime -2y
 [15pt]
 &\Rightarrow& \mathcal{L}\{y^{\prime \prime}\} - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\}                 = 0             &\mathrel{\#} \text{$\mathcal{L}\{a f(t) \} = a \mathcal{L}\{f(t)\}$ and $\mathcal{L}\{0\} = 0$}             \\
 [15pt]
-&\Rightarrow& \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\} = 0             &\mathrel{\#} \text{$\mathcal{L}\{y^{\prime \prime}\} = \hdots$ (Section \ref{eqn:f_double_prime})}  \\
+&\Rightarrow& \big [ s^2 \mathcal{L}\{y\} - s y(0) - y^\prime (0) \big ] - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\} = 0   &\mathrel{\#} \text{$\mathcal{L}\{y^{\prime \prime}\} = \hdots$ (Section \ref{eqn:f_double_prime})}  \\
+[15pt]
+&\Rightarrow& \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \mathcal{L}\{y^\prime\} - 2\mathcal{L}\{y\} = 0             &\mathrel{\#} \text{set } Y(s) = \mathcal{L}\{y\}                                                                                    \\
 [15pt]
 &\Rightarrow&  \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]- 2\mathcal{L}\{y\} = 0             &\mathrel{\#} \text{$\mathcal{L}\{y^\prime\} = sY(s) - y(0)$ (Section \ref{sec:f_prime})}                     \\
 [15pt]
-&\Rightarrow&  \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]-  2 Y(s)                 = 0            &\mathrel{\#} Y(s) = \mathcal{L}\{y\}                                                                                                     \\
+&\Rightarrow&  \big [ s^2 Y(s) - s y(0) - y^\prime (0) \big ] - \big [ s Y(s) - y(0) \big ]-  2 Y(s)                 = 0            &\mathrel{\#}  \mathcal{L}\{y\} = Y(s)                                                                                                  \\
 [15pt]
 &\Rightarrow&  s^2 Y(s) -s \cdot 1 - 0 - sY(s) + 1 - 2 Y(s)                                                                     = 0            &\mathrel{\#} \text{IVP: $y(0) = 1$ and $y^\prime (0) = 0$}                                                                 \\
 [15pt]
