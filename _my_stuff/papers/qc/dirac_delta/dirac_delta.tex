@@ -269,7 +269,7 @@ Essentially $\delta_{a}(t)$ pulls out the value of $g$ at $a$, that is, $g(a)$.
 
 \bigskip
 \noindent
-Another way to get this result \cite{youtube:suskind2008.4} is to notice that the integrand of 
+Another way to look at this \cite{youtube:suskind2008.4} is to notice that the integrand of 
 
 \bigskip
 \begin{equation*}
@@ -1120,19 +1120,21 @@ Now we can use the machinery we've built up to show why Equation \ref{eqn:lt_of_
 \bigskip
 \bigskip
 \noindent
-This result also implies that
+This result also implies that $\mathcal{L}^{-1}\{F(s) G(s)\}  = f(t) \ast g(t)$. It is pretty easy to see why:
 
 \bigskip
 \begin{equation*}
 \begin{array}{lllll}
 \mathcal{L}\{f(t) \ast g(t)\} 
 &=& \mathcal{L}\{f(t)\}\mathcal{L}\{g(t)\}                                                                                                                               &\quad \mathrel{\#} \text{above result}                                      \\
-[15pt]
+[8pt]
 &\Rightarrow& \mathcal{L}^{-1}\{\mathcal{L}\{f(t) \ast g(t)\}\} =  \mathcal{L}^{-1}\{\mathcal{L}\{f(t)\}\mathcal{L}\{g(t)\}\}     &\quad \mathrel{\#} \text{take the inverse LT of both sides}       \\
-[15pt]
+[8pt]
 &\Rightarrow& f(t) \ast g(t) =  \mathcal{L}^{-1}\{\mathcal{L}\{f(t)\}\mathcal{L}\{g(t)\}\}                                                          &\quad \mathrel{\#}   \mathcal{L}^{-1}\{\mathcal{L}\{f(t)\} = f(t)  \\
-[15pt]
-&\Rightarrow& f(t) \ast g(t) =  \mathcal{L}^{-1}\{F(s) G(s)\}                                                                                                  &\quad \mathrel{\#} \text{$\mathcal{L}\{f(t)\} = F(s)$ (Definition \ref{def:laplace_transform})}
+[8pt]
+&\Rightarrow& f(t) \ast g(t) =  \mathcal{L}^{-1}\{F(s) G(s)\}                                                                                                  &\quad \mathrel{\#} \text{$\mathcal{L}\{f(t)\} = F(s)$ (Definition \ref{def:laplace_transform})} \\
+[8pt]
+&\Rightarrow& \mathcal{L}^{-1}\{F(s) G(s)\} = f(t) \ast g(t)                                                                                                  &\quad \mathrel{\#} \text{$=$ is symmetric}
 \end{array}
 \end{equation*}
 

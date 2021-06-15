@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2021 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2021 14:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1770,20 +1770,20 @@ Overfull \hbox (82.97661pt too wide) detected at line 1118
  []
 
 
-Overfull \hbox (41.48695pt too wide) detected at line 1137
+Overfull \hbox (41.48695pt too wide) detected at line 1139
 []
  []
 
 [18] [19] (./dirac_delta.bbl) [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1147.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1149.
  (./dirac_delta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1147.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1149.
 
 Package rerunfilecheck Info: File `dirac_delta.out' has not changed.
 (rerunfilecheck)             Checksum: 9423E62C270F9CDAE718A18D328DA1C8;1414.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1149.
  ) 
 Here is how much of TeX's memory you used:
  37166 strings out of 493089
@@ -1814,7 +1814,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dirac_delta.pdf (20 pages, 394316 bytes).
+Output written on dirac_delta.pdf (20 pages, 394460 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  317 compressed objects within 4 object streams
