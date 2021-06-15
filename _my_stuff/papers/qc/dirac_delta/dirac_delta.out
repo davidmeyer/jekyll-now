@@ -10,3 +10,8 @@
 \BOOKMARK [2][-]{subsection.3.6}{So what is the general form of L\173f\(n\)\(t\)\175?}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.7}{What is the derivative of F\(s\)?}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.8}{Example: Solving Ordinary Differential Equations \(ODEs\)}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{The Heavyside Function, Convolution, and the Laplace Transform}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{The Heavyside Function}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{What about L\173u\(t-a\) f\(t-a\)\175?}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Convolution}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.4}{Ok, why does L\173f\(t\) g\(t\)\175 = L\173f\(t\)\175L\173g\(t\)\175 hold?}{section.4}% 17
