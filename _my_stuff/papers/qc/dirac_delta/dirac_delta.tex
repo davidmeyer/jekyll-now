@@ -824,7 +824,7 @@ So we've been able to use the Laplace Transform to solve the ODE in Section \ref
 y(t) = \frac{1}{3} e^{2t} + \frac{2}{3} e^{-t}   
 \end{equation*}
 
-\section{\large The Heavyside Function, Convolution, and the Laplace Transform}
+\section{\large The Heaviside Function, Convolution, and the Laplace Transform}
 We saw in Section \ref{subsec:linearity} that the Laplace Transform has a linearity property, namely, 
 
 \bigskip
@@ -857,13 +857,13 @@ where $\ast$ is the convolution operator.
 
 \bigskip
 \noindent
-To see why Equation  \ref{eqn:lt_of_convolution} holds we need another piece of machinery, the heavyside function.
+To see why Equation  \ref{eqn:lt_of_convolution} holds we need another piece of machinery, the Heaviside function.
 
-\subsection{The Heavyside Function}
-The most basic definition of the Heavyside Function is
+\subsection{The Heaviside Function}
+The most basic definition of the Heaviside Function is
 
 
-\begin{definition} {\bf Heavyside Function:}
+\begin{definition} {\bf Heaviside Function:}
 \bigskip
 \begin{equation*}
 u(t) =
@@ -872,12 +872,12 @@ u(t) =
     1 & t \geq 0
    \end{cases}
 \end{equation*}
-\label{def:heavyside_function}
+\label{def:heaviside_function}
 \end{definition}
 
 \bigskip
 \noindent
-The Heavyside Function is shown in Figure \ref{fig:u(t)}.
+The Heaviside Function is shown in Figure \ref{fig:u(t)}.
 
 
 \bigskip
@@ -902,7 +902,7 @@ The Heavyside Function is shown in Figure \ref{fig:u(t)}.
      \draw [thick,red] (0,0) circle [radius =0.03cm];                                                       % draw an open red circle on the x axis at (0,0)             
      \draw (0,0) node[below] {$0$};
   \end{tikzpicture}
-  \caption{The Heavyside Function $u(t)$}
+  \caption{The Heaviside Function $u(t)$}
   \label{fig:u(t)}
 \end{figure}
 
@@ -980,7 +980,7 @@ F(s)
 
 \bigskip
 \noindent
-What can we say about the Laplace Transform of $u(t-a)f(t-a)$, that is, the heavyside function multiplied by another function? It turns out that
+What can we say about the Laplace Transform of $u(t-a)f(t-a)$, that is, the Heaviside function multiplied by another function? It turns out that
 
 \bigskip
 \begin{equation*}
