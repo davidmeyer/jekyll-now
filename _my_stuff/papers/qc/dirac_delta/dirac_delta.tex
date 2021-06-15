@@ -956,19 +956,19 @@ The first thing to observe is that $u(t-a)$ is zero for $t < a$ and one otherwis
 \begin{equation*}
 \begin{array}{lllll}
 F(s)                                                                                                                          
-&=& \mathlarger{\int}^\infty_0 e^{-st} u(t-a) dt                        &\qquad\qquad \mathrel{\#} \text{definition of $\mathcal{L}\{u(t-a)\}$ (Section \ref{sec:laplace_transform})}                          \\
+&=& \mathlarger{\int}^\infty_0 e^{-st} u(t-a) dt                        &\qquad\qquad \mathrel{\#} \text{definition of $\mathcal{L}\{u(t-a)\}$ (Section \ref{sec:laplace_transform})}                                 \\
 [15pt]
-&=& \mathlarger{\int}^\infty_a e^{-st} u(t-a) dt                        &\qquad\qquad \mathrel{\#} \text{we can change the lower integration limit since $u(t-a) = 0$ for $t < a$}                             \\
+&=& \mathlarger{\int}^\infty_a e^{-st} u(t-a) dt                        &\qquad\qquad \mathrel{\#} \text{we can change the lower integration limit since $u(t-a) = 0$ for $t < a$}                                    \\
 [15pt]
-&=& \mathlarger{\int}^\infty_a e^{-st} \cdot 1 dt                      &\qquad\qquad \mathrel{\#} \text{$u(t-a) = 1$ for $t \geq a$}                                                                                                    \\
+&=& \mathlarger{\int}^\infty_a e^{-st} \cdot 1 dt                      &\qquad\qquad \mathrel{\#} \text{$u(t-a) = 1$ for $t \geq a$}                                                                                                           \\
 [15pt]
-&=& \mathlarger{\int}^\infty_a e^{-st} dt                                  &\qquad\qquad \mathrel{\#} \text{simplify}                                                                                                                                 \\
+&=& \mathlarger{\int}^\infty_a e^{-st} dt                                  &\qquad\qquad \mathrel{\#} \text{simplify}                                                                                                                                        \\
 [15pt]
-&=& \mathlarger{\frac{e^{-st}}{-s}} \Big |^\infty_a                    &\qquad\qquad \mathrel{\#} \mathlarger{\int} e^{cx} dx = \frac{e^{cx}}{c} \text{ and the Fundamental Theorem of Calculus}  \\
+&=& \mathlarger{\frac{e^{-st}}{-s}} \Big |^\infty_a                    &\qquad\qquad \mathrel{\#} \mathlarger{\int} e^{cx} dx = \frac{e^{cx}}{c} + C \text{ and the Fundamental Theorem of Calculus}  \\
 [15pt]
-&=& \lim\limits_{d \to \infty} \mathlarger{\frac{e^{-sd}}{-s}} - \mathlarger{\frac{e^{-sa}}{-s}}   &\qquad\qquad \mathrel{\#} \text{evaluate at limits}                                                                  \\
+&=& \lim\limits_{d \to \infty} \mathlarger{\frac{e^{-sd}}{-s}} - \mathlarger{\frac{e^{-sa}}{-s}}   &\qquad\qquad \mathrel{\#} \text{evaluate at limits}                                                                          \\
 [15pt]
-&=& 0 -  \mathlarger{\frac{e^{-sa}}{-s}}                                   &\qquad\qquad \mathrel{\#} \lim\limits_{d \to \infty} \mathlarger{\frac{e^{-sd}}{-s}} = 0                                                             \\
+&=& 0 -  \mathlarger{\frac{e^{-sa}}{-s}}                                   &\qquad\qquad \mathrel{\#} \lim\limits_{d \to \infty} \mathlarger{\frac{e^{-sd}}{-s}} = 0                                                                      \\
 [15pt]
 &=& \mathlarger{\frac{e^{-sa}}{s}}                                          &\qquad\qquad \mathrel{\#} \mathcal{L}\{u(t-a)\} = \mathlarger{\frac{e^{-sa}}{s}}
 \end{array}
