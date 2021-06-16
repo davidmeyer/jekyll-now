@@ -916,8 +916,10 @@ More frequently we are interested in $u(t-a)$, which is sometimes written as $u_
 \begin{figure}[H]
   \centering
   \begin{tikzpicture}[scale=2.0]
-     \draw [<->] (0,2) -- (0,0) -- (4,0);                                                                      % draw axes
-     \draw (3,2) node[draw,rectangle] {                                                                   % draw function to the right
+%  \draw [<->] (0,2) -- (0,0) -- (4,0);                                                                      % draw axes
+     \draw [thick,->] (0,0) -- (0,2);                                                                           % draw axes
+     \draw [thick,<->] (-2,0) -- (3,0);                                                                        % draw axes
+     \draw (2,2) node[draw,rectangle] {                                                                  % draw function to the right
          $u(t-a) =  
            \begin{cases} 
                0 & t < a  \\
@@ -927,18 +929,53 @@ More frequently we are interested in $u(t-a)$, which is sometimes written as $u_
      \draw (1,0) node[below] {$a$};
      \draw [thick,red] (1,0) circle [radius =0.03cm];                                                  % draw an open red circle on the x axis above the "a"              
      \draw [dashed] (1,0) -- (1,1);
-     \draw (4,0) node [label=right:{$t$}] {};
+     \draw (3,0) node [label=right:{$t$}] {};
      \draw (0,2) node [label=above:{$u(t-a)$}] {};
-     \draw [thick,red] (0,0) -- (1,0);
-     \draw [->,thick,red] (1,1) -- (4,1);
+     \draw [thick,red] (-2,0) -- (1,0);
+     \draw [->,thick,red] (1,1) -- (3,1);
      \coordinate (xy) at (1,1); \fill [red] (xy) circle (1pt);                                           % draw a dot on the y axis (I'd like to make it smaller but I don't see how)
      \draw [dashed] (0,1) -- (2,1);
+     \draw [thick,red] (1,1) circle [radius =0.03cm];                                                % draw an open red circle on the x axis above the "a"              
      \coordinate (y) at (0,1); \fill [black] (y) circle (1pt);                                           % draw a dot on the y axis (I'd like to make it smaller but I don't see how)
      \draw (0,1) node[left] {1};
   \end{tikzpicture}
   \caption{$u(t-a)$}
   \label{fig:u(t-a)}
 \end{figure}
+
+\bigskip
+\noindent
+Another useful version of the Heaviside function, $u(a-t)$, is shown in Figure \ref{fig:u(a-t)}.
+
+\bigskip
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=2.0]
+     \draw [thick,->] (0,0) -- (0,2);                                                                      % draw axes
+     \draw [thick,<->] (-2,0) -- (3,0);                                                                     % draw axes
+     \draw (2,2) node[draw,rectangle] {                                                             % draw function to the right
+         $u(a - t) =  
+           \begin{cases} 
+               0 & t > a  \\
+               1  & t \leq a
+           \end{cases}$
+       }; 
+     \draw (3,0) node [label=right:{$t$}] {};
+     \draw (0,2) node [label=above:{$u(a - t)$}] {};
+     \draw (1,0) node[below] {$a$};
+     \draw [thick,red] (1,0) circle [radius =0.03cm];                                                  % draw an open red circle on the x axis above the "a"              
+     \draw [<-,thick,red] (-2,1) -- (1,1);
+     \draw [dashed] (1,0) -- (1,1);
+     \draw [->,thick,red] (1,0) -- (3,0);
+     \coordinate (xy) at (1,1); \fill [red] (xy) circle (1pt);                                           % draw a dot on the y axis (I'd like to make it smaller but I don't see how)
+     \coordinate (y) at (0,1); \fill [black] (y) circle (1pt);                                           % draw a dot on the y axis (I'd like to make it smaller but I don't see how)
+     \draw (0,1) node[left] {1};
+     \end{tikzpicture}
+  \caption{$u(a - t)$}
+  \label{fig:u(a-t)}
+\end{figure}
+
+
 
 \bigskip
 \noindent
@@ -950,7 +987,7 @@ F(s) = \int^\infty_0 e^{-st} u(t-a) dt
 
 \bigskip
 \noindent
-The first thing to observe is that $u(t-a)$ is zero for $t < a$ and one otherwise, so we can rewrite our integral as
+The first thing to observe is that $u(t-a)$ is zero for $t < a$ and one otherwise (Figure \ref{fig:u(t-a)}), so we can rewrite our integral with a lower limit of $a$.
 
 \bigskip
 \begin{equation*}
@@ -1004,7 +1041,7 @@ u(t-a)f(t-a) =
 
 \bigskip
 \noindent
-Next, consider
+One way to think about this is that $u(t-a)$ "turns on" $f(t-a)$ at $a$. So consider
 
 
 \begin{equation*}
@@ -1016,7 +1053,9 @@ F(s)
 [15pt]
 &\Rightarrow& e^{-as} F(s) = \mathlarger{\int}_0^\infty e^{-as} e^{-s\tau} f(\tau) d\tau    &\qquad \mathrel{\#} \text{move $e^{-as}$ inside integral ($e^{-as}$ doesn't depend on $\tau$)}    \\
 [15pt]
-&\Rightarrow& e^{-as} F(s) = \mathlarger{\int}_0^\infty e^{-s(\tau+a)} f(\tau) d\tau         &\qquad \mathrel{\#} a^n \cdot a^m = a^{(m+n)}                                                                                 \\
+&\Rightarrow& e^{-as} F(s) = \mathlarger{\int}_0^\infty e^{-s\tau - sa} f(\tau) d\tau         &\qquad \mathrel{\#} a^n \cdot a^m = a^{(m+n)}                                                                                 \\
+[15pt]
+&\Rightarrow& e^{-as} F(s) = \mathlarger{\int}_0^\infty e^{-s(\tau+a)} f(\tau) d\tau         &\qquad \mathrel{\#} \text{factor out $s$}                                                                                            \\
 [15pt]
 &\Rightarrow& e^{-as} F(s) = \mathlarger{\int}_a^\infty e^{-st} f(t-a) dt                           &\qquad \mathrel{\#} \text{substitution: $t = \tau + a$ so $\tau = t - a$ and $d\tau = dt$}                   \\
 [15pt]
@@ -1097,7 +1136,7 @@ Now we can use the machinery we've built up to show why Equation \ref{eqn:lt_of_
 [15pt]                 
 &=& \mathlarger{\int}^\infty_0 e^{-st} \Bigg [ \mathlarger{\int}^t_0 f(t-v) g(v) dv \Bigg ] dt                         &\quad \mathrel{\#} \text{definition of convolution (Section \ref{sec:convolution})}                                     \\
 [15pt]
-&=& \mathlarger{\int}^\infty_0 e^{-st} \Bigg [ \mathlarger{\int}^\infty_0 f(t-v) g(v ) u(t-v) dv \Bigg ] dt        &\quad \mathrel{\#} \text{$u(t-v) = 0$ for $v > t$ so change upper limit}                                                     \\
+&=& \mathlarger{\int}^\infty_0 e^{-st} \Bigg [ \mathlarger{\int}^\infty_0 f(t-v) g(v ) u(t-v) dv \Bigg ] dt        &\quad \mathrel{\#} \text{$u(t-v) = 0$ for $v > t$ so change upper limit}                                                    \\
 [15pt]
 &=& \mathlarger{\int}^\infty_0 \Bigg [ \mathlarger{\int}^\infty_0  e^{-st} f(t-v) g(v ) u(t-v) dv \Bigg ] dt       &\quad \mathrel{\#} \text{$e^{-st}$ doesn't depend on $v$}                                                                        \\    
 [15pt]
