@@ -13,6 +13,8 @@
 <li><a href="./dirac_delta.pdf">A few notes on the Dirac Delta Function and
 the Laplace Transform</a>
 <br>
+<li><a href="./projective_geometry.pdf">Why do parallel lines appear to meet in the distance? A few notes on Projective Geometry</a>
+<br>
 <li><a href="./rings.pdf">A bit on a structural correspondence between rings and groups</a>
 <br>
 <li><a href="./i_to_the_i_is_real.pdf">Is i^i a real number?</a>
@@ -56,7 +58,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 06.04.2021 by dmm@1-4-5.net
+<i>Last Update: 06.16.2021 by dmm@1-4-5.net
 
 
 
