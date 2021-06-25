@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{mccarthy2018}
+{John E. McCarthy}.
+\newblock {Dirichlet Series}.
+\newblock \url{https://www.math.wustl.edu/~mccarthy/amaster-ds.pdf}, 2018.
+\newblock [Online; accessed 25-June-2021].
+
 \bibitem{euler_product}
 {Noam D. Elkies}.
 \newblock {Math 259: Introduction to Analytic Number Theory}.
