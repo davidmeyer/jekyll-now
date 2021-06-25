@@ -46,6 +46,8 @@ Quantum Teleportation
 
 
 <h2>Just for fun</h2>
+<li><a href="./age.pdf">What is the difference in our ages?</a>
+<br>
 <li><a href="./2021.pdf">Happy New Year 2021!</a>
 <br>
 <li><a href="./christmas_theorem.pdf">Fermat's Christmas Theorem</a>
@@ -58,7 +60,7 @@ Quantum Teleportation
 <br>
 <br>
 <hr>
-<i>Last Update: 06.16.2021 by dmm@1-4-5.net
+<i>Last Update: 06.25.2021 by dmm@1-4-5.net
 
 
 

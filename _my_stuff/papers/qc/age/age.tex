@@ -57,7 +57,7 @@
 
 
 
-\title{What Is The Difference In Our Ages?}
+\title{Why Is There No Difference In Our Ages?}
 \author{David Meyer \\ dmm@1-4-5.net}
 
 \date{Last update: \today}							% Activate to display a given date or no date
@@ -72,19 +72,44 @@ is that as time goes by (measured by $n$), the difference in our ages vanishes!
 
 \bigskip
 \noindent
-Why? Consider
+Why? Consider that 
 
 \medskip
 \bigskip
 \begin{equation*}
 \centering
-\mathlarger{\mathlarger{\mathlarger {\lim\limits_{n \to \infty} \Bigg [ \frac{x_t + n}{y_t + n} \Bigg ]  = 1}}}
+{\mathlarger {\lim\limits_{n \to \infty} \Bigg [ \frac{x_t + n}{y_t + n} \Bigg ]  = 1}}
 \end{equation*}
 
 \bigskip
+\noindent
+which is another way of saying the same thing. This result is reassuring since it pretty much models our experience. 
+
 \bigskip
 \noindent
-This result is reassuring since it pretty much models our experience. 
+More generally, consider the function $f_a(n) = a + n$ where $a,n \in \mathbb{N}$. Then
+
+\medskip
+\bigskip
+\begin{equation}
+\centering
+\mathlarger {\lim\limits_{n \to \infty} \Bigg [ \frac{f_a(n)}{f_b(n)} \Bigg ]  = 1}
+\label{eqn:lim}
+\end{equation}
+
+\bigskip
+\noindent
+for $a,b \in \mathbb{N}$. We also write Equation \ref{eqn:lim} in the following alternate notation:
+
+\bigskip
+\begin{equation*}
+f_a(n) \thicksim f_b(n)
+ \end{equation*}
+
+\bigskip
+\noindent
+That is, the $\thicksim$ symbol means that the ratio of its two arguments tends towards $1$ as its arguments tend toward $\infty$.
+
 
 \end{document} 
 
