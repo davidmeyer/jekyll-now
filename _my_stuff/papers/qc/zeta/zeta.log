@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JUN 2021 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JUN 2021 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1604,9 +1604,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \c__siunitx_mathtt_int=\count213
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./zeta
-.bbl)
-[2]
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+zeta.bbl)
+[3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./zeta.aux)
@@ -1617,9 +1617,9 @@ Package rerunfilecheck Info: File `zeta.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 36892 strings out of 493089
- 852121 string characters out of 6134842
- 1011407 words of memory out of 5000000
+ 36893 strings out of 493089
+ 852127 string characters out of 6134842
+ 1010407 words of memory out of 5000000
  39780 multiletter control sequences out of 15000+600000
  12977 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1636,10 +1636,10 @@ texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on zeta.pdf (2 pages, 126570 bytes).
+Output written on zeta.pdf (3 pages, 126829 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
