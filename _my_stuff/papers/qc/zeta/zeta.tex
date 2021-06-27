@@ -68,8 +68,42 @@
 \section{Introduction}
 TBD
 
+\subsection{Dirichlet Series}
+A Dirichlet Series \cite{mccarthy2018}  is a series of the form
+
+\bigskip
+\begin{equation}
+f(s) = \sum\limits_{n = 1}^{\infty} \frac{a_n}{n^s}
+\label{eqn:dirichlet_series}
+\end{equation}
+
+\bigskip
+\noindent
+for $s \in \mathbb{C}$. Convention seems to be that it is unnecessary to note that $n \in \mathbb{N}^*$.  
+
+\bigskip
+\noindent
+The complex variable $s$ in Equation \ref{eqn:dirichlet_series} is represented as $s = \alpha + i t$. We use the 
+notation $ \Re(s)$ and $\Im(s)$ to indicate the real and imaginary parts of $s$ respectively. That is, 
+$\alpha = \Re(s)$ and $t = \Im(s)$.
+
+
+\bigskip
+\noindent
+Perhaps the most famous example of a Dirichlet series is the Riemann zeta function $\zeta(s)$:
+
+\bigskip
+\begin{equation}
+\zeta(s) = \sum^\infty_{n = 1} \frac{1}{n^s}
+\label{eqn:zeta_function}
+\end{equation}
+
+\bigskip
+\noindent
+for $s \in \mathbb{C}$. 
+
 \section{Euler's Product Formula}
-Recall that the Riemann zeta function is defined to be
+Recall that the Riemann zeta function (Equation \ref{eqn:zeta_function}) is defined to be
 
 \medskip
 \begin{equation*}
@@ -77,22 +111,23 @@ Recall that the Riemann zeta function is defined to be
 \end{equation*}
 
 \noindent
-for $s \in \mathbb{C}$, $n \in \mathbb{N}^*$ and $\text{Re}(s) > 1$.
+for $s \in \mathbb{C}$.
 
 \bigskip
 \noindent
-In 1737 Leonhard Euler \cite{euler_product_formula} discovered the beautiful connection between the zeta function and the prime numbers and proved this identity:
+In 1737 Leonhard Euler \cite{euler_product_formula} discovered the beautiful connection between the zeta function and the prime numbers by proving this identity:
 
 \medskip
 \begin{equation}
-\sum^\infty_{n = 1} \frac{1}{n^s} = \prod_{\text{$p$ prime}} \!  \frac{1}{1 - p^{-s}}
+\sum^\infty_{n = 1} \frac{1}{n^s} = \! \! \! \prod_{\text{$p$ prime}} \!  \frac{1}{1 - p^{-s}}
 \label{eqn:zeta}
 \end{equation}
 
 \bigskip
 \noindent
-The left side of Equation \ref{eqn:zeta} is by definition $\zeta(s)$. The infinite product on the right side of Equation \ref{eqn:zeta}  extends over all prime numbers $p$ and is called an Euler 
-Product \cite{euler_product}, which is the expansion of a Dirichlet series \cite{mccarthy2018} into an infinite product indexed by prime numbers:
+The left side of Equation \ref{eqn:zeta} is by definition $\zeta(s)$ (Equation \ref{eqn:zeta_function}). The infinite product on the right side of Equation \ref{eqn:zeta}  
+extends over all prime numbers $p$ and is called an Euler Product \cite{euler_product}. A Euler Product is the expansion of a Dirichlet series 
+(Equation \ref{eqn:dirichlet_series}) into an infinite product indexed by prime numbers:
 
 \begin{equation*}
 \prod_{\text{$p$ prime}} \!  \frac{1}{1 - p^{-s}} = \frac{1}{1 - 2^{-s}} \cdot \frac{1}{1 - 3^{-s}} \cdot  \frac{1}{1 - 5^{-s}} \cdot  \frac{1}{1 - 7^{-s}} \cdot  \frac{1}{1 - 11^{-s}} \cdots  \frac{1}{1 - p^{-s}} \cdots
@@ -100,7 +135,7 @@ Product \cite{euler_product}, which is the expansion of a Dirichlet series \cite
 
 \bigskip
 \noindent
-Both sides of the Euler product formula converge for $\text{Re}(s) > 1$.
+Like the zeta function, the Euler Product Formula converges for $\Re(s) > 1$.
 
 
 \bibliographystyle{plain}
