@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JUN 2021 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JUL 2021 07:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1617,13 +1617,13 @@ Package rerunfilecheck Info: File `zeta.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 36893 strings out of 493089
- 852127 string characters out of 6134842
- 1010407 words of memory out of 5000000
- 39780 multiletter control sequences out of 15000+600000
- 12977 words of font info for 52 fonts, out of 8000000 for 9000
+ 36885 strings out of 493089
+ 852041 string characters out of 6134842
+ 1010406 words of memory out of 5000000
+ 39774 multiletter control sequences out of 15000+600000
+ 11700 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,77p,10393b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,77p,10393b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1636,7 +1636,7 @@ texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on zeta.pdf (3 pages, 126811 bytes).
+Output written on zeta.pdf (3 pages, 126755 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
